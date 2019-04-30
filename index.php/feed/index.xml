@@ -12,25 +12,10 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Tue, 30 Apr 2019 12:12:06 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 30 Apr 2019 14:44:18 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.10</generator>
-	<item>
-		<title>New Post</title>
-		<link>https://schcs.github.io/WP/index.php/2019/04/30/new-post/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/04/30/new-post/#respond</comments>
-		<pubDate>Tue, 30 Apr 2019 11:43:11 +0000</pubDate>
-		<dc:creator><![CDATA[schcs]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
-
-		<guid isPermaLink="false">https://schcs.github.io/WP/?p=33</guid>
-		<description><![CDATA[New post  $a+b$ ff]]></description>
-				<content:encoded><![CDATA[<p>New post <code>\(E=mc^2\) $a+b$ ff</code></p>
-]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/04/30/new-post/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-	</channel>
+</channel>
 </rss>
