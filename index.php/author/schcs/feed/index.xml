@@ -8,8 +8,8 @@
 	>
 
 <channel>
-	<title>Csaba Schneider</title>
-	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
+	<title>schcs &#8211; Csaba Schneider</title>
+	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
 	<lastBuildDate>Tue, 30 Apr 2019 11:43:11 +0000</lastBuildDate>
