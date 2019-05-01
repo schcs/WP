@@ -79,13 +79,15 @@ MathJax.Hub.Config({
 	<header class="entry-header">
 		<h1 class="entry-title">Errata</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<p style="font-weight: 400;">OK: So the proof shows lhs of $(i) \leq rhs$, and needs to show the reverse.</p>
-<p style="font-weight: 400;">We take $c$ in the rhs and define $g_0 by Hc = Hg_0^{-1}$ and prove that $H^{g_0}\subseteq H$. We do a calculation similar to the second last display on page 46 but more general.</p>
-<p style="font-weight: 400;">Claim: for each $g$, we have $(Hg)c = Hg_0^{-1}g$.</p>
-<p style="font-weight: 400;">Proof of claim: $$(Hg)c = H(g rho_H)c = Hc g rho_H = Hg_0^{-1} g rho_H = Hg_0^{-1}g$$.</p>
-<p style="font-weight: 400;">Hence the inverse $c^{-1}$ maps $H g_0^{-1}g$ to $Hg$ for all $g$. Change variables by setting $x = g_0^{-1}g$. $c^{-1}$ maps $Hx$ to $Hg_0 x$ for all $x in G$. Special case of $x=1$ gives that $(H) c^{-1} = Hg_0$. Now $c$ in the centraliser iff $c^{-1}$ in the centraliser. And what we proved above for an arbitrary element of the centaliser is that $(H) c^{-1} = Hg_0$ implies that $H^{g_0^{-1}}\subseteq H$, or equivalently, $H \subseteq H^{g_0}$.</p>
-<p style="font-weight: 400;">Now we have both $H^{g_0}\subseteq H$ and $H \subseteq H^{g_0}$. Hence $g_0\in N_G(H)$.</p>
-<p style="font-weight: 400;">The rest is OK but on page 47 line 4, we should have written $H(h lambda_H) = h^{-1}H$ instead of $Hh^{-1}$ , and then again we would have $h\in H$. So maybe we don’t trouble with this? Or would be to mention it if we were writing something on a web site.</p>
+		<p>$\newcommand{\sym}[1]{{\rm Sym}\,#1}$</p>
+<h3 style="font-weight: 400;">Statement (i) of Lemma 3.1</h3>
+<p>The problem was reported by Joris Buloron.</p>
+<p>The statement claims that $$N_G(H)\lambda_H=C_{{\rm Sym}[G:H]}(G\varrho_H).$$</p>
+<p>The statement is true, but the proof has an error.</p>
+<p>The proof of the containment $N_G(H)\lambda_H\leq C_{\sym[G:H]}(G\varrho_H)$ is correct. We only show here that $C_{\sym[G:H]}(G\varrho_H)\leq N_G(H)\lambda_H$.</p>
+<p>Let $c\in C_{\sym[G:H]}(G\varrho_H)$ and define $g_0\in G$ by $Hc = Hg_0^{-1}$. Note, for $g\in G$, that $$(Hg)c = H(g \varrho_H)c = Hc (g \varrho_H) = Hg_0^{-1} (g \varrho_H) = Hg_0^{-1}g.$$  Hence $(Hg)c = Hg_0^{-1}g$ holds for each $g\in G$. Thus the inverse $c^{-1}$ maps $H g_0^{-1}g$ to $Hg$ for all $g$. Setting $x = g_0^{-1}g$, we obtain that $c^{-1}$ maps $Hx$ to $Hg_0 x$ for all $x \in G$. If $x=1$, then this gives that $H c^{-1} = Hg_0$.</p>
+<p>We claim that $H^{g_0}\leq H$. Let $h\in H$. Then $c(h\varrho_H)=(h\varrho_H) c$, and so $$Hg_0^{-1}h=Hc(h\varrho_H)=H(h\varrho_H)c=Hhc=Hc=Hg_0^{-1}.$$ That is, $Hg_0^{-1}hg_0=H$, and hence $g_0^{-1}hg_0\in H$ holds for all $h\in H$. <em>Here we concluded erroneously that this implies that $g_0\in N_G(H)$, but this only means that $H^{g_0}\leq H$. To claim that $g_0\in N_G(H)$, we need to show also that $H\leq H^{g_0}$; that is, $H^{g_0^{-1}}\leq H$. </em>To correct the proof note that $c\in C_{\sym[G:H]}(G\varrho_H)$ implies that  $c^{-1}\in C_{\sym[G:H]}(G\varrho_H)$ and $Hc^{-1}=Hg_0$. Applying the argument above for $c^{-1}$, we obtain that $H^{g_0^{-1}} \leq H$. Hence $g_0\in N_G(H)$.</p>
+<p>On page line 4 of page 47, we should have written $H(h \lambda_H) = h^{-1}H$ instead of $Hh^{-1}$.</p>
 			</div><!-- .entry-content -->
 	<footer class="entry-footer">
 			</footer><!-- .entry-footer -->
