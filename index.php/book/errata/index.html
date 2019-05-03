@@ -79,7 +79,34 @@ MathJax.Hub.Config({
 	<header class="entry-header">
 		<h1 class="entry-title">Errata</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<p>$\newcommand{\sym}[1]{{\rm Sym}\,#1}$</p>
+		<p>$\newcommand{\sym}[1]{{\rm Sym}\,#1}$<br />
+$\newcommand{\fix}[2]{{\rm Fix}_{#1}(#2)}$</p>
+<h3>Lemma 2.19</h3>
+<p>The problem was reported by Joris Buloron.</p>
+<p>Unfortunately, there is an error in the proof of the Lemma, and so the assertion of the lemma may not be true for certain permutation groups. The correct version of the lemma is the following.</p>
+<p><strong>Lemma 2.19. </strong>If $G$ is transitive on $\Omega$, $\omega\in\Omega$, and $N$ is a normal subgroup of $G$, then $G_\omega\leq N_G(N_\omega)$ and $\omega N_G(N_\omega)\subseteq\fix\Omega{N_\omega}$. If $N_\omega$ has no infinite descending chain<br />
+\begin{equation}\label{eq:chain}<br />
+N_\omega &gt; N_{\omega_1}&gt; N_{\omega_2} &gt; \cdots<br />
+\end{equation}<br />
+of stabilisers (with $\omega,\omega_i\in\Omega$ for all $i\geq 1)$, then $\omega N_G(N_\omega)=\mbox{Fix}_\Omega(N_\omega)$. In this case, $|\fix\Omega{N_\omega}|=|N_G(N_\omega):G_\omega|$ and $\fix\Omega{N_\omega}$ is a block for $G$.</p>
+<p><strong>Proof. </strong>Since $N_\omega=N\cap G_\omega$ and $N$ is normal in $G$, it follows that $N_\omega$ is normal in $G_\omega$, and so $G_\omega\leq N_G (N_\omega)$. The claim that $\omega N_G(N_\omega)\subseteq\fix\Omega{N_\omega}$ can be proved following the argument in the book.</p>
+<p>Unfortunately, the proof that $\fix\Omega{N_\omega}\subseteq \omega N_G(N_\omega)$ is incorrect. Let us review our argument. If $\omega_1\in\fix\Omega{N_\omega}$, then there is some $g\in G$ such that $\omega_1=\omega g$. Furthermore, we have, for all $n\in N_\omega$, that $\omega gn=\omega n$, and, as $N$ is normal in $G$, $gng^{-1}\in G_\omega\cap N=N_\omega$. As this holds for all $n\in N_\omega$, this implies that $g N_\omega g^{-1}\leq N_\omega$ (but it does not imply, as we claimed, that $g N_\omega g^{-1}=N_\omega$).</p>
+<p>Assume that the proper containment $gN_\omega g^{-1}&lt; N_\omega $ holds. Then we obtain that<br />
+$$<br />
+g^2 N_\omega g^{-2}=g(gN_\omega g^{-1})g^{-1}&lt;gN_\omega g^{-1}&lt; N_\omega.<br />
+$$<br />
+Calculating similarly the conjugate $g^k N_\omega g^{-k}$ for $k\geq 1$, we obtain the infinite descending chain of subgroups<br />
+$$<br />
+N_\omega&gt; gN_\omega g^{-1}&gt; g^2 N_\omega g^{-k}&gt;\cdots.<br />
+$$<br />
+Since $g^k N_\omega g^{-k}=N_{\omega_k}$ where $\omega_k=\omega g^{-k}$, we obtain the chain of stabilisers as in \ref{eq:chain}.<br />
+Assuming that no such chain exists,  the rest of the assertions of the lemma can be verified as presented in the book. $\Box$</p>
+<p>Note that the condition that $N_\omega$ has no infinite chain of stabilisers is trivially satisfied if, for instance, $N$ (or $G$) is a finite group.</p>
+<p>This error changes Corollary 2.21 as follows.</p>
+<p><strong>Corollary 2.21.</strong> Let $G$ be a group acting primitively on $\Omega$ and let $N$ be a normal subgroup of $G$ which is not contained in the kernel of the action. Then $N$ is transitive. Furthermore, if $N_\omega$ has no infinite chain of stabilisers as in \eqref{eq:chain}, then either $N$ induces a regular permutation group on $\Omega$ or $\fix \Omega{N_\omega}=\{\omega\}$ for each $\omega\in\Omega$. In particular, every non-trivial normal subgroup of a primitive permutation group is transitive.</p>
+<p>Also, in Theorem 3.2, statement (ii) will need to be changed:</p>
+<p><strong>Theorem 3.2(ii).</strong> $\omega C_{\sym\Omega}(G)=\omega N_G(G_\omega)\subseteq \fix\Omega{G_\omega}$</p>
+<p>The proof of parts (i)-(iii) of Theorem 3.2 can be done as in the book. However, in the proof of part (3), more care need to be taken. Assume that $C_{\sym\Omega}$ is transitive. Then, $\omega C_{\sym\Omega}=\Omega$, and hence part (ii) implies that $\fix\Omega {G_\omega}=\Omega$. That is $G$ is regular. Suppose now that $G$ is regular. Then $G_\omega=1$, and so there is no infinite descending chain of subgroups in $G_\omega$. By Lemma 2.19, this implies that $\fix\Omega{G_\omega}=\omega N_G(G_\omega)=\omega C_{\sym\Omega}(G)$. Since $G$ is regular, $\fix\Omega{G_\omega}=\Omega$, and hence $C_{\sym\Omega}(G)$ is transitive.</p>
 <h3 style="font-weight: 400;">Statement (i) of Lemma 3.1</h3>
 <p>The problem was reported by Joris Buloron.</p>
 <p>The statement claims that $$N_G(H)\lambda_H=C_{{\rm Sym}[G:H]}(G\varrho_H).$$</p>
