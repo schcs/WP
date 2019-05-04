@@ -6,7 +6,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 	
-<title>Notes and corrections for the cartesian decompositions book &#8211; Csaba Schneider</title>
+<title>Lemma 3.1 &#8211; Csaba Schneider</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
@@ -38,9 +38,9 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.9.10" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/book/errata/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=74' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fbook%2Ferrata%2F" />
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/book/errata/lemma-3-1/" />
+<link rel='shortlink' href='https://schcs.github.io/WP/?p=118' />
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fbook%2Ferrata%2Flemma-3-1%2F" />
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
@@ -55,7 +55,7 @@ MathJax.Hub.Config({
 </script>
 </head>
 
-<body class="page-template-default page page-id-74 page-parent page-child parent-pageid-71 no-sidebar">
+<body class="page-template-default page page-id-118 page-child parent-pageid-74 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -81,14 +81,20 @@ MathJax.Hub.Config({
 
 			
 				
-<article id="post-74" class="post-74 page type-page status-publish hentry">
+<article id="post-118" class="post-118 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Notes and corrections for the cartesian decompositions book</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Lemma 3.1</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<ul>
-<li><a href="https://schcs.github.io/WP/index.php/book/errata/lemma-2-19/">Lemma 2.19</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/book/errata/lemma-3-1/">Lemma 3.1</a></li>
-</ul>
+		<p>$\newcommand{\sym}[1]{{\rm Sym}\,#1}$</p>
+<h3 style="font-weight: 400;">Statement (i) of Lemma 3.1</h3>
+<p>The problem was reported by Joris Buloron.</p>
+<p>The statement claims that $$N_G(H)\lambda_H=C_{{\rm Sym}[G:H]}(G\varrho_H).$$</p>
+<p>The statement is true, but the proof is incomplete for infinite groups.</p>
+<p>The proof of the containment $N_G(H)\lambda_H\leq C_{\sym[G:H]}(G\varrho_H)$ is correct. We only show here that $C_{\sym[G:H]}(G\varrho_H)\leq N_G(H)\lambda_H$.</p>
+<p>Let $c\in C_{\sym[G:H]}(G\varrho_H)$ and define $g_0\in G$ by $Hc = Hg_0^{-1}$. Note, for $g\in G$, that $$(Hg)c = H(g \varrho_H)c = Hc (g \varrho_H) = Hg_0^{-1} (g \varrho_H) = Hg_0^{-1}g.$$  Hence $(Hg)c = Hg_0^{-1}g$ holds for each $g\in G$. Thus the inverse $c^{-1}$ maps $H g_0^{-1}g$ to $Hg$ for all $g$. Setting $x = g_0^{-1}g$, we obtain that $c^{-1}$ maps $Hx$ to $Hg_0 x$ for all $x \in G$. If $x=1$, then this gives that $H c^{-1} = Hg_0$.</p>
+<p>We claim that $H^{g_0}\leq H$. Let $h\in H$. Then $c(h\varrho_H)=(h\varrho_H) c$, and so $$Hg_0^{-1}h=Hc(h\varrho_H)=H(h\varrho_H)c=Hhc=Hc=Hg_0^{-1}.$$ That is, $Hg_0^{-1}hg_0=H$, and hence $g_0^{-1}hg_0\in H$ holds for all $h\in H$.</p>
+<p>Our conclusion that $g_0 \in N_G(H)$ is not necessarily valid when $H$ is infinite. Our proof to this point showed only that $H^{g_0}\leq H$. We need also to show the reverse inclusion, or equivalently, we need to show that  $H^{g_0^{-1}}\leq H$.<em> </em>To complete the proof note that $c\in C_{\sym[G:H]}(G\varrho_H)$ implies that  $c^{-1}\in C_{\sym[G:H]}(G\varrho_H)$ and $Hc^{-1}=Hg_0$. Applying the argument above for $c^{-1}$, we obtain that $H^{g_0^{-1}} \leq H$. Hence $g_0\in N_G(H)$.</p>
+<p>On page line 4 of page 47, we should have written $H(h \lambda_H) = h^{-1}H$ instead of $Hh^{-1}$.</p>
 			</div><!-- .entry-content -->
 	<footer class="entry-footer">
 			</footer><!-- .entry-footer -->
