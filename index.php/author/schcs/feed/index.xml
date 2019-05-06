@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 06 May 2019 14:08:22 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 06 May 2019 15:26:18 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -133,7 +133,7 @@ $$<br />
 $$</p>
 <p><strong>Demonstração.</strong> Seja<br />
 $$<br />
-x_n=\sum_{i,j=0}^n a_ib_j.<br />
+x_n=\sum_{i=0}^n(a_ib_n)+\sum_{j=0}^n (a_nb_j).<br />
 $$<br />
 Afirmamos que a série $\sum x_n$ é absolutamente convergente. De fato,<br />
 $$<br />
