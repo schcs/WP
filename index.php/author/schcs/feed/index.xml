@@ -12,12 +12,151 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Sat, 04 May 2019 13:12:46 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 06 May 2019 14:08:22 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.10</generator>
 	<item>
+		<title>Exercícios (Séries)</title>
+		<link>https://schcs.github.io/WP/index.php/2019/05/06/exercicios-series/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/05/06/exercicios-series/#respond</comments>
+		<pubDate>Mon, 06 May 2019 13:39:00 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=160</guid>
+		<description><![CDATA[$\newcommand{\N}{\mathbb N}$ $\newcommand{\Z}{\mathbb Z}$ $\newcommand{\Q}{\mathbb Q}$ $\newcommand{\R}{\mathbb R}$ 1. Sejam $\sum a_n$ e $\sum b_n$ séries convergentes tais que $\sum a_n=a$ e $\sum b_n=b$. Demonstre as seguintes: $\sum(a_n + b_n)=a+b$; $\sum(\alpha a_n)=\alpha a$; $\sum (a_nb_n)$ não é necessariamente igual a $ab$. 2. Define para $x\in\R$ as seguintes funções. $e(x)=\sum_{n\geq 0}x^n/n!$; $s(x)=\sum_{n\geq 0}(-1)^n x^{2n+1}/(2n+1)!$; $c(x)=\sum_{n\geq 0}(-1)^n &#8230; <a href="https://schcs.github.io/WP/index.php/2019/05/06/exercicios-series/" class="more-link">Continue reading <span class="screen-reader-text">Exercícios (Séries)</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}$ $\newcommand{\Z}{\mathbb Z}$ $\newcommand{\Q}{\mathbb Q}$ $\newcommand{\R}{\mathbb R}$</p>
+<p>1. Sejam $\sum a_n$ e $\sum b_n$ séries convergentes tais que $\sum a_n=a$ e $\sum b_n=b$. Demonstre as seguintes:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>$\sum(a_n + b_n)=a+b$;</li>
+<li>$\sum(\alpha a_n)=\alpha a$;</li>
+<li>$\sum (a_nb_n)$ não é necessariamente igual a $ab$.</li>
+</ol>
+<p>2. Define para $x\in\R$ as seguintes funções.</p>
+<ol style="list-style-type: lower-alpha;">
+<li>$e(x)=\sum_{n\geq 0}x^n/n!$;</li>
+<li>$s(x)=\sum_{n\geq 0}(-1)^n x^{2n+1}/(2n+1)!$;</li>
+<li>$c(x)=\sum_{n\geq 0}(-1)^n x^{2n}/(2n)!$;</li>
+<li>$sh(x)=\sum_{n\geq 0}x^{2n+1}/(2n+1)!$;</li>
+<li>$ch(x)=\sum_{n\geq 0}x^{2n}/(2n)!$.</li>
+</ol>
+<p>Demonstre que essas funções são bem definidas no sentido que as séries são convergentes para todo $x\in\R$. Demonstre que as séries são absolutamente convergentes.</p>
+<p>3. Decide quais das seguintes séries são absolutamente convergentes, condicionalmente convergentes, ou divergentes.</p>
+<ol style="list-style-type: lower-alpha;">
+<li>$\sum_{n\geq 1} 1/n$;</li>
+<li>$\sum_{n\geq 1} 1/n^2$;</li>
+<li>$\sum_{n\geq 4} 1/(n-3)$;</li>
+<li>$\sum_{n\geq 1} 1/(n^2+2)$;</li>
+<li>$\sum_{n\geq 1} 1/3^n$;</li>
+<li>$\sum_{n\geq 1} 1/(3^n+1)$;</li>
+<li>$\sum_{n\geq 1} 1/\ln n$;</li>
+<li>$\sum_{n\geq 1} n^2/(n^4+2)$;</li>
+<li>$\sum_{n\geq 1} n\cdot\mbox{sen}^2\,n/(n^3+1)$;</li>
+<li>$\sum_{n\geq 1} 1/(n!)$;</li>
+<li>$\sum_{n\geq 1} 1/((2n)!)$;</li>
+<li>$\sum_{n\geq 1} n!/((2n)!)$;</li>
+<li>$\sum_{n\geq 1} (2n)!/(n!(n+1)!)$;</li>
+<li>$\sum_{n\geq 1} 1/(r^n n!)$ com $r&gt;1$;</li>
+<li>$\sum_{n\geq 1} (-1)^n/(2^n)$;</li>
+<li>$\sum_{n\geq 1} (-1)^n/(2n)$;</li>
+<li>$\sum_{n\geq 1} (-1)^n(1+1/n^2)$;</li>
+<li>$\sum_{n\geq 1} (-1)^n/(n^4+7)$.</li>
+</ol>
+<p>4. Seja $\sum_{n\geq 0}a_n$ uma série condicionalmente convergente e defina $$ p_n=\left\{\begin{array}{ll} a_n &amp; \mbox{se $a_n\geq 0$}\\ 0 &amp; \mbox{se $a_n&lt;0$}\end{array}\right. $$ e $$ q_n=\left\{\begin{array}{ll} -a_n &amp; \mbox{se $a_n&lt; 0$}\\ 0 &amp; \mbox{se $a_n\geq 0$}\end{array}\right. $$ Demonstre que as séries $\sum p_n$ e $\sum q_n$ são divergentes.</p>
+<p>5. Seja $\sum_{n\geq 0}a_n$ uma série condicionalmente convergente e seja $c\in\{\infty,-\infty\}$. Esboçe uma reordenação $\sum a_{\varphi(n)}$ da série $\sum a_n$ tal que $\sum a_{\varphi(n)}=c$.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/05/06/exercicios-series/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Comutatividade e produto de séries</title>
+		<link>https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/#respond</comments>
+		<pubDate>Mon, 06 May 2019 12:52:17 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=138</guid>
+		<description><![CDATA[$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}$Seja $\sum a_n$ uma série. A série $\sum b_n$ é chamada de uma reordenação de $\sum a_n$. Se $\pi:\N\rightarrow\N$ é uma bijeção e $b_n=a_{\pi(n)}$ para todo $n\in\N$, então $\sum b_n$ é uma outra série. Pode-se perguntar se $\sum b_n$ é convergente ou divergente. Uma série $\sum a_n$ chama-se comutativamente convergente se, para toda bijeção &#8230; <a href="https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/" class="more-link">Continue reading <span class="screen-reader-text">Comutatividade e produto de séries</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}$Seja $\sum a_n$ uma série. A série $\sum b_n$ é chamada de uma <em>reordenação</em> de $\sum a_n$. Se $\pi:\N\rightarrow\N$ é uma bijeção e $b_n=a_{\pi(n)}$ para todo $n\in\N$, então $\sum b_n$ é uma outra série. Pode-se perguntar se $\sum b_n$ é convergente ou divergente.</p>
+<p>Uma série $\sum a_n$ chama-se <em>comutativamente convergente</em> se, para toda bijeção $\pi:\N\rightarrow\N$, a série $\sum a_{\pi(n)}$ é convergente e o limite $\sum a_{\pi(n)}$ é igual ao limite de $\sum a_n$.</p>
+<p>Seja $\sum a_n$ uma série. Defina<br />
+$$<br />
+p_n=\left\{\begin{array}{ll} a_n &amp; \mbox{se $a_n\geq 0$};\\<br />
+0 &amp; \mbox{no caso contrário.}\end{array}\right.$$<br />
+Similarmente, seja<br />
+$$<br />
+q_n=\left\{\begin{array}{ll} -a_n &amp; \mbox{se $a_n&lt;0$};\\<br />
+0 &amp; \mbox{no caso contrário.}\end{array}\right.<br />
+$$<br />
+Tem-se que $a_n=p_n-q_n$ e $|a_n|=p_n+q_n$ e pode-se considerar $\sum p_n$ e $\sum q_n$ como séries. Estas séries são chamadas da<em> parte positiva</em> e da <em>parte negativa</em> de $\sum a_n$.</p>
+<p><strong>Lemma. </strong>Seja $\sum a_n$ uma sequência convergente. Então $\sum a_n$ é absolutamente convergente se e somente se $\sum p_n$ e $\sum q_n$ são convergentes.  Neste caso $\sum p_n+\sum q_n=\sum a_n$.</p>
+<p><strong>Demonstração. </strong>Assuma que $\sum a_n$ é absolutamente convergente. Então a sequência $s_n=|a_0|+\cdots+|a_n|$ é limitada. Por outro lado<br />
+$$<br />
+\sum_{i=0}^n (p_i+q_i)=\sum_{i=0}^n |a_i|.<br />
+$$<br />
+Portanto a sequência $(\sum_{i=0}^n (p_i+q_i))_n$ é limitada. Isto implica que as sequências $\left(\sum_{i=0}^n p_i\right)_n$ e $\left(\sum_{i=0}^n q_i\right)_n$ são também limitadas, e as séries $\sum p_n$ e $\sum q_n$ são convergentes.</p>
+<p>Deixamos ao leitor verificar que se $\sum a_n$ é condicionalmente convergente então ambas $\sum p_n$ e $\sum q_n$ são divergentes.</p>
+<p>Finalmente, verifiquemos que $\sum a_n=\sum p_n-\sum q_n$ quando $a_n$ é absolutamente convergente. Note que<br />
+\begin{eqnarray*}<br />
+\sum p_n-\sum q_n&amp;=&amp;\lim \sum_{i=0}^n p_i-\lim \sum_{i=0}^n q_i\\&amp;=&amp;\lim \left(\sum_{i=0}^n p_i-\sum_{i=0}^n q_i\right)\\&amp;=&amp;\lim\sum_{i=0}^n(p_i-q_i)=\lim \sum_{i=0}^n a_i=\sum a_n.<br />
+\end{eqnarray*}<br />
+$\Box$</p>
+<p><strong>Teorema. </strong> Se $\sum a_n$ é absolutamente convergente, então $\sum a_n$ é comutativamente convergente.</p>
+<p><strong>Demonstração. </strong>Assuma que $\sum a_n$ é absolutamente convergente. Considere primeiro o caso quendo $a_n\geq 0$. Seja $\pi:\N\rightarrow\N$ uma bijeção e seja $b_n=a_{\pi(n)}$. Afirmamos que $\sum a_n=\sum b_n$. Defina $s_n=a_0+\cdots+a_n$ e $t_n=b_0+\cdots +b_n$. Seja $n\geq 1$ e seja $m$ o maior entre $\pi(1),\ldots,\pi(n)$. Logo $\{\pi(1),\ldots,\pi(n)\}\subseteq \{1,\ldots,m\}$. Portanto<br />
+$$<br />
+t_n=\sum_{i=0}^n b_i=\sum_{i=0}^n a_{\pi(i)}\leq \sum_{i=0}^m a_i\leq s_m.<br />
+$$<br />
+Como $s_n$ é uma sequência limitada, $t_n$ também é limitada, portanto $t_n$ é convergente. Isto implica que $\sum b_n$ é convergente e que $\sum b_n\leq \sum a_n$.</p>
+<p>Note que o mesmo argumento implica que para todo $n\in\N$ existe um $r\in\N$ tal que $s_n\leq t_r$. Logo $\sum a_n\leq \sum b_n$ e $\sum a_n=\sum b_n$.</p>
+<p>Considere agora uma série geral $\sum a_n$ e assuma que ela é absolutamente convergente. Seja $\sum p_n$ e $\sum q_n$ a parte positiva e a parte negativa. Temos pela discussão acima que $\sum p_n$ e $\sum q_n$ são séries convergentes e $\sum a_n=\sum p_n-\sum q_n$. Uma reordenação $\sum a_{\pi(n)}$ de $\sum a_n$ induz uma reordenação $\sum p_{\pi(n)}$ de $\sum p_n$ e uma outra $\sum q_{\pi(n)}$ de $\sum q_n$. Pelo parágrafo anterior<br />
+$$<br />
+\sum a_{\pi(n)}=\sum p_{\pi(n)}-\sum q_{\pi(n)}=\sum p_n-\sum q_n=\sum a_n.<br />
+$$<br />
+$\Box$</p>
+<p>A recíproca desta teorema está também válida.</p>
+<p><strong>Teorema (Riemann)</strong>. Seja $\sum a_n$ uma série condicionalmente convergente e seja $c\in\R\cup\{\infty,-\infty\}$. Então existe uma reordenação $\sum a_{\pi(n)}$ tal que $\sum a_{\pi(n)}=c$.</p>
+<p><strong>Demonstração. </strong>Veja no livro de Elon.</p>
+<p>Dadas duas séries $\sum_{n\geq 0} a_n$ e $\sum_{n\geq 0} b_n$ definimos o <em>produto</em> $(\sum a_n)(\sum b_n)$ como a série $\sum c_n$ cujos termos são<br />
+$$<br />
+c_n=a_0b_n+a_1b_{n-1}+\cdots+a_{n-1}b_1+a_nb_0=\sum_{i=0}^na_ib_{n-i}.<br />
+$$</p>
+<p><strong>Exercício. </strong>Sejam $x,\ y\in\R$ e considere as séries $\sum_{n\geq 0} x^n/n!$ e $\sum_{n\geq 0} y^n/n!$. Então<br />
+$$<br />
+\left(\sum_{n\geq 0}\frac {x^n}{n!}\right)\left(\sum_{n\geq 0}\frac {y^n}{n!}\right)=\sum_{n\geq 0}\frac{(x+y)^n}{n!}.<br />
+$$</p>
+<p><strong>Teorema. </strong>Sejam $\sum a_n$ e $\sum b_n$ duas séries absolutamente convergentes e assuma que $\sum a_n=a$ e $\sum b_n=b$. Então $\left(\sum a_n\right)\left(\sum b_n\right)$ é absolutamente convergente e<br />
+$$<br />
+\left(\sum a_n\right)\left(\sum b_n\right)=ab.<br />
+$$</p>
+<p><strong>Demonstração.</strong> Seja<br />
+$$<br />
+x_n=\sum_{i,j=0}^n a_ib_j.<br />
+$$<br />
+Afirmamos que a série $\sum x_n$ é absolutamente convergente. De fato,<br />
+$$<br />
+\sum_{i=0}^n |x_i|\leq \left(\sum_{i=0}^n |a_i|\right)\left(\sum_{j=0}^n |b_j|\right).<br />
+$$<br />
+Como $\sum a_n$ e $\sum b_n$ são absolutamente convergentes, as sequências $\sum_{i\leq n}|a_i|$ e $\sum_{j\leq n}|b_j|$ são limitadas, e $\sum_{i\leq n} |x_i|$ é também limitada. Portanto $\sum x_n$ é absolutamente convergente.</p>
+<p>Note que<br />
+$$<br />
+\sum_{i=0}^n x_i=\left(\sum_{i=0}^n a_i\right)\left(\sum_{j=0}^n b_j\right).<br />
+$$<br />
+Portanto,<br />
+$$<br />
+\lim_{n\rightarrow\infty} \sum_{i=0}^n x_i= \left(\lim_{n\rightarrow\infty}\sum_{i=0}^n a_i\right)\left(\lim_{n\rightarrow\infty}\sum_{j=0}^n b_j\right)=ab.<br />
+$$<br />
+Logo $\sum x_n=ab$. Seja $c_n$ o termo geral do produto $\left(\sum a_n\right)\left(\sum b_n\right)$ e  observe que a série  $\sum c_n$ pode ser obtida de $\sum x_n$ por uma reordenação dos termos. Como $\sum x_n$ é absolutamente convergente, $\sum c_n$ é absolutamente convergente e $\sum c_n=\sum x_n=ab$.</p>
+<p>O estudo de séries trata de somas infinitas. Nós definimos o valor da soma infinita pelo limite das somas parciais, mas esta não é a única definição sensível; veja por exemplo este episódio do <a href="https://www.youtube.com/channel/UC1_uAIS3r8Vu6JjXWvastJg">canal Mathologer.</a></p>
+<p><iframe src="https://www.youtube.com/embed/jcKRGpMiVTw" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Testes de convergência para séries</title>
 		<link>https://schcs.github.io/WP/index.php/2019/05/03/teste-da-raiz-teste-da-rz/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/05/03/teste-da-raiz-teste-da-rz/#respond</comments>
@@ -26,36 +165,36 @@
 				<category><![CDATA[Uncategorized]]></category>
 
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=84</guid>
-		<description><![CDATA[$\newcommand{\N}{\mathbb N}$ Teorema (Teste da raiz). Se existir $0\leq c&#60;1$ e $n_0\in\N$ tal que $\sqrt[n]{&#124;a_n&#124;}\leq c$ para todo $n\geq n_0$, então a série $\sum a_n$ é absolutamente convergente. Em particular, se $\limsup \sqrt[n]{&#124;a_n&#124;}&#60;1$, então a série é abolutamente convergente. Demonstração. As condições do teorema implicam que $&#124;a_n&#124;\leq c^n$ para todo $n\geq n_0$. Como $0\leq c&#60;0$, &#8230; <a href="https://schcs.github.io/WP/index.php/2019/05/03/teste-da-raiz-teste-da-rz/" class="more-link">Continue reading <span class="screen-reader-text">Testes de convergência para séries</span></a>]]></description>
+		<description><![CDATA[$\newcommand{\N}{\mathbb N}$ Teorema (Teste da raiz). Se existirem $0\leq c&#60;1$ e $n_0\in\N$ tal que $\sqrt[n]{&#124;a_n&#124;}\leq c$ para todo $n\geq n_0$, então a série $\sum a_n$ é absolutamente convergente. Em particular, se $\limsup \sqrt[n]{&#124;a_n&#124;}&#60;1$, então a série é absolutamente convergente. Demonstração. As condições do teorema implicam que $&#124;a_n&#124;\leq c^n$ para todo $n\geq n_0$. Como $0\leq c&#60;0$, &#8230; <a href="https://schcs.github.io/WP/index.php/2019/05/03/teste-da-raiz-teste-da-rz/" class="more-link">Continue reading <span class="screen-reader-text">Testes de convergência para séries</span></a>]]></description>
 				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}$</p>
-<p><strong>Teorema (Teste da raiz).</strong> Se existir $0\leq c&lt;1$ e $n_0\in\N$ tal que $\sqrt[n]{|a_n|}\leq c$ para todo $n\geq n_0$, então a série $\sum a_n$ é absolutamente convergente. Em particular, se $\limsup \sqrt[n]{|a_n|}&lt;1$, então a série é abolutamente convergente.</p>
-<p><strong>Demonstração.</strong> As condições do teorema implicam que $|a_n|\leq c^n$ para todo $n\geq n_0$. Como $0\leq c&lt;0$, temos que $\sum c^n$ é convergente. Pelo teorema da comparação  $\sum |a_n|$ é convergente, logo $\sum a_n$ é absolutamente convergente.</p>
-<p>Assuma que $a:=\limsup \sqrt[n]{|a_n|}&lt;1$. Seja $\varepsilon=(1-a)/2$. Então $a+\varepsilon&lt;1$. Por um exercício anterior, existe $n_0\in\N$ tal que $\sqrt[n]{|a_n|}\leq a+\varepsilon$. Pelo parágrafo anterior, $\sum a_n$ é absolutamente convergente.</p>
+<p><strong>Teorema (Teste da raiz).</strong> Se existirem $0\leq c&lt;1$ e $n_0\in\N$ tal que $\sqrt[n]{|a_n|}\leq c$ para todo $n\geq n_0$, então a série $\sum a_n$ é absolutamente convergente. Em particular, se $\limsup \sqrt[n]{|a_n|}&lt;1$, então a série é absolutamente convergente.</p>
+<p><strong>Demonstração.</strong> As condições do teorema implicam que $|a_n|\leq c^n$ para todo $n\geq n_0$. Como $0\leq c&lt;0$, temos que $\sum c^n$ é convergente. Pelo teorema da comparação,  $\sum |a_n|$ é convergente, logo $\sum a_n$ é absolutamente convergente.</p>
+<p>Assuma que $a:=\limsup \sqrt[n]{|a_n|}&lt;1$. Seja $\varepsilon=(1-a)/2$. Então $a+\varepsilon&lt;1$. Por um exercício anterior, existe $n_0\in\N$ tal que $\sqrt[n]{|a_n|}\leq a+\varepsilon$. Pelo parágrafo anterior, $\sum a_n$ é absolutamente convergente.$\Box$</p>
 <p>Note que as condições do teorema anterior são válidas quando existe $\lim_{n\rightarrow\infty} \sqrt[n]{|a_n|}$ e este limite é menor que um.</p>
 <p><strong>Exercício.</strong> Demonstre que se existem infinitos índices $n$ tal que $\sqrt[n]{|a_n|}\geq 1$, então a série $\sum a_n$ diverge.</p>
-<p>No caso $\lim\sqrt{|a_n|}=1$ não pode-se decidir usando o teste da raiz se a série diverge ou converge. Por exemplo, a série $\sum(1/n)$ diverge, enquanto $\sum(1/n^2)$ converge. Observe que<br />
+<p>No caso $\lim\sqrt{|a_n|}=1$ não pode-se decidir usando o teste da raiz se a série diverge ou converge. Por exemplo, a série $\sum(1/n)$ diverge, enquanto $\sum(1/n^2)$ converge. Por outro lado,<br />
 $$<br />
 \lim_{n\rightarrow\infty}\sqrt[n]{(1/n)}=\lim_{n\rightarrow\infty}\sqrt[n]{(1/n^2)}=1.<br />
 $$</p>
 <p><strong>Teorema (Teste da razão).</strong> Assuma que $\sum a_n$ é uma série com $a_n\neq 0$. Assuma que existe um $n_0\in \N$ e $0&lt;c&lt;1$ tal que $|a_{n+1}|/|a_n|\leq c$ para todo $n\geq n_0$. Então a série $\sum a_n$ converge absolutamente. Em particular, se $\limsup |a_{n+1}|/|a_n|&lt;1$, então a série $\sum a_n$ é absolutamente convergente.</p>
 <p><strong>Demonstração. </strong>Se $n\geq n_0$, temos que<br />
 $$<br />
-\frac{|a_{n_0+1}|}{|a_{n_0}|}\leq c,\ \frac{|a_{n_0+2}|}{|a_{n_0+1}|}\leq c,\ldots<br />
+\frac{|a_{n_0+1}|}{|a_{n_0}|}\leq c,\ \frac{|a_{n_0+2}|}{|a_{n_0+1}|}\leq c,\ldots,\frac{|a_{n}|}{|a_{n-1}|}\leq c,<br />
 \frac{|a_{n+1}|}{|a_{n}|}\leq c.<br />
 $$<br />
 Multiplicando estas desigualdades, obtemos que<br />
 $$<br />
-c^{n-n_0}\geq \frac{|a_{n_0+1}|}{|a_{n_0}|}\frac{|a_{n_0+2}|}{|a_{n_0+1}|}\cdots \frac{|a_{n+1}|}{|a_{n}|}=\frac{|a_{n+1}|}{|a_{n_0}|}.<br />
+\frac{|a_{n+1}|}{|a_{n_0}|}=\frac{|a_{n_0+1}|}{|a_{n_0}|}\frac{|a_{n_0+2}|}{|a_{n_0+1}|}\cdots \frac{|a_{n}|}{|a_{n-1}|} \frac{|a_{n+1}|}{|a_{n}|}\leq c^{n-n_0+1}<br />
 $$<br />
 Portanto,<br />
 $$<br />
-|a_{n+1}|\leq c^{n-n_0}|a_{n_0}|=c^n(|a_{n_0}|/c^{n_0}).<br />
+|a_{n+1}|\leq c^{n-n_0+1}|a_{n_0}|=c^{n+1}(|a_{n_0}|/c^{n_0}).<br />
 $$<br />
 Como $0&lt;c&lt;1$, segue da Teste da Comparação que $\sum a_n$ é absolutamente convergente.</p>
-<p>A afirmação sobre o $\limsup$ pode ser verificado como no caso do teste da raiz.</p>
-<p>Como no caso do teste da raiz, neste caso também podemos afirmar que se $\lim |a_{n+1}|/|a_n|&lt;1$, então a série é convergente. Se $\lim |a_{n+1}|/|a_n|=1$, então a série pode ser convergente ou divergente; considere as séries $\sum (1/n)$ e $\sum (1/n^2)$.</p>
+<p>A afirmação sobre o $\limsup$ pode ser verificada como no caso do teste da raiz.</p>
+<p>Como no caso do teste da raiz, podemos também afirmar que se $\lim |a_{n+1}|/|a_n|&lt;1$, então a série é convergente. Se $\lim |a_{n+1}|/|a_n|=1$, então a série pode ser convergente ou divergente; considere as séries $\sum (1/n)$ e $\sum (1/n^2)$.</p>
 <p><strong>Exercício.</strong> Assuma que existem infinitos índices $n$ tal que $|a_{n+1}|/|a_n|\geq 1$. Demonstre que a série $\sum a_n$ é divergente.</p>
-<p><strong>Lema.</strong> Seja $x_n$ uma sequência limitada de números reais positivos. Então<br />
+<p><strong>Lema.</strong> Seja $(a_n)$ uma sequência limitada de números reais positivos. Então<br />
 $$<br />
 \liminf \frac{a_{n+1}}{a_n}\leq \liminf \sqrt[n]{a_n}\leq \limsup \sqrt[n]{a_n}\leq \limsup \frac{a_{n+1}}{a_n}.<br />
 $$</p>
@@ -64,22 +203,22 @@ $c\leq {a_{n+1}}/{a_n}$ para todo $n\geq n_0$. Logo<br />
 $$<br />
 c\leq \frac{a_{n_0+1}}{a_{n_0}},\ldots, c\leq \frac {a_{n+1}}{a_{n}}.<br />
 $$<br />
-Mutliplicando estas desigualdades, obtemos que $c^{n-n_0}\leq a_{n+1}/a_{n_0}$; ou seja<br />
+Multiplicando estas desigualdades, obtemos que $c^{n-n_0+1}\leq a_{n+1}/a_{n_0}$; ou seja<br />
 $$<br />
-a_{n+1}\geq c^{n-n_0}a_{n_0}=(a_{n_0}/c^{n_0})c^n.<br />
+a_{n+1}\geq c^{n-n_0+1}a_{n_0}=(a_{n_0}/c^{n_0})c^{n+1}.<br />
 $$<br />
-Tomando $n$-ésima raiz e $\liminf$, obtemos que $\liminf\sqrt[n]{a_n}\geq c$, que é uma contradição.</p>
-<p><strong>Teorema (Dirichlet).</strong> Seja $\sum a_n$ uma série tal que as reduzidas $s_n=a_1+\cdots+a_n$ formam uma sequência limitada. Seja $b_n$ uma sequência não crescente de números positivos com $\lim b_n=0$. Então a série $\sum (a_nb_n)$ é convergente.</p>
+Tomando $(n+1)$-ésima raiz e $\liminf$, obtemos que $\liminf\sqrt[n]{a_n}\geq c$, que é uma contradição.</p>
+<p><strong>Teorema (Dirichlet).</strong> Seja $\sum a_n$ uma série tal que as reduzidas $s_n=a_1+\cdots+a_n$ formam uma sequência limitada. Seja $(b_n)$ uma sequência não crescente de números positivos com $\lim b_n=0$. Então a série $\sum (a_nb_n)$ é convergente.</p>
 <p><strong>Demonstração. </strong>Temos que<br />
 \begin{eqnarray*}<br />
-&amp;&amp;a_1b_1+\cdots+a_nb_n\\<br />
+t_n&amp;=&amp;a_1b_1+\cdots+a_nb_n\\<br />
 &amp;=&amp;a_1(b_1-b_2)+(a_1+a_2)(b_2-b_3)\\&amp;+&amp;(a_1+a_2+a_3)(b_3-b_4)+\cdots<br />
 +(a_1+\cdots+a_n)b_n\\<br />
 &amp;=&amp;s_1(b_1-b_2)+s_2(b_2-b_3)+s_3(b_3-b_4)+\cdots +s_nb_n\\<br />
 &amp;=&amp;\sum_{n=2}^n s_{i-1}(b_{i-1}-b_i)+s_nb_n.<br />
 \end{eqnarray*}<br />
-Note que a série $\sum_{n\geq 2}(b_{i-1}-b_i)$ ´é convergente e a sequência $s_n$ é limitada, Portanto segue da testa da comparação que $\sum_{n=2}^n s_{i-1}(b_{i-1}-b_i)$ é convergente. Isto implica que $a_1b_1+\cdots+a_nb_n$ é convergente, e portanto a série $\sum (a_nb_n)$ é convergente.</p>
-<p>O Teorema de Dirichlet implica imediatamente o Teorema de Leibniz.</p>
+Note que a série $\sum_{n\geq 2}(b_{i-1}-b_i)$ ´é convergente e a sequência $s_n$ é limitada, Portanto segue da testa da comparação que $\sum_{n=2}^n s_{i-1}(b_{i-1}-b_i)$ é absolutamente convergente. Isto implica que $a_1b_1+\cdots+a_nb_n$ é convergente. Além disso, como $(s_n)$ é limitada e $b_n\rightarrow 0$, tem-se que $\lim s_nb_n=0$ e portanto a série $\sum (a_nb_n)$ é convergente.</p>
+<p>O Teorema de Dirichlet implica imediatamente o Teorema de Leibniz e o Teorema de Abel.</p>
 <p><strong>Teorema (Leibniz).</strong> Se $(b_n)$ é uma sequência não crescente com $\lim b_n=0$, então a série $\sum (-1)^nb_n$ é convergente.</p>
 <p><strong>Teorema (Abel).</strong> Se $\sum a_n$ é convergente e $(b_n)$ é uma sequência não crescente de números positivos, então $\sum (a_nb_n)$ é convergente.</p>
 ]]></content:encoded>
