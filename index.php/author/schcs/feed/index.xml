@@ -12,12 +12,79 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 06 May 2019 15:26:18 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 08 May 2019 14:16:05 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.10</generator>
 	<item>
+		<title>Topologia da reta: Conjuntos abertos e fechados</title>
+		<link>https://schcs.github.io/WP/index.php/2019/05/08/topologia-da-reta-conjuntos-abertos-e-fechados/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/05/08/topologia-da-reta-conjuntos-abertos-e-fechados/#respond</comments>
+		<pubDate>Wed, 08 May 2019 12:15:18 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=173</guid>
+		<description><![CDATA[$\newcommand{\R}{\mathbb R}\newcommand{\N}{\mathbb N}$Seja $X\subseteq\R$. Um ponto $x\in X$ é dito ponto interior de $X$ se existir um intervalo aberto $(a,b)$ tal que $x\in(a,b)\subseteq X$. Um conjunto $X\subseteq\R$ é dito aberto se todos os seus pontos são interiores. Lemma. As seguintes afirmações são válidas. $\emptyset$ e $\R$ são abertos. Se $X$ e $Y$ são abertos então $X\cap &#8230; <a href="https://schcs.github.io/WP/index.php/2019/05/08/topologia-da-reta-conjuntos-abertos-e-fechados/" class="more-link">Continue reading <span class="screen-reader-text">Topologia da reta: Conjuntos abertos e fechados</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\R}{\mathbb R}\newcommand{\N}{\mathbb N}$Seja $X\subseteq\R$. Um ponto $x\in X$ é dito <em>ponto interior</em> de $X$ se existir um intervalo aberto $(a,b)$ tal que $x\in(a,b)\subseteq X$. Um conjunto $X\subseteq\R$ é dito <em>aberto</em> se todos os seus pontos são interiores.</p>
+<p><strong>Lemma. </strong>As seguintes afirmações são válidas.</p>
+<ol>
+<li>$\emptyset$ e $\R$ são abertos.</li>
+<li>Se $X$ e $Y$ são abertos então $X\cap Y$ é aberto.</li>
+<li>Se $I$ é um conjunto de índices e $X_i$ é um conjunto aberto para todo $i\in I$, então $\bigcup_{i\in I}X_i$ é aberto.</li>
+</ol>
+<p><strong>Demonstração. </strong></p>
+<ol>
+<li>É claro.</li>
+<li>Seja $x\in X\cap Y$. Como $X$ e $Y$ são abertos, existem intervalos abertos $(a_1,b_1)$ e $(a_2,b_2)$ tal que $x\in  (a_1,b_1)$, $x\in(a_2,b_2)$, $(a_1,b_1)\subseteq X$, $(a_2,b_2)\subseteq Y$. Seja $a=\max\{a_1,a_2\}$ e $b=\min\{b_1,b_2\}$. Então $x\in(a,b)$ e $(a,b)\subseteq X\cap Y$. Então $x$ é ponto interior de $X\cap Y$.</li>
+<li>Seja $x\in\bigcup_{i\in I}X_i$. Então existe $i\in I$ tal que $x\in X_i$. Como $X_i$ é aberto, existe um intervalo $(a,b)$ tal que $x\in(a,b)\subseteq X_i$. Portanto $x\in(a,b)\subseteq\bigcup_i X_i$ e $x$ é ponto interior de $\bigcup_i X_i$. $\Box$</li>
+</ol>
+<p><strong>Teorema.</strong> Um conjunto $X$ é aberto se e somente se ele é uma união de intervalos abertos dois a dois disjuntos. A decomposição de um conjunto aberto para união de intervalos abertos dois a dois disjuntos é única.</p>
+<p><strong>Demonstração. </strong>A direção $\Leftarrow$ segue do lema anterior. A outra direção e a unicidade não serão demonstradas; veja no livro do Elon.$\Box$</p>
+<p>Um conjunto $X\subseteq \R$ é dito <em>fechado</em> se $\R\setminus X$ é aberto.</p>
+<p><strong>Lemma.</strong></p>
+<ol>
+<li>$\emptyset$ e $\R$ são fechados.</li>
+<li>Se $X$ e $Y$ são fechados, então $X\cup Y$ é fechado.</li>
+<li>Se $I$ é um conjunto de índices e $X_i$ é um conjunto fechado para todo $i\in I$, então $\bigcap_{i\in I}X_i$ é fechado.</li>
+</ol>
+<p><strong>Demonstração. </strong>Segue do lema anterior.$\Box$</p>
+<p>Seja $X\subseteq \R$. Um ponto $a\in\R$ é dito <em>aderente a $X$</em> se existe uma sequência $(x_n)$ com $x_n\in X$ e $\lim x_n=a$.</p>
+<p><strong>Lema.</strong> Seja $X\subseteq\R$ e $a\in \R$. As seguintes são equivalentes.</p>
+<ol>
+<li>$a$ é aderente a $X$;</li>
+<li>para todo $\varepsilon&gt;0$, $(a-\varepsilon,a+\varepsilon)\cap X\neq \emptyset$.</li>
+</ol>
+<p><strong>Demonstração. </strong>Assuma que $a$ é aderente a $X$ e seja $(x_n)$ é uma sequência com $x_n\in X$ e $x_n\rightarrow a$. Seja $\varepsilon&gt;0$. Como $x_n\rightarrow a$, existe $N\in\N^+$ tal que $x_n\in [a-\varepsilon/2,a+\varepsilon/2]\subseteq (a-\varepsilon,a+\varepsilon)$ para todo $n\geq N$. Portanto, $X\cap (a-\varepsilon,a+\varepsilon)\neq\emptyset$.</p>
+<p>Assuma agora que afirmação 2. é verdadeira. Para todo $n\in\N^+$ escolha um elemento $x_n\in X$ tal que $x_n\in (a-1/n,a+1/n)\cap X$. Então $x_n$ é uma sequência de termos em $X$ e $x_n\rightarrow a$.$\Box$</p>
+<p><strong>Corolário.</strong> Se $X\subseteq\R$ é um conjunto limitado interiormente [superiormente], então $\inf X$ [$\sup X]$ é  aderente a $X$.</p>
+<p><strong>Demonstração. </strong>Seja $a=\inf X$ e $\varepsilon&gt;0$. Então $a+\varepsilon$ não é cota inferior de $X$, portanto existe $x\in X$ tal que<br />
+$$<br />
+a-\varepsilon&lt;a\leq x&lt;a+\varepsilon.<br />
+$$<br />
+Logo, $x\in X\cap(a-\varepsilon,a+\varepsilon)$. Como $\varepsilon$ é arbitrário, obtemos que a afirmação 2. do lema anterior é válida. Portanto $a=\inf X$ é aderente a $X$.$\Box$</p>
+<p><strong>Teorema. </strong>Seja $X\subseteq\R$ e $a\in \R$. As seguintes são equivalentes.</p>
+<ol>
+<li>$X$ é fechado;</li>
+<li>se $a\in\R$ é aderente a $X$, então $a\in X$.</li>
+</ol>
+<p><strong>Demonstração.</strong> Assuma que $X$ é fechado; ou seja, $\R\setminus X$ é aberto. Seja $a\in \R\setminus X$. Então $a$ é um ponto interior de $\R\setminus X$. Existe $\varepsilon&gt;0$ tal que $a\in (a-\varepsilon,a+\varepsilon)\subseteq \R\setminus X$. Então se $x\in X$, temos que $|x-a|\geq \varepsilon$ e isto implica que não pode existir uma sequência $(x_n)$ com $x_n\in X$ e $x_n\rightarrow a$. Obtivemos que $a$ não é aderente a $X$ e que afirmação 1. implica afirmação 2.</p>
+<p>Assuma agora que todo ponto aderente a $X$ pertence a $X$. Seja $a\in \R\setminus X$. Então $a$ não é aderente a $X$. Pelo lema acima, existe $\varepsilon&gt;0$ tal que $(a-\varepsilon,a+\varepsilon)\cap X=\emptyset$; ou seja $(a-\varepsilon,a+a+\varepsilon)\subseteq \R\setminus X$. Isto significa que $a$ é um ponto interior a $\R\setminus X$. Como $a\in\R\setminus X$ foi escolhido arbitrariamente, temos que $\R\setminus X$ é aberto; ou seja, $X$ é fechado.$\Box$</p>
+<p>Se $X\subseteq\R$ então definimos o <em>fecho</em> $\overline X$ de $X$ como<br />
+$$<br />
+\overline X=\{a\in \R\mid \mbox{$a$ é aderente a $X$}\}.<br />
+$$<br />
+Segue-se que $X\subseteq \overline X$.</p>
+<p><strong>Corolário. </strong>$X\subseteq\R$ é fechado se e somente se $\overline X=X$. Em particular, o fecho de um conjunto é fechado.</p>
+<p><strong>Demonstração. </strong>Consequência imediata do lema anterior.$\Box$</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/05/08/topologia-da-reta-conjuntos-abertos-e-fechados/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Exercícios (Séries)</title>
 		<link>https://schcs.github.io/WP/index.php/2019/05/06/exercicios-series/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/05/06/exercicios-series/#respond</comments>
@@ -79,8 +146,8 @@
 				<category><![CDATA[Uncategorized]]></category>
 
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=138</guid>
-		<description><![CDATA[$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}$Seja $\sum a_n$ uma série. A série $\sum b_n$ é chamada de uma reordenação de $\sum a_n$. Se $\pi:\N\rightarrow\N$ é uma bijeção e $b_n=a_{\pi(n)}$ para todo $n\in\N$, então $\sum b_n$ é uma outra série. Pode-se perguntar se $\sum b_n$ é convergente ou divergente. Uma série $\sum a_n$ chama-se comutativamente convergente se, para toda bijeção &#8230; <a href="https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/" class="more-link">Continue reading <span class="screen-reader-text">Comutatividade e produto de séries</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}$Seja $\sum a_n$ uma série. A série $\sum b_n$ é chamada de uma <em>reordenação</em> de $\sum a_n$. Se $\pi:\N\rightarrow\N$ é uma bijeção e $b_n=a_{\pi(n)}$ para todo $n\in\N$, então $\sum b_n$ é uma outra série. Pode-se perguntar se $\sum b_n$ é convergente ou divergente.</p>
+		<description><![CDATA[$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}$Seja $\sum a_n$ uma série. Se $\pi:\N\rightarrow\N$ é uma bijeção e $b_n=a_{\pi(n)}$ para todo $n\in\N$, então $\sum b_n$ é uma outra série.A série $\sum b_n$ é chamada de uma reordenação de $\sum a_n$ Pode-se perguntar se $\sum b_n$ é convergente ou divergente. Uma série $\sum a_n$ chama-se comutativamente convergente se, para toda bijeção $\pi:\N\rightarrow\N$, &#8230; <a href="https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/" class="more-link">Continue reading <span class="screen-reader-text">Comutatividade e produto de séries</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}$Seja $\sum a_n$ uma série. Se $\pi:\N\rightarrow\N$ é uma bijeção e $b_n=a_{\pi(n)}$ para todo $n\in\N$, então $\sum b_n$ é uma outra série.A série $\sum b_n$ é chamada de uma <em>reordenação</em> de $\sum a_n$ Pode-se perguntar se $\sum b_n$ é convergente ou divergente.</p>
 <p>Uma série $\sum a_n$ chama-se <em>comutativamente convergente</em> se, para toda bijeção $\pi:\N\rightarrow\N$, a série $\sum a_{\pi(n)}$ é convergente e o limite $\sum a_{\pi(n)}$ é igual ao limite de $\sum a_n$.</p>
 <p>Seja $\sum a_n$ uma série. Defina<br />
 $$<br />
@@ -92,31 +159,31 @@ q_n=\left\{\begin{array}{ll} -a_n &amp; \mbox{se $a_n&lt;0$};\\<br />
 0 &amp; \mbox{no caso contrário.}\end{array}\right.<br />
 $$<br />
 Tem-se que $a_n=p_n-q_n$ e $|a_n|=p_n+q_n$ e pode-se considerar $\sum p_n$ e $\sum q_n$ como séries. Estas séries são chamadas da<em> parte positiva</em> e da <em>parte negativa</em> de $\sum a_n$.</p>
-<p><strong>Lemma. </strong>Seja $\sum a_n$ uma sequência convergente. Então $\sum a_n$ é absolutamente convergente se e somente se $\sum p_n$ e $\sum q_n$ são convergentes.  Neste caso $\sum p_n+\sum q_n=\sum a_n$.</p>
+<p><strong>Lemma. </strong>Seja $\sum a_n$ uma série convergente. Então $\sum a_n$ é absolutamente convergente se e somente se $\sum p_n$ e $\sum q_n$ são convergentes.  Neste caso $\sum p_n-\sum q_n=\sum a_n$.</p>
 <p><strong>Demonstração. </strong>Assuma que $\sum a_n$ é absolutamente convergente. Então a sequência $s_n=|a_0|+\cdots+|a_n|$ é limitada. Por outro lado<br />
 $$<br />
 \sum_{i=0}^n (p_i+q_i)=\sum_{i=0}^n |a_i|.<br />
 $$<br />
 Portanto a sequência $(\sum_{i=0}^n (p_i+q_i))_n$ é limitada. Isto implica que as sequências $\left(\sum_{i=0}^n p_i\right)_n$ e $\left(\sum_{i=0}^n q_i\right)_n$ são também limitadas, e as séries $\sum p_n$ e $\sum q_n$ são convergentes.</p>
 <p>Deixamos ao leitor verificar que se $\sum a_n$ é condicionalmente convergente então ambas $\sum p_n$ e $\sum q_n$ são divergentes.</p>
-<p>Finalmente, verifiquemos que $\sum a_n=\sum p_n-\sum q_n$ quando $a_n$ é absolutamente convergente. Note que<br />
+<p>Finalmente, verifiquemos que $\sum a_n=\sum p_n-\sum q_n$ quando $\sum a_n$ é absolutamente convergente. Note que<br />
 \begin{eqnarray*}<br />
 \sum p_n-\sum q_n&amp;=&amp;\lim \sum_{i=0}^n p_i-\lim \sum_{i=0}^n q_i\\&amp;=&amp;\lim \left(\sum_{i=0}^n p_i-\sum_{i=0}^n q_i\right)\\&amp;=&amp;\lim\sum_{i=0}^n(p_i-q_i)=\lim \sum_{i=0}^n a_i=\sum a_n.<br />
 \end{eqnarray*}<br />
 $\Box$</p>
 <p><strong>Teorema. </strong> Se $\sum a_n$ é absolutamente convergente, então $\sum a_n$ é comutativamente convergente.</p>
-<p><strong>Demonstração. </strong>Assuma que $\sum a_n$ é absolutamente convergente. Considere primeiro o caso quendo $a_n\geq 0$. Seja $\pi:\N\rightarrow\N$ uma bijeção e seja $b_n=a_{\pi(n)}$. Afirmamos que $\sum a_n=\sum b_n$. Defina $s_n=a_0+\cdots+a_n$ e $t_n=b_0+\cdots +b_n$. Seja $n\geq 1$ e seja $m$ o maior entre $\pi(1),\ldots,\pi(n)$. Logo $\{\pi(1),\ldots,\pi(n)\}\subseteq \{1,\ldots,m\}$. Portanto<br />
+<p><strong>Demonstração. </strong>Assuma que $\sum a_n$ é absolutamente convergente. Considere primeiro o caso quando $a_n\geq 0$. Seja $\pi:\N\rightarrow\N$ uma bijeção e seja $b_n=a_{\pi(n)}$. Afirmamos que $\sum a_n=\sum b_n$. Defina $s_n=a_0+\cdots+a_n$ e $t_n=b_0+\cdots +b_n$. Seja $n\geq 1$ e seja $m$ o maior entre $\pi(1),\ldots,\pi(n)$. Logo $\{\pi(1),\ldots,\pi(n)\}\subseteq \{1,\ldots,m\}$. Portanto<br />
 $$<br />
 t_n=\sum_{i=0}^n b_i=\sum_{i=0}^n a_{\pi(i)}\leq \sum_{i=0}^m a_i\leq s_m.<br />
 $$<br />
-Como $s_n$ é uma sequência limitada, $t_n$ também é limitada, portanto $t_n$ é convergente. Isto implica que $\sum b_n$ é convergente e que $\sum b_n\leq \sum a_n$.</p>
+Este argumento mostra que para todo $n\in\N$ existe $m\in \N$ tal que $t_n\leq s_m$. Como $s_n$ é uma sequência limitada, $t_n$ também é limitada, portanto $t_n$ é convergente. Isto implica que $\sum b_n$ é convergente e que $\sum b_n\leq \sum a_n$.</p>
 <p>Note que o mesmo argumento implica que para todo $n\in\N$ existe um $r\in\N$ tal que $s_n\leq t_r$. Logo $\sum a_n\leq \sum b_n$ e $\sum a_n=\sum b_n$.</p>
-<p>Considere agora uma série geral $\sum a_n$ e assuma que ela é absolutamente convergente. Seja $\sum p_n$ e $\sum q_n$ a parte positiva e a parte negativa. Temos pela discussão acima que $\sum p_n$ e $\sum q_n$ são séries convergentes e $\sum a_n=\sum p_n-\sum q_n$. Uma reordenação $\sum a_{\pi(n)}$ de $\sum a_n$ induz uma reordenação $\sum p_{\pi(n)}$ de $\sum p_n$ e uma outra $\sum q_{\pi(n)}$ de $\sum q_n$. Pelo parágrafo anterior<br />
+<p>Considere agora uma série geral $\sum a_n$ e assuma que ela é absolutamente convergente. Sejam $\sum p_n$ e $\sum q_n$ a parte positiva e a parte negativa. Temos pela discussão acima que $\sum p_n$ e $\sum q_n$ são séries convergentes e $\sum a_n=\sum p_n-\sum q_n$. Uma reordenação $\sum a_{\pi(n)}$ de $\sum a_n$ induz as reordenações $\sum p_{\pi(n)}$ de $\sum p_n$ e  $\sum q_{\pi(n)}$ de $\sum q_n$. Pelo parágrafo anterior<br />
 $$<br />
 \sum a_{\pi(n)}=\sum p_{\pi(n)}-\sum q_{\pi(n)}=\sum p_n-\sum q_n=\sum a_n.<br />
 $$<br />
 $\Box$</p>
-<p>A recíproca desta teorema está também válida.</p>
+<p>A recíproca deste teorema está também válida.</p>
 <p><strong>Teorema (Riemann)</strong>. Seja $\sum a_n$ uma série condicionalmente convergente e seja $c\in\R\cup\{\infty,-\infty\}$. Então existe uma reordenação $\sum a_{\pi(n)}$ tal que $\sum a_{\pi(n)}=c$.</p>
 <p><strong>Demonstração. </strong>Veja no livro de Elon.</p>
 <p>Dadas duas séries $\sum_{n\geq 0} a_n$ e $\sum_{n\geq 0} b_n$ definimos o <em>produto</em> $(\sum a_n)(\sum b_n)$ como a série $\sum c_n$ cujos termos são<br />
@@ -135,12 +202,7 @@ $$</p>
 $$<br />
 x_n=\sum_{i=0}^n(a_ib_n)+\sum_{j=0}^n (a_nb_j).<br />
 $$<br />
-Afirmamos que a série $\sum x_n$ é absolutamente convergente. De fato,<br />
-$$<br />
-\sum_{i=0}^n |x_i|\leq \left(\sum_{i=0}^n |a_i|\right)\left(\sum_{j=0}^n |b_j|\right).<br />
-$$<br />
-Como $\sum a_n$ e $\sum b_n$ são absolutamente convergentes, as sequências $\sum_{i\leq n}|a_i|$ e $\sum_{j\leq n}|b_j|$ são limitadas, e $\sum_{i\leq n} |x_i|$ é também limitada. Portanto $\sum x_n$ é absolutamente convergente.</p>
-<p>Note que<br />
+Note que<br />
 $$<br />
 \sum_{i=0}^n x_i=\left(\sum_{i=0}^n a_i\right)\left(\sum_{j=0}^n b_j\right).<br />
 $$<br />
@@ -148,7 +210,13 @@ Portanto,<br />
 $$<br />
 \lim_{n\rightarrow\infty} \sum_{i=0}^n x_i= \left(\lim_{n\rightarrow\infty}\sum_{i=0}^n a_i\right)\left(\lim_{n\rightarrow\infty}\sum_{j=0}^n b_j\right)=ab.<br />
 $$<br />
-Logo $\sum x_n=ab$. Seja $c_n$ o termo geral do produto $\left(\sum a_n\right)\left(\sum b_n\right)$ e  observe que a série  $\sum c_n$ pode ser obtida de $\sum x_n$ por uma reordenação dos termos. Como $\sum x_n$ é absolutamente convergente, $\sum c_n$ é absolutamente convergente e $\sum c_n=\sum x_n=ab$.</p>
+Logo $\sum x_n=ab$.</p>
+<p>Afirmamos que a série $\sum x_n$ é absolutamente convergente. De fato,<br />
+$$<br />
+\sum_{i=0}^n |x_i|\leq \left(\sum_{i=0}^n |a_i|\right)\left(\sum_{j=0}^n |b_j|\right).<br />
+$$<br />
+Como $\sum a_n$ e $\sum b_n$ são absolutamente convergentes, as sequências $\sum_{i\leq n}|a_i|$ e $\sum_{j\leq n}|b_j|$ são limitadas, e $\sum_{i\leq n} |x_i|$ é também limitada. Portanto $\sum x_n$ é absolutamente convergente.</p>
+<p>Seja $c_n$ o termo geral do produto $\left(\sum a_n\right)\left(\sum b_n\right)$ e  observe que a série  $\sum c_n$ pode ser obtida de $\sum x_n$ por uma reordenação dos termos. Como $\sum x_n$ é absolutamente convergente, $\sum c_n$ é absolutamente convergente e $\sum c_n=\sum x_n=ab$.</p>
 <p>O estudo de séries trata de somas infinitas. Nós definimos o valor da soma infinita pelo limite das somas parciais, mas esta não é a única definição sensível; veja por exemplo este episódio do <a href="https://www.youtube.com/channel/UC1_uAIS3r8Vu6JjXWvastJg">canal Mathologer.</a></p>
 <p><iframe src="https://www.youtube.com/embed/jcKRGpMiVTw" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <p>&nbsp;</p>
