@@ -12,12 +12,120 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 13 May 2019 10:38:42 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 13 May 2019 13:53:38 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.10</generator>
 	<item>
+		<title>Exercícios: Topologia</title>
+		<link>https://schcs.github.io/WP/index.php/2019/05/13/exercicios-topologia/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/05/13/exercicios-topologia/#respond</comments>
+		<pubDate>Mon, 13 May 2019 13:41:59 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=214</guid>
+		<description><![CDATA[$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}\newcommand{\A}{\mathcal A}$ 1.  Seja $(x_n)$ uma sequência de números reais e seja $a\in\R$. Mostre que as seguintes são equivalentes. $x_n\rightarrow a$; para todo conjunto $X\subseteq \R$ aberto tal que $a\in X$ existe $N\in\N^+$ tal que $x_n\in X$ para todo $n\geq N$. 2. Sejam $A,\ B\subseteq \R$ conjuntos abertos. Mostre que $$ &#8230; <a href="https://schcs.github.io/WP/index.php/2019/05/13/exercicios-topologia/" class="more-link">Continue reading <span class="screen-reader-text">Exercícios: Topologia</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}\newcommand{\A}{\mathcal A}$<br />
+1.  Seja $(x_n)$ uma sequência de números reais e seja $a\in\R$. Mostre que as seguintes são equivalentes.</p>
+<ol>
+<li>$x_n\rightarrow a$;</li>
+<li>para todo conjunto $X\subseteq \R$ aberto tal que $a\in X$ existe $N\in\N^+$ tal que $x_n\in X$ para todo $n\geq N$.</li>
+</ol>
+<p>2. Sejam $A,\ B\subseteq \R$ conjuntos abertos. Mostre que<br />
+$$<br />
+A+B=\{a+b\mid a\in A,\ b\in B\}<br />
+$$<br />
+e<br />
+$$<br />
+A\cdot B=\{ab\mid a\in A,\ b\in B\}<br />
+$$<br />
+são abertos.</p>
+<p>3. Sejam $X,Y\subseteq \R$ conjuntos fechados disjuntos tais que $X\cup Y$ é um intervalo fechado. Mostre que $X=\emptyset$ ou $Y=\emptyset$.</p>
+<p>4. Seja $\alpha\in\R\setminus\Q$. Mostre que $\Z$ e $\alpha\Z$ são fechados, mas  $\Z+\alpha\Z$ não é fechado.</p>
+<p>5. Demonstre as seguintes afirmações para conjuntos $A,B\subseteq \R$.</p>
+<ol>
+<li>Se $A$ é compacto e $B$ é fechado, então $A+B$ é fechado.</li>
+<li>Se $A$ e $B$ são compactos, então $A+B$ e $A\cdot B$ são compactos.</li>
+<li>Se $A$ é  compacto e $B$ é fechado, então pode ser que $AB$ não é fechado.</li>
+</ol>
+<p>6. Demonstre que $(X\cup Y)&#8217;=X&#8217;\cup Y&#8217;$ para todo $X,Y\subseteq \R$.</p>
+<p>7. Demonstre que se $X\subseteq \R$ é um conjunto limitado superiormente, então $\overline X$ também é.</p>
+<p>8. Seja $\mbox{int}(X)$ o conjunto de pontos interiores de um conjunto $X\subseteq \R$. Mostre, para todo $X,Y\subseteq \R$, que $\mbox{int}(X\cap Y)=\mbox{int}(X)\cap \mbox{int}(Y)$ e $\mbox{int}(X\cup Y)\supseteq \mbox{int}(X)\cup \mbox{int}(Y)$. Mostre que a segunda desigualdade pode ser própria.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/05/13/exercicios-topologia/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Limite de funções</title>
+		<link>https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/#respond</comments>
+		<pubDate>Mon, 13 May 2019 12:27:37 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=205</guid>
+		<description><![CDATA[$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}$Seja $X\subseteq\R$ um conjunto, $f:X\rightarrow\R$ uma função, e $a\in X&#8217;$. Dizemos que o limite da função $f$ no ponto $a$ é $L\in\R$ se para todo $\varepsilon&#62;0$ existe $\delta&#62;0$ tal que $&#124;f(x)-L&#124;\leq\varepsilon$ sempre que $0&#60;&#124;x-a&#124;\leq\delta$. Escrevemos $$ \lim_{x\rightarrow a}f(x)=L. $$ Lema. Se existir $\lim_{x\rightarrow a}f(x)$, então ele é único. Demonstração. Assuma que não e &#8230; <a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/" class="more-link">Continue reading <span class="screen-reader-text">Limite de funções</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}$Seja $X\subseteq\R$ um conjunto, $f:X\rightarrow\R$ uma função, e $a\in X&#8217;$. Dizemos que o limite da função $f$ no ponto $a$ é $L\in\R$ se para todo $\varepsilon&gt;0$ existe $\delta&gt;0$ tal que $|f(x)-L|\leq\varepsilon$ sempre que $0&lt;|x-a|\leq\delta$. Escrevemos<br />
+$$<br />
+\lim_{x\rightarrow a}f(x)=L.<br />
+$$</p>
+<p><strong>Lema. </strong>Se existir $\lim_{x\rightarrow a}f(x)$, então ele é único.</p>
+<p><strong>Demonstração. </strong>Assuma que não e os reais distintos $L$ e $M$ são ambos limites de $f(x)$ em $a$. Seja $\varepsilon=|L-M|$. Existem $\delta_1$ e $\delta_2$ tais que<br />
+$$<br />
+|f(x)-L|\leq \varepsilon/3\quad\mbox{se}\quad 0&lt;|x-a|\leq\delta_1<br />
+$$<br />
+e<br />
+$$<br />
+|f(x)-M|\leq \varepsilon/3\quad\mbox{se}\quad 0&lt;|x-a|\leq\delta_2.<br />
+$$<br />
+Seja $\delta=\min\{\delta_1,\delta_2\}$ e $x\in X$ tal que $0&lt;|x-a|\leq\delta$. Então<br />
+\begin{eqnarray*}<br />
+\varepsilon&amp;=&amp;|L-M|=|L-f(x)+f(x)-M|\\&amp;\leq&amp; |L-f(x)|+|f(x)-M|\leq 2\varepsilon/3.<br />
+\end{eqnarray*}<br />
+Isso é uma contradição, então $L=M$. $\Box$</p>
+<p><strong>Lema. </strong>Se existir $\lim_{x\rightarrow a}f(x)$, então existem $A&gt;0$ e $\delta&gt;0$ tal que $|f(x)|\leq A$ para todo $x\in X\cap (a-\delta,a+\delta)$.</p>
+<p><strong>Demonstração. </strong>Exercício.</p>
+<p><strong>Lema. </strong>Sejam $f,g,h:X\rightarrow\R$ e $a\in X&#8217;$ tais que $f(x)\leq g(x)\leq h(x)$ para todo $x\in X\setminus\{a\}$. Assuma que existem $\lim_{x\rightarrow a}f(x)$ e  $\lim_{x\rightarrow a}h(x)$ e<br />
+$$<br />
+\lim_{x\rightarrow a}f(x)=\lim_{x\rightarrow a}h(x)=L.<br />
+$$<br />
+Então existe $\lim_{x\rightarrow a}g(x)$ e é igual a $L$.</p>
+<p><strong>Demonstração. </strong>Seja $\varepsilon&gt;0$. Existem $\delta_1,\delta_2&gt;0$ tal que<br />
+$$<br />
+|f(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_1<br />
+$$<br />
+e<br />
+$$<br />
+|h(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_2.<br />
+$$<br />
+Assuma que $\delta=\min\{\delta_1,\delta_2\}$. Seja $x\in X$ tal que $0&lt;|x-a|\leq \delta$. Tem-se que<br />
+$$<br />
+L-\varepsilon\leq f(x)\leq g(x)\leq h(x)\leq L+\varepsilon.<br />
+$$<br />
+Isto implica que se $0&lt;|x-a|\leq \delta$, então $|g(x)-L|\leq\varepsilon$. Existe então $\lim_{x\rightarrow a}f(x)$ e é igual a $L$. $\Box$</p>
+<p><strong>Lema.</strong> Sejam $f,g:X\rightarrow\R$ e $a\in X&#8217;$ tais que existem $L=\lim_{x\rightarrow a}f(x)$ e $\lim_{x\rightarrow a}g(x)$ com $L&lt;M$. Então existe $\delta&gt;0$ tal que $f(x)&lt; g(x)$ para todo $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$.</p>
+<p><strong>Demonstração. </strong>Seja $\varepsilon=(M-L)/3$. Existem $\delta_1$ e $\delta_2$ tais que<br />
+$$<br />
+|f(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_1<br />
+$$<br />
+e<br />
+$$<br />
+|g(x)-M|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_2.<br />
+$$<br />
+Isto implica que<br />
+$$<br />
+f(x)\leq L+\varepsilon&lt;M-\varepsilon\leq g(x)<br />
+$$<br />
+se $0&lt;|x-a|\leq \delta$ onde $\delta=\{\delta_1,\delta_2\}$. $\Box$</p>
+<p><strong>Corolário. </strong>Seja $f:X\rightarrow\R$ e $a\in X&#8217;$. Se existir $\lim_{x\rightarrow a}f(x)$ e este limite é positivo, então existe $\delta&gt;0$ tal que $f(x)&gt; 0$ para todo $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Topologia da Reta: Pontos de acumulação e conjuntos compactos</title>
 		<link>https://schcs.github.io/WP/index.php/2019/05/10/topologia-da-reta-pontos-de-acumulacao-e-conjuntos-compactos/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/05/10/topologia-da-reta-pontos-de-acumulacao-e-conjuntos-compactos/#respond</comments>

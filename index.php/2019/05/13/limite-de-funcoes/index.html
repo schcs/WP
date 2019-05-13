@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	
+<title>Limite de funções &#8211; Csaba Schneider</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Limite de funções Comments Feed" href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='penscratch-2-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.10' type='text/css' media='all' />
+<link rel='stylesheet' id='penscratch-2-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='penscratch-2-block-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://schcs.github.io/WP/index.php/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Topologia da Reta: Pontos de acumulação e conjuntos compactos' href='https://schcs.github.io/WP/index.php/2019/05/10/topologia-da-reta-pontos-de-acumulacao-e-conjuntos-compactos/' />
+<link rel='next' title='Exercícios: Topologia' href='https://schcs.github.io/WP/index.php/2019/05/13/exercicios-topologia/' />
+<meta name="generator" content="WordPress 4.9.10" />
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/" />
+<link rel='shortlink' href='https://schcs.github.io/WP/?p=205' />
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2F2019%2F05%2F13%2Flimite-de-funcoes%2F" />
+<link rel="pingback" href="https://schcs.github.io/WP/xmlrpc.php"><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</head>
+
+<body class="post-template-default single single-post postid-205 single-format-standard no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"/><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"/></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-205" class="post-205 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title">Limite de funções</h1>		
+		<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/" rel="bookmark"><time class="entry-date published" datetime="2019-05-13T12:27:37+00:00">May 13, 2019</time><time class="updated" datetime="2019-05-13T13:25:54+00:00">May 13, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}$Seja $X\subseteq\R$ um conjunto, $f:X\rightarrow\R$ uma função, e $a\in X&#8217;$. Dizemos que o limite da função $f$ no ponto $a$ é $L\in\R$ se para todo $\varepsilon&gt;0$ existe $\delta&gt;0$ tal que $|f(x)-L|\leq\varepsilon$ sempre que $0&lt;|x-a|\leq\delta$. Escrevemos<br />
+$$<br />
+\lim_{x\rightarrow a}f(x)=L.<br />
+$$</p>
+<p><strong>Lema. </strong>Se existir $\lim_{x\rightarrow a}f(x)$, então ele é único.</p>
+<p><strong>Demonstração. </strong>Assuma que não e os reais distintos $L$ e $M$ são ambos limites de $f(x)$ em $a$. Seja $\varepsilon=|L-M|$. Existem $\delta_1$ e $\delta_2$ tais que<br />
+$$<br />
+|f(x)-L|\leq \varepsilon/3\quad\mbox{se}\quad 0&lt;|x-a|\leq\delta_1<br />
+$$<br />
+e<br />
+$$<br />
+|f(x)-M|\leq \varepsilon/3\quad\mbox{se}\quad 0&lt;|x-a|\leq\delta_2.<br />
+$$<br />
+Seja $\delta=\min\{\delta_1,\delta_2\}$ e $x\in X$ tal que $0&lt;|x-a|\leq\delta$. Então<br />
+\begin{eqnarray*}<br />
+\varepsilon&amp;=&amp;|L-M|=|L-f(x)+f(x)-M|\\&amp;\leq&amp; |L-f(x)|+|f(x)-M|\leq 2\varepsilon/3.<br />
+\end{eqnarray*}<br />
+Isso é uma contradição, então $L=M$. $\Box$</p>
+<p><strong>Lema. </strong>Se existir $\lim_{x\rightarrow a}f(x)$, então existem $A&gt;0$ e $\delta&gt;0$ tal que $|f(x)|\leq A$ para todo $x\in X\cap (a-\delta,a+\delta)$.</p>
+<p><strong>Demonstração. </strong>Exercício.</p>
+<p><strong>Lema. </strong>Sejam $f,g,h:X\rightarrow\R$ e $a\in X&#8217;$ tais que $f(x)\leq g(x)\leq h(x)$ para todo $x\in X\setminus\{a\}$. Assuma que existem $\lim_{x\rightarrow a}f(x)$ e  $\lim_{x\rightarrow a}h(x)$ e<br />
+$$<br />
+\lim_{x\rightarrow a}f(x)=\lim_{x\rightarrow a}h(x)=L.<br />
+$$<br />
+Então existe $\lim_{x\rightarrow a}g(x)$ e é igual a $L$.</p>
+<p><strong>Demonstração. </strong>Seja $\varepsilon&gt;0$. Existem $\delta_1,\delta_2&gt;0$ tal que<br />
+$$<br />
+|f(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_1<br />
+$$<br />
+e<br />
+$$<br />
+|h(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_2.<br />
+$$<br />
+Assuma que $\delta=\min\{\delta_1,\delta_2\}$. Seja $x\in X$ tal que $0&lt;|x-a|\leq \delta$. Tem-se que<br />
+$$<br />
+L-\varepsilon\leq f(x)\leq g(x)\leq h(x)\leq L+\varepsilon.<br />
+$$<br />
+Isto implica que se $0&lt;|x-a|\leq \delta$, então $|g(x)-L|\leq\varepsilon$. Existe então $\lim_{x\rightarrow a}f(x)$ e é igual a $L$. $\Box$</p>
+<p><strong>Lema.</strong> Sejam $f,g:X\rightarrow\R$ e $a\in X&#8217;$ tais que existem $L=\lim_{x\rightarrow a}f(x)$ e $\lim_{x\rightarrow a}g(x)$ com $L&lt;M$. Então existe $\delta&gt;0$ tal que $f(x)&lt; g(x)$ para todo $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$.</p>
+<p><strong>Demonstração. </strong>Seja $\varepsilon=(M-L)/3$. Existem $\delta_1$ e $\delta_2$ tais que<br />
+$$<br />
+|f(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_1<br />
+$$<br />
+e<br />
+$$<br />
+|g(x)-M|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_2.<br />
+$$<br />
+Isto implica que<br />
+$$<br />
+f(x)\leq L+\varepsilon&lt;M-\varepsilon\leq g(x)<br />
+$$<br />
+se $0&lt;|x-a|\leq \delta$ onde $\delta=\{\delta_1,\delta_2\}$. $\Box$</p>
+<p><strong>Corolário. </strong>Seja $f:X\rightarrow\R$ e $a\in X&#8217;$. Se existir $\lim_{x\rightarrow a}f(x)$ e este limite é positivo, então existe $\delta&gt;0$ tal que $f(x)&gt; 0$ para todo $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$.</p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+					</footer><!-- .entry-footer -->
+
+	
+<div class="entry-author">
+	<div class="author-avatar">
+		<img alt='' src='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />	</div><!-- .author-avatar -->
+
+	<div class="author-heading">
+		<h2 class="author-title">Published by <span class="author-name">schcs</span></h2>
+	</div><!-- .author-heading -->
+
+	<p class="author-bio">
+				<a class="author-link" href="https://schcs.github.io/WP/index.php/author/schcs/" rel="author">
+			View all posts by schcs		</a>
+	</p><!-- .author-bio -->
+</div><!-- .entry-auhtor -->
+</article><!-- #post-## -->
+
+			
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://schcs.github.io/WP/index.php/2019/05/10/topologia-da-reta-pontos-de-acumulacao-e-conjuntos-compactos/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>Topologia da Reta: Pontos de acumulação e conjuntos compactos</a></div><div class="nav-next"><a href="https://schcs.github.io/WP/index.php/2019/05/13/exercicios-topologia/" rel="next"><span class="meta-nav">Next &rsaquo;</span>Exercícios: Topologia</a></div></div>
+	</nav>
+			
+<div id="comments" class="comments-area">
+
+	
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://schcs.github.io/WP/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='205' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments -->
+
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div><!-- .site-info -->
+		</div><!-- .site-info-wrapper -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206'></script>
+<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608'></script>
+<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115'></script>
+<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/comment-reply.min.js?ver=4.9.10'></script>
+<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/wp-embed.min.js?ver=4.9.10'></script>
+
+</body>
+</html>
