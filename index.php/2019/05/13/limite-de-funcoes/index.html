@@ -88,7 +88,7 @@ MathJax.Hub.Config({
 	<header class="entry-header">
 		<h1 class="entry-title">Limite de funções</h1>		
 		<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/" rel="bookmark"><time class="entry-date published" datetime="2019-05-13T12:27:37+00:00">May 13, 2019</time><time class="updated" datetime="2019-05-13T13:25:54+00:00">May 13, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/" rel="bookmark"><time class="entry-date published" datetime="2019-05-13T12:27:37+00:00">May 13, 2019</time><time class="updated" datetime="2019-05-17T01:41:16+00:00">May 17, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -145,7 +145,56 @@ f(x)\leq L+\varepsilon&lt;M-\varepsilon\leq g(x)<br />
 $$<br />
 se $0&lt;|x-a|\leq \delta$ onde $\delta=\{\delta_1,\delta_2\}$. $\Box$</p>
 <p><strong>Corolário. </strong>Seja $f:X\rightarrow\R$ e $a\in X&#8217;$. Se existir $\lim_{x\rightarrow a}f(x)$ e este limite é positivo, então existe $\delta&gt;0$ tal que $f(x)&gt; 0$ para todo $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$.</p>
-<p>&nbsp;</p>
+<p><strong>Corolário. </strong>Sejam $X\subseteq\R$, $a\in X&#8217;$, e $f,g:X\rightarrow\R$ tais que $f(x)\leq g(x)$ para todo $x\in X$ e existem $M=\lim_{x\rightarrow a}f(x)$ e $L=\lim_{x\rightarrow a}g(x)$. Tem-se que $M\leq L$.</p>
+<p><strong>Teorema. </strong>Sejam $X\subseteq\R$, $a\in X&#8217;$  e $f:X\rightarrow\R$ uma função. As seguintes são equivalentes.</p>
+<ol>
+<li>existe $L=\lim_{x\rightarrow a} f(x)$;</li>
+<li>se $(x_n)$ é uma sequência tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$ então $f(x_n)\rightarrow L$.</li>
+</ol>
+<p><strong>Demonstração. </strong>1.$\Rightarrow$ 2. Seja $(x_n)$ uma sequência tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Seja $\varepsilon&gt;0$. Existe $\delta&gt;0$ tal que $|f(x)-L|\leq\varepsilon$ para todo $x\in X$ tal que $|x-a|\leq\delta$. Como $x_n\rightarrow a$, existe $N\in\N^+$ tal que $|x_n-a|\leq \delta$ se $n\geq N$. Obtem-se que se $n\geq N$, então $|x_n-a|\leq \delta$, e assim $|f(x_n)-L|\leq\varepsilon$. Portanto $f(x_n)\rightarrow L$.</p>
+<p>2.$\Rightarrow$ 1. Assuma que a afirmação 1. é falsa. Existe $\varepsilon&gt;0$ tal que para todo $\delta&gt;0$ existe $x\in X$ com $|x-a|\leq \delta$ mas $|f(x)-L|&gt;\varepsilon$. Seja $n\in\N^+$. Existe então $x_n\in X$ tal que $|x_n-a|\leq 1/n$, mas $|f(x_n)-L|&gt;\varepsilon$. A sequência $(x_n)$ converge a $a$, mas $f(x_n)$ não converge a $L$.  $\Box$</p>
+<p><strong>Corolário. </strong>Sejam $X\subseteq\R$, $a\in X&#8217;$  e $f:X\rightarrow\R$ uma função. As seguintes são equivalentes.</p>
+<ol>
+<li>existe $\lim_{x\rightarrow a}f(x)$;</li>
+<li>se $(x_n)$ é uma sequência tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$, então $f(x_n)$ é convergente.</li>
+</ol>
+<p><strong>Demonstração. </strong>Pelo teorema anterior, tem-se que a afirmação 1. implica a afirmação 2.</p>
+<p>Assuma afirmação 2. Afirmamos que existe $L$ tal que se $(x_n)$ é uma sequência como na afirmação 2., então $f(x_n)\rightarrow L$ (ou seja, o limite de $(f(x_n))$ não depende da sequência $(x_n)$). De fato, se existessem $(x_n)$ e $(y_n)$ tais que $x_n,y_n\in X\setminus\{a\}$, $x_n\rightarrow a$, $y_n\rightarrow a$, mas $f(x_n)\rightarrow L$ e $f(y_n)\rightarrow M$ com $L\neq M$, então tomando $(z_n)=(x_1,y_2,x_2,y_2,\ldots)$. teríamos que $z_n\rightarrow a$, mas $f(z_n)$ é divergente. Portanto, a afirmação verdadeira. Neste caso o teorema anterior implica que $\lim_{x\rightarrow a}=L$. $\Box$</p>
+<p><strong>Teorema. </strong>Sejam $f,g:X\subseteq\R\rightarrow\R$ funções, $a\in X&#8217;$. Assuma que existem $M=\lim_{x\rightarrow a}f(x)$ e $L=\lim_{x\rightarrow a}g(x)$. As seguintes afirmações são válidas.</p>
+<ol>
+<li>$\lim_{x\rightarrow a}(f(x)+g(x))=L+M$;</li>
+<li>$\lim_{x\rightarrow a}(f(x)\cdot g(x))=LM$;</li>
+<li>$\lim_{x\rightarrow a}(\alpha f(x))=\alpha L$ para todo $\alpha\in\R$;</li>
+<li>se $M\neq 0$ e $g(x)\neq 0$ para $x\in X$, então $\lim_{x\rightarrow a}f(x)/g(x)=L/M$;</li>
+<li>se $L=0$ e $g(x)$ é uma função limitada em $X$, então $\lim_{x\rightarrow a}(f(x)\cdot g(x))=0$.</li>
+</ol>
+<p><strong>Demonstração. </strong>Demonstraremos por exemplo a afirmação 2. O resto é exercício. Seja $(x_n)$ uma sequência com $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Então $f(x_n)+g(x_n)\rightarrow L+M$. Usando o teorema anterior, $\lim_{x\rightarrow a}(f(x)\cdot g(x))=LM$. $\Box$</p>
+<p><strong>Teorema. </strong>Sejam $X,Y\subseteq\R$, $f:X\rightarrow\R$, $g:Y\rightarrow\R$ funções, $a\in X&#8217;$, $b\in Y\cap Y&#8217;$ e assuma que $\lim_{x\rightarrow a}f(x)=b$ e $\lim_{y\rightarrow b}g(y)=g(b)$. Então $\lim_{x\rightarrow a}f(g(x))=g(b)$.</p>
+<p><strong>Demonstração.</strong> Seja $\varepsilon&gt;0$. Existe $\gamma&gt;0$ tal que se $y\in Y$ com $|y-b|\leq\gamma$, então $|g(y)-g(b)|\leq\varepsilon$. Existe $\delta&gt;0$ tal que se $0&lt;|x-a|&lt;\delta$, então $|f(x)-b|\leq\gamma$. Então se $x\in X$ tal que $0&lt;|x-a|\leq \delta$, então $|f(x)-b|\leq \gamma$, e $|g(f(x))-g(b)|\leq\varepsilon$. $\Box$</p>
+<h4>Limites laterais</h4>
+<p>Seja $X\subseteq\R$ e $a\in\R$. O ponto $a$ é dito <em>ponto de acumulação à direita</em> de $X$ se $X\cap (a,a+\varepsilon)\neq\emptyset$ for all $\varepsilon&gt;0$. O conjunto de pontos de acumulação à direita de $X$ é denotado por $X&#8217;_+$.</p>
+<p>Sejam $f:X\rightarrow \R$, $a\in X&#8217;_+$, e $L\in\R$. Diz se que o <em>limite lateral à direita</em> da função $f$ no ponto $a$ é $L$ se para todo $\varepsilon&gt;0$ existe $\delta&gt;0$ tal que $|f(x)-L|\leq \varepsilon$ sempre que $x\in X\cap (a,a+\delta)$. Escrevemos<br />
+$$<br />
+\lim_{x\rightarrow a+}f(x)=L.<br />
+$$</p>
+<p>Define-se de modo análogo os conceitos de ponto de acumulação à esquerda e limite lateral à esquerda.</p>
+<p><strong>Lema. </strong>Seja $f:X\rightarrow \R$ uma função e seja $a\in X&#8217;_+\cap X&#8217;_-$. Então existe $\lim_{x\rightarrow a}f(x)$ se e somente se existem $\lim_{x\rightarrow a+}f(x)$ e $\lim_{x\rightarrow a-}f(x)$ e eles são iguais.</p>
+<p><strong>Demonstração. </strong>Pelas definições, se existe o limite, existem os limites laterais. Assuma que existem os limites laterais e eles são iguais a $L$. Seja $\varepsilon&gt;0$. Então existem $\delta_1,\ \delta_2&gt;0$ tal que se<br />
+$x\in X\cap (a,a+\delta_1)$, então $|f(x)-L|\leq\varepsilon$ e se $x\in X\cap (a-\delta_2,a)$, então $|f(x)-a|\leq\varepsilon$. Seja $\delta=\min\{\delta_1,\delta_2\}$. Se $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$, então $|f(x)-L|\leq\varepsilon$. $\Box$</p>
+<p><strong>Teorema. </strong>Seja $f:X\subseteq\R\rightarrow\R$ uma função monótona e limitada. Se $a\in X_+$, então existe o limite lateral $\lim_{x\rightarrow a+}f(x)$.</p>
+<p><strong>Demonstração. </strong>Assuma sem perder generalidade que $f(x)$ é não decrescente. Afirmamos que<br />
+$$<br />
+\lim_{x\rightarrow a+}f(x)=\inf\{f(x)\mid x\in X,\ a&lt;x\}.<br />
+$$<br />
+Denote o lado direito da última igualdade por $L$. Seja $\varepsilon&gt;0$. Então $L+\varepsilon$ não é cota inferior de $\{f(x)\mid x\in X,\ a&lt;x\}$. Então existe $\delta&gt;0$ such that $a+\delta\in X$ e<br />
+$$<br />
+L\leq f(a+\delta)&lt;L+\varepsilon.<br />
+$$<br />
+Portanto, se $x\in X\cap (a,a+\delta)$ então<br />
+$$<br />
+L-\varepsilon&lt;L\leq f(x)\leq f(a+\delta)&lt;L+\varepsilon;<br />
+$$<br />
+ou seja $|f(x)-L|\leq\varepsilon$. $\Box$</p>
 			</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
