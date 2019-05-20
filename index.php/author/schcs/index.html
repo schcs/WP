@@ -84,6 +84,63 @@ MathJax.Hub.Config({
 			
 				
 					
+<article id="post-231" class="post-231 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/05/20/exercicios-limites-de-funcoes/" rel="bookmark">Exercícios: Limite de funções</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/20/exercicios-limites-de-funcoes/" rel="bookmark"><time class="entry-date published" datetime="2019-05-20T12:21:40+00:00">May 20, 2019</time><time class="updated" datetime="2019-05-20T13:16:53+00:00">May 20, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/05/20/exercicios-limites-de-funcoes/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}\newcommand{\Q}{\mathbb Q}$<br />
+1. Determina os limites das seguintes funções em todo ponto  $a\in X&#8217;$.</p>
+<ol>
+<li>$f:\R\rightarrow \R$, $f(x)=x^n$ (com $n\in\N^+$).</li>
+<li>$f:[0,\infty)\rightarrow\R$, $f(x)=\sqrt x$.</li>
+<li>$f:\R\rightarrow\R$, $f(x)=[x]$ onde $[x]$ é a parte inteira de $x$. Ou seja, $[x]$ é o maior inteiro tal que $[x]\leq x$.</li>
+<li> $f:\R\rightarrow\R$, $f(x)=0$ se $x\in\Q$, $f(x)=1$ se $x\in\R\setminus\Q$.</li>
+<li>$f:\R\rightarrow\R$, $f(x)=0$ se $x\in\Q$, $f(x)=x$ se $x\in\R\setminus\Q$.</li>
+<li>$f:\R\setminus\{0\}\rightarrow \R$, $f(x)=x/|x|$.</li>
+<li>$f:\R\setminus\{-2\}\rightarrow\R$, $f(x)=(x^2+3x+2)/(x+2)$.</li>
+</ol>
+<p>2. Seja $f:\R\rightarrow\R$ a função definida por $f(x)=0$ se $x\in\R\setminus\Q$ e $f(x)=1/q$ se $x\in\Q$ tal que $x=p/q$ com $\mbox{mdc}(p,q)=1$ e $q&gt; 0$. Demonstra que $\lim_{x\rightarrow a}f(x)=0$ se $a\in\R\setminus\Q$, enquanto $\lim_{x\rightarrow a}f(x)$ não existe se $a\in Q$. [Dica: veja o argumento no livro de Elon.]</p>
+<p>3. Demonstre os resultados que foram apresentados na aula, mas as demonstrações foram omitidas.</p>
+<p>4. Mostre, exibindo um contraexemplo, que a condição que $\lim_{y\rightarrow b}g(y)=g(b)$ é necessária no resultado sobre o limite da composição de funções.</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
+<article id="post-225" class="post-225 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/05/20/funcoes-continuas/" rel="bookmark">Funções contínuas</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/20/funcoes-continuas/" rel="bookmark"><time class="entry-date published" datetime="2019-05-20T11:34:47+00:00">May 20, 2019</time><time class="updated" datetime="2019-05-20T12:14:57+00:00">May 20, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/05/20/funcoes-continuas/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}$Seja $X\subseteq\R$ um conjunto, $f:X\rightarrow\R$ uma função, e $a\in X$. Dizemos que a função $f$ é <em>contínua no ponto $a$</em>  se para todo $\varepsilon&gt;0$ existe $\delta&gt;0$ tal que $|f(x)-f(a)|\leq\varepsilon$ sempre que $|x-a|\leq\delta$.</p>
+<p>Uma função $f:X\subseteq\R\rightarrow\R$ é dito <em>contínua</em> (em $X$) se $f(x)$ for contínua no ponto $a$ para todo $a\in X$.</p>
+<p><strong>Lema.</strong> Seja $f:X\subseteq\R\rightarrow\R$ uma função e $a\in X\cap X&#8217;$. As seguintes são equivalentes.</p>
+<ol>
+<li>$f(x)$ é contínua em $a$;</li>
+<li>existe o $\lim_{x\rightarrow a}f(x)$ e é igual a $f(a)$.</li>
+</ol>
+<p><strong>Lema. </strong>Se $f$ é contínua no ponto $a$, então existem $A&gt;0$ e $\delta&gt;0$ tal que $|f(x)|\leq A$ para todo $x\in X\cap (a-\delta,a+\delta)$.</p>
+<p><strong>Lema. </strong>Sejam $f,g,h:X\rightarrow\R$ e $a\in X$ tais que $f(x)\leq g(x)\leq h(x)$ para todo $x\in X$. Assuma que $f(x)$ e $h(x)$ são contínuas no ponto $a$ e que $f(a)=h(a)$.  Então $g(x)$ é  contínua em $a$.</p>
+<p><strong>Lema.</strong> Sejam $f,g:X\rightarrow\R$ e $a\in X$ tais que $f(x)$ e $g(x)$ são contínuas em $a$ e $f(a)&lt;g(a)$. Então existe $\delta&gt;0$ tal que $f(x)&lt; g(x)$ para todo $x\in X\cap(a-\delta,a+\delta)$.</p>
+<p><strong>Corolário. </strong>Seja $f:X\rightarrow\R$ e $a\in X$. Se $f(x)$ é contínua em $a$ e $f(a)&gt;0$, então existe $\delta&gt;0$ tal que $f(x)&gt; 0$ para todo $x\in X\cap(a-\delta,a+\delta)$.</p>
+<p><strong>Corolário. </strong>Sejam $X\subseteq\R$, $a\in X$, e $f,g:X\rightarrow\R$ tais que $f(x)\leq g(x)$ para todo $x\in X$ e assuma ainda que $f(x)$ e $g(x)$ são contínuas em $a$. Tem-se que $f(a)\leq g(a)$.</p>
+<p><strong>Teorema. </strong>Sejam $X\subseteq\R$, $a\in X$ e $f:X\rightarrow\R$ uma função. As seguintes são equivalentes.</p>
+<ol>
+<li>$f(x)$ é contínua em $a$;</li>
+<li>se $(x_n)$ é uma sequência tal que $x_n\in X$ e $x_n\rightarrow a$ então $f(x_n)\rightarrow f(a)$;</li>
+<li>se $(x_n)$ é uma sequência tal que $x_n\in X$ e $x_n\rightarrow a$ então $f(x_n)$ é convergente.</li>
+</ol>
+<p><strong>Teorema. </strong>Sejam $f,g:X\subseteq\R\rightarrow\R$ funções, $a\in X$. Assuma que $f(x)$ e $g(x)$ são contínuas em $a$. Então as funções $f(x)+g(x)$, $f(x)g(x)$, $\alpha f(x)$ (com $\alpha\in\R$) são contínuas em $a$. Se $g(x)\neq 0$ para $x\in X$, então $f(x)/g(x)$ é contínua em $a$.</p>
+<p><strong>Teorema. </strong>Sejam $X,Y\subseteq\R$, $f:X\rightarrow Y$, $g:Y\rightarrow\R$ funções, $a\in X$, $b\in Y$ e assuma que $f(x)$ é contínua em $a$ e que $g(x)$ é contínua em $b=f(a)$. Então $g\circ f$ é contínua em $a$.</p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
 <article id="post-214" class="post-214 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/05/13/exercicios-topologia/" rel="bookmark">Exercícios: Topologia</a></h1>	</header><!-- .entry-header -->
@@ -125,7 +182,7 @@ são abertos.</p>
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/" rel="bookmark">Limite de funções</a></h1>	</header><!-- .entry-header -->
 				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/" rel="bookmark"><time class="entry-date published" datetime="2019-05-13T12:27:37+00:00">May 13, 2019</time><time class="updated" datetime="2019-05-17T01:41:16+00:00">May 17, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/" rel="bookmark"><time class="entry-date published" datetime="2019-05-13T12:27:37+00:00">May 13, 2019</time><time class="updated" datetime="2019-05-20T12:18:24+00:00">May 20, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
 				<div class="entry-content">
 		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}$Seja $X\subseteq\R$ um conjunto, $f:X\rightarrow\R$ uma função, e $a\in X&#8217;$. Dizemos que o limite da função $f$ no ponto $a$ é $L\in\R$ se para todo $\varepsilon&gt;0$ existe $\delta&gt;0$ tal que $|f(x)-L|\leq\varepsilon$ sempre que $0&lt;|x-a|\leq\delta$. Escrevemos<br />
 $$<br />
@@ -165,7 +222,7 @@ $$<br />
 L-\varepsilon\leq f(x)\leq g(x)\leq h(x)\leq L+\varepsilon.<br />
 $$<br />
 Isto implica que se $0&lt;|x-a|\leq \delta$, então $|g(x)-L|\leq\varepsilon$. Existe então $\lim_{x\rightarrow a}f(x)$ e é igual a $L$. $\Box$</p>
-<p><strong>Lema.</strong> Sejam $f,g:X\rightarrow\R$ e $a\in X&#8217;$ tais que existem $L=\lim_{x\rightarrow a}f(x)$ e $\lim_{x\rightarrow a}g(x)$ com $L&lt;M$. Então existe $\delta&gt;0$ tal que $f(x)&lt; g(x)$ para todo $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$.</p>
+<p><strong>Lema.</strong> Sejam $f,g:X\rightarrow\R$ e $a\in X&#8217;$ tais que existem $L=\lim_{x\rightarrow a}f(x)$ e $M=\lim_{x\rightarrow a}g(x)$ com $L&lt;M$. Então existe $\delta&gt;0$ tal que $f(x)&lt; g(x)$ para todo $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$.</p>
 <p><strong>Demonstração. </strong>Seja $\varepsilon=(M-L)/3$. Existem $\delta_1$ e $\delta_2$ tais que<br />
 $$<br />
 |f(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_1<br />
@@ -186,8 +243,8 @@ se $0&lt;|x-a|\leq \delta$ onde $\delta=\{\delta_1,\delta_2\}$. $\Box$</p>
 <li>existe $L=\lim_{x\rightarrow a} f(x)$;</li>
 <li>se $(x_n)$ é uma sequência tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$ então $f(x_n)\rightarrow L$.</li>
 </ol>
-<p><strong>Demonstração. </strong>1.$\Rightarrow$ 2. Seja $(x_n)$ uma sequência tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Seja $\varepsilon&gt;0$. Existe $\delta&gt;0$ tal que $|f(x)-L|\leq\varepsilon$ para todo $x\in X$ tal que $|x-a|\leq\delta$. Como $x_n\rightarrow a$, existe $N\in\N^+$ tal que $|x_n-a|\leq \delta$ se $n\geq N$. Obtem-se que se $n\geq N$, então $|x_n-a|\leq \delta$, e assim $|f(x_n)-L|\leq\varepsilon$. Portanto $f(x_n)\rightarrow L$.</p>
-<p>2.$\Rightarrow$ 1. Assuma que a afirmação 1. é falsa. Existe $\varepsilon&gt;0$ tal que para todo $\delta&gt;0$ existe $x\in X$ com $|x-a|\leq \delta$ mas $|f(x)-L|&gt;\varepsilon$. Seja $n\in\N^+$. Existe então $x_n\in X$ tal que $|x_n-a|\leq 1/n$, mas $|f(x_n)-L|&gt;\varepsilon$. A sequência $(x_n)$ converge a $a$, mas $f(x_n)$ não converge a $L$.  $\Box$</p>
+<p><strong>Demonstração. </strong>1.$\Rightarrow$ 2. Seja $(x_n)$ uma sequência tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Seja $\varepsilon&gt;0$. Existe $\delta&gt;0$ tal que $|f(x)-L|\leq\varepsilon$ para todo $x\in X$ tal que $0&lt;|x-a|\leq\delta$. Como $x_n\rightarrow a$, existe $N\in\N^+$ tal que $|x_n-a|\leq \delta$ se $n\geq N$. Obtem-se que se $n\geq N$, então $|x_n-a|\leq \delta$, e assim $|f(x_n)-L|\leq\varepsilon$. Portanto $f(x_n)\rightarrow L$.</p>
+<p>2.$\Rightarrow$ 1. Assuma que a afirmação 1. é falsa. Existe $\varepsilon&gt;0$ tal que para todo $\delta&gt;0$ existe $x\in X$ com $0&lt;|x-a|\leq \delta$ mas $|f(x)-L|&gt;\varepsilon$. Seja $n\in\N^+$. Existe então $x_n\in X$ tal que $0&lt;|x_n-a|\leq 1/n$, mas $|f(x_n)-L|&gt;\varepsilon$. A sequência $(x_n)$ converge a $a$, mas $f(x_n)$ não converge a $L$.  $\Box$</p>
 <p><strong>Corolário. </strong>Sejam $X\subseteq\R$, $a\in X&#8217;$  e $f:X\rightarrow\R$ uma função. As seguintes são equivalentes.</p>
 <ol>
 <li>existe $\lim_{x\rightarrow a}f(x)$;</li>
@@ -204,7 +261,7 @@ se $0&lt;|x-a|\leq \delta$ onde $\delta=\{\delta_1,\delta_2\}$. $\Box$</p>
 <li>se $L=0$ e $g(x)$ é uma função limitada em $X$, então $\lim_{x\rightarrow a}(f(x)\cdot g(x))=0$.</li>
 </ol>
 <p><strong>Demonstração. </strong>Demonstraremos por exemplo a afirmação 2. O resto é exercício. Seja $(x_n)$ uma sequência com $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Então $f(x_n)+g(x_n)\rightarrow L+M$. Usando o teorema anterior, $\lim_{x\rightarrow a}(f(x)\cdot g(x))=LM$. $\Box$</p>
-<p><strong>Teorema. </strong>Sejam $X,Y\subseteq\R$, $f:X\rightarrow\R$, $g:Y\rightarrow\R$ funções, $a\in X&#8217;$, $b\in Y\cap Y&#8217;$ e assuma que $\lim_{x\rightarrow a}f(x)=b$ e $\lim_{y\rightarrow b}g(y)=g(b)$. Então $\lim_{x\rightarrow a}f(g(x))=g(b)$.</p>
+<p><strong>Teorema. </strong>Sejam $X,Y\subseteq\R$, $f:X\rightarrow Y$, $g:Y\rightarrow\R$ funções, $a\in X&#8217;$, $b\in Y\cap Y&#8217;$ e assuma que $\lim_{x\rightarrow a}f(x)=b$ e $\lim_{y\rightarrow b}g(y)=g(b)$. Então $\lim_{x\rightarrow a}f(g(x))=g(b)$.</p>
 <p><strong>Demonstração.</strong> Seja $\varepsilon&gt;0$. Existe $\gamma&gt;0$ tal que se $y\in Y$ com $|y-b|\leq\gamma$, então $|g(y)-g(b)|\leq\varepsilon$. Existe $\delta&gt;0$ tal que se $0&lt;|x-a|&lt;\delta$, então $|f(x)-b|\leq\gamma$. Então se $x\in X$ tal que $0&lt;|x-a|\leq \delta$, então $|f(x)-b|\leq \gamma$, e $|g(f(x))-g(b)|\leq\varepsilon$. $\Box$</p>
 <h4>Limites laterais</h4>
 <p>Seja $X\subseteq\R$ e $a\in\R$. O ponto $a$ é dito <em>ponto de acumulação à direita</em> de $X$ se $X\cap (a,a+\varepsilon)\neq\emptyset$ for all $\varepsilon&gt;0$. O conjunto de pontos de acumulação à direita de $X$ é denotado por $X&#8217;_+$.</p>
@@ -214,14 +271,14 @@ $$<br />
 $$</p>
 <p>Define-se de modo análogo os conceitos de ponto de acumulação à esquerda e limite lateral à esquerda.</p>
 <p><strong>Lema. </strong>Seja $f:X\rightarrow \R$ uma função e seja $a\in X&#8217;_+\cap X&#8217;_-$. Então existe $\lim_{x\rightarrow a}f(x)$ se e somente se existem $\lim_{x\rightarrow a+}f(x)$ e $\lim_{x\rightarrow a-}f(x)$ e eles são iguais.</p>
-<p><strong>Demonstração. </strong>Pelas definições, se existe o limite, existem os limites laterais. Assuma que existem os limites laterais e eles são iguais a $L$. Seja $\varepsilon&gt;0$. Então existem $\delta_1,\ \delta_2&gt;0$ tal que se<br />
-$x\in X\cap (a,a+\delta_1)$, então $|f(x)-L|\leq\varepsilon$ e se $x\in X\cap (a-\delta_2,a)$, então $|f(x)-a|\leq\varepsilon$. Seja $\delta=\min\{\delta_1,\delta_2\}$. Se $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$, então $|f(x)-L|\leq\varepsilon$. $\Box$</p>
+<p><strong>Demonstração. </strong>Pelas definições, se existe o limite, existem os limites laterais e são iguais. Assuma que existem os limites laterais e eles são iguais a $L$. Seja $\varepsilon&gt;0$. Então existem $\delta_1,\ \delta_2&gt;0$ tal que se<br />
+$x\in X\cap (a,a+\delta_1)$, então $|f(x)-L|\leq\varepsilon$ e se $x\in X\cap (a-\delta_2,a)$, então $|f(x)-L|\leq\varepsilon$. Seja $\delta=\min\{\delta_1,\delta_2\}$. Se $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$, então $|f(x)-L|\leq\varepsilon$. $\Box$</p>
 <p><strong>Teorema. </strong>Seja $f:X\subseteq\R\rightarrow\R$ uma função monótona e limitada. Se $a\in X_+$, então existe o limite lateral $\lim_{x\rightarrow a+}f(x)$.</p>
 <p><strong>Demonstração. </strong>Assuma sem perder generalidade que $f(x)$ é não decrescente. Afirmamos que<br />
 $$<br />
 \lim_{x\rightarrow a+}f(x)=\inf\{f(x)\mid x\in X,\ a&lt;x\}.<br />
 $$<br />
-Denote o lado direito da última igualdade por $L$. Seja $\varepsilon&gt;0$. Então $L+\varepsilon$ não é cota inferior de $\{f(x)\mid x\in X,\ a&lt;x\}$. Então existe $\delta&gt;0$ such that $a+\delta\in X$ e<br />
+Denote o lado direito da última igualdade por $L$. Seja $\varepsilon&gt;0$. Então $L+\varepsilon$ não é cota inferior de $\{f(x)\mid x\in X,\ a&lt;x\}$. Então existe $\delta&gt;0$ tal que $a+\delta\in X$ e<br />
 $$<br />
 L\leq f(a+\delta)&lt;L+\varepsilon.<br />
 $$<br />
