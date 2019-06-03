@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 03 Jun 2019 13:33:12 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 03 Jun 2019 14:42:02 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -40,7 +40,7 @@ $$<br />
 Quando não tiver perigo de confusão, escrevemos $C^n$ e $C^\infty$ em vez de $C^n(I)$ e $C^\infty(I)$, respetivamente. Se $f\in C^n$, então dizemos que <i>f é de classe $C^n$</i>. O símbolo $C^0(I)=C^0$ denote a classe de funções contínuas $f:I\rightarrow\R$.</p>
 <p>Seja $f:I\rightarrow \R$ tal que $f(x)$ é $n$ vezes derivável em $a\in I$. O <i>polinômio de Taylor de ordem $n$ da função $f$ no ponto $a$</i> é o polinômio: $$ p(h)=f(a)+\frac{f'(a)}{1!}h+\frac{f&#8221;(a)}{2!}h^2+\cdots+\frac{f^n(a)}{n!}h^n=\sum_{ì=0}^n\frac{f^{(i)}}{i!}h^i. $$</p>
 <p><b>Lemma.</b> $p(h)$ é o único polinômio de grau menor ou igual a $n$ tal que $p^{(i)}(0)=f^{(i)}(a)$ para todo $i=0,\ldots,n$.</p>
-<p><strong>Demonstração.</strong> Calculemos primeiro a $i$-ésimo derivádo de um monômio: $$ (h^k)^{(i)}=\left\{ \begin{array}{ll} k(k-1)\cdots (k-i+1)h^{(k-i)} &amp; \mbox {se $i\leq k$;}\\ 0 &amp; \mbox{se $i&gt; k$}. \end{array}\right. $$ Assim, $$ p^{(i)}(0)=i(i-1)\cdots 1 \frac{f^{(i)}(a)}{i!}h^{i-i}=f^{(i)}(a) \quad\mbox{para todo}\quad i=0,\ldots,n. $$ Provaremos agora a unicidade de $p(h)$. Seja $q(h)$ um polinômio tal que $q^{(i)}(0)=f^{(i)}(a)$ para todo $i=0,\ldots,n$. Assuma que $$ q(h)=\beta_0+\beta_1 h+\beta_2 h^2+\cdots+\beta_n h^n. $$ Pela formula acima, $$ f^{(i)}(a)=q^{(i)}(0)=i(i-1)\cdots 1\beta_i, $$ que implica que $\beta_i=f^{(i)}(a)/i!$ para todo $i=0,\ldots,n$. Portanto os coeficientes de $q(h)$ são iguas aos coeficientes de $p(h)$ e $q(h)=p(h)$.</p>
+<p><strong>Demonstração.</strong> Calculemos primeiro a $i$-ésimo derivádo de um monômio: $$ (h^k)^{(i)}=\left\{ \begin{array}{ll} k(k-1)\cdots (k-i+1)h^{(k-i)} &amp; \mbox {se $i\leq k$;}\\ 0 &amp; \mbox{se $i&gt; k$}. \end{array}\right. $$ Assim, $$ p^{(i)}(0)=i(i-1)\cdots 1 \frac{f^{(i)}(a)}{i!}h^{i-i}=f^{(i)}(a) \quad\mbox{para todo}\quad i=0,\ldots,n. $$ Provaremos agora a unicidade de $p(h)$. Seja $q(h)$ um polinômio tal que $q^{(i)}(0)=f^{(i)}(a)$ para todo $i=0,\ldots,n$. Assuma que $$ q(h)=\beta_0+\beta_1 h+\beta_2 h^2+\cdots+\beta_n h^n. $$ Pela formula acima, $$ f^{(i)}(a)=q^{(i)}(0)=i(i-1)\cdots 1\beta_i, $$ que implica que $\beta_i=f^{(i)}(a)/i!$ para todo $i=0,\ldots,n$. Portanto os coeficientes de $q(h)$ são iguais aos coeficientes de $p(h)$ e $q(h)=p(h)$.</p>
 <h3>A fórmula de Taylor</h3>
 <p>Precisaremos do seguinte lema.</p>
 <p><b>Lemma.</b> Seja $J$ um intervalo tal que $0\in J$ e $r:J\rightarrow \R$ uma função $n$ vezes derivável no ponto $a=0$. Então as seguintes afirmações são equivalentes.</p>
@@ -87,8 +87,8 @@ onde $r(h)$ é uma função definida em um intervalo $J$ tal que $0\in J$ e $\li
 		<description><![CDATA[$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}\newcommand{\Q}{\mathbb Q}$Teorema (Darboux). Assuma que $f:[a,b]\rightarrow\R$ é uma função derivável e $d\in\R$ tal que $f'(a)&#60;d&#60;f'(b)$. Então existe $c\in(a,b)$ tal que $f'(c)=d$. Demonstração. Assuma primeiro que $d=0$. A função $f$ é contínua e atinge seu valor mínimo em um ponto $c\in[a,b]$. Como $f'(a)&#60;0$ e $f'(b)&#62;0$, temos que $c\neq a$ e $c\neq b$. Logo $c\in(a,b)$. &#8230; <a href="https://schcs.github.io/WP/index.php/2019/06/03/funcoes-derivaveis-em-um-intervalo/" class="more-link">Continue reading <span class="screen-reader-text">Funções deriváveis em um intervalo</span></a>]]></description>
 				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}\newcommand{\Q}{\mathbb Q}$<strong>Teorema (Darboux). </strong>Assuma que $f:[a,b]\rightarrow\R$ é uma função derivável e $d\in\R$ tal que $f'(a)&lt;d&lt;f'(b)$. Então existe $c\in(a,b)$ tal que $f'(c)=d$.</p>
 <p><strong>Demonstração.</strong> Assuma primeiro que $d=0$. A função $f$ é contínua e atinge seu valor mínimo em um ponto $c\in[a,b]$. Como $f'(a)&lt;0$ e $f'(b)&gt;0$, temos que $c\neq a$ e $c\neq b$. Logo $c\in(a,b)$. Neste caso um teorema anterior implica que $f'(c)=0$.</p>
-<p>Assuma agora que $d\neq 0$. Neste caso considere a função $g:[a,b]\rightarrow\R$, $g(x)=f(x)-dx$. Temos que $g(x)$ é derivável e que $g'(x)=f'(x)-d$, então $g(x)$ satisfaz, $g'(a)&lt;0&lt;g'(b)$. Pelo argumento no parágrafo anterior, existe $c\in (a,b)$ tal que  g'(c)=0$ que implica que $f'(c)=d$.</p>
-<p><strong>Teorema (Rolle). </strong>Seja $f[a,b]\rightarrow\R$ uma função contínua. Se $f(x)$ for derivável em $(a,b)$ e $f(a)=f(b)$, então existe $c\in(a,b)$ tal que $f'(c)=0$.</p>
+<p>Assuma agora que $d\neq 0$. Neste caso considere a função $g:[a,b]\rightarrow\R$, $g(x)=f(x)-dx$. Temos que $g(x)$ é derivável e que $g'(x)=f'(x)-d$, então $g(x)$ satisfaz, $g'(a)&lt;0&lt;g'(b)$. Pelo argumento no parágrafo anterior, existe $c\in (a,b)$ tal que  $g'(c)=0$ que implica que $f'(c)=d$.</p>
+<p><strong>Teorema (Rolle). </strong>Seja $f:[a,b]\rightarrow\R$ uma função contínua. Se $f(x)$ for derivável em $(a,b)$ e $f(a)=f(b)$, então existe $c\in(a,b)$ tal que $f'(c)=0$.</p>
 <p><strong>Demonstração. </strong>Por um teorema anterior, $f(x)$ atinge seu mínimo $m$ e máximo $M$ em $[a,b]$. Um destes pontos precisa ser diferente de $a$ ou $b$, pois no caso contrário $f(x)$ seria constante, e neste caso $f'(c)=0$ vale para todo $c\in(a,b)$. Se, digamos, $m\in(a,b)$, então $f'(c)=0$.</p>
 <p><strong>Teorema (Teorema do Valor Médio de Lagrange). </strong>Seja $f:[a,b]\rightarrow\R$ uma função contínua e derivável em $(a,b)$. Existe $c\in(a,b)$ tal que $f'(c)=(f(a)-f(b))/(a-b)$.</p>
 <p><strong>Demonstração. </strong>Defina $g:[a,b]\rightarrow\R$ pondo $g(x)=f(x)-dx$ onde $d=(f(a)-f(b))/(a-b)$. Note que $g(a)=g(b)$. Pelo Teorema de Rolle, existe $c\in(a,b)$ tal que $g'(c)=0$. Logo $f'(c)=d=(f(a)-f(b))/(a-b)$,</p>
@@ -173,9 +173,9 @@ $$<br />
 Portanto, $g'(b)=g'(f(a))=1/f'(a)$.<br />
 Reciprocamente, assuma que $f'(a)\neq 0$. Seja $y_n\in Y\setminus\{b\}$ uma sequência de pontos tal que  $y_n\rightarrow b$. Como $g$ é contínua em $b$, obtemos que $x_n\rightarrow g(b)=a$ onde $x_n=g(y_n)$. Portanto,<br />
 \begin{eqnarray*}<br />
-\lim_{x\rightarrow\infty}\frac{g(y_n)-g(b)}{y_n-b}&amp;=&amp;\lim_{x\rightarrow\infty}\left(\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
-\left(\lim_{x\rightarrow\infty}\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
-\left(\lim_{x\rightarrow\infty}\frac{f(x_n)-f(a)}{x_n-a}\right)^{-1}=1/f'(a).<br />
+\lim_{n\rightarrow\infty}\frac{g(y_n)-g(b)}{y_n-b}&amp;=&amp;\lim_{n\rightarrow\infty}\left(\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
+\left(\lim_{n\rightarrow\infty}\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
+\left(\lim_{n\rightarrow\infty}\frac{f(x_n)-f(a)}{x_n-a}\right)^{-1}=1/f'(a).<br />
 \end{eqnarray*}<br />
 Logo existe $g'(b)$ e é igual a $1/f'(a)$.</p>
 <p><strong>Teorema.</strong> Seja $f:X\rightarrow\R$ uma função derivável no ponto $a\in X\cap X&#8217;_+$ com $f&#8217;_+(a)&gt;0$. Então existe $\delta&gt;0$ tal que se $x\in(a,a+\delta)$, então $f(a)&lt;f(x)$.</p>
@@ -186,7 +186,7 @@ $$<br />
 Usando a definição de limite com $\varepsilon =f&#8217;_+(a)/2$, obtemos que existe $\delta&gt;0$ tal que $(f(x)-f(a))(x-a)&gt;0$ se $x\in(a,a+\delta)$. Se $x$ é tal número real, então $x-a&gt;0$ e segue que $f(x)-f(a)&gt;0$; ou seja $f(x)&gt;f(a)$.</p>
 <p>Pode-se demonstrar analogamente o seguinte teorema.</p>
 <p><strong>Teorema.</strong> Seja $f:X\rightarrow\R$ uma função derivável no ponto $a\in X\cap X&#8217;_-$ com$ f&#8217;_-(a)&gt;0$. Então existe $\delta&gt;0$ tal que se $x\in(a-\delta,a)$, então $f(x)&lt;f(a)$.</p>
-<p><strong>Corolário. </strong>Se $f:X\rightarrow\R$ é uma função monótona e não-decrescente, então  as suas derivadas laterais (onde existem) são não negativos.</p>
+<p><strong>Corolário. </strong>Se $f:X\rightarrow\R$ é uma função monótona e não crescente [não decrescente], então  as suas derivadas laterais (onde existem) são não positivos [não negativos].</p>
 <p><strong>Corolário. </strong>Seja $f:X\rightarrow\R$ e $a\in X\cap X&#8217;_+\cap X&#8217;_-$. Se $f'(a)&gt;0$, então existe $\delta&gt;0$ tal que tal que se $a-\delta&lt;x&lt;a&lt;y&lt;a+\delta$, então $f(x)&lt; f(a)&lt;f(y)$.</p>
 <p><strong>Corolário.</strong> <strong> </strong>Seja $f:X\rightarrow\R$ e $a\in X\cap X&#8217;_+\cap X&#8217;_-$ tal que $f(x)$ é derivável em $a$.  Se $f(x)$ possui um máximo (ou mínimo) local em $a$, então $f'(a)=0$.</p>
 <p>&nbsp;</p>

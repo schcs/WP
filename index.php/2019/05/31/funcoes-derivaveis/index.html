@@ -88,7 +88,7 @@ MathJax.Hub.Config({
 	<header class="entry-header">
 		<h1 class="entry-title">Funções deriváveis</h1>		
 		<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/31/funcoes-derivaveis/" rel="bookmark"><time class="entry-date published" datetime="2019-05-31T11:02:47+00:00">May 31, 2019</time><time class="updated" datetime="2019-05-31T13:40:35+00:00">May 31, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/31/funcoes-derivaveis/" rel="bookmark"><time class="entry-date published" datetime="2019-05-31T11:02:47+00:00">May 31, 2019</time><time class="updated" datetime="2019-06-03T13:47:43+00:00">June 3, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -157,9 +157,9 @@ $$<br />
 Portanto, $g'(b)=g'(f(a))=1/f'(a)$.<br />
 Reciprocamente, assuma que $f'(a)\neq 0$. Seja $y_n\in Y\setminus\{b\}$ uma sequência de pontos tal que  $y_n\rightarrow b$. Como $g$ é contínua em $b$, obtemos que $x_n\rightarrow g(b)=a$ onde $x_n=g(y_n)$. Portanto,<br />
 \begin{eqnarray*}<br />
-\lim_{x\rightarrow\infty}\frac{g(y_n)-g(b)}{y_n-b}&amp;=&amp;\lim_{x\rightarrow\infty}\left(\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
-\left(\lim_{x\rightarrow\infty}\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
-\left(\lim_{x\rightarrow\infty}\frac{f(x_n)-f(a)}{x_n-a}\right)^{-1}=1/f'(a).<br />
+\lim_{n\rightarrow\infty}\frac{g(y_n)-g(b)}{y_n-b}&amp;=&amp;\lim_{n\rightarrow\infty}\left(\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
+\left(\lim_{n\rightarrow\infty}\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
+\left(\lim_{n\rightarrow\infty}\frac{f(x_n)-f(a)}{x_n-a}\right)^{-1}=1/f'(a).<br />
 \end{eqnarray*}<br />
 Logo existe $g'(b)$ e é igual a $1/f'(a)$.</p>
 <p><strong>Teorema.</strong> Seja $f:X\rightarrow\R$ uma função derivável no ponto $a\in X\cap X&#8217;_+$ com $f&#8217;_+(a)&gt;0$. Então existe $\delta&gt;0$ tal que se $x\in(a,a+\delta)$, então $f(a)&lt;f(x)$.</p>
@@ -170,7 +170,7 @@ $$<br />
 Usando a definição de limite com $\varepsilon =f&#8217;_+(a)/2$, obtemos que existe $\delta&gt;0$ tal que $(f(x)-f(a))(x-a)&gt;0$ se $x\in(a,a+\delta)$. Se $x$ é tal número real, então $x-a&gt;0$ e segue que $f(x)-f(a)&gt;0$; ou seja $f(x)&gt;f(a)$.</p>
 <p>Pode-se demonstrar analogamente o seguinte teorema.</p>
 <p><strong>Teorema.</strong> Seja $f:X\rightarrow\R$ uma função derivável no ponto $a\in X\cap X&#8217;_-$ com$ f&#8217;_-(a)&gt;0$. Então existe $\delta&gt;0$ tal que se $x\in(a-\delta,a)$, então $f(x)&lt;f(a)$.</p>
-<p><strong>Corolário. </strong>Se $f:X\rightarrow\R$ é uma função monótona e não-decrescente, então  as suas derivadas laterais (onde existem) são não negativos.</p>
+<p><strong>Corolário. </strong>Se $f:X\rightarrow\R$ é uma função monótona e não crescente [não decrescente], então  as suas derivadas laterais (onde existem) são não positivos [não negativos].</p>
 <p><strong>Corolário. </strong>Seja $f:X\rightarrow\R$ e $a\in X\cap X&#8217;_+\cap X&#8217;_-$. Se $f'(a)&gt;0$, então existe $\delta&gt;0$ tal que tal que se $a-\delta&lt;x&lt;a&lt;y&lt;a+\delta$, então $f(x)&lt; f(a)&lt;f(y)$.</p>
 <p><strong>Corolário.</strong> <strong> </strong>Seja $f:X\rightarrow\R$ e $a\in X\cap X&#8217;_+\cap X&#8217;_-$ tal que $f(x)$ é derivável em $a$.  Se $f(x)$ possui um máximo (ou mínimo) local em $a$, então $f'(a)=0$.</p>
 <p>&nbsp;</p>
