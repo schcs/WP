@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Wed, 05 Jun 2019 12:08:14 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 05 Jun 2019 14:51:54 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -112,7 +112,19 @@ onde $r(h)$ é uma função definida em um intervalo $J$ tal que $0\in J$ e $\li
 <p><b>Observação:</b> Por substituição de variável $b=a+h$ (e $h=b-a$), a Fórmula de Taylor é frequentamente escrita como $$ f(b)=f(a)+f'(a)(b-a)+\frac{f&#8221;(a)}{2}(b-a)^2+\cdots+\frac{f^{(n)}(a)}{n!}(b-a)^n+ r(b-a)= $$ $$ \sum_{ì=0}^n \frac{f^{(i)}(a)}{i!}(b-a)^i+r(b-a). $$</p>
 <p><b>Exemplo.</b> A fórmula de Taylor quer dizer que funções deriváveis podem ser aproximadas por funções polinomiais. A condição que $\lim_{h\rightarrow 0}r(h)/h^n=0$ significa que &#8220;$r(h)$ converge rapidamente a 0 enquanto $h$ converge a $0$&#8221;. Considere a função $f(x)=\sqrt x$ no intervalo $I=]0,\infty[$ e seja $a=1$. Aproximaremos a função $f(x)$ em uma vizinhança de $a$ por um polinômio de grau $2$. Calculemos que $$ f(1)=1,\quad f'(1)=\frac 12,\quad f&#8221;(x)=-\frac 14. $$ Logo a fórmula de Taylor diz, para $0&lt;b$, que $$ f(b)=1+\frac 12(b-1)-\frac 18(b-1)^2+r(b-1) $$ onde a função $r(h)$ é &#8220;pequena&#8221; para valores $b$ na proximidade de $1$. Portanto na proximidade do ponto $a=1$, a função $f(x)=\sqrt x$ está próxima à função polinomial $p(b)=1+1/2(b-1)-1/8(b-1)^2$. De fato, é fácil verificar por <a href="http://www.wolframalpha.com/">WolframAlpha</a> que as curvas das duas funções são muito próximas na proximidade do ponto $a=1$. Para experimentar, cole a instrução <mark>Plot[{x^(1/2), 1+1/2(x-1)-1/8*(x-1)^2}, {x, 1/2, 3/2}]</mark> no espaço em baixo. Vai ver que as curvas das duas funções estão de fato muito próximas.</p>
 <p><script id="WolframAlphaScript" src="//www.wolframalpha.com/input/embed/?type=largeannot" type="text/javascript"></script></p>
-<p>&nbsp;</p>
+<p><strong>Teorema (Fórmula de Taylor com resto de Lagrange). </strong>Seja $f\in C^{n-1}([a,b])$ tal que existe $f^{(n)}(x)$ em $(a,b)$. Então existe $c\in(a,b)$ tal que<br />
+$$<br />
+f(b)=\sum_{i=0}^{n-1} \frac{f^{(i)}(a)}{i!}(b-a)^i+\frac{f^{(n)}(c)}{n!}(b-a)^n.<br />
+$$</p>
+<p><strong>Demonstração. </strong>Defina $\varphi:[a,b]\rightarrow\R$ com<br />
+$$<br />
+\varphi(x)=f(b)-\sum_{i=0}^{n-1} \frac{f^{(i)}(a)}{i!}(b-a)^i-\frac{K(b-x)^n}{n!}<br />
+$$<br />
+onde $K\in\R$ é escolhido tal que $\varphi(a)=0$. Então $\varphi$ é contínua em $[a,b]$ e é diferenciável em $(a,b)$ com $\varphi(a)=\varphi(b)=0$. Além disso<br />
+$$<br />
+\varphi'(x)=\frac{K-f^{(n)}(x)}{(n-1)!}(b-x)^{n-1}.<br />
+$$<br />
+Pelo Teorema de Rolle, existe $c\in(a,b)$ tal que $\varphi'(c)=0$. Isto significa que $K=f^{(n)}(c)$. Agora faça a substituição $x=a$.</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/06/03/a-formula-de-taylor/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
