@@ -84,6 +84,56 @@ MathJax.Hub.Config({
 			
 				
 					
+<article id="post-339" class="post-339 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/" rel="bookmark">Subgrupos de Hall</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/" rel="bookmark"><time class="entry-date published" datetime="2019-08-21T22:40:12+00:00">August 21, 2019</time><time class="updated" datetime="2019-08-22T00:32:58+00:00">August 22, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>Seja $\pi$ é um conjunto de primos. Um número natural é dito <em>$\pi$-número</em>, se $p\mid n$ implica que $p\in\pi$. Um número é dito <em>$\pi&#8217;$-número</em>, se $p\mid n$ implica que $p\not\in\pi$.</p>
+<p>Se $G$ é um grupo e  $H\leq G$, então $H$ é dito <em>$\pi$-subgrupo de <a href="https://en.wikipedia.org/wiki/Philip_Hall">Hall</a>,</em> se $|H|$ é um $\pi$-número e $|G:H|$ é um $\pi&#8217;$-número.</p>
+<p><strong>Exemplo.</strong> Se $\pi=\{p\}$ com um primo $p$, então $\pi$-subgrupo de Hall é simplesmente um $p$-subgrupo de Sylow.</p>
+<p><strong>Exemplo. </strong>O grupo $A_5$ não possui $\{3,5\}$-subgroupo de Hall nem $\{2,5\}$-subgrupo de Hall.</p>
+<p>Nesta página provaremos o seguinte teorema.</p>
+<p><strong>Teorema (P. Hall). </strong>Os seguintes são equivalentes para um grupo finito $G$.</p>
+<ol>
+<li>$G$ é solúvel;</li>
+<li>para todo conjunto de primos $\pi$, existe Hall $\pi$-subgrupo $H$ de $G$.</li>
+</ol>
+<p>Além disso, em um grupo solúvel, os $\pi$-subgrupos são conjugados.</p>
+<p>Para demonstrar o teorema, precisaremos de dois resultados que são interessantes independentemene do Teorema de Hall.</p>
+<p><strong>Lemma (O argumento de <a href="https://en.wikipedia.org/wiki/Giovanni_Frattini">Frattini</a>). </strong>Seja $G$ um grupo finito com subgrupo normal $N$ e $P$ um $p$-subgrupo de Sylow de $N$. Então<br />
+$$<br />
+G=N_G(P)N.<br />
+$$</p>
+<p><strong>Demonstração. </strong>É claro que $N_G(P)N\subseteq G$, então precisamos provar que $G\subseteq N_G(P)N$.</p>
+<p>Note que $P$ é um $p$-subgrupo de Sylow de $N$. Seja $g\in G$. Então $P^g$ é um $p$-subgrupo de Sylow de $G$ contido em $N$, logo ele também é um $p$-subgrupo de Sylow de $N$. Pelo Teorema de Sylow, existe $n\in N$ tal que $P^g=P^n$; ou seja $P^{gn^{-1}}=P$, que quer dizer que $gn^{-1}\in N_G(P)$. Portanto existe $x\in N_G(P)$ tal que $gn^{-1}=x$ que implica que $g=xn$; ou seja $G\subseteq N_G(P)N$.</p>
+<p><strong>Lema. </strong>Seja $G$ um grupo solúvel com ordem $p^na$ onde $p\nmid a$ e assuma que $G$ possui um único subgrupo minimal normal $M$ tal que $|M|=p^n$. Então $G$ contém subgrupos de ordem $a$ e dois tais subgrupos são conjugados.</p>
+<p>Note que o lema anterior é um caso particular do Teorema de <a href="https://en.wikipedia.org/wiki/Issai_Schur">Schur</a>&#8211;<a href="https://en.wikipedia.org/wiki/Hans_Zassenhaus">Zassenhaus</a>.</p>
+<p><strong>Teorema (Schur-Zassenhaus). </strong>Seja $N$ um subgrupo normal de um grupo finito $G$ tal que $\mbox{mdc}(|N|,|G:N|)=1$. Então $G$ possui um subgrupo de ordem $|G:N|$. Além disso se ou $N$ ou $G/N$ é solúvel, então dois tais subgrupos são conjugados.</p>
+<p>Na verdade, a condição no Teorema de Schur-Zassenhaus que ou $N$ ou $G/N$ é solúvel é válida em qualquer grupo finito pelo famoso Teorema de <a href="https://en.wikipedia.org/wiki/Walter_Feit">Feit</a>&#8211;<a href="https://en.wikipedia.org/wiki/John_G._Thompson">Thompson</a>.</p>
+<p><strong>Teorema (Feit-Thompson, 1963). </strong>Um grupo finito de ordem ímpar é solúvel.</p>
+<p><strong>Demonstração do Lema. </strong>O quociente $G/M$ é um grupo solúvel de ordem $a$. Seja $K/M$ um subgrupo minimal normal de $G/M$. O grupo $K/M$ é um $q$-grupo abeliano elementar para algum primo $q\neq p$. Então $|K|=q^mp^n$ e se $Q$ é um Sylow $q$-subgrupo de $K$, então $K=QM$.</p>
+<p><strong>Afirmação. </strong>$Z(K)=1$.</p>
+<p>Assuma que não. Como $K$ é normal em $G$ e $Z(K)$ é caraterístico em $K$, temos que $Z(K)$ é normal em $G$. Como $M$ é o único minimal normal de $G$, $M\leq Z(K)$. Isto implica que $Q$ é caraterístico em $K$ e logo será normal em $G$. Mas isto implica que $M\leq Q$, que é uma contradição.</p>
+<p>Seja $N^*=N_G(Q)$ e $N=N_K(Q)=N^*\cap K$.</p>
+<p><strong>Afirmação. </strong>$M\cap N=1$.</p>
+<p>Seja $x\in M\cap N$. Afirmamos que $x\in Z(K)$. Se $k\in K$, então $k=mq$ com $m\in M$ e $q\in Q$. Claramente, $x$ comuta com $m$. Provaremos que $x$ comuta com $q$. Note que $xqx^{-1}q^{-1}\in Q\cap M=1$. Logo $x$ comuta com $q$ e $x\in Z(K)$, como foi afirmado. Logo, $M\cap N\leq Z(K)=1$.</p>
+<p><strong>Afirmação. </strong>$|N^*|=a$.</p>
+<p>Pelo argumento de Frattini, temos que $G=KN^*$. Como<br />
+$$<br />
+G/K=KN^*/K\cong N^*/(N^*\cap K)=N^*/N<br />
+$$<br />
+tem-se que $|N^*|=|G||N|/|K|$. Por outro lado, $K=MQ=MN$ e isto implica que $|K|=|M||N|/|M\cap N|=|M||N|$. Portanto,<br />
+$$<br />
+|N^*|=|G||N|/|K|=|G||N|/(|M||N|)=|G|/|M|=a.<br />
+$$</p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
 <article id="post-333" class="post-333 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/08/20/o-teorema-de-jordan-holder/" rel="bookmark">O Teorema de Jordan-Hölder</a></h1>	</header><!-- .entry-header -->
@@ -196,7 +246,7 @@ $G/H_1\cong G_1/K_1$. $\Box$</p>
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/" rel="bookmark">Grupos solúveis</a></h1>	</header><!-- .entry-header -->
 				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/" rel="bookmark"><time class="entry-date published" datetime="2019-08-19T12:13:29+00:00">August 19, 2019</time><time class="updated" datetime="2019-08-19T23:37:42+00:00">August 19, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/" rel="bookmark"><time class="entry-date published" datetime="2019-08-19T12:13:29+00:00">August 19, 2019</time><time class="updated" datetime="2019-08-21T22:10:57+00:00">August 21, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
 				<div class="entry-content">
 		<p>Seja $G$ um grupo. Se $x,y\in G$, então o comutador $[x,y]$ de $x,y$ é definido por $[x,y]=x^{-1}y^{-1}xy$. Em um grupo $G$, denotamos por $G&#8217;$ o subgrupo $G&#8217;=\left&lt; [x,y] \mid x,y\in G\right&gt;$ (o subgrupo gerado por comutadores). O subgrupo $G&#8217;$ é chamado de <em>subgrupo derivado, </em>ou <em>subgrupo comutador</em> de $G$.</p>
 <p>Um subgroupo $H\leq G$ é dito <em>caraterístico</em>, se $H$ é invariente por automorfismos de $G$. Um subgrupo caraterístico é normal.</p>
@@ -222,7 +272,7 @@ Então a afirmação é verdadeira para $i+1$ e segue por indução que ela é v
 <li>Existe $k$ tal que $G^{(k)}=1$.</li>
 </ol>
 <p><strong>Demonstração. </strong>Segue dos resultados anteriores.</p>
-<p>Um grupo $G$ é dito <em>solúvel</em> se uma das afirmações do corolário anterior é válida para $G$.</p>
+<p>Um grupo $G$ é dito <em>solúvel</em> se uma das afirmações do corolário anterior é válida para $G$. O menor $k$ tal que $G^{(k)}=1$ é chamado de <em>comprimento derivado</em> de $G$.</p>
 <p>Um grupo abeliano finito é dito grupo <em>abeliano elementar,, </em>se existe um primo $p$, tal que $x^p=1$ para todo $x\in G$. Pelo Teorema Fundamental dos Grupos Finitos Abelianos, temos que $G$ é grupo abeliano elementar se e somente se $G=C_p\times\cdots \times C_p$ com algum primo $p$. Em particular, um grupo abeliano elementar pode ser considerado como um espaço vetorial sobre o corpo $\mathbb F_p$.</p>
 <p><strong>Lema.</strong> As seguintes afirmações são válidas para um grupo $G$.</p>
 <ol>
@@ -619,32 +669,6 @@ que contradiz ao fato que $|f(x_{k_n})-f(y_{k_n})|&gt;\varepsilon$.</p>
 <p><strong>Demonstração.</strong> Defina $\bar f:\overline X\rightarrow\R$ como no parágrafo anterior. Então $\overline X$ é limitado e fechado; ou seja, $\overline X$ é compacto. Por um teorema anterior, $\bar f(\overline X)$ é compacto, e assim ele é limitado. Portanto $f(X)$ é também limitado.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-			</div><!-- .entry-content -->
-	</article><!-- #post-## -->
-
-				
-					
-<article id="post-231" class="post-231 post type-post status-publish format-standard hentry category-uncategorized">
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/05/20/exercicios-limites-de-funcoes/" rel="bookmark">Exercícios: Limite de funções</a></h1>	</header><!-- .entry-header -->
-				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/20/exercicios-limites-de-funcoes/" rel="bookmark"><time class="entry-date published" datetime="2019-05-20T12:21:40+00:00">May 20, 2019</time><time class="updated" datetime="2019-05-20T13:23:18+00:00">May 20, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/05/20/exercicios-limites-de-funcoes/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
-				<div class="entry-content">
-		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}\newcommand{\Q}{\mathbb Q}$<br />
-1. Determina os limites das seguintes funções em todo ponto  $a\in X&#8217;$.</p>
-<ol>
-<li>$f:\R\rightarrow \R$, $f(x)=x^n$ (com $n\in\N^+$).</li>
-<li>$f:[0,\infty)\rightarrow\R$, $f(x)=\sqrt x$.</li>
-<li>$f:\R\rightarrow\R$, $f(x)=[x]$ onde $[x]$ é a parte inteira de $x$. Ou seja, $[x]$ é o maior inteiro tal que $[x]\leq x$.</li>
-<li> $f:\R\rightarrow\R$, $f(x)=0$ se $x\in\Q$, $f(x)=1$ se $x\in\R\setminus\Q$.</li>
-<li>$f:\R\rightarrow\R$, $f(x)=0$ se $x\in\Q$, $f(x)=x$ se $x\in\R\setminus\Q$.</li>
-<li>$f:\R\setminus\{0\}\rightarrow \R$, $f(x)=x/|x|$.</li>
-<li>$f:\R\setminus\{-2\}\rightarrow\R$, $f(x)=(x^2+3x+2)/(x+2)$.</li>
-</ol>
-<p>2. Seja $f:\R\rightarrow\R$ a função definida por $f(x)=0$ se $x\in\R\setminus\Q$ e $f(x)=1/q$ se $x\in\Q$ tal que $x=p/q$ com $\mbox{mdc}(p,q)=1$ e $q&gt; 0$. Demonstra que $\lim_{x\rightarrow a}f(x)=0$ se $a\in\R\setminus\Q$, enquanto $\lim_{x\rightarrow a}f(x)$ não existe se $a\in Q$. [Dica: veja o argumento no livro de Elon.]</p>
-<p>3. Demonstre os resultados que foram apresentados na aula, mas as demonstrações foram omitidas.</p>
-<p>4. Mostre, exibindo um contraexemplo, que a condição que $\lim_{y\rightarrow b}g(y)=g(b)$ é necessária no resultado sobre o limite da composição de funções.</p>
-<p>5. Enuncie e demonstre os resultados sobre limite de funções apresentados na aula para limites laterais.</p>
 			</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 
