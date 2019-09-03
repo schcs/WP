@@ -12,12 +12,75 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 02 Sep 2019 14:11:36 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 03 Sep 2019 00:51:56 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.10</generator>
 	<item>
+		<title>Grupos nilpotentes</title>
+		<link>https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/#respond</comments>
+		<pubDate>Tue, 03 Sep 2019 00:51:18 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=373</guid>
+		<description><![CDATA[Se $G$ é um grupo e $A,B\leq G$, então $$ [A,B]=\left&#60;[a,b]\mid a\in A,\ b\in B\right&#62;. $$ Lema. Seja $K\unlhd G$, e $H\leq G$ tal que $K\leq H\leq G$.  Então $[H,G]\leq K$ se e somente se $H/K\leq Z(G/K)$. Demonstração. Exercício. Uma série normal $$ G_0&#62;\cdots&#62; G_k $$ de um grupo $G$ é dito série central se $$ G_i/G_{i+1}\leq Z(G/G_{i+1}). &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/" class="more-link">Continue reading <span class="screen-reader-text">Grupos nilpotentes</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Se $G$ é um grupo e $A,B\leq G$, então<br />
+$$<br />
+[A,B]=\left&lt;[a,b]\mid a\in A,\ b\in B\right&gt;.<br />
+$$</p>
+<p><strong>Lema. </strong>Seja $K\unlhd G$, e $H\leq G$ tal que $K\leq H\leq G$.  Então $[H,G]\leq K$ se e somente se $H/K\leq Z(G/K)$.</p>
+<p><strong>Demonstração. </strong>Exercício.</p>
+<p>Uma série normal<br />
+$$<br />
+G_0&gt;\cdots&gt; G_k<br />
+$$<br />
+de um grupo $G$ é dito <em>série central </em>se<br />
+$$<br />
+G_i/G_{i+1}\leq Z(G/G_{i+1}).<br />
+$$<br />
+Note que se $G_i$ é uma série central, então os quocientes $G_i/G_{i+1}$ são abelianos.</p>
+<p>Em um grupo $G$, definimos a série $\gamma_i(G)$  recursivamente como $\gamma_1(G)=G$, e $\gamma_{i+1}(G)=[G,\gamma_i(G)]$ para $i\geq 1$. Note que $\gamma_2(G)=G&#8217;$. A série $\gamma_i(G)$ é chamada de <em>série central descendente</em>.</p>
+<p>Similarmente, definimos $\zeta_0(G)=1$ e recursivamente $\zeta_{i+1}(G)$ é definido como o subgrupo de $G$ que contém $\zeta_{i}(G)$ e satisfaz que<br />
+$$<br />
+Z(G/\zeta_{i}(G))=\zeta_{i+1}(G)/\zeta_i(G).<br />
+$$<br />
+A série $\zeta_i(G)$ é chamada de <em>série central ascendente</em> de $G$. O termo $\zeta_i(G)$ é dito <em>$i$-ésimo centro de $G$</em>.</p>
+<p><strong>Lema. </strong>As séries $\gamma_i(G)$ e $\zeta_i(G)$ são centrais.</p>
+<p><strong>Demonstração. </strong>É claro no caso de $\zeta_i(G)$. O caso de $\gamma_i(G)$ segue do lema anterior.</p>
+<p><strong>Teorema. </strong>Em um grupo $G$ tem se que $\zeta_c(G)=G$ se e somente se $\gamma_{c+1}(G)=1$. Neste caso $$<br />
+\gamma_{i+1}(G)\leq \zeta_{c-i}(G)<br />
+$$<br />
+para todo $i\geq 0$.</p>
+<p><strong>Demonstração. </strong>Assuma que $\zeta_c(G)=G$. Provaremos por indução em $i$ que que a inclusão $\gamma_{i+1}(G)\leq \zeta_{c-i}(G)$ é válida. Para $i=0$, não há nada para provar. Assuma que $\gamma_{i+1}(G)\leq \zeta_{c-i}(G)$. Então, usando a hipótese de indução e o lema em cima,<br />
+$$<br />
+\gamma_{i+2}(G)=[\gamma_{i+1}(G),G]\leq [\zeta_{i-c}(G),G]\leq \zeta_{i-1-c}(G).<br />
+$$<br />
+Em particular, pondo, $i=c$, obtem-se que $\gamma_{c+1}(G)\leq\zeta_0(G)=1$.</p>
+<p>Assuma agora que $\gamma_{c+1}(G)=1$ e demonstremos a inclusão $\gamma_{c+1-i}(G)\leq \zeta_i(G)$ por indução em $i$. Se $i=0$, então a inclusão é claramente válida. Assuma que $\gamma_{c+1-i}(G)\leq \zeta_i(G)$. Então temos um homomorfismo sobrejetivo<br />
+$$<br />
+\alpha:G/\gamma_{c+1-i}(G)\rightarrow G/\zeta_i(G).<br />
+$$<br />
+Note que $[\gamma_{c-i}(G),G]=\gamma_{c-i+1}(G)$, logo $\gamma_{c-i}(G)/\gamma_{c-i+1}(G)\leq Z(G/\gamma_{c-i+1}(G))$.  Aplicando o homomorfismo $\alpha$, obtemos que<br />
+$$<br />
+\gamma_{c-i}(G)\zeta_{i}(G)/\zeta_i(G) \leq Z(G/\zeta_i(G))=\zeta_{i+1}(G)/\zeta_i(G).<br />
+$$<br />
+Portanto, $\gamma_{c-i}(G)\leq \zeta_{i+1}(G)$. Pondo, $i=c-1$, obtemos que $G=\gamma_1(G)\leq \zeta_{c}(G)$.</p>
+<p>Um grupo $G$ é dito nilpotente se existe um $c\geq 1$ tal que $\gamma_{c+1}(G)=1$. O menor tal $c$ é dito a classe de nilpotência de $G$. Claramente, um grupo nilpotente é solúvel, mas um grupo solúvel não é necessariamente nilpotente (e.g. $S_3$).</p>
+<p><strong>Corolário. </strong>Seja $G$ um grupo.</p>
+<ol>
+<li>Se $G$ é nilpotente $H\leq G$ e $N\unlhd G$, então $H$ e $G/N$ são nilpotentes.</li>
+<li>$G$ é nilpotente se e somente se $G/Z(G)$ é nilpotente.</li>
+</ol>
+<p><strong>Lema. </strong>Um $p$-grupo finito é nilpotente.</p>
+<p><strong>Demonstração. </strong>Indução pela ordem de $G$. A afirmação é verdadeira para grupos de ordem $p$ ou $p^2$. Assuma que a afirmação é verdadeira para grupo cuja ordem é menor que $p^n$ e seja $G$ um grupo de ordem $p^n$. Como $Z(G)\neq 1$, temos pela hipótese de indução que $G/Z(G)$ é nilpotente e pelo corolário anterior obtemos que $G$ é nilpotente.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Exercícios 2</title>
 		<link>https://schcs.github.io/WP/index.php/2019/09/02/exercicios-2/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/09/02/exercicios-2/#respond</comments>
@@ -559,29 +622,6 @@ $$<br />
 Pelo Teorema de Rolle, existe $c\in(a,b)$ tal que $\varphi'(c)=0$. Isto significa que $K=f^{(n+1)}(c)$. Agora faça a substituição $x=a$.</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/06/03/a-formula-de-taylor/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Funções deriváveis em um intervalo</title>
-		<link>https://schcs.github.io/WP/index.php/2019/06/03/funcoes-derivaveis-em-um-intervalo/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/06/03/funcoes-derivaveis-em-um-intervalo/#respond</comments>
-		<pubDate>Mon, 03 Jun 2019 11:14:18 +0000</pubDate>
-		<dc:creator><![CDATA[schcs]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
-
-		<guid isPermaLink="false">https://schcs.github.io/WP/?p=260</guid>
-		<description><![CDATA[$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}\newcommand{\Q}{\mathbb Q}$Teorema (Darboux). Assuma que $f:[a,b]\rightarrow\R$ é uma função derivável e $d\in\R$ tal que $f'(a)&#60;d&#60;f'(b)$. Então existe $c\in(a,b)$ tal que $f'(c)=d$. Demonstração. Assuma primeiro que $d=0$. A função $f$ é contínua e atinge seu valor mínimo em um ponto $c\in[a,b]$. Como $f'(a)&#60;0$ e $f'(b)&#62;0$, temos que $c\neq a$ e $c\neq b$. Logo $c\in(a,b)$. &#8230; <a href="https://schcs.github.io/WP/index.php/2019/06/03/funcoes-derivaveis-em-um-intervalo/" class="more-link">Continue reading <span class="screen-reader-text">Funções deriváveis em um intervalo</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}\newcommand{\Q}{\mathbb Q}$<strong>Teorema (Darboux). </strong>Assuma que $f:[a,b]\rightarrow\R$ é uma função derivável e $d\in\R$ tal que $f'(a)&lt;d&lt;f'(b)$. Então existe $c\in(a,b)$ tal que $f'(c)=d$.</p>
-<p><strong>Demonstração.</strong> Assuma primeiro que $d=0$. A função $f$ é contínua e atinge seu valor mínimo em um ponto $c\in[a,b]$. Como $f'(a)&lt;0$ e $f'(b)&gt;0$, temos que $c\neq a$ e $c\neq b$. Logo $c\in(a,b)$. Neste caso um teorema anterior implica que $f'(c)=0$.</p>
-<p>Assuma agora que $d\neq 0$. Neste caso considere a função $g:[a,b]\rightarrow\R$, $g(x)=f(x)-dx$. Temos que $g(x)$ é derivável e que $g'(x)=f'(x)-d$, então $g(x)$ satisfaz, $g'(a)&lt;0&lt;g'(b)$. Pelo argumento no parágrafo anterior, existe $c\in (a,b)$ tal que  $g'(c)=0$ que implica que $f'(c)=d$.</p>
-<p><strong>Teorema (Rolle). </strong>Seja $f:[a,b]\rightarrow\R$ uma função contínua. Se $f(x)$ for derivável em $(a,b)$ e $f(a)=f(b)$, então existe $c\in(a,b)$ tal que $f'(c)=0$.</p>
-<p><strong>Demonstração. </strong>Por um teorema anterior, $f(x)$ atinge seu mínimo $m$ e máximo $M$ em $[a,b]$. Um destes pontos precisa ser diferente de $a$ ou $b$, pois no caso contrário $f(x)$ seria constante, e neste caso $f'(c)=0$ vale para todo $c\in(a,b)$. Se, digamos, $m\in(a,b)$, então $f'(c)=0$.</p>
-<p><strong>Teorema (Teorema do Valor Médio de Lagrange). </strong>Seja $f:[a,b]\rightarrow\R$ uma função contínua e derivável em $(a,b)$. Existe $c\in(a,b)$ tal que $f'(c)=(f(a)-f(b))/(a-b)$.</p>
-<p><strong>Demonstração. </strong>Defina $g:[a,b]\rightarrow\R$ pondo $g(x)=f(x)-dx$ onde $d=(f(a)-f(b))/(a-b)$. Note que $g(a)=g(b)$. Pelo Teorema de Rolle, existe $c\in(a,b)$ tal que $g'(c)=0$. Logo $f'(c)=d=(f(a)-f(b))/(a-b)$,</p>
-<p><strong>Corolário. </strong>Seja $f:I\rightarrow \R$ uma função contínua e derivável para todo ponto interno $a$ de $I$. Se $f'(x)=0$ para todo ponto interno $x\in I$, então $f(x)$ é constante.</p>
-<p><strong>Demonstração. </strong>Dados $x,y\in I$, existe $c\in(x,y)$ tal que $0=f'(c)=(f(x)-f(y))/(x-y)$. Portanto $f(x)=f(y)$.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/06/03/funcoes-derivaveis-em-um-intervalo/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>

@@ -84,6 +84,90 @@ MathJax.Hub.Config({
 			
 				
 					
+<article id="post-138" class="post-138 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/" rel="bookmark">Comutatividade e produto de séries</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/" rel="bookmark"><time class="entry-date published" datetime="2019-05-06T12:52:17+00:00">May 6, 2019</time><time class="updated" datetime="2019-05-10T11:07:32+00:00">May 10, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}$Seja $\sum a_n$ uma série. Se $\pi:\N\rightarrow\N$ é uma bijeção e $b_n=a_{\pi(n)}$ para todo $n\in\N$, então $\sum b_n$ é uma outra série.A série $\sum b_n$ é chamada de uma <em>reordenação</em> de $\sum a_n$ Pode-se perguntar se $\sum b_n$ é convergente ou divergente.</p>
+<p>Uma série $\sum a_n$ chama-se <em>comutativamente convergente</em> se, para toda bijeção $\pi:\N\rightarrow\N$, a série $\sum a_{\pi(n)}$ é convergente e o limite $\sum a_{\pi(n)}$ é igual ao limite de $\sum a_n$.</p>
+<p>Seja $\sum a_n$ uma série. Defina<br />
+$$<br />
+p_n=\left\{\begin{array}{ll} a_n &amp; \mbox{se $a_n\geq 0$};\\<br />
+0 &amp; \mbox{no caso contrário.}\end{array}\right.$$<br />
+Similarmente, seja<br />
+$$<br />
+q_n=\left\{\begin{array}{ll} -a_n &amp; \mbox{se $a_n&lt;0$};\\<br />
+0 &amp; \mbox{no caso contrário.}\end{array}\right.<br />
+$$<br />
+Tem-se que $a_n=p_n-q_n$ e $|a_n|=p_n+q_n$ e pode-se considerar $\sum p_n$ e $\sum q_n$ como séries. Estas séries são chamadas da<em> parte positiva</em> e da <em>parte negativa</em> de $\sum a_n$.</p>
+<p><strong>Lemma. </strong>Seja $\sum a_n$ uma série convergente. Então $\sum a_n$ é absolutamente convergente se e somente se $\sum p_n$ e $\sum q_n$ são convergentes.  Neste caso $\sum p_n-\sum q_n=\sum a_n$.</p>
+<p><strong>Demonstração. </strong>Assuma que $\sum a_n$ é absolutamente convergente. Então a sequência $s_n=|a_0|+\cdots+|a_n|$ é limitada. Por outro lado<br />
+$$<br />
+\sum_{i=0}^n (p_i+q_i)=\sum_{i=0}^n |a_i|.<br />
+$$<br />
+Portanto a sequência $(\sum_{i=0}^n (p_i+q_i))_n$ é limitada. Isto implica que as sequências $\left(\sum_{i=0}^n p_i\right)_n$ e $\left(\sum_{i=0}^n q_i\right)_n$ são também limitadas, e as séries $\sum p_n$ e $\sum q_n$ são convergentes.</p>
+<p>Deixamos ao leitor verificar que se $\sum a_n$ é condicionalmente convergente então ambas $\sum p_n$ e $\sum q_n$ são divergentes.</p>
+<p>Finalmente, verifiquemos que $\sum a_n=\sum p_n-\sum q_n$ quando $\sum a_n$ é absolutamente convergente. Note que<br />
+\begin{eqnarray*}<br />
+\sum p_n-\sum q_n&amp;=&amp;\lim \sum_{i=0}^n p_i-\lim \sum_{i=0}^n q_i\\&amp;=&amp;\lim \left(\sum_{i=0}^n p_i-\sum_{i=0}^n q_i\right)\\&amp;=&amp;\lim\sum_{i=0}^n(p_i-q_i)=\lim \sum_{i=0}^n a_i=\sum a_n.<br />
+\end{eqnarray*}<br />
+$\Box$</p>
+<p><strong>Teorema. </strong> Se $\sum a_n$ é absolutamente convergente, então $\sum a_n$ é comutativamente convergente.</p>
+<p><strong>Demonstração. </strong>Assuma que $\sum a_n$ é absolutamente convergente. Considere primeiro o caso quando $a_n\geq 0$. Seja $\pi:\N\rightarrow\N$ uma bijeção e seja $b_n=a_{\pi(n)}$. Afirmamos que $\sum a_n=\sum b_n$. Defina $s_n=a_0+\cdots+a_n$ e $t_n=b_0+\cdots +b_n$. Seja $n\geq 1$ e seja $m$ o maior entre $\pi(1),\ldots,\pi(n)$. Logo $\{\pi(1),\ldots,\pi(n)\}\subseteq \{1,\ldots,m\}$. Portanto<br />
+$$<br />
+t_n=\sum_{i=0}^n b_i=\sum_{i=0}^n a_{\pi(i)}\leq \sum_{i=0}^m a_i\leq s_m.<br />
+$$<br />
+Este argumento mostra que para todo $n\in\N$ existe $m\in \N$ tal que $t_n\leq s_m$. Como $s_n$ é uma sequência limitada, $t_n$ também é limitada, portanto $t_n$ é convergente. Isto implica que $\sum b_n$ é convergente e que $\sum b_n\leq \sum a_n$.</p>
+<p>Note que o mesmo argumento implica que para todo $n\in\N$ existe um $r\in\N$ tal que $s_n\leq t_r$. Logo $\sum a_n\leq \sum b_n$ e $\sum a_n=\sum b_n$.</p>
+<p>Considere agora uma série geral $\sum a_n$ e assuma que ela é absolutamente convergente. Sejam $\sum p_n$ e $\sum q_n$ a parte positiva e a parte negativa. Temos pela discussão acima que $\sum p_n$ e $\sum q_n$ são séries convergentes e $\sum a_n=\sum p_n-\sum q_n$. Uma reordenação $\sum a_{\pi(n)}$ de $\sum a_n$ induz as reordenações $\sum p_{\pi(n)}$ de $\sum p_n$ e  $\sum q_{\pi(n)}$ de $\sum q_n$. Pelo parágrafo anterior<br />
+$$<br />
+\sum a_{\pi(n)}=\sum p_{\pi(n)}-\sum q_{\pi(n)}=\sum p_n-\sum q_n=\sum a_n.<br />
+$$<br />
+$\Box$</p>
+<p>A recíproca deste teorema está também válida.</p>
+<p><strong>Teorema (Riemann)</strong>. Seja $\sum a_n$ uma série condicionalmente convergente e seja $c\in\R\cup\{\infty,-\infty\}$. Então existe uma reordenação $\sum a_{\pi(n)}$ tal que $\sum a_{\pi(n)}=c$.</p>
+<p><strong>Demonstração. </strong>Veja no livro de Elon.</p>
+<p>Dadas duas séries $\sum_{n\geq 0} a_n$ e $\sum_{n\geq 0} b_n$ definimos o <em>produto</em> $(\sum a_n)(\sum b_n)$ como a série $\sum c_n$ cujos termos são<br />
+$$<br />
+c_n=a_0b_n+a_1b_{n-1}+\cdots+a_{n-1}b_1+a_nb_0=\sum_{i=0}^na_ib_{n-i}.<br />
+$$</p>
+<p><strong>Exercício. </strong>Sejam $x,\ y\in\R$ e considere as séries $\sum_{n\geq 0} x^n/n!$ e $\sum_{n\geq 0} y^n/n!$. Então<br />
+$$<br />
+\left(\sum_{n\geq 0}\frac {x^n}{n!}\right)\left(\sum_{n\geq 0}\frac {y^n}{n!}\right)=\sum_{n\geq 0}\frac{(x+y)^n}{n!}.<br />
+$$</p>
+<p><strong>Teorema. </strong>Sejam $\sum a_n$ e $\sum b_n$ duas séries absolutamente convergentes e assuma que $\sum a_n=a$ e $\sum b_n=b$. Então $\left(\sum a_n\right)\left(\sum b_n\right)$ é absolutamente convergente e<br />
+$$<br />
+\left(\sum a_n\right)\left(\sum b_n\right)=ab.<br />
+$$</p>
+<p><strong>Demonstração.</strong> Seja<br />
+$$<br />
+x_n=\sum_{i=0}^n(a_ib_n)+\sum_{j=0}^{n-1} (a_nb_j).<br />
+$$<br />
+Note que<br />
+$$<br />
+\sum_{i=0}^n x_i=\left(\sum_{i=0}^n a_i\right)\left(\sum_{j=0}^n b_j\right).<br />
+$$<br />
+Portanto,<br />
+$$<br />
+\lim_{n\rightarrow\infty} \sum_{i=0}^n x_i= \left(\lim_{n\rightarrow\infty}\sum_{i=0}^n a_i\right)\left(\lim_{n\rightarrow\infty}\sum_{j=0}^n b_j\right)=ab.<br />
+$$<br />
+Logo $\sum x_n=ab$.</p>
+<p>Afirmamos que a série $\sum x_n$ é absolutamente convergente. De fato,<br />
+$$<br />
+\sum_{i=0}^n |x_i|\leq \left(\sum_{i=0}^n |a_i|\right)\left(\sum_{j=0}^n |b_j|\right).<br />
+$$<br />
+Como $\sum a_n$ e $\sum b_n$ são absolutamente convergentes, as sequências $\sum_{i\leq n}|a_i|$ e $\sum_{j\leq n}|b_j|$ são limitadas, e $\sum_{i\leq n} |x_i|$ é também limitada. Portanto $\sum x_n$ é absolutamente convergente.</p>
+<p>Seja $c_n$ o termo geral do produto $\left(\sum a_n\right)\left(\sum b_n\right)$ e  observe que a série  $\sum c_n$ pode ser obtida de $\sum x_n$ por uma reordenação dos termos. Como $\sum x_n$ é absolutamente convergente, $\sum c_n$ é absolutamente convergente e $\sum c_n=\sum x_n=ab$.</p>
+<p>O estudo de séries trata de somas infinitas. Nós definimos o valor da soma infinita pelo limite das somas parciais, mas esta não é a única definição sensível; veja por exemplo este episódio do <a href="https://www.youtube.com/channel/UC1_uAIS3r8Vu6JjXWvastJg">canal Mathologer.</a></p>
+<p><iframe src="https://www.youtube.com/embed/jcKRGpMiVTw" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
 <article id="post-84" class="post-84 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/05/03/teste-da-raiz-teste-da-rz/" rel="bookmark">Testes de convergência para séries</a></h1>	</header><!-- .entry-header -->
