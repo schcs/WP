@@ -88,7 +88,7 @@ MathJax.Hub.Config({
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/" rel="bookmark">Grupos nilpotentes</a></h1>	</header><!-- .entry-header -->
 				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/" rel="bookmark"><time class="entry-date published" datetime="2019-09-03T00:51:18+00:00">September 3, 2019</time><time class="updated" datetime="2019-09-03T01:10:45+00:00">September 3, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/" rel="bookmark"><time class="entry-date published" datetime="2019-09-03T00:51:18+00:00">September 3, 2019</time><time class="updated" datetime="2019-09-05T01:20:13+00:00">September 5, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
 				<div class="entry-content">
 		<p>Se $G$ é um grupo e $A,B\leq G$, então<br />
 $$<br />
@@ -150,10 +150,34 @@ para todo $i\geq 0$.</p>
 <p><strong>Corolário. </strong>Seja $G$ um grupo.</p>
 <ol>
 <li>Se $G$ é nilpotente $H\leq G$ e $N\unlhd G$, então $H$ e $G/N$ são nilpotentes.</li>
+<li>Se $G$ é nilpotente, então $Z(G)\neq 1$.</li>
 <li>$G$ é nilpotente se e somente se $G/Z(G)$ é nilpotente.</li>
+<li>Se $G$ e $H$ são nilpotentes, então $G\times H$ é nilpotente.</li>
 </ol>
-<p><strong>Lema. </strong>Um $p$-grupo finito é nilpotente.</p>
+<p><strong>Teorema. </strong>Um $p$-grupo finito é nilpotente.</p>
 <p><strong>Demonstração. </strong>Indução pela ordem de $G$. A afirmação é verdadeira para grupos de ordem $p$ ou $p^2$. Assuma que a afirmação é verdadeira para grupo cuja ordem é menor que $p^n$ e seja $G$ um grupo de ordem $p^n$. Como $Z(G)\neq 1$, temos pela hipótese de indução que $G/Z(G)$ é nilpotente e pelo corolário anterior obtemos que $G$ é nilpotente.</p>
+<p><strong>Lema. </strong>Seja $G$ um grupo nilpotente.</p>
+<ol>
+<li>Se $H&lt;G$, então $H&lt;N_G(H)$;</li>
+<li>Se $1\neq N\unlhd G$, então $N\cap Z(G)\neq 1$.</li>
+<li>Se $M$ é um subgrupo maximal de $G$, então $M$ é normal e $|G:M|$ é primo.</li>
+</ol>
+<p><strong>Demonstração. </strong>1. Seja $i$ tal que $\gamma_{i-1}(G)\not\leq H$, mas $\gamma_i(G)\leq H$. Então<br />
+$$<br />
+[\gamma_{i-1}(G),H]\leq [\gamma_{i-1}(G),G]=\gamma_i(G)\leq H.<br />
+$$<br />
+Logo $\gamma_{i-1}(G)\leq N_{G}(H)$. Como $\gamma_{i-1}(G)\not\leq H$, obtem-se que $N_G(H)\leq H$ e segue que $H&lt;N_G(H)$.</p>
+<p>2. Assuma que $m$ é minimal tal que $\zeta_m(G)\cap N\neq 1$. Ora<br />
+$$<br />
+[N\cap \zeta_m(G),G]\leq N\cap [\zeta_m(G),G]=N\cap \zeta_{m-1}(G)=1.<br />
+$$<br />
+Isto implica que $N\cap \zeta_m(G)\leq Z(G)$.</p>
+<p>3. Seja $M$ um subgrupo maximal de $G$. Por parte (1), tem-se que $N_G(M)=G$, então $M$ é normal em $G$. Pela maximalidade de $M$, o quociente $G/M$ não possui um subgrupo próprio, não trivial. Portanto $G/M\cong C_p$ com algum primo $p$. Em particular, $|G:M|=p$.</p>
+<p><strong>Exercício. </strong>Seja $G$ um grupo finito, e $P$ um subgrupo de Sylow. Mostre que $N_G(N_G(P))=N_G(P)$,</p>
+<p><strong>Teorema. </strong>Um grupo finito é nilpotente se e somente se ele é produto direto dos seus subgrupos de Sylow.</p>
+<p><strong>Demonstração. </strong>Se $G$ é produto direto dos $p$-subgrupos de Sylow, então $G$ é nilpotente.</p>
+<p>Assuma que $G$ é finito e nilpotente. Seja $P$ um $p$-subgrupo de Sylow de $G$ e seja $N=N_G(P)$. Pelo exercício anterior, $N_G(N)=N$. O lema anterior implica que $N=G$, então $P$ é normal em $G$. Sejam $p_1,\ldots,p_k$ os divisores primos de $|G|$ e sejam $P_1,\ldots,P_k$ os subgrupos de Sylow correspondentes. Como todo $P_i$ é normal em $G$,<br />
+$[P_i,P_j]\leq P_i\cap P_j=1$ (se $i\neq j$), então $P_1\times\cdots\times P_k$ é um subgrupo de $G$. Comparando ordens, $G=P_1\times\cdots\times P_k$.</p>
 			</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 
@@ -246,7 +270,7 @@ Deduza que $S_4=(C_2)^2\rtimes GL(2,2)=\mbox{AGL}(2,2)$.</li>
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/" rel="bookmark">Subgrupos de Hall</a></h1>	</header><!-- .entry-header -->
 				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/" rel="bookmark"><time class="entry-date published" datetime="2019-08-21T22:40:12+00:00">August 21, 2019</time><time class="updated" datetime="2019-08-29T10:00:45+00:00">August 29, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/" rel="bookmark"><time class="entry-date published" datetime="2019-08-21T22:40:12+00:00">August 21, 2019</time><time class="updated" datetime="2019-09-04T23:50:32+00:00">September 4, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
 				<div class="entry-content">
 		<p>Seja $\pi$ é um conjunto de primos. Um número natural é dito <em>$\pi$-número</em>, se $p\mid n$ implica que $p\in\pi$. Um número é dito <em>$\pi&#8217;$-número</em>, se $p\mid n$ implica que $p\not\in\pi$.</p>
 <p>Se $G$ é um grupo e  $H\leq G$, então $H$ é dito <em>$\pi$-subgrupo de <a href="https://en.wikipedia.org/wiki/Philip_Hall">Hall</a>,</em> se $|H|$ é um $\pi$-número e $|G:H|$ é um $\pi&#8217;$-número.</p>
@@ -302,7 +326,7 @@ Portanto, $x^{-1}AxN=BN$. Isto implica que $A^x$ e $B$ são subgrupos de $BN$ de
 $$<br />
 |H_i|=|G|/p_i^{\alpha_i}=\prod_{j\neq i}p_j^{\alpha_j}.<br />
 $$<br />
-Ponha $D=H_3\cap\cdots\cap H_k$. Temos que $|D|=p_1^{\alpha_1}p_2^{\alpha_2}$ e $D$ é um grupo solúvel pelo Teorema de Burnside. Seja $N$ um subgrupo minimal normal de $D$. Então $N$ é um $p$-grupo abeliano elementar. Assuma por exemplo que $D$ é um $p_1$-grupo. Ora, $|G:D\cap H_2|=\prod_{i\geq 2}p_i^{\alpha_i}$, então $|D\cap H_2|=p_1^{\alpha_1}$. Portanto $D\cap H_2$ é um $p_1$-subgrupo de Sylow de $D$. Pelo teoremas de Sylow, $N\leq D\cap H_2$ que implica que $N\leq H_2$. No entanto, obtemos similarmente que $|D\cap H_1|=p_2^{\alpha_2}$ e comparar as ordens implica que $G=H_2(D\cap H_1)$. Seja $g\in G$ e escreva $g=hd$ onde $h\in H_2$ e $d\in D\cap H_1$. Se $x\in N$, então<br />
+Ponha $D=H_3\cap\cdots\cap H_k$. Temos que $|D|=p_1^{\alpha_1}p_2^{\alpha_2}$ e $D$ é um grupo solúvel pelo Teorema de Burnside. Seja $N$ um subgrupo minimal normal de $D$. Então $N$ é um $p$-grupo abeliano elementar. Assuma por exemplo que $N$ é um $p_1$-grupo. Ora, $|G:D\cap H_2|=\prod_{i\geq 2}p_i^{\alpha_i}$, então $|D\cap H_2|=p_1^{\alpha_1}$. Portanto $D\cap H_2$ é um $p_1$-subgrupo de Sylow de $D$. Pelo teoremas de Sylow, $N\leq D\cap H_2$ que implica que $N\leq H_2$. No entanto, obtemos similarmente que $|D\cap H_1|=p_2^{\alpha_2}$ e comparar as ordens implica que $G=H_2(D\cap H_1)$. Seja $g\in G$ e escreva $g=hd$ onde $h\in H_2$ e $d\in D\cap H_1$. Se $x\in N$, então<br />
 $$<br />
 gxg^{-1}=hdxd^{-1}h^{-1}=hyh^{-1} \in H_2<br />
 $$<br />
