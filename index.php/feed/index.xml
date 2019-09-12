@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 09 Sep 2019 13:20:49 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 12 Sep 2019 11:12:26 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -38,7 +38,7 @@
 <p>Usando estas igualdades, determine $\rot\varphi^{\ref\psi}$, $\ref\varphi^{\rot\psi}$, $[\ref\varphi,\ref\psi]$, $[\rot\varphi,\ref\psi]$.</p>
 <p>3.  Denote por $O_2$ o grupo das reflexões e rotações do plano $\mathbb R^2$. Calcule a série derivada, a série central inferior e a série central superior de $O_2$.</p>
 <p>4. Seja $D_n$ o grupo dihedral de ordem $2n$. Calcule a série derivada, a série central superior, e a série central inferior de $D_n$. Dê uma condição suficiente e necessária para a existência de $k$ e $\ell$ que satisfazem $\zeta_k(D_n)=D_n$ e $\gamma_\ell(D_n)=1$.</p>
-<p>5. Seja $H\leq G$ e $N\unlhd N$ tal que $N\leq K$. Mostre que $[H,G]\leq N$ se e somente se $H/N\leq Z(G/N)$.</p>
+<p>5. Seja $H\leq G$ e $N\unlhd G$ tal que $N\leq K$. Mostre que $[H,G]\leq N$ se e somente se $H/N\leq Z(G/N)$.</p>
 <p>6. Demonstre as seguintes afirmações para $X,Y\leq G$.</p>
 <ol>
 <li>$[X,Y]=[Y,X]$.</li>
