@@ -12,12 +12,58 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 16 Sep 2019 14:20:59 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 17 Sep 2019 00:24:49 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.11</generator>
 	<item>
+		<title>Grupos de permutações</title>
+		<link>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/#respond</comments>
+		<pubDate>Tue, 17 Sep 2019 00:24:12 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=438</guid>
+		<description><![CDATA[Se $\Omega$ é um conjunto, então $S(\Omega)$ denota o grupo de permutações de $\Omega$. Quando, $&#124;\Omega&#124;=n\in\mathbb N$, então podemos assumir sem perder generalidade que $\Omega=\{1,\ldots,n\}$ e $S(\Omega)$ é escrito como $S_n$. Um grupo de permutações é um subgrupo de algum $S(\Omega)$. Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ age em $\Omega$ &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/" class="more-link">Continue reading <span class="screen-reader-text">Grupos de permutações</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Se $\Omega$ é um conjunto, então $S(\Omega)$ denota o grupo de permutações de $\Omega$. Quando, $|\Omega|=n\in\mathbb N$, então podemos assumir sem perder generalidade que $\Omega=\{1,\ldots,n\}$ e $S(\Omega)$ é escrito como $S_n$. Um <em>grupo de permutações</em> é um subgrupo de algum $S(\Omega)$.</p>
+<p>Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ <em>age</em> em $\Omega$ se está dada uma função<br />
+$$<br />
+\Omega\times G\rightarrow\Omega,\quad (\omega,g)\mapsto \omega g<br />
+$$<br />
+tal que as seguintes propriedades estão verdadeiras para todo $\omega\in\Omega$ e $g,h\in G$:</p>
+<ol>
+<li>$\omega 1=\omega$;</li>
+<li>$(\omega g)h=\omega(gh)$.</li>
+</ol>
+<p>Note que se $G$ age em $\Omega$, então $g$ induz um mapa $\psi_g:\Omega\rightarrow\Omega$ definido como $\omega\mapsto \omega g$. É fácil ver que $\psi_g\in S(\Omega)$ e que o mapa $\psi:g\mapsto \psi_g$ é um homomorfismo $G\rightarrow S(\Omega)$. O homomorfismo $\psi$ é chamado do <em>homomorfismo associado com a ação</em> de $G$. Por outro lado, se $\psi:G\rightarrow S(\Omega)$ é um homomorfismo, então $(\omega,g)\mapsto \omega \psi(g)$ é uma ação de $G$ em $\Omega$.</p>
+<p>Assuma que $G$ age em $\Omega$ com homomorfismo associado $\psi$. O <em>núcleo</em> da ação é $\ker\psi$. A ação de $G$ é dito <em>fiel </em>se $\ker\psi=1$. Neste caso $G\cong G\psi$ e $G$ pode ser considerado como um grupo de permutações. Considere a seguinte relação de equivalência sobre $\Omega$: $\alpha\sim\beta$ se e somente se $\beta=\alpha g$ com algum $G$. Uma classe de equivalência dessa relação é chamada de <em>órbita</em>. O grupo $G$ é dito transitivo em $G$ se $\Omega$ é uma órbita. Se $\alpha\in\Omega$, então o estabilizador $G_\alpha$ de $\alpha$ em $G$ é definido como<br />
+$$<br />
+G_\alpha=\{g\in G\mid \alpha g=\alpha\}.<br />
+$$<br />
+É claro que $G_\alpha\leq G$. Além disso, o núcleo da ação é $\bigcap_{\alpha\in\Omega} G_\alpha$.</p>
+<p><strong>Lema. </strong>Sejam $\alpha,\beta\in\Omega$, $g\in G$ tais que $\alpha g=\beta$. Então $G_\beta=(G_\alpha)^g=g^{-1}G_\alpha g$.</p>
+<p><strong>Exemplo. </strong>Seja $G$ um grupo e $H\leq G$. Seja $\Omega=[G:H]$, o conjunto de classes laterais à direita de $H$ em $G$. Então $G$ age em $\Omega$: se $Hx\in\Omega$ e $g\in G$, então $(Hx)g=H(xg)$. É fácil ver que esta ação é transitiva. Além disso $H\leq G$ é o estabilizador do ponto $H1\in\Omega$. Portanto o núcleo da ação é<br />
+$$<br />
+\mbox{Core}_G(H)=\bigcap_{g\in G} H^g.<br />
+$$<br />
+O subgrupo na equação anterior é chamado do <em>core</em> de $H$ em $G$. Ele é o maior subgrupo normal de $G$ contido em $H$.</p>
+<p>Assuma que $G$ age nos conjuntos $\Omega_1$ e $\Omega_2$. Estas ações são <em>equivalentes</em> se existir uma bijeção $\varphi:\Omega_1\rightarrow \Omega_2$ tal que $(\omega g)\varphi=(\omega\varphi)g$ para todo $\omega\in\Omega$ e $g\in G$. O mapa $\varphi$ é chamada de <em>equivalência</em> entre as duas ações de $G$.</p>
+<p>Assuma que $G$ age em $\Omega$ transitivamente. Seja $\alpha\in\Omega$ fixo. Definamos um mapa $\varphi:\Omega\rightarrow [G:H]$. Para $\beta\in\Omega$, seja<br />
+$$<br />
+\beta\varphi=\{g\in G\mid \alpha g=\beta\}.<br />
+$$</p>
+<p><strong>Teorema (Teorema de Órbita e Estabilizador). </strong>O mapa $\varphi$ é uma equivalência bem definida entre as ações de $G$ sobre $\Omega$ e $[G:G_\alpha]$. Em particular, $|\Omega|=|G:G_\alpha|$.</p>
+<p><strong>Demonstração. </strong>Passo 1: $\beta\varphi$ é uma classe lateral à direita de $G_\alpha$ em $G$. Primeiro $\beta\varphi\neq\emptyset$ pela transitividade de $G$. Seja $g\in \beta\varphi$. Afirmamos que $\beta\varphi=G_\alpha g$. Seja $hg\in G_\alpha g$ com $h\in G_\alpha$. Então $\alpha (hg)=(\alpha h)g=\alpha g=\beta$. Portanto $G_\alpha g\subseteq \beta\varphi$. Seja $x\in \beta\varphi$. Então $\beta=\alpha g=\alpha x$, portanto $y:=xg^{-1}\in G_\alpha$. Logo, $x=yg\in G_\alpha g$. Obtivemos que $G_\alpha g=\beta\varphi$.</p>
+<p>Passo 2: $\varphi$ é uma bijeção. Assuma que $\beta\varphi=\gamma\varphi$ com alguns $\beta,\gamma\in\Omega$. Seja $g\in \beta\varphi$. Então $\beta=\alpha g=\gamma$ e $\beta=\gamma$. Seja $G_\alpha g\in [G:G_\alpha]$. Então $G_\alpha g=\beta\varphi$ onde $\beta=\alpha g$.</p>
+<p>Passo 3: $\varphi$ é uma equivalência. Seja $\omega\in \Omega$ e $g\in G$. Então $\omega g=\alpha hg$ onde $h\in G$ tal que $\omega=\alpha h$. Temos portanto que $(\omega g)\varphi= G_\alpha (hg)$. Por outro lado, $(\omega\varphi)g=(G_\alpha h)g$. Como $G_\alpha(hg)=(G_\alpha h)g$, temos que $\varphi$ é uma equivalência.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Rotações e reflexões</title>
 		<link>https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/#respond</comments>
@@ -702,51 +748,6 @@ $$<br />
 é um subgrupo caraterístico em $N$ que implica que $N^p=1$; ou seja $N$ é abeliano elementar.</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Exercícios (Integral)</title>
-		<link>https://schcs.github.io/WP/index.php/2019/06/17/exercicios-integral/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/06/17/exercicios-integral/#respond</comments>
-		<pubDate>Mon, 17 Jun 2019 13:38:32 +0000</pubDate>
-		<dc:creator><![CDATA[schcs]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
-
-		<guid isPermaLink="false">https://schcs.github.io/WP/?p=288</guid>
-		<description><![CDATA[$\newcommand{\N}{\mathbb N}$ $\newcommand{\Z}{\mathbb Z}$ $\newcommand{\Q}{\mathbb Q}$ $\newcommand{\R}{\mathbb R}$ $\newcommand{\dx}{\,dx}$ 1. Demonstre que as seguintes são equivalentes para um conjunto $X\subseteq \R$. Para todo $\varepsilon&#62;0$ existe uma cobertura $\{I_i\mid i\in\N\}$ de $X$ formada por intervalos abertos tal que $\sum_ì&#124;I_i&#124;\leq\varepsilon$. Para todo $\varepsilon&#62;0$ existe uma cobertura $\{I_i\mid i\in\N\}$ de $X$ formada por intervalos (não necessariamente abertos) tal &#8230; <a href="https://schcs.github.io/WP/index.php/2019/06/17/exercicios-integral/" class="more-link">Continue reading <span class="screen-reader-text">Exercícios (Integral)</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\N}{\mathbb N}$ $\newcommand{\Z}{\mathbb Z}$ $\newcommand{\Q}{\mathbb Q}$ $\newcommand{\R}{\mathbb R}$ $\newcommand{\dx}{\,dx}$<br />
-1. Demonstre que as seguintes são equivalentes para um conjunto $X\subseteq \R$.</p>
-<ol>
-<li>Para todo $\varepsilon&gt;0$ existe uma cobertura $\{I_i\mid i\in\N\}$ de $X$ formada por intervalos abertos tal que $\sum_ì|I_i|\leq\varepsilon$.</li>
-<li>Para todo $\varepsilon&gt;0$ existe uma cobertura $\{I_i\mid i\in\N\}$ de $X$ formada por intervalos (não necessariamente abertos) tal que $\sum_ì|I_i|\leq\varepsilon$.</li>
-</ol>
-<p>2. Demonstre que o conjunto de Cantor tem medida nula.</p>
-<p>3. Seja $f:[a,b]\rightarrow\R$ uma função limitada. Para $x\in[a,b]$ e $\delta&gt;0$, seja $$ \omega(x,\delta)=\sup\{f(x)\mid x\in[x-\delta,x+\delta]\cap[a,b]\}- \inf\{f(x)\mid x\in[x-\delta,x+\delta]\cap[a,b]\}. $$</p>
-<ol>
-<li>Demonstre que existe $\omega(x)=\lim_{\delta\rightarrow 0}\omega(x,\delta)$.</li>
-<li>Demonstre que $\omega(x)=0$ se e somente se $f$ é contínua em $x$.</li>
-</ol>
-<p>4. Sejam $f,\ g:[a,b]\rightarrow\R$ funções integráveis.</p>
-<ol>
-<li>Assuma que existe $k&gt;0$ tal que $k\leq|g(x)|$ para todo $x\in[a,b]$. Demonstre que a função $f(x)/g(x)$ é integrável em $[a,b]$. Exiba um exemplo que mostra que a condição que existe um tal $k$ é necessária.</li>
-<li>Assuma que $f(x)\leq g(x)$ para todo $x\in[a,b]$ e demonstre que $\int_{a}^bf(x)\dx\leq\int_{a}^bg(x)\dx$.</li>
-<li>Demonstre que $|f(x)|$ é integrável e que $|\int_{a}^bf(x)\dx|\leq\int_{a}^b|f(x)|\dx$.</li>
-</ol>
-<p>5. Seja $a&gt;0$ e seja $f:[-a,a]\rightarrow\R$ uma função integrável. Verifique as seguintes afirmações.</p>
-<ol>
-<li>Se $f$ é ímpar então $\int_{-a}^af(x)\dx=0$.</li>
-<li>Se $f$ é par então $\int_{-a}^af(x)\dx=2\int_{0}^af(x)\dx$.</li>
-</ol>
-<p>6. Seja $f:[a,b]\rightarrow \R$ uma função integrável com $f(x)\geq 0$ para todo $x\in[a,b]$, e assuma que $f$ é continua em um ponto $c\in[a,b]$ tal que $f(c)&gt;0$. Demonstre que $\int_a^bf(x)\dx&gt;0$.</p>
-<p>7. Demonstre a desigualdade de Cauchy-Schwarz: Se $f,\ g:[a,b]\rightarrow\R$ são funções contínuas, então $$ \left(\int_a^b f(x)g(x)\dx\right)^2\leq \left(\int_a^b f(x)^2\dx\right) \left(\int_a^b g(x)^2\dx\right). $$ [Dica: Use o Exercício 6 e consulte um livro de álgebra linear.]</p>
-<p>8. Seja $f:[a,\infty)\rightarrow\R$ uma função contínua, monótona não crescente tal que $f(x)&gt;0$ para todo $x\in [a,\infty)$. Mostre que se existir $\int_a^\infty f(x)dx$, então $\lim_{x\rightarrow\infty}f(x)=0$.</p>
-<p>9. Calcule, se existir, cada uma das seguintes integrais impróprias:<br />
-$$<br />
-\int_{0}^\infty \frac{1}{(1+x)\sqrt x}dx,\quad \int_{-\infty}^\infty \frac{1}{1+x^6}dx,\quad \int_{-1}^1\frac{1}{\sqrt[3]x}dx.<br />
-$$</p>
-<p>&nbsp;</p>
-]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/06/17/exercicios-integral/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
