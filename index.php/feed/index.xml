@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Tue, 17 Sep 2019 00:24:49 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 19 Sep 2019 01:05:06 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -26,8 +26,8 @@
 				<category><![CDATA[Uncategorized]]></category>
 
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=438</guid>
-		<description><![CDATA[Se $\Omega$ é um conjunto, então $S(\Omega)$ denota o grupo de permutações de $\Omega$. Quando, $&#124;\Omega&#124;=n\in\mathbb N$, então podemos assumir sem perder generalidade que $\Omega=\{1,\ldots,n\}$ e $S(\Omega)$ é escrito como $S_n$. Um grupo de permutações é um subgrupo de algum $S(\Omega)$. Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ age em $\Omega$ &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/" class="more-link">Continue reading <span class="screen-reader-text">Grupos de permutações</span></a>]]></description>
-				<content:encoded><![CDATA[<p>Se $\Omega$ é um conjunto, então $S(\Omega)$ denota o grupo de permutações de $\Omega$. Quando, $|\Omega|=n\in\mathbb N$, então podemos assumir sem perder generalidade que $\Omega=\{1,\ldots,n\}$ e $S(\Omega)$ é escrito como $S_n$. Um <em>grupo de permutações</em> é um subgrupo de algum $S(\Omega)$.</p>
+		<description><![CDATA[Se $\Omega$ é um conjunto, então $S(\Omega)$ denota o grupo de permutações de $\Omega$. Quando $\Omega=\{1,\ldots,n\}$, então  $S(\Omega)$ é escrito como $S_n$. Um grupo de permutações é um subgrupo de algum $S(\Omega)$. Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ age em $\Omega$ se está dada uma função $$ \Omega\times G\rightarrow\Omega,\quad (\omega,g)\mapsto &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/" class="more-link">Continue reading <span class="screen-reader-text">Grupos de permutações</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Se $\Omega$ é um conjunto, então $S(\Omega)$ denota o grupo de permutações de $\Omega$. Quando $\Omega=\{1,\ldots,n\}$, então  $S(\Omega)$ é escrito como $S_n$. Um <em>grupo de permutações</em> é um subgrupo de algum $S(\Omega)$.</p>
 <p>Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ <em>age</em> em $\Omega$ se está dada uma função<br />
 $$<br />
 \Omega\times G\rightarrow\Omega,\quad (\omega,g)\mapsto \omega g<br />
@@ -38,7 +38,7 @@ tal que as seguintes propriedades estão verdadeiras para todo $\omega\in\Omega$
 <li>$(\omega g)h=\omega(gh)$.</li>
 </ol>
 <p>Note que se $G$ age em $\Omega$, então $g$ induz um mapa $\psi_g:\Omega\rightarrow\Omega$ definido como $\omega\mapsto \omega g$. É fácil ver que $\psi_g\in S(\Omega)$ e que o mapa $\psi:g\mapsto \psi_g$ é um homomorfismo $G\rightarrow S(\Omega)$. O homomorfismo $\psi$ é chamado do <em>homomorfismo associado com a ação</em> de $G$. Por outro lado, se $\psi:G\rightarrow S(\Omega)$ é um homomorfismo, então $(\omega,g)\mapsto \omega \psi(g)$ é uma ação de $G$ em $\Omega$.</p>
-<p>Assuma que $G$ age em $\Omega$ com homomorfismo associado $\psi$. O <em>núcleo</em> da ação é $\ker\psi$. A ação de $G$ é dito <em>fiel </em>se $\ker\psi=1$. Neste caso $G\cong G\psi$ e $G$ pode ser considerado como um grupo de permutações. Considere a seguinte relação de equivalência sobre $\Omega$: $\alpha\sim\beta$ se e somente se $\beta=\alpha g$ com algum $G$. Uma classe de equivalência dessa relação é chamada de <em>órbita</em>. O grupo $G$ é dito transitivo em $G$ se $\Omega$ é uma órbita. Se $\alpha\in\Omega$, então o estabilizador $G_\alpha$ de $\alpha$ em $G$ é definido como<br />
+<p>Assuma que $G$ age em $\Omega$ com homomorfismo associado $\psi$. O <em>núcleo</em> da ação é $\ker\psi$. A ação de $G$ é dito <em>fiel </em>se $\ker\psi=1$. Neste caso $G\cong G\psi$ e $G$ pode ser considerado como um grupo de permutações. Considere a seguinte relação de equivalência sobre $\Omega$: $\alpha\sim\beta$ se e somente se $\beta=\alpha g$ com algum $G$. Uma classe de equivalência dessa relação é chamada de <em>órbita</em>. O grupo $G$ é dito transitivo em $\Omega$ se $\Omega$ é uma órbita. Se $\alpha\in\Omega$, então o estabilizador $G_\alpha$ de $\alpha$ em $G$ é definido como<br />
 $$<br />
 G_\alpha=\{g\in G\mid \alpha g=\alpha\}.<br />
 $$<br />
@@ -58,6 +58,28 @@ $$</p>
 <p><strong>Demonstração. </strong>Passo 1: $\beta\varphi$ é uma classe lateral à direita de $G_\alpha$ em $G$. Primeiro $\beta\varphi\neq\emptyset$ pela transitividade de $G$. Seja $g\in \beta\varphi$. Afirmamos que $\beta\varphi=G_\alpha g$. Seja $hg\in G_\alpha g$ com $h\in G_\alpha$. Então $\alpha (hg)=(\alpha h)g=\alpha g=\beta$. Portanto $G_\alpha g\subseteq \beta\varphi$. Seja $x\in \beta\varphi$. Então $\beta=\alpha g=\alpha x$, portanto $y:=xg^{-1}\in G_\alpha$. Logo, $x=yg\in G_\alpha g$. Obtivemos que $G_\alpha g=\beta\varphi$.</p>
 <p>Passo 2: $\varphi$ é uma bijeção. Assuma que $\beta\varphi=\gamma\varphi$ com alguns $\beta,\gamma\in\Omega$. Seja $g\in \beta\varphi$. Então $\beta=\alpha g=\gamma$ e $\beta=\gamma$. Seja $G_\alpha g\in [G:G_\alpha]$. Então $G_\alpha g=\beta\varphi$ onde $\beta=\alpha g$.</p>
 <p>Passo 3: $\varphi$ é uma equivalência. Seja $\omega\in \Omega$ e $g\in G$. Então $\omega g=\alpha hg$ onde $h\in G$ tal que $\omega=\alpha h$. Temos portanto que $(\omega g)\varphi= G_\alpha (hg)$. Por outro lado, $(\omega\varphi)g=(G_\alpha h)g$. Como $G_\alpha(hg)=(G_\alpha h)g$, temos que $\varphi$ é uma equivalência.</p>
+<p><strong>Corolário. </strong>Assuma que $G$ um grupo finito que age transitivamente em $\Omega$. Então $|\Omega|\mid |G|$.</p>
+<p>Assuma que $G$ age transitivamente em $\Omega$. Um conjunto $\Delta\subseteq \Omega$ é dito <em>bloco </em>se $\Delta g=\Delta$ ou $\Delta g\cap\Delta=\emptyset$ para todo $g\in G$.  Uma partição $\mathcal P$ de $\Omega$ é dito $G$-invariante se $\Delta g\in \mathcal P$ para todo $\Delta\in \mathcal P$.</p>
+<p><strong>Lema. </strong>Assuma que $G$ age em $\Omega$ transitivamente. As seguintes são verdadeiras.</p>
+<ol>
+<li>Se $\Delta$ é um bloco então $\mathcal P=\{\Delta g\mid g\in G\}$ é uma partição $G$-invariante de $\Omega$.</li>
+<li>Se $\mathcal P$ é uma partição $G$ invariante de $\Omega$ e $\Delta\in\mathcal P$, então $\Delta$ é um bloco.</li>
+<li>Seja $\omega\in\Omega$ fixo. O mapa $\Delta\mapsto \{\Delta g\mid g\in G\}$ é uma bijeção entre o conjunto de blocos $\Delta$ tal que $\omega\in\Delta$ e o conjunto de partições $G$-invariantes de $G$.</li>
+</ol>
+<p><strong>Demonstração. </strong>Exercício.</p>
+<p>Se $G$ age em $\Omega$ transitivamente e $\omega\in\Omega$, então $\{\omega\}$ e $\Omega$ são blocos. Similarmente $\{\{\omega\}\mid\omega\in\Omega\}$ e $\{\Omega\}$ são partições $G$-invariantes. Um grupo transitivo é dito <em>primitivo</em> se estes são os únicos blocos. No caso contrario o grupo e chamado de <em>imprimitivo</em>.</p>
+<p>Assuma que $G$ age transitivamente em $\Omega$ e seja $\omega\in\Omega$ fixo. Se $\Delta$ é um bloco tal que $\omega\in\Delta$, então denota por $G_\Delta$ o estabilizador de $\Delta$ em $G$. Se $H\leq G$ tal que $G_\omega\leq H$, então denote por $\omega H$ a $H$-órbita que contém $\omega$.</p>
+<p><strong>Teorema. </strong>As seguintes são verdadeiras.</p>
+<ol>
+<li>Se $\Delta$ é um bloco tal que $\omega\in\Delta$, então $G_\omega \leq G_\Delta\leq G$.</li>
+<li>Se $H$ é um subgrupo de $G$ tal que $G_\omega\leq H$, então $\Delta=\omega H$ é um bloco tal que $\omega\in\Delta$.</li>
+<li>Se $\Delta$ é um bloco tal que $\omega\in\Delta$, então $\omega(G_\Delta)=\Delta$. Se $H\leq G$ tal que $G_\omega\leq H$, então $G_{\omega H}=H$. Em particular os mapas $\Delta\mapsto G_\Delta$ e $H\mapsto \omega H$ são bijeções entre o conjunto de blocos $\Delta$ tal que $\omega\in\Delta$ e o conjunto de subgrupos $H$ tal que $G_\omega\leq H$.</li>
+</ol>
+<p><strong>Demonstralção. </strong>1. Claramente, $G_\Delta\leq G$. Seja $g\in G_\omega$. Então $\omega\in \Delta\cap \Delta g$, então $\Delta g=\Delta$. Logo $G_\omega\in G_\Delta$.</p>
+<p>2. Seja  $\Delta=\omega H$ e seja $g\in G$ tal que $\alpha \in \Delta\cap \Delta g=\omega H\cap \omega Hg$. Então existem $h_1,h_2\in H$ tal que $\alpha=\omega h_1=\omega h_2g$. Portanto, $\omega h_2gh_1^{-1}=\omega$, e $h_2gh_1^{-1}\in G_\omega$. Como $h_1,h_2\in H\geq G_\omega$, obtemos que $g\in H$ que implica que $\Delta g=\omega Hg=\omega H=\Delta$.</p>
+<p>3. Seja $\Delta$ um bloco tal que $\omega\in \Delta$ e seja $H=G_\Delta$. Afirmamos que $\omega H=\Delta$. Se $h\in H$, então $\omega h\in \Delta$ pela definição de $H$. Portanto $\omega H\subseteq \Delta$. Se $\delta\in\Delta$, então existe um $g\in G$ tal que $\omega g=\delta$. Neste caso, $\delta=\omega g\in \Delta\cap \Delta g$ que implica que $g\in G_\Delta$. Logo $\delta\in \omega H$.  Logo $\Delta\subseteq \omega H$ e obtemos a igualdade $\Delta= \omega H$.</p>
+<p>Seja agora $H\leq G$ tal que $G_\omega\leq H$ e seja $\Delta=\omega H$. Afirmamos que $H=G_\Delta$. Se $h\in H$ e $\delta\in \Delta$, então $\delta h=\omega gh\in\Delta$ com $g\in H$. Portanto $H\subseteq G_\Delta$. Se $g\in G_\Delta$, então $\omega g\in\Delta$ e $\omega g=\omega h$ com $h\in H$. Logo $\omega gh^{-1}=\omega$ e $gh^{-1}\in G_\omega$. Como $G_\omega\leq H$, tem-se que $gh^{-1}\in H$ e $g\in H$. Portanto $G_\Delta\leq H$ e $G_\Delta=H$.</p>
+<p><strong>Corolário. </strong>Seja $G$ um grupo transitivo agindo em $\Omega$ e seja $\omega\in\Omega$. Então $G$ é primitivo se e somente se $G_\omega$ é um subgrupo maximal.</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/feed/</wfw:commentRss>
@@ -414,7 +436,7 @@ $[P_i,P_j]\leq P_i\cap P_j=1$ (se $i\neq j$), então $P_1\times\cdots\times P_k$
 <li>A ordem de um grupo finito não abeliano simples é par.</li>
 <li>Um grupo finito com ordem ímpar é solúvel.</li>
 </ol>
-<p>7. Seja $H$ um $\pi$-subgrupo de Hall de um grupo finito $G$ e seja $N\unlhd G$. Mostre que $H\cap N$ e $HN/N$ são $\pi$-subgrupos de Hall em $H$ e $G/N$, respetivamente.</p>
+<p>7. Seja $H$ um $\pi$-subgrupo de Hall de um grupo finito $G$ e seja $N\unlhd G$. Mostre que $H\cap N$ e $HN/N$ são $\pi$-subgrupos de Hall em $N$ e $G/N$, respetivamente.</p>
 <p>8. Sejam $N$ e $H$ grupos e seja $\varphi:H\rightarrow \mbox{Aut}(N)$ um homorfismo. Seja $G$ o conjunto $N\times H$ e defina a multiplicação em $G$ com<br />
 $$<br />
 (n_1,h_1)(n_2,h_2)=(n_1n_2^{\varphi(h_1^{-1})},h_1h_2).<br />
