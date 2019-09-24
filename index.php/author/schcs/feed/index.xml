@@ -12,12 +12,43 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Thu, 19 Sep 2019 01:05:06 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 24 Sep 2019 11:28:21 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.11</generator>
 	<item>
+		<title>O grupo alternado</title>
+		<link>https://schcs.github.io/WP/index.php/2019/09/23/o-grupo-alternado/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/09/23/o-grupo-alternado/#respond</comments>
+		<pubDate>Mon, 23 Sep 2019 23:42:58 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=449</guid>
+		<description><![CDATA[O grupo alternado $A_n$ é composto por todos os permutações pares de $S_n$ onde $n\geq 2$. Exercício. Seja $C$ uma classe de conjugação em $S_n$ representado por um elemento $c_1c_2\cdots c_m$ par (então $C\subseteq A_n$) onde os $c_i$ são ciclos disjuntos com comprimento $r_1,\ldots,r_m$ respetivamente ($\sum r_i=n$). Então uma das seguintes possibilidades é verdadeira: $C$ é &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/23/o-grupo-alternado/" class="more-link">Continue reading <span class="screen-reader-text">O grupo alternado</span></a>]]></description>
+				<content:encoded><![CDATA[<p>O grupo alternado $A_n$ é composto por todos os permutações pares de $S_n$ onde $n\geq 2$.</p>
+<p><strong>Exercício. </strong>Seja $C$ uma classe de conjugação em $S_n$ representado por um elemento $c_1c_2\cdots c_m$ par (então $C\subseteq A_n$) onde os $c_i$ são ciclos disjuntos com comprimento $r_1,\ldots,r_m$ respetivamente ($\sum r_i=n$). Então uma das seguintes possibilidades é verdadeira:</p>
+<ol>
+<li>$C$ é uma classe de conjugação em $A_n$;</li>
+<li>$C$ é a união de duas classes $C_1$ e $C_2$ em $A_n$ onde $|C_1|= |C_2|$ e $C_2=\{c^{-1}\mid c \in C_1\}$.</li>
+</ol>
+<p>Além disso, possibilidade 2. ocorre se e somente se qualquer uma das seguintes condições equivalentes s está válida:</p>
+<ol>
+<li>$C_G(c)\leq A_n$;</li>
+<li>$r_1,\ldots,r_m$ são ímpares e distintos dois a dois.</li>
+</ol>
+<p><strong>Teorema. </strong>Se $n\geq 5$, então $A_n$ é simples.</p>
+<p><strong>Demonstração. </strong>Indução por $n$.</p>
+<p>O primeiro passo da indução é considerar o caso $n=5$. Note que $A_5$ possui cinco classes de conjugação, nomeadamente $1^{A_5}$, $(1,2)(3,4)^{A_5}$, $(1,2,3)^{A_5}$, $(1,2,3,4,5)^{A_5}$ e $(1,5,4,3,2)^{A_5}$ com ordens 1, 15, 20, 12, 12. Note que um subgrupo normal de $A_5$ é uma união de classes de conjugação. Além disso, um subgrupo normal sempre contém a identidade e é fechado para inversos. Assim, as possíveis ordens de subgrupos normais de $A_5$ são 1, 16, 21, 13, 36, 40, 45, 60. Pelo Teorema de Lagrange, a ordem de um subgrupo normal divide a ordem do grupo, portanto as possíveis ordens de subgrupos normais são 1 e 60. Portanto $A_5$ é simples.</p>
+<p>Assuma que $A_n$ é simples para algum $n\geq 5$ considere $G=A_{n+1}$. Seja $G_i$ o estabilizador do ponto $i$ em $G$. Como $G$ é transitivo, os $G_i$ são conjugados. Além disso, $G_i\cong A_n$. Seja $N\unlhd G$.  A interseção $N\cap G_1$ é normal em $G_1$. Logo $N\cap G_1=G_1$ ou $N\cap G_1=1$. No primeiro caso, como $N$ é normal e os $G_i$ são conjugados, temos que $G_i\leq N$ para todo $i$ que implica que $N=G$.</p>
+<p>Assuma agora que $N\cap G_i=1$ para todo $i$. Assuma que $N\neq 1$. Neste caso $NG_1=G$ ($G_1$ é maximal) e $N$ é regular. Em particular $|N|=n+1$. Assuma que $\sigma\in N\setminus\{1\}$ e escreva $\sigma$ como um produto $\sigma=\sigma_1\cdots \sigma_m$ de ciclos disjuntos onde  $\sigma_i$ é um $r_i$-ciclo com $r_1\geq r_2\geq\cdots\geq r_m$. Assuma que $r_1\geq 3$ e seja $\sigma_1=(1,2,\ldots,k)$ com $k\geq 3$. Seja $\varrho=(3,4,5)$. Então $\sigma^\varrho\sigma^{-1}\in N\cap G_1\setminus\{1\}$ que é uma contradição. Portanto $r_1=\cdots=r_m=2$. Assuma que $\sigma=(1,2)(3,4)$ e seja $\varrho=(4,5,6)$. Então $\sigma^\varrho\sigma^{-1}\in N\cap G_1$ que é uma contradição.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/23/o-grupo-alternado/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Grupos de permutações</title>
 		<link>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/#respond</comments>
@@ -43,6 +74,7 @@ $$<br />
 G_\alpha=\{g\in G\mid \alpha g=\alpha\}.<br />
 $$<br />
 É claro que $G_\alpha\leq G$. Além disso, o núcleo da ação é $\bigcap_{\alpha\in\Omega} G_\alpha$.</p>
+<p>Um grupo $G\leq S(\Omega)$ é dito regular se $G$ é transitivo e $G_\alpha=1$ para algum (todo) $\alpha\in \Omega$.</p>
 <p><strong>Lema. </strong>Sejam $\alpha,\beta\in\Omega$, $g\in G$ tais que $\alpha g=\beta$. Então $G_\beta=(G_\alpha)^g=g^{-1}G_\alpha g$.</p>
 <p><strong>Exemplo. </strong>Seja $G$ um grupo e $H\leq G$. Seja $\Omega=[G:H]$, o conjunto de classes laterais à direita de $H$ em $G$. Então $G$ age em $\Omega$: se $Hx\in\Omega$ e $g\in G$, então $(Hx)g=H(xg)$. É fácil ver que esta ação é transitiva. Além disso $H\leq G$ é o estabilizador do ponto $H1\in\Omega$. Portanto o núcleo da ação é<br />
 $$<br />
@@ -79,8 +111,10 @@ $$</p>
 <p>2. Seja  $\Delta=\omega H$ e seja $g\in G$ tal que $\alpha \in \Delta\cap \Delta g=\omega H\cap \omega Hg$. Então existem $h_1,h_2\in H$ tal que $\alpha=\omega h_1=\omega h_2g$. Portanto, $\omega h_2gh_1^{-1}=\omega$, e $h_2gh_1^{-1}\in G_\omega$. Como $h_1,h_2\in H\geq G_\omega$, obtemos que $g\in H$ que implica que $\Delta g=\omega Hg=\omega H=\Delta$.</p>
 <p>3. Seja $\Delta$ um bloco tal que $\omega\in \Delta$ e seja $H=G_\Delta$. Afirmamos que $\omega H=\Delta$. Se $h\in H$, então $\omega h\in \Delta$ pela definição de $H$. Portanto $\omega H\subseteq \Delta$. Se $\delta\in\Delta$, então existe um $g\in G$ tal que $\omega g=\delta$. Neste caso, $\delta=\omega g\in \Delta\cap \Delta g$ que implica que $g\in G_\Delta$. Logo $\delta\in \omega H$.  Logo $\Delta\subseteq \omega H$ e obtemos a igualdade $\Delta= \omega H$.</p>
 <p>Seja agora $H\leq G$ tal que $G_\omega\leq H$ e seja $\Delta=\omega H$. Afirmamos que $H=G_\Delta$. Se $h\in H$ e $\delta\in \Delta$, então $\delta h=\omega gh\in\Delta$ com $g\in H$. Portanto $H\subseteq G_\Delta$. Se $g\in G_\Delta$, então $\omega g\in\Delta$ e $\omega g=\omega h$ com $h\in H$. Logo $\omega gh^{-1}=\omega$ e $gh^{-1}\in G_\omega$. Como $G_\omega\leq H$, tem-se que $gh^{-1}\in H$ e $g\in H$. Portanto $G_\Delta\leq H$ e $G_\Delta=H$.</p>
+<p><strong>Exercício. </strong>Assuma que $G$ age em $\Omega$ transitivamente, seja $\alpha\in\Omega$ e seja $H\leq G$. Então $H$ é transitivo se e somente se $G_\alpha H=G$.</p>
 <p><strong>Corolário. </strong>Seja $G$ um grupo transitivo agindo em $\Omega$ e seja $\omega\in\Omega$. Então $G$ é primitivo se e somente se $G_\omega$ é um subgrupo maximal.</p>
-<p>&nbsp;</p>
+<p>Um grupo $G$ agindo em $\Omega$ é dito 2-transitivo se  para todo $\alpha,\beta,\gamma,\delta\in\Omega$ com $\alpha\neq \beta$ e $\gamma\neq \delta$ existe $g\in G$ tal que $\alpha g=\gamma$ e $\beta g=\delta$.</p>
+<p><strong>Exercício. </strong>Demonstre que um grupo 2-transitivo é primitivo. Demonstre que $S_n$, $A_n$, $PSL(n,q)$. $PGL(n,q)$ são 2-transitivos e portanto primitivos.</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
@@ -687,89 +721,6 @@ $G/H_1\cong G_1/K_1$. $\Box$</p>
 <p>Note que o Teorema de Schreier também implica o Teorema de Jordan-Hölder.</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/08/20/o-teorema-de-jordan-holder/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Grupos solúveis</title>
-		<link>https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/#respond</comments>
-		<pubDate>Mon, 19 Aug 2019 12:13:29 +0000</pubDate>
-		<dc:creator><![CDATA[schcs]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
-
-		<guid isPermaLink="false">https://schcs.github.io/WP/?p=325</guid>
-		<description><![CDATA[Seja $G$ um grupo. Se $x,y\in G$, então o comutador $[x,y]$ de $x,y$ é definido por $[x,y]=x^{-1}y^{-1}xy$. Em um grupo $G$, denotamos por $G&#8217;$ o subgrupo $G&#8217;=\left&#60; [x,y] \mid x,y\in G\right&#62;$ (o subgrupo gerado por comutadores). O subgrupo $G&#8217;$ é chamado de subgrupo derivado, ou subgrupo comutador de $G$. Um subgroupo $H\leq G$ é dito caraterístico, &#8230; <a href="https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/" class="more-link">Continue reading <span class="screen-reader-text">Grupos solúveis</span></a>]]></description>
-				<content:encoded><![CDATA[<p>Seja $G$ um grupo. Se $x,y\in G$, então o comutador $[x,y]$ de $x,y$ é definido por $[x,y]=x^{-1}y^{-1}xy$. Em um grupo $G$, denotamos por $G&#8217;$ o subgrupo $G&#8217;=\left&lt; [x,y] \mid x,y\in G\right&gt;$ (o subgrupo gerado por comutadores). O subgrupo $G&#8217;$ é chamado de <em>subgrupo derivado, </em>ou <em>subgrupo comutador</em> de $G$.</p>
-<p>Um subgroupo $H\leq G$ é dito <em>caraterístico</em>, se $H$ é invariente por automorfismos de $G$. Um subgrupo caraterístico é normal.</p>
-<p><strong>Lema. </strong>Seja $G$ um grupo e sejam $H$, $K$ subgroupos de $G$ tal que $K\leq H\leq G$.</p>
-<ol>
-<li>Se $K$ é caraterístico em $H$ e $H$ é caraterístico em $G$, então $K$ é caraterístico em $G$.</li>
-<li>Se $K$ é caraterístico em $H$ e $H$ é normal em $G$, então $K$ é normal em $G$.</li>
-</ol>
-<p><strong>Demonstração. </strong>Exercício.</p>
-<p><strong>Lema. </strong>$G&#8217;$ é um subgrupo caraterístico de $G$. Em particular, $G&#8217;$ é um subgrupo normal. Além disso, $G/G&#8217;$ é um grupo abeliano e se $N\unlhd G$ tal que $G/N$ é abeliano, então $G&#8217;\leq N$. (Pode-se dizer que $G&#8217;$ é o menor subgrupo normal de $G$ com quociente abeliano.)</p>
-<p><strong>Demonstração. </strong>Exercício.</p>
-<p>Podemos definir recursivamente $G&#8221;=(G&#8217;)&#8217;$, $G&#8221;&#8217;=(G&#8221;)&#8217;$. Obtemos uma série chamada de <em>série derivada</em> ou <em>série comutador</em> de $G$. Os termos desta série são subgrupos caraterísticos, em particular, eles são normais em $G$. Os termos da série derivada são denotados também por $G=G^{(0)}$, $G&#8217;=G^{(1)}$, $G&#8221;=G^{(2)}$, etc.</p>
-<p><strong>Lema. </strong>Seja $G$ um grupo e seja $G_0=G&gt;\cdots&gt; G_k&gt;\cdots$ uma série subnormal tal que $G_i/G_{i+1}$ é abeliano para todo $i$. Então $G^{(i)}\leq G_i$ vale para todo $i\geq 0$.</p>
-<p><strong>Demonstração. </strong>A afirmação é trivialmente verdadeira para $i=0$. Assuma que $G^{(i)}\leq G_i$. Como $G_i/G_{i+1}$ é abeliano, temos que $G_i&#8217;\leq G_{i+1}$. Logo<br />
-$$<br />
-G^{(i+1)}=(G^{(i)})&#8217;\leq G_i&#8217;\leq G_{i+1}.<br />
-$$<br />
-Então a afirmação é verdadeira para $i+1$ e segue por indução que ela é verdadeira para todo $i$.</p>
-<p><strong>Corolário.</strong> As seguintes são equivalentes para um grupo $G$.</p>
-<ol>
-<li>Existe uma série normal $G_0=G&gt;\cdots &gt;G_k=1$ com quocientes abelianos.</li>
-<li>Existe  uma série subnormal $G_0=G&gt;\cdots&gt; G_k=1$ com quocientes abelianos.</li>
-<li>Existe $k$ tal que $G^{(k)}=1$.</li>
-</ol>
-<p><strong>Demonstração. </strong>Segue dos resultados anteriores.</p>
-<p>Um grupo $G$ é dito <em>solúvel</em> se uma das afirmações do corolário anterior é válida para $G$. O menor $k$ tal que $G^{(k)}=1$ é chamado de <em>comprimento derivado</em> de $G$.</p>
-<p>Um grupo abeliano finito é dito grupo <em>abeliano elementar,, </em>se existe um primo $p$, tal que $x^p=1$ para todo $x\in G$. Pelo Teorema Fundamental dos Grupos Finitos Abelianos, temos que $G$ é grupo abeliano elementar se e somente se $G=C_p\times\cdots \times C_p$ com algum primo $p$. Em particular, um grupo abeliano elementar pode ser considerado como um espaço vetorial sobre o corpo $\mathbb F_p$.</p>
-<p><strong>Lema.</strong> As seguintes afirmações são válidas para um grupo $G$.</p>
-<ol>
-<li>Se $\varphi:G\rightarrow K$ é um homomorfismo, então<br />
-$$<br />
-\varphi(G^{(i)})=\varphi(G)^{(i)}<br />
-$$<br />
-para todo $i\geq 0$.</li>
-<li>Se $N\unlhd G$ e $Q=G/N$, então $Q^{(i)}= G^{(i)}N/N$.</li>
-<li>Se $G$ é solúvel e $H\leq G$, $N\unlhd G$, então $H$ e $G/N$ são solúveis.</li>
-<li>Se $N\unlhd G$, tal que $N$ e $G/N$ são solúveis, então $G$ é solúvel.</li>
-<li>Se $G$ é um <em>p</em>-grupo finito, então $G$ é solúvel.</li>
-<li>Se $G$ é finito, então $G$ é solúvel se e somente se os fatores de composição de $G$ são todos grupos cíclicos de ordem prima.</li>
-<li>Se $G$ é finito e solúvel e $N$ é um subgrupo minimal normal de $G$, então $N$ é abeliano elementar.</li>
-</ol>
-<p><strong>Demonstração. </strong>1. Indução por $i$. Se $i=0$, então não há nada para provar. Assuma que a afirmação é verdadeira para $i\geq 0$.<br />
-O subgrupo $G^{(i+1)}$ é gerado por elementos da forma $[x,y]$ onde $x,y\in G^{(i)}$. Como<br />
-$$<br />
-\varphi([x,y])=[\varphi(x),\varphi(y)]\in \varphi(G^{(i)})&#8217;=(\varphi(G)^{(i)})&#8217;=\varphi(G)^{(i+1)},<br />
-$$<br />
-obtemos que $\varphi(G^{(i+1)})\leq \varphi(G)^{(i+1)}$.<br />
-Assuma agora que $[u,v]\in\varphi(G)^{(i+1)}$ com $u,v\in \varphi(G)^{(i)}$. Temos que existem $x,y\in G^{(i)}$ tal que $\varphi(x)=u$ e $\varphi(y)=v$. Logo<br />
-$$<br />
-[u,v]=\varphi([x,y])\in \varphi(G^{(i+1)})<br />
-$$<br />
-e $\varphi(G)^{(i+1)}\leq \varphi(G^{(i+1)})$.  Temos equality.</p>
-<p>2. Seja $\varphi:G\rightarrow G/N$ o homomorfismo natural. Por parte (1), tem-se que<br />
-$$<br />
-Q^{(i)}=\varphi(G)^{(i)}=\varphi(G^{(i)})=G^{(i)}N/N.<br />
-$$</p>
-<p>3. Assuma que $G$ é solúvel e assuma que $G^{(k)}=1$ para algum $k$. Pode-se verificar por indução que $H^{(i)}\leq G^{(i)}$ vale para todo $i\geq 0$. Portanto, $H^{(k)}=1$ e segue que $H$ é solúvel.</p>
-<p>Seja agora $N\unlhd G$ e assuma que $Q=G/N$. Por parte (2), temos que $(G/N)^{(k)}= G^{(k)}N/N=1$. Logo $(G/N)^k=1$ e portanto $G/N$ é solúvel.</p>
-<p>4. Assuma que $N\unlhd G$ e $G/N$ são solúveis. Seja $Q=G/N$. Existe $m$ tal que $Q^{(m)}=1$. Isto quer dizer que $G^{(m)}\leq N$. Existe $l$ tal que $N^{(l)}=1$. Afirmamos que $G^{(m+l)}=1$. De fato,<br />
-$$<br />
-G^{(m+l)}=(G^{(m)})^{(l)}\leq N^{(l)}=1.<br />
-$$<br />
-Logo, $G$ é solúvel.</p>
-<p>5. Provaremos por indução por $|G|$. Se $|G|=1$, não há nada para provar. Assuma que $G$ é um $p$-grupo finito de ordem $p^n$ e assuma que $p$-grupos de ordem menor que $p^n$ são solúveis. Como $G$ é um $p$-grupo finito, $Z(G)$ é um subgrupo normal não trivial de $G$. Além disso, $Z(G)$ é abeliano e, pela hipótese de indução, $G/Z(G)$ é solúvel. Portanto, $G$ é solúvel pela afirmação anterior.</p>
-<p>6. Claro.</p>
-<p>7. Seja $N$ um subgrupo minimal normal de $G$. Como $N&#8217;$ é um subgrupo caraterístico em $N$, temos que $N&#8217;$ é normal de $G$, que implica, pela minimalidade de $N$, que $N&#8217;=1$. Logo $N$ é um grupo abeliano finito. Pelo Teorema Fundamental dos Grupos Abelianos Finitos, $N=N_{p_1}\times \cdots \times N_{p_k}$ onde $N_{p_i}$ é o $p_i$-subgrupo de Sylow de $N$. Cada $N_{p_i}$ é caraterístico em $N$, e normal em $G$. Pela minimalidade de $N$, temos que $N=N_{p_1}$; isto é, $N$ é um $p$-grupo abeliano. Finalmente, observe que<br />
-$$<br />
-N^p=\{x^p\mid x\in N\}<br />
-$$<br />
-é um subgrupo caraterístico em $N$ que implica que $N^p=1$; ou seja $N$ é abeliano elementar.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
