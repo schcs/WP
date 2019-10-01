@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Tue, 01 Oct 2019 11:36:22 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 01 Oct 2019 11:44:12 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -67,7 +67,7 @@ $$</p>
 <li> somar um múltiplo da $i$-ésima coluna a $j$-ésima coluna ($i\neq j$).</li>
 </ol>
 <p>Denote por $e_{i,j}$ a matriz que tem toda entrada zero exceto a entrada na posição $(i,j)$ que é 1. A operação 1. corresponde à multiplicação por $I+\alpha e_{ij}$ no lado esquerdo, enquanto a operação 2. corresponde à multiplicação no lado direito com $I+\alpha e_{ij}$ (onde $\alpha\in\F$). Logo as matrizes $I+\alpha e_{ij}$ geram $G$.</p>
-<p>Seja $Y=I+\alpha e_{ij}$.</p>
+<p>&nbsp;</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
