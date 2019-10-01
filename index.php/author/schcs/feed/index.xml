@@ -12,12 +12,67 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Tue, 24 Sep 2019 11:28:21 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 01 Oct 2019 11:36:22 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.11</generator>
 	<item>
+		<title>O Lema de Iwasawa e a simplicidade de PSL(n,F)</title>
+		<link>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/#respond</comments>
+		<pubDate>Mon, 30 Sep 2019 23:12:23 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=457</guid>
+		<description><![CDATA[$\newcommand{\F}{\mathbb F}$Lema (Iwasawa). Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que os conjugados $A^g$ de $A$ com $g\in G$ geram $G$. Suponha ainda que $G&#8217;=G$. Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples. Demonstração.  Trocando &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/" class="more-link">Continue reading <span class="screen-reader-text">O Lema de Iwasawa e a simplicidade de PSL(n,F)</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$<strong>Lema (<a href="https://en.wikipedia.org/wiki/Kenkichi_Iwasawa">Iwasawa</a>). </strong>Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que os conjugados $A^g$ de $A$ com $g\in G$ geram $G$. Suponha ainda que $G&#8217;=G$. Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples.</p>
+<p><strong>Demonstração. </strong> Trocando $G$ por $G/K$, podemos assumir sem perder generalidade que $K=1$; ou seja $G$ é um subgrupo de $S(\Omega)$. Seja $N\neq 1$ um subgrupo normal de $G$. Como $G_\alpha$ é maximal, $G_\alpha N=G$ e todo elemento $x\in G$ pode ser escrito como $x=gn$ onde $g\in G_\alpha$ e $n\in N$. Em particular, $A^x=A^{(gn)}=A^n$. Logo $AN=G$ e $G/N=A/(A\cap N)$ é abeliano. Como $G&#8217;=G$, obtemos que $N=G$.  Ou seja $G$ é simples.</p>
+<p><strong>Teorema. </strong>Seja $n\geq 2$ e $\F$ um corpo (finito ou infinito) tal que $(n,|\F|)\neq (2,3), (2,4)$. Então o grupo $PSL(n,\F)$ é simples.</p>
+<p><strong>Demonstração. </strong>Nós vamos mostrar que as condições do Lema de Iwasawa estão válidas.</p>
+<p><em>Ação:</em> Considere o grupo $G=SL(n,\F)$ com sua ação em $\Omega=\{\left&lt;v\right&gt;\mid v\in\F^n\setminus\{0\}\}$. Mostramos anteriormente na aula que $SL(n,\F)$ é 2-transitivo em $\Omega$ e portanto primitivo. O núcleo da ação é $N=\{\lambda I\mid \lambda\in\F^*\}$ onde $I$ é a matriz identidade.  Então $SL(n,\F)/N\cong PSL(n,\F)$.</p>
+<p><em>O estabilizador. </em>Seja $\alpha=\left&lt;(1,0,\ldots,0)\right&gt;$. O estabilizador de $\alpha$ é composto por matrizes na forma<br />
+$$<br />
+\begin{pmatrix} \alpha &amp; 0\\ v &amp; A\end{pmatrix}<br />
+$$<br />
+onde $\alpha\in\F^*$, $v\in \F^{n-1}$, $0$ é o vetor nulo em $\F^{n-1}$ e $A$ é uma matriz $(n-1)\times (n-1)$ tal que $\det A=\alpha^{-1}$. Seja $A$ o subgrupo de $G_\alpha$ composto por matrizes<br />
+$$<br />
+\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}<br />
+$$<br />
+onde $I$ é a matriz identidade $(n-1)\times (n-1)$. Afirmamos que $A$ é abeliano e que $A\unlhd G_\alpha$. Primeiro, observe que<br />
+$$<br />
+\begin{pmatrix} 1 &amp; 0\\ v_1 &amp; I\end{pmatrix}\begin{pmatrix} 1 &amp; 0\\ v_2 &amp; I\end{pmatrix}=\begin{pmatrix} 1 &amp; 0\\ v_1+v_2 &amp; I\end{pmatrix}<br />
+$$<br />
+e<br />
+$$<br />
+\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}^{-1}=\begin{pmatrix} 1 &amp; 0\\ -v &amp; I\end{pmatrix}<br />
+$$<br />
+que implica que $A$ é um subgrupo abeliano de $G_\alpha$. Além disso,<br />
+$$<br />
+\begin{pmatrix} \alpha &amp; 0\\ v &amp; A\end{pmatrix}=\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}.<br />
+$$<br />
+Então para provar que $G_\alpha$ normaliza $A$, é suficiente provar que matrizes na forma<br />
+$$<br />
+\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}<br />
+$$<br />
+normalizam $A$. Isto segue do fato que<br />
+$$<br />
+\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}=<br />
+\begin{pmatrix} 1 &amp; 0\\ vA^{-1} &amp; I\end{pmatrix}\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}.<br />
+$$</p>
+<p><em>$G$ é gerado pelos conjugados de $A$</em>. Seja $X$ uma matriz $n\times n$ tal que $\det X=1$. É bem conhecido que usando as seguintes operações $X$ pode ser transformado a matriz identidade:</p>
+<ol>
+<li>somar um múltiplo da $i$-ésima linha a $j$-ésima linha ($i\neq j$);</li>
+<li> somar um múltiplo da $i$-ésima coluna a $j$-ésima coluna ($i\neq j$).</li>
+</ol>
+<p>Denote por $e_{i,j}$ a matriz que tem toda entrada zero exceto a entrada na posição $(i,j)$ que é 1. A operação 1. corresponde à multiplicação por $I+\alpha e_{ij}$ no lado esquerdo, enquanto a operação 2. corresponde à multiplicação no lado direito com $I+\alpha e_{ij}$ (onde $\alpha\in\F$). Logo as matrizes $I+\alpha e_{ij}$ geram $G$.</p>
+<p>Seja $Y=I+\alpha e_{ij}$.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>O grupo alternado</title>
 		<link>https://schcs.github.io/WP/index.php/2019/09/23/o-grupo-alternado/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/09/23/o-grupo-alternado/#respond</comments>
@@ -610,117 +665,6 @@ $$<br />
 onde $y=dxd^{-1}$. Logo $N^G\leq H_2$ onde $N^G$ é o fecho normal de $N$ em $G$. Como $H_2&lt;G$, obtemos que $N^G$ é um subgrupo normal não trivial e próprio em $G$, mas isto é impossível, como $G$ é simples.</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>O Teorema de Jordan-Hölder</title>
-		<link>https://schcs.github.io/WP/index.php/2019/08/20/o-teorema-de-jordan-holder/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/08/20/o-teorema-de-jordan-holder/#respond</comments>
-		<pubDate>Tue, 20 Aug 2019 00:04:20 +0000</pubDate>
-		<dc:creator><![CDATA[schcs]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
-
-		<guid isPermaLink="false">https://schcs.github.io/WP/?p=333</guid>
-		<description><![CDATA[Seja $G$ um grupo e seja \begin{equation}\label{cad} G_0=G&#62;G_1&#62;\cdots &#62;G_k=1 \end{equation} uma cadeia de subgrupos. O comprimento da cadeia \eqref{cad} é $k$.  Esta cadeia é dita normal se $G_i\unlhd G$ para todo $i$; ela é dita subnormal se $G_i\unlhd G_{i-1}$ vale para todo $i$.  Uma cadeia normal é automaticamente subnormal. Uma cadeia $$ H_0=G&#62;H_1&#62;\cdots &#62;H_m=1 $$ &#8230; <a href="https://schcs.github.io/WP/index.php/2019/08/20/o-teorema-de-jordan-holder/" class="more-link">Continue reading <span class="screen-reader-text">O Teorema de Jordan-Hölder</span></a>]]></description>
-				<content:encoded><![CDATA[<p>Seja $G$ um grupo e seja<br />
-\begin{equation}\label{cad}<br />
-G_0=G&gt;G_1&gt;\cdots &gt;G_k=1<br />
-\end{equation}<br />
-uma cadeia de subgrupos. O comprimento da cadeia \eqref{cad} é $k$.  Esta cadeia é dita <em>normal</em> se $G_i\unlhd G$ para todo $i$; ela é dita <em>subnormal</em> se $G_i\unlhd G_{i-1}$ vale para todo $i$.  Uma cadeia normal é automaticamente subnormal.</p>
-<p>Uma cadeia<br />
-$$<br />
-H_0=G&gt;H_1&gt;\cdots &gt;H_m=1<br />
-$$<br />
-é um <em>refinamento</em> de \eqref{cad} se $\{G_0,\ldots,G_k\}\subseteq\{H_0,\ldots,H_m\}$. O refinamento é dito próprio se$\{G_0,\ldots,G_k\}\subset\{H_0,\ldots,H_m\}$. Uma cadeia subnormal que não possui refinamentos próprios é dito uma <em>série de composição</em>.</p>
-<p>Lembre que um grupo $G\neq 1$ é dito simples se ele não possui subgrupos normais além de $1$ e $G$.</p>
-<p><strong>Lemma. </strong>A cadeia \eqref{cad} é uma série de composição se e somente se os quocientes $G_i/G_{i+1}$ são grupos simples.</p>
-<p><strong>Demonstração. </strong>Assuma que \eqref{cad} é uma série de composição. Seja $N$ um subgrupo não trivial do quociente $G_i/G_{i+1}$. Pelo Teorema da Correspondência, existe um subgrupo normal $\overline N$ de $G_i$ tal que $G_{i+1}\unlhd \overline N\unlhd G_i$ e $N\neq G_{i+1}$. Então obtemos que a cadeia<br />
-$$<br />
-G_0=G&gt;\cdots G_i\geq \overline N&gt; G_{i+1}&gt;\cdots&gt;1<br />
-$$<br />
-é um refinamento de \eqref{cad}. Como a cadeia não possui refinamento próprio, temos que $\overline N=G_{i}$; ou seja $N=G_i/G_{i+1}$. Logo $G_i/G_{i+1}$ é um grupo simples.</p>
-<p>Assuma agora que os quocientes $G_i/G_{i+1}$ são todos simples e seja<br />
-$$<br />
-G_0=G&gt;\cdots G_i&gt;\overline N\geq G_{i+1}&gt;\cdots&gt;1<br />
-$$<br />
-um refinamento de \eqref{cad}. Então $N/G_{i+1}\lhd G_i/G_{i+1}$. Por simplicidade, nós obtemos que $N/G_{i+1}=1$ e portanto $N=G_{i+1}$. Logo, a cadeia \eqref{cad} não possui refinamento próprio. $\Box$</p>
-<p>Duas cadeias $G_0&gt;\cdots&gt;G_k$ e $H_0&gt;\cdots&gt; H_m$ subnormais são equivalentes se $k=m$ e existe uma permutação $\sigma\in S_k$ tal que<br />
-$$<br />
-G_{i-1}/G_i\cong H_{i\sigma-1}/H_{i\sigma} \mbox{ para todo }i\in\{1,\ldots,k\}.<br />
-$$</p>
-<p><strong>Teorema (Jordan-Hölder). </strong>Duas séries de composição de um grupo $G$ são equivalentes.</p>
-<p>Começamos a demonstração deste teorema por um lema.</p>
-<p><strong>Lema. </strong>Seja $G$ um grupo e sejam $A,B$ subgrupos normais distintos em $G$ tal que $G/A$ e $G/B$ são simples. Então<br />
-$$<br />
-G/A\cong B/(A\cap B)\quad\mbox{e}\quad G/B=A/(A\cap B).<br />
-$$</p>
-<p><strong>Demonstração. </strong>Note que $A\leq B$ ou $B\leq A$ são impossíveis. De fato, no primeiro caso $B/A$ seria normal em $G/A$ que é impossível pela simplicidade de $G/B$.</p>
-<p>Pela normalidade de $A$ e $B$, o produto $AB$ é um subgrupo normal de $G$.  Logo $AB/A$ é normal em $G/A$. Pela simplicidade de $G/A$, temos que $AB/A=G/A$, que implica que $AB=G$.</p>
-<p>Agora, pelo teorema de isomorfismo<br />
-$$<br />
-G/A=AB/A=B/(A\cap B)<br />
-$$<br />
-e similarmente<br />
-$$<br />
-G/B\cong A/(A \cap B).<br />
-$$</p>
-<p><strong>Demonstração do Teorema. </strong>Fazemos a demonstração por indução sobre o comprimento da menor série de composição. Se $k=1$, então $G$ é simples e toda série de composição tem a forma<br />
-$$<br />
-G_0=G&gt;G_1=1.<br />
-$$<br />
-Assuma que a teorema é verdadeiro para grupos que possuem uma série de composição de comprimento $k-1\geq 1$. Assuma que<br />
-$$<br />
-G_0=G&gt;G_1&gt;\cdots &gt;G_k=1<br />
-$$<br />
-é uma série de composição de um grupo $G$ com comprimento minimal. Assuma ainda que<br />
-$$<br />
-H_0=G&gt;H_1&gt;\cdots&gt;H_m=1<br />
-$$<br />
-é uma outra série de composição de $G$. Assuma primeiro que $G_1=H_1$. Então<br />
-$$<br />
-G_1&gt;\cdots &gt;G_k=1<br />
-$$<br />
-e<br />
-$$<br />
-H_1&gt;\cdots&gt;H_m=1<br />
-$$<br />
-são séries de composição do grupo $G_1=H_1$. Pela hipótese de indução, estas duas séries são equivalentes, portanto as séries originais de $G$ são também equivalentes.</p>
-<p>Assuma agora que $G_1\neq H_1$ e seja $K=G_1\cap H_1$. Pelo lema anterior, $G/G_1\cong H_1/K$ e $G/H_1\cong G_1/K$. Seja $K_i=G_i\cap K$ para $i\geq 1$. Então $K_i\unlhd G_i$ e $K_{i+1}\unlhd K_i$. Considere o mapa<br />
-$$<br />
-K_i\rightarrow G_i/G_{i+1},\quad x\mapsto xG_{i+1}.<br />
-$$<br />
-O núcleo deste mapa é $K_i\cap G_{i+1}=K_{i+1}$, então o mapa<br />
-$$<br />
-K_i/K_{i+1}\rightarrow G_i/G_{i+1},\quad xK_{i+1}\mapsto x G_{i+1}<br />
-$$<br />
-é bem definido e é injetivo. Portanto, $K_i/K_{i+1}$ pode ser considerado como um subgrupo normal de $G_i/G_{i+1}$. Como $G_i/G_{i+1}$ é simples, temos que $K_i/K_{i+1}$ é trivial ou é simples. Portanto, por apagar as duplicações da cadeia<br />
-$$<br />
-G_1&gt;K_1&gt;K_2&gt;\cdots&gt;K_k=1<br />
-$$<br />
-obtemos duas séries de composição do grupo $G_1$:<br />
-$$<br />
-G_1&gt;L_1&gt;\cdots&gt;L_r=1<br />
-$$<br />
-e<br />
-$$<br />
-G_1&gt;G_2&gt;\cdots&gt;G_k=1.<br />
-$$<br />
-Pela hipótese de indução obtemos que as duas séries são equivalentes.</p>
-<p>Similarmente, temos duas séries de composição para $H_1$:<br />
-$$<br />
-H_1&gt;L_1&gt;\cdots&gt;L_r=1\quad\mbox{e}\quad H_1&gt;H_2&gt;\cdots&gt;H_m=1.<br />
-$$<br />
-Estas séries são equivalentes pelo hipótese de indução. Portanto, é suficiente provar que<br />
-$$<br />
-G&gt;G_1&gt;L_1&gt;\cdots&gt;L_r=1\quad\mbox{e}\quad G&gt;H_1&gt;L_1&gt;\cdots&gt;L_r=1<br />
-$$<br />
-são equivalentes. Isto é de fato verdadeiro, pois $G/G_1\cong H_1/K_1$ e<br />
-$G/H_1\cong G_1/K_1$. $\Box$</p>
-<p>De fato, vale o seguinte teorema mais geral.</p>
-<p><strong>Teorema (Schreier).</strong> Cada par de séries subnormais de um grupo possui refinamentos que são equivalentes.</p>
-<p>Note que o Teorema de Schreier também implica o Teorema de Jordan-Hölder.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/08/20/o-teorema-de-jordan-holder/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>

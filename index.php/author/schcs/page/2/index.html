@@ -84,6 +84,114 @@ MathJax.Hub.Config({
 			
 				
 					
+<article id="post-333" class="post-333 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/08/20/o-teorema-de-jordan-holder/" rel="bookmark">O Teorema de Jordan-Hölder</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/08/20/o-teorema-de-jordan-holder/" rel="bookmark"><time class="entry-date published" datetime="2019-08-20T00:04:20+00:00">August 20, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/08/20/o-teorema-de-jordan-holder/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>Seja $G$ um grupo e seja<br />
+\begin{equation}\label{cad}<br />
+G_0=G&gt;G_1&gt;\cdots &gt;G_k=1<br />
+\end{equation}<br />
+uma cadeia de subgrupos. O comprimento da cadeia \eqref{cad} é $k$.  Esta cadeia é dita <em>normal</em> se $G_i\unlhd G$ para todo $i$; ela é dita <em>subnormal</em> se $G_i\unlhd G_{i-1}$ vale para todo $i$.  Uma cadeia normal é automaticamente subnormal.</p>
+<p>Uma cadeia<br />
+$$<br />
+H_0=G&gt;H_1&gt;\cdots &gt;H_m=1<br />
+$$<br />
+é um <em>refinamento</em> de \eqref{cad} se $\{G_0,\ldots,G_k\}\subseteq\{H_0,\ldots,H_m\}$. O refinamento é dito próprio se$\{G_0,\ldots,G_k\}\subset\{H_0,\ldots,H_m\}$. Uma cadeia subnormal que não possui refinamentos próprios é dito uma <em>série de composição</em>.</p>
+<p>Lembre que um grupo $G\neq 1$ é dito simples se ele não possui subgrupos normais além de $1$ e $G$.</p>
+<p><strong>Lemma. </strong>A cadeia \eqref{cad} é uma série de composição se e somente se os quocientes $G_i/G_{i+1}$ são grupos simples.</p>
+<p><strong>Demonstração. </strong>Assuma que \eqref{cad} é uma série de composição. Seja $N$ um subgrupo não trivial do quociente $G_i/G_{i+1}$. Pelo Teorema da Correspondência, existe um subgrupo normal $\overline N$ de $G_i$ tal que $G_{i+1}\unlhd \overline N\unlhd G_i$ e $N\neq G_{i+1}$. Então obtemos que a cadeia<br />
+$$<br />
+G_0=G&gt;\cdots G_i\geq \overline N&gt; G_{i+1}&gt;\cdots&gt;1<br />
+$$<br />
+é um refinamento de \eqref{cad}. Como a cadeia não possui refinamento próprio, temos que $\overline N=G_{i}$; ou seja $N=G_i/G_{i+1}$. Logo $G_i/G_{i+1}$ é um grupo simples.</p>
+<p>Assuma agora que os quocientes $G_i/G_{i+1}$ são todos simples e seja<br />
+$$<br />
+G_0=G&gt;\cdots G_i&gt;\overline N\geq G_{i+1}&gt;\cdots&gt;1<br />
+$$<br />
+um refinamento de \eqref{cad}. Então $N/G_{i+1}\lhd G_i/G_{i+1}$. Por simplicidade, nós obtemos que $N/G_{i+1}=1$ e portanto $N=G_{i+1}$. Logo, a cadeia \eqref{cad} não possui refinamento próprio. $\Box$</p>
+<p>Duas cadeias $G_0&gt;\cdots&gt;G_k$ e $H_0&gt;\cdots&gt; H_m$ subnormais são equivalentes se $k=m$ e existe uma permutação $\sigma\in S_k$ tal que<br />
+$$<br />
+G_{i-1}/G_i\cong H_{i\sigma-1}/H_{i\sigma} \mbox{ para todo }i\in\{1,\ldots,k\}.<br />
+$$</p>
+<p><strong>Teorema (Jordan-Hölder). </strong>Duas séries de composição de um grupo $G$ são equivalentes.</p>
+<p>Começamos a demonstração deste teorema por um lema.</p>
+<p><strong>Lema. </strong>Seja $G$ um grupo e sejam $A,B$ subgrupos normais distintos em $G$ tal que $G/A$ e $G/B$ são simples. Então<br />
+$$<br />
+G/A\cong B/(A\cap B)\quad\mbox{e}\quad G/B=A/(A\cap B).<br />
+$$</p>
+<p><strong>Demonstração. </strong>Note que $A\leq B$ ou $B\leq A$ são impossíveis. De fato, no primeiro caso $B/A$ seria normal em $G/A$ que é impossível pela simplicidade de $G/B$.</p>
+<p>Pela normalidade de $A$ e $B$, o produto $AB$ é um subgrupo normal de $G$.  Logo $AB/A$ é normal em $G/A$. Pela simplicidade de $G/A$, temos que $AB/A=G/A$, que implica que $AB=G$.</p>
+<p>Agora, pelo teorema de isomorfismo<br />
+$$<br />
+G/A=AB/A=B/(A\cap B)<br />
+$$<br />
+e similarmente<br />
+$$<br />
+G/B\cong A/(A \cap B).<br />
+$$</p>
+<p><strong>Demonstração do Teorema. </strong>Fazemos a demonstração por indução sobre o comprimento da menor série de composição. Se $k=1$, então $G$ é simples e toda série de composição tem a forma<br />
+$$<br />
+G_0=G&gt;G_1=1.<br />
+$$<br />
+Assuma que a teorema é verdadeiro para grupos que possuem uma série de composição de comprimento $k-1\geq 1$. Assuma que<br />
+$$<br />
+G_0=G&gt;G_1&gt;\cdots &gt;G_k=1<br />
+$$<br />
+é uma série de composição de um grupo $G$ com comprimento minimal. Assuma ainda que<br />
+$$<br />
+H_0=G&gt;H_1&gt;\cdots&gt;H_m=1<br />
+$$<br />
+é uma outra série de composição de $G$. Assuma primeiro que $G_1=H_1$. Então<br />
+$$<br />
+G_1&gt;\cdots &gt;G_k=1<br />
+$$<br />
+e<br />
+$$<br />
+H_1&gt;\cdots&gt;H_m=1<br />
+$$<br />
+são séries de composição do grupo $G_1=H_1$. Pela hipótese de indução, estas duas séries são equivalentes, portanto as séries originais de $G$ são também equivalentes.</p>
+<p>Assuma agora que $G_1\neq H_1$ e seja $K=G_1\cap H_1$. Pelo lema anterior, $G/G_1\cong H_1/K$ e $G/H_1\cong G_1/K$. Seja $K_i=G_i\cap K$ para $i\geq 1$. Então $K_i\unlhd G_i$ e $K_{i+1}\unlhd K_i$. Considere o mapa<br />
+$$<br />
+K_i\rightarrow G_i/G_{i+1},\quad x\mapsto xG_{i+1}.<br />
+$$<br />
+O núcleo deste mapa é $K_i\cap G_{i+1}=K_{i+1}$, então o mapa<br />
+$$<br />
+K_i/K_{i+1}\rightarrow G_i/G_{i+1},\quad xK_{i+1}\mapsto x G_{i+1}<br />
+$$<br />
+é bem definido e é injetivo. Portanto, $K_i/K_{i+1}$ pode ser considerado como um subgrupo normal de $G_i/G_{i+1}$. Como $G_i/G_{i+1}$ é simples, temos que $K_i/K_{i+1}$ é trivial ou é simples. Portanto, por apagar as duplicações da cadeia<br />
+$$<br />
+G_1&gt;K_1&gt;K_2&gt;\cdots&gt;K_k=1<br />
+$$<br />
+obtemos duas séries de composição do grupo $G_1$:<br />
+$$<br />
+G_1&gt;L_1&gt;\cdots&gt;L_r=1<br />
+$$<br />
+e<br />
+$$<br />
+G_1&gt;G_2&gt;\cdots&gt;G_k=1.<br />
+$$<br />
+Pela hipótese de indução obtemos que as duas séries são equivalentes.</p>
+<p>Similarmente, temos duas séries de composição para $H_1$:<br />
+$$<br />
+H_1&gt;L_1&gt;\cdots&gt;L_r=1\quad\mbox{e}\quad H_1&gt;H_2&gt;\cdots&gt;H_m=1.<br />
+$$<br />
+Estas séries são equivalentes pelo hipótese de indução. Portanto, é suficiente provar que<br />
+$$<br />
+G&gt;G_1&gt;L_1&gt;\cdots&gt;L_r=1\quad\mbox{e}\quad G&gt;H_1&gt;L_1&gt;\cdots&gt;L_r=1<br />
+$$<br />
+são equivalentes. Isto é de fato verdadeiro, pois $G/G_1\cong H_1/K_1$ e<br />
+$G/H_1\cong G_1/K_1$. $\Box$</p>
+<p>De fato, vale o seguinte teorema mais geral.</p>
+<p><strong>Teorema (Schreier).</strong> Cada par de séries subnormais de um grupo possui refinamentos que são equivalentes.</p>
+<p>Note que o Teorema de Schreier também implica o Teorema de Jordan-Hölder.</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
 <article id="post-325" class="post-325 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/08/19/grupos-soluveis/" rel="bookmark">Grupos solúveis</a></h1>	</header><!-- .entry-header -->
@@ -537,38 +645,6 @@ que contradiz ao fato que $|f(x_{k_n})-f(y_{k_n})|&gt;\varepsilon$.</p>
 <p>3. Demonstre os resultados que foram apresentados na aula, mas as demonstrações foram omitidas.</p>
 <p>4. Mostre, exibindo um contraexemplo, que a condição que $\lim_{y\rightarrow b}g(y)=g(b)$ é necessária no resultado sobre o limite da composição de funções.</p>
 <p>5. Enuncie e demonstre os resultados sobre limite de funções apresentados na aula para limites laterais.</p>
-			</div><!-- .entry-content -->
-	</article><!-- #post-## -->
-
-				
-					
-<article id="post-225" class="post-225 post type-post status-publish format-standard hentry category-uncategorized">
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/05/20/funcoes-continuas/" rel="bookmark">Funções contínuas</a></h1>	</header><!-- .entry-header -->
-				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/20/funcoes-continuas/" rel="bookmark"><time class="entry-date published" datetime="2019-05-20T11:34:47+00:00">May 20, 2019</time><time class="updated" datetime="2019-05-20T12:14:57+00:00">May 20, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/05/20/funcoes-continuas/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
-				<div class="entry-content">
-		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}$Seja $X\subseteq\R$ um conjunto, $f:X\rightarrow\R$ uma função, e $a\in X$. Dizemos que a função $f$ é <em>contínua no ponto $a$</em>  se para todo $\varepsilon&gt;0$ existe $\delta&gt;0$ tal que $|f(x)-f(a)|\leq\varepsilon$ sempre que $|x-a|\leq\delta$.</p>
-<p>Uma função $f:X\subseteq\R\rightarrow\R$ é dito <em>contínua</em> (em $X$) se $f(x)$ for contínua no ponto $a$ para todo $a\in X$.</p>
-<p><strong>Lema.</strong> Seja $f:X\subseteq\R\rightarrow\R$ uma função e $a\in X\cap X&#8217;$. As seguintes são equivalentes.</p>
-<ol>
-<li>$f(x)$ é contínua em $a$;</li>
-<li>existe o $\lim_{x\rightarrow a}f(x)$ e é igual a $f(a)$.</li>
-</ol>
-<p><strong>Lema. </strong>Se $f$ é contínua no ponto $a$, então existem $A&gt;0$ e $\delta&gt;0$ tal que $|f(x)|\leq A$ para todo $x\in X\cap (a-\delta,a+\delta)$.</p>
-<p><strong>Lema. </strong>Sejam $f,g,h:X\rightarrow\R$ e $a\in X$ tais que $f(x)\leq g(x)\leq h(x)$ para todo $x\in X$. Assuma que $f(x)$ e $h(x)$ são contínuas no ponto $a$ e que $f(a)=h(a)$.  Então $g(x)$ é  contínua em $a$.</p>
-<p><strong>Lema.</strong> Sejam $f,g:X\rightarrow\R$ e $a\in X$ tais que $f(x)$ e $g(x)$ são contínuas em $a$ e $f(a)&lt;g(a)$. Então existe $\delta&gt;0$ tal que $f(x)&lt; g(x)$ para todo $x\in X\cap(a-\delta,a+\delta)$.</p>
-<p><strong>Corolário. </strong>Seja $f:X\rightarrow\R$ e $a\in X$. Se $f(x)$ é contínua em $a$ e $f(a)&gt;0$, então existe $\delta&gt;0$ tal que $f(x)&gt; 0$ para todo $x\in X\cap(a-\delta,a+\delta)$.</p>
-<p><strong>Corolário. </strong>Sejam $X\subseteq\R$, $a\in X$, e $f,g:X\rightarrow\R$ tais que $f(x)\leq g(x)$ para todo $x\in X$ e assuma ainda que $f(x)$ e $g(x)$ são contínuas em $a$. Tem-se que $f(a)\leq g(a)$.</p>
-<p><strong>Teorema. </strong>Sejam $X\subseteq\R$, $a\in X$ e $f:X\rightarrow\R$ uma função. As seguintes são equivalentes.</p>
-<ol>
-<li>$f(x)$ é contínua em $a$;</li>
-<li>se $(x_n)$ é uma sequência tal que $x_n\in X$ e $x_n\rightarrow a$ então $f(x_n)\rightarrow f(a)$;</li>
-<li>se $(x_n)$ é uma sequência tal que $x_n\in X$ e $x_n\rightarrow a$ então $f(x_n)$ é convergente.</li>
-</ol>
-<p><strong>Teorema. </strong>Sejam $f,g:X\subseteq\R\rightarrow\R$ funções, $a\in X$. Assuma que $f(x)$ e $g(x)$ são contínuas em $a$. Então as funções $f(x)+g(x)$, $f(x)g(x)$, $\alpha f(x)$ (com $\alpha\in\R$) são contínuas em $a$. Se $g(x)\neq 0$ para $x\in X$, então $f(x)/g(x)$ é contínua em $a$.</p>
-<p><strong>Teorema. </strong>Sejam $X,Y\subseteq\R$, $f:X\rightarrow Y$, $g:Y\rightarrow\R$ funções, $a\in X$, $b\in Y$ e assuma que $f(x)$ é contínua em $a$ e que $g(x)$ é contínua em $b=f(a)$. Então $g\circ f$ é contínua em $a$.</p>
-<p>&nbsp;</p>
 			</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 
