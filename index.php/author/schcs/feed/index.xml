@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Tue, 01 Oct 2019 11:44:12 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 03 Oct 2019 00:17:11 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -26,47 +26,50 @@
 				<category><![CDATA[Uncategorized]]></category>
 
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=457</guid>
-		<description><![CDATA[$\newcommand{\F}{\mathbb F}$Lema (Iwasawa). Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que os conjugados $A^g$ de $A$ com $g\in G$ geram $G$. Suponha ainda que $G&#8217;=G$. Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples. Demonstração.  Trocando &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/" class="more-link">Continue reading <span class="screen-reader-text">O Lema de Iwasawa e a simplicidade de PSL(n,F)</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$<strong>Lema (<a href="https://en.wikipedia.org/wiki/Kenkichi_Iwasawa">Iwasawa</a>). </strong>Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que os conjugados $A^g$ de $A$ com $g\in G$ geram $G$. Suponha ainda que $G&#8217;=G$. Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples.</p>
+		<description><![CDATA[$\newcommand{\F}{\mathbb F}$Lema (Iwasawa). Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que $\left&#60;A^g\mid g\in G\right&#62;=G$ de $A$. Suponha ainda que $G&#8217;=G$. Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples. Demonstração.  Trocando $G$ por $G/K$, podemos assumir &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/" class="more-link">Continue reading <span class="screen-reader-text">O Lema de Iwasawa e a simplicidade de PSL(n,F)</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$<strong>Lema (<a href="https://en.wikipedia.org/wiki/Kenkichi_Iwasawa">Iwasawa</a>). </strong>Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que $\left&lt;A^g\mid g\in G\right&gt;=G$ de $A$. Suponha ainda que $G&#8217;=G$. Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples.</p>
 <p><strong>Demonstração. </strong> Trocando $G$ por $G/K$, podemos assumir sem perder generalidade que $K=1$; ou seja $G$ é um subgrupo de $S(\Omega)$. Seja $N\neq 1$ um subgrupo normal de $G$. Como $G_\alpha$ é maximal, $G_\alpha N=G$ e todo elemento $x\in G$ pode ser escrito como $x=gn$ onde $g\in G_\alpha$ e $n\in N$. Em particular, $A^x=A^{(gn)}=A^n$. Logo $AN=G$ e $G/N=A/(A\cap N)$ é abeliano. Como $G&#8217;=G$, obtemos que $N=G$.  Ou seja $G$ é simples.</p>
 <p><strong>Teorema. </strong>Seja $n\geq 2$ e $\F$ um corpo (finito ou infinito) tal que $(n,|\F|)\neq (2,3), (2,4)$. Então o grupo $PSL(n,\F)$ é simples.</p>
 <p><strong>Demonstração. </strong>Nós vamos mostrar que as condições do Lema de Iwasawa estão válidas.</p>
-<p><em>Ação:</em> Considere o grupo $G=SL(n,\F)$ com sua ação em $\Omega=\{\left&lt;v\right&gt;\mid v\in\F^n\setminus\{0\}\}$. Mostramos anteriormente na aula que $SL(n,\F)$ é 2-transitivo em $\Omega$ e portanto primitivo. O núcleo da ação é $N=\{\lambda I\mid \lambda\in\F^*\}$ onde $I$ é a matriz identidade.  Então $SL(n,\F)/N\cong PSL(n,\F)$.</p>
+<p><em>Ação:</em> Considere o grupo $G=SL(n,\F)$ com sua ação em $\Omega=\{\left&lt;v\right&gt;\mid v\in\F^n\setminus\{0\}\}$. Mostramos anteriormente na aula que $SL(n,\F)$ é 2-transitivo em $\Omega$ e portanto primitivo. O núcleo da ação é $K=\{\lambda I\mid \lambda\in\F^*\}$ onde $I$ é a matriz identidade.  Então $SL(n,\F)/K\cong PSL(n,\F)$.</p>
 <p><em>O estabilizador. </em>Seja $\alpha=\left&lt;(1,0,\ldots,0)\right&gt;$. O estabilizador de $\alpha$ é composto por matrizes na forma<br />
 $$<br />
 \begin{pmatrix} \alpha &amp; 0\\ v &amp; A\end{pmatrix}<br />
 $$<br />
-onde $\alpha\in\F^*$, $v\in \F^{n-1}$, $0$ é o vetor nulo em $\F^{n-1}$ e $A$ é uma matriz $(n-1)\times (n-1)$ tal que $\det A=\alpha^{-1}$. Seja $A$ o subgrupo de $G_\alpha$ composto por matrizes<br />
-$$<br />
-\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}<br />
-$$<br />
-onde $I$ é a matriz identidade $(n-1)\times (n-1)$. Afirmamos que $A$ é abeliano e que $A\unlhd G_\alpha$. Primeiro, observe que<br />
-$$<br />
-\begin{pmatrix} 1 &amp; 0\\ v_1 &amp; I\end{pmatrix}\begin{pmatrix} 1 &amp; 0\\ v_2 &amp; I\end{pmatrix}=\begin{pmatrix} 1 &amp; 0\\ v_1+v_2 &amp; I\end{pmatrix}<br />
-$$<br />
-e<br />
-$$<br />
-\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}^{-1}=\begin{pmatrix} 1 &amp; 0\\ -v &amp; I\end{pmatrix}<br />
-$$<br />
-que implica que $A$ é um subgrupo abeliano de $G_\alpha$. Além disso,<br />
-$$<br />
-\begin{pmatrix} \alpha &amp; 0\\ v &amp; A\end{pmatrix}=\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}.<br />
-$$<br />
-Então para provar que $G_\alpha$ normaliza $A$, é suficiente provar que matrizes na forma<br />
-$$<br />
-\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}<br />
-$$<br />
-normalizam $A$. Isto segue do fato que<br />
-$$<br />
-\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}=<br />
+onde $\alpha\in\F^*$, $v\in \F^{n-1}$, $0$ é o vetor nulo em $\F^{n-1}$ e $A$ é uma matriz $(n-1)\times (n-1)$ tal que $\det A=\alpha^{-1}$.</p>
+<p><em>Afirmação. </em>As seguintes afirmações são verdadeiras:<br />
+\begin{align*}<br />
+\begin{pmatrix} \alpha &amp; 0\\ v &amp; A\end{pmatrix}=&amp;\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}\\<br />
+\begin{pmatrix} 1 &amp; 0\\ v_1 &amp; I\end{pmatrix}\begin{pmatrix} 1 &amp; 0\\ v_2 &amp; I\end{pmatrix}=&amp;<br />
+\begin{pmatrix} 1 &amp; 0\\ v_1+v_2 &amp; I\end{pmatrix}\\<br />
+\begin{pmatrix} \alpha_1 &amp; 0\\ 0 &amp; A_1\end{pmatrix}\begin{pmatrix} \alpha_2 &amp; 0\\ 0 &amp; A_2\end{pmatrix}=&amp;\begin{pmatrix} \alpha_1\alpha_2 &amp; 0\\ 0 &amp; A_1A_2\end{pmatrix}\\\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}=&amp;<br />
 \begin{pmatrix} 1 &amp; 0\\ vA^{-1} &amp; I\end{pmatrix}\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}.<br />
-$$</p>
-<p><em>$G$ é gerado pelos conjugados de $A$</em>. Seja $X$ uma matriz $n\times n$ tal que $\det X=1$. É bem conhecido que usando as seguintes operações $X$ pode ser transformado a matriz identidade:</p>
+\end{align*}</p>
+<p><em>Conseqência: </em>Seja \begin{align*}<br />
+A=&amp;\left\{\begin{pmatrix} 1 &amp; 0\\ v &amp; I\end{pmatrix}\mid v\in \F^{n-1}\right\}\\<br />
+H=&amp;\left\{\begin{pmatrix} \alpha &amp; 0\\ 0 &amp; A\end{pmatrix}\mid \det A=\alpha^{-1}\right\}.<br />
+\end{align*}<br />
+Então $H\leq G_\alpha$, $A\unlhd G_\alpha$ e $A$ é um grupo abeliano.</p>
+<p><em>$G$ é gerado pelos conjugados de $A$</em>. Seja $X$ uma matriz $n\times n$ tal que $\det X=1$. É bem conhecido que, usando as seguintes operações, $X$ pode ser transformado a matriz identidade:</p>
 <ol>
 <li>somar um múltiplo da $i$-ésima linha a $j$-ésima linha ($i\neq j$);</li>
 <li> somar um múltiplo da $i$-ésima coluna a $j$-ésima coluna ($i\neq j$).</li>
 </ol>
-<p>Denote por $e_{i,j}$ a matriz que tem toda entrada zero exceto a entrada na posição $(i,j)$ que é 1. A operação 1. corresponde à multiplicação por $I+\alpha e_{ij}$ no lado esquerdo, enquanto a operação 2. corresponde à multiplicação no lado direito com $I+\alpha e_{ij}$ (onde $\alpha\in\F$). Logo as matrizes $I+\alpha e_{ij}$ geram $G$.</p>
+<p>Denote por $e_{i,j}$ a matriz que tem toda entrada zero exceto a entrada na posição $(i,j)$ que é 1. A operação 1. corresponde à multiplicação por $I+\lambda e_{ij}$ no lado esquerdo, enquanto a operação 2. corresponde à multiplicação no lado direito com $I+\lambda e_{ij}$ (onde $\lambda\in\F$). Logo $G=\left&lt;I+\lambda e_{ij}\mid i\neq j,\ \lambda\in\F\right&gt;$.</p>
+<p>Denote por $e_1,\ldots,e_n$ a base canônica de $\F^n$. Seja $T=I+\lambda e_{ij}$. Note que $e_kT=e_k$ se $k\neq i$, enquanto $e_iT=e_i+\lambda e_j$. Seja $X\in SL(n,\F)$ tal que as imagens de $e_i$ com $i\not\in\{i,j\}$ são $e_3,\ldots,e_n$, respetivamente, enquanto $e_i X=e_2$ e $e_jX=\pm e_1$. Neste caso,<br />
+\begin{align*}<br />
+e_2X^{-1}TX=&amp;e_iTX=(e_i+\lambda e_j)X=e_2\pm \lambda e_1\mbox{ e};\\<br />
+e_m X^{-1}TX=&amp;e_{m&#8217;}TX=e_{m&#8217;}X=e_m\mbox{ se $m\neq 2$}<br />
+\end{align*}<br />
+onde $m&#8217;$ é tal que $e_{m&#8217;}X=e_m$. Obtemos então que $T^X\in A$; ou seja, $T\in A^{X^{-1}}$. Como o conjunto de transformações na forma $I+\lambda e_{ij}$ com $i\neq j$ geram $G$, obtemos que $G=\left&lt;A^g\mid g\in G\right&gt;$.</p>
+<p>$G&#8217;=G$. Pelo argumento no parágrafo anterior, é suficiente provar que o elemento $I+e_{1n}$ pode ser escrito como um comutador.  Se $n\geq 3$, então<br />
+$$<br />
+I+e_{1n}=[I+e_{12},I+e_{2n}].<br />
+$$<br />
+Se $n=2$, e $|\F|\geq 4$, então seja $a\in\F$ tal que $a^2\neq 0,1$ e ponha $x=(a^2-1)^{-1}$. Então<br />
+$$<br />
+I+e_{1n}=\left[\begin{pmatrix} 1 &amp; x \\ 0 &amp; 1 \end{pmatrix},\begin{pmatrix} a &amp; 0 \\ 0 &amp; a^{-1} \end{pmatrix}\right].<br />
+$$</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/feed/</wfw:commentRss>
