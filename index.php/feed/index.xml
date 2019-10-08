@@ -12,12 +12,98 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Thu, 03 Oct 2019 11:52:19 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 08 Oct 2019 01:11:05 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.11</generator>
 	<item>
+		<title>Formas clássical e os grupos clássicos</title>
+		<link>https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/#respond</comments>
+		<pubDate>Tue, 08 Oct 2019 00:14:34 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=472</guid>
+		<description><![CDATA[$\newcommand{\F}{\mathbb F}$Seja $\F$ um corpo e $V$ um espaço vetorial de dimensão $n$ sobre $\F$. Seja $\sigma\in \mbox{Aut}(\F)$. Um mapa $$ V\times V\rightarrow\F,\quad (u,v)\mapsto (u,v) $$ é dito $\sigma$-sesquilinear se \begin{align*} (\alpha u+\beta v,w)=&#38;\alpha(u,w)+\beta(v,w);\\ (u,\alpha v+\beta w)=&#38;(\alpha\sigma) (u,v)+(\beta\sigma)(v,w). \end{align*} Uma forma $\sigma$-sesquilinear $(\cdot,\cdot)$ é dita $\sigma$-hermitiana, se $(u,v)=(v,u)\sigma$. Uma forma $\mbox{id}$-sesquilinear é dita bilinear. Lema. Seja &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/" class="more-link">Continue reading <span class="screen-reader-text">Formas clássical e os grupos clássicos</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$Seja $\F$ um corpo e $V$ um espaço vetorial de dimensão $n$ sobre $\F$. Seja $\sigma\in \mbox{Aut}(\F)$. Um mapa<br />
+$$<br />
+V\times V\rightarrow\F,\quad (u,v)\mapsto (u,v)<br />
+$$<br />
+é dito $\sigma$-sesquilinear se<br />
+\begin{align*}<br />
+(\alpha u+\beta v,w)=&amp;\alpha(u,w)+\beta(v,w);\\<br />
+(u,\alpha v+\beta w)=&amp;(\alpha\sigma) (u,v)+(\beta\sigma)(v,w).<br />
+\end{align*}<br />
+Uma forma $\sigma$-sesquilinear $(\cdot,\cdot)$ é dita $\sigma$-hermitiana, se $(u,v)=(v,u)\sigma$. Uma forma $\mbox{id}$-sesquilinear é dita bilinear.</p>
+<p><strong>Lema. </strong>Seja $(\cdot,\cdot)$ uma forma $\sigma$-hermitiana não nula. Então $\sigma^2=\mbox{id}$.</p>
+<p><strong>Demonstração. </strong>Sejam $u,v\in \F$ tais que $(u,v)=c\neq 0$. Então<br />
+$$<br />
+c{\sigma^2}=(u,v)\sigma^2=(v,u)\sigma=(u,v)=c.<br />
+$$</p>
+<p>O lema anterior implica que se $(\cdot,\cdot)$ é uma forma $\sigma$-hermitiana, então $\sigma$ é um automorfismo do corpo $\F$ com $\sigma=\mbox{id}$ ou $|\sigma|=2$. No segundo caso, dizemos que $\sigma$ é um automorfismo involutivo.</p>
+<p>Uma forma $\mbox{id}$-hermitiana é dita forma simétrica. Uma forma bilinear é dita simplética se $(u,u)=0$ para todo $u,v\in V$. Note que se $(\cdot,\cdot)$ é uma forma simplética, então $(u,v)=-(v,u)$ vale para todo $u,v\in V$. Além disso, se $\mbox{char}\,\F\neq 2$, então a identidade $(u,v)=-(v,u)$ implica que a forma é simplética.</p>
+<p>Uma forma $(\cdot,\cdot)$ é dita não degenerada se<br />
+\begin{align*}<br />
+&amp;\{v\in V\mid (v,u)=0\mbox{ para todo }u\in V\}=\\&amp;\{v\in V\mid (u,v)=0\mbox{ para todo }u\in V\}=\{0\}.<br />
+\end{align*}</p>
+<p>Seja $V$ um espaço vetorial sobre um corpo de caraterística diferente de 2. Seja $(\cdot,\cdot)$ é uma forma que satisfaz uma das seguintes condições:</p>
+<ol>
+<li>forma nula: $(u,v)=0$ para todo $u,v\in V$;</li>
+<li>forma bilinear simplética não degenerada;</li>
+<li>forma $\sigma$-hermitiana não degenerada com $\sigma\in\mbox{Aut}(\F)$ involutíva.</li>
+<li>forma bilinear simétrica não  degenerada.</li>
+</ol>
+<p>Uma forma que satisfaz uma das quatro condições em cima é dita forma clássica.</p>
+<p>Seja $(\cdot,\cdot)$ uma das formas clássicas e denote por $Z=\{\lambda I\mid \lambda\in\F^*\}\leq GL(n,\F)$.<br />
+Denotamos por<br />
+\begin{align*}<br />
+GX(n,\F)=&amp;\{X\in GL(n,\F)\mid (uX,vX)=(u,v)\mbox{ para todo } u,v\in V\};\\<br />
+SX(n,F)=&amp;\{X\in SL(n,\F)\mid (uX,vX)=(u,v)\mbox{ para todo } u,v\in V\};\\<br />
+PGX(n,\F)=&amp;GX(n,\F)/(Z\cap GX(n,\F));\\<br />
+PSX(n,\F)=&amp;SX(n,\F)/(Z\cap SX(n,\F)).<br />
+\end{align*}</p>
+<p>Nos quatro casos particulares, os grupos $GX$, $SX$, $PGX$, $PSX$ são denotados de acordo com a seguinte tabela:</p>
+
+<table id="tablepress-1" class="tablepress tablepress-id-1">
+<thead>
+<tr class="row-1 odd">
+	<th class="column-1">forma</th><th class="column-2">$GX(n,\F)$</th><th class="column-3">$SX(n,\F)$</th><th class="column-4">$PGX(n,\F)$</th><th class="column-5">$PSX(n,\F)$</th>
+</tr>
+</thead>
+<tbody class="row-hover">
+<tr class="row-2 even">
+	<td class="column-1">nula</td><td class="column-2">$GL(n,\F)$</td><td class="column-3">$SL(n,\F)$</td><td class="column-4">$PGL(n,\F)$</td><td class="column-5">$PSL(n,\F)$</td>
+</tr>
+<tr class="row-3 odd">
+	<td class="column-1">simplética</td><td class="column-2">$Sp(n,\F)$</td><td class="column-3">$Sp(n,\F)$</td><td class="column-4">$PSp(n,\F)$</td><td class="column-5">$PSp(n,\F)$</td>
+</tr>
+<tr class="row-4 even">
+	<td class="column-1">hermitiana</td><td class="column-2">$GU(n,\F)$</td><td class="column-3">$SU(n,\F)$</td><td class="column-4">$PGU(n,\F)$</td><td class="column-5">$PSU(n,\F)$</td>
+</tr>
+<tr class="row-5 odd">
+	<td class="column-1">simétrica</td><td class="column-2">$GO(n,\F)$</td><td class="column-3">$SO(n,\F)$</td><td class="column-4">$PGO(n,\F)$</td><td class="column-5">$PSO(n,\F)$</td>
+</tr>
+</tbody>
+</table>
+
+<p>No caso de formas simétricas, denotamos ainda por $\Omega(n,\F)$ o subgrupo derivado de $SO(n,\F)$. e escrevemos $P\Omega(n,\F)=\Omega(n,\F)/(Z\cap \Omega(n,\F))$. Quando $\F$ é um corpo finito com $q$ elementos, escrevemos $SL(n,q)$, $GL(n,q)$, etc, em vez de $SL(n,\F)$, $GL(n,\F)$, respetivamente.</p>
+<p><strong><br />
+Teorema. </strong>As seguintes afirmações são verdadeiras.</p>
+<ol>
+<li>Se $n\geq 2$ e $(n,q)\neq (2,2),\ (2,3)$, então $PSL(n,q)$ is simples;</li>
+<li>Se $n\geq 2$ e $(n,q)\neq (2,2),\ (2,3),\ (4,2)$, então $PSp(n,q)$ é simples;</li>
+<li>Se $n\geq 2$ e $(n,q)\neq (2,2),(2,3),(3,2)$, então $PSU(n,q)$ é simples;</li>
+<li>Se $n\geq 5$  e $q$ é ímpar, então $P\Omega(n,q)$ é simples.</li>
+</ol>
+<p>Os grupos clássicos podem ser simples para corpo $\F$ infinito, mas a situação é mais complicada.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>O Lema de Iwasawa e a simplicidade de PSL(n,F)</title>
 		<link>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/#respond</comments>
@@ -599,79 +685,6 @@ Deduza que $S_4=(C_2)^2\rtimes GL(2,2)=\mbox{AGL}(2,2)$.</li>
 <p>&nbsp;</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/08/26/exercicios-1/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Subgrupos de Hall</title>
-		<link>https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/#respond</comments>
-		<pubDate>Wed, 21 Aug 2019 22:40:12 +0000</pubDate>
-		<dc:creator><![CDATA[schcs]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
-
-		<guid isPermaLink="false">https://schcs.github.io/WP/?p=339</guid>
-		<description><![CDATA[Seja $\pi$ é um conjunto de primos. Um número natural é dito $\pi$-número, se $p\mid n$ implica que $p\in\pi$. Um número é dito $\pi&#8217;$-número, se $p\mid n$ implica que $p\not\in\pi$. Se $G$ é um grupo e  $H\leq G$, então $H$ é dito $\pi$-subgrupo de Hall, se $&#124;H&#124;$ é um $\pi$-número e $&#124;G:H&#124;$ é um $\pi&#8217;$-número. &#8230; <a href="https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/" class="more-link">Continue reading <span class="screen-reader-text">Subgrupos de Hall</span></a>]]></description>
-				<content:encoded><![CDATA[<p>Seja $\pi$ é um conjunto de primos. Um número natural é dito <em>$\pi$-número</em>, se $p\mid n$ implica que $p\in\pi$. Um número é dito <em>$\pi&#8217;$-número</em>, se $p\mid n$ implica que $p\not\in\pi$.</p>
-<p>Se $G$ é um grupo e  $H\leq G$, então $H$ é dito <em>$\pi$-subgrupo de <a href="https://en.wikipedia.org/wiki/Philip_Hall">Hall</a>,</em> se $|H|$ é um $\pi$-número e $|G:H|$ é um $\pi&#8217;$-número.</p>
-<p><strong>Exemplo.</strong> Se $\pi=\{p\}$ com um primo $p$, então $\pi$-subgrupo de Hall é simplesmente um $p$-subgrupo de Sylow.</p>
-<p><strong>Exemplo. </strong>O grupo $A_5$ não possui $\{3,5\}$-subgroupo de Hall nem $\{2,5\}$-subgrupo de Hall.</p>
-<p>Nesta página provaremos o seguinte teorema.</p>
-<p><strong>Teorema (P. Hall). </strong>Os seguintes são equivalentes para um grupo finito $G$.</p>
-<ol>
-<li>$G$ é solúvel;</li>
-<li>para todo conjunto de primos $\pi$, existe Hall $\pi$-subgrupo $H$ de $G$.</li>
-</ol>
-<p>Além disso, em um grupo solúvel, os $\pi$-subgrupos são conjugados.</p>
-<p>Para demonstrar o teorema, precisaremos de dois resultados que são interessantes independentemene do Teorema de Hall.</p>
-<p><strong>Lemma (O argumento de <a href="https://en.wikipedia.org/wiki/Giovanni_Frattini">Frattini</a>). </strong>Seja $G$ um grupo finito com subgrupo normal $N$ e $P$ um $p$-subgrupo de Sylow de $N$. Então<br />
-$$<br />
-G=N_G(P)N.<br />
-$$</p>
-<p><strong>Demonstração. </strong>É claro que $N_G(P)N\subseteq G$, então precisamos provar que $G\subseteq N_G(P)N$.</p>
-<p>Note que $P$ é um $p$-subgrupo de Sylow de $N$. Seja $g\in G$. Então $P^g$ é um $p$-subgrupo de Sylow de $G$ contido em $N$, logo ele também é um $p$-subgrupo de Sylow de $N$. Pelo Teorema de Sylow, existe $n\in N$ tal que $P^g=P^n$; ou seja $P^{gn^{-1}}=P$, que quer dizer que $gn^{-1}\in N_G(P)$. Portanto existe $x\in N_G(P)$ tal que $gn^{-1}=x$ que implica que $g=xn$; ou seja $G\subseteq N_G(P)N$.</p>
-<p><strong>Lema. </strong>Seja $G$ um grupo solúvel com ordem $p^na$ onde $p\nmid a$ e assuma que $G$ possui um único subgrupo minimal normal $M$ tal que $|M|=p^n$. Então $G$ contém subgrupos de ordem $a$ e dois tais subgrupos são conjugados.</p>
-<p>Note que o lema anterior é um caso particular do Teorema de <a href="https://en.wikipedia.org/wiki/Issai_Schur">Schur</a>&#8211;<a href="https://en.wikipedia.org/wiki/Hans_Zassenhaus">Zassenhaus</a>.</p>
-<p><strong>Teorema (Schur-Zassenhaus). </strong>Seja $N$ um subgrupo normal de um grupo finito $G$ tal que $\mbox{mdc}(|N|,|G:N|)=1$. Então $G$ possui um subgrupo de ordem $|G:N|$. Além disso se ou $N$ ou $G/N$ é solúvel, então dois tais subgrupos são conjugados.</p>
-<p>Na verdade, a condição no Teorema de Schur-Zassenhaus que ou $N$ ou $G/N$ é solúvel é válida em qualquer grupo finito pelo famoso Teorema de <a href="https://en.wikipedia.org/wiki/Walter_Feit">Feit</a>&#8211;<a href="https://en.wikipedia.org/wiki/John_G._Thompson">Thompson</a>.</p>
-<p><strong>Teorema (Feit-Thompson, 1963). </strong>Um grupo finito de ordem ímpar é solúvel.</p>
-<p><strong>Demonstração do Lema. </strong>O quociente $G/M$ é um grupo solúvel de ordem $a$. Seja $K/M$ um subgrupo minimal normal de $G/M$. O grupo $K/M$ é um $q$-grupo abeliano elementar para algum primo $q\neq p$. Então $|K|=q^mp^n$ e se $Q$ é um Sylow $q$-subgrupo de $K$, então $K=QM$.</p>
-<p><strong>Afirmação. </strong>$Z(K)=1$.</p>
-<p>Assuma que não. Como $K$ é normal em $G$ e $Z(K)$ é caraterístico em $K$, temos que $Z(K)$ é normal em $G$. Como $M$ é o único minimal normal de $G$, $M\leq Z(K)$. Isto implica que $Q$ é caraterístico em $K$ e logo será normal em $G$. Mas isto implica que $M\leq Q$, que é uma contradição.</p>
-<p>Seja $N^*=N_G(Q)$ e $N=N_K(Q)=N^*\cap K$.</p>
-<p><strong>Afirmação. </strong>$M\cap N=1$.</p>
-<p>Seja $x\in M\cap N$. Afirmamos que $x\in Z(K)$. Se $k\in K$, então $k=mq$ com $m\in M$ e $q\in Q$. Claramente, $x$ comuta com $m$. Provaremos que $x$ comuta com $q$. Note que $xqx^{-1}q^{-1}\in Q\cap M=1$. Logo $x$ comuta com $q$ e $x\in Z(K)$, como foi afirmado. Logo, $M\cap N\leq Z(K)=1$.</p>
-<p><strong>Afirmação. </strong>$|N^*|=a$.</p>
-<p>Pelo argumento de Frattini, temos que $G=KN^*$. Como<br />
-$$<br />
-G/K=KN^*/K\cong N^*/(N^*\cap K)=N^*/N<br />
-$$<br />
-tem-se que $|N^*|=|G||N|/|K|$. Por outro lado, $K=MQ=MN$ e isto implica que $|K|=|M||N|/|M\cap N|=|M||N|$. Portanto,<br />
-$$<br />
-|N^*|=|G||N|/|K|=|G||N|/(|M||N|)=|G|/|M|=a.<br />
-$$</p>
-<p><strong>Demonstração do Teorema de Hall.  </strong>(1) $\Rightarrow$ (2). Provaremos o resultado por indução em $|G|$. O teorema é válido se $|G|=1, p^2, p\cdot q$, etc, onde $p$ e $q$ são primos. Assuma que o teorema é válido para grupos de ordem menor que $|G|$ e assuma que $|G|=ab$ tal que $a$ é um $\pi$-número e $b$ é um $\pi&#8217;$-número.</p>
-<p>Assuma primeiro que existe um subgrupo normal $N$ de $G$ tal que $b\nmid |N|$. Então $|N|=a&#8217;b&#8217;$ onde $a&#8217;$ é $\pi$-número, $b&#8217;$ é $\pi&#8217;$-número e $b'&lt;b$. Considere $Q=G/N$. Tem-se que $|Q|=(a/a&#8217;)(b/b&#8217;)$. Pela hipótese de indução, existe um subgrupo $A/N$ de $Q$ com ordem $a/a&#8217;$. Logo $|A|=(a/a&#8217;)a&#8217;b&#8217;=ab&#8217;$. Usando a hipótese de indução mais uma vez, $A$ possui um subgrupo de ordem $a$.</p>
-<p>Provaremos que dois tais subgrupos são conjugados. Sejam $A$ e $B$ subgrupos de $G$ de ordem $a$. Considere o subgrupo $AN\leq G$. Afirmamos que $|AN|=ab&#8217;$. Assuma que $|AN|=\alpha\beta$ onde $\alpha$ e $\beta$ são $\pi$- e $\pi&#8217;$-números, respetivamente. Como $A\leq AN$ e $N\leq AN$, temos que $\alpha=a$ e $b&#8217;\mid \beta$. Por outro lado<br />
-$|AN|=|A||N|/|A\cap N|$ que implica que $\alpha\beta\mid aa&#8217;b&#8217;$ que implica que $\beta|b&#8217;$. Obtemos então que $\beta=b&#8217;$ e $|AN|=ab&#8217;$. O mesmo argumento mostra que $|B|=ab&#8217;$. Então temos que $AN/N$ e $BN/N$ são subgrupos de $G/N$ com ordem $a/a&#8217;$. Pela hipótese de indução, eles são conjugados. Assuma que $x\in G$ é tal que<br />
-$$<br />
-BN/N=(xN)^{-1}(AN/N)(xN)=x^{-1}AxN/N.<br />
-$$<br />
-Portanto, $x^{-1}AxN=BN$. Isto implica que $A^x$ e $B$ são subgrupos de $BN$ de ordem $a$. Pela hipótese de indução, eles são conjugados. Logo, $A$ e $B$ são conjugados.</p>
-<p>Resta verificar o caso quando $G$ não possui um subgrupo normal $N$ como em cima. Neste caso, temos, para todo subgrupo normal $N$, que $b\mid |N|$. Seja $N$ um subgrupo minimo normal. Então $|N|=p^n$ com algum $n$ e $b\mid |N|$. Isto implica que $b=|M|=p^n$. Além disso se $M$ é um subgrupo minimal normal de $G$, então o mesmo argumento mostra que $|N|=p^n$ e $MN=p^n$. Logo $M=N$. Temos então que $N$ é o único subgrupo minimal normal de $G$ e $|N|=b=p^n$. O resultado agora segue do lema em cima.</p>
-<p>(2) $\Rightarrow$ (1) Nesta direção provaremos o seguinte resultado mais forte.</p>
-<p><strong>Lema. </strong>Assuma que $G$ é um grupo finito tal que $G$ possui um $\{p\}&#8217;$-subgrupo de Hall para todo primo $p$. Então $G$ é solúvel.</p>
-<p><strong>Demonstração. </strong>Assuma que $G$ é um contra-exemplo de menor ordem. Afirmamos primeiro que $G$ é simples. De fato, assuma que $1\neq N\lhd G$ e que $p$ é um primo. Seja $H\leq G$ um $\{p\}&#8217;$-subgrupo de Hall de $G$. Então $H\cap N$ e $HN/N$ são $\{p\}&#8217;$-subgrupos de Hall de $N$ e de $G/N$ respetivamente. Pela minimalidade de $G$, $N$ e $G/N$ são solúveis que implica que $G$ também é solúvel.  Mas isto não é o caso: uma contradição. Podemos então assumir sem perder generalidade que $G$ é um grupo simples.</p>
-<p>Suponha que $|G|=p_1^{\alpha_1}\cdots p_k^{\alpha_k}$ onde os $p_i$ são primos mutualmente distintos e $\alpha_i\geq 1$. Para todo $i$, seja $H_i$ o $\{p_i\}&#8217;$-subgrupo de Hall de $G$. Então<br />
-$$<br />
-|H_i|=|G|/p_i^{\alpha_i}=\prod_{j\neq i}p_j^{\alpha_j}.<br />
-$$<br />
-Ponha $D=H_3\cap\cdots\cap H_k$. Temos que $|D|=p_1^{\alpha_1}p_2^{\alpha_2}$ e $D$ é um grupo solúvel pelo Teorema de Burnside. Seja $N$ um subgrupo minimal normal de $D$. Então $N$ é um $p$-grupo abeliano elementar. Assuma por exemplo que $N$ é um $p_1$-grupo. Ora, $|G:D\cap H_2|=\prod_{i\geq 2}p_i^{\alpha_i}$, então $|D\cap H_2|=p_1^{\alpha_1}$. Portanto $D\cap H_2$ é um $p_1$-subgrupo de Sylow de $D$. Pelo teoremas de Sylow, $N\leq D\cap H_2$ que implica que $N\leq H_2$. No entanto, obtemos similarmente que $|D\cap H_1|=p_2^{\alpha_2}$ e comparar as ordens implica que $G=H_2(D\cap H_1)$. Seja $g\in G$ e escreva $g=hd$ onde $h\in H_2$ e $d\in D\cap H_1$. Se $x\in N$, então<br />
-$$<br />
-gxg^{-1}=hdxd^{-1}h^{-1}=hyh^{-1} \in H_2<br />
-$$<br />
-onde $y=dxd^{-1}$. Logo $N^G\leq H_2$ onde $N^G$ é o fecho normal de $N$ em $G$. Como $H_2&lt;G$, obtemos que $N^G$ é um subgrupo normal não trivial e próprio em $G$, mas isto é impossível, como $G$ é simples.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/08/21/subgrupos-de-hall/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
