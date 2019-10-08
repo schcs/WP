@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Tue, 08 Oct 2019 01:11:05 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 08 Oct 2019 01:15:48 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -88,13 +88,13 @@ PSX(n,\F)=&amp;SX(n,\F)/(Z\cap SX(n,\F)).<br />
 </tbody>
 </table>
 <!-- #tablepress-1 from cache -->
-<p>No caso de formas simétricas, denotamos ainda por $\Omega(n,\F)$ o subgrupo derivado de $SO(n,\F)$. e escrevemos $P\Omega(n,\F)=\Omega(n,\F)/(Z\cap \Omega(n,\F))$. Quando $\F$ é um corpo finito com $q$ elementos, escrevemos $SL(n,q)$, $GL(n,q)$, etc, em vez de $SL(n,\F)$, $GL(n,\F)$, respetivamente.</p>
+<p>No caso de formas simétricas, denotamos ainda por $\Omega(n,\F)$ o subgrupo derivado de $SO(n,\F)$. e escrevemos $P\Omega(n,\F)=\Omega(n,\F)/(Z\cap \Omega(n,\F))$. Quando $\F$ é um corpo finito com $q$ elementos, escrevemos $SL(n,q)$, $GL(n,q)$, etc, em vez de $SL(n,\F)$, $GL(n,\F)$, respetivamente. Quando a forma é hermitiana, então $q=q_0^2$ é um quadrado e $\sigma:x\mapsto x^q$.</p>
 <p><strong><br />
 Teorema. </strong>As seguintes afirmações são verdadeiras.</p>
 <ol>
 <li>Se $n\geq 2$ e $(n,q)\neq (2,2),\ (2,3)$, então $PSL(n,q)$ is simples;</li>
 <li>Se $n\geq 2$ e $(n,q)\neq (2,2),\ (2,3),\ (4,2)$, então $PSp(n,q)$ é simples;</li>
-<li>Se $n\geq 2$ e $(n,q)\neq (2,2),(2,3),(3,2)$, então $PSU(n,q)$ é simples;</li>
+<li>Se $n\geq 2$ e $(n,q)\neq (2,4),(2,9),(3,4)$, então $PSU(n,q)$ é simples;</li>
 <li>Se $n\geq 5$  e $q$ é ímpar, então $P\Omega(n,q)$ é simples.</li>
 </ol>
 <p>Os grupos clássicos podem ser simples para corpo $\F$ infinito, mas a situação é mais complicada.</p>
