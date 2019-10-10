@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Thu, 10 Oct 2019 11:08:27 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 10 Oct 2019 11:15:45 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -43,7 +43,7 @@ $$<br />
 c{\sigma^2}=(u,v)\sigma^2=(v,u)\sigma=(u,v)=c.<br />
 $$</p>
 <p>O lema anterior implica que se $(\cdot,\cdot)$ é uma forma $\sigma$-hermitiana, então $\sigma$ é um automorfismo do corpo $\F$ com $\sigma=\mbox{id}$ ou $|\sigma|=2$. No segundo caso, dizemos que $\sigma$ é um automorfismo <em>involutivo</em>.</p>
-<p>Uma forma $\mbox{id}$-hermitiana é dita forma <em>simétrica</em>. Uma forma bilinear é dita <em>simplética</em> se $(u,u)=0$ para todo $u\inV$. Note que se $(\cdot,\cdot)$ é uma forma simplética, então $(u,v)=-(v,u)$ vale para todo $u,v\in V$. Além disso, se $\mbox{char}\,\F\neq 2$, então a identidade $(u,v)=-(v,u)$ implica que a forma é simplética.</p>
+<p>Uma forma $\mbox{id}$-hermitiana é dita forma <em>simétrica</em>. Uma forma bilinear é dita <em>simplética</em> se $(u,u)=0$ para todo $u\in V$. Note que se $(\cdot,\cdot)$ é uma forma simplética, então $(u,v)=-(v,u)$ vale para todo $u,v\in V$. Além disso, se $\mbox{char}\,\F\neq 2$, então a identidade $(u,v)=-(v,u)$ implica que a forma é simplética.</p>
 <p>Uma forma $(\cdot,\cdot)$ é dita <em>não degenerada</em> se<br />
 \begin{align*}<br />
 &amp;\{v\in V\mid (v,u)=0\mbox{ para todo }u\in V\}=\\&amp;\{v\in V\mid (u,v)=0\mbox{ para todo }u\in V\}=\{0\}.<br />
