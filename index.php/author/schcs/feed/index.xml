@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Thu, 10 Oct 2019 02:10:07 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 10 Oct 2019 11:08:27 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -31,20 +31,20 @@
 $$<br />
 V\times V\rightarrow\F,\quad (u,v)\mapsto (u,v)<br />
 $$<br />
-é dito $\sigma$-sesquilinear se<br />
+é dito <em>$\sigma$-sesquilinear</em> se<br />
 \begin{align*}<br />
 (\alpha u+\beta v,w)=&amp;\alpha(u,w)+\beta(v,w);\\<br />
 (u,\alpha v+\beta w)=&amp;(\alpha\sigma) (u,v)+(\beta\sigma)(v,w).<br />
 \end{align*}<br />
-Uma forma $\sigma$-sesquilinear $(\cdot,\cdot)$ é dita $\sigma$-hermitiana, se $(u,v)=(v,u)\sigma$. Uma forma $\mbox{id}$-sesquilinear é dita bilinear.</p>
+Uma forma $\sigma$-sesquilinear $(\cdot,\cdot)$ é dita <em>$\sigma$-hermitiana,</em> se $(u,v)=(v,u)\sigma$. Uma forma $\mbox{id}$-sesquilinear é dita <em>bilinear</em>.</p>
 <p><strong>Lema. </strong>Seja $(\cdot,\cdot)$ uma forma $\sigma$-hermitiana não nula. Então $\sigma^2=\mbox{id}$.</p>
 <p><strong>Demonstração. </strong>Sejam $u,v\in \F$ tais que $(u,v)=c\neq 0$. Então<br />
 $$<br />
 c{\sigma^2}=(u,v)\sigma^2=(v,u)\sigma=(u,v)=c.<br />
 $$</p>
-<p>O lema anterior implica que se $(\cdot,\cdot)$ é uma forma $\sigma$-hermitiana, então $\sigma$ é um automorfismo do corpo $\F$ com $\sigma=\mbox{id}$ ou $|\sigma|=2$. No segundo caso, dizemos que $\sigma$ é um automorfismo involutivo.</p>
-<p>Uma forma $\mbox{id}$-hermitiana é dita forma simétrica. Uma forma bilinear é dita simplética se $(u,u)=0$ para todo $u,v\in V$. Note que se $(\cdot,\cdot)$ é uma forma simplética, então $(u,v)=-(v,u)$ vale para todo $u,v\in V$. Além disso, se $\mbox{char}\,\F\neq 2$, então a identidade $(u,v)=-(v,u)$ implica que a forma é simplética.</p>
-<p>Uma forma $(\cdot,\cdot)$ é dita não degenerada se<br />
+<p>O lema anterior implica que se $(\cdot,\cdot)$ é uma forma $\sigma$-hermitiana, então $\sigma$ é um automorfismo do corpo $\F$ com $\sigma=\mbox{id}$ ou $|\sigma|=2$. No segundo caso, dizemos que $\sigma$ é um automorfismo <em>involutivo</em>.</p>
+<p>Uma forma $\mbox{id}$-hermitiana é dita forma <em>simétrica</em>. Uma forma bilinear é dita <em>simplética</em> se $(u,u)=0$ para todo $u\inV$. Note que se $(\cdot,\cdot)$ é uma forma simplética, então $(u,v)=-(v,u)$ vale para todo $u,v\in V$. Além disso, se $\mbox{char}\,\F\neq 2$, então a identidade $(u,v)=-(v,u)$ implica que a forma é simplética.</p>
+<p>Uma forma $(\cdot,\cdot)$ é dita <em>não degenerada</em> se<br />
 \begin{align*}<br />
 &amp;\{v\in V\mid (v,u)=0\mbox{ para todo }u\in V\}=\\&amp;\{v\in V\mid (u,v)=0\mbox{ para todo }u\in V\}=\{0\}.<br />
 \end{align*}</p>
@@ -55,7 +55,7 @@ $$</p>
 <li>forma $\sigma$-hermitiana não degenerada com $\sigma\in\mbox{Aut}(\F)$ involutíva.</li>
 <li>forma bilinear simétrica não  degenerada.</li>
 </ol>
-<p>Uma forma que satisfaz uma das quatro condições em cima é dita forma clássica.</p>
+<p>Uma forma que satisfaz uma das quatro condições em cima é dita<em> forma clássica</em>.</p>
 <p>Seja $(\cdot,\cdot)$ uma das formas clássicas e denote por $Z=\{\lambda I\mid \lambda\in\F^*\}\leq GL(n,\F)$.<br />
 Denotamos por<br />
 \begin{align*}<br />
@@ -87,13 +87,13 @@ V=L_1⦹ \cdots⦹ L_{n/2}.<br />
 $$</li>
 <li>$(\cdot,\cdot)$ é uma forma simétrica, $n$ é par e existem planos hiperbólicos $L_1,\ldots,L_{(n-2)/2}$ e $w_1,w_2\in V$ tais que $(w_1,w_1)=2$, $(w_2,w_2)=2\zeta$, $(w_1,w_2)=2$, onde $x^2+x+\zeta\in\F[x]$ é irredutível e<br />
 $$<br />
-V=L_1⦹ \cdots⦹ L_{(n-2)/2}⦹\left&lt;w_1\right&gt;⦹\left&lt;w_2\right&gt;.<br />
+V=L_1⦹ \cdots⦹ L_{(n-2)/2}⦹\left&lt;w_1,w_2\right&gt;.<br />
 $$</li>
-<li>$(\cdot,\cdot)$ é uma forma simétrica, $n$ é ímpar e existem planos hiperbólicos $L_1,\ldots,L_{(n-1)/2}$, $w\in V$ tais que $(w,w)=1$  e<br />
+<li>$(\cdot,\cdot)$ é uma forma simétrica, $n$ é ímpar e existem planos hiperbólicos $L_1,\ldots,L_{(n-1)/2}$ e $w\in V$ tais que $(w,w)=1$  e<br />
 $$<br />
 V=L_1⦹ \cdots⦹ L_{(n-1)/2}⦹\left&lt;w\right&gt;.<br />
 $$</li>
-<li>$(\cdot,\cdot)$ é uma forma simétrica, $n$ é ímpar e existem planos hiperbólicos $L_1,\ldots,L_{(n-1)/2}$, $w\in V$ tais que $(w,w)=\zeta$ com $\zeta\in\F^*\setminus\F^2$ e<br />
+<li>$(\cdot,\cdot)$ é uma forma simétrica, $n$ é ímpar e existem planos hiperbólicos $L_1,\ldots,L_{(n-1)/2}$ e $w\in V$ tais que $(w,w)=\zeta$ com $\zeta\in\F^*\setminus\F^2$ e<br />
 $$<br />
 V=L_1⦹ \cdots⦹ L_{(n-1)/2}⦹\left&lt;w\right&gt;.<br />
 $$</li>
@@ -117,18 +117,18 @@ $$</li>
 	<td class="column-1">hermitiana</td><td class="column-2">$GU(n,q)$</td><td class="column-3">$SU(n,q)$</td><td class="column-4">$PGU(n,q)$</td><td class="column-5">$PSU(n,q)$</td>
 </tr>
 <tr class="row-5 odd">
-	<td class="column-1">simétrica (caso 5.)</td><td class="column-2">$GO^+(n,q)$</td><td class="column-3">$GO^+(n,q)$</td><td class="column-4">$PGO^+(n,q)$</td><td class="column-5">$PSO^+(n,q)$</td>
+	<td class="column-1">simétrica (caso 5.)</td><td class="column-2">$GO^+(n,q)$</td><td class="column-3">$SO^+(n,q)$</td><td class="column-4">$PGO^+(n,q)$</td><td class="column-5">$PSO^+(n,q)$</td>
 </tr>
 <tr class="row-6 even">
 	<td class="column-1">simétrica (caso 6.)</td><td class="column-2">$GO^-(n,q)$</td><td class="column-3">$SO^-(n,q)$</td><td class="column-4">$PGO^-(n,q)$</td><td class="column-5">$PSO^-(n,q)$</td>
 </tr>
 <tr class="row-7 odd">
-	<td class="column-1">simétrica (caso 7.-8.)</td><td class="column-2">$GO(n,q)$</td><td class="column-3">$SO(n,q)$</td><td class="column-4">$SO(n,q)$</td><td class="column-5">$PSO(n,q)$</td>
+	<td class="column-1">simétrica (caso 7.-8.)</td><td class="column-2">$GO(n,q)$</td><td class="column-3">$SO(n,q)$</td><td class="column-4">$PGO(n,q)$</td><td class="column-5">$PSO(n,q)$</td>
 </tr>
 </tbody>
 </table>
 <!-- #tablepress-1 from cache -->
-<p>No caso de formas simétricas, denotamos ainda por $\Omega^+(n,q)$, $\Omega^-(n,q)$, e por $\Omega(n,q)$, o subgrupo derivado de $SO^+(n,q)$, $SO^-(n,q)$, e $SO(n,q)$, respetivamente. Escrevemos $P\Omega(n,\F)=\Omega(n,\F)/(Z\cap \Omega(n,\F))$ e $P\Omega^\pm(n,\F)=\Omega^\pm(n,\F)/(Z\cap \Omega^\pm(n,\F))$.</p>
+<p>Simplificando a definição verdadeira, no caso de formas simétricas, denotamos ainda por $\Omega^+(n,q)$, $\Omega^-(n,q)$, e por $\Omega(n,q)$, o subgrupo derivado de $SO^+(n,q)$, $SO^-(n,q)$, e $SO(n,q)$, respetivamente. Escrevemos $P\Omega(n,\F)=\Omega(n,\F)/(Z\cap \Omega(n,\F))$ e $P\Omega^\pm(n,\F)=\Omega^\pm(n,\F)/(Z\cap \Omega^\pm(n,\F))$.</p>
 <p><strong>Teorema. </strong>As seguintes afirmações são verdadeiras.</p>
 <ol>
 <li>Se $n\geq 2$ e $(n,q)\neq (2,2),\ (2,3)$, então $PSL(n,q)$ is simples;</li>
