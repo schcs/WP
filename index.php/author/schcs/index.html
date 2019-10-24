@@ -85,6 +85,104 @@ MathJax.Hub.Config({
 			
 				
 					
+<article id="post-549" class="post-549 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/" rel="bookmark">O Lema de Schur e o Teorema de Clifford</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/" rel="bookmark"><time class="entry-date published" datetime="2019-10-23T22:41:51+00:00">October 23, 2019</time><time class="updated" datetime="2019-10-24T11:25:30+00:00">October 24, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>$\newcommand{\F}{\mathbb F}$<strong>Teorema (O lema de <a href="https://en.wikipedia.org/wiki/Issai_Schur">Schur</a>). </strong>Sejam $U$ e $V$ dois $\F G$-módulos simples e $\varphi:U\rightarrow V$ um $G$-homomorfismo. Então $\varphi=0$ ou $\varphi$ é um isomorfismo.</p>
+<p><strong>Demonstração. </strong>Trivial. Só observar que $\ker\varphi$ e $\mbox{Im}\,\varphi$ são submódulos. Então temos duas possibilidades, $\ker\varphi=0$ e $\mbox{Im}\,\varphi=U$ (e $\varphi$ é um isomorfismo) ou $\ker\varphi=V$ e $\varphi=0$.</p>
+<p>Lembre que para um $\F G$-módulo $V$, $\mbox{End}_G(V)$ é uma $\F$-álgebra. Uma $\F$-álgebra é dita álgebra de divisão se todo elemento não nulo é invertível. A álgebra dos quaternions é um exemplo de álgebras de divisão.</p>
+<p><strong>Corolário. </strong>Seja $V$ um $G$-módulo simples. Então $\mbox{End}_G(V)$ é uma álgebra de divisão.</p>
+<p><strong>Corolário. </strong>Seja $\F$ algebricamente fechado, $V$ um $G$-módulo simples de dimensão finita, e $\alpha\in \mbox{End}_G(V)$. Então existe $\lambda\in\F$ tal que $\alpha=\lambda\cdot \mbox{id}$.</p>
+<p><strong>Demonstração. </strong>Como $\F$ é algebricamente fechado, $\alpha$ possui um autovalor $\lambda$. Seja $U$ o autoespaço<br />
+\[<br />
+U=\{v\in V\mid v\alpha =\lambda v\}.<br />
+\]<br />
+Afirmamos que $U$ é um $G$-submódulo. Se $u\in U$ e $g\in G$, então<br />
+\[<br />
+(ug)\alpha=(u\alpha)g=(\lambda u)g=\lambda(ug);<br />
+\]<br />
+logo $ug\in U$. Além disso, $U\neq 0$, e a simplicidade de $V$ implica que $U=V$. Portanto $v\alpha=\lambda v$ para todo $v\in V$.</p>
+<p><strong>Corolário. </strong>Seja $\F$ algebricamente fechado, $V$ um $G$-módulo simples de dimensão finita, e seja $\varrho$ a representação correspondente. Então $Z(G)\varrho\leq\{\lambda\cdot\mbox{id}\mid\lambda\in\F^*\}$.</p>
+<p><strong>Demonstração. </strong>Seja $z\in Z(G)$ e $g\in G$. Então $(vg)z=v(gz)=v(zg)=(vz)g$ e $z\varrho\in\mbox{End}_G(V)$.</p>
+<p><strong>Corolário. </strong>Seja $G$ um grupo finito abeliano, $\F$ um corpo algebricamente fechado, e $V$ um $\F G$-módulo simples de dimensão finita. Então $\dim V=1$.</p>
+<p><strong>Demonstração. </strong>Pelos corolários anteriores, se $g\in G$, então existe $\lambda\in\F^*$ tal que $vg=\lambda v$ para todo $v\in V$. Por irredutibilidade, obtemos que $\dim V=1$.</p>
+<p>Seja $V$ um $G$-módulo. Uma cadeia<br />
+\[<br />
+V=V_0&gt;V_1&gt;\cdots &gt;V_k&gt;V_{k+1}=0<br />
+\]<br />
+é dita <em>série de composição </em>se $V_i/V_{i+1}$ é simples para todo $i$.</p>
+<p><strong>Teorema (Jordan-Holder)</strong>. Se<br />
+\[<br />
+V=V_0&gt;V_1&gt;\cdots&gt; V_k&gt;V_{k+1}=0<br />
+\]<br />
+e<br />
+\[<br />
+V=U_0&gt;U_1&gt;\cdots&gt; U_\ell&gt;U_{\ell+1}=0<br />
+\]<br />
+são duas séries de composição de um $G$-módulo, então $k=\ell$ e existe uma permutação $\pi\in S_k$ tal que $V_i/V_{i+1}\cong U_{i\pi}/U_{i\pi+1}$.</p>
+<p><strong>Teorema (<a href="https://en.wikipedia.org/wiki/Alfred_H._Clifford">Clifford</a>). </strong>Seja $G$ um grupo finito, $V$ um $\F G$-módulo simples de dimensão finita, $N\unlhd G$ e $U\leq_N V$ um $N$-submódulo simples.</p>
+<ol>
+<li>$V=\sum_{g\in G}Ug$ onde $Ug$ é um $N$-módulo simples e $V$ é completamente redutível.</li>
+<li>Sejam $S_1,\ldots,S_k$ os tipos de isomorfismo dos $N$-submódulos simples de $V$ e seja para $i\in\{1,\ldots,k\}$,<br />
+\[<br />
+V_i=\sum W\mbox{ onde } W\leq_N V\mbox{ e } W\cong S_i.<br />
+\]<br />
+Então $V=V_1\oplus\cdots \oplus V_k$.</li>
+<li>$G$ age transitivamente no conjunto $\{V_1,\ldots,V_k\}$.</li>
+<li>Seja $G_i=G_{V_i}$ (o estabilizador). Então $V_i$ é um $G_i$-módulo simples.</li>
+</ol>
+<p><strong>Demonstração. </strong>1. $\sum Ug$ é um $G$-submódulo. Por simplicidade, $\sum Ug=V$. Sejam $u\in U$, $g\in G$, e $n\in N$. Logo<br />
+\[<br />
+ugn=un^{g^{-1}}g\in Ug.<br />
+\]<br />
+Logo $Ug\leq_N V$. Além disso, se $W\leq_N Ug$, então $Wg^{-1}\leq U$. Como $U$ é $N$-simples, $Ug$ também é para todo $g\in G$.  Seja $\{g_1,\ldots,g_r\}\subseteq G$ maximal tal que $W=\sum_{i} Ug_i=\bigoplus_i Ug_i$. Afirmamos que $V=W$. Seja  $g\in G$. Como $Ug$ e $W$ são $N$-submódulos,   $Ug\cap W$ também é. Pela simplicidade de $Ug$, tem-se que $Ug\cap W=Ug$ ou $Ug\cap W=0$. Nos segundo caso, $Ug\oplus W\leq_N V$, e isso é impossível pela maximalidade de $W$. Logo $Ug\leq W$ para todo $g\in G$ e $W=V$ como foi afirmado. Em particular, $V$ é completamente redutível.</p>
+<p>2. Pelo Teorema de Jordan-Holder, existem somente um número finito de tipos de isomorfismo de $N$-submódulos simples em $V$. Além disso, $V=\sum V_i$.  Afirmamos que a soma é direta. Seja $i\in\{1,\ldots,k\}$ e seja $Y=\sum_{j\neq i}V_j$. Então $V_i\cap Y$ é um $N$-submódulo de $V$. Além disso, um fator de composição de $V_i\cap Y$ precisa ser fator de composição de $V_i$ e também de $Y$. Como $V_i$ e $Y$ não têm fatores de composição comuns, $V_i\cap Y=0$. Logo $V=V_1\oplus\cdots\oplus V_k$.</p>
+<p>3. Seja $i\in \{1,\ldots,k\}$ e $g\in G$. Se $W\leq V_i$ é simples, então $W\cong S_i$. Neste caso $Wg$ também é simples e $Wg\cong S_j$ com algum $j\in\{1,\ldots,k\}$. Logo $W_ig=W_j$ e $G$ age o conjunto $\{V_1,\ldots,V_k\}$. Se $\{V_1,\ldots,V_s\}$ é uma $G$-órbita com $s\geq 1$, então $V_1\oplus\cdots\oplus V_s\leq_G V$. Pela simplicidade de $V$, $V_1\oplus\cdots\oplus V_s=V$ e $s=k$. Portanto $G$ é transitivo no conjunto $\{V_i\}$.</p>
+<p>4. Mostraremos sem perder generalidade que $V_1$ é $G_1$-irredutível. Seja $0&lt;W\leq_{G_1} V_1$. Por parte 3., existem $g_1,\ldots,g_k$ tais que $V_i=V_1g_i$ para todo $i$. Em particular, $V=V_1g_1\oplus\cdots\oplus V_1g_k$.  Se $g\in G$ e $i\in\{1,\ldots,k\}$,  então $g_ig\in G_1g_{i&#8217;}$ com algum $i&#8217;$ e o mapa $i\mapsto i&#8217;$ é uma permutação de $\{1,\ldots,k\}$. Em particular, $g_ig=h_ig_{i&#8217;}$ com algum $h_i\in G_1$. Em particular<br />
+\begin{align*}<br />
+&amp;(Wg_1\oplus\cdots\oplus Wg_k)g=Wg_{1}g\oplus\cdots\oplus Wg_kg\\=&amp;<br />
+Wh_1g_{1&#8242;}\oplus\cdots\oplus Wh_kg_{k&#8217;}=<br />
+Wg_{1&#8242;}\oplus\cdots\oplus Wg_{k&#8217;}.<br />
+\end{align*}<br />
+Portanto, $Wg_1\oplus\cdots\oplus Wg_k$ é um $G$-submódulo. Pela simplicidade de $V$,  $Wg_1\oplus\cdots\oplus Wg_k=V$ e $W=V_1$.</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
+<article id="post-542" class="post-542 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/" rel="bookmark">G-módulos e representações</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/" rel="bookmark"><time class="entry-date published" datetime="2019-10-23T21:51:56+00:00">October 23, 2019</time><time class="updated" datetime="2019-10-23T22:37:13+00:00">October 23, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>$\newcommand{\F}{\mathbb F}$$G$-módulos, representações, submódulos, módulos simples (irredutíveis), redutíveis, completamente redutíveis. A álgebra do grupo, seus submódulos. Módulo quociente. O Teorema de Maschke.</p>
+<p><strong>Teorema (<a href="https://en.wikipedia.org/wiki/Heinrich_Maschke">Maschke</a>). </strong>Seja $G$ um grupo finito e $\F$ um corpo. As seguintes são equivalentes:</p>
+<ol>
+<li>Todo $G$-módulo de dimensão finita é completamente redutível.</li>
+<li>$\mbox{char}\,\F\nmid |G|$.</li>
+</ol>
+<p><strong>Demonstração. </strong>1.$\Rightarrow$ 2. Considere $\F G$ como um $G$-módulo. Seja $a=\sum_{g\in G}g\in \F G$ e note que $U=\left&lt;a\right&gt;$ é um $G$-submódulo de $\F G$ de dimensão um. Assuma que existe um $G$-submódulo $W\leq \F G$ tal que $U\oplus W=\F G$.  Comparando dimensões, temos que $\dim W=|G|-1$.</p>
+<p>Seja<br />
+\[<br />
+I=\left\{\sum_{g\in G} \alpha_g g\mid \sum \alpha_g=0\right\}.<br />
+\]<br />
+Claramente, $I$ é um $G$-submódulo de dimensão $|G|-1$. Nós afirmamos que $W=I$. Como $\dim W=\dim I$, é suficiente provar que $W\leq I$. Seja $x=\sum \beta_g g\in W$. Como $W$ é um $G$-submódulo,<br />
+\begin{align*}<br />
+W\ni&amp;\sum_{h\in G} xh=\sum_{h\in G}\left(\sum_{g\in G}\beta_g g\right)h=\sum_{g\in G}\sum_{h\in G}\beta_g (gh)=\\&amp;\sum_{g\in G}\beta_g \sum_{h\in G} gh=<br />
+\sum_{g\in G}\beta_g \sum_{y\in G}y=\left(\sum_{g\in G}\beta_g\right) a\in U.<br />
+\end{align*}<br />
+Como $U\cap W=0$, temos que $\sum_{g\in G}\beta_g=0$; ou seja $x\in I$. Portanto $W=I$ como for afirmado.</p>
+<p>Ora, se $\mbox{char}\,\F\mid |G|$, então $U\leq I$, então $U\oplus W$ é impossível.</p>
+<p>2. $\Rightarrow$ 1.</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
 <article id="post-504" class="post-504 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/10/15/grupos-livres/" rel="bookmark">Grupos livres</a></h1>	</header><!-- .entry-header -->
@@ -652,140 +750,6 @@ Demonstre as seguintes afirmações.</p>
 <li>Se $N\unlhd G$ e $[X,Y,Z]\leq N$ e $[Y,Z,X]\leq N$, então $[Z,X,Y]\leq N$. (Lema dos $[Z,X,Y]\leq [X,Y,Z][Y,Z,X]$.</li>
 <li>$[\gamma_i(G),\gamma_j(G)]\leq \gamma_{i+j}(G)$ para todo $i,j\geq 1$.</li>
 </ol>
-			</div><!-- .entry-content -->
-	</article><!-- #post-## -->
-
-				
-					
-<article id="post-373" class="post-373 post type-post status-publish format-standard hentry category-uncategorized">
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/" rel="bookmark">Grupos nilpotentes</a></h1>	</header><!-- .entry-header -->
-				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/" rel="bookmark"><time class="entry-date published" datetime="2019-09-03T00:51:18+00:00">September 3, 2019</time><time class="updated" datetime="2019-09-05T01:20:13+00:00">September 5, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/09/03/grupos-nilpotentes/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
-				<div class="entry-content">
-		<p>Se $G$ é um grupo e $A,B\leq G$, então<br />
-$$<br />
-[A,B]=\left&lt;[a,b]\mid a\in A,\ b\in B\right&gt;.<br />
-$$</p>
-<p><strong>Exercício. </strong>Se $A,B\unlhd G$, então $[A,B]\unlhd G$.</p>
-<p><strong>Lema. </strong>Seja $K\unlhd G$, e $H\leq G$ tal que $K\leq H\leq G$.  Então $[H,G]\leq K$ se e somente se $H/K\leq Z(G/K)$.</p>
-<p><strong>Demonstração. </strong>Exercício.</p>
-<p>Uma série normal<br />
-$$<br />
-G_0&gt;\cdots&gt; G_k<br />
-$$<br />
-de um grupo $G$ é dito <em>série central </em>se<br />
-$$<br />
-G_i/G_{i+1}\leq Z(G/G_{i+1}).<br />
-$$<br />
-Note que se $G_i$ é uma série central, então os quocientes $G_i/G_{i+1}$ são abelianos.</p>
-<p>Em um grupo $G$, definimos a série $\gamma_i(G)$  recursivamente como $\gamma_1(G)=G$, e $\gamma_{i+1}(G)=[G,\gamma_i(G)]$ para $i\geq 1$. Note que $\gamma_2(G)=G&#8217;$. A série $\gamma_i(G)$ é chamada de <em>série central descendente</em>.</p>
-<p>Similarmente, definimos $\zeta_0(G)=1$ e recursivamente $\zeta_{i+1}(G)$ é definido como o subgrupo de $G$ que contém $\zeta_{i}(G)$ e satisfaz que<br />
-$$<br />
-Z(G/\zeta_{i}(G))=\zeta_{i+1}(G)/\zeta_i(G).<br />
-$$<br />
-A série $\zeta_i(G)$ é chamada de <em>série central ascendente</em> de $G$. O termo $\zeta_i(G)$ é dito <em>$i$-ésimo centro de $G$</em>.</p>
-<p><strong>Lema. </strong>As séries $\gamma_i(G)$ e $\zeta_i(G)$ são centrais.</p>
-<p><strong>Demonstração. </strong>É claro no caso de $\zeta_i(G)$. O caso de $\gamma_i(G)$ segue do lema anterior.</p>
-<p><strong>Lema. </strong>Seja $G$ um grupo.</p>
-<ol>
-<li>Se<br />
-$$<br />
-G_1=G&gt;G_2&gt;\cdots&gt; G_k<br />
-$$<br />
-é uma série central, então $\gamma_i(G)\leq G_i$ para todo $i$.</li>
-<li>Se<br />
-$$<br />
-1=H_0&lt;H_1&lt;\cdots&lt;H_m<br />
-$$<br />
-é uma série central então $H_i\leq \zeta_i(G)$ para todo $i$.</li>
-</ol>
-<p><strong>Demonstração. </strong>1. Indução por $i$. A afirmação é clara para $i=1$. Assuma que $\gamma_i(G)\leq G_i$ para $i\geq 1$. Então<br />
-$$<br />
-\gamma_{i+1}(G)=[\gamma_i(G),G]=[G_i,G]\leq G_{i+1}.<br />
-$$<br />
-A última desigualdade segue do lema anterior.</p>
-<p>2. Indução por $i$. É clara para $i=0$. Assuma que $H_i\leq \zeta_i(G)$ para algum $i$. Então temos um homomorfismo sobrejetivo<br />
-$$<br />
-\alpha:G/ H_i\rightarrow G/\zeta_i(G).<br />
-$$<br />
-Como a série $H_i$ é central, $H_{i+1}/H_{i}\leq Z(G/ H_i)$.  Aplicando o homomorfismo $\alpha$, obtemos que<br />
-$$<br />
-H_{i+1}\zeta_{i}(G)/\zeta_i(G) \leq Z(G/\zeta_i(G))=\zeta_{i+1}(G)/\zeta_i(G).<br />
-$$<br />
-Portanto, $H_{i+1}\leq \zeta_{i+1}(G)$.</p>
-<p><strong>Teorema. </strong>Em um grupo $G$ tem se que $\zeta_c(G)=G$ se e somente se $\gamma_{c+1}(G)=1$. Neste caso $$<br />
-\gamma_{i+1}(G)\leq \zeta_{c-i}(G)<br />
-$$<br />
-para todo $i\geq 0$.</p>
-<p><strong>Demonstração. </strong>Segue do lema anterior.</p>
-<p>Um grupo $G$ é dito nilpotente se existe um $c\geq 1$ tal que $\gamma_{c+1}(G)=1$. O menor tal $c$ é dito a classe de nilpotência de $G$. Claramente, um grupo nilpotente é solúvel, mas um grupo solúvel não é necessariamente nilpotente (e.g. $S_3$).</p>
-<p><strong>Corolário. </strong>Seja $G$ um grupo.</p>
-<ol>
-<li>Se $G$ é nilpotente $H\leq G$ e $N\unlhd G$, então $H$ e $G/N$ são nilpotentes.</li>
-<li>Se $G$ é nilpotente, então $Z(G)\neq 1$.</li>
-<li>$G$ é nilpotente se e somente se $G/Z(G)$ é nilpotente.</li>
-<li>Se $G$ e $H$ são nilpotentes, então $G\times H$ é nilpotente.</li>
-</ol>
-<p><strong>Teorema. </strong>Um $p$-grupo finito é nilpotente.</p>
-<p><strong>Demonstração. </strong>Indução pela ordem de $G$. A afirmação é verdadeira para grupos de ordem $p$ ou $p^2$. Assuma que a afirmação é verdadeira para grupo cuja ordem é menor que $p^n$ e seja $G$ um grupo de ordem $p^n$. Como $Z(G)\neq 1$, temos pela hipótese de indução que $G/Z(G)$ é nilpotente e pelo corolário anterior obtemos que $G$ é nilpotente.</p>
-<p><strong>Lema. </strong>Seja $G$ um grupo nilpotente.</p>
-<ol>
-<li>Se $H&lt;G$, então $H&lt;N_G(H)$;</li>
-<li>Se $1\neq N\unlhd G$, então $N\cap Z(G)\neq 1$.</li>
-<li>Se $M$ é um subgrupo maximal de $G$, então $M$ é normal e $|G:M|$ é primo.</li>
-</ol>
-<p><strong>Demonstração. </strong>1. Seja $i$ tal que $\gamma_{i-1}(G)\not\leq H$, mas $\gamma_i(G)\leq H$. Então<br />
-$$<br />
-[\gamma_{i-1}(G),H]\leq [\gamma_{i-1}(G),G]=\gamma_i(G)\leq H.<br />
-$$<br />
-Logo $\gamma_{i-1}(G)\leq N_{G}(H)$. Como $\gamma_{i-1}(G)\not\leq H$, obtem-se que $N_G(H)\leq H$ e segue que $H&lt;N_G(H)$.</p>
-<p>2. Assuma que $m$ é minimal tal que $\zeta_m(G)\cap N\neq 1$. Ora<br />
-$$<br />
-[N\cap \zeta_m(G),G]\leq N\cap [\zeta_m(G),G]=N\cap \zeta_{m-1}(G)=1.<br />
-$$<br />
-Isto implica que $N\cap \zeta_m(G)\leq Z(G)$.</p>
-<p>3. Seja $M$ um subgrupo maximal de $G$. Por parte (1), tem-se que $N_G(M)=G$, então $M$ é normal em $G$. Pela maximalidade de $M$, o quociente $G/M$ não possui um subgrupo próprio, não trivial. Portanto $G/M\cong C_p$ com algum primo $p$. Em particular, $|G:M|=p$.</p>
-<p><strong>Exercício. </strong>Seja $G$ um grupo finito, e $P$ um subgrupo de Sylow. Mostre que $N_G(N_G(P))=N_G(P)$,</p>
-<p><strong>Teorema. </strong>Um grupo finito é nilpotente se e somente se ele é produto direto dos seus subgrupos de Sylow.</p>
-<p><strong>Demonstração. </strong>Se $G$ é produto direto dos $p$-subgrupos de Sylow, então $G$ é nilpotente.</p>
-<p>Assuma que $G$ é finito e nilpotente. Seja $P$ um $p$-subgrupo de Sylow de $G$ e seja $N=N_G(P)$. Pelo exercício anterior, $N_G(N)=N$. O lema anterior implica que $N=G$, então $P$ é normal em $G$. Sejam $p_1,\ldots,p_k$ os divisores primos de $|G|$ e sejam $P_1,\ldots,P_k$ os subgrupos de Sylow correspondentes. Como todo $P_i$ é normal em $G$,<br />
-$[P_i,P_j]\leq P_i\cap P_j=1$ (se $i\neq j$), então $P_1\times\cdots\times P_k$ é um subgrupo de $G$. Comparando ordens, $G=P_1\times\cdots\times P_k$.</p>
-			</div><!-- .entry-content -->
-	</article><!-- #post-## -->
-
-				
-					
-<article id="post-358" class="post-358 post type-post status-publish format-standard hentry category-uncategorized">
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/09/02/exercicios-2/" rel="bookmark">Exercícios 2</a></h1>	</header><!-- .entry-header -->
-				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/09/02/exercicios-2/" rel="bookmark"><time class="entry-date published" datetime="2019-09-02T14:08:36+00:00">September 2, 2019</time><time class="updated" datetime="2019-09-18T00:41:34+00:00">September 18, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/09/02/exercicios-2/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
-				<div class="entry-content">
-		<p>1. Mostre que $A_5$ não possui $\{2,5\}$-subgrupo de Hall.</p>
-<p>2. Ache todos os $\pi$-subgrupos de Hall de $A_6$.</p>
-<p>3. Assuma a vericidade do lema que afirma que &#8220;Se $G$ é um grupo simples finito e $C$ é uma classe de conjugação de $G$ tal que $|C|=p^k$ onde $p$ é um primo, então $C=\{1\}$.&#8221; Demonstre que um grupo de ordem $p^nq^m$, com $p$ e $q$ primos, é solúvel.</p>
-<p>4. Demonstre que um $\pi$-subgrupo de Hall normal é caraterístico.</p>
-<p>5. Seja $G$ um grupo $A,B\leq G$ tal que $|G:A|$ e $|G:B|$ são finitos e primos entre si. Demonstre que $|G:A\cap B|=|G:A||G:B|$.</p>
-<p>6. Demonstre que as seguintes afirmações são equivalentes:</p>
-<ol>
-<li>A ordem de um grupo finito não abeliano simples é par.</li>
-<li>Um grupo finito com ordem ímpar é solúvel.</li>
-</ol>
-<p>7. Seja $H$ um $\pi$-subgrupo de Hall de um grupo finito $G$ e seja $N\unlhd G$. Mostre que $H\cap N$ e $HN/N$ são $\pi$-subgrupos de Hall em $N$ e $G/N$, respetivamente.</p>
-<p>8. Sejam $N$ e $H$ grupos e seja $\varphi:H\rightarrow \mbox{Aut}(N)$ um homorfismo. Seja $G$ o conjunto $N\times H$ e defina a multiplicação em $G$ com<br />
-$$<br />
-(n_1,h_1)(n_2,h_2)=(n_1n_2^{\varphi(h_1^{-1})},h_1h_2).<br />
-$$<br />
-Demonstre as seguintes afirmações.</p>
-<ol>
-<li>$G$ é um grupo.</li>
-<li>$\{1\}\times H\leq G$ e $N\times \{1\}\unlhd G$.</li>
-<li>$\{1\}\times H$ é um complemento de $N\times \{1\}$.</li>
-</ol>
-<p>O grupo $G$ é dito <em>produto semidireto</em> de $N$ e $H$ e é denotado por $N\rtimes_\varphi H$, ou simplesmente por $N\rtimes H$ quando não tem perigo de confusão.</p>
-<p>9. Seja $G$ um grupo, seja  $N\unlhd G$ tal que  $N$ possui um complemento $H\leq G$. Demonstre que $G\cong N\rtimes_\varphi H$ onde $\varphi:H\rightarrow \mbox{Aut}(N)$ é dado por<br />
-$n^{\varphi(h)}=n^h=h^{-1}nh$.</p>
 			</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 
