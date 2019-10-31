@@ -85,6 +85,133 @@ MathJax.Hub.Config({
 			
 				
 					
+<article id="post-560" class="post-560 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" rel="bookmark">O caracter</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" rel="bookmark"><time class="entry-date published" datetime="2019-10-31T09:30:50+00:00">October 31, 2019</time><time class="updated" datetime="2019-10-31T10:58:12+00:00">October 31, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>$\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}\newcommand{\tr}{{\rm tr}\,}$ Nesta página, grupos são finitos e representações são de dimensão finita.</p>
+<p><strong>Lema. </strong>Seja $X$ uma matrix complexa com ordem finita. Então $X$ é diagonalizável e os autovalores de $X$ são raízes da unidade.</p>
+<p><strong>Demonstração. </strong>Seja $X$ de ordem $n$. Então $X$ satisfaz o polinômio $t^n-1$ e o polinômio minimal $m_X(t)$ de $X$ é um divisor de $t^n-1$. Como $t^n-1$ tem $n$ raízes distintas em $\C$, $m_X(t)$ também tem raízes distintas. Isto significa que $X$ é diagonalizável.</p>
+<p>Seja $Y$ uma matriz invertível tal que $X^Y$ é diagonal com $(\lambda_1,\ldots,\lambda_r)$ no diagonal. Como $X^n=I$, $(X^Y)^n=I$, e $\lambda_j^n=1$ para todo $j$; ou seja $\lambda_j$ é uma raiz da unidade.</p>
+<p>Lembre que o traço $\tr A$ de uma matriz quadrada $A$ é a soma das suas entradas diagonais. Se $A$ e $B$ são matrizes $n\times n$, então $\tr AB=\tr BA$. Portanto, se  $B$ for invertível, então<br />
+\[<br />
+\tr A^B=\tr (B^{-1}A)B=\tr B(B^{-1}A)=\tr A.<br />
+\]<br />
+Ou seja, matrizes que pertencem a mesma classe de conjugação, têm o mesmo traço.</p>
+<p>Seja $V$ um $\C$-espaço vetorial e seja $\varrho:G\rightarrow GL(V)$ uma representação de $G$.  Seja $B$ uma base de $V$, e denota por $(g\varrho)_B$ a matriz da transformação $g\varrho$ na base $B$. O caracter da representação $\varrho$ é o mapa<br />
+\[<br />
+\chi=\chi_\varrho: G\rightarrow \C,\quad g\mapsto \tr (g\varrho)_B.<br />
+\]<br />
+Se $B&#8217;$ é uma outra base de $V$, então $(g\varrho)_B$ e $(g\varrho)_{B&#8217;}$ são conjugados, e pelas observações no parágrafo anterior, elas têm o mesmo traço. Em particular, $\chi$ independe da escolha da base $B$. Além disso, $g\chi$ é a soma dos autovalores de $g$.</p>
+<p><strong>Lema. </strong>Seja $\varrho:G\rightarrow GL(V)$ uma representação de $G$ e seja $\chi$ o caracter correspondente. Então</p>
+<ol>
+<li>$1\chi=\dim V$;</li>
+<li>$g^{-1}\chi=\overline {g\chi}$ (conjugado complexo);</li>
+<li>$\chi$ é constante nas classes de conjugacão de $G$.</li>
+</ol>
+<p><strong>Demonstração. </strong>1. $1\chi=\tr (1\varrho)=\tr I=\dim V$.</p>
+<p>2. Seja $Y$ uma matriz tal que $(g\varrho)^Y$ é diagonal com $(\lambda_1,\ldots,\lambda_n)$ no diagonal. Então<br />
+\[<br />
+(g^{-1}\varrho)^Y=((g\varrho)^{-1})^Y=((g\varrho)^Y)^{-1};<br />
+\]<br />
+ou seja, $g^{-1}\varrho$ é diagonalizável por $Y$ e as entradas diagonais são $(\lambda_1^{-1},\ldots,\lambda_n^{-1})$. Como $\lambda_i$ é uma raiz da unidade, $\lambda_i^{-1}=\overline\lambda_i$. Portanto<br />
+\[<br />
+g^{-1}\chi=\lambda_1^{-1}+\cdots+\lambda_n^{-1}=\overline \lambda_1+\cdots+\overline\lambda_n=\overline{\lambda_1+\cdots+\lambda_n}=\overline{g\chi}.<br />
+\]</p>
+<p>3. Seja $g,h\in G$. Então $(g^h)\chi$ é o traço de $(g^h)\varrho=(h\varrho)^{-1}(g\varrho)(h\varrho)$ cujo traço é igual ao traço de $g\varrho$. Portanto $(g^h)\chi=g\chi$.</p>
+<p><strong>Lema. </strong>Seja $\F$ um corpo e sejam $\varrho:G\rightarrow GL(n,\F)$ e $\sigma :G\to GL(m,\F)$ representações  irredutíveis de um grupo $G$. Sejam $i,j\in\{1,\ldots,n\}$ e $r,s\in\{1,\ldots,m\}$. Então</p>
+<ol>
+<li>Se $\varrho$ e $\sigma$ não são equivalentes, então<br />
+\[<br />
+\sum_{g\in G} (g\varrho)_{ij}(g^{-1}\sigma)_{rs}=0.<br />
+\]</li>
+<li>Se a caraterística de $\F$ não divide $|G|$ e $\F$ é algebricamente fechado,  então<br />
+\[<br />
+\sum_{g\in G} (x\varrho)_{ij}(x^{-1}\varrho)_{rs}=\frac{|G|}{n}\delta_{is}\delta_{jr}.<br />
+\]</li>
+</ol>
+<p><strong>Demonstração. </strong>1. Sejam $V=\F^n$ and $W=\F^m$ os $G$-módulos que correspondem às representações $\varrho$ e $\sigma$, respetivamente. Se $\alpha\in\mbox{Hom}_\F(V,W)$, defina<br />
+\[<br />
+\overline\alpha\in\mbox{Hom}_G(V,W),\quad \overline\alpha=\sum_{g\in G} (g\varrho)\alpha(g\sigma)^{-1}.<br />
+\]<br />
+Se $h\in G$, então<br />
+\begin{align*}<br />
+\overline \alpha (h\sigma)=&amp;\sum_{g\in G} (g\varrho)\alpha(g\sigma)^{-1}(h\sigma)=\sum_{g\in G} (g\varrho)\alpha((g^{-1}h)\sigma)\\&amp;=<br />
+\sum_{y\in G} ((hy)\varrho)\alpha(y^{-1}\sigma)=(h\varrho)\sum_{y\in G} (y\varrho)\alpha(y\sigma)^{-1}=(h\varrho)\overline \alpha.<br />
+\end{align*}<br />
+Portanto $\overline\alpha\in \mbox{Hom}_G(V,W)$.</p>
+<p>Seja $\alpha:V\rightarrow W$ a aplicação que manda $(e_j\in V)\mapsto (e_r\in W)$ e $e_i\mapsto 0$ se $i\neq j$. Então $\alpha$ é representada pela matriz cuja entrada na posição $(k,l)$ é $\delta_{jk}\delta_{rl}$. Então<br />
+\[<br />
+(\overline\alpha)_{is}=\sum_{g\in G}\sum_k\sum_l(g\varrho)_{ik}\delta_{jk}\delta_{rl}(g^{-1}\sigma)_{ls}=\sum_{g\in G}(g\varrho)_{ij}(g^{-1}\sigma)_{rs}.<br />
+\]<br />
+Ora, se $\varrho$ e $\sigma$ não são equivalentes, então, pelo Lema de Schur, $\overline\alpha=0$, que implica afirmação 1.</p>
+<p>2. Assuma que $V=W$, $\varrho=\sigma$, e sejam $\alpha$, $\overline\alpha$ as mesmas transformações que no parágrafo anterior. Logo, $\overline\alpha\in\mbox{End}_G(V)$. Pelo Lema de Schur, $\overline\alpha=\lambda_{jr} I$ onde $\lambda_{jr}\in\F$. A última equação destacada implica que<br />
+\[<br />
+\lambda_{jr}\delta_{is}=(\overline\alpha)_{is}=\sum_{x\in G}(x\varrho)_{ij}(x^{-1}\varrho)_{rs}=<br />
+\sum_{y\in G}(y\varrho)_{rs}(y^{-1}\varrho)_{ij}=\lambda_{si}\delta_{rj}.<br />
+\]<br />
+Isso implica que $\sum_{x\in G}(x\varrho)_{ij}(x^{-1}\varrho)_{rs}=0$ se $i\neq s$ ou $j\neq r$. Além disso, a última equação implica que<br />
+\[<br />
+\lambda_{jj}=\lambda_{jj}\delta_{ii}=\sum_{x\in G}(x\varrho)_{ij}(x^{-1}\varrho)_{ji}=\lambda_{ii}\delta_{jj}=\lambda_{ii}.<br />
+\]<br />
+Portanto, o escalar $\lambda=\lambda_{ii}$ é independente de $i$. Então<br />
+\begin{align*}<br />
+n\lambda=&amp;\sum_{j=1}^n\left(\sum_{x}(x\varrho)_{ij}(x^{-1}\varrho)_{ji}\right)=<br />
+\sum_{x}\left(\sum_{j=1}^n(x\varrho)_{ij}(x^{-1}\varrho)_{ji}\right)\\&amp;=\sum_x (xx^{-1}\varrho)_{ii}=|G|.<br />
+\end{align*}<br />
+Como $|G|$ não divide a caraterística de $\F$, obtemos que $\lambda = |G|/n$.</p>
+<p><strong>Teorema (Relações de ortogonalidade). </strong>Seja $G$ um grupo finito e $\chi$, $\psi$ dois $\C$-caracteres irredutíveis. Temos as seguintes igualdades:<br />
+\begin{align*}<br />
+\sum_{x\in G}(x\chi)(x^{-1}\psi)&amp;=0\\<br />
+\sum_{x\in G}(x\chi)(x^{-1}\chi)&amp;=|G|.<br />
+\end{align*}</p>
+<p><strong>Demonstração. </strong>Sejam $\varrho$ e $\sigma$ as representações correspondentes a $\chi$ e $\psi$. Como $\chi\neq\psi$, $\varrho$ e $\sigma$ não são equivalentes. Pelo lema anterior<br />
+\[<br />
+\sum_{g\in G}(x\chi)(x^{-1}\psi)=\sum_{i}\sum_j\sum_{g\in G}(x\varrho)_{ii}(x^{-1}\psi)_{jj}=0.<br />
+\]<br />
+Além disso,<br />
+\[<br />
+\sum_{g\in G}(x\chi)(x^{-1}\chi)=\sum_{i}\sum_j\sum_{g\in G}(x\varrho)_{ii}(x^{-1}\varrho)_{jj}=\sum_i\sum_j\frac{|G|}n\delta_{ij}=|G|.<br />
+\]</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
+<article id="post-556" class="post-556 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/" rel="bookmark">A álgebra de grupo</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/" rel="bookmark"><time class="entry-date published" datetime="2019-10-30T22:29:45+00:00">October 30, 2019</time><time class="updated" datetime="2019-10-30T23:22:47+00:00">October 30, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>$\newcommand{\F}{\mathbb F}$Seja $G$ um grupo e $\F$ um corpo. A álgebra de grupo $\F G$ é definido como o conjunto de combinações lineares $\sum_{g\in G} \alpha_g g$ finitas. Claramente, $\F G$ é um $G$-módulo sobre $\F$ pela multiplicação à direita.  O seguinte lema é imediato.</p>
+<p><strong>Lema.</strong> Se $U\leq \F G$, então $U$ é um $G$-submódulo se e somente se $U$ é um ideal à direita de $\F G$. Se $V$ é um $G$-módulo simples, então existe um ideal maximal $I$ á direita de $\F G$ tal que $V\cong \F G/I$ como $G$-módulos.</p>
+<p><strong>Demonstração. </strong>A primeira afirmação é óbvia. Seja $V$ um $G$-módulo simples e seja $v\in V\setminus\{0\}$. Defina<br />
+\[<br />
+\varphi: \F G\rightarrow V,\quad v\mapsto vx.<br />
+\]<br />
+Então $\varphi$ é um homomorphismo de $G$-módulos. Como $\mbox{Im}\,\varphi\leq_G V$ e $V$ é simples, temos que $\varphi$ é sobrejetiva. Então $V\cong \F G/\ker \varphi$. O núcleo $\ker\varphi$ é um ideal maximal á direita pela primeira afirmação e pela simplicidade de $V\cong \F G/\ker\varphi$.</p>
+<p>Seja $V=V_1\oplus\cdots\oplus V_k$ um $G$-módulo sobre um corpo $\F$. Sabe se que $\mbox{End}_G(V)$ é uma $\F$-álgebra com as operações usuais. Seja $\alpha\in \mbox{End}_G(V)$. Se $v\in V_i$, então $v\alpha=w_i+\cdots+w_k$ onde $w_j\in V_j$. Assim obtemos, para todo $j$, um mapa $\alpha_{ij}:V_i\rightarrow V_j$ e é fácil ver que $\alpha_{ij}\in\mbox{Hom}_G(V_i,V_j)$. Além disso, se $\alpha_{ij}\in \mbox{Hom}(V_i,V_j)$ para todo $i,j$, então a matrix $(\alpha_{ij})$ defina um elemento de $\mbox{End}_G(V)$.</p>
+<p><strong>Teorema. </strong>Seja $G$ um grupo finito e seja $\F$ um corpo algebricamente fechado tal que $\mbox{char}\,\F$ não divide $|G|$. As seguintes afirmações são verdadeiras para $R=\F G$:</p>
+<ol>
+<li>$R=I_1\oplus\cdots\oplus I_m$ onde $I_i\unlhd R$ e $I_i\cong M_{n_i\times n_i}(\F)$ como anéis.</li>
+<li>$|G|=n_1^2+\cdots n_m^2$;</li>
+<li>Se $V$ é um $G$-módulo simples, então $V$ é isomorfo a um ideal minimal à direita de $R$ de dimensão $n_i$ com algum $i$.</li>
+<li>O número de classes de isomorfismo de $G$-módulos simples de dimensão finita é igual ao número de classes de conjugação de $G$.</li>
+</ol>
+<p><strong>Demonstração. </strong>1. Pelo Teorema de Maschke, $R$ é completamente redutível como $G$-módulo: $R=\bigoplus V_i$ onde $V_i$ são ideais minimais à direita de $R$. Como na demonstração do Teorema de Clifford, sejam $S_1,\ldots,S_m$ os tipos de isomorfismo de $G$-submódulos simples (ideias minimais à direita) em $R$. Pelo Teorema de Jordan-Holder, $m&lt;\infty$. Com $i\in \{1,\ldots,m\}$, defina<br />
+\[<br />
+I_i=\sum W\mbox{ onde }W\leq_G R\mbox{ e } W\cong S_i.<br />
+\]<br />
+Claramente, $I_i$ é um $G$-submódulo de $R$ (ou seja, ideal à direita) e $R=I_1\oplus\cdots\oplus I_m$. Seja $r\in R$. Então $rS_i$ é um $G$-submódulo de $R$ e o mapa $s\mapsto rs$ é um $G$-homomorfismo sobrejetivo entre $S_i$ e $rS_i$. O núcleo deste homomorfismo é um $G$-submódulo de $S_i$. Como $S_i$ é simples, $S_i\cong r S_i$ ou $rS_i=0$. Isto implica que $r I_i\leq I_i$ e que $I_i$ é um ideal de $R$.</p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
 <article id="post-549" class="post-549 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/" rel="bookmark">O Lema de Schur e o Teorema de Clifford</a></h1>	</header><!-- .entry-header -->
@@ -662,94 +789,6 @@ v\begin{pmatrix}<br />
 $\refl{\psi}^{-1}=\refl{\psi}$, obtemos que $\refl{\vartheta}=\rot{2(\psi-\vartheta)}\refl{\psi}$. Agora substituímos $\varphi=2(\psi-\vartheta)$ e $\vartheta=\psi-\varphi/2$ e obtemos 2. A demonstracao de 3. é similar.</div>
 </div>
 </div>
-			</div><!-- .entry-content -->
-	</article><!-- #post-## -->
-
-				
-					
-<article id="post-417" class="post-417 post type-post status-publish format-standard hentry category-uncategorized">
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/09/16/o-subgrupo-de-frattini/" rel="bookmark">O subgrupo de Frattini</a></h1>	</header><!-- .entry-header -->
-				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/09/16/o-subgrupo-de-frattini/" rel="bookmark"><time class="entry-date published" datetime="2019-09-16T12:40:38+00:00">September 16, 2019</time><time class="updated" datetime="2019-09-16T13:56:19+00:00">September 16, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/09/16/o-subgrupo-de-frattini/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
-				<div class="entry-content">
-		<p>O <em>subgrupo de Frattini</em> de um grupo $G$, denotado por $\Phi(G)$, e a interseção dos subgrupos maximais de $G$. Como um automorfismo $\alpha\in \mbox{Aut}(G)$ induz uma permutação no conjunto de subgrupos maximais de $G$, o subgrupo $\Phi(G)$ é caraterístico e, em particular, normal em $G$. Um elemento $g\in G$ é dito <em>não gerador </em>se $\left&lt;X,g\right&gt;=G$ implica que $\left&lt;X\right&gt;=G$ para todo $X\subseteq G$ (ou seja, $g$ pode ser omitido de todo subconjunto gerador de $G$).</p>
-<p><strong>Lema. </strong>O subgrupo de Frattini de um grupo finito coincide com o subconjunto de não geradores de $G$.</p>
-<p><strong>Demonstração. </strong>Assuma que $G$ é finito. Seja $g\in \Phi(G)$ e seja $X\subseteq G$ tal que $\left&lt;X,g\right&gt;=G$. Assumindo que $\left&lt;X\right&gt;\neq G$, temos que $\left&lt;X\right&gt;$ está contido em um subgrupo maximal $M$ de $G$ ($G$ é finito). Como $g\in \Phi(G)$, temos ainda que $g\in M$. Logo $\left&lt;X,g\right&gt;\leq M$, que é uma contradição. Portanto $\left&lt;X\right&gt;=G$, e $g$ é não gerador.</p>
-<p>Assuma agora que $g$ é não gerador e seja $M$ um subgrupo maximal tal que $g\not\in M$. Pela maximalidade de $M$, temos que $\left&lt;M,g\right&gt;=G$. Como $g$ é não gerador, isto implica que $M=G$, mas isso é uma contradição. Portanto devemos ter que $g\in M$. Como $M$ é arbitrário, temos também que $g\in\Phi(G)$.</p>
-<p><strong>Corolário. </strong>Se $G$ é finito e $P$ é um subgrupo de Sylow de $\Phi(G)$, então $P\unlhd G$. Consequentemente, $\Phi(G)$ é um grupo nilpotente.</p>
-<p><strong>Demonstração.</strong> Seja $P$ um subgrupo de Sylow de $\Phi(G)$. Como $\Phi(G)\unlhd G$, obtemos pelo argumento de Frattini que $G=\Phi(G)N_G(P)$. Pelo Lema anterior, $G=N_G(P)$ que implica que $P\unlhd G$. Em particular, $P\unlhd \Phi(G)$ e isto vale para todos os subgrupos de Sylow de $\Phi(G)$. Logo, $\Phi(G)$ é produto direto dos seus subgrupos de Sylow e $\Phi(G)$ é nilpotente.</p>
-<p><strong>Exercicio. </strong></p>
-<ol>
-<li>Seja $G$ um grupo abeliano elementar. Então $\Phi(G)=1$.</li>
-<li>Seja $N$ um subgrupo normal de $G$, então $\Phi(G)N/N\leq \Phi(G/N)$, se  $\Phi(G)\leq N$. Então $\Phi(G/N)=\Phi(G)/N$.</li>
-</ol>
-<p><strong>Teorema. </strong>Seja $G$ um $p$-grupo finito. Então $\Phi(G)=G&#8217;G^p$ onde<br />
-$$<br />
-G^p=\left&lt;g^p\mid g\in G\right&gt;.<br />
-$$</p>
-<p><strong>Demonstração. </strong>Seja $M$ um subgrupo maximal de $G$. Por um teorema anterior, $M\unlhd G$ e $G/M\cong C_p$. Em particular, $G/M$ é abeliano, e $G&#8217;\leq M$. Além disso, se $g\in G$, então<br />
-$$<br />
-1=(gM)^p=g^pM<br />
-$$<br />
-e $g^p\in M$. Em particular, $G^p\leq M$, e $G&#8217;G^p\leq M$ Como $M$ é arbitrário, $G&#8217;G^p\leq \Phi(G)$.</p>
-<p>Para provar que  $G&#8217;G^p=\Phi(G)$, note que $G/G&#8217;G^p$ é um grupo abeliano elementar. Então as duas partes do exercício anterior implicam que<br />
-$$<br />
-1=\Phi(G/G&#8217;G^p)=\Phi(G)/G&#8217;G^p.<br />
-$$<br />
-Logo $\Phi(G)=G&#8217;G^p$.</p>
-<p>Note que para um $p$-grupo finito $G$, o quociente $G/\Phi(G)$ é um $p$-grupo abeliano elementar, e portanto pode ser considerado como um espaço vetorial sobre o corpo $\mathbf F_p$.</p>
-<p><strong>Teorema (Teorema de Base de <a href="https://en.wikipedia.org/wiki/William_Burnside">Burnside</a>). </strong>Seja $G$ um $p$-grupo finito e $X$ um sistema minimal de geradores de $G$. Então $|X|=\dim_{\mathbf F_p}G/\Phi(G)$. Em particular, todo sistema minimal de geradores de $G$ tem a mesma cardinalidade.</p>
-<p><strong>Demonstração. </strong>Seja $X=\{x_1,\ldots,x_d\}$ um sistema minimal de geradores de $G$. Seja $V=G/\Phi(G)$ e considere $V$ como um espaço vetorial sobre $\mathbf F_p$. Para $g\in G$, denotemos por $\bar g$ a imagem $g\Phi(G)$. Segue que $\bar X=\{\bar x_1,\ldots,\bar x_d\}$ é um sistema de geradores de $V$. Por um argumento standard de álgebra linear, pode-se escolher uma base de $V$ composto por elementos de $\bar X$. Assuma sem perder generalidade que $\{\bar x_1,\ldots,\bar x_s\}$ é uma base de $V$ com $s\leq d$. Isto implica que $G=\left&lt;x_1,\ldots,x_s,\Phi(G)\right&gt;=\left&lt;x_1,\ldots,x_s\right&gt;$. Pela minimalidade de $X$, tem-se que $d=s=\dim_{\mathbf F_p}V$.</p>
-<p>&nbsp;</p>
-			</div><!-- .entry-content -->
-	</article><!-- #post-## -->
-
-				
-					
-<article id="post-396" class="post-396 post type-post status-publish format-standard hentry category-uncategorized">
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/09/09/exercicios-3/" rel="bookmark">Exercícios 3</a></h1>	</header><!-- .entry-header -->
-				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/09/09/exercicios-3/" rel="bookmark"><time class="entry-date published" datetime="2019-09-09T13:16:05+00:00">September 9, 2019</time><time class="updated" datetime="2019-09-12T11:12:26+00:00">September 12, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/09/09/exercicios-3/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
-				<div class="entry-content">
-		<p>$\newcommand{\rot}[1]{\mbox{Rot}(#1)}\newcommand{\ref}[1]{\mbox{Ref}(#1)}$ Denote por $\rot \alpha$ a rotação do plano $\mathbb R^2$ pela origem por ângulo $\alpha$ no sentido contrário aos ponteiros do relógio. Denote por $\ref\alpha$ a reflexão de $\mathbb R^2$ pelo eixo que passe pela origem e tem ângulo $\varphi$ com o eixo $x$.</p>
-<p>1. Ache as matrizes das transformações $\rot\alpha$ e $\ref\alpha$ na base canônica de $\mathbb R^2$.  (Como é comum na teoria dos grupos, a matriz de uma transformação linear $F$ é a matriz $A$ que satisfaz $F(v)=v\cdot A$ para todo $v\in\mathbb R^2$).</p>
-<p>2. Sejam $\varphi$ e $\psi$ ângulos. Demonstre as seguintes igualdades:</p>
-<ol>
-<li>$\ref\varphi\ref\psi=\rot{2(\psi-\varphi)}$</li>
-<li>$\rot\varphi\ref\psi=\ref{\psi-\varphi/2}$;</li>
-<li>$\ref\varphi\rot\psi=\ref{\varphi+\psi/2}$.</li>
-</ol>
-<p>Usando estas igualdades, determine $\rot\varphi^{\ref\psi}$, $\ref\varphi^{\rot\psi}$, $[\ref\varphi,\ref\psi]$, $[\rot\varphi,\ref\psi]$.</p>
-<p>3.  Denote por $O_2$ o grupo das reflexões e rotações do plano $\mathbb R^2$. Calcule a série derivada, a série central inferior e a série central superior de $O_2$.</p>
-<p>4. Seja $D_n$ o grupo dihedral de ordem $2n$. Calcule a série derivada, a série central superior, e a série central inferior de $D_n$. Dê uma condição suficiente e necessária para a existência de $k$ e $\ell$ que satisfazem $\zeta_k(D_n)=D_n$ e $\gamma_\ell(D_n)=1$.</p>
-<p>5. Seja $H\leq G$ e $N\unlhd G$ tal que $N\leq K$. Mostre que $[H,G]\leq N$ se e somente se $H/N\leq Z(G/N)$.</p>
-<p>6. Demonstre as seguintes afirmações para $X,Y\leq G$.</p>
-<ol>
-<li>$[X,Y]=[Y,X]$.</li>
-<li>Se $X, Y\unlhd G$, então $[X,Y]\unlhd G$.</li>
-<li>Se $X, Y$ são caraterísticos em $G$, então $[X,Y]$ é caraterístico em $G$.</li>
-</ol>
-<p>7. Sejam $x,y,z\in G$. Demonstre as seguintes igualdades:</p>
-<ol>
-<li>$[x,y]=[y,x]^{-1}$;</li>
-<li>$[x,yz]=[x,z][x,y]^{z}$;</li>
-<li>$[xy,z]=[x,z]^{y}[y,z]$;</li>
-<li>$[x,y^{-1}]=([x,y]^{y^{-1}})^{-1}$;</li>
-<li>$[x^{-1},y]=([x,y]^{x^{-1}})^{-1}$;</li>
-<li>$[x,y^{-1},z]^y[y,z^{-1},x]^z[z,x^{-1},y]^x=1$ (identidade de Hall-Witt).</li>
-</ol>
-<p>8. Para $X,Y,Z\leq G$, denote<br />
-$$<br />
-[X,Y,Z]=\left&lt;[[x,y],z]\mid x\in X, y\in Y, z\in Z\right&gt;.<br />
-$$<br />
-Demonstre as seguintes afirmações.</p>
-<ol>
-<li>Se $[X,Y,Z]=[Y,Z,X]=1$, então $[Z,X,Y]=1$.</li>
-<li>Se $N\unlhd G$ e $[X,Y,Z]\leq N$ e $[Y,Z,X]\leq N$, então $[Z,X,Y]\leq N$. (Lema dos $[Z,X,Y]\leq [X,Y,Z][Y,Z,X]$.</li>
-<li>$[\gamma_i(G),\gamma_j(G)]\leq \gamma_{i+j}(G)$ para todo $i,j\geq 1$.</li>
-</ol>
 			</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 
