@@ -87,9 +87,9 @@ MathJax.Hub.Config({
 					
 <article id="post-560" class="post-560 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
-		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" rel="bookmark">O caracter</a></h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" rel="bookmark">O caracter e as relações de ortgonalidade</a></h1>	</header><!-- .entry-header -->
 				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" rel="bookmark"><time class="entry-date published" datetime="2019-10-31T09:30:50+00:00">October 31, 2019</time><time class="updated" datetime="2019-10-31T10:58:12+00:00">October 31, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" rel="bookmark"><time class="entry-date published" datetime="2019-10-31T09:30:50+00:00">October 31, 2019</time><time class="updated" datetime="2019-11-05T11:14:50+00:00">November 5, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
 				<div class="entry-content">
 		<p>$\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}\newcommand{\tr}{{\rm tr}\,}$ Nesta página, grupos são finitos e representações são de dimensão finita.</p>
 <p><strong>Lema. </strong>Seja $X$ uma matrix complexa com ordem finita. Então $X$ é diagonalizável e os autovalores de $X$ são raízes da unidade.</p>
@@ -154,7 +154,7 @@ Ora, se $\varrho$ e $\sigma$ não são equivalentes, então, pelo Lema de Schur,
 \]<br />
 Isso implica que $\sum_{x\in G}(x\varrho)_{ij}(x^{-1}\varrho)_{rs}=0$ se $i\neq s$ ou $j\neq r$. Além disso, a última equação implica que<br />
 \[<br />
-\lambda_{jj}=\lambda_{jj}\delta_{ii}=\sum_{x\in G}(x\varrho)_{ij}(x^{-1}\varrho)_{ji}=\lambda_{ii}\delta_{jj}=\lambda_{ii}.<br />
+\lambda_{jj}=\lambda_{jj}\delta_{ii}=\lambda_{ii}\delta_{jj}=\lambda_{ii}.<br />
 \]<br />
 Portanto, o escalar $\lambda=\lambda_{ii}$ é independente de $i$. Então<br />
 \begin{align*}<br />
@@ -162,19 +162,34 @@ n\lambda=&amp;\sum_{j=1}^n\left(\sum_{x}(x\varrho)_{ij}(x^{-1}\varrho)_{ji}\righ
 \sum_{x}\left(\sum_{j=1}^n(x\varrho)_{ij}(x^{-1}\varrho)_{ji}\right)\\&amp;=\sum_x (xx^{-1}\varrho)_{ii}=|G|.<br />
 \end{align*}<br />
 Como $|G|$ não divide a caraterística de $\F$, obtemos que $\lambda = |G|/n$.</p>
-<p><strong>Teorema (Relações de ortogonalidade). </strong>Seja $G$ um grupo finito e $\chi$, $\psi$ dois $\C$-caracteres irredutíveis. Temos as seguintes igualdades:<br />
+<p><strong>Teorema (Relações de ortogonalidade). </strong>Seja $G$ um grupo finito e $\chi$, $\psi$ dois $\C$-caracteres irredutíveis que correspondem a representações não equivalentes. Temos as seguintes igualdades:<br />
 \begin{align*}<br />
 \sum_{x\in G}(x\chi)(x^{-1}\psi)&amp;=0\\<br />
 \sum_{x\in G}(x\chi)(x^{-1}\chi)&amp;=|G|.<br />
-\end{align*}</p>
-<p><strong>Demonstração. </strong>Sejam $\varrho$ e $\sigma$ as representações correspondentes a $\chi$ e $\psi$. Como $\chi\neq\psi$, $\varrho$ e $\sigma$ não são equivalentes. Pelo lema anterior<br />
+\end{align*}<br />
+Em particular, $\chi\neq\psi$.</p>
+<p><strong>Demonstração. </strong>Sejam $\varrho$ e $\sigma$ as representações correspondentes a $\chi$ e $\psi$. Pelo lema anterior<br />
 \[<br />
-\sum_{g\in G}(x\chi)(x^{-1}\psi)=\sum_{i}\sum_j\sum_{g\in G}(x\varrho)_{ii}(x^{-1}\psi)_{jj}=0.<br />
+\sum_{g\in G}(x\chi)(x^{-1}\psi)=\sum_{i}\sum_j\sum_{g\in G}(x\varrho)_{ii}(x^{-1}\sigma)_{jj}=0.<br />
 \]<br />
 Além disso,<br />
 \[<br />
 \sum_{g\in G}(x\chi)(x^{-1}\chi)=\sum_{i}\sum_j\sum_{g\in G}(x\varrho)_{ii}(x^{-1}\varrho)_{jj}=\sum_i\sum_j\frac{|G|}n\delta_{ij}=|G|.<br />
 \]</p>
+<p>Seja $X$ um conjunto finito e considere os espaço vetorial<br />
+\[<br />
+\mbox{Func}(X,\C)=\{f\rightarrow \C\}<br />
+\]<br />
+de funções de $X$ em $\C$. Temos que $\dim \mbox{Func}(X,\C)=|X|$. Além disso, defina o produto interno em $\mbox{Func}(X,\C)$ com a equação<br />
+\[<br />
+\left&lt;f,g\right&gt;=\frac 1{|X|}\sum_{x\in X} f(x)\overline{g(x)}.<br />
+\]</p>
+<p>Seja agora $G$ um grupo, defina $\mbox{Func}(G,\C)$ como em cima, e seja $W$ o subespaço de $\mbox{Func}(G,\C)$ formado por funções que são constantes nas classes de conjugação de $G$:<br />
+\[<br />
+W=\{f\in \mbox{Func}(G,\C)\mid f(x)=f(g^{-1}xg)\mbox{ para todo }g,x\in G\}.<br />
+\]<br />
+Note que a dimensão de $W$ é igual ao número das classes de conjugação de $G$.  Se $\chi$ é um caracter de $G$, então $\chi\in W$. O teorema anterior pode ser enunciado no seguinte forma:</p>
+<p><strong>Corolário. </strong>Os caracteres irredutíveis $\chi_i$ de um grupo finito $G$ formam uma base ortonormal de $W$. Em particular, o número de classes de equivalência de representações irredutíveis de um grupo finito é finito e este número é menor ou igual ao número das classes de conjugação de $G$.</p>
 			</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 

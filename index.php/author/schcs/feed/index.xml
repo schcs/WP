@@ -12,13 +12,13 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Thu, 31 Oct 2019 11:01:55 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 05 Nov 2019 11:14:50 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.12</generator>
 	<item>
-		<title>O caracter</title>
+		<title>O caracter e as relações de ortgonalidade</title>
 		<link>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/#respond</comments>
 		<pubDate>Thu, 31 Oct 2019 09:30:50 +0000</pubDate>
@@ -26,7 +26,7 @@
 				<category><![CDATA[Uncategorized]]></category>
 
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=560</guid>
-		<description><![CDATA[$\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}\newcommand{\tr}{{\rm tr}\,}$ Nesta página, grupos são finitos e representações são de dimensão finita. Lema. Seja $X$ uma matrix complexa com ordem finita. Então $X$ é diagonalizável e os autovalores de $X$ são raízes da unidade. Demonstração. Seja $X$ de ordem $n$. Então $X$ satisfaz o polinômio $t^n-1$ e o polinômio minimal $m_X(t)$ de &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" class="more-link">Continue reading <span class="screen-reader-text">O caracter</span></a>]]></description>
+		<description><![CDATA[$\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}\newcommand{\tr}{{\rm tr}\,}$ Nesta página, grupos são finitos e representações são de dimensão finita. Lema. Seja $X$ uma matrix complexa com ordem finita. Então $X$ é diagonalizável e os autovalores de $X$ são raízes da unidade. Demonstração. Seja $X$ de ordem $n$. Então $X$ satisfaz o polinômio $t^n-1$ e o polinômio minimal $m_X(t)$ de &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" class="more-link">Continue reading <span class="screen-reader-text">O caracter e as relações de ortgonalidade</span></a>]]></description>
 				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}\newcommand{\tr}{{\rm tr}\,}$ Nesta página, grupos são finitos e representações são de dimensão finita.</p>
 <p><strong>Lema. </strong>Seja $X$ uma matrix complexa com ordem finita. Então $X$ é diagonalizável e os autovalores de $X$ são raízes da unidade.</p>
 <p><strong>Demonstração. </strong>Seja $X$ de ordem $n$. Então $X$ satisfaz o polinômio $t^n-1$ e o polinômio minimal $m_X(t)$ de $X$ é um divisor de $t^n-1$. Como $t^n-1$ tem $n$ raízes distintas em $\C$, $m_X(t)$ também tem raízes distintas. Isto significa que $X$ é diagonalizável.</p>
@@ -90,7 +90,7 @@ Ora, se $\varrho$ e $\sigma$ não são equivalentes, então, pelo Lema de Schur,
 \]<br />
 Isso implica que $\sum_{x\in G}(x\varrho)_{ij}(x^{-1}\varrho)_{rs}=0$ se $i\neq s$ ou $j\neq r$. Além disso, a última equação implica que<br />
 \[<br />
-\lambda_{jj}=\lambda_{jj}\delta_{ii}=\sum_{x\in G}(x\varrho)_{ij}(x^{-1}\varrho)_{ji}=\lambda_{ii}\delta_{jj}=\lambda_{ii}.<br />
+\lambda_{jj}=\lambda_{jj}\delta_{ii}=\lambda_{ii}\delta_{jj}=\lambda_{ii}.<br />
 \]<br />
 Portanto, o escalar $\lambda=\lambda_{ii}$ é independente de $i$. Então<br />
 \begin{align*}<br />
@@ -98,19 +98,34 @@ n\lambda=&amp;\sum_{j=1}^n\left(\sum_{x}(x\varrho)_{ij}(x^{-1}\varrho)_{ji}\righ
 \sum_{x}\left(\sum_{j=1}^n(x\varrho)_{ij}(x^{-1}\varrho)_{ji}\right)\\&amp;=\sum_x (xx^{-1}\varrho)_{ii}=|G|.<br />
 \end{align*}<br />
 Como $|G|$ não divide a caraterística de $\F$, obtemos que $\lambda = |G|/n$.</p>
-<p><strong>Teorema (Relações de ortogonalidade). </strong>Seja $G$ um grupo finito e $\chi$, $\psi$ dois $\C$-caracteres irredutíveis. Temos as seguintes igualdades:<br />
+<p><strong>Teorema (Relações de ortogonalidade). </strong>Seja $G$ um grupo finito e $\chi$, $\psi$ dois $\C$-caracteres irredutíveis que correspondem a representações não equivalentes. Temos as seguintes igualdades:<br />
 \begin{align*}<br />
 \sum_{x\in G}(x\chi)(x^{-1}\psi)&amp;=0\\<br />
 \sum_{x\in G}(x\chi)(x^{-1}\chi)&amp;=|G|.<br />
-\end{align*}</p>
-<p><strong>Demonstração. </strong>Sejam $\varrho$ e $\sigma$ as representações correspondentes a $\chi$ e $\psi$. Como $\chi\neq\psi$, $\varrho$ e $\sigma$ não são equivalentes. Pelo lema anterior<br />
+\end{align*}<br />
+Em particular, $\chi\neq\psi$.</p>
+<p><strong>Demonstração. </strong>Sejam $\varrho$ e $\sigma$ as representações correspondentes a $\chi$ e $\psi$. Pelo lema anterior<br />
 \[<br />
-\sum_{g\in G}(x\chi)(x^{-1}\psi)=\sum_{i}\sum_j\sum_{g\in G}(x\varrho)_{ii}(x^{-1}\psi)_{jj}=0.<br />
+\sum_{g\in G}(x\chi)(x^{-1}\psi)=\sum_{i}\sum_j\sum_{g\in G}(x\varrho)_{ii}(x^{-1}\sigma)_{jj}=0.<br />
 \]<br />
 Além disso,<br />
 \[<br />
 \sum_{g\in G}(x\chi)(x^{-1}\chi)=\sum_{i}\sum_j\sum_{g\in G}(x\varrho)_{ii}(x^{-1}\varrho)_{jj}=\sum_i\sum_j\frac{|G|}n\delta_{ij}=|G|.<br />
 \]</p>
+<p>Seja $X$ um conjunto finito e considere os espaço vetorial<br />
+\[<br />
+\mbox{Func}(X,\C)=\{f\rightarrow \C\}<br />
+\]<br />
+de funções de $X$ em $\C$. Temos que $\dim \mbox{Func}(X,\C)=|X|$. Além disso, defina o produto interno em $\mbox{Func}(X,\C)$ com a equação<br />
+\[<br />
+\left&lt;f,g\right&gt;=\frac 1{|X|}\sum_{x\in X} f(x)\overline{g(x)}.<br />
+\]</p>
+<p>Seja agora $G$ um grupo, defina $\mbox{Func}(G,\C)$ como em cima, e seja $W$ o subespaço de $\mbox{Func}(G,\C)$ formado por funções que são constantes nas classes de conjugação de $G$:<br />
+\[<br />
+W=\{f\in \mbox{Func}(G,\C)\mid f(x)=f(g^{-1}xg)\mbox{ para todo }g,x\in G\}.<br />
+\]<br />
+Note que a dimensão de $W$ é igual ao número das classes de conjugação de $G$.  Se $\chi$ é um caracter de $G$, então $\chi\in W$. O teorema anterior pode ser enunciado no seguinte forma:</p>
+<p><strong>Corolário. </strong>Os caracteres irredutíveis $\chi_i$ de um grupo finito $G$ formam uma base ortonormal de $W$. Em particular, o número de classes de equivalência de representações irredutíveis de um grupo finito é finito e este número é menor ou igual ao número das classes de conjugação de $G$.</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
