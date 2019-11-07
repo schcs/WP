@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Thu, 07 Nov 2019 11:14:41 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 07 Nov 2019 11:33:21 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -71,7 +71,7 @@ Em particular, o número de $\C$-representações irredutíveis de dimensão fin
 <p><strong>Demonstração.</strong> Note que $\sigma_f\in\mbox{Hom}_{\C}(V)$.<br />
 Verificamos primeiro que $\sigma_f(h\sigma)=(h\sigma)\sigma_f$, ou seja $\sigma_f\in \mbox{Hom}_{G}(V)$. De fato<br />
 \begin{align*}<br />
-(h\sigma)^{-1}\sigma_f(h\sigma)&amp;=\sum_{g\in G}(gf)(h\sigma)^{-1}(g\sigma)(h\sigma)\\&amp;=\sum_{g\in G}(gf)((h^{-1}gh)\sigma)=\sum_{y\in G} ((g yg^{-1})f)(y\sigma)\\&amp;=\sum_{y\in G} (yf)(y\sigma)=\sigma_f.<br />
+(h\sigma)^{-1}\sigma_f(h\sigma)&amp;=\sum_{g\in G}(gf)(h\sigma)^{-1}(g\sigma)(h\sigma)\\&amp;=\sum_{g\in G}(gf)((h^{-1}gh)\sigma)=\sum_{y\in G} ((h yh^{-1})f)(y\sigma)\\&amp;=\sum_{y\in G} (yf)(y\sigma)=\sigma_f.<br />
 \end{align*}<br />
 Portanto, $\sigma_f\in \mbox{Hom}_{G}(V)$, como foi afirmado. Como $V$ é um $G$-módulo simples, obtemos que $\sigma_f=\lambda\cdot\mbox{id}$ onde $\lambda\in\C^*$. Além disso,<br />
 \[<br />
@@ -86,7 +86,7 @@ Em particular, $\lambda=|G|\left&lt;f,\overline \chi\right&gt;/(1\chi)$ e $\sigm
 Se $\sigma$ for irredutível, então $\sigma_f=0$ pelo Lema anterior.<br />
 Se $\sigma$ não for irredutúvel, e o seu caracter é $\chi=\sum_i\alpha_i\chi_i$, então temos que<br />
 \[<br />
-\sigma_f=\left(\frac{|G|}{1\chi}\sum_{i=1}^k\overline{\alpha_i}\left&lt;f,\chi_i\right&gt;\right)\cdot\mbox{id}=0.<br />
+\sigma_f=\left(\sum_{i=1}^k\frac{|G|}{1\chi_i}\overline{\alpha_i}\left&lt;f,\overline{\chi_i}\right&gt;\right)\cdot\mbox{id}=0.<br />
 \]<br />
 Seja $\rho$ a representação de $G$ em $\C G$,<br />
 \[<br />

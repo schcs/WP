@@ -89,7 +89,7 @@ MathJax.Hub.Config({
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/" rel="bookmark">A decomposição de $\mathbb CG$</a></h1>	</header><!-- .entry-header -->
 				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/" rel="bookmark"><time class="entry-date published" datetime="2019-11-07T01:16:48+00:00">November 7, 2019</time><time class="updated" datetime="2019-11-07T10:23:28+00:00">November 7, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/" rel="bookmark"><time class="entry-date published" datetime="2019-11-07T01:16:48+00:00">November 7, 2019</time><time class="updated" datetime="2019-11-07T11:33:21+00:00">November 7, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
 				<div class="entry-content">
 		<p>$\newcommand{\C}{\mathbb C}$Assuma nesta página que $G$ é um grupo finito, $\chi_1,\ldots,\chi_k$ são os caracteres de $G$ irredutíveis e os graus destes caracteres são $n_1,\ldots,n_k$, respetivamente; ou seja, $1\chi_i=n_i$ para todo $i$.</p>
 <p>Seja $V=\C G$ considerado como um $G$-módulo seja $\varrho$ o caracter correspondente. O conjunto $G$ é uma base de $V$ e<br />
@@ -135,7 +135,7 @@ Em particular, o número de $\C$-representações irredutíveis de dimensão fin
 <p><strong>Demonstração.</strong> Note que $\sigma_f\in\mbox{Hom}_{\C}(V)$.<br />
 Verificamos primeiro que $\sigma_f(h\sigma)=(h\sigma)\sigma_f$, ou seja $\sigma_f\in \mbox{Hom}_{G}(V)$. De fato<br />
 \begin{align*}<br />
-(h\sigma)^{-1}\sigma_f(h\sigma)&amp;=\sum_{g\in G}(gf)(h\sigma)^{-1}(g\sigma)(h\sigma)\\&amp;=\sum_{g\in G}(gf)((h^{-1}gh)\sigma)=\sum_{y\in G} ((g yg^{-1})f)(y\sigma)\\&amp;=\sum_{y\in G} (yf)(y\sigma)=\sigma_f.<br />
+(h\sigma)^{-1}\sigma_f(h\sigma)&amp;=\sum_{g\in G}(gf)(h\sigma)^{-1}(g\sigma)(h\sigma)\\&amp;=\sum_{g\in G}(gf)((h^{-1}gh)\sigma)=\sum_{y\in G} ((h yh^{-1})f)(y\sigma)\\&amp;=\sum_{y\in G} (yf)(y\sigma)=\sigma_f.<br />
 \end{align*}<br />
 Portanto, $\sigma_f\in \mbox{Hom}_{G}(V)$, como foi afirmado. Como $V$ é um $G$-módulo simples, obtemos que $\sigma_f=\lambda\cdot\mbox{id}$ onde $\lambda\in\C^*$. Além disso,<br />
 \[<br />
@@ -150,7 +150,7 @@ Em particular, $\lambda=|G|\left&lt;f,\overline \chi\right&gt;/(1\chi)$ e $\sigm
 Se $\sigma$ for irredutível, então $\sigma_f=0$ pelo Lema anterior.<br />
 Se $\sigma$ não for irredutúvel, e o seu caracter é $\chi=\sum_i\alpha_i\chi_i$, então temos que<br />
 \[<br />
-\sigma_f=\left(\frac{|G|}{1\chi}\sum_{i=1}^k\overline{\alpha_i}\left&lt;f,\chi_i\right&gt;\right)\cdot\mbox{id}=0.<br />
+\sigma_f=\left(\sum_{i=1}^k\frac{|G|}{1\chi_i}\overline{\alpha_i}\left&lt;f,\overline{\chi_i}\right&gt;\right)\cdot\mbox{id}=0.<br />
 \]<br />
 Seja $\rho$ a representação de $G$ em $\C G$,<br />
 \[<br />
