@@ -12,12 +12,111 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/author/schcs/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Tue, 05 Nov 2019 11:32:04 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 07 Nov 2019 10:23:28 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.12</generator>
 	<item>
+		<title>A decomposição de $\mathbb CG$</title>
+		<link>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/#respond</comments>
+		<pubDate>Thu, 07 Nov 2019 01:16:48 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=594</guid>
+		<description><![CDATA[$\newcommand{\C}{\mathbb C}$Assuma nesta página que $G$ é um grupo finito, $\chi_1,\ldots,\chi_k$ são os caracteres de $G$ irredutíveis e os graus destes caracteres são $n_1,\ldots,n_k$, respetivamente; ou seja, $1\chi_i=n_i$ para todo $i$. Seja $V=\C G$ considerado como um $G$-módulo seja $\varrho$ o caracter correspondente. O conjunto $G$ é uma base de $V$ e \[ g\varrho=&#124;\{h\in G\mid &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/" class="more-link">Continue reading <span class="screen-reader-text">A decomposição de $\mathbb CG$</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}$Assuma nesta página que $G$ é um grupo finito, $\chi_1,\ldots,\chi_k$ são os caracteres de $G$ irredutíveis e os graus destes caracteres são $n_1,\ldots,n_k$, respetivamente; ou seja, $1\chi_i=n_i$ para todo $i$.</p>
+<p>Seja $V=\C G$ considerado como um $G$-módulo seja $\varrho$ o caracter correspondente. O conjunto $G$ é uma base de $V$ e<br />
+\[<br />
+g\varrho=|\{h\in G\mid hg=h\}|.<br />
+\]<br />
+Obtemos a seguinte lema.</p>
+<p><strong>Teorema. </strong><br />
+\[<br />
+g\varrho=\left\{\begin{array}{cl} |G| &amp; \mbox{se $g=1$};\\<br />
+0 &amp; \mbox{se $g\neq 1$}\end{array}\right.<br />
+\]<br />
+e<br />
+\[<br />
+\varrho=\sum_{i=1}^k n_i\chi_i.<br />
+\]<br />
+Em particular,<br />
+\[<br />
+\sum_{i=1}^k n_i^2=|G|.<br />
+\]</p>
+<p><strong>Demonstração. </strong>A primeira afirmação segue da observação antes do teorema. Para provar a segunda afirmação, lembre que pelo Teorema de Maschke, $\C G$ é uma soma direta de $G$-módulos simples. Portanto<br />
+\[<br />
+\varrho=\alpha_1\chi_1+\cdots+\alpha_k\chi_k<br />
+\]<br />
+com alguns coeficientes $\alpha_i\geq 0$. Como $\chi_1,\ldots,\chi_k$ é um sistema ortonormal,<br />
+\[<br />
+\alpha_i=\left&lt;\varrho,\chi_i\right&gt;=\frac 1{|G|}\sum_{g\in G}(g\varrho)\overline{(g\chi_i)}=\frac 1{|G|}|G| n_i=n_i.<br />
+\]<br />
+A última afirmação segue calculando<br />
+\[<br />
+|G|=\dim \C G=1 \varrho=\sum_{i=1}^k n_i(1\chi_i)=\sum_{i=1}^k n_i^2.<br />
+\]</p>
+<p><strong>Teorema. </strong>Os caracteres $\chi_1,\ldots,\chi_k$ formam uma base ortonormal do espaço de funções<br />
+\[<br />
+W=\{f\in\mbox{Func}(G,\C)\mid (g^x)f=gf\mbox{ para todo }g,x\in G\}.<br />
+\]<br />
+Em particular, o número de $\C$-representações irredutíveis de dimensão finita de $G$ é igual ao número das classes de conjugação de $G$.</p>
+<p>Antes de provar o teorema, provaremos o seguinte lema.</p>
+<p><strong>Lema. </strong>Seja $f\in W$, e seja $\sigma$ uma representação irredutível de $G$ em $V$ com caracter $\chi$. Então<br />
+\[<br />
+\sigma_f=\sum_{g\in G} (gf)(g\sigma)=\left(\frac{|G|}{1\chi}\left&lt;f,\overline \chi\right&gt;\right)\cdot\mbox{id}.<br />
+\]</p>
+<p><strong>Demonstração.</strong> Note que $\sigma_f\in\mbox{Hom}_{\C}(V)$.<br />
+Verificamos primeiro que $\sigma_f(h\sigma)=(h\sigma)\sigma_f$, ou seja $\sigma_f\in \mbox{Hom}_{G}(V)$. De fato<br />
+\begin{align*}<br />
+(h\sigma)^{-1}\sigma_f(h\sigma)&amp;=\sum_{g\in G}(gf)(h\sigma)^{-1}(g\sigma)(h\sigma)\\&amp;=\sum_{g\in G}(gf)((h^{-1}gh)\sigma)=\sum_{y\in G} ((g yg^{-1})f)(y\sigma)\\&amp;=\sum_{y\in G} (yf)(y\sigma)=\sigma_f.<br />
+\end{align*}<br />
+Portanto, $\sigma_f\in \mbox{Hom}_{G}(V)$, como foi afirmado. Como $V$ é um $G$-módulo simples, obtemos que $\sigma_f=\lambda\cdot\mbox{id}$ onde $\lambda\in\C^*$. Além disso,<br />
+\[<br />
+(1\chi)\lambda=\mbox{Tr}(\sigma_f)=\sum_{g\in G}(gf)\mbox{Tr}(g\sigma)=<br />
+\sum_{g\in G}(gf)(g\chi)=|G|\left&lt;f,\overline \chi\right&gt;<br />
+\]<br />
+Em particular, $\lambda=|G|\left&lt;f,\overline \chi\right&gt;/(1\chi)$ e $\sigma_f=|G|\left&lt;f,\overline \chi\right&gt;/(1\chi)\cdot\mbox{id}$.</p>
+<p><strong>Demonstração do Teorema. </strong>Já vimos que o sistema $\chi_1,\ldots,\chi_k$ é ortonormal em $W$. Portanto é suficiente provar que se $f\in W$ tal que $\left&lt;\chi_i,\overline f\right&gt;=\left&lt;f,\overline\chi_i\right&gt;=0$ para todo $i$, então $f=0$. Assuma que $f$ é  tal função. Para uma representação $\sigma$ de $G$, defina $\sigma_f$ como<br />
+\[<br />
+\sigma_f=\sum_{g\in G}(gf)(g\sigma).<br />
+\]<br />
+Se $\sigma$ for irredutível, então $\sigma_f=0$ pelo Lema anterior.<br />
+Se $\sigma$ não for irredutúvel, e o seu caracter é $\chi=\sum_i\alpha_i\chi_i$, então temos que<br />
+\[<br />
+\sigma_f=\left(\frac{|G|}{1\chi}\sum_{i=1}^k\overline{\alpha_i}\left&lt;f,\chi_i\right&gt;\right)\cdot\mbox{id}=0.<br />
+\]<br />
+Seja $\rho$ a representação de $G$ em $\C G$,<br />
+\[<br />
+0=1\rho_f=1\cdot \sum_{g\in G}(gf)(g\varrho)=\sum_{g\in G}(gf)g.<br />
+\]<br />
+Portanto $gf=0$ para todo $g$ e $f=0$.</p>
+<p><strong>Corolário. </strong>Seja $g\in G$.</p>
+<ol>
+<li>$\sum_{i=1}^k\overline{(g\chi_i)}(g\chi_i)=|C_G(g)|$.</li>
+<li>Se $g,h\in G$ pertencentes a classes distintos de conjugação,  então $\sum_{i=1}^k\overline{(g\chi_i)}(h\chi_i)=0$.</li>
+</ol>
+<p><strong>Demonstração. </strong>Seja $f:G\rightarrow\C$ a função que é igual a 1 na classe de $g$ e zero nos outros elementos.  Pelo teorema anterior,<br />
+\[<br />
+f=\sum_{i=1}^k \left&lt;f,\chi_i\right&gt;\chi_i=\sum_{i=1}^k \frac{|g^G|}{|G|}<br />
+\overline{ (g\chi_i)}\chi_i=<br />
+\frac 1{|C_G(g)|}\sum_{i=1}^k\overline{(g\chi_i)}\chi_i.<br />
+\]<br />
+Logo, para $h\in G$, temos que<br />
+\[<br />
+hf=<br />
+\frac 1{|C_G(g)|}\sum_{i=1}^k\overline{(g\chi_i)}(h\chi).<br />
+\]<br />
+Tomando $h=g$, obtemos equação 1., tomando $h\not\in g^G$, obtemos equação 2.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>O caracter e as relações de ortgonalidade</title>
 		<link>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/#respond</comments>
@@ -634,141 +733,6 @@ $$</p>
 <p><strong>Exercício. </strong>Demonstre que um grupo 2-transitivo é primitivo. Demonstre que $S_n$, $A_n$, $PSL(n,q)$. $PGL(n,q)$ são 2-transitivos e portanto primitivos.</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Rotações e reflexões</title>
-		<link>https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/#respond</comments>
-		<pubDate>Mon, 16 Sep 2019 14:12:21 +0000</pubDate>
-		<dc:creator><![CDATA[schcs]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
-
-		<guid isPermaLink="false">https://schcs.github.io/WP/?p=425</guid>
-		<description><![CDATA[$\newcommand{\rot}[1]{\mbox{Rot}(#1)}\newcommand{\refl}[1]{\mbox{Ref}(#1)}\newcommand{\sen}[1]{\mbox{sen}\,#1}\newcommand{\R}{\mathbb R}$ Rotações Seja $\varphi$ um ângulo. Denotaremos por $\rot\varphi$ a rotação do plano $\R^2$ pela origem com ângulo $\varphi$ no sentido contrário aos ponteiros do relógio. Vamos calcular a forma matricial de $\rot\varphi$.  Seja $v=(v_1,v_2)\in\R^2$. Seja $\alpha$ o ângulo entre o vetor $v$ e o eixo $x$. Seja $v_0$ o vetor unitário na direção &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/" class="more-link">Continue reading <span class="screen-reader-text">Rotações e reflexões</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\rot}[1]{\mbox{Rot}(#1)}\newcommand{\refl}[1]{\mbox{Ref}(#1)}\newcommand{\sen}[1]{\mbox{sen}\,#1}\newcommand{\R}{\mathbb R}$</p>
-<h3 class="post-title entry-title">Rotações</h3>
-<div id="post-body-2280012228471725931" class="post-body entry-content">
-<div dir="ltr" style="text-align: left;">
-<p>Seja $\varphi$ um ângulo. Denotaremos por $\rot\varphi$ a rotação do plano $\R^2$ pela origem com ângulo $\varphi$ no sentido contrário aos ponteiros do relógio. Vamos calcular a forma matricial de $\rot\varphi$.  Seja $v=(v_1,v_2)\in\R^2$. Seja $\alpha$ o ângulo entre o vetor $v$ e o eixo $x$. Seja $v_0$ o vetor unitário na direção de $v$. Então $v$ pode ser escrito como<br />
-$$<br />
-v=\|v\|v_0=\|v\|(\cos\alpha,\sen\alpha).<br />
-$$</p>
-<p>Se $v&#8217;=v\rot\varphi$, então<br />
-\begin{align*}<br />
-v&#8217;=&amp;\|v&#8217;\|(\cos(\alpha+\varphi),\sen{(\alpha+\varphi)})=\\&amp;\|v\|(\cos\alpha\cos\varphi-\sen\alpha\sen\varphi,\sen\alpha\cos\varphi+\cos\alpha\sen\varphi)=\\&amp;\|v\|(\cos\alpha,\sen\alpha)<br />
-\begin{pmatrix}<br />
-\cos\varphi &amp; \sen\varphi\\<br />
--\sen\varphi &amp; \cos\varphi<br />
-\end{pmatrix}.<br />
-\end{align*}<br />
-Obtemos então que a rotação $\rot\varphi$ é uma transformação linear com matriz<br />
-$$<br />
-A_\varphi=\begin{pmatrix}<br />
-\cos\varphi &amp; \sen\varphi\\<br />
--\sen\varphi &amp; \cos\varphi<br />
-\end{pmatrix}.<br />
-$$<br />
-Como $\det A_\varphi=\cos^2\varphi+\sen^2\varphi=1$, a transformação $\rot\varphi$ é invertível e claramente $(\rot\varphi)^{-1}=\rot{-\varphi}$.</p>
-<div class="lemma">
-<p><strong>Lema.</strong> Temos que</p>
-<ol style="text-align: left;">
-<li>$\rot\varphi\rot\psi=\rot{\varphi+\psi}$;</li>
-<li>$\rot 0=\mbox{id}$;</li>
-<li>$(\rot\varphi)^{-1}=\rot{-\varphi}$.</li>
-</ol>
-</div>
-<div class="proof"><strong>Demonstração.</strong> Afirmação 2 é clara e afirmação 3 segue do argumento acima. Provamos afirmação 1. Seja $v\in\R^2$,<br />
-\begin{align*}&amp;v\rot\varphi\rot\psi=v<br />
-\begin{pmatrix}<br />
-\cos\varphi &amp; \sen\varphi\\<br />
--\sen\varphi &amp; \cos\varphi<br />
-\end{pmatrix}<br />
-\begin{pmatrix}<br />
-\cos\psi &amp; \sen\psi\\<br />
--\sen\psi &amp; \cos\psi<br />
-\end{pmatrix}<br />
-=\\&amp;v<br />
-\begin{pmatrix}<br />
-\cos\varphi\cos\psi-\sen\varphi\sen\psi &amp; \cos\varphi\sen\psi+\sen\varphi\cos\psi\\<br />
--\cos\varphi\sen\psi-\sen\varphi\cos\psi &amp; \cos\varphi\cos\psi-\sen\varphi\sen\psi<br />
-\end{pmatrix}=\\&amp;<br />
-v<br />
-\begin{pmatrix}<br />
-\cos(\varphi+\psi) &amp; \sen(\varphi+\psi)\\<br />
--\sen(\varphi+\psi) &amp;\cos(\varphi+\psi)<br />
-\end{pmatrix}=v\rot{\varphi+\psi}.<br />
-\end{align*}</div>
-<p>&nbsp;</p>
-<h3 style="text-align: left;">Reflexões</h3>
-<p>Consideramos a reflexão pelo eixo que passe pela origem e tem ângulo $\varphi$ com o eixo $x$. Denotamos essa reflexão por $\refl\varphi$. Dado $v=(v_1,v_2)\in\R^2$, seja $\alpha$ o ângulo de $v$ com o eixo $x$, e temos que<br />
-\begin{align*}<br />
-v\refl\varphi=&amp;v\rot{-2(\alpha-\varphi)}=v\rot{-2\alpha}\rot{2\varphi}=\\&amp;(v_1,-v_2)\rot{2\varphi}=\\&amp;<br />
-(v_1,v_2)<br />
-\begin{pmatrix}<br />
-1 &amp; 0 \\<br />
-0 &amp; -1<br />
-\end{pmatrix}<br />
-\begin{pmatrix}<br />
-\cos 2\varphi &amp; \sen 2\varphi\\<br />
--\sen 2\varphi &amp; \cos 2\varphi<br />
-\end{pmatrix}=\\&amp;<br />
-v\begin{pmatrix}<br />
-\cos 2\varphi &amp; \sen 2\varphi\\<br />
-\sen 2\varphi &amp; -\cos 2\varphi<br />
-\end{pmatrix}.<br />
-\end{align*}<br />
-Obtemos então que $\refl\varphi$ é uma transformação linear com a matriz<br />
-$$<br />
-B_\varphi=\begin{pmatrix}<br />
-\cos 2\varphi &amp; \sen 2\varphi\\<br />
-\sen 2\varphi &amp; -\cos 2\varphi<br />
-\end{pmatrix}.<br />
-$$<br />
-Como $\det B_\varphi=-\cos^22\varphi-\sen^22\varphi=-1$, a transformação $\refl\varphi$ é invertível. De fato,<br />
-$$<br />
-\begin{pmatrix}<br />
-\cos 2\varphi &amp; \sen 2\varphi\\<br />
-\sen 2\varphi &amp; -\cos 2\varphi<br />
-\end{pmatrix}\begin{pmatrix}\cos 2\varphi &amp; \sen 2\varphi\\\sen 2\varphi &amp; -\cos 2\varphi\end{pmatrix}=\begin{pmatrix}1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},<br />
-$$</p>
-<p>que implica que $(\refl\varphi)^{-1}=\refl\varphi$.</p>
-<p>&nbsp;</p>
-<h3 style="text-align: left;">Composição de reflexões e rotações</h3>
-<p>Já vimos que a composição de 2 rotações é uma rotação. No entanto, a composição de 2 reflexões não é geralmente uma reflexão. De fato<br />
-\begin{align*}<br />
-&amp;v\refl\varphi\refl\psi<br />
-=v\begin{pmatrix}<br />
-\cos 2\varphi &amp; \sen 2\varphi\\<br />
-\sen 2\varphi &amp; -\cos 2\varphi<br />
-\end{pmatrix}\begin{pmatrix}<br />
-\cos 2\psi &amp; \sen 2\psi\\<br />
-\sen 2\psi &amp; -\cos 2\psi<br />
-\end{pmatrix}=\\&amp;<br />
-v\begin{pmatrix}<br />
-\cos 2\varphi\cos 2\psi+\sen 2\varphi\sen 2\psi &amp; \cos 2\varphi\sen 2\psi-\sen 2\varphi\cos 2\psi\\<br />
-\sen 2\varphi\cos 2\psi-\cos 2\varphi\sen 2\psi &amp; \sen 2\varphi\sen 2\psi+\cos 2\varphi\cos 2\psi\end{pmatrix}=\\&amp;<br />
-v\begin{pmatrix}<br />
-\cos 2(\psi-\varphi) &amp; \sen 2(\psi-\varphi)\\<br />
--\sen 2(\psi-\varphi) &amp; \cos 2(\psi-\varphi).<br />
-\end{pmatrix}=v\rot{2(\psi-\varphi)}.<br />
-\end{align*}</p>
-<p>Obtemos então que a composição de 2 reflexões é uma rotação.</p>
-<p>&nbsp;</p>
-<div class="lemma">
-<p><strong>Lema.</strong> Sejam $\varphi$ e $\psi$ ângulos. Então</p>
-<ol style="text-align: left;">
-<li>$\refl\varphi\refl\psi=\rot{2(\psi-\varphi)}$</li>
-<li>$\rot\varphi\refl\psi=\refl{\psi-\varphi/2}$;</li>
-<li>$\refl\varphi\rot\psi=\refl{\varphi+\psi/2}$.</li>
-</ol>
-</div>
-<div class="proof"><strong>Demonstração.</strong> Afirmação 1. é consequência do argumento acima. Demonstramos 2. Temos de 1. que $\refl{\vartheta}\refl{\psi}=\rot{2(\psi-\vartheta)}$. Usando que<br />
-$\refl{\psi}^{-1}=\refl{\psi}$, obtemos que $\refl{\vartheta}=\rot{2(\psi-\vartheta)}\refl{\psi}$. Agora substituímos $\varphi=2(\psi-\vartheta)$ e $\vartheta=\psi-\varphi/2$ e obtemos 2. A demonstracao de 3. é similar.</div>
-</div>
-</div>
-]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>

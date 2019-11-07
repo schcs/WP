@@ -85,6 +85,138 @@ MathJax.Hub.Config({
 			
 				
 					
+<article id="post-425" class="post-425 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/" rel="bookmark">Rotações e reflexões</a></h1>	</header><!-- .entry-header -->
+				<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/" rel="bookmark"><time class="entry-date published" datetime="2019-09-16T14:12:21+00:00">September 16, 2019</time><time class="updated" datetime="2019-09-16T14:18:49+00:00">September 16, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
+				<div class="entry-content">
+		<p>$\newcommand{\rot}[1]{\mbox{Rot}(#1)}\newcommand{\refl}[1]{\mbox{Ref}(#1)}\newcommand{\sen}[1]{\mbox{sen}\,#1}\newcommand{\R}{\mathbb R}$</p>
+<h3 class="post-title entry-title">Rotações</h3>
+<div id="post-body-2280012228471725931" class="post-body entry-content">
+<div dir="ltr" style="text-align: left;">
+<p>Seja $\varphi$ um ângulo. Denotaremos por $\rot\varphi$ a rotação do plano $\R^2$ pela origem com ângulo $\varphi$ no sentido contrário aos ponteiros do relógio. Vamos calcular a forma matricial de $\rot\varphi$.  Seja $v=(v_1,v_2)\in\R^2$. Seja $\alpha$ o ângulo entre o vetor $v$ e o eixo $x$. Seja $v_0$ o vetor unitário na direção de $v$. Então $v$ pode ser escrito como<br />
+$$<br />
+v=\|v\|v_0=\|v\|(\cos\alpha,\sen\alpha).<br />
+$$</p>
+<p>Se $v&#8217;=v\rot\varphi$, então<br />
+\begin{align*}<br />
+v&#8217;=&amp;\|v&#8217;\|(\cos(\alpha+\varphi),\sen{(\alpha+\varphi)})=\\&amp;\|v\|(\cos\alpha\cos\varphi-\sen\alpha\sen\varphi,\sen\alpha\cos\varphi+\cos\alpha\sen\varphi)=\\&amp;\|v\|(\cos\alpha,\sen\alpha)<br />
+\begin{pmatrix}<br />
+\cos\varphi &amp; \sen\varphi\\<br />
+-\sen\varphi &amp; \cos\varphi<br />
+\end{pmatrix}.<br />
+\end{align*}<br />
+Obtemos então que a rotação $\rot\varphi$ é uma transformação linear com matriz<br />
+$$<br />
+A_\varphi=\begin{pmatrix}<br />
+\cos\varphi &amp; \sen\varphi\\<br />
+-\sen\varphi &amp; \cos\varphi<br />
+\end{pmatrix}.<br />
+$$<br />
+Como $\det A_\varphi=\cos^2\varphi+\sen^2\varphi=1$, a transformação $\rot\varphi$ é invertível e claramente $(\rot\varphi)^{-1}=\rot{-\varphi}$.</p>
+<div class="lemma">
+<p><strong>Lema.</strong> Temos que</p>
+<ol style="text-align: left;">
+<li>$\rot\varphi\rot\psi=\rot{\varphi+\psi}$;</li>
+<li>$\rot 0=\mbox{id}$;</li>
+<li>$(\rot\varphi)^{-1}=\rot{-\varphi}$.</li>
+</ol>
+</div>
+<div class="proof"><strong>Demonstração.</strong> Afirmação 2 é clara e afirmação 3 segue do argumento acima. Provamos afirmação 1. Seja $v\in\R^2$,<br />
+\begin{align*}&amp;v\rot\varphi\rot\psi=v<br />
+\begin{pmatrix}<br />
+\cos\varphi &amp; \sen\varphi\\<br />
+-\sen\varphi &amp; \cos\varphi<br />
+\end{pmatrix}<br />
+\begin{pmatrix}<br />
+\cos\psi &amp; \sen\psi\\<br />
+-\sen\psi &amp; \cos\psi<br />
+\end{pmatrix}<br />
+=\\&amp;v<br />
+\begin{pmatrix}<br />
+\cos\varphi\cos\psi-\sen\varphi\sen\psi &amp; \cos\varphi\sen\psi+\sen\varphi\cos\psi\\<br />
+-\cos\varphi\sen\psi-\sen\varphi\cos\psi &amp; \cos\varphi\cos\psi-\sen\varphi\sen\psi<br />
+\end{pmatrix}=\\&amp;<br />
+v<br />
+\begin{pmatrix}<br />
+\cos(\varphi+\psi) &amp; \sen(\varphi+\psi)\\<br />
+-\sen(\varphi+\psi) &amp;\cos(\varphi+\psi)<br />
+\end{pmatrix}=v\rot{\varphi+\psi}.<br />
+\end{align*}</div>
+<p>&nbsp;</p>
+<h3 style="text-align: left;">Reflexões</h3>
+<p>Consideramos a reflexão pelo eixo que passe pela origem e tem ângulo $\varphi$ com o eixo $x$. Denotamos essa reflexão por $\refl\varphi$. Dado $v=(v_1,v_2)\in\R^2$, seja $\alpha$ o ângulo de $v$ com o eixo $x$, e temos que<br />
+\begin{align*}<br />
+v\refl\varphi=&amp;v\rot{-2(\alpha-\varphi)}=v\rot{-2\alpha}\rot{2\varphi}=\\&amp;(v_1,-v_2)\rot{2\varphi}=\\&amp;<br />
+(v_1,v_2)<br />
+\begin{pmatrix}<br />
+1 &amp; 0 \\<br />
+0 &amp; -1<br />
+\end{pmatrix}<br />
+\begin{pmatrix}<br />
+\cos 2\varphi &amp; \sen 2\varphi\\<br />
+-\sen 2\varphi &amp; \cos 2\varphi<br />
+\end{pmatrix}=\\&amp;<br />
+v\begin{pmatrix}<br />
+\cos 2\varphi &amp; \sen 2\varphi\\<br />
+\sen 2\varphi &amp; -\cos 2\varphi<br />
+\end{pmatrix}.<br />
+\end{align*}<br />
+Obtemos então que $\refl\varphi$ é uma transformação linear com a matriz<br />
+$$<br />
+B_\varphi=\begin{pmatrix}<br />
+\cos 2\varphi &amp; \sen 2\varphi\\<br />
+\sen 2\varphi &amp; -\cos 2\varphi<br />
+\end{pmatrix}.<br />
+$$<br />
+Como $\det B_\varphi=-\cos^22\varphi-\sen^22\varphi=-1$, a transformação $\refl\varphi$ é invertível. De fato,<br />
+$$<br />
+\begin{pmatrix}<br />
+\cos 2\varphi &amp; \sen 2\varphi\\<br />
+\sen 2\varphi &amp; -\cos 2\varphi<br />
+\end{pmatrix}\begin{pmatrix}\cos 2\varphi &amp; \sen 2\varphi\\\sen 2\varphi &amp; -\cos 2\varphi\end{pmatrix}=\begin{pmatrix}1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix},<br />
+$$</p>
+<p>que implica que $(\refl\varphi)^{-1}=\refl\varphi$.</p>
+<p>&nbsp;</p>
+<h3 style="text-align: left;">Composição de reflexões e rotações</h3>
+<p>Já vimos que a composição de 2 rotações é uma rotação. No entanto, a composição de 2 reflexões não é geralmente uma reflexão. De fato<br />
+\begin{align*}<br />
+&amp;v\refl\varphi\refl\psi<br />
+=v\begin{pmatrix}<br />
+\cos 2\varphi &amp; \sen 2\varphi\\<br />
+\sen 2\varphi &amp; -\cos 2\varphi<br />
+\end{pmatrix}\begin{pmatrix}<br />
+\cos 2\psi &amp; \sen 2\psi\\<br />
+\sen 2\psi &amp; -\cos 2\psi<br />
+\end{pmatrix}=\\&amp;<br />
+v\begin{pmatrix}<br />
+\cos 2\varphi\cos 2\psi+\sen 2\varphi\sen 2\psi &amp; \cos 2\varphi\sen 2\psi-\sen 2\varphi\cos 2\psi\\<br />
+\sen 2\varphi\cos 2\psi-\cos 2\varphi\sen 2\psi &amp; \sen 2\varphi\sen 2\psi+\cos 2\varphi\cos 2\psi\end{pmatrix}=\\&amp;<br />
+v\begin{pmatrix}<br />
+\cos 2(\psi-\varphi) &amp; \sen 2(\psi-\varphi)\\<br />
+-\sen 2(\psi-\varphi) &amp; \cos 2(\psi-\varphi).<br />
+\end{pmatrix}=v\rot{2(\psi-\varphi)}.<br />
+\end{align*}</p>
+<p>Obtemos então que a composição de 2 reflexões é uma rotação.</p>
+<p>&nbsp;</p>
+<div class="lemma">
+<p><strong>Lema.</strong> Sejam $\varphi$ e $\psi$ ângulos. Então</p>
+<ol style="text-align: left;">
+<li>$\refl\varphi\refl\psi=\rot{2(\psi-\varphi)}$</li>
+<li>$\rot\varphi\refl\psi=\refl{\psi-\varphi/2}$;</li>
+<li>$\refl\varphi\rot\psi=\refl{\varphi+\psi/2}$.</li>
+</ol>
+</div>
+<div class="proof"><strong>Demonstração.</strong> Afirmação 1. é consequência do argumento acima. Demonstramos 2. Temos de 1. que $\refl{\vartheta}\refl{\psi}=\rot{2(\psi-\vartheta)}$. Usando que<br />
+$\refl{\psi}^{-1}=\refl{\psi}$, obtemos que $\refl{\vartheta}=\rot{2(\psi-\vartheta)}\refl{\psi}$. Agora substituímos $\varphi=2(\psi-\vartheta)$ e $\vartheta=\psi-\varphi/2$ e obtemos 2. A demonstracao de 3. é similar.</div>
+</div>
+</div>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+					
 <article id="post-417" class="post-417 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/09/16/o-subgrupo-de-frattini/" rel="bookmark">O subgrupo de Frattini</a></h1>	</header><!-- .entry-header -->
@@ -650,34 +782,6 @@ $$<br />
 \int_{0}^\infty \frac{1}{(1+x)\sqrt x}dx,\quad \int_{-\infty}^\infty \frac{1}{1+x^6}dx,\quad \int_{-1}^1\frac{1}{\sqrt[3]x}dx.<br />
 $$</p>
 <p>&nbsp;</p>
-			</div><!-- .entry-content -->
-	</article><!-- #post-## -->
-
-				
-					
-<article id="post-281" class="post-281 post type-post status-publish format-standard hentry category-uncategorized">
-	<header class="entry-header">
-		<h1 class="entry-title"><a href="https://schcs.github.io/WP/index.php/2019/06/10/exercicios-derivado/" rel="bookmark">Exercícios: Derivado</a></h1>	</header><!-- .entry-header -->
-				<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/06/10/exercicios-derivado/" rel="bookmark"><time class="entry-date published" datetime="2019-06-10T15:24:51+00:00">June 10, 2019</time><time class="updated" datetime="2019-06-10T15:31:26+00:00">June 10, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>			<span class="sep"> ~ </span><span class="comments-link"><a href="https://schcs.github.io/WP/index.php/2019/06/10/exercicios-derivado/#respond">Leave a comment</a></span>					</div><!-- .entry-meta -->
-				<div class="entry-content">
-		<p>$\newcommand{\N}{\mathbb N}$ $\newcommand{\Z}{\mathbb Z}$ $\newcommand{\Q}{\mathbb Q}$ $\newcommand{\R}{\mathbb R}$1. Seja $f:X\rightarrow\R$ uma função e seja $a\in X\cap X&#8217;$. Mostre que as seguintes são equivalentes:</p>
-<ol>
-<li>$f(x)$ é derivável em $a$;</li>
-<li>existe uma função $\eta:X\rightarrow\R$ tal que $f(x)=f(a)+\eta(x)(x-a)$ para todo $x\in X$ e $\eta(x)$ é contínua em $a$.</li>
-</ol>
-<p>2. (Regra de L&#8217;Hospital) Sejam $f,\ g:X\rightarrow\R$ funções deriváveis em um ponto $a\in X\cap X&#8217;$ e assuma que $f(a)=g(a)=0$. Se $g'(a)\neq 0$, então $\lim_{x\rightarrow a}f(x)/g(x)=f'(a)/g'(a)$.</p>
-<p>3. Seja $f:\R^+\rightarrow\R$ definida por $f(x)=\sqrt[n]x$ com $n\in\N$. Calcule a derivada de $f$ sem usar que $x\mapsto \sqrt[n]x$ é a inversa de $x\mapsto x^n$.</p>
-<p>4. Uma função $f:\R\rightarrow \R$ é dita <i>par</i> se $f(-x)=f(x)$ para todo $x\in \R$; a função $f(x)$ é dita <i>ímpar</i> se $f(-x)=-f(x)$ para todo $x\in \R$. Demonstre que a derivada, se existir, de uma função par é ímpar, e a derivada, se existir, de uma função ímpar é par.</p>
-<p>5. Seja $I$ um intervalo e $f:I\rightarrow \R$ uma função derivável (em todo ponto $a\in I)$. Seja $a$ um ponto interior a $I$ tal que $f'(a)=0$ e existe $f&#8221;(a)$ tal que $f&#8221;(a)\neq 0$. Mostre que $f(x)$ tem mínimo local ou máximo local em $a$. Demonstre por exibir um exemplo que a condição $f&#8221;(a)\neq 0$ é necessária para concluir que $f(x)$ tem mínimo local ou máximo local em $a$.</p>
-<p>6. Seja $f:[a,b]\rightarrow \R$ uma função derivável em $[a,b]$ com $f'(x)\geq 0$ para todo $x\in [a,b]$ e assuma que $f'(x)=0$ vale somente para um número finito de $x\in[a,b]$. Demonstre que $f$ é crescente.</p>
-<p>7. Seja $f:[a,b]\rightarrow\R$ uma função derivável em $[a,b]$ tal que $|f'(x)|\leq k$ para todo $x\in [a,b]$. Mostre que a função $f$ é lipschitziana; ou seja $|f(x)-f(y)|\leq k|x-y|$ para todo $x,\ y\in[a,b]$.</p>
-<p>8. Seja $f:\R\rightarrow\R$ uma função e defina $$ M=\{a\in\R\mid f(x)\mbox{ possui mínimo ou máximo local estrito em $a$}\}. $$ Demonstre que $M$ é enuverável.</p>
-<p>Nos seguintes exercícios $I$ e $J$ denotam intervalos.</p>
-<p>9. Para $n≥0$, defina a função $f_n:\R\rightarrow\R$ como $f_n(x)=x^n|x|$. Demonstre que $f_n(x)$ é $n$ vezes derivável, mas não é $n+1$ vezes derirvável.</p>
-<p>10. Seja $I$ aberto e $g:I\rightarrow\R$ contínua em $I$ exceto no ponto $a\in I$. Assuma também que existem os limites laterais $\lim_{x\rightarrow a+}g(x)=A$ e $\lim_{x\rightarrow a-}g(x)=B$ e que $A\neq B$. Demonstre que não existe uma função $f:I\rightarrow\R$ tal que $f'(x)=g(x)$.</p>
-<p>11. Seja $f:\R\rightarrow\R$ a função definida por $f(x)=x^5/(1+x^6)$. Calcule $f^{(2001)}(0)$.</p>
-<p>12. Seja $f:I\rightarrow\R$ de classe $C^\infty$. Suponha que existe $K&gt;0$ tal que $|f^{(n)}(x)|\leq K$ para todo $x\in I$ e $n\geq 0$. Demonstre que $$ f(x)=\sum_{i=0}^\infty \frac{f^{(i)}(x_0)}{i!}(x-x_0)^i $$ para todo $x,\ x_0\in I$.</p>
 			</div><!-- .entry-content -->
 	</article><!-- #post-## -->
 
