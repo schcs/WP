@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Thu, 07 Nov 2019 11:33:21 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 12 Nov 2019 11:13:13 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -68,14 +68,14 @@ Em particular, o número de $\C$-representações irredutíveis de dimensão fin
 \[<br />
 \sigma_f=\sum_{g\in G} (gf)(g\sigma)=\left(\frac{|G|}{1\chi}\left&lt;f,\overline \chi\right&gt;\right)\cdot\mbox{id}.<br />
 \]</p>
-<p><strong>Demonstração.</strong> Note que $\sigma_f\in\mbox{Hom}_{\C}(V)$.<br />
-Verificamos primeiro que $\sigma_f(h\sigma)=(h\sigma)\sigma_f$, ou seja $\sigma_f\in \mbox{Hom}_{G}(V)$. De fato<br />
+<p><strong>Demonstração.</strong> Note que $\sigma_f\in\mbox{End}_{\C}(V)$.<br />
+Verificamos primeiro que $\sigma_f(h\sigma)=(h\sigma)\sigma_f$, ou seja $\sigma_f\in \mbox{End}_{G}(V)$. De fato<br />
 \begin{align*}<br />
 (h\sigma)^{-1}\sigma_f(h\sigma)&amp;=\sum_{g\in G}(gf)(h\sigma)^{-1}(g\sigma)(h\sigma)\\&amp;=\sum_{g\in G}(gf)((h^{-1}gh)\sigma)=\sum_{y\in G} ((h yh^{-1})f)(y\sigma)\\&amp;=\sum_{y\in G} (yf)(y\sigma)=\sigma_f.<br />
 \end{align*}<br />
-Portanto, $\sigma_f\in \mbox{Hom}_{G}(V)$, como foi afirmado. Como $V$ é um $G$-módulo simples, obtemos que $\sigma_f=\lambda\cdot\mbox{id}$ onde $\lambda\in\C^*$. Além disso,<br />
+Portanto, $\sigma_f\in \mbox{End}_{G}(V)$, como foi afirmado. Como $V$ é um $G$-módulo simples, obtemos que $\sigma_f=\lambda\cdot\mbox{id}$ onde $\lambda\in\C^*$. Além disso,<br />
 \[<br />
-(1\chi)\lambda=\mbox{Tr}(\sigma_f)=\sum_{g\in G}(gf)\mbox{Tr}(g\sigma)=<br />
+\lambda\dim V=(1\chi)\lambda=\mbox{Tr}(\sigma_f)=\sum_{g\in G}(gf)\mbox{Tr}(g\sigma)=<br />
 \sum_{g\in G}(gf)(g\chi)=|G|\left&lt;f,\overline \chi\right&gt;<br />
 \]<br />
 Em particular, $\lambda=|G|\left&lt;f,\overline \chi\right&gt;/(1\chi)$ e $\sigma_f=|G|\left&lt;f,\overline \chi\right&gt;/(1\chi)\cdot\mbox{id}$.</p>
@@ -84,9 +84,13 @@ Em particular, $\lambda=|G|\left&lt;f,\overline \chi\right&gt;/(1\chi)$ e $\sigm
 \sigma_f=\sum_{g\in G}(gf)(g\sigma).<br />
 \]<br />
 Se $\sigma$ for irredutível, então $\sigma_f=0$ pelo Lema anterior.<br />
-Se $\sigma$ não for irredutúvel, e o seu caracter é $\chi=\sum_i\alpha_i\chi_i$, então temos que<br />
+Se $\sigma$ não for irredutúvel, então o $G$-módulo $V$ correspondente pode ser escrito como uma soma direta $V=V_1\oplus\cdots\oplus V_m$ de $G$-módulos simples e temos a equação correspondente para o caracter:  $\chi=\sum_i\chi_i$. Seja $\sigma_i$ a representação induzida por $\sigma$ em $V_i$. Então $g\sigma=\sum_ig\sigma_i$. Logo<br />
 \[<br />
-\sigma_f=\left(\sum_{i=1}^k\frac{|G|}{1\chi_i}\overline{\alpha_i}\left&lt;f,\overline{\chi_i}\right&gt;\right)\cdot\mbox{id}=0.<br />
+\sigma_f=\sum_{g\in G}(gf)(g\sigma)=\sum_{g\in G}\sum_{i=1}^m (gf)(g\sigma_i)=\sum_{i=1}^m(\sigma_i)_f.<br />
+\]<br />
+Portanto<br />
+\[<br />
+\sigma_f=\sum_{i=1}^m(\sigma_i)_f=\sum_{i=1}^m\frac{|G|}{1\chi_i}\left&lt;f,\overline{\chi_i}\right&gt;\cdot\mbox{id}_{V_i}=0.<br />
 \]<br />
 Seja $\rho$ a representação de $G$ em $\C G$,<br />
 \[<br />
@@ -107,7 +111,7 @@ f=\sum_{i=1}^k \left&lt;f,\chi_i\right&gt;\chi_i=\sum_{i=1}^k \frac{|g^G|}{|G|}<
 Logo, para $h\in G$, temos que<br />
 \[<br />
 hf=<br />
-\frac 1{|C_G(g)|}\sum_{i=1}^k\overline{(g\chi_i)}(h\chi).<br />
+\frac 1{|C_G(g)|}\sum_{i=1}^k\overline{(g\chi_i)}(h\chi_i).<br />
 \]<br />
 Tomando $h=g$, obtemos equação 1., tomando $h\not\in g^G$, obtemos equação 2.</p>
 <p>&nbsp;</p>
@@ -553,7 +557,7 @@ $$</li>
 </tr>
 </tbody>
 </table>
-<!-- #tablepress-1 from cache -->
+
 <p>Simplificando a definição verdadeira, no caso de formas simétricas, denotamos ainda por $\Omega^+(n,q)$, $\Omega^-(n,q)$, e por $\Omega(n,q)$, o subgrupo derivado de $SO^+(n,q)$, $SO^-(n,q)$, e $SO(n,q)$, respetivamente. Escrevemos $P\Omega(n,\F)=\Omega(n,\F)/(Z\cap \Omega(n,\F))$ e $P\Omega^\pm(n,\F)=\Omega^\pm(n,\F)/(Z\cap \Omega^\pm(n,\F))$.</p>
 <p><strong>Teorema. </strong>As seguintes afirmações são verdadeiras.</p>
 <ol>
