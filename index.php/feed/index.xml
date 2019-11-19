@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Tue, 19 Nov 2019 01:52:11 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 19 Nov 2019 01:54:53 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -26,8 +26,8 @@
 				<category><![CDATA[Uncategorized]]></category>
 
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=626</guid>
-		<description><![CDATA[$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito inteiro algébrico se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$. O seguinte lema é enunciado sem demonstração. Lema. Seja $\alpha\in\C$. Se $\alpha_1,\ldots,\alpha_r$ são inteiros algébricos, então $\Z[\alpha_1,\ldots,\alpha_r]$ é finitamente gerado como um grupo abeliano. Se $R$ é um subanel de $\C$ tal que $\Z\subseteq R$ &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/19/integralidade/" class="more-link">Continue reading <span class="screen-reader-text">Integralidade</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito <em>inteiro algébrico</em> se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$. O seguinte lema é enunciado sem demonstração.</p>
+		<description><![CDATA[$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito inteiro algébrico se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$. Lema. Seja $\alpha\in\C$. Se $\alpha_1,\ldots,\alpha_r$ são inteiros algébricos, então $\Z[\alpha_1,\ldots,\alpha_r]$ é finitamente gerado como um grupo abeliano. Se $R$ é um subanel de $\C$ tal que $\Z\subseteq R$ e $R$ é finitamente gerado como um &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/19/integralidade/" class="more-link">Continue reading <span class="screen-reader-text">Integralidade</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito <em>inteiro algébrico</em> se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$.</p>
 <p><strong>Lema. </strong>Seja $\alpha\in\C$.</p>
 <ol>
 <li>Se $\alpha_1,\ldots,\alpha_r$ são inteiros algébricos, então $\Z[\alpha_1,\ldots,\alpha_r]$ é finitamente gerado como um grupo abeliano.</li>
@@ -629,7 +629,7 @@ $$</li>
 </tr>
 </tbody>
 </table>
-
+<!-- #tablepress-1 from cache -->
 <p>Simplificando a definição verdadeira, no caso de formas simétricas, denotamos ainda por $\Omega^+(n,q)$, $\Omega^-(n,q)$, e por $\Omega(n,q)$, o subgrupo derivado de $SO^+(n,q)$, $SO^-(n,q)$, e $SO(n,q)$, respetivamente. Escrevemos $P\Omega(n,\F)=\Omega(n,\F)/(Z\cap \Omega(n,\F))$ e $P\Omega^\pm(n,\F)=\Omega^\pm(n,\F)/(Z\cap \Omega^\pm(n,\F))$.</p>
 <p><strong>Teorema. </strong>As seguintes afirmações são verdadeiras.</p>
 <ol>
