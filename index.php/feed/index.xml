@@ -12,12 +12,84 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Tue, 12 Nov 2019 11:13:13 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 19 Nov 2019 01:52:11 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.12</generator>
 	<item>
+		<title>Integralidade</title>
+		<link>https://schcs.github.io/WP/index.php/2019/11/19/integralidade/</link>
+		<comments>https://schcs.github.io/WP/index.php/2019/11/19/integralidade/#respond</comments>
+		<pubDate>Tue, 19 Nov 2019 00:20:14 +0000</pubDate>
+		<dc:creator><![CDATA[schcs]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">https://schcs.github.io/WP/?p=626</guid>
+		<description><![CDATA[$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito inteiro algébrico se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$. O seguinte lema é enunciado sem demonstração. Lema. Seja $\alpha\in\C$. Se $\alpha_1,\ldots,\alpha_r$ são inteiros algébricos, então $\Z[\alpha_1,\ldots,\alpha_r]$ é finitamente gerado como um grupo abeliano. Se $R$ é um subanel de $\C$ tal que $\Z\subseteq R$ &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/19/integralidade/" class="more-link">Continue reading <span class="screen-reader-text">Integralidade</span></a>]]></description>
+				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito <em>inteiro algébrico</em> se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$. O seguinte lema é enunciado sem demonstração.</p>
+<p><strong>Lema. </strong>Seja $\alpha\in\C$.</p>
+<ol>
+<li>Se $\alpha_1,\ldots,\alpha_r$ são inteiros algébricos, então $\Z[\alpha_1,\ldots,\alpha_r]$ é finitamente gerado como um grupo abeliano.</li>
+<li>Se $R$ é um subanel de $\C$ tal que $\Z\subseteq R$ e $R$ é finitamente gerado como um grupo abeliano, então os elementos de $R$ são inteiros algébricos.</li>
+<li>O conjunto dos inteiros algébricos de $\C$ é um anel.</li>
+<li>$\alpha\in\Q$ é um inteiro algébrico se e somente se $\alpha\in\Z$.</li>
+</ol>
+<p><strong>Demonstração.</strong> Demonstraremos apenas 2. e 3. O resto é exercício.</p>
+<p>2. Seja $s\in R$ e assuma que $R$ é gerado por $\left&lt;x_1,\ldots,x_d\right&gt;$ como um grupo abeliano. Para $i\in\{1,\ldots,d\}$, temos que<br />
+\[<br />
+s x_i=\sum_{j=1}^d \alpha_{ij}x_j<br />
+\]<br />
+com $\alpha_{ij}\in\Z$. Pondo $A=(\alpha_{ij})$, temos que<br />
+\[<br />
+A (x_1,\ldots,x_d)^{\rm t}=s(x_1,\ldots,x_d)^{\rm t}.<br />
+\]<br />
+Portanto, $s$ é um autovalor de $A$; ou seja $s$ é uma raiz do polinômio caraterístico de $A$ que é um elemento mônico de $\Z[t]$.</p>
+<p>3. Segue dos items 1. e 2.</p>
+<p><strong>Lema.</strong> Seja $G$ um grupo finito e sejam $C_1,\ldots,C_r$ as classes de conjugação de $G$. Para um corpo $\K$ de caraterística zero,  os elementos<br />
+\[<br />
+k_i=\sum_{g\in C_i}g\quad\mbox{com}\quad i\in\{1,\ldots,r\}<br />
+\]<br />
+formam uma base do centro de $\K G$. Além disso,<br />
+\[<br />
+k_ik_j=\sum_{s=1}^r m_{ij}^{(s)} k_s<br />
+\]<br />
+onde $m_{ij}^{(s)}$ é o número de pares $(g_i,g_j)\in C_i\times C_j$ tal que $g_ig_j=g$ onde $g$ é um elemento fixo de $C_r$. Em particular os coeficientes $m_{ij}^{(s)}$ são inteiros não negativos.</p>
+<p><strong>Demonstração. </strong>Exercício.</p>
+<p>Lembre que se $\chi$ é um caracter de $G$, então $g\chi$ é uma soma de $|G|$-ésimas raízes da unidade. Denotando uma $|G|$-ésima raiz primitiva por $\xi$, temos que $g\chi\in\K$ onde $\K$ é o corpo numérico $\Q[\xi]$. Além disso, $g\chi$ é um inteiro algébrico. Provaremos o seguinte teorema mais forte.</p>
+<p><strong>Teorema. </strong>Seja $G$ um grupo finito, seja $\chi$ um $\C$-caracter irredutível de $G$ de grau $n$, e seja $g\in G$. Então $|g^G|(g\chi)/n$ é um inteiro algébrico de $\Q[\xi]$.</p>
+<p><strong>Demonstração. </strong>Sejam $C_1,\ldots,C_r$ as classes de conjugação de $G$ e seja $k_i=\sum_{x\in C_i}x$. Então $\{k_1,\ldots,k_r\}$ é uma base de $\C G$. Escreva<br />
+\begin{equation}\label{eq:center}<br />
+k_ik_j=\sum_{s=1}^rm_{ij}^{(s)} k_s<br />
+\end{equation}<br />
+e lembre pelo exercício anterior que os coeficientes $m_{ij}^{(s)}$ são números inteiros não negativos. Seja $\varrho$ a representação correspondente a $\chi$ e considere $\varrho$ como um mapa $\C G\to \mbox{End}(V)$. Como $k_i$ é um elemento central, $k_i\varrho=\lambda_i I$ com algum $\lambda_i\in\C$. Assuma que $g\in C_i$, seja $\lambda=\lambda_i$ e calcule que<br />
+\[<br />
+n\lambda=\mbox{tr}(k_i\varrho)=\sum_{x\in C_i}x\chi=|g^G|\chi(g).<br />
+\]<br />
+Precisamos provar que $\lambda$ é um inteiro algébrico. Aplicando $\varrho$ na equação \eqref{eq:center}, obtemos que<br />
+\begin{equation}\label{eq:lambdaeq}<br />
+\lambda_i\lambda_j=\sum_{s=1}^r m_{ij}^{(s)}\lambda_s.<br />
+\end{equation}<br />
+Considere<br />
+\[<br />
+R=\left\{\sum_{i=1}^r\alpha_i \lambda_i\mid\alpha_i\in\Z\right\}.<br />
+\]<br />
+Pela equação \eqref{eq:lambdaeq}, $R$ é um anel tal que $\Z\subseteq R\subseteq \C$. Além disso, $R$ é finitamente gerado como grupo abeliano. Portanto, pelo lema anterior, os elementos de $R$ são inteiros algébricos. Então $\lambda$ é um inteiro algébrico, como foi afirmado.</p>
+<p><strong>Corolário. </strong>Seja $n$ o grau de um character irredutível $\chi$ de um grupo finito $G$. Então $n\mid |G|$.</p>
+<p><strong>Demonstração. </strong>Seja $\varrho$ a representação de $\chi$. Assuma que $C_1,\ldots,C_r$ são as classes de conjugação de $G$, e seja $g_i\in C_i$ para todo $i$. Pela relação de ortogonalidade, temos que<br />
+\[<br />
+\frac{|G|}{n} = \frac 1n\sum_{g\in G}(g\chi)(g^{-1}\chi)=\frac 1n\sum_{i=1}^r |C_i|(g_i\chi)(g_i^{-1}\chi).<br />
+\]<br />
+Usando a notação do resultado anterior, $\lambda_i=|C_i|(g_i\chi)/n$ e obtemos que<br />
+\[<br />
+|G|/n=\sum_{i=1}^r \lambda_i(g_i^{-1}\chi).<br />
+\]<br />
+O lado direito da última equação é um inteiro algébrico. Então a lado esquerdo também é, e $m/n\in\Q$ é um inteiro algébrico. Portanto $|G|/n$ é um inteiro, ou seja $n\mid |G|$.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/11/19/integralidade/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>A decomposição de $\mathbb CG$</title>
 		<link>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/</link>
 		<comments>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/#respond</comments>
@@ -666,77 +738,6 @@ $$</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
 			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/23/o-grupo-alternado/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-		<item>
-		<title>Grupos de permutações</title>
-		<link>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/#respond</comments>
-		<pubDate>Tue, 17 Sep 2019 00:24:12 +0000</pubDate>
-		<dc:creator><![CDATA[schcs]]></dc:creator>
-				<category><![CDATA[Uncategorized]]></category>
-
-		<guid isPermaLink="false">https://schcs.github.io/WP/?p=438</guid>
-		<description><![CDATA[Se $\Omega$ é um conjunto, então $S(\Omega)$ denota o grupo de permutações de $\Omega$. Quando $\Omega=\{1,\ldots,n\}$, então  $S(\Omega)$ é escrito como $S_n$. Um grupo de permutações é um subgrupo de algum $S(\Omega)$. Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ age em $\Omega$ se está dada uma função $$ \Omega\times G\rightarrow\Omega,\quad (\omega,g)\mapsto &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/" class="more-link">Continue reading <span class="screen-reader-text">Grupos de permutações</span></a>]]></description>
-				<content:encoded><![CDATA[<p>Se $\Omega$ é um conjunto, então $S(\Omega)$ denota o grupo de permutações de $\Omega$. Quando $\Omega=\{1,\ldots,n\}$, então  $S(\Omega)$ é escrito como $S_n$. Um <em>grupo de permutações</em> é um subgrupo de algum $S(\Omega)$.</p>
-<p>Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ <em>age</em> em $\Omega$ se está dada uma função<br />
-$$<br />
-\Omega\times G\rightarrow\Omega,\quad (\omega,g)\mapsto \omega g<br />
-$$<br />
-tal que as seguintes propriedades estão verdadeiras para todo $\omega\in\Omega$ e $g,h\in G$:</p>
-<ol>
-<li>$\omega 1=\omega$;</li>
-<li>$(\omega g)h=\omega(gh)$.</li>
-</ol>
-<p>Note que se $G$ age em $\Omega$, então $g$ induz um mapa $\psi_g:\Omega\rightarrow\Omega$ definido como $\omega\mapsto \omega g$. É fácil ver que $\psi_g\in S(\Omega)$ e que o mapa $\psi:g\mapsto \psi_g$ é um homomorfismo $G\rightarrow S(\Omega)$. O homomorfismo $\psi$ é chamado do <em>homomorfismo associado com a ação</em> de $G$. Por outro lado, se $\psi:G\rightarrow S(\Omega)$ é um homomorfismo, então $(\omega,g)\mapsto \omega \psi(g)$ é uma ação de $G$ em $\Omega$.</p>
-<p>Assuma que $G$ age em $\Omega$ com homomorfismo associado $\psi$. O <em>núcleo</em> da ação é $\ker\psi$. A ação de $G$ é dito <em>fiel </em>se $\ker\psi=1$. Neste caso $G\cong G\psi$ e $G$ pode ser considerado como um grupo de permutações. Considere a seguinte relação de equivalência sobre $\Omega$: $\alpha\sim\beta$ se e somente se $\beta=\alpha g$ com algum $G$. Uma classe de equivalência dessa relação é chamada de <em>órbita</em>. O grupo $G$ é dito transitivo em $\Omega$ se $\Omega$ é uma órbita. Se $\alpha\in\Omega$, então o estabilizador $G_\alpha$ de $\alpha$ em $G$ é definido como<br />
-$$<br />
-G_\alpha=\{g\in G\mid \alpha g=\alpha\}.<br />
-$$<br />
-É claro que $G_\alpha\leq G$. Além disso, o núcleo da ação é $\bigcap_{\alpha\in\Omega} G_\alpha$.</p>
-<p>Um grupo $G\leq S(\Omega)$ é dito regular se $G$ é transitivo e $G_\alpha=1$ para algum (todo) $\alpha\in \Omega$.</p>
-<p><strong>Lema. </strong>Sejam $\alpha,\beta\in\Omega$, $g\in G$ tais que $\alpha g=\beta$. Então $G_\beta=(G_\alpha)^g=g^{-1}G_\alpha g$.</p>
-<p><strong>Exemplo. </strong>Seja $G$ um grupo e $H\leq G$. Seja $\Omega=[G:H]$, o conjunto de classes laterais à direita de $H$ em $G$. Então $G$ age em $\Omega$: se $Hx\in\Omega$ e $g\in G$, então $(Hx)g=H(xg)$. É fácil ver que esta ação é transitiva. Além disso $H\leq G$ é o estabilizador do ponto $H1\in\Omega$. Portanto o núcleo da ação é<br />
-$$<br />
-\mbox{Core}_G(H)=\bigcap_{g\in G} H^g.<br />
-$$<br />
-O subgrupo na equação anterior é chamado do <em>core</em> de $H$ em $G$. Ele é o maior subgrupo normal de $G$ contido em $H$.</p>
-<p>Assuma que $G$ age nos conjuntos $\Omega_1$ e $\Omega_2$. Estas ações são <em>equivalentes</em> se existir uma bijeção $\varphi:\Omega_1\rightarrow \Omega_2$ tal que $(\omega g)\varphi=(\omega\varphi)g$ para todo $\omega\in\Omega$ e $g\in G$. O mapa $\varphi$ é chamada de <em>equivalência</em> entre as duas ações de $G$.</p>
-<p>Assuma que $G$ age em $\Omega$ transitivamente. Seja $\alpha\in\Omega$ fixo. Definamos um mapa $\varphi:\Omega\rightarrow [G:H]$. Para $\beta\in\Omega$, seja<br />
-$$<br />
-\beta\varphi=\{g\in G\mid \alpha g=\beta\}.<br />
-$$</p>
-<p><strong>Teorema (Teorema de Órbita e Estabilizador). </strong>O mapa $\varphi$ é uma equivalência bem definida entre as ações de $G$ sobre $\Omega$ e $[G:G_\alpha]$. Em particular, $|\Omega|=|G:G_\alpha|$.</p>
-<p><strong>Demonstração. </strong>Passo 1: $\beta\varphi$ é uma classe lateral à direita de $G_\alpha$ em $G$. Primeiro $\beta\varphi\neq\emptyset$ pela transitividade de $G$. Seja $g\in \beta\varphi$. Afirmamos que $\beta\varphi=G_\alpha g$. Seja $hg\in G_\alpha g$ com $h\in G_\alpha$. Então $\alpha (hg)=(\alpha h)g=\alpha g=\beta$. Portanto $G_\alpha g\subseteq \beta\varphi$. Seja $x\in \beta\varphi$. Então $\beta=\alpha g=\alpha x$, portanto $y:=xg^{-1}\in G_\alpha$. Logo, $x=yg\in G_\alpha g$. Obtivemos que $G_\alpha g=\beta\varphi$.</p>
-<p>Passo 2: $\varphi$ é uma bijeção. Assuma que $\beta\varphi=\gamma\varphi$ com alguns $\beta,\gamma\in\Omega$. Seja $g\in \beta\varphi$. Então $\beta=\alpha g=\gamma$ e $\beta=\gamma$. Seja $G_\alpha g\in [G:G_\alpha]$. Então $G_\alpha g=\beta\varphi$ onde $\beta=\alpha g$.</p>
-<p>Passo 3: $\varphi$ é uma equivalência. Seja $\omega\in \Omega$ e $g\in G$. Então $\omega g=\alpha hg$ onde $h\in G$ tal que $\omega=\alpha h$. Temos portanto que $(\omega g)\varphi= G_\alpha (hg)$. Por outro lado, $(\omega\varphi)g=(G_\alpha h)g$. Como $G_\alpha(hg)=(G_\alpha h)g$, temos que $\varphi$ é uma equivalência.</p>
-<p><strong>Corolário. </strong>Assuma que $G$ um grupo finito que age transitivamente em $\Omega$. Então $|\Omega|\mid |G|$.</p>
-<p>Assuma que $G$ age transitivamente em $\Omega$. Um conjunto $\Delta\subseteq \Omega$ é dito <em>bloco </em>se $\Delta g=\Delta$ ou $\Delta g\cap\Delta=\emptyset$ para todo $g\in G$.  Uma partição $\mathcal P$ de $\Omega$ é dito $G$-invariante se $\Delta g\in \mathcal P$ para todo $\Delta\in \mathcal P$.</p>
-<p><strong>Lema. </strong>Assuma que $G$ age em $\Omega$ transitivamente. As seguintes são verdadeiras.</p>
-<ol>
-<li>Se $\Delta$ é um bloco então $\mathcal P=\{\Delta g\mid g\in G\}$ é uma partição $G$-invariante de $\Omega$.</li>
-<li>Se $\mathcal P$ é uma partição $G$ invariante de $\Omega$ e $\Delta\in\mathcal P$, então $\Delta$ é um bloco.</li>
-<li>Seja $\omega\in\Omega$ fixo. O mapa $\Delta\mapsto \{\Delta g\mid g\in G\}$ é uma bijeção entre o conjunto de blocos $\Delta$ tal que $\omega\in\Delta$ e o conjunto de partições $G$-invariantes de $G$.</li>
-</ol>
-<p><strong>Demonstração. </strong>Exercício.</p>
-<p>Se $G$ age em $\Omega$ transitivamente e $\omega\in\Omega$, então $\{\omega\}$ e $\Omega$ são blocos. Similarmente $\{\{\omega\}\mid\omega\in\Omega\}$ e $\{\Omega\}$ são partições $G$-invariantes. Um grupo transitivo é dito <em>primitivo</em> se estes são os únicos blocos. No caso contrario o grupo e chamado de <em>imprimitivo</em>.</p>
-<p>Assuma que $G$ age transitivamente em $\Omega$ e seja $\omega\in\Omega$ fixo. Se $\Delta$ é um bloco tal que $\omega\in\Delta$, então denota por $G_\Delta$ o estabilizador de $\Delta$ em $G$. Se $H\leq G$ tal que $G_\omega\leq H$, então denote por $\omega H$ a $H$-órbita que contém $\omega$.</p>
-<p><strong>Teorema. </strong>As seguintes são verdadeiras.</p>
-<ol>
-<li>Se $\Delta$ é um bloco tal que $\omega\in\Delta$, então $G_\omega \leq G_\Delta\leq G$.</li>
-<li>Se $H$ é um subgrupo de $G$ tal que $G_\omega\leq H$, então $\Delta=\omega H$ é um bloco tal que $\omega\in\Delta$.</li>
-<li>Se $\Delta$ é um bloco tal que $\omega\in\Delta$, então $\omega(G_\Delta)=\Delta$. Se $H\leq G$ tal que $G_\omega\leq H$, então $G_{\omega H}=H$. Em particular os mapas $\Delta\mapsto G_\Delta$ e $H\mapsto \omega H$ são bijeções entre o conjunto de blocos $\Delta$ tal que $\omega\in\Delta$ e o conjunto de subgrupos $H$ tal que $G_\omega\leq H$.</li>
-</ol>
-<p><strong>Demonstralção. </strong>1. Claramente, $G_\Delta\leq G$. Seja $g\in G_\omega$. Então $\omega\in \Delta\cap \Delta g$, então $\Delta g=\Delta$. Logo $G_\omega\in G_\Delta$.</p>
-<p>2. Seja  $\Delta=\omega H$ e seja $g\in G$ tal que $\alpha \in \Delta\cap \Delta g=\omega H\cap \omega Hg$. Então existem $h_1,h_2\in H$ tal que $\alpha=\omega h_1=\omega h_2g$. Portanto, $\omega h_2gh_1^{-1}=\omega$, e $h_2gh_1^{-1}\in G_\omega$. Como $h_1,h_2\in H\geq G_\omega$, obtemos que $g\in H$ que implica que $\Delta g=\omega Hg=\omega H=\Delta$.</p>
-<p>3. Seja $\Delta$ um bloco tal que $\omega\in \Delta$ e seja $H=G_\Delta$. Afirmamos que $\omega H=\Delta$. Se $h\in H$, então $\omega h\in \Delta$ pela definição de $H$. Portanto $\omega H\subseteq \Delta$. Se $\delta\in\Delta$, então existe um $g\in G$ tal que $\omega g=\delta$. Neste caso, $\delta=\omega g\in \Delta\cap \Delta g$ que implica que $g\in G_\Delta$. Logo $\delta\in \omega H$.  Logo $\Delta\subseteq \omega H$ e obtemos a igualdade $\Delta= \omega H$.</p>
-<p>Seja agora $H\leq G$ tal que $G_\omega\leq H$ e seja $\Delta=\omega H$. Afirmamos que $H=G_\Delta$. Se $h\in H$ e $\delta\in \Delta$, então $\delta h=\omega gh\in\Delta$ com $g\in H$. Portanto $H\subseteq G_\Delta$. Se $g\in G_\Delta$, então $\omega g\in\Delta$ e $\omega g=\omega h$ com $h\in H$. Logo $\omega gh^{-1}=\omega$ e $gh^{-1}\in G_\omega$. Como $G_\omega\leq H$, tem-se que $gh^{-1}\in H$ e $g\in H$. Portanto $G_\Delta\leq H$ e $G_\Delta=H$.</p>
-<p><strong>Exercício. </strong>Assuma que $G$ age em $\Omega$ transitivamente, seja $\alpha\in\Omega$ e seja $H\leq G$. Então $H$ é transitivo se e somente se $G_\alpha H=G$.</p>
-<p><strong>Corolário. </strong>Seja $G$ um grupo transitivo agindo em $\Omega$ e seja $\omega\in\Omega$. Então $G$ é primitivo se e somente se $G_\omega$ é um subgrupo maximal.</p>
-<p>Um grupo $G$ agindo em $\Omega$ é dito 2-transitivo se  para todo $\alpha,\beta,\gamma,\delta\in\Omega$ com $\alpha\neq \beta$ e $\gamma\neq \delta$ existe $g\in G$ tal que $\alpha g=\gamma$ e $\beta g=\delta$.</p>
-<p><strong>Exercício. </strong>Demonstre que um grupo 2-transitivo é primitivo. Demonstre que $S_n$, $A_n$, $PSL(n,q)$. $PGL(n,q)$ são 2-transitivos e portanto primitivos.</p>
-]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
