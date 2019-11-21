@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Wed, 20 Nov 2019 22:17:53 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 21 Nov 2019 11:29:12 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -28,17 +28,17 @@
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=633</guid>
 		<description><![CDATA[$\newcommand{\C}{\mathbb C}$Lema (Burnside). Se $G$ é um grupo finito que possui uma classe de conjugação com $p^m$ elementos, onde $p$ é um primo e $m\geq 1$, então $G$ não pode ser simples. Demonstração. Assuma com o objetivo de obter uma contradição que $G$ é simples. Seja $g\in G$ pertencente a uma classe $C$ com $p^m$ elementos como &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/" class="more-link">Continue reading <span class="screen-reader-text">O Teorema $pq$ de Burnside</span></a>]]></description>
 				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}$<strong>Lema (Burnside). </strong>Se $G$ é um grupo finito que possui uma classe de conjugação com $p^m$ elementos, onde $p$ é um primo e $m\geq 1$, então $G$ não pode ser simples.</p>
-<p><strong>Demonstração. </strong>Assuma com o objetivo de obter uma contradição que $G$ é simples. Seja $g\in G$ pertencente a uma classe $C$ com $p^m$ elementos como assumido no lema. Suponha que $\varrho$ é uma $\C$-representação não trivial irredutível de $G$ com caracter $\chi$. Pela simplicidade de $G$, $\ker\varrho=1$ e $G\cong G\varrho$. Assuma que $g\chi\neq 0$ e $p\nmid 1\chi$. Por um lema anterior, $g\varrho=\lambda\mbox{id}$, portanto $g\varrho\in Z(G\varrho)$, equivalentemente $g\in Z(G)=1$; ou seja, $g=1$. Mas isso é impossível, pois nós assumimos que $|g^G|&gt;1$. Obtivemos então que $g\chi=0$ para todo caracter irredutível tal que $p\nmid 1\chi$.</p>
+<p><strong>Demonstração. </strong>Assuma com o objetivo de obter uma contradição que $G$ é simples. Seja $g\in G$ pertencente a uma classe $C$ com $p^m$ elementos como assumido no lema. Suponha que $\varrho$ é uma $\C$-representação não trivial irredutível de $G$ com caracter $\chi$. Pela simplicidade de $G$, $\ker\varrho=1$ e $G\cong G\varrho$. Assuma que $g\chi\neq 0$ e $p\nmid 1\chi$. Por um lema anterior, $g\varrho=\lambda\cdot\mbox{id}$, portanto $g\varrho\in Z(G\varrho)$, equivalentemente $g\in Z(G)=1$; ou seja, $g=1$. Mas isso é impossível, pois nós assumimos que $|g^G|&gt;1$. Obtivemos então que $g\chi=0$ para todo caracter irredutível tal que $p\nmid 1\chi$.</p>
 <p>Considere o caracter $\psi$ que corresponde à representação regular sobre $\C G$. Por um resultado anterior,<br />
 \[<br />
 \psi=\sum_{i=1}^r(1\chi_i)\chi_i<br />
 \]<br />
-onde $\chi_1,\ldots,\chi_r$ são os caracteres irredutíveis de $G$. Segue que<br />
-\[<br />
-g\psi=\sum_{i=1}^r (1\chi_i)(g\chi_i).<br />
-\]<br />
-Assumindo que $\chi_1$ é a representação trivial, cada termo exceto $g\chi_1$ é um múltiplo de $p$. Além disso $g\psi$ é um número inteiro, $g\psi-1$ também é inteiro e é divisível por $p$.<br />
-Por outro lado, como $g\neq 1$, $g\psi=0$, que é uma contradição. Então o grupo $G$ é simples.</p>
+onde $\chi_1,\ldots,\chi_r$ são os caracteres irredutíveis de $G$.Assumindo que $\chi_1$ é a representação trivial, e usando que $g\neq 1$,<br />
+\begin{align*}<br />
+0=&amp;g\psi=\sum_{i=1}^r (1\chi_i)(g\chi_i)=g\chi_1+\sum_{i\geq 2,\ p\nmid 1\chi_i}(1\chi_i)(g\chi_i)+\sum_{i\geq 2,\ p\mid 1\chi_i}(1\chi_i)(g\chi_i)\\&amp;=<br />
+1+\sum_{i\geq 2,\ p\mid 1\chi_i}(1\chi_i)(g\chi_i)<br />
+\end{align*}<br />
+A última expressão na linha anterior é um número inteiro na forma $1+kp$ onde $k$ também é um inteiro, e consequentemente não pode ser igual a zero: então o grupo $G$ é simples.</p>
 <p><strong>Teorema (Burnside). </strong>Sejam $p$ e $q$ números primos. Então um grupo de ordem $p^\alpha q^\beta$ é solúvel.</p>
 <p><strong>Demonstração. </strong>Assuma que o teorema é falso e seja $G$ um contraexemplo minimal. Se $1&lt;N\lhd G$ é um subgrupo normal, então as ordens de $N$ e $G/N$ estão na forma $p^*q^*$. Pela minimalidade de $G$, $N$ e $G/N$ são solúveis que implica que $G$ também é. Isto implica que um contraexemplo minimal é um grupo simples.</p>
 <p>Seja $Q$ um $q$-subgrupo de Sylow de $G$. O centro de $Q$ é não trivial e seja $g\in Z(Q)$. Como $Q\leq C_G(g)$ e $Z(G)=1$, tem-se que $|g^G|=|G:C_G(g)|=p^a$ com algum $a\neq 1$. Mas isso é impossível pelo resultado anterior.</p>
@@ -108,21 +108,21 @@ Pela equação \eqref{eq:lambdaeq}, $R$ é um anel tal que $\Z\subseteq R\subset
 <p><strong>Corolário. </strong>Seja $n$ o grau de um character irredutível $\chi$ de um grupo finito $G$. Então $n\mid |G|$.</p>
 <p><strong>Demonstração. </strong>Seja $\varrho$ a representação de $\chi$. Assuma que $C_1,\ldots,C_r$ são as classes de conjugação de $G$, e seja $g_i\in C_i$ para todo $i$. Pela relação de ortogonalidade, temos que<br />
 \[<br />
-\frac{|G|}{n} = \frac 1n\sum_{g\in G}(g\chi)(g^{-1}\chi)=\frac 1n\sum_{i=1}^r |C_i|(g_i\chi)(g_i^{-1}\chi).<br />
+\frac{|G|}{n} = \frac 1n\sum_{g\in G}(g\chi)\overline{g\chi}=\frac 1n\sum_{i=1}^r |C_i|(g_i\chi)\overline{g_i\chi}.<br />
 \]<br />
 Usando a notação do resultado anterior, $\lambda_i=|C_i|(g_i\chi)/n$ e obtemos que<br />
 \[<br />
-|G|/n=\sum_{i=1}^r \lambda_i(g_i^{-1}\chi).<br />
+|G|/n=\sum_{i=1}^r \lambda_i\overline{g_i\chi}.<br />
 \]<br />
 O lado direito da última equação é um inteiro algébrico. Então a lado esquerdo também é, e $m/n\in\Q$ é um inteiro algébrico. Portanto $|G|/n$ é um inteiro, ou seja $n\mid |G|$.</p>
-<p><strong>Lema. </strong>Seja $\varrho$ uma $\C$-representação irredutível de grau $n$ de $G$ com caracter $\chi$ e seja $g\in G$ tal que $\mbox{mdc}(|g^G|,n)=1$. Então $g\chi=0$ ou $g\varrho=\lambda \mbox{id}$.</p>
+<p><strong>Lema. </strong>Seja $\varrho$ uma $\C$-representação irredutível de grau $n$ de $G$ com caracter $\chi$ e seja $g\in G$ tal que $\mbox{mdc}(|g^G|,n)=1$. Então $g\chi=0$ ou $g\varrho=\lambda \cdot\mbox{id}$.</p>
 <p><strong>Demonstração.</strong>  Denote $|g^G|=m$. Sejam $r,s\in\Z$ tal que $rm+sn=1$. Por um teorema anterior, $m(g\chi)/n$ é um inteiro algébrico, então<br />
 \[<br />
 t=\frac{g\chi}n=\frac{rm(g\chi)}n+\frac{sn(g\chi)}n<br />
 \]<br />
 também é um inteiro algébrico.</p>
 <p>Sejam $\lambda_1,\ldots,\lambda_n$ os autovalores de $g\varrho$ (com multiplicidade) tais que $g\chi=\sum_i \lambda_i$ e $|t|=|\sum_i \lambda_i|/n$. Como cada $\lambda_i$ é uma raiz da identididade, $|\lambda_i|=1$ e $|t|=|\sum_i\lambda_i|/n\leq 1$.</p>
-<p>Assuma que os $\lambda_i$ não são todos iguais. Isto implica que $|t|&lt;1$. Seja $K=Q(\lambda_1,\ldots,\lambda_n)$ e seja $\alpha\in\mbox{Gal}(\K:\Q)$.   Neste caso os $\lambda_i\alpha$ também não são todos iguais, e $|t\alpha|&lt;1$. Lembre que $\K$ é uma extensão de Galois (é uma extensão ciclotômica) de $\Q$ e que $G=\mbox{Gal}(\K:\Q)$ é um grupo finito. Ponha<br />
+<p>Assuma que os $\lambda_i$ não são todos iguais. Isto implica que $|t|&lt;1$. Seja $\K=\Q(\lambda_1,\ldots,\lambda_n)$ e seja $\alpha\in\mbox{Gal}(\K:\Q)$.   Neste caso os $\lambda_i\alpha$ também não são todos iguais, e $|t\alpha|&lt;1$. Lembre que $\K$ é uma extensão de Galois (é uma extensão ciclotômica) de $\Q$ e que $G=\mbox{Gal}(\K:\Q)$ é um grupo finito. Ponha<br />
 \[<br />
 u=\prod_{\alpha\in G}t\alpha.<br />
 \]<br />
