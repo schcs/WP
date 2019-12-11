@@ -12,7 +12,7 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Sun, 01 Dec 2019 18:06:10 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 11 Dec 2019 13:48:59 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -671,7 +671,7 @@ $$</li>
 </tr>
 </tbody>
 </table>
-
+<!-- #tablepress-1 from cache -->
 <p>Simplificando a definição verdadeira, no caso de formas simétricas, denotamos ainda por $\Omega^+(n,q)$, $\Omega^-(n,q)$, e por $\Omega(n,q)$, o subgrupo derivado de $SO^+(n,q)$, $SO^-(n,q)$, e $SO(n,q)$, respetivamente. Escrevemos $P\Omega(n,\F)=\Omega(n,\F)/(Z\cap \Omega(n,\F))$ e $P\Omega^\pm(n,\F)=\Omega^\pm(n,\F)/(Z\cap \Omega^\pm(n,\F))$.</p>
 <p><strong>Teorema. </strong>As seguintes afirmações são verdadeiras.</p>
 <ol>
