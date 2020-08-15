@@ -6,7 +6,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 	
-<title>Divisibilidade e o MDC &#8211; Csaba Schneider</title>
+<title>Exercícios 3 &#8211; Csaba Schneider</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
@@ -39,9 +39,9 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/algebra-a/divisibilidade-e-o-mdc/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=735' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Falgebra-a%2Fdivisibilidade-e-o-mdc%2F" />
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/algebra-a/exercicios-3/" />
+<link rel='shortlink' href='https://schcs.github.io/WP/?p=787' />
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Falgebra-a%2Fexercicios-3%2F" />
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
@@ -56,7 +56,7 @@ MathJax.Hub.Config({
 </script>
 </head>
 
-<body class="page-template-default page page-id-735 page-child parent-pageid-706 no-sidebar">
+<body class="page-template-default page page-id-787 page-child parent-pageid-706 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -82,55 +82,38 @@ MathJax.Hub.Config({
 
 			
 				
-<article id="post-735" class="post-735 page type-page status-publish hentry">
+<article id="post-787" class="post-787 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Divisibilidade e o MDC</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Exercícios 3</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\mdc}[2]{\mbox{mdc}(#1,#2)}$Sejam $a,b\in \Z$. Dizemos que <em>$b$ divide $a$</em> ou que <em>$a$ é um múltiplo de $b$</em> se existe $q\in\Z$, tal que $bq=a$. Usamos a notação $b|a$ para indicar que $b$ divide $a$.</p>
-<p><strong>Exemplos. </strong></p>
+		<p>1. Utilize o algoritmo de Euclides para calcular $d=\mbox{mdc}(a,b)$ e inteiros $u,\ v$ tais que $ua+vb=d$, sendo</p>
 <ol>
-<li>$\pm a|a$ e $\pm 1|a$ para todo inteiro $a$.</li>
-<li>$a|0$ para todo inteiro $a$, mas se $0|a$ então $a=0$. Em particular $0|0$.</li>
+<li>$a=232$, $b=136$;</li>
+<li>$a=187$, $b=221$;</li>
+<li>$a=-25$, $b=5$;</li>
+<li>$a=-39$, $b=17$.</li>
 </ol>
-<p><strong>Lema.</strong> As seguintes propriedades são válidas.</p>
+<p>2. Seja $n$ um número maior que 1 e verifique as seguintes igualdades:</p>
 <ol>
-<li>Se $a|b$ e $b|a$ então $b=\pm a$.</li>
-<li>Se $a|b$ e $b|c$ então $a|c$.</li>
-<li>Se $a|b$ e $a|c$ então $a|(b\pm c)$.</li>
-<li>Se $a|b$ e $c$ é um inteiro então $a|bc$.</li>
+<li>$\mbox{mdc}(n,2n+1)=1$;</li>
+<li>$\mbox{mdc}(2n+1,3n+1)=1$;</li>
+<li>$\mbox{mdc}(n!+1,(n+1)!+1)=1$.</li>
 </ol>
-<p><strong>Demonstração. </strong>Exercício.</p>
-<p>Sejam $a$ e $b$ números inteiros não simultaneamente iguais a zero. Definimos o <em>maior divisor comum de $a$ e $b$ </em>como sendo o inteiro $d$ que satisfaz as seguintes propriedades:</p>
+<p>3. Denote por $F_n$ os termos da sequência de Fibonacci ($F_0=F_1=1$, $F_2=2$, etc).</p>
 <ol>
-<li>$d\geq 0$;</li>
-<li>$d|a$ e $d|b$;</li>
-<li>se $c$ é um inteiro tal que $c|a$ e $c|b$ então $c|d$.</li>
+<li>Mostre que $\mbox{mdc}(F_i,F_{i+1})=1$ para todo $i\geq 0$.</li>
+<li>Quantas divisões são necessárias para calcular $\mbox{mdc}(F_i,F_{i+1})=1$ usando o Algoritmo de Euclides?</li>
 </ol>
-<p>Não é imediatamente claro da definição que o maior divisor comum existe. No entanto, segue da definição que se ele existir, então ele deve ser único. Isso porque se $d_1$ e $d_2$ são mdcs de $a$ e $b$, então a definição implica que $d_1|d_2$ e $d_2|d_1$. Ora temos pelo lema anterior que $d_1=\pm d_2$, mas como $d_1$ e $d_2$ são não negativos, isso é possível apenas quando $d_1=d_2$.</p>
-<p>O maior divisor comum de $a$ e $b$ será denotado por $\mdc ab$.</p>
-<p>É claro que $\mdc ab=\mdc ba$ e que $\mdc ab=\mdc{\pm a}{\pm b}$. A definição também implica que $\mdc a0=|a|$ para todo $a\neq 0$.</p>
-<p>Se $a$ e $b$ são inteiros tais que $\mdc ab=1$, então dizemos que $a$ e $b$ são <em>primos entre si</em> ou que eles são <em>coprimos</em>.</p>
-<p><strong>Lema. </strong>Sejam $a,b\in\Z$ com $b\neq 0$ e escreve $a=qb+r$ com $0\leq r&lt;|b|$ como no Teorema de Divisão de Euclides. Então $\mdc ab=\mdc br$ (assumindo que existem estes mdcs).</p>
-<p><strong>Demonstração.</strong> Seja $d=\mdc ab$. Afirmamos que $\mdc br=d$. Primeiro, $d\geq 0$ pela definição de mdc (propriedade 1. do mdc). Como $d=\mdc ab$, temos que $d|a$ e $d|b$. Pelo lema anterior, isto implica que $d|(a-qb)=r$. Logo $d|b$ e $d|r$ (propriedade 2. do mdc).</p>
-<p>Assuma que $c|b$ e $c|r$. Então, $c|(bq+r)=a$, então $c|a$ e $c|b$. Pela definição de mdc, temos que $c|d$ (propriedade 3. do mdc). Portanto $d=\mdc br$.</p>
-<p><strong>Exemplo. </strong>O lema anterior pode ser usado para determinar o mdc de dois números naturais do modo seguinte. Sejam,. por exemplo, $a=115$ e $b=25$. Escreva<br />
-\[<br />
-115=4\cdot 25+10<br />
-\]<br />
-para concluir que $\mdc {115}{25}=\mdc{25}{10}$. Depois escreva<br />
-\[<br />
-25=2\cdot 10+5<br />
-\]<br />
-e obtenha que $\mdc{25}{10}=\mdc{10}{5}$.<br />
-Depois<br />
-\[<br />
-10=2\cdot 5+0<br />
-\]<br />
-que implica que $\mdc{10}5=\mdc 50=5$. Logo<br />
-\[<br />
-\mdc {115}{25}=\mdc{25}{10}=\mdc{10}{5}=\mdc 50=5.<br />
-\]<br />
-Esta conta segue essencialmente o Algoritmo de Euclídes que será o conteúdo da semana seguinte.</p>
+<p>4  Mostre, para $n\geq 0$, que $\varphi^{n-1}\leq F_n\leq \varphi^{n}$ onde $\varphi = (1+\sqrt 5)/2$.</p>
+<p>5. Sejam $a$ e $b$ números com três algarismos na base decimal<br />
+tal que $a&gt;b$.</p>
+<ol>
+<li>No máximo, quantas divisões o algoritmo de Euclides vai precisar para<br />
+terminar se for executado para os números $a$ e $b$?</li>
+<li>Ache dois números $a$ e $b$ com três algarismos na base<br />
+decimal tais que a computação de $\mbox{mdc}(a,b)$ precisa do número maximal<br />
+dos passos entre todos os números com três algarismos.</li>
+</ol>
 			</div><!-- .entry-content -->
 	<footer class="entry-footer">
 			</footer><!-- .entry-footer -->
