@@ -6,7 +6,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 	
-<title>Grupos e Corpos &#8211; Csaba Schneider</title>
+<title>Subgrupos normais, quocientes e homomorfismos &#8211; Csaba Schneider</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
@@ -39,9 +39,9 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=684' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Fgrupos-e-corpos%2F" />
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/subgrupos-normais-quocientes-homomorfismos/" />
+<link rel='shortlink' href='https://schcs.github.io/WP/?p=793' />
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Fsubgrupos-normais-quocientes-homomorfismos%2F" />
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
@@ -56,7 +56,7 @@ MathJax.Hub.Config({
 </script>
 </head>
 
-<body class="page-template-default page page-id-684 page-parent page-child parent-pageid-64 no-sidebar">
+<body class="page-template-default page page-id-793 page-child parent-pageid-684 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -82,29 +82,90 @@ MathJax.Hub.Config({
 
 			
 				
-<article id="post-684" class="post-684 page type-page status-publish hentry">
+<article id="post-793" class="post-793 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Grupos e Corpos</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Subgrupos normais, quocientes e homomorfismos</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<p>Disciplina de graduação &#8211; semestre I de 2020.</p>
-<p><strong>Professor: </strong>Csaba Schneider<br />
-<strong>Ementa: </strong> Grupos: definição e exemplos, subgrupos, teorema de Lagrange, subgrupos normais, grupo quociente, homomorfismos, teoremas de isomorfismo, ações e representações de grupos, os teoremas de Sylow. Grupos solúveis. Grupos de permutações: o grupo simétrico, a estrutura cíclica das permutações, o teorema de Cayley, classes de conjugação, subgrupos normais dos grupos simétricos, a simplicidade do grupo alternado. Extensões de Corpos: subcorpos, extensões finitas, algébricas e transcendentais. Polinômios: raízes e irredutibilidade, corpos de decomposição de um polinômio. Corpos finitos. Elementos da teoria de Galois. O grupo de automorfismos de um corpo e o corpo fixo por um de seus subgrupos; subcorpos intermediários de uma extensão. A correspondência entre grupos e corpos: o teorema fundamental da teoria de Galois. Solubilidade por radicais: extensões radicais e o critério de Galois.</p>
-<p><strong>Bibliografia<br />
-</strong>Joseph Gallian. Contemporary abstract algebra. Cengage Learning, 2016.<br />
-Hygino Domingues e Gelson Iezzi. Álgebra moderna. Saraivauni, 2018.<br />
-Arnaldo Garcia e Yves Lequain. Elementos de álgebra. IMPA, 2018.<br />
-Adilson Gonçalves. Introdução à Álgebra. IMPA, 2017.</p>
-<p><strong>Notas, apostilas, exercícios</strong></p>
+		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\F}{\mathbb F}$Um subgrupo $H$ de $G$ é dito normal se $gH=Hg$ para todo $g\in G$. Esta condição pode ser expressa por dizer que $g^{-1}Hg=H$ para todo $g\in G$. Escrevemos que $H\unlhd G$, ou $H\lhd G$ quando $H&lt; G$.</p>
+<p>As afirmações dos seguintes exemplos podem ser justificadas ou por exercícios anteriores ou por contas triviais.</p>
+<p><strong>Exemplo. </strong></p>
+<ol>
+<li>$\{1\}$ e $G$ são normais em $G$.</li>
+<li>Em um grupo abeliano, todo subgrupo é normal.</li>
+<li>O subgrupo $SL(n,\F)$ é normal em $GL(n,\F)$.</li>
+<li>Se $|G:H|=2$, então $H$ é normal em $G$.</li>
+<li>O subgrupo formado pelas rotações em $D_n$ é normal em $D_n$.</li>
+<li>$\left&lt;(1,2)(3,4),(1,3)(2,4)\right&gt;=\{1,(1,2)(3,4),(1,3)(2,4),(1,4)(2,3)\}$ é normal em $S_4$.</li>
+<li>$\left&lt;(1,2)\right&gt;=\{1,(1,2)\}$ não é normal em $S_3$.</li>
+</ol>
+<p>Seja $N$ um subgrupo normal em um grupo $G$. Definimos uma operação no conjunto das classes laterais $Ng$ (onde $g\in G$) no modo seguinte:<br />
+\[<br />
+(Ng_1)(Ng_2)=Ng_1g_2.<br />
+\]<br />
+Como $N$ é normal, esta operação é bem definida. Além disso, ela é associativa, $N1=N$ é elemento neutro, e todo elemento $Ng$ tem inverso (nomeadamente, $Ng^{-1}$). Assim o conjunto das classes laterais com esta operação é um grupo denotado por $G/N$. O grupo $G/N$ é dito grupo quociente (de $G$ por $N$). Temos que $|G/N|=|G:N|$. Em particular, se $G$ é finito, então $|G/N|=|G|/|N|$.</p>
+<p><strong>Exemplo. </strong> Considere o grupo aditivo $\Z$, seja $n\geq 2$ e seja $n\Z=\left&lt;n\right&gt;=\{nk\mid k\in \Z\}$. Se $a\in\Z$, então a classe lateral $n\Z+a$ é a classe residual $\{nk+a\mid k\in\Z\}$ e a operação entre classes laterais é definida como<br />
+\[<br />
+(n\Z+a)+(n\Z+b)=n\Z+(a+b)<br />
+\]<br />
+e esta operação corresponde à operação $+$ entre classes residuais modulo $n$. Temos então que o grupo $\Z_n$ pode ser visto como o grupo quociente $\Z/n\Z$.</p>
+<p>Sejam $G$ e $H$ grupos. Um mapa $\varphi:G\to H$ é dito homomorfismo se<br />
+\[<br />
+\varphi(ab)=\varphi(a)\varphi(b)\quad\mbox{para todo}\quad a,b\in G.<br />
+\].</p>
+<p><strong>Exercício. </strong>Verifique as seguintes propriedades de um homomorfismo $\varphi:G\to H$.</p>
+<ol>
+<li>Se $g\in G$ e $n\in\Z$, então $\varphi(g^n)=\varphi(g)^n$. Em particular, $\varphi(g^{-1})=\varphi(g)^{-1}$.</li>
+<li>$\varphi(1_G)=\varphi(1_H)$.</li>
+</ol>
+<p><strong>Exemplo. </strong></p>
+<ol>
+<li>Se $G$ e $H$ são grupos, então o mapa $\varphi:G\to H$ definido por $\varphi(g)=1_H$ é um homomorfismo.</li>
+<li>Se $G\leq H$, então o mapa $\varphi:G\to H$ definido por $\varphi(g)=g$ é um homorfismo. Este mapa é chamado de inclusão ou mergulho de $G$ em $H$.</li>
+<li>Se $N$ é um subgrupo normal de $G$ então o mapa $\varphi:G\to G/N$ definido por $\varphi(g)=Ng$ é um homomorfismo. Este mapa é chamado de homomorfismo natural ou projeção natural de $G$ em $G/N$.</li>
+<li>Pelo raciocínio anterior, o mapa $\varphi :\Z\to \Z_n$ definido por $\varphi(k)=k+n\Z$ é um homomorfismo.</li>
+</ol>
+<p>Em relação com homomorfismos usamos as seguintes expressões.</p>
 <ul>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/as-primeiras-defincoes/">Semana 1: As Primeiras definições</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/exercicios-1/">Exercícios 1</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/semana-2-classes-laterais-e-o-teorema-de-lagrange/">Semana 2: Classes laterais e o Teorema de Lagrange</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/exercicios-2/">Exercícios 2</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/conjuntos-geradores-e-grupos-ciclicos/">Semana 3: Conjuntos geradores e grupos cíclicos</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/exercicios-3/">Exercícios 3</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/subgrupos-normais-quocientes-homomorfismos/">Semana 4: Subgrupos normais, quocientes, homomorfismos</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/exercicios-4/">Exercícios 4</a></li>
+<li><strong>Morfismo </strong>é a mesma coisa que homomorfismo. A palavra morfismo está mais usada ma teoria de categorias.</li>
+<li><strong>Monomorfismo: </strong>homomorfismo injetivo.</li>
+<li><strong>Epimorfismo: </strong>homomorfismo sobrejetivo.</li>
+<li><strong>Isomorfismo: </strong>homomorfismo injetivo e sobrejetivo.</li>
+<li><strong>Endomorfismo: </strong>um homomorfismo $G\to G$.</li>
+<li><strong>Automorfismo: </strong>um isomorfismo $G\to G$.</li>
 </ul>
+<p>Dois grupos $G$ e $H$ são ditos isomorfos que existe um isomorfismo (ou seja, um homomorfismo injetivo e sobrejetivo) $G\to H$. O conjunto de automorfismos $G\to G$ é um grupo chamado do grupo de automorfismos de $G$. Este grupo é denotado por $\mbox{Aut}(G)$.</p>
+<p>Dado um homorfismo $\varphi:G\to H$, definimos<br />
+\begin{eqnarray*}<br />
+\mbox{Im}\,\varphi&amp;=&amp;\{\varphi(g)\mid g\in G\}\\<br />
+\ker\varphi&amp;=&amp;\{g\in G\mid \varphi(g)=1_H\}.<br />
+\end{eqnarray*}</p>
+<p>O seguinte resultado resuma as propriedades mais importantes de homomorfismos.</p>
+<p><strong>Teorema. </strong>Seja $\varphi:G\to H$ um homomorfismo. As seguintes afirmações são verdadeiras.</p>
+<ol>
+<li>$\mbox{Im}\,\varphi\leq H$;</li>
+<li>$\ker\varphi\unlhd G$;</li>
+<li>$\varphi$ é injetivo se e somente se $\ker\varphi=\{1_G\}$;</li>
+<li>$G/\ker\varphi\cong \mbox{Im}\,\varphi$.</li>
+</ol>
+<p><strong>Demonstração. </strong>1. Exercício.</p>
+<p>2. Assuma que $g\in G$ e $h\in\ker\varphi$. Então<br />
+\[<br />
+\varphi(g^{-1}hg)=\varphi(g^{-1})\varphi(h)\varphi(g)=\varphi(g)^{-1}\varphi(g)=1_H<br />
+\]<br />
+que diz que $g^{-1}hg\in\ker \varphi$. O mesmo argumento implica que $ghg^{-1}\in\ker\varphi$. Um exercício em cima mostra que $\ker\varphi\unlhd G$.</p>
+<p>3. Se $\varphi$ é injetivo, então $1_G$ deve ser o único elemento cuja imagem é $1_H$, então $\ker\varphi=\{1_G\}$.</p>
+<p>Assuma agora que $\varphi$ é injetivo e sejam $a,b\in G$ tais que $\varphi(a)=\varphi(b)$. Isto implica que<br />
+\[<br />
+1_H=\varphi(a)\varphi(b)^{-1}=\varphi(ab^{-1}),<br />
+\]<br />
+ou seja, $ab^{-1}\in \ker\varphi=\{1_G\}$. Daqui obtemos que $ab^{-1}=1_H$; ou seja $a=b$. Assim, temos que $\varphi$ é injetivo.</p>
+<p>4. Seja $N=\ker\varphi$ e defina<br />
+\[<br />
+\bar \varphi:G/N\to \mbox{Im}\,\varphi,\quad Ng\mapsto \varphi(g).<br />
+\]<br />
+É fácil ver que $\bar\varphi$ é um homomorfismo bem definido e ele é sobrejetivo. Assuma que $g\in G$ tal que $\bar\varphi(Ng)=1_H$. Isto implica que $\varphi(g)=1_H$; ou seja, $g\in N$ e $Ng=N=1_{G/N}$. Portanto $\ker\bar\varphi=\{1_{G/N}\}$ e isto implica que $\bar\varphi$ é injetivo. Logo $\bar\varphi$ é um isomorfismo e $G/\ker\varphi\cong \mbox{Im}\,\varphi$.</p>
+<p><strong>Exemplo. </strong>Sejam $\F$ um corpo, $n\geq 2$ e $\varphi: GL(n,\F)\to \F^*=\F\setminus\{0\}$ definido com $\varphi(X)=\det X$. Temos que $\varphi$ é um homomorfismo sobrejetivo e que $\ker\varphi=SL(n,\F)$. Pelo teorema anterior, obtemos que $GL(n,\F)/SL(n,\F)\cong \F^*$.</p>
+<p>&nbsp;</p>
 			</div><!-- .entry-content -->
 	<footer class="entry-footer">
 			</footer><!-- .entry-footer -->
