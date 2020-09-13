@@ -6,7 +6,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 	
-<title>Exercícios 6 &#8211; Csaba Schneider</title>
+<title>Exercícios 7 &#8211; Csaba Schneider</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
@@ -39,9 +39,9 @@ img.emoji {
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/algebra-a/exercicios-6/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=883' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Falgebra-a%2Fexercicios-6%2F" />
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/algebra-a/exercicios-7/" />
+<link rel='shortlink' href='https://schcs.github.io/WP/?p=921' />
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Falgebra-a%2Fexercicios-7%2F" />
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
@@ -56,7 +56,7 @@ MathJax.Hub.Config({
 </script>
 </head>
 
-<body class="page-template-default page page-id-883 page-child parent-pageid-706 no-sidebar">
+<body class="page-template-default page page-id-921 page-child parent-pageid-706 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -82,28 +82,40 @@ MathJax.Hub.Config({
 
 			
 				
-<article id="post-883" class="post-883 page type-page status-publish hentry">
+<article id="post-921" class="post-921 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Exercícios 6</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Exercícios 7</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<p>1. Para cada par de inteiros $a$, $n$ abaixo ache um número inteiro $b$ tal que $b\equiv a\pmod n$ e $0\leq b&lt;n$.</p>
+		<p>$\newcommand{\Z}{\mathbb Z}$1. Determine as classes invertíveis e os quadrados em $\Z_{12}$ e em $\Z_{18}$. Calcule os inversos nos dois casos.</p>
+<p>2. Resolva as seguintes congruências:</p>
 <ol>
-<li>$a=2351$ e $n=2$.</li>
-<li>$a=50121$ e $n=13$;</li>
-<li>$a=321671$ e $n=14$.</li>
+<li>$4x\equiv 3\pmod 4$;</li>
+<li>$3x+2\equiv 0\pmod 4$;</li>
+<li>$2x-1\equiv 7\pmod {15}$.</li>
 </ol>
-<p>2. Calcule o resto de $a$ dividido por $n$ para</p>
+<p>3. Ache um elemento de $\overline a\in\Z_{34}$ de mode que todo elemento invertível de $\Z_{34}$ é uma potência de $\overline a$.</p>
+<p>4. Considere o seguinte programa na linguagem C:</p>
+<pre>#include &lt;stdio.h&gt;
+int main( )
+{  unsigned char a;
+   a = 250;
+   printf( "o valor de a eh %d\n", a );
+   a = a+48;
+   printf( "o valor de a + 48 eh %d\n", a );}
+</pre>
+<p>O que vai ser o resultado deste programa sabendo que uma variável de tipo unsigned char ocupa um byte na memória e é considerado como um número não negativo? Explique o comportamento usando aritmética modular.</p>
+<p>5. Resolva as seguintes congruências quadráticas:</p>
 <ol>
-<li>$a=5^{20}$ e $n=7$;</li>
-<li>$a=7^{1001}$ e $n=11$.</li>
+<li>$3x^2\equiv 10\pmod {13}$;</li>
+<li>$3x^2\equiv 7\pmod {13}$;</li>
+<li>$5x^2 \equiv 8\pmod{12}$.</li>
 </ol>
-<p>3. Calcule o resto da divisão de 1000! por $3^{300}$.</p>
-<p>4. Mostre que $7\mid (72^6+72^5+2)$ sem calcular o número no lado direito.</p>
-<p>5. Mostre por indução que $4^n\equiv 1+3n\pmod 9$ para todo $n\in\mathbb N$.</p>
-<p>6. Ache os últimos algarismo dos números $9^{9^9}$ e $7^{7^7}$.</p>
-<p>7. Seja $p$ um número primo e sejam $a,b\in\mathbb Z$. Mostre que<br />
-$(a+b)^p\equiv a^p+b^p\pmod p$.</p>
-<p>&nbsp;</p>
+<p>6. Implemente em uma linguagem de programação o algoritmo apresentado na seção 2 da apêndice do livro de Coutinho para calcular potências módulo $n$. O programa deverá ter como entrada $a$, $k$, e $n$ onde $a$ é um inteiro e $k$ e $n$ são inteiros positivos. A saída deverá ser o resto de $a^k$ módulo $n$.</p>
+<p>7. Um elemento de $\Z_n$ é dito <em>elemento primitivo </em>se todo elemento não nulo de $\Z_n$ pode ser escrito como uma potência de $\Z_n$.</p>
+<ol>
+<li>Ache elementos primitivos em $\Z_3$, $\Z_5$, $\Z_7$, $\Z_{11}$.</li>
+<li>Mostre que se $\Z_n$ possui elemento primitivo, então $n$ é primo.</li>
+</ol>
 			</div><!-- .entry-content -->
 	<footer class="entry-footer">
 			</footer><!-- .entry-footer -->
