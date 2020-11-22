@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+<title>Automorfismos de corpos e o grupo de Galois &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="http://schcs.github.io/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="http://schcs.github.io/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.16" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://schcs.github.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="http://schcs.github.io/index.php/ensino/grupos-e-corpos/automorfismos-de-corpos-e-o-grupo-de-galois/">
+
+<link rel="alternate" type="application/json+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Fautomorfismos-de-corpos-e-o-grupo-de-galois%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Fautomorfismos-de-corpos-e-o-grupo-de-galois%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</head>
+
+<body class="page-template-default page page-id-1052 page-child parent-pageid-684 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="http://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://schcs.github.io/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="http://schcs.github.io/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://schcs.github.io/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1052" class="post-1052 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Automorfismos de corpos e o grupo de Galois</h1>	</header>
+		<div class="entry-content">
+		<p>$\newcommand{\F}{\mathbb F}\newcommand{\E}{\mathbb E}\newcommand{\Q}{\mathbb Q}\newcommand{\R}{\mathbb R}\newcommand{\C}{\mathbb C}\newcommand{\fix}[1]{\mbox{Fix}(#1)}\newcommand{\gal}[2]{\mbox{Gal}(#1:#2)}\newcommand{\aut}[1]{\mbox{Aut}(#1)}$Seja $\E$ um corpo. Lembre que um mapa $\varphi:\E\to\E$ bijetivo &eacute; dito automorfismo de $\E$ se&nbsp;$\varphi(x+y)=\varphi(x)+\varphi(y)$ e $\varphi(xy)=\varphi(x)\varphi(y)$ vale para todo $x,y\in\E$. O conjunto de automorfismos de $\E$ &eacute; um grupo com a opera&ccedil;&atilde;o de composi&ccedil;&atilde;o e este grupo &eacute; denotado por $\aut \E$. Se $\varphi\in\aut\E$, ent&atilde;o definimos<br>
+\[<br>
+\fix\varphi=\{x\in \E\mid \varphi(x)=x\}.<br>
+\]</p>
+<p><strong>Exerc&iacute;cio.</strong> $\fix\varphi$ &eacute; um corpo, portanto $\E:\fix\varphi$ &eacute; uma extens&atilde;o de corpos.</p>
+<p><strong>Exemplo. </strong>A conjuga&ccedil;&atilde;o complexa&nbsp;$\varphi: x+iy\mapsto x-iy$ &eacute; um automorfismo de&nbsp; $\C$ e&nbsp; $\fix\varphi = \R$.</p>
+<p><strong>Exemplo.&nbsp;</strong>Seja $p$ um primo e seja $f(x)\in\F_p[x]$ um polin&ocirc;mio irredut&iacute;vel de grau $d$. Defina $\E=\F_p[x]/(f(x))$ e note que $\E$ &eacute; um corpo de $q=p^d$ elementos. Afirmamos que o mapa $\varphi:\E\to\E$ definido como $\alpha\mapsto \alpha^p$ &eacute; um automorfismo. &Eacute; bem conhecido que $(\alpha+\beta)^p=\alpha^p+\beta^p$ e $(\alpha\beta)^p=\alpha^\beta^p$, ent&atilde;o precisamos verificar apenas que $\varphi$ &eacute; uma bije&ccedil;&atilde;o. Como $\E$ &eacute; um corpo finito, &eacute; suficiente verificar que $\varphi$ &eacute; injetivo. Isso &eacute; verdade, pois se $\alpha,\beta\in\E$ tais que $\varphi(\alpha)=\varphi(\beta)$, ent&atilde;o<br>
+\[<br>
+0=\alpha^p-\beta^p=(\alpha-\beta)^p<br>
+\]<br>
+que implica que $\alpha-\beta=0$; ou seja $\alpha=\beta$. Temos ent&atilde;o que $\varphi\in\aut\E$. Al&eacute;m disso, $\fix\varphi$ &eacute; o conjunto de solu&ccedil;&otilde;es da equa&ccedil;&atilde;o $x^p=x$ e esta equa&ccedil;&atilde;o tem precisamente $p$ solu&ccedil;&otilde;es, nomeadamente, os elementos de $\F_p$. Logo&nbsp;$\fix\varphi=\F_p$. O automorfismo $\varphi$ &eacute; conhecido como o automorfismo de <a href="https://pt.wikipedia.org/wiki/Ferdinand_Georg_Frobenius">Frobenius</a>.</p>
+<p>Seja $\E:\F$ uma extens&atilde;o de corpos. Defina<br>
+\[<br>
+\gal \E\F=\{\alpha\in\aut\E\mid \F\subseteq\fix\alpha\}.<br>
+\]<br>
+Em outras palavras, $\gal\E\F$ &eacute; o conjunto de automorfismos $\varphi$ de $\E$ tais que $\varphi(x)=x$ para todo $x\in\F$. &Eacute; f&aacute;cil verificar que $\gal\E\F$ &eacute; um subgrupo de $\aut\E$. Este subgrupo &eacute; chamado de grupo de <a href="https://pt.wikipedia.org/wiki/%C3%89variste_Galois">Galois</a> da extens&atilde;o $\E:\F$ ou de grupo de Galois de $\E$ sobre $\F$.</p>
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>Se $\varphi\in\gal\E\F$, ent&atilde;o $\varphi$ &eacute; uma transforma&ccedil;&atilde;o $\F$-linear de $\E$.</p>
+<p><strong>Lema.&nbsp;</strong>Seja $\E:\F$ uma extens&atilde;o, $f(x)\in\F[x]$, $\alpha\in\E$ tal que $f(\alpha)=0$, e $\varphi\in\gal\E\F$. Ent&atilde;o $f(\varphi(\alpha))=0$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp; Exerc&iacute;cio. Revise a demonstra&ccedil;&atilde;o do fato bem conhecido que se um n&uacute;mero complexo &eacute; raiz de um polin&ocirc;mio com coeficientes reais, ent&atilde;o o conjugado complexo deste n&uacute;mero ser&aacute; tamb&eacute;m raiz do mesmo polin&ocirc;mio.</p>
+<p><strong>Exemplo.&nbsp;</strong>Determinemos $\gal\C\R$. Seja $\varphi\in\gal\C\R$. Como $\varphi$ &eacute; uma transforma&ccedil;&atilde;o $\R$-linear, as imagens $\varphi(1)$ e $\varphi(i)$ determinam $\varphi$. Como $1\in\R$, temos que $\varphi(1)=1$. Note que $\varphi(i)$ &eacute; raiz do polin&ocirc;mio $x^2+1$, ent&atilde;o $\varphi(i)$ ser&aacute; raiz do mesmo polin&ocirc;mio que implica que $\varphi(i)=\pm i$. Escolhendo $\varphi(i)=i$, obtemos que $\varphi=\mbox{id}_\C$, enquanto escolhendo $\varphi(i)=-i$, obtemos a conjuga&ccedil;&atilde;o complexa. Obtivemos ent&atilde;o que $\gal\C\R$ &eacute; um grupo de ordem 2.</p>
+<p><strong>Exemplo.&nbsp;</strong>Seja $\xi=\exp(2\pi i/3)$ (terceira raiz da unidade) e considere a extens&atilde;o $\E=\Q(\xi)$ de $\Q$. Note que $\xi$ &eacute; raiz do polin&ocirc;mio $x^3-1=(x-1)(x^2+x+1)$ e que o polin&ocirc;mio $x^2+x+1$ &eacute; irredut&iacute;vel sobre $\Q$. Em particular, $m_\xi(x)=x^2+x+1$ e $\E$ &eacute; um espa&ccedil;o vetorial de dimens&atilde;o $2$ sobre $\Q$. Al&eacute;m disso,<br>
+\[<br>
+\E=\left&lt;1,\xi\right&gt;_\Q=\{\alpha+\beta\xi\mid \alpha,\beta\in\Q\}<br>
+\]<br>
+e para determinar os automorfismos $\varphi\in\gal\E\Q$, &eacute; suficiente saber $\varphi(1)$ e $\varphi(\xi)$. Como no exemplo, anterior, $\varphi(1)=1$ e $\varphi(\xi)$ &eacute; raiz de $x^2+x+1$; consequentemente $\varphi(\xi)=\xi$ ou $\varphi(\xi)=\xi^2=\bar\xi$ (conjugado complexo). O primeiro caso d&aacute; o automorfismo identidade, enquanto o segundo d&aacute; o automorfismo<br>
+\[<br>
+\alpha+\beta\xi\mapsto \alpha+\beta\bar\xi \quad\mbox{onde}\quad\alpha,\beta\in\Q.<br>
+\]<br>
+(Na verdade, precisa verificar que isso &eacute; um automorfismo, mas isso &eacute; uma conta simples que o leitor pode fazer.) Ent&atilde;o $|\gal\E\Q|=2$.</p>
+<p><strong>Teorema.&nbsp;</strong>Seja $\F$ um corpo de carater&iacute;stica zero ou um corpo finito. Assuma que $\E$ &eacute; um corpo de decomposi&ccedil;&atilde;o de um polin&ocirc;mio irredut&iacute;vel $f(x)\in\F[x]$ com $\mbox{grau}\,f(x)=k$. Ent&atilde;o $G=\gal\E\F$ permuta as ra&iacute;zes de $f(x)$ transitivamente e $G$ pode ser visto como um subgrupo transitivo de $S_k$. Em particular $k$ divide $|G|$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Sejam $\alpha,\beta\in\E$ duas ra&iacute;zes de $f(x)$. Note que $m_\alpha(x)=m_\beta(x)=f(x)$, e&nbsp; $\F(\alpha)\cong\F(\beta)$. De fato, n&oacute;s provamos em um resultado anterior que existe um isomorfismo $\psi:\F(\alpha)\to\F(\beta)$ tal que $\psi|_\F=\mbox{id}_\F$ e $\psi(\alpha)=\beta$. Agora observe que $f(x)$ pode ser visto como um polin&ocirc;mio sobre $\F(\alpha)$ e tamb&eacute;m sobre $\F(\beta)$ e $\E$ &eacute; corpo de decomposi&ccedil;&atilde;o de $f(x)$ sobre estes corpos. Por um outro teorema anterior, existe isomorfismo (na verdade um automorfismo) $\varphi:\E\to\E$ tal que $\varphi|_{\F(\alpha)}=\psi$. Ora, observe que $\varphi\in\gal\E\F$ tal que $\varphi(\alpha)=\beta$. Isso implica que $\gal\E\F$ permuta transitivamente as ra&iacute;zes de $f(x)$.</p>
+<p>Para mostrar que $\gal\E\F$ pode ser considerado como um subgrupo de $S_k$, observe que $f(x)$ n&atilde;o possui ra&iacute;zes m&uacute;ltiplas em $\E$ (pois $\mbox{mdc}(f(x),f'(x))=1)$ e isso significa que $f(x)$ tem precisamente $k$ ra&iacute;zes, nomeadamente $\alpha_1,\ldots,\alpha_k$ mutualmente distintas. Se um elemento $\sigma$ de $\gal\E\F$ est&aacute; no n&uacute;cleo da a&ccedil;&atilde;o em $\{&nbsp;\alpha_1,\ldots,\alpha_k\}$, ent&atilde;o $\sigma$ fixa todas as ra&iacute;zes. Mas como $\E$ &eacute; gerado por estas ra&iacute;zes (sendo corpo de decomposi&ccedil;&atilde;o), $\sigma=\mbox{id}_\E$. Ent&atilde;o $\gal\E\F$ pode ser visto como um subgrupo do grupo sim&eacute;trico do conjunto&nbsp;&nbsp;$\{&nbsp;\alpha_1,\ldots,\alpha_k\}$ e este grupo sim&eacute;trico &eacute; claramente isomorfo a $S_k$. Finalmente, o fato que $k\mid |\gal\E\F|$ segue do Teorema Orbita-Estabilizador.</p>
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>Seja $\E$ um corpo e sejam $\varphi_1,\ldots,\varphi_k\in\aut\E$. Assuma que $\alpha_1,\ldots,\alpha_k\in\E$ tais que $\alpha_1\varphi_1+\cdots+\alpha_k\varphi_k=0$. Mostre que $\alpha_1=\cdots=\alpha_k=0$.</p>
+<p><strong>Lema.</strong>&nbsp;Seja $\E:\F$ uma extens&atilde;o finita. Ent&atilde;o $|\gal\E\F|\leq \dim_\F\E$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Seja $n=\dim_\F\E$ e assuma que $\varphi_1,\ldots,\varphi_{n+1}$ s&atilde;o elementos distintos de $\gal\E\F$. Vamos obter uma contradi&ccedil;&atilde;o. Seja $e_1,\ldots,e_n$ uma base de $\E$ sobre $\F$. Considere o sistema de equa&ccedil;&otilde;es lineares sobre $\E$:<br>
+\begin{eqnarray*}<br>
+\varphi_1(e_1)x_1+\cdots+\varphi_{n+1}(e_1)x_{n+1}&amp;=&amp;0\\<br>
+&amp;\vdots&amp;\\<br>
+\varphi_1(e_n)x_1+\cdots+\varphi_{n+1}(e_n)x_{n+1}&amp;=&amp;0.<br>
+\end{eqnarray*}<br>
+Como temos $n$ equa&ccedil;&otilde;es para $n+1$ inc&oacute;gnitas, existe uma solu&ccedil;&atilde;o n&atilde;o trivial $(\alpha_1,\ldots,\alpha_{n+1})\in\E^{n+1}$ e obtemos usando esta solu&ccedil;&atilde;o que<br>
+\[<br>
+0=\alpha_1\varphi_1(e_i)+\cdots+\alpha_{n+1}\varphi_{n+1}(e_i)=(\alpha_1\varphi_1+\cdots+\alpha_{n+1}\varphi_{n+1})(e_i)<br>
+\]<br>
+para todo $i\in\{1,\ldots,n\}$.<br>
+Isso implica que $\alpha_1\varphi_1+\cdots,\alpha_{n+1}\varphi_{n+1}=0$, mas isso &eacute; imposs&iacute;vel pelo exerc&iacute;cio anterior.</p>
+<p><strong>Lema.&nbsp;</strong>Seja $\F$ um corpo infinito (por exemplo um corpo de carater&iacute;stica zero), $\E$ uma extens&atilde;o de $\F$ e sejam $\alpha,\beta\in\E$ elementos alg&eacute;bricos sobre $\F$. Ent&atilde;o existe um elemento $\gamma\in\E$ tal que $\F(\alpha,\beta)=\F(\gamma)$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.</strong> Exerc&iacute;cio.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Seja $\F$ um corpo de carater&iacute;stica zero, $f(x)\in\F[x]$ um polin&ocirc;mio irredut&iacute;vel, e seja $\E$ o corpo de decomposi&ccedil;&atilde;o de $f(x)$. Ent&atilde;o $|\gal \E\F|=\dim_\F\E$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Seja $h=|\gal\E\F|$.. Pelo&nbsp; resultado anterior, $h\leq\dim_\F\E$, ent&atilde;o basta provar a outra desigualdade. Pelo lema anterior, temos que $\E=\F(\alpha)$ com algum $\alpha\in\E$. Afirmamos que $\mbox{grau}\,m_\alpha(x)\leq h$ e isso vai implicar que $\dim_\F\E\leq h$. Note que &eacute; suficiente achar um polin&ocirc;mio $g(x)\in\F[x]$ de grau $h$ tal que $\alpha$ &eacute; raiz de $g(x)$. Assuma que $\{\sigma_1,\ldots,\sigma_h\}=\gal\E\F$ com $\sigma_1=1$ e considere o polin&ocirc;mio<br>
+\[<br>
+g(x)=(x-\sigma_1(\alpha))\cdots(x-\sigma_h(\alpha))=x^h+\beta_{h-1}x^{h-1}+\cdots+\beta_1h+\beta_0.<br>
+\]<br>
+Como $g(x)$ &eacute; invariante por todo elemento $\sigma_i$ de $\gal\E\F$, temos que $g(x)\in\F[x]$. Al&eacute;m disso, $g(\alpha)=g(\sigma_1(\alpha))=0$ e a demonstra&ccedil;&atilde;o est&aacute; pronta.</p>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
