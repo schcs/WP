@@ -3,54 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+
 
 	
-<title>Grupos de permutações &#8211; Csaba Schneider</title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Grupos de permutações Comments Feed" href="https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.15"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='penscratch-2-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.15' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-block-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='https://schcs.github.io/WP/index.php/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Rotações e reflexões' href='https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/' />
-<link rel='next' title='O grupo alternado' href='https://schcs.github.io/WP/index.php/2019/09/23/o-grupo-alternado/' />
-<meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=438' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2F2019%2F09%2F17%2Fgrupos-de-permutacoes%2F" />
-<link rel="pingback" href="https://schcs.github.io/WP/xmlrpc.php"><script type="text/x-mathjax-config">
+<title>Grupos de permuta&ccedil;&otilde;es &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="http://schcs.github.io/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="http://schcs.github.io/index.php/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Grupos de permuta&ccedil;&otilde;es Comments Feed" href="http://schcs.github.io/index.php/2019/09/17/grupos-de-permutacoes/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.16" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://schcs.github.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+<link rel="prev" title="Rota&ccedil;&otilde;es e reflex&otilde;es" href="http://schcs.github.io/index.php/2019/09/16/rotacoes-e-reflexoes/">
+<link rel="next" title="O grupo alternado" href="http://schcs.github.io/index.php/2019/09/23/o-grupo-alternado/">
+
+<link rel="canonical" href="http://schcs.github.io/index.php/2019/09/17/grupos-de-permutacoes/">
+
+<link rel="alternate" type="application/json+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F09%2F17%2Fgrupos-de-permutacoes%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F09%2F17%2Fgrupos-de-permutacoes%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -64,19 +46,19 @@ MathJax.Hub.Config({
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="http://schcs.github.io/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle">
-				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"/><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"/></g></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://schcs.github.io/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="http://schcs.github.io/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://schcs.github.io/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
 
 	<div id="content" class="site-content">
 		
@@ -87,94 +69,94 @@ MathJax.Hub.Config({
 			
 <article id="post-438" class="post-438 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
-		<h1 class="entry-title">Grupos de permutações</h1>		
+		<h1 class="entry-title">Grupos de permuta&ccedil;&otilde;es</h1>		
 		<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/" rel="bookmark"><time class="entry-date published" datetime="2019-09-17T00:24:12+00:00">September 17, 2019</time><time class="updated" datetime="2019-09-23T23:55:42+00:00">September 23, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+			<span class="posted-on"><a href="http://schcs.github.io/index.php/2019/09/17/grupos-de-permutacoes/" rel="bookmark"><time class="entry-date published" datetime="2019-09-17T00:24:12+00:00">September 17, 2019</time><time class="updated" datetime="2019-09-23T23:55:42+00:00">September 23, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="http://schcs.github.io/index.php/author/schcs/">schcs</a></span></span>					</div>
+	</header>
 
 	<div class="entry-content">
-		<p>Se $\Omega$ é um conjunto, então $S(\Omega)$ denota o grupo de permutações de $\Omega$. Quando $\Omega=\{1,\ldots,n\}$, então  $S(\Omega)$ é escrito como $S_n$. Um <em>grupo de permutações</em> é um subgrupo de algum $S(\Omega)$.</p>
-<p>Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ <em>age</em> em $\Omega$ se está dada uma função<br />
-$$<br />
-\Omega\times G\rightarrow\Omega,\quad (\omega,g)\mapsto \omega g<br />
-$$<br />
-tal que as seguintes propriedades estão verdadeiras para todo $\omega\in\Omega$ e $g,h\in G$:</p>
+		<p>Se $\Omega$ &eacute; um conjunto, ent&atilde;o $S(\Omega)$ denota o grupo de permuta&ccedil;&otilde;es de $\Omega$. Quando $\Omega=\{1,\ldots,n\}$, ent&atilde;o&nbsp; $S(\Omega)$ &eacute; escrito como $S_n$. Um <em>grupo de permuta&ccedil;&otilde;es</em> &eacute; um subgrupo de algum $S(\Omega)$.</p>
+<p>Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ <em>age</em> em $\Omega$ se est&aacute; dada uma fun&ccedil;&atilde;o<br>
+$$<br>
+\Omega\times G\rightarrow\Omega,\quad (\omega,g)\mapsto \omega g<br>
+$$<br>
+tal que as seguintes propriedades est&atilde;o verdadeiras para todo $\omega\in\Omega$ e $g,h\in G$:</p>
 <ol>
 <li>$\omega 1=\omega$;</li>
 <li>$(\omega g)h=\omega(gh)$.</li>
 </ol>
-<p>Note que se $G$ age em $\Omega$, então $g$ induz um mapa $\psi_g:\Omega\rightarrow\Omega$ definido como $\omega\mapsto \omega g$. É fácil ver que $\psi_g\in S(\Omega)$ e que o mapa $\psi:g\mapsto \psi_g$ é um homomorfismo $G\rightarrow S(\Omega)$. O homomorfismo $\psi$ é chamado do <em>homomorfismo associado com a ação</em> de $G$. Por outro lado, se $\psi:G\rightarrow S(\Omega)$ é um homomorfismo, então $(\omega,g)\mapsto \omega \psi(g)$ é uma ação de $G$ em $\Omega$.</p>
-<p>Assuma que $G$ age em $\Omega$ com homomorfismo associado $\psi$. O <em>núcleo</em> da ação é $\ker\psi$. A ação de $G$ é dito <em>fiel </em>se $\ker\psi=1$. Neste caso $G\cong G\psi$ e $G$ pode ser considerado como um grupo de permutações. Considere a seguinte relação de equivalência sobre $\Omega$: $\alpha\sim\beta$ se e somente se $\beta=\alpha g$ com algum $G$. Uma classe de equivalência dessa relação é chamada de <em>órbita</em>. O grupo $G$ é dito transitivo em $\Omega$ se $\Omega$ é uma órbita. Se $\alpha\in\Omega$, então o estabilizador $G_\alpha$ de $\alpha$ em $G$ é definido como<br />
-$$<br />
-G_\alpha=\{g\in G\mid \alpha g=\alpha\}.<br />
-$$<br />
-É claro que $G_\alpha\leq G$. Além disso, o núcleo da ação é $\bigcap_{\alpha\in\Omega} G_\alpha$.</p>
-<p>Um grupo $G\leq S(\Omega)$ é dito regular se $G$ é transitivo e $G_\alpha=1$ para algum (todo) $\alpha\in \Omega$.</p>
-<p><strong>Lema. </strong>Sejam $\alpha,\beta\in\Omega$, $g\in G$ tais que $\alpha g=\beta$. Então $G_\beta=(G_\alpha)^g=g^{-1}G_\alpha g$.</p>
-<p><strong>Exemplo. </strong>Seja $G$ um grupo e $H\leq G$. Seja $\Omega=[G:H]$, o conjunto de classes laterais à direita de $H$ em $G$. Então $G$ age em $\Omega$: se $Hx\in\Omega$ e $g\in G$, então $(Hx)g=H(xg)$. É fácil ver que esta ação é transitiva. Além disso $H\leq G$ é o estabilizador do ponto $H1\in\Omega$. Portanto o núcleo da ação é<br />
-$$<br />
-\mbox{Core}_G(H)=\bigcap_{g\in G} H^g.<br />
-$$<br />
-O subgrupo na equação anterior é chamado do <em>core</em> de $H$ em $G$. Ele é o maior subgrupo normal de $G$ contido em $H$.</p>
-<p>Assuma que $G$ age nos conjuntos $\Omega_1$ e $\Omega_2$. Estas ações são <em>equivalentes</em> se existir uma bijeção $\varphi:\Omega_1\rightarrow \Omega_2$ tal que $(\omega g)\varphi=(\omega\varphi)g$ para todo $\omega\in\Omega$ e $g\in G$. O mapa $\varphi$ é chamada de <em>equivalência</em> entre as duas ações de $G$.</p>
-<p>Assuma que $G$ age em $\Omega$ transitivamente. Seja $\alpha\in\Omega$ fixo. Definamos um mapa $\varphi:\Omega\rightarrow [G:H]$. Para $\beta\in\Omega$, seja<br />
-$$<br />
-\beta\varphi=\{g\in G\mid \alpha g=\beta\}.<br />
+<p>Note que se $G$ age em $\Omega$, ent&atilde;o $g$ induz um mapa $\psi_g:\Omega\rightarrow\Omega$ definido como $\omega\mapsto \omega g$. &Eacute; f&aacute;cil ver que $\psi_g\in S(\Omega)$ e que o mapa $\psi:g\mapsto \psi_g$ &eacute; um homomorfismo $G\rightarrow S(\Omega)$. O homomorfismo $\psi$ &eacute; chamado do <em>homomorfismo associado com a a&ccedil;&atilde;o</em> de $G$. Por outro lado, se $\psi:G\rightarrow S(\Omega)$ &eacute; um homomorfismo, ent&atilde;o $(\omega,g)\mapsto \omega \psi(g)$ &eacute; uma a&ccedil;&atilde;o de $G$ em $\Omega$.</p>
+<p>Assuma que $G$ age em $\Omega$ com homomorfismo associado $\psi$. O <em>n&uacute;cleo</em> da a&ccedil;&atilde;o &eacute; $\ker\psi$. A a&ccedil;&atilde;o de $G$ &eacute; dito <em>fiel&nbsp;</em>se $\ker\psi=1$. Neste caso $G\cong G\psi$ e $G$ pode ser considerado como um grupo de permuta&ccedil;&otilde;es. Considere a seguinte rela&ccedil;&atilde;o de equival&ecirc;ncia sobre $\Omega$: $\alpha\sim\beta$ se e somente se $\beta=\alpha g$ com algum $G$. Uma classe de equival&ecirc;ncia dessa rela&ccedil;&atilde;o &eacute; chamada de <em>&oacute;rbita</em>. O grupo $G$ &eacute; dito transitivo em $\Omega$ se $\Omega$ &eacute; uma &oacute;rbita. Se $\alpha\in\Omega$, ent&atilde;o o estabilizador $G_\alpha$ de $\alpha$ em $G$ &eacute; definido como<br>
+$$<br>
+G_\alpha=\{g\in G\mid \alpha g=\alpha\}.<br>
+$$<br>
+&Eacute; claro que $G_\alpha\leq G$. Al&eacute;m disso, o n&uacute;cleo da a&ccedil;&atilde;o &eacute; $\bigcap_{\alpha\in\Omega} G_\alpha$.</p>
+<p>Um grupo $G\leq S(\Omega)$ &eacute; dito regular se $G$ &eacute; transitivo e $G_\alpha=1$ para algum (todo) $\alpha\in \Omega$.</p>
+<p><strong>Lema.&nbsp;</strong>Sejam $\alpha,\beta\in\Omega$, $g\in G$ tais que $\alpha g=\beta$. Ent&atilde;o $G_\beta=(G_\alpha)^g=g^{-1}G_\alpha g$.</p>
+<p><strong>Exemplo.&nbsp;</strong>Seja $G$ um grupo e $H\leq G$. Seja $\Omega=[G:H]$, o conjunto de classes laterais &agrave; direita de $H$ em $G$. Ent&atilde;o $G$ age em $\Omega$: se $Hx\in\Omega$ e $g\in G$, ent&atilde;o $(Hx)g=H(xg)$. &Eacute; f&aacute;cil ver que esta a&ccedil;&atilde;o &eacute; transitiva. Al&eacute;m disso $H\leq G$ &eacute; o estabilizador do ponto $H1\in\Omega$. Portanto o n&uacute;cleo da a&ccedil;&atilde;o &eacute;<br>
+$$<br>
+\mbox{Core}_G(H)=\bigcap_{g\in G} H^g.<br>
+$$<br>
+O subgrupo na equa&ccedil;&atilde;o anterior &eacute; chamado do <em>core</em> de $H$ em $G$. Ele &eacute; o maior subgrupo normal de $G$ contido em $H$.</p>
+<p>Assuma que $G$ age nos conjuntos $\Omega_1$ e $\Omega_2$. Estas a&ccedil;&otilde;es s&atilde;o <em>equivalentes</em> se existir uma bije&ccedil;&atilde;o $\varphi:\Omega_1\rightarrow \Omega_2$ tal que $(\omega g)\varphi=(\omega\varphi)g$ para todo $\omega\in\Omega$ e $g\in G$. O mapa $\varphi$ &eacute; chamada de <em>equival&ecirc;ncia</em> entre as duas a&ccedil;&otilde;es de $G$.</p>
+<p>Assuma que $G$ age em $\Omega$ transitivamente. Seja $\alpha\in\Omega$ fixo. Definamos um mapa $\varphi:\Omega\rightarrow [G:H]$. Para $\beta\in\Omega$, seja<br>
+$$<br>
+\beta\varphi=\{g\in G\mid \alpha g=\beta\}.<br>
 $$</p>
-<p><strong>Teorema (Teorema de Órbita e Estabilizador). </strong>O mapa $\varphi$ é uma equivalência bem definida entre as ações de $G$ sobre $\Omega$ e $[G:G_\alpha]$. Em particular, $|\Omega|=|G:G_\alpha|$.</p>
-<p><strong>Demonstração. </strong>Passo 1: $\beta\varphi$ é uma classe lateral à direita de $G_\alpha$ em $G$. Primeiro $\beta\varphi\neq\emptyset$ pela transitividade de $G$. Seja $g\in \beta\varphi$. Afirmamos que $\beta\varphi=G_\alpha g$. Seja $hg\in G_\alpha g$ com $h\in G_\alpha$. Então $\alpha (hg)=(\alpha h)g=\alpha g=\beta$. Portanto $G_\alpha g\subseteq \beta\varphi$. Seja $x\in \beta\varphi$. Então $\beta=\alpha g=\alpha x$, portanto $y:=xg^{-1}\in G_\alpha$. Logo, $x=yg\in G_\alpha g$. Obtivemos que $G_\alpha g=\beta\varphi$.</p>
-<p>Passo 2: $\varphi$ é uma bijeção. Assuma que $\beta\varphi=\gamma\varphi$ com alguns $\beta,\gamma\in\Omega$. Seja $g\in \beta\varphi$. Então $\beta=\alpha g=\gamma$ e $\beta=\gamma$. Seja $G_\alpha g\in [G:G_\alpha]$. Então $G_\alpha g=\beta\varphi$ onde $\beta=\alpha g$.</p>
-<p>Passo 3: $\varphi$ é uma equivalência. Seja $\omega\in \Omega$ e $g\in G$. Então $\omega g=\alpha hg$ onde $h\in G$ tal que $\omega=\alpha h$. Temos portanto que $(\omega g)\varphi= G_\alpha (hg)$. Por outro lado, $(\omega\varphi)g=(G_\alpha h)g$. Como $G_\alpha(hg)=(G_\alpha h)g$, temos que $\varphi$ é uma equivalência.</p>
-<p><strong>Corolário. </strong>Assuma que $G$ um grupo finito que age transitivamente em $\Omega$. Então $|\Omega|\mid |G|$.</p>
-<p>Assuma que $G$ age transitivamente em $\Omega$. Um conjunto $\Delta\subseteq \Omega$ é dito <em>bloco </em>se $\Delta g=\Delta$ ou $\Delta g\cap\Delta=\emptyset$ para todo $g\in G$.  Uma partição $\mathcal P$ de $\Omega$ é dito $G$-invariante se $\Delta g\in \mathcal P$ para todo $\Delta\in \mathcal P$.</p>
-<p><strong>Lema. </strong>Assuma que $G$ age em $\Omega$ transitivamente. As seguintes são verdadeiras.</p>
+<p><strong>Teorema (Teorema de &Oacute;rbita e Estabilizador).&nbsp;</strong>O mapa $\varphi$ &eacute; uma equival&ecirc;ncia bem definida entre as a&ccedil;&otilde;es de $G$ sobre $\Omega$ e $[G:G_\alpha]$. Em particular, $|\Omega|=|G:G_\alpha|$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Passo 1: $\beta\varphi$ &eacute; uma classe lateral &agrave; direita de $G_\alpha$ em $G$. Primeiro $\beta\varphi\neq\emptyset$ pela transitividade de $G$. Seja $g\in \beta\varphi$. Afirmamos que $\beta\varphi=G_\alpha g$. Seja $hg\in G_\alpha g$ com $h\in G_\alpha$. Ent&atilde;o $\alpha (hg)=(\alpha h)g=\alpha g=\beta$. Portanto $G_\alpha g\subseteq \beta\varphi$. Seja $x\in \beta\varphi$. Ent&atilde;o $\beta=\alpha g=\alpha x$, portanto $y:=xg^{-1}\in G_\alpha$. Logo, $x=yg\in G_\alpha g$. Obtivemos que&nbsp;$G_\alpha g=\beta\varphi$.</p>
+<p>Passo 2: $\varphi$ &eacute; uma bije&ccedil;&atilde;o. Assuma que $\beta\varphi=\gamma\varphi$ com alguns $\beta,\gamma\in\Omega$. Seja $g\in \beta\varphi$. Ent&atilde;o $\beta=\alpha g=\gamma$ e $\beta=\gamma$. Seja $G_\alpha g\in [G:G_\alpha]$. Ent&atilde;o $G_\alpha g=\beta\varphi$ onde $\beta=\alpha g$.</p>
+<p>Passo 3: $\varphi$ &eacute; uma equival&ecirc;ncia. Seja $\omega\in \Omega$ e $g\in G$. Ent&atilde;o $\omega g=\alpha hg$ onde $h\in G$ tal que $\omega=\alpha h$. Temos portanto que $(\omega g)\varphi= G_\alpha (hg)$. Por outro lado, $(\omega\varphi)g=(G_\alpha h)g$. Como $G_\alpha(hg)=(G_\alpha h)g$, temos que $\varphi$ &eacute; uma equival&ecirc;ncia.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Assuma que $G$ um grupo finito que age transitivamente em $\Omega$. Ent&atilde;o $|\Omega|\mid |G|$.</p>
+<p>Assuma que $G$ age transitivamente em $\Omega$. Um conjunto $\Delta\subseteq \Omega$ &eacute; dito <em>bloco&nbsp;</em>se $\Delta g=\Delta$ ou $\Delta g\cap\Delta=\emptyset$ para todo $g\in G$.&nbsp; Uma parti&ccedil;&atilde;o $\mathcal P$ de $\Omega$ &eacute; dito $G$-invariante se $\Delta g\in \mathcal P$ para todo $\Delta\in \mathcal P$.</p>
+<p><strong>Lema.&nbsp;</strong>Assuma que $G$ age em $\Omega$ transitivamente. As seguintes s&atilde;o verdadeiras.</p>
 <ol>
-<li>Se $\Delta$ é um bloco então $\mathcal P=\{\Delta g\mid g\in G\}$ é uma partição $G$-invariante de $\Omega$.</li>
-<li>Se $\mathcal P$ é uma partição $G$ invariante de $\Omega$ e $\Delta\in\mathcal P$, então $\Delta$ é um bloco.</li>
-<li>Seja $\omega\in\Omega$ fixo. O mapa $\Delta\mapsto \{\Delta g\mid g\in G\}$ é uma bijeção entre o conjunto de blocos $\Delta$ tal que $\omega\in\Delta$ e o conjunto de partições $G$-invariantes de $G$.</li>
+<li>Se $\Delta$ &eacute; um bloco ent&atilde;o $\mathcal P=\{\Delta g\mid g\in G\}$ &eacute; uma parti&ccedil;&atilde;o $G$-invariante de $\Omega$.</li>
+<li>Se $\mathcal P$ &eacute; uma parti&ccedil;&atilde;o $G$ invariante de $\Omega$ e $\Delta\in\mathcal P$, ent&atilde;o $\Delta$ &eacute; um bloco.</li>
+<li>Seja $\omega\in\Omega$ fixo. O mapa $\Delta\mapsto \{\Delta g\mid g\in G\}$ &eacute; uma bije&ccedil;&atilde;o entre o conjunto de blocos $\Delta$ tal que $\omega\in\Delta$ e o conjunto de parti&ccedil;&otilde;es $G$-invariantes de $G$.</li>
 </ol>
-<p><strong>Demonstração. </strong>Exercício.</p>
-<p>Se $G$ age em $\Omega$ transitivamente e $\omega\in\Omega$, então $\{\omega\}$ e $\Omega$ são blocos. Similarmente $\{\{\omega\}\mid\omega\in\Omega\}$ e $\{\Omega\}$ são partições $G$-invariantes. Um grupo transitivo é dito <em>primitivo</em> se estes são os únicos blocos. No caso contrario o grupo e chamado de <em>imprimitivo</em>.</p>
-<p>Assuma que $G$ age transitivamente em $\Omega$ e seja $\omega\in\Omega$ fixo. Se $\Delta$ é um bloco tal que $\omega\in\Delta$, então denota por $G_\Delta$ o estabilizador de $\Delta$ em $G$. Se $H\leq G$ tal que $G_\omega\leq H$, então denote por $\omega H$ a $H$-órbita que contém $\omega$.</p>
-<p><strong>Teorema. </strong>As seguintes são verdadeiras.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Exerc&iacute;cio.</p>
+<p>Se $G$ age em $\Omega$ transitivamente e $\omega\in\Omega$, ent&atilde;o $\{\omega\}$ e $\Omega$ s&atilde;o blocos. Similarmente $\{\{\omega\}\mid\omega\in\Omega\}$ e $\{\Omega\}$ s&atilde;o parti&ccedil;&otilde;es $G$-invariantes. Um grupo transitivo &eacute; dito <em>primitivo</em> se estes s&atilde;o os &uacute;nicos blocos. No caso contrario o grupo e chamado de <em>imprimitivo</em>.</p>
+<p>Assuma que $G$ age transitivamente em $\Omega$ e seja $\omega\in\Omega$ fixo. Se $\Delta$ &eacute; um bloco tal que $\omega\in\Delta$, ent&atilde;o denota por $G_\Delta$ o estabilizador de $\Delta$ em $G$. Se $H\leq G$ tal que $G_\omega\leq H$, ent&atilde;o denote por $\omega H$ a $H$-&oacute;rbita que cont&eacute;m $\omega$.</p>
+<p><strong>Teorema.&nbsp;</strong>As seguintes s&atilde;o verdadeiras.</p>
 <ol>
-<li>Se $\Delta$ é um bloco tal que $\omega\in\Delta$, então $G_\omega \leq G_\Delta\leq G$.</li>
-<li>Se $H$ é um subgrupo de $G$ tal que $G_\omega\leq H$, então $\Delta=\omega H$ é um bloco tal que $\omega\in\Delta$.</li>
-<li>Se $\Delta$ é um bloco tal que $\omega\in\Delta$, então $\omega(G_\Delta)=\Delta$. Se $H\leq G$ tal que $G_\omega\leq H$, então $G_{\omega H}=H$. Em particular os mapas $\Delta\mapsto G_\Delta$ e $H\mapsto \omega H$ são bijeções entre o conjunto de blocos $\Delta$ tal que $\omega\in\Delta$ e o conjunto de subgrupos $H$ tal que $G_\omega\leq H$.</li>
+<li>Se $\Delta$ &eacute; um bloco tal que $\omega\in\Delta$, ent&atilde;o $G_\omega \leq G_\Delta\leq G$.</li>
+<li>Se $H$ &eacute; um subgrupo de $G$ tal que $G_\omega\leq H$, ent&atilde;o $\Delta=\omega H$ &eacute; um bloco tal que $\omega\in\Delta$.</li>
+<li>Se $\Delta$ &eacute; um bloco tal que $\omega\in\Delta$, ent&atilde;o $\omega(G_\Delta)=\Delta$. Se $H\leq G$ tal que $G_\omega\leq H$, ent&atilde;o $G_{\omega H}=H$. Em particular os mapas $\Delta\mapsto G_\Delta$ e $H\mapsto \omega H$ s&atilde;o bije&ccedil;&otilde;es entre o conjunto de blocos $\Delta$ tal que $\omega\in\Delta$ e o conjunto de subgrupos $H$ tal que $G_\omega\leq H$.</li>
 </ol>
-<p><strong>Demonstralção. </strong>1. Claramente, $G_\Delta\leq G$. Seja $g\in G_\omega$. Então $\omega\in \Delta\cap \Delta g$, então $\Delta g=\Delta$. Logo $G_\omega\in G_\Delta$.</p>
-<p>2. Seja  $\Delta=\omega H$ e seja $g\in G$ tal que $\alpha \in \Delta\cap \Delta g=\omega H\cap \omega Hg$. Então existem $h_1,h_2\in H$ tal que $\alpha=\omega h_1=\omega h_2g$. Portanto, $\omega h_2gh_1^{-1}=\omega$, e $h_2gh_1^{-1}\in G_\omega$. Como $h_1,h_2\in H\geq G_\omega$, obtemos que $g\in H$ que implica que $\Delta g=\omega Hg=\omega H=\Delta$.</p>
-<p>3. Seja $\Delta$ um bloco tal que $\omega\in \Delta$ e seja $H=G_\Delta$. Afirmamos que $\omega H=\Delta$. Se $h\in H$, então $\omega h\in \Delta$ pela definição de $H$. Portanto $\omega H\subseteq \Delta$. Se $\delta\in\Delta$, então existe um $g\in G$ tal que $\omega g=\delta$. Neste caso, $\delta=\omega g\in \Delta\cap \Delta g$ que implica que $g\in G_\Delta$. Logo $\delta\in \omega H$.  Logo $\Delta\subseteq \omega H$ e obtemos a igualdade $\Delta= \omega H$.</p>
-<p>Seja agora $H\leq G$ tal que $G_\omega\leq H$ e seja $\Delta=\omega H$. Afirmamos que $H=G_\Delta$. Se $h\in H$ e $\delta\in \Delta$, então $\delta h=\omega gh\in\Delta$ com $g\in H$. Portanto $H\subseteq G_\Delta$. Se $g\in G_\Delta$, então $\omega g\in\Delta$ e $\omega g=\omega h$ com $h\in H$. Logo $\omega gh^{-1}=\omega$ e $gh^{-1}\in G_\omega$. Como $G_\omega\leq H$, tem-se que $gh^{-1}\in H$ e $g\in H$. Portanto $G_\Delta\leq H$ e $G_\Delta=H$.</p>
-<p><strong>Exercício. </strong>Assuma que $G$ age em $\Omega$ transitivamente, seja $\alpha\in\Omega$ e seja $H\leq G$. Então $H$ é transitivo se e somente se $G_\alpha H=G$.</p>
-<p><strong>Corolário. </strong>Seja $G$ um grupo transitivo agindo em $\Omega$ e seja $\omega\in\Omega$. Então $G$ é primitivo se e somente se $G_\omega$ é um subgrupo maximal.</p>
-<p>Um grupo $G$ agindo em $\Omega$ é dito 2-transitivo se  para todo $\alpha,\beta,\gamma,\delta\in\Omega$ com $\alpha\neq \beta$ e $\gamma\neq \delta$ existe $g\in G$ tal que $\alpha g=\gamma$ e $\beta g=\delta$.</p>
-<p><strong>Exercício. </strong>Demonstre que um grupo 2-transitivo é primitivo. Demonstre que $S_n$, $A_n$, $PSL(n,q)$. $PGL(n,q)$ são 2-transitivos e portanto primitivos.</p>
-			</div><!-- .entry-content -->
+<p><strong>Demonstral&ccedil;&atilde;o. </strong>1. Claramente, $G_\Delta\leq G$. Seja $g\in G_\omega$. Ent&atilde;o $\omega\in \Delta\cap \Delta g$, ent&atilde;o $\Delta g=\Delta$. Logo $G_\omega\in G_\Delta$.</p>
+<p>2. Seja&nbsp; $\Delta=\omega H$ e seja $g\in G$ tal que $\alpha \in \Delta\cap \Delta g=\omega H\cap \omega Hg$. Ent&atilde;o existem $h_1,h_2\in H$ tal que $\alpha=\omega h_1=\omega h_2g$. Portanto, $\omega h_2gh_1^{-1}=\omega$, e $h_2gh_1^{-1}\in G_\omega$. Como $h_1,h_2\in H\geq G_\omega$, obtemos que $g\in H$ que implica que $\Delta g=\omega Hg=\omega H=\Delta$.</p>
+<p>3. Seja $\Delta$ um bloco tal que $\omega\in \Delta$ e seja $H=G_\Delta$. Afirmamos que $\omega H=\Delta$. Se $h\in H$, ent&atilde;o $\omega h\in \Delta$ pela defini&ccedil;&atilde;o de $H$. Portanto $\omega H\subseteq \Delta$. Se $\delta\in\Delta$, ent&atilde;o existe um $g\in G$ tal que $\omega g=\delta$. Neste caso, $\delta=\omega g\in \Delta\cap \Delta g$ que implica que $g\in G_\Delta$. Logo $\delta\in \omega H$.&nbsp;&nbsp;Logo&nbsp;$\Delta\subseteq \omega H$ e obtemos a igualdade&nbsp;$\Delta= \omega H$.</p>
+<p>Seja agora $H\leq G$ tal que $G_\omega\leq H$ e seja $\Delta=\omega H$. Afirmamos que $H=G_\Delta$. Se $h\in H$ e $\delta\in \Delta$, ent&atilde;o $\delta h=\omega gh\in\Delta$ com $g\in H$. Portanto $H\subseteq G_\Delta$. Se $g\in G_\Delta$, ent&atilde;o $\omega g\in\Delta$ e $\omega g=\omega h$ com $h\in H$. Logo $\omega gh^{-1}=\omega$ e $gh^{-1}\in G_\omega$. Como $G_\omega\leq H$, tem-se que $gh^{-1}\in H$ e $g\in H$. Portanto $G_\Delta\leq H$ e $G_\Delta=H$.</p>
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>Assuma que $G$ age em $\Omega$ transitivamente, seja $\alpha\in\Omega$ e seja $H\leq G$. Ent&atilde;o $H$ &eacute; transitivo se e somente se $G_\alpha H=G$.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Seja $G$ um grupo transitivo agindo em $\Omega$ e seja $\omega\in\Omega$. Ent&atilde;o $G$ &eacute; primitivo se e somente se $G_\omega$ &eacute; um subgrupo maximal.</p>
+<p>Um grupo $G$ agindo em $\Omega$ &eacute; dito 2-transitivo se&nbsp; para todo $\alpha,\beta,\gamma,\delta\in\Omega$ com $\alpha\neq \beta$ e $\gamma\neq \delta$ existe $g\in G$ tal que $\alpha g=\gamma$ e $\beta g=\delta$.</p>
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>Demonstre que um grupo 2-transitivo &eacute; primitivo. Demonstre que $S_n$, $A_n$, $PSL(n,q)$. $PGL(n,q)$ s&atilde;o 2-transitivos e portanto primitivos.</p>
+			</div>
 
 	<footer class="entry-footer">
-					</footer><!-- .entry-footer -->
+					</footer>
 
 	
 <div class="entry-author">
 	<div class="author-avatar">
-		<img alt='' src='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />	</div><!-- .author-avatar -->
+		<img alt="" src="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">	</div>
 
 	<div class="author-heading">
 		<h2 class="author-title">Published by <span class="author-name">schcs</span></h2>
-	</div><!-- .author-heading -->
+	</div>
 
 	<p class="author-bio">
-				<a class="author-link" href="https://schcs.github.io/WP/index.php/author/schcs/" rel="author">
+				<a class="author-link" href="http://schcs.github.io/index.php/author/schcs/" rel="author">
 			View all posts by schcs		</a>
-	</p><!-- .author-bio -->
-</div><!-- .entry-auhtor -->
-</article><!-- #post-## -->
+	</p>
+</div>
+</article>
 
 			
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="https://schcs.github.io/WP/index.php/2019/09/16/rotacoes-e-reflexoes/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>Rotações e reflexões</a></div><div class="nav-next"><a href="https://schcs.github.io/WP/index.php/2019/09/23/o-grupo-alternado/" rel="next"><span class="meta-nav">Next &rsaquo;</span>O grupo alternado</a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="http://schcs.github.io/index.php/2019/09/16/rotacoes-e-reflexoes/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>Rota&ccedil;&otilde;es e reflex&otilde;es</a></div><div class="nav-next"><a href="http://schcs.github.io/index.php/2019/09/23/o-grupo-alternado/" rel="next"><span class="meta-nav">Next &rsaquo;</span>O grupo alternado</a></div></div>
 	</nav>
 			
 <div id="comments" class="comments-area">
@@ -183,39 +165,37 @@ $$</p>
 	
 	
 		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://schcs.github.io/WP/index.php/2019/09/17/grupos-de-permutacoes/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://schcs.github.io/WP/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
-<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
-<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='438' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://schcs.github.io/index.php/2019/09/17/grupos-de-permutacoes/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://schcs.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="438" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>			</form>
-			</div><!-- #respond -->
+			</div>
 	
-</div><!-- #comments -->
+</div>
 
 		
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 
-	</div><!-- #content -->
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
 						<div class="site-info">
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
-				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div><!-- .site-info -->
-		</div><!-- .site-info-wrapper -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
 
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/comment-reply.min.js?ver=4.9.15'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/wp-embed.min.js?ver=4.9.15'></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
 </body>
 </html>
