@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+<title>Corpos de decomposi&ccedil;&atilde;o e corpos finitos &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="http://schcs.github.io/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="http://schcs.github.io/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.16" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://schcs.github.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="http://schcs.github.io/index.php/ensino/grupos-e-corpos/corpos-de-decomposicao-e-corpos-finitos/">
+
+<link rel="alternate" type="application/json+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Fcorpos-de-decomposicao-e-corpos-finitos%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Fcorpos-de-decomposicao-e-corpos-finitos%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</head>
+
+<body class="page-template-default page page-id-1020 page-child parent-pageid-684 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="http://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://schcs.github.io/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="http://schcs.github.io/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://schcs.github.io/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1020" class="post-1020 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Corpos de decomposi&ccedil;&atilde;o e corpos finitos</h1>	</header>
+		<div class="entry-content">
+		<p>$\newcommand{\F}{\mathbb F}\newcommand{\E}{\mathbb E}\newcommand{\K}{\mathbb K}$Come&ccedil;amos por um lema simples.</p>
+<p><strong>Lema.&nbsp;</strong>Seja $\F$ um corpo e $f(x)\in\F[x]$ com grau maior ou igual a $1$.</p>
+<ol>
+<li>Existe uma extens&atilde;o finita $\E:\F$&nbsp;tal que $f(x)$ possui raiz em $\E$.</li>
+<li>Existe uma extens&atilde;o $\K:\F$&nbsp; finita tal que $f(x)$ pode ser escrito na forma<br>
+\[<br>
+f(x)=\alpha_0(x-\alpha_1)\cdots(x-\alpha_m).<br>
+\]</li>
+</ol>
+<p><strong>Demonstra&ccedil;&atilde;o. </strong>1.&nbsp;Escreva $f(x)=g_1(x)\cdots g_m(x)$ onde os $g_i(x)\in\F[x]$ s&atilde;o polin&ocirc;mios irredut&iacute;veis. Defina $\E=\F[x]/(g_1(x))$&nbsp; e observe que $\alpha=x+(g_1(x))\in\E$ &eacute; uma raiz de $g_1(x)$ e portanto $\alpha$ &eacute; raiz de $f(x)$.</p>
+<p>2. Provamos por indu&ccedil;&atilde;o no grau de $f(x)$. Se $f(x)$ tem grau 1, ent&atilde;o podemos tomar $\K=\F$&nbsp; e a afirma&ccedil;&atilde;o &eacute; verdadeira. Assuma que a afirma&ccedil;&atilde;o &eacute; verdadeira para polin&ocirc;mios de grau menor que $k$ e seja $f(x)\in\F[x]$ um polin&ocirc;mio de grau $k$. Pela afirma&ccedil;&atilde;o 1., existe uma extens&atilde;o finita $\E$ tal que $f(x)$ possui raiz em $\E$ e assim $f(x)=(x-\alpha_1)g(x)$ onde $\alpha\in\E$ e $g(x)\in\E[x]$ &eacute; um polin&ocirc;mio de grau $k-1$. Pela hip&oacute;tese de indu&ccedil;&atilde;o, existe uma extens&atilde;o finita $\K$ de $\E$ tal que<br>
+\[<br>
+g(x)=\alpha_0(x-\alpha_2)\cdots(x-\alpha_k)<br>
+\]<br>
+com $\alpha_0,\alpha_2,\ldots,\alpha_k\in\K$. Ora, escrevemos<br>
+\[<br>
+f(x)=(x-\alpha_1)g(x)=\alpha_0(x-\alpha_1)(x-\alpha_2)\cdots (x-\alpha_k).<br>
+\]<br>
+Como as extens&otilde;es $\K:\E$ e $\E:\F$ s&atilde;o finitas, a extens&atilde;o $\K:\F$ tamb&eacute;m &eacute; finita.</p>
+<p>Seja $\F$ um corpo e seja $f(x)\in\F[x]$ um polin&ocirc;mio com grau maior ou iguai a um. Seja $\K$ uma extens&atilde;o (finita) de $\F$ tal que<br>
+\[<br>
+f(x)=\alpha_0(x-\alpha_1)\cdots(x-\alpha_k)<br>
+\]<br>
+e considere $\E=\F(\alpha_1,\ldots,\alpha_k)$. O corpo $\E$ &eacute; chamado de um <em>corpo de decomposi&ccedil;&atilde;o</em> para o polin&ocirc;mio $f(x)$. Note que $\E$ &eacute; o menor subcorpo de $\K$ que cont&eacute;m todas as ra&iacute;zes de $f(x)$; ou seja, ele &eacute; o menor subcorpo de $\K$ sobre o qual $f(x)$ se decomp&otilde;e para produto de polin&ocirc;mios lineares (de grau um).</p>
+<p>O corpo de decomposi&ccedil;&atilde;o de um polin&ocirc;mio n&atilde;o &eacute; &uacute;nico, pois depende do corpo $\K$. No entanto, o seguinte resultado implica que ele &eacute; determinado unicamente a menos de isomorfismos.</p>
+<p>Nos seguintes resultados vamos usar a seguinte observa&ccedil;&atilde;o. Se $\varphi:\F_1\to\F_2$ &eacute; um isomorfismo de corpos, ent&atilde;o $\varphi$ induz um isomorfismo $\F_1[x]\to\F_2[x]$ dos an&eacute;is de polin&ocirc;mios<br>
+\[<br>
+\alpha_0+\alpha_1x+\cdots+\alpha_kx^k\mapsto&nbsp;\varphi(\alpha_0)+\varphi(\alpha_1)x+\cdots+\varphi(\alpha_k)x^k.<br>
+\]<br>
+Arriscando confus&atilde;o, o isomorfismo $\F_1[x]\to\F_2[x]$ ser&aacute; denotado tamb&eacute;m por $\varphi$.</p>
+<p><strong>Lema.&nbsp;</strong>Sejam $\F_1$ e $\F_2$ corpos e assuma que $\varphi:\F_1\to\F_2$ &eacute; um isomorfismo. Seja&nbsp; $f(x)\in\F_1[x]$ um polin&ocirc;mio irredut&iacute;vel e considere a imagem $\varphi(f(x))\in\F_2[x]$ (que tamb&eacute;m &eacute; irredut&iacute;vel). Suponha que $\alpha$ e $\beta$ s&atilde;o ra&iacute;zes de $f(x)$ e $\varphi(f(x))$ em alguma extens&atilde;o de $\F_1$ e $\F_2$, respetivamente. Ent&atilde;o existe um ismorfismo $\psi:\F_1(\alpha)\to\F_2(\beta)$ tal que $\psi|_{\F_1}=\varphi$ e $\psi(\alpha)=\beta$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Adaptar a demonstra&ccedil;&atilde;o do lema similar na aula anterior.</p>
+<p><strong>Lema.</strong> Sejam $\F_1$ e $\F_2$ corpos e seja $\varphi:\F_1\to\F_2$ um isomorfismo. Seja $f(x)\in\F_1[x]$ n&atilde;o constante e assuma que $\K_1$ e $\K_2$ s&atilde;o corpos de decomposi&ccedil;&atilde;o dos polin&ocirc;mios $f(x)$ e $\varphi(f(x))$, respetivamente. Ent&atilde;o existe um isomorfismo $\psi: \K_1\to \K_2$ tal que $\psi|_{\F_1}=\varphi$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Por indu&ccedil;&atilde;o no grau de $f(x)$. Se $\mbox{grau}\,f(x)=1$, ent&atilde;o $\K_1=\F_1$ e $\K_2=\F_2$ e podemos tomar $\psi=\varphi$. Assuma que o lema &eacute; v&aacute;lido para polin&ocirc;mios de grau menor que $k\geq 2$ e seja $f(x)\in\F_1[x]$ um polin&ocirc;mio de grau $k$. Seja $p(x)\in\F_1[x]$ um&nbsp; fator&nbsp; irredut&iacute;vel de $f(x)$. Ent&atilde;o $\varphi(p(x))\in\F_2[x]$ &eacute; um fator irredut&iacute;vel de $\varphi(f(x))$ e defina os corpos $\E_1=\F_1[x]/(p(x))$ e $\E_2=\F_2[x]/(\varphi(p(x))$. Existem $\alpha\in\E_1$ e $\beta\in\E_2$ tais que $m_\alpha(x)=p(x)$ e $m_{\beta}(x)=\varphi(p(x))$ e o lema anterior implica que existe um isomorfismo $\vartheta:\F_1(\alpha_1)\to\F_2(\alpha_2)$ tal que&nbsp; $\vartheta|_{\F_2}=\varphi$ e $\vartheta(\alpha)=\beta$. Escreva $f(x)=(x-\alpha)f_1(x)$ e<br>
+\[<br>
+\varphi(f(x))=\vartheta(f(x))=\vartheta((x-\alpha)f_1(x))=(x-\beta)\vartheta(f_1(x)).<br>
+\]<br>
+Escolha corpos de decomposi&ccedil;&atilde;o $\K_1$ e $\K_2$ para os polin&ocirc;mios $f_1(x)$ e $\vartheta(f_1(x))$ sobre $\F_1(\alpha)$ e $\F_2(\beta)$, respetivamente. Isso implica que $\K_1$ e $\K_2$ s&atilde;o corpos de decomposi&ccedil;&atilde;o para os polin&ocirc;mios $f(x)$ e $\vartheta(f(x))$ sobre $\F_1$ e $\F_2$, respetivamente. Pela hip&oacute;tese de indu&ccedil;&atilde;o, existe um isomorfismo $\psi:\K_1\to\K_2$ tal que $\psi|_{\F_1(\alpha)}=\vartheta$, e portanto $\psi|_{\F_1}=\vartheta|_{\F_1}=\varphi$.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Sejam $\F$ um corpo, $f(x)\in\F[x]$ um polin&ocirc;mio n&atilde;o constante, e sejam $\K_1$ e $\K_2$ corpos de decomposi&ccedil;&atilde;o de $f(x)$. Ent&atilde;o existe $\varphi:\K_1\to \K_2$ isomorfismo tal que $\varphi(\alpha)=\alpha$ para todo $\alpha\in\F$.</p>
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>Seja $p$ um primo e $d\geq 1$. Mostre que $x^{p^d}-x\in\F_p[x]$ n&atilde;o tem ra&iacute;zes m&uacute;ltiplas em nenhuma extens&atilde;o de $\F_p$.</p>
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>Seja $\F$ um corpo de carater&iacute;stica $p$. Mostre que<br>
+\[<br>
+(x+y)^{p^d}=x^{p^d}+y^{p^d}<br>
+\]<br>
+vale para todo $x,y\in\F$ e $d\geq 0$.</p>
+<p><strong>Teorema (Corpos finitos).</strong>&nbsp;As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.</p>
+<ol>
+<li>Se $\F$ &eacute; um corpo finito ent&atilde;o $|\F|=p^d$ com algum primo $p$ e $d\geq 1$.</li>
+<li>Se $p$ &eacute; um primo e $d\geq 1$, ent&atilde;o existe um corpo $\F$ com $p^d$ elementos e $\F$ &eacute; um corpo de decomposi&ccedil;&atilde;o do polin&ocirc;mio $x^{p^d}-x\in\F_p[x]$.</li>
+<li>Se $\F_1$ e $\F_2$ s&atilde;o corpos finitos tais que $|\F_1|=|\F_2|$ ent&atilde;o $\F_1$ e $\F_2$ s&atilde;o isomorfos.</li>
+</ol>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>1. Como $\F$ &eacute; finito, a sua carater&iacute;stica &eacute; um primo $p$ e tem-se que $\F$ &eacute; uma extens&atilde;o de $\F_p$. Tomando $d=\dim_{\F_p}\F$, temos que $|\F|=p^d$.</p>
+<p>2. Ponha $q=p^d$, seja $\K$ o corpo de decomposi&ccedil;&atilde;o do polin&ocirc;mio $g(x)=x^{q}-x$ e seja $\F$ o conjunto de ra&iacute;zes de&nbsp; $g(x)$ em $\K$. Note que se $\alpha,\beta\in\F$, ent&atilde;o $\alpha^q=\alpha$ e $\beta^q=\beta$ e temos que<br>
+\[<br>
+(\alpha\pm\beta)^q=(\alpha^q\pm\beta)^{p^d}=\alpha\pm\beta \quad\mbox{e}\quad(\alpha/\beta)^q=\alpha/\beta^q=\alpha/\beta.<br>
+\]<br>
+Claramente, $0\in\F$ e $1\in\F$. Portanto $\F$ &eacute; um corpo e como $\K$ foi corpo de decomposi&ccedil;&atilde;o, segue que&nbsp; $\F=\K$. Al&eacute;m disso, como, pelo exerc&iacute;cio anterior, $g(x)$ n&atilde;o possui ra&iacute;zes m&uacute;ltiplas em $\K$, temos que $|\F|=q=p^d$ e $\F$ &eacute; um corpo de ordem desejada.</p>
+<p>Se $\E$ &eacute; um corpo arbitr&aacute;rio de $q=p^d$ elementos, ent&atilde;o $\E^{*}=\E\setminus\{0\}$ &eacute; um grupo de $q-1$ elementos, e o Teorema de Lagrange implica que $x^q=x$ para todo $x\in\E^*$. Mas esta equa&ccedil;&atilde;o vale para $0\in\E$ tamb&eacute;m. Segue que<br>
+\[<br>
+x^q-x=\prod_{\alpha\in\E}(x-\alpha)<br>
+\]<br>
+e portanto $\E$ &eacute; um corpo de decomposi&ccedil;&atilde;o de $x^q-x$. Em particular $\E$ &eacute; isomorfo ao corpo $\F$ no par&aacute;grafo anterior e assim verificamos tamb&eacute;m a afirma&ccedil;&atilde;o 3.</p>
+<p>Se $q=p^d$ com algum primo $p$, ent&atilde;o existe (a menos de isomorfismo) um &uacute;nico corpo de cardinalidade $q$ e este corpo &eacute; denotado por $\F_q$.</p>
+<p>O seguinte teorema segue diretamente de um resultado que provamos quando estudamos grupos c&iacute;clicos.</p>
+<p><strong>Teorema.&nbsp;</strong>Se $\F$ &eacute; um corpo finito, ent&atilde;o $\F^*$ &eacute; um grupo c&iacute;clico.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Seja $\E:\F$ uma extens&atilde;o de corpos finitos. Ent&atilde;o $\E=\F(\alpha)$ com algum $\alpha\in\E$. Em particular, existe um polin&ocirc;mio irredut&iacute;vel $f(x)\in\F[x]$ tal que $\E\cong \F[x]/(f(x))$. Em particular se $\E$ &eacute; um corpo de $p^d$ elementos, ent&atilde;o $\E\cong \F_p[x]/(f(x))$ onde $f(x)\in\F_p[x]$ &eacute; um polin&ocirc;mio irredut&iacute;vel de grau $d$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>O grupo $\E^*$ &eacute; c&iacute;clico e seja $\alpha$ um gerador de $\E^*$. Ent&atilde;o $\F(\alpha)=\E$. Tomando $f(x)=m_\alpha(x)\in\F[x]$, temos que $\E=\F(\alpha)\cong \F[x]/(f(x))$.</p>
+<p>Uma consequ&ecirc;ncia particular do corol&aacute;rio anterior &eacute; que para todo $p$ primo e para todo $d$ natural, existe um polin&ocirc;mio irredut&iacute;vel $f(x)\in\F_p[x]$ de grau $d$. O corpo $\F_{p^d}$ pode ser constru&iacute;do como $\F_p[x]/(f(x))$.</p>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
