@@ -3,54 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+
 
 	
-<title>Funções deriváveis &#8211; Csaba Schneider</title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Funções deriváveis Comments Feed" href="https://schcs.github.io/WP/index.php/2019/05/31/funcoes-derivaveis/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.15"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='penscratch-2-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.15' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-block-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='https://schcs.github.io/WP/index.php/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='Funções contínuas sobre conjuntos compactos e funções uniformemente contínuas' href='https://schcs.github.io/WP/index.php/2019/05/29/funcoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas/' />
-<link rel='next' title='Funções deriváveis em um intervalo' href='https://schcs.github.io/WP/index.php/2019/06/03/funcoes-derivaveis-em-um-intervalo/' />
-<meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/2019/05/31/funcoes-derivaveis/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=251' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2F2019%2F05%2F31%2Ffuncoes-derivaveis%2F" />
-<link rel="pingback" href="https://schcs.github.io/WP/xmlrpc.php"><script type="text/x-mathjax-config">
+<title>Fun&ccedil;&otilde;es deriv&aacute;veis &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="http://schcs.github.io/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="http://schcs.github.io/index.php/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Fun&ccedil;&otilde;es deriv&aacute;veis Comments Feed" href="http://schcs.github.io/index.php/2019/05/31/funcoes-derivaveis/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.16" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://schcs.github.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+<link rel="prev" title="Fun&ccedil;&otilde;es cont&iacute;nuas sobre conjuntos compactos e fun&ccedil;&otilde;es uniformemente cont&iacute;nuas" href="http://schcs.github.io/index.php/2019/05/29/funcoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas/">
+<link rel="next" title="Fun&ccedil;&otilde;es deriv&aacute;veis em um intervalo" href="http://schcs.github.io/index.php/2019/06/03/funcoes-derivaveis-em-um-intervalo/">
+
+<link rel="canonical" href="http://schcs.github.io/index.php/2019/05/31/funcoes-derivaveis/">
+
+<link rel="alternate" type="application/json+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F05%2F31%2Ffuncoes-derivaveis%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F05%2F31%2Ffuncoes-derivaveis%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -64,19 +46,19 @@ MathJax.Hub.Config({
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="http://schcs.github.io/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle">
-				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"/><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"/></g></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://schcs.github.io/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="http://schcs.github.io/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://schcs.github.io/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
 
 	<div id="content" class="site-content">
 		
@@ -87,120 +69,120 @@ MathJax.Hub.Config({
 			
 <article id="post-251" class="post-251 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
-		<h1 class="entry-title">Funções deriváveis</h1>		
+		<h1 class="entry-title">Fun&ccedil;&otilde;es deriv&aacute;veis</h1>		
 		<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/31/funcoes-derivaveis/" rel="bookmark"><time class="entry-date published" datetime="2019-05-31T11:02:47+00:00">May 31, 2019</time><time class="updated" datetime="2019-06-03T13:47:43+00:00">June 3, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+			<span class="posted-on"><a href="http://schcs.github.io/index.php/2019/05/31/funcoes-derivaveis/" rel="bookmark"><time class="entry-date published" datetime="2019-05-31T11:02:47+00:00">May 31, 2019</time><time class="updated" datetime="2019-06-03T13:47:43+00:00">June 3, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="http://schcs.github.io/index.php/author/schcs/">schcs</a></span></span>					</div>
+	</header>
 
 	<div class="entry-content">
-		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}\newcommand{\Q}{\mathbb Q}$Seja $f:X\subseteq\R\rightarrow\R$ uma função e seja $a\in X\cap X&#8217;$. Diz-se que $f(x)$ é derivável no ponto $a$ se existe<br />
-$$<br />
-\lim_{x\rightarrow a}\frac{f(x)-f(a)}{x-a}=\lim_{h\rightarrow 0}\frac{f(a+h)-f(a)}h.<br />
-$$<br />
-Neste caso o limite é chamado de <em>derivado de $f(x)$ no ponto $a$ </em>e é denotado por<em> $f'(a)$. </em>Se $f(x)$ é derivável em todos os pontos $a\in X$, então a função $f(x)$ é dito <em>derivável</em>. Neste caso, pode-se definir uma nova função $f&#8217;:X\rightarrow\R$ com a regra $a\mapsto f'(a)$. A função $f'(x)$ é chamada a <em>função derivada</em> de $f$.</p>
-<p><strong>Lema. </strong>Se $f:X\rightarrow\R$ é derivável em um ponto $a\in X\cap X&#8217;$, então $f$ é contínua neste ponto.</p>
-<p><strong>Demonstração. </strong>Assuma que $f(x)$ é derivável no ponto $a$. Isto implica que<br />
-$$<br />
-\lim_{x\rightarrow a}(f(x)-f(a))=\lim_{x\rightarrow a}\frac{f(x)-f(a)}{x-a}(x-a)=f'(a)\lim_{x\rightarrow a}(x-a)=0.<br />
-$$<br />
-Portanto $\lim_{x\rightarrow a}f(x)=f(a)$ que implica que $f(x)$ é contínua em $a$.</p>
-<p>Similarmente à derivada, pode-se definir as <em>derivadas laterais</em> de $f:X\subseteq\R\rightarrow\R$. Assuma que $a\in X\cap X&#8217;_+$. Se existir o limite<br />
-$$<br />
-\lim_{x\rightarrow a+}\frac{f(x)-f(a)}{x-a},<br />
-$$<br />
-ele é dito <em>derivada lateral à direita</em> de $f(x)$ no ponto $a$. A <em>derivada lateral à esquerda</em> pode ser definida analogamente.</p>
-<p><strong>Teorema. </strong>Sejam $f,g:X\subseteq\R\rightarrow\R$ funções deriváveis no ponto $a\in X\cap X&#8217;$. As seguintes são válidas</p>
+		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}\newcommand{\Q}{\mathbb Q}$Seja $f:X\subseteq\R\rightarrow\R$ uma fun&ccedil;&atilde;o e seja $a\in X\cap X&rsquo;$. Diz-se que $f(x)$ &eacute; deriv&aacute;vel no ponto $a$ se existe<br>
+$$<br>
+\lim_{x\rightarrow a}\frac{f(x)-f(a)}{x-a}=\lim_{h\rightarrow 0}\frac{f(a+h)-f(a)}h.<br>
+$$<br>
+Neste caso o limite &eacute; chamado de&nbsp;<em>derivado de $f(x)$ no ponto $a$&nbsp;</em>e &eacute; denotado por<em> $f'(a)$.&nbsp;</em>Se $f(x)$ &eacute; deriv&aacute;vel em todos os pontos $a\in X$, ent&atilde;o a fun&ccedil;&atilde;o $f(x)$ &eacute; dito <em>deriv&aacute;vel</em>. Neste caso, pode-se definir uma nova fun&ccedil;&atilde;o $f&rsquo;:X\rightarrow\R$ com a regra $a\mapsto f'(a)$. A fun&ccedil;&atilde;o $f'(x)$ &eacute; chamada a <em>fun&ccedil;&atilde;o derivada</em> de $f$.</p>
+<p><strong>Lema.&nbsp;</strong>Se $f:X\rightarrow\R$ &eacute; deriv&aacute;vel em um ponto $a\in X\cap X&rsquo;$, ent&atilde;o $f$ &eacute; cont&iacute;nua neste ponto.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Assuma que $f(x)$ &eacute; deriv&aacute;vel no ponto $a$. Isto implica que<br>
+$$<br>
+\lim_{x\rightarrow a}(f(x)-f(a))=\lim_{x\rightarrow a}\frac{f(x)-f(a)}{x-a}(x-a)=f'(a)\lim_{x\rightarrow a}(x-a)=0.<br>
+$$<br>
+Portanto $\lim_{x\rightarrow a}f(x)=f(a)$ que implica que $f(x)$ &eacute; cont&iacute;nua em $a$.</p>
+<p>Similarmente &agrave; derivada, pode-se definir as <em>derivadas laterais</em> de $f:X\subseteq\R\rightarrow\R$. Assuma que $a\in X\cap X&rsquo;_+$. Se existir o limite<br>
+$$<br>
+\lim_{x\rightarrow a+}\frac{f(x)-f(a)}{x-a},<br>
+$$<br>
+ele &eacute; dito <em>derivada lateral &agrave; direita</em> de $f(x)$ no ponto $a$. A <em>derivada lateral &agrave; esquerda</em> pode ser definida analogamente.</p>
+<p><strong>Teorema.&nbsp;</strong>Sejam $f,g:X\subseteq\R\rightarrow\R$ fun&ccedil;&otilde;es deriv&aacute;veis no ponto $a\in X\cap X&rsquo;$. As seguintes s&atilde;o v&aacute;lidas</p>
 <ol>
-<li>$f(x)+g(x)$ é derivável no ponto $a$ e $(f+g)'(a)=f'(a)+g'(a)$.</li>
-<li>$\alpha f(x)$ é derivável no ponto $a$ e $(\alpha f)'(a)=\alpha f'(a)$.</li>
-<li>$f(x)g(x)$ é derivável no ponto $a$ e $(fg)'(a)=f'(a)g(a)+f(a)g'(a)$.</li>
-<li>Se $g(x)\neq 0$ para todo $x\in X$, então $1/g(x)$ é derivável no ponto $a$ e $(1/g)'(a)=-g'(a)/g(a)^2$.</li>
+<li>$f(x)+g(x)$ &eacute; deriv&aacute;vel no ponto $a$ e $(f+g)'(a)=f'(a)+g'(a)$.</li>
+<li>$\alpha f(x)$ &eacute; deriv&aacute;vel no ponto $a$ e $(\alpha f)'(a)=\alpha f'(a)$.</li>
+<li>$f(x)g(x)$ &eacute; deriv&aacute;vel no ponto $a$ e $(fg)'(a)=f'(a)g(a)+f(a)g'(a)$.</li>
+<li>Se $g(x)\neq 0$ para todo $x\in X$, ent&atilde;o $1/g(x)$ &eacute; deriv&aacute;vel no ponto $a$ e $(1/g)'(a)=-g'(a)/g(a)^2$.</li>
 </ol>
-<p><strong>Demonstração. </strong>Demonstraremos apenas a afirmação 3. Considere<br />
-\begin{eqnarray*}<br />
-\lim_{x\rightarrow a}\frac{(fg)(x)-(fg)(a)}{x-a}&amp;=&amp;\lim_{x\rightarrow a}\frac{f(x)g(x)-f(a)g(a)}{x-a}\\&amp;=&amp;\lim_{x\rightarrow a}\frac{f(x)g(x)-f(a)g(x)+f(a)g(x)-f(a)g(a)}{x-a}\\&amp;=&amp;\lim_{x\rightarrow a}\frac{g(x)(f(x)-f(a))+f(a)(g(x)-g(a))}{x-a}\\&amp;=&amp;\lim_{x\rightarrow a}\frac{g(x)(f(x)-f(a))}{x-1}+\lim_{x\rightarrow a}\frac{f(a)(g(x)-g(a))}{x-a}\\&amp;=&amp;g(a)f'(a)+f(a)g'(a).<br />
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Demonstraremos apenas a afirma&ccedil;&atilde;o 3. Considere<br>
+\begin{eqnarray*}<br>
+\lim_{x\rightarrow a}\frac{(fg)(x)-(fg)(a)}{x-a}&amp;=&amp;\lim_{x\rightarrow a}\frac{f(x)g(x)-f(a)g(a)}{x-a}\\&amp;=&amp;\lim_{x\rightarrow a}\frac{f(x)g(x)-f(a)g(x)+f(a)g(x)-f(a)g(a)}{x-a}\\&amp;=&amp;\lim_{x\rightarrow a}\frac{g(x)(f(x)-f(a))+f(a)(g(x)-g(a))}{x-a}\\&amp;=&amp;\lim_{x\rightarrow a}\frac{g(x)(f(x)-f(a))}{x-1}+\lim_{x\rightarrow a}\frac{f(a)(g(x)-g(a))}{x-a}\\&amp;=&amp;g(a)f'(a)+f(a)g'(a).<br>
 \end{eqnarray*}</p>
-<p><strong>Teorema. </strong>Sejam $f:X\rightarrow Y$ e $g:Y\rightarrow\R$ funções e assuma que $a\in X\cap X&#8217;$ e $b=f(a)\in Y\cap Y&#8217;$. Se $f$ é derivável no ponto $a$ e $g$  é derivável no ponto $b$, então $g\circ f$ é derivável no ponto $a$ e $(g\circ f)'(a)=g'(f(a))\cdot f'(a)$.</p>
-<p><strong>Demonstração. </strong>Seja $(x_n)$ uma sequência com $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Ponha $y_n=f(x_n)$. Sejam<br />
-$$<br />
-N_1=\{n\in\N^+\mid f(x_n)\neq f(a)\}<br />
-$$<br />
-e<br />
-$$<br />
-N_2=\{n\in\N^+\mid f(x_n)=f(a)\}.<br />
-$$<br />
-Se $n\in N_1$, então<br />
-$$<br />
-\frac{g(f(x_n))-g(f(a))}{x_n-a}=\frac{g(y_n)-g(b)}{y_n-b}\frac{f(x_n)-f(a)}{x_n-a}.<br />
-$$<br />
-Portanto, se $N_1$ é infinito, então<br />
-$$<br />
-\lim_{n\in N_1,n\rightarrow\infty}\frac{g(f(x_n))-g(f(a))}{x_n-a}=g'(b)f'(a).<br />
-$$<br />
-Similarmente, se $N_2$ é infinito, então $f'(a)=0$, e<br />
-$$<br />
-\lim_{n\in N_2,n\rightarrow\infty} \frac{g(f(x_n))-g(f(a))}{x_n-a}=0=g'(f(a))f'(a)<br />
-$$<br />
-Portanto, em qualquer hipótese vale que<br />
-$$<br />
-\lim_{n\rightarrow\infty}\frac{g(f(x_n))-g(f(a))}{x-a}=g'(b)f'(a).<br />
-$$.<br />
-Como a sequência $(x_n)$ foi escolhido arbitrariamente,<br />
-$$<br />
-\lim_{x\rightarrow a}\frac{g(f(x))-g(f(a))}{x-a}=g'(b)f'(a).<br />
+<p><strong>Teorema.&nbsp;</strong>Sejam $f:X\rightarrow Y$ e $g:Y\rightarrow\R$ fun&ccedil;&otilde;es e assuma que $a\in X\cap X&rsquo;$ e $b=f(a)\in Y\cap Y&rsquo;$. Se $f$ &eacute; deriv&aacute;vel no ponto $a$ e $g$&nbsp; &eacute; deriv&aacute;vel no ponto $b$, ent&atilde;o $g\circ f$ &eacute; deriv&aacute;vel no ponto $a$ e $(g\circ f)'(a)=g'(f(a))\cdot f'(a)$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Seja $(x_n)$ uma sequ&ecirc;ncia com $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Ponha $y_n=f(x_n)$. Sejam<br>
+$$<br>
+N_1=\{n\in\N^+\mid f(x_n)\neq f(a)\}<br>
+$$<br>
+e<br>
+$$<br>
+N_2=\{n\in\N^+\mid f(x_n)=f(a)\}.<br>
+$$<br>
+Se $n\in N_1$, ent&atilde;o<br>
+$$<br>
+\frac{g(f(x_n))-g(f(a))}{x_n-a}=\frac{g(y_n)-g(b)}{y_n-b}\frac{f(x_n)-f(a)}{x_n-a}.<br>
+$$<br>
+Portanto, se $N_1$ &eacute; infinito, ent&atilde;o<br>
+$$<br>
+\lim_{n\in N_1,n\rightarrow\infty}\frac{g(f(x_n))-g(f(a))}{x_n-a}=g'(b)f'(a).<br>
+$$<br>
+Similarmente, se $N_2$ &eacute; infinito, ent&atilde;o $f'(a)=0$, e<br>
+$$<br>
+\lim_{n\in N_2,n\rightarrow\infty}&nbsp;\frac{g(f(x_n))-g(f(a))}{x_n-a}=0=g'(f(a))f'(a)<br>
+$$<br>
+Portanto, em qualquer hip&oacute;tese vale que<br>
+$$<br>
+\lim_{n\rightarrow\infty}\frac{g(f(x_n))-g(f(a))}{x-a}=g'(b)f'(a).<br>
+$$.<br>
+Como a sequ&ecirc;ncia $(x_n)$ foi escolhido arbitrariamente,<br>
+$$<br>
+\lim_{x\rightarrow a}\frac{g(f(x))-g(f(a))}{x-a}=g'(b)f'(a).<br>
 $$</p>
-<p><strong>Corolário. </strong>Seja $f:X\rightarrow Y$ uma bijeção com inversa $g:Y\rightarrow X$. Assuma que $f(x)$ é derivável em $a\in X\cap X&#8217;$ e $g(y)$ é contínua em $b=f(a)$. Então $g$ é derivável no ponto $b$ se e somente se $f'(a)\neq 0$. Neste caso $g'(b)=1/f'(a)$.</p>
-<p><strong>Demonstração. </strong>Verifiquemos primeiro que $b\in Y\cap Y&#8217;$. Claramente, $f(a)=b\in Y$. Como $x\in X&#8217;$, existe uma sequência $(x_n)$ tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Como $f$ é injetiva e contínua no ponto $a$, temos que $f(x_n)\neq f(a)=b$ e que $f(x_n)\rightarrow b$. Portanto $b\in Y&#8217;$.</p>
-<p>Assuma que $g$ é derivável no ponto $b$. Neste caso $g\circ f=\mbox{id}_X$, e então $(g\circ f)'(a)=1$. Por outro lado, a regra da cadeia nos fornece,<br />
-$$<br />
-1=(g\circ f)'(a)=g'(f(a))f'(a).<br />
-$$<br />
-Portanto, $g'(b)=g'(f(a))=1/f'(a)$.<br />
-Reciprocamente, assuma que $f'(a)\neq 0$. Seja $y_n\in Y\setminus\{b\}$ uma sequência de pontos tal que  $y_n\rightarrow b$. Como $g$ é contínua em $b$, obtemos que $x_n\rightarrow g(b)=a$ onde $x_n=g(y_n)$. Portanto,<br />
-\begin{eqnarray*}<br />
-\lim_{n\rightarrow\infty}\frac{g(y_n)-g(b)}{y_n-b}&amp;=&amp;\lim_{n\rightarrow\infty}\left(\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
-\left(\lim_{n\rightarrow\infty}\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br />
-\left(\lim_{n\rightarrow\infty}\frac{f(x_n)-f(a)}{x_n-a}\right)^{-1}=1/f'(a).<br />
-\end{eqnarray*}<br />
-Logo existe $g'(b)$ e é igual a $1/f'(a)$.</p>
-<p><strong>Teorema.</strong> Seja $f:X\rightarrow\R$ uma função derivável no ponto $a\in X\cap X&#8217;_+$ com $f&#8217;_+(a)&gt;0$. Então existe $\delta&gt;0$ tal que se $x\in(a,a+\delta)$, então $f(a)&lt;f(x)$.</p>
-<p><strong>Demonstração.</strong> Temos<br />
-$$<br />
-\lim_{x\rightarrow a+}\frac{f(x)-f(a)}{x-a}=f&#8217;_+(a)&gt;0.<br />
-$$<br />
-Usando a definição de limite com $\varepsilon =f&#8217;_+(a)/2$, obtemos que existe $\delta&gt;0$ tal que $(f(x)-f(a))(x-a)&gt;0$ se $x\in(a,a+\delta)$. Se $x$ é tal número real, então $x-a&gt;0$ e segue que $f(x)-f(a)&gt;0$; ou seja $f(x)&gt;f(a)$.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Seja $f:X\rightarrow Y$ uma bije&ccedil;&atilde;o com inversa $g:Y\rightarrow X$. Assuma que $f(x)$ &eacute; deriv&aacute;vel em $a\in X\cap X&rsquo;$ e $g(y)$ &eacute; cont&iacute;nua em $b=f(a)$. Ent&atilde;o $g$ &eacute; deriv&aacute;vel no ponto $b$ se e somente se $f'(a)\neq 0$. Neste caso $g'(b)=1/f'(a)$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o. </strong>Verifiquemos primeiro que $b\in Y\cap Y&rsquo;$. Claramente, $f(a)=b\in Y$. Como $x\in X&rsquo;$, existe uma sequ&ecirc;ncia $(x_n)$ tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Como $f$ &eacute; injetiva e cont&iacute;nua no ponto $a$, temos que $f(x_n)\neq f(a)=b$ e que $f(x_n)\rightarrow b$. Portanto $b\in Y&rsquo;$.</p>
+<p>Assuma que $g$ &eacute; deriv&aacute;vel no ponto $b$. Neste caso $g\circ f=\mbox{id}_X$, e ent&atilde;o $(g\circ f)'(a)=1$. Por outro lado, a regra da cadeia nos fornece,<br>
+$$<br>
+1=(g\circ f)'(a)=g'(f(a))f'(a).<br>
+$$<br>
+Portanto, $g'(b)=g'(f(a))=1/f'(a)$.<br>
+Reciprocamente, assuma que $f'(a)\neq 0$. Seja $y_n\in Y\setminus\{b\}$ uma sequ&ecirc;ncia de pontos tal que&nbsp; $y_n\rightarrow b$. Como $g$ &eacute; cont&iacute;nua em $b$, obtemos que $x_n\rightarrow g(b)=a$ onde $x_n=g(y_n)$. Portanto,<br>
+\begin{eqnarray*}<br>
+\lim_{n\rightarrow\infty}\frac{g(y_n)-g(b)}{y_n-b}&amp;=&amp;\lim_{n\rightarrow\infty}\left(\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br>
+\left(\lim_{n\rightarrow\infty}\frac{y_n-b}{g(y_n)-g(b)}\right)^{-1}\\&amp;=&amp;<br>
+\left(\lim_{n\rightarrow\infty}\frac{f(x_n)-f(a)}{x_n-a}\right)^{-1}=1/f'(a).<br>
+\end{eqnarray*}<br>
+Logo existe $g'(b)$ e &eacute; igual a $1/f'(a)$.</p>
+<p><strong>Teorema.</strong> Seja $f:X\rightarrow\R$ uma fun&ccedil;&atilde;o deriv&aacute;vel no ponto $a\in X\cap X&rsquo;_+$ com $f&rsquo;_+(a)&gt;0$. Ent&atilde;o existe $\delta&gt;0$ tal que se $x\in(a,a+\delta)$, ent&atilde;o $f(a)&lt;f(x)$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Temos<br>
+$$<br>
+\lim_{x\rightarrow a+}\frac{f(x)-f(a)}{x-a}=f&rsquo;_+(a)&gt;0.<br>
+$$<br>
+Usando a defini&ccedil;&atilde;o de limite com $\varepsilon =f&rsquo;_+(a)/2$, obtemos que existe $\delta&gt;0$ tal que $(f(x)-f(a))(x-a)&gt;0$ se $x\in(a,a+\delta)$. Se $x$ &eacute; tal n&uacute;mero real, ent&atilde;o $x-a&gt;0$ e segue que $f(x)-f(a)&gt;0$; ou seja $f(x)&gt;f(a)$.</p>
 <p>Pode-se demonstrar analogamente o seguinte teorema.</p>
-<p><strong>Teorema.</strong> Seja $f:X\rightarrow\R$ uma função derivável no ponto $a\in X\cap X&#8217;_-$ com$ f&#8217;_-(a)&gt;0$. Então existe $\delta&gt;0$ tal que se $x\in(a-\delta,a)$, então $f(x)&lt;f(a)$.</p>
-<p><strong>Corolário. </strong>Se $f:X\rightarrow\R$ é uma função monótona e não crescente [não decrescente], então  as suas derivadas laterais (onde existem) são não positivos [não negativos].</p>
-<p><strong>Corolário. </strong>Seja $f:X\rightarrow\R$ e $a\in X\cap X&#8217;_+\cap X&#8217;_-$. Se $f'(a)&gt;0$, então existe $\delta&gt;0$ tal que tal que se $a-\delta&lt;x&lt;a&lt;y&lt;a+\delta$, então $f(x)&lt; f(a)&lt;f(y)$.</p>
-<p><strong>Corolário.</strong> <strong> </strong>Seja $f:X\rightarrow\R$ e $a\in X\cap X&#8217;_+\cap X&#8217;_-$ tal que $f(x)$ é derivável em $a$.  Se $f(x)$ possui um máximo (ou mínimo) local em $a$, então $f'(a)=0$.</p>
+<p><strong>Teorema.</strong> Seja $f:X\rightarrow\R$ uma fun&ccedil;&atilde;o deriv&aacute;vel no ponto $a\in X\cap X&rsquo;_-$ com$ f&rsquo;_-(a)&gt;0$. Ent&atilde;o existe $\delta&gt;0$ tal que se $x\in(a-\delta,a)$, ent&atilde;o $f(x)&lt;f(a)$.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Se $f:X\rightarrow\R$ &eacute; uma fun&ccedil;&atilde;o mon&oacute;tona e n&atilde;o crescente [n&atilde;o decrescente], ent&atilde;o&nbsp;&nbsp;as suas derivadas laterais (onde existem) s&atilde;o n&atilde;o positivos [n&atilde;o negativos].</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Seja $f:X\rightarrow\R$ e $a\in X\cap X&rsquo;_+\cap X&rsquo;_-$. Se $f'(a)&gt;0$, ent&atilde;o existe $\delta&gt;0$ tal que tal que se $a-\delta&lt;x&lt;a&lt;y&lt;a+\delta$, ent&atilde;o $f(x)&lt; f(a)&lt;f(y)$.</p>
+<p><strong>Corol&aacute;rio.</strong>&nbsp;<strong>&nbsp;</strong>Seja $f:X\rightarrow\R$ e $a\in X\cap X&rsquo;_+\cap X&rsquo;_-$ tal que $f(x)$ &eacute; deriv&aacute;vel em $a$.&nbsp; Se $f(x)$ possui um m&aacute;ximo (ou m&iacute;nimo) local em $a$, ent&atilde;o $f'(a)=0$.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-			</div><!-- .entry-content -->
+			</div>
 
 	<footer class="entry-footer">
-					</footer><!-- .entry-footer -->
+					</footer>
 
 	
 <div class="entry-author">
 	<div class="author-avatar">
-		<img alt='' src='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />	</div><!-- .author-avatar -->
+		<img alt="" src="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">	</div>
 
 	<div class="author-heading">
 		<h2 class="author-title">Published by <span class="author-name">schcs</span></h2>
-	</div><!-- .author-heading -->
+	</div>
 
 	<p class="author-bio">
-				<a class="author-link" href="https://schcs.github.io/WP/index.php/author/schcs/" rel="author">
+				<a class="author-link" href="http://schcs.github.io/index.php/author/schcs/" rel="author">
 			View all posts by schcs		</a>
-	</p><!-- .author-bio -->
-</div><!-- .entry-auhtor -->
-</article><!-- #post-## -->
+	</p>
+</div>
+</article>
 
 			
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="https://schcs.github.io/WP/index.php/2019/05/29/funcoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>Funções contínuas sobre conjuntos compactos e funções uniformemente contínuas</a></div><div class="nav-next"><a href="https://schcs.github.io/WP/index.php/2019/06/03/funcoes-derivaveis-em-um-intervalo/" rel="next"><span class="meta-nav">Next &rsaquo;</span>Funções deriváveis em um intervalo</a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="http://schcs.github.io/index.php/2019/05/29/funcoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>Fun&ccedil;&otilde;es cont&iacute;nuas sobre conjuntos compactos e fun&ccedil;&otilde;es uniformemente cont&iacute;nuas</a></div><div class="nav-next"><a href="http://schcs.github.io/index.php/2019/06/03/funcoes-derivaveis-em-um-intervalo/" rel="next"><span class="meta-nav">Next &rsaquo;</span>Fun&ccedil;&otilde;es deriv&aacute;veis em um intervalo</a></div></div>
 	</nav>
 			
 <div id="comments" class="comments-area">
@@ -209,39 +191,37 @@ Usando a definição de limite com $\varepsilon =f&#8217;_+(a)/2$, obtemos que e
 	
 	
 		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://schcs.github.io/WP/index.php/2019/05/31/funcoes-derivaveis/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://schcs.github.io/WP/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
-<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
-<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='251' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://schcs.github.io/index.php/2019/05/31/funcoes-derivaveis/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://schcs.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="251" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>			</form>
-			</div><!-- #respond -->
+			</div>
 	
-</div><!-- #comments -->
+</div>
 
 		
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 
-	</div><!-- #content -->
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
 						<div class="site-info">
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
-				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div><!-- .site-info -->
-		</div><!-- .site-info-wrapper -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
 
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/comment-reply.min.js?ver=4.9.15'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/wp-embed.min.js?ver=4.9.15'></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
 </body>
 </html>
