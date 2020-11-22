@@ -3,53 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+
 
 	
-<title>Testes de convergência para séries &#8211; Csaba Schneider</title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Testes de convergência para séries Comments Feed" href="https://schcs.github.io/WP/index.php/2019/05/03/teste-da-raiz-teste-da-rz/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.15"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='penscratch-2-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.15' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-block-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='https://schcs.github.io/WP/index.php/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
-<link rel='next' title='Comutatividade e produto de séries' href='https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/' />
-<meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/2019/05/03/teste-da-raiz-teste-da-rz/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=84' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2F2019%2F05%2F03%2Fteste-da-raiz-teste-da-rz%2F" />
-<link rel="pingback" href="https://schcs.github.io/WP/xmlrpc.php"><script type="text/x-mathjax-config">
+<title>Testes de converg&ecirc;ncia para s&eacute;ries &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="http://schcs.github.io/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="http://schcs.github.io/index.php/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Testes de converg&ecirc;ncia para s&eacute;ries Comments Feed" href="http://schcs.github.io/index.php/2019/05/03/teste-da-raiz-teste-da-rz/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.16" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://schcs.github.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+<link rel="next" title="Comutatividade e produto de s&eacute;ries" href="http://schcs.github.io/index.php/2019/05/06/comutatividade-e-produto-de-series/">
+
+<link rel="canonical" href="http://schcs.github.io/index.php/2019/05/03/teste-da-raiz-teste-da-rz/">
+
+<link rel="alternate" type="application/json+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F05%2F03%2Fteste-da-raiz-teste-da-rz%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F05%2F03%2Fteste-da-raiz-teste-da-rz%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -63,19 +45,19 @@ MathJax.Hub.Config({
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="http://schcs.github.io/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle">
-				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"/><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"/></g></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://schcs.github.io/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="http://schcs.github.io/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://schcs.github.io/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
 
 	<div id="content" class="site-content">
 		
@@ -86,92 +68,92 @@ MathJax.Hub.Config({
 			
 <article id="post-84" class="post-84 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
-		<h1 class="entry-title">Testes de convergência para séries</h1>		
+		<h1 class="entry-title">Testes de converg&ecirc;ncia para s&eacute;ries</h1>		
 		<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/03/teste-da-raiz-teste-da-rz/" rel="bookmark"><time class="entry-date published" datetime="2019-05-03T13:26:53+00:00">May 3, 2019</time><time class="updated" datetime="2019-05-06T13:14:53+00:00">May 6, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+			<span class="posted-on"><a href="http://schcs.github.io/index.php/2019/05/03/teste-da-raiz-teste-da-rz/" rel="bookmark"><time class="entry-date published" datetime="2019-05-03T13:26:53+00:00">May 3, 2019</time><time class="updated" datetime="2019-05-06T13:14:53+00:00">May 6, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="http://schcs.github.io/index.php/author/schcs/">schcs</a></span></span>					</div>
+	</header>
 
 	<div class="entry-content">
 		<p>$\newcommand{\N}{\mathbb N}$</p>
-<p><strong>Teorema (Teste da raiz).</strong> Se existirem $0\leq c&lt;1$ e $n_0\in\N$ tal que $\sqrt[n]{|a_n|}\leq c$ para todo $n\geq n_0$, então a série $\sum a_n$ é absolutamente convergente. Em particular, se $\limsup \sqrt[n]{|a_n|}&lt;1$, então a série é absolutamente convergente.</p>
-<p><strong>Demonstração.</strong> As condições do teorema implicam que $|a_n|\leq c^n$ para todo $n\geq n_0$. Como $0\leq c&lt;0$, temos que $\sum c^n$ é convergente. Pelo teorema da comparação,  $\sum |a_n|$ é convergente, logo $\sum a_n$ é absolutamente convergente.</p>
-<p>Assuma que $a:=\limsup \sqrt[n]{|a_n|}&lt;1$. Seja $\varepsilon=(1-a)/2$. Então $a+\varepsilon&lt;1$. Por um exercício anterior, existe $n_0\in\N$ tal que $\sqrt[n]{|a_n|}\leq a+\varepsilon$. Pelo parágrafo anterior, $\sum a_n$ é absolutamente convergente.$\Box$</p>
-<p>Note que as condições do teorema anterior são válidas quando existe $\lim_{n\rightarrow\infty} \sqrt[n]{|a_n|}$ e este limite é menor que um.</p>
-<p><strong>Exercício.</strong> Demonstre que se existem infinitos índices $n$ tal que $\sqrt[n]{|a_n|}\geq 1$, então a série $\sum a_n$ diverge.</p>
-<p>No caso $\lim\sqrt{|a_n|}=1$ não pode-se decidir usando o teste da raiz se a série diverge ou converge. Por exemplo, a série $\sum(1/n)$ diverge, enquanto $\sum(1/n^2)$ converge. Por outro lado,<br />
-$$<br />
-\lim_{n\rightarrow\infty}\sqrt[n]{(1/n)}=\lim_{n\rightarrow\infty}\sqrt[n]{(1/n^2)}=1.<br />
+<p><strong>Teorema (Teste da raiz).</strong> Se existirem $0\leq c&lt;1$ e $n_0\in\N$ tal que $\sqrt[n]{|a_n|}\leq c$ para todo $n\geq n_0$, ent&atilde;o a s&eacute;rie $\sum a_n$ &eacute; absolutamente convergente. Em particular, se $\limsup \sqrt[n]{|a_n|}&lt;1$, ent&atilde;o a s&eacute;rie &eacute; absolutamente convergente.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.</strong> As condi&ccedil;&otilde;es do teorema implicam que $|a_n|\leq c^n$ para todo $n\geq n_0$. Como $0\leq c&lt;0$, temos que $\sum c^n$ &eacute; convergente. Pelo teorema da compara&ccedil;&atilde;o,&nbsp; $\sum |a_n|$ &eacute; convergente, logo $\sum a_n$ &eacute; absolutamente convergente.</p>
+<p>Assuma que $a:=\limsup&nbsp;\sqrt[n]{|a_n|}&lt;1$. Seja $\varepsilon=(1-a)/2$. Ent&atilde;o $a+\varepsilon&lt;1$. Por um exerc&iacute;cio anterior, existe $n_0\in\N$ tal que $\sqrt[n]{|a_n|}\leq a+\varepsilon$. Pelo par&aacute;grafo anterior, $\sum a_n$ &eacute; absolutamente convergente.$\Box$</p>
+<p>Note que as condi&ccedil;&otilde;es do teorema anterior s&atilde;o v&aacute;lidas quando existe&nbsp;$\lim_{n\rightarrow\infty} \sqrt[n]{|a_n|}$ e este limite &eacute; menor que um.</p>
+<p><strong>Exerc&iacute;cio.</strong>&nbsp;Demonstre que se existem infinitos &iacute;ndices $n$ tal que $\sqrt[n]{|a_n|}\geq 1$, ent&atilde;o a s&eacute;rie $\sum a_n$ diverge.</p>
+<p>No caso $\lim\sqrt{|a_n|}=1$ n&atilde;o pode-se decidir usando o teste da raiz se a s&eacute;rie diverge ou converge. Por exemplo, a s&eacute;rie $\sum(1/n)$ diverge, enquanto $\sum(1/n^2)$ converge. Por outro lado,<br>
+$$<br>
+\lim_{n\rightarrow\infty}\sqrt[n]{(1/n)}=\lim_{n\rightarrow\infty}\sqrt[n]{(1/n^2)}=1.<br>
 $$</p>
-<p><strong>Teorema (Teste da razão).</strong> Assuma que $\sum a_n$ é uma série com $a_n\neq 0$. Assuma que existe um $n_0\in \N$ e $0&lt;c&lt;1$ tal que $|a_{n+1}|/|a_n|\leq c$ para todo $n\geq n_0$. Então a série $\sum a_n$ converge absolutamente. Em particular, se $\limsup |a_{n+1}|/|a_n|&lt;1$, então a série $\sum a_n$ é absolutamente convergente.</p>
-<p><strong>Demonstração. </strong>Se $n\geq n_0$, temos que<br />
-$$<br />
-\frac{|a_{n_0+1}|}{|a_{n_0}|}\leq c,\ \frac{|a_{n_0+2}|}{|a_{n_0+1}|}\leq c,\ldots,\frac{|a_{n}|}{|a_{n-1}|}\leq c,<br />
-\frac{|a_{n+1}|}{|a_{n}|}\leq c.<br />
-$$<br />
-Multiplicando estas desigualdades, obtemos que<br />
-$$<br />
-\frac{|a_{n+1}|}{|a_{n_0}|}=\frac{|a_{n_0+1}|}{|a_{n_0}|}\frac{|a_{n_0+2}|}{|a_{n_0+1}|}\cdots \frac{|a_{n}|}{|a_{n-1}|} \frac{|a_{n+1}|}{|a_{n}|}\leq c^{n-n_0+1}<br />
-$$<br />
-Portanto,<br />
-$$<br />
-|a_{n+1}|\leq c^{n-n_0+1}|a_{n_0}|=c^{n+1}(|a_{n_0}|/c^{n_0}).<br />
-$$<br />
-Como $0&lt;c&lt;1$, segue da Teste da Comparação que $\sum a_n$ é absolutamente convergente.</p>
-<p>A afirmação sobre o $\limsup$ pode ser verificada como no caso do teste da raiz.</p>
-<p>Como no caso do teste da raiz, podemos também afirmar que se $\lim |a_{n+1}|/|a_n|&lt;1$, então a série é convergente. Se $\lim |a_{n+1}|/|a_n|=1$, então a série pode ser convergente ou divergente; considere as séries $\sum (1/n)$ e $\sum (1/n^2)$.</p>
-<p><strong>Exercício.</strong> Assuma que existem infinitos índices $n$ tal que $|a_{n+1}|/|a_n|\geq 1$. Demonstre que a série $\sum a_n$ é divergente.</p>
-<p><strong>Lema.</strong> Seja $(a_n)$ uma sequência limitada de números reais positivos. Então<br />
-$$<br />
-\liminf \frac{a_{n+1}}{a_n}\leq \liminf \sqrt[n]{a_n}\leq \limsup \sqrt[n]{a_n}\leq \limsup \frac{a_{n+1}}{a_n}.<br />
+<p><strong>Teorema (Teste da raz&atilde;o).</strong> Assuma que $\sum a_n$ &eacute; uma s&eacute;rie com $a_n\neq 0$. Assuma que existe um $n_0\in \N$ e $0&lt;c&lt;1$ tal que $|a_{n+1}|/|a_n|\leq c$ para todo $n\geq n_0$. Ent&atilde;o a s&eacute;rie $\sum a_n$ converge absolutamente. Em particular, se $\limsup&nbsp;|a_{n+1}|/|a_n|&lt;1$, ent&atilde;o a s&eacute;rie $\sum a_n$ &eacute; absolutamente convergente.</p>
+<p><strong>Demonstra&ccedil;&atilde;o. </strong>Se $n\geq n_0$, temos que<br>
+$$<br>
+\frac{|a_{n_0+1}|}{|a_{n_0}|}\leq c,\ \frac{|a_{n_0+2}|}{|a_{n_0+1}|}\leq c,\ldots,\frac{|a_{n}|}{|a_{n-1}|}\leq c,<br>
+\frac{|a_{n+1}|}{|a_{n}|}\leq c.<br>
+$$<br>
+Multiplicando estas desigualdades, obtemos que<br>
+$$<br>
+\frac{|a_{n+1}|}{|a_{n_0}|}=\frac{|a_{n_0+1}|}{|a_{n_0}|}\frac{|a_{n_0+2}|}{|a_{n_0+1}|}\cdots&nbsp;\frac{|a_{n}|}{|a_{n-1}|} \frac{|a_{n+1}|}{|a_{n}|}\leq c^{n-n_0+1}<br>
+$$<br>
+Portanto,<br>
+$$<br>
+|a_{n+1}|\leq c^{n-n_0+1}|a_{n_0}|=c^{n+1}(|a_{n_0}|/c^{n_0}).<br>
+$$<br>
+Como $0&lt;c&lt;1$, segue da Teste da Compara&ccedil;&atilde;o que $\sum a_n$ &eacute; absolutamente convergente.</p>
+<p>A afirma&ccedil;&atilde;o sobre o $\limsup$ pode ser verificada como no caso do teste da raiz.</p>
+<p>Como no caso do teste da raiz, podemos tamb&eacute;m afirmar que se $\lim&nbsp;|a_{n+1}|/|a_n|&lt;1$, ent&atilde;o a s&eacute;rie &eacute; convergente. Se&nbsp;$\lim&nbsp;|a_{n+1}|/|a_n|=1$, ent&atilde;o a s&eacute;rie pode ser convergente ou divergente; considere as s&eacute;ries $\sum (1/n)$ e $\sum (1/n^2)$.</p>
+<p><strong>Exerc&iacute;cio.</strong> Assuma que existem infinitos &iacute;ndices $n$ tal que $|a_{n+1}|/|a_n|\geq 1$. Demonstre que a s&eacute;rie $\sum a_n$ &eacute; divergente.</p>
+<p><strong>Lema.</strong> Seja $(a_n)$ uma sequ&ecirc;ncia limitada de n&uacute;meros reais positivos. Ent&atilde;o<br>
+$$<br>
+\liminf \frac{a_{n+1}}{a_n}\leq \liminf \sqrt[n]{a_n}\leq \limsup \sqrt[n]{a_n}\leq \limsup&nbsp;\frac{a_{n+1}}{a_n}.<br>
 $$</p>
-<p><strong>Demonstração. </strong>Só precisa-se demonstrar a primeira e a terceira desigualdade. Nós demonstraremos a primeira. A terceira fica como exercício. Assuma por absurdo que $\liminf \frac{a_{n+1}}{a_n}&gt; \liminf \sqrt[n]{a_n}$. Então existe um  número $c$ tal que  $\liminf \sqrt[n]{a_n}&lt;c&lt;\liminf \frac{a_{n+1}}{a_n}$. Isto quer dizer que existe $n_0$ tal que<br />
-$c\leq {a_{n+1}}/{a_n}$ para todo $n\geq n_0$. Logo<br />
-$$<br />
-c\leq \frac{a_{n_0+1}}{a_{n_0}},\ldots, c\leq \frac {a_{n+1}}{a_{n}}.<br />
-$$<br />
-Multiplicando estas desigualdades, obtemos que $c^{n-n_0+1}\leq a_{n+1}/a_{n_0}$; ou seja<br />
-$$<br />
-a_{n+1}\geq c^{n-n_0+1}a_{n_0}=(a_{n_0}/c^{n_0})c^{n+1}.<br />
-$$<br />
-Tomando $(n+1)$-ésima raiz e $\liminf$, obtemos que $\liminf\sqrt[n]{a_n}\geq c$, que é uma contradição.</p>
-<p><strong>Teorema (Dirichlet).</strong> Seja $\sum a_n$ uma série tal que as reduzidas $s_n=a_1+\cdots+a_n$ formam uma sequência limitada. Seja $(b_n)$ uma sequência não crescente de números positivos com $\lim b_n=0$. Então a série $\sum (a_nb_n)$ é convergente.</p>
-<p><strong>Demonstração. </strong>Temos que<br />
-\begin{eqnarray*}<br />
-t_n&amp;=&amp;a_1b_1+\cdots+a_nb_n\\<br />
-&amp;=&amp;a_1(b_1-b_2)+(a_1+a_2)(b_2-b_3)\\&amp;+&amp;(a_1+a_2+a_3)(b_3-b_4)+\cdots<br />
-+(a_1+\cdots+a_n)b_n\\<br />
-&amp;=&amp;s_1(b_1-b_2)+s_2(b_2-b_3)+s_3(b_3-b_4)+\cdots +s_nb_n\\<br />
-&amp;=&amp;\sum_{n=2}^n s_{i-1}(b_{i-1}-b_i)+s_nb_n.<br />
-\end{eqnarray*}<br />
-Note que a série $\sum_{n\geq 2}(b_{i-1}-b_i)$ ´é convergente e a sequência $s_n$ é limitada, Portanto segue da testa da comparação que $\sum_{n=2}^n s_{i-1}(b_{i-1}-b_i)$ é absolutamente convergente. Isto implica que $a_1b_1+\cdots+a_nb_n$ é convergente. Além disso, como $(s_n)$ é limitada e $b_n\rightarrow 0$, tem-se que $\lim s_nb_n=0$ e portanto a série $\sum (a_nb_n)$ é convergente.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>S&oacute; precisa-se demonstrar a primeira e a terceira desigualdade. N&oacute;s demonstraremos a primeira. A terceira fica como exerc&iacute;cio. Assuma por absurdo que $\liminf \frac{a_{n+1}}{a_n}&gt; \liminf \sqrt[n]{a_n}$. Ent&atilde;o existe um&nbsp; n&uacute;mero $c$ tal que&nbsp; $\liminf \sqrt[n]{a_n}&lt;c&lt;\liminf \frac{a_{n+1}}{a_n}$. Isto quer dizer que existe $n_0$ tal que<br>
+$c\leq {a_{n+1}}/{a_n}$ para todo $n\geq n_0$. Logo<br>
+$$<br>
+c\leq \frac{a_{n_0+1}}{a_{n_0}},\ldots, c\leq \frac&nbsp;{a_{n+1}}{a_{n}}.<br>
+$$<br>
+Multiplicando estas desigualdades, obtemos que $c^{n-n_0+1}\leq a_{n+1}/a_{n_0}$; ou seja<br>
+$$<br>
+a_{n+1}\geq c^{n-n_0+1}a_{n_0}=(a_{n_0}/c^{n_0})c^{n+1}.<br>
+$$<br>
+Tomando $(n+1)$-&eacute;sima raiz e $\liminf$, obtemos que $\liminf\sqrt[n]{a_n}\geq c$, que &eacute; uma contradi&ccedil;&atilde;o.</p>
+<p><strong>Teorema (Dirichlet).</strong> Seja $\sum a_n$ uma s&eacute;rie tal que as reduzidas $s_n=a_1+\cdots+a_n$ formam uma sequ&ecirc;ncia limitada. Seja $(b_n)$ uma sequ&ecirc;ncia n&atilde;o crescente de n&uacute;meros positivos com $\lim b_n=0$. Ent&atilde;o a s&eacute;rie $\sum (a_nb_n)$ &eacute; convergente.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Temos que<br>
+\begin{eqnarray*}<br>
+t_n&amp;=&amp;a_1b_1+\cdots+a_nb_n\\<br>
+&amp;=&amp;a_1(b_1-b_2)+(a_1+a_2)(b_2-b_3)\\&amp;+&amp;(a_1+a_2+a_3)(b_3-b_4)+\cdots<br>
++(a_1+\cdots+a_n)b_n\\<br>
+&amp;=&amp;s_1(b_1-b_2)+s_2(b_2-b_3)+s_3(b_3-b_4)+\cdots +s_nb_n\\<br>
+&amp;=&amp;\sum_{n=2}^n s_{i-1}(b_{i-1}-b_i)+s_nb_n.<br>
+\end{eqnarray*}<br>
+Note que a s&eacute;rie $\sum_{n\geq 2}(b_{i-1}-b_i)$ &acute;&eacute; convergente e a sequ&ecirc;ncia $s_n$ &eacute; limitada, Portanto segue da testa da compara&ccedil;&atilde;o que $\sum_{n=2}^n s_{i-1}(b_{i-1}-b_i)$ &eacute; absolutamente convergente. Isto implica que $a_1b_1+\cdots+a_nb_n$ &eacute; convergente. Al&eacute;m disso, como $(s_n)$ &eacute; limitada e $b_n\rightarrow 0$, tem-se que $\lim s_nb_n=0$ e portanto a s&eacute;rie $\sum (a_nb_n)$ &eacute; convergente.</p>
 <p>O Teorema de Dirichlet implica imediatamente o Teorema de Leibniz e o Teorema de Abel.</p>
-<p><strong>Teorema (Leibniz).</strong> Se $(b_n)$ é uma sequência não crescente com $\lim b_n=0$, então a série $\sum (-1)^nb_n$ é convergente.</p>
-<p><strong>Teorema (Abel).</strong> Se $\sum a_n$ é convergente e $(b_n)$ é uma sequência não crescente de números positivos, então $\sum (a_nb_n)$ é convergente.</p>
-			</div><!-- .entry-content -->
+<p><strong>Teorema (Leibniz).</strong> Se $(b_n)$ &eacute; uma sequ&ecirc;ncia n&atilde;o crescente com $\lim b_n=0$, ent&atilde;o a s&eacute;rie $\sum (-1)^nb_n$ &eacute; convergente.</p>
+<p><strong>Teorema (Abel).</strong> Se $\sum a_n$ &eacute; convergente e $(b_n)$ &eacute; uma sequ&ecirc;ncia n&atilde;o crescente de n&uacute;meros positivos, ent&atilde;o $\sum (a_nb_n)$ &eacute; convergente.</p>
+			</div>
 
 	<footer class="entry-footer">
-					</footer><!-- .entry-footer -->
+					</footer>
 
 	
 <div class="entry-author">
 	<div class="author-avatar">
-		<img alt='' src='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />	</div><!-- .author-avatar -->
+		<img alt="" src="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">	</div>
 
 	<div class="author-heading">
 		<h2 class="author-title">Published by <span class="author-name">schcs</span></h2>
-	</div><!-- .author-heading -->
+	</div>
 
 	<p class="author-bio">
-				<a class="author-link" href="https://schcs.github.io/WP/index.php/author/schcs/" rel="author">
+				<a class="author-link" href="http://schcs.github.io/index.php/author/schcs/" rel="author">
 			View all posts by schcs		</a>
-	</p><!-- .author-bio -->
-</div><!-- .entry-auhtor -->
-</article><!-- #post-## -->
+	</p>
+</div>
+</article>
 
 			
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-next"><a href="https://schcs.github.io/WP/index.php/2019/05/06/comutatividade-e-produto-de-series/" rel="next"><span class="meta-nav">Next &rsaquo;</span>Comutatividade e produto de séries</a></div></div>
+		<div class="nav-links"><div class="nav-next"><a href="http://schcs.github.io/index.php/2019/05/06/comutatividade-e-produto-de-series/" rel="next"><span class="meta-nav">Next &rsaquo;</span>Comutatividade e produto de s&eacute;ries</a></div></div>
 	</nav>
 			
 <div id="comments" class="comments-area">
@@ -180,39 +162,37 @@ Note que a série $\sum_{n\geq 2}(b_{i-1}-b_i)$ ´é convergente e a sequência 
 	
 	
 		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://schcs.github.io/WP/index.php/2019/05/03/teste-da-raiz-teste-da-rz/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://schcs.github.io/WP/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
-<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
-<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='84' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://schcs.github.io/index.php/2019/05/03/teste-da-raiz-teste-da-rz/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://schcs.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="84" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>			</form>
-			</div><!-- #respond -->
+			</div>
 	
-</div><!-- #comments -->
+</div>
 
 		
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 
-	</div><!-- #content -->
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
 						<div class="site-info">
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
-				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div><!-- .site-info -->
-		</div><!-- .site-info-wrapper -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
 
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/comment-reply.min.js?ver=4.9.15'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/wp-embed.min.js?ver=4.9.15'></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
 </body>
 </html>
