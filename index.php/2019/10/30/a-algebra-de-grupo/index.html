@@ -3,54 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+
 
 	
-<title>A álgebra de grupo &#8211; Csaba Schneider</title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; A álgebra de grupo Comments Feed" href="https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.15"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='penscratch-2-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.15' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-block-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='https://schcs.github.io/WP/index.php/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='O Lema de Schur e o Teorema de Clifford' href='https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/' />
-<link rel='next' title='O caracter e as relações de ortgonalidade' href='https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/' />
-<meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=556' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2F2019%2F10%2F30%2Fa-algebra-de-grupo%2F" />
-<link rel="pingback" href="https://schcs.github.io/WP/xmlrpc.php"><script type="text/x-mathjax-config">
+<title>A &aacute;lgebra de grupo &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="http://schcs.github.io/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="http://schcs.github.io/index.php/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; A &aacute;lgebra de grupo Comments Feed" href="http://schcs.github.io/index.php/2019/10/30/a-algebra-de-grupo/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.16" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://schcs.github.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+<link rel="prev" title="O Lema de Schur e o Teorema de Clifford" href="http://schcs.github.io/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/">
+<link rel="next" title="O caracter e as rela&ccedil;&otilde;es de ortgonalidade" href="http://schcs.github.io/index.php/2019/10/31/o-caracter/">
+
+<link rel="canonical" href="http://schcs.github.io/index.php/2019/10/30/a-algebra-de-grupo/">
+
+<link rel="alternate" type="application/json+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F10%2F30%2Fa-algebra-de-grupo%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F10%2F30%2Fa-algebra-de-grupo%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -64,19 +46,19 @@ MathJax.Hub.Config({
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="http://schcs.github.io/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle">
-				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"/><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"/></g></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://schcs.github.io/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="http://schcs.github.io/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://schcs.github.io/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
 
 	<div id="content" class="site-content">
 		
@@ -87,58 +69,58 @@ MathJax.Hub.Config({
 			
 <article id="post-556" class="post-556 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
-		<h1 class="entry-title">A álgebra de grupo</h1>		
+		<h1 class="entry-title">A &aacute;lgebra de grupo</h1>		
 		<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/" rel="bookmark"><time class="entry-date published" datetime="2019-10-30T22:29:45+00:00">October 30, 2019</time><time class="updated" datetime="2019-10-30T23:22:47+00:00">October 30, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+			<span class="posted-on"><a href="http://schcs.github.io/index.php/2019/10/30/a-algebra-de-grupo/" rel="bookmark"><time class="entry-date published" datetime="2019-10-30T22:29:45+00:00">October 30, 2019</time><time class="updated" datetime="2019-10-30T23:22:47+00:00">October 30, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="http://schcs.github.io/index.php/author/schcs/">schcs</a></span></span>					</div>
+	</header>
 
 	<div class="entry-content">
-		<p>$\newcommand{\F}{\mathbb F}$Seja $G$ um grupo e $\F$ um corpo. A álgebra de grupo $\F G$ é definido como o conjunto de combinações lineares $\sum_{g\in G} \alpha_g g$ finitas. Claramente, $\F G$ é um $G$-módulo sobre $\F$ pela multiplicação à direita.  O seguinte lema é imediato.</p>
-<p><strong>Lema.</strong> Se $U\leq \F G$, então $U$ é um $G$-submódulo se e somente se $U$ é um ideal à direita de $\F G$. Se $V$ é um $G$-módulo simples, então existe um ideal maximal $I$ á direita de $\F G$ tal que $V\cong \F G/I$ como $G$-módulos.</p>
-<p><strong>Demonstração. </strong>A primeira afirmação é óbvia. Seja $V$ um $G$-módulo simples e seja $v\in V\setminus\{0\}$. Defina<br />
-\[<br />
-\varphi: \F G\rightarrow V,\quad v\mapsto vx.<br />
-\]<br />
-Então $\varphi$ é um homomorphismo de $G$-módulos. Como $\mbox{Im}\,\varphi\leq_G V$ e $V$ é simples, temos que $\varphi$ é sobrejetiva. Então $V\cong \F G/\ker \varphi$. O núcleo $\ker\varphi$ é um ideal maximal á direita pela primeira afirmação e pela simplicidade de $V\cong \F G/\ker\varphi$.</p>
-<p>Seja $V=V_1\oplus\cdots\oplus V_k$ um $G$-módulo sobre um corpo $\F$. Sabe se que $\mbox{End}_G(V)$ é uma $\F$-álgebra com as operações usuais. Seja $\alpha\in \mbox{End}_G(V)$. Se $v\in V_i$, então $v\alpha=w_i+\cdots+w_k$ onde $w_j\in V_j$. Assim obtemos, para todo $j$, um mapa $\alpha_{ij}:V_i\rightarrow V_j$ e é fácil ver que $\alpha_{ij}\in\mbox{Hom}_G(V_i,V_j)$. Além disso, se $\alpha_{ij}\in \mbox{Hom}(V_i,V_j)$ para todo $i,j$, então a matrix $(\alpha_{ij})$ defina um elemento de $\mbox{End}_G(V)$.</p>
-<p><strong>Teorema. </strong>Seja $G$ um grupo finito e seja $\F$ um corpo algebricamente fechado tal que $\mbox{char}\,\F$ não divide $|G|$. As seguintes afirmações são verdadeiras para $R=\F G$:</p>
+		<p>$\newcommand{\F}{\mathbb F}$Seja $G$ um grupo e $\F$ um corpo. A &aacute;lgebra de grupo $\F G$ &eacute; definido como o conjunto de combina&ccedil;&otilde;es lineares $\sum_{g\in G} \alpha_g g$ finitas. Claramente, $\F G$ &eacute; um $G$-m&oacute;dulo sobre $\F$ pela multiplica&ccedil;&atilde;o &agrave; direita.&nbsp; O seguinte lema &eacute; imediato.</p>
+<p><strong>Lema.</strong>&nbsp;Se $U\leq \F G$, ent&atilde;o $U$ &eacute; um $G$-subm&oacute;dulo se e somente se $U$ &eacute; um ideal &agrave; direita de $\F G$. Se $V$ &eacute; um $G$-m&oacute;dulo simples, ent&atilde;o existe um ideal maximal $I$ &aacute; direita de $\F G$ tal que $V\cong \F G/I$ como $G$-m&oacute;dulos.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>A primeira afirma&ccedil;&atilde;o &eacute; &oacute;bvia. Seja $V$ um $G$-m&oacute;dulo simples e seja $v\in V\setminus\{0\}$. Defina<br>
+\[<br>
+\varphi: \F G\rightarrow V,\quad v\mapsto vx.<br>
+\]<br>
+Ent&atilde;o $\varphi$ &eacute; um homomorphismo de $G$-m&oacute;dulos. Como $\mbox{Im}\,\varphi\leq_G V$ e $V$ &eacute; simples, temos que $\varphi$ &eacute; sobrejetiva. Ent&atilde;o $V\cong \F G/\ker \varphi$. O n&uacute;cleo $\ker\varphi$ &eacute; um ideal maximal &aacute; direita pela primeira afirma&ccedil;&atilde;o e pela simplicidade de $V\cong \F G/\ker\varphi$.</p>
+<p>Seja $V=V_1\oplus\cdots\oplus V_k$ um $G$-m&oacute;dulo sobre um corpo $\F$. Sabe se que $\mbox{End}_G(V)$ &eacute; uma $\F$-&aacute;lgebra com as opera&ccedil;&otilde;es usuais. Seja $\alpha\in&nbsp;\mbox{End}_G(V)$. Se $v\in V_i$, ent&atilde;o $v\alpha=w_i+\cdots+w_k$ onde $w_j\in V_j$. Assim obtemos, para todo $j$, um mapa $\alpha_{ij}:V_i\rightarrow V_j$ e &eacute; f&aacute;cil ver que $\alpha_{ij}\in\mbox{Hom}_G(V_i,V_j)$. Al&eacute;m disso, se $\alpha_{ij}\in \mbox{Hom}(V_i,V_j)$ para todo $i,j$, ent&atilde;o a matrix $(\alpha_{ij})$ defina um elemento de $\mbox{End}_G(V)$.</p>
+<p><strong>Teorema.&nbsp;</strong>Seja $G$ um grupo finito e seja $\F$ um corpo algebricamente fechado tal que $\mbox{char}\,\F$ n&atilde;o divide $|G|$. As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras para $R=\F G$:</p>
 <ol>
-<li>$R=I_1\oplus\cdots\oplus I_m$ onde $I_i\unlhd R$ e $I_i\cong M_{n_i\times n_i}(\F)$ como anéis.</li>
+<li>$R=I_1\oplus\cdots\oplus I_m$ onde $I_i\unlhd R$ e $I_i\cong M_{n_i\times n_i}(\F)$ como an&eacute;is.</li>
 <li>$|G|=n_1^2+\cdots n_m^2$;</li>
-<li>Se $V$ é um $G$-módulo simples, então $V$ é isomorfo a um ideal minimal à direita de $R$ de dimensão $n_i$ com algum $i$.</li>
-<li>O número de classes de isomorfismo de $G$-módulos simples de dimensão finita é igual ao número de classes de conjugação de $G$.</li>
+<li>Se $V$ &eacute; um $G$-m&oacute;dulo simples, ent&atilde;o $V$ &eacute; isomorfo a um ideal minimal &agrave; direita de $R$ de dimens&atilde;o $n_i$ com algum $i$.</li>
+<li>O n&uacute;mero de classes de isomorfismo de $G$-m&oacute;dulos simples de dimens&atilde;o finita &eacute; igual ao n&uacute;mero de classes de conjuga&ccedil;&atilde;o de $G$.</li>
 </ol>
-<p><strong>Demonstração. </strong>1. Pelo Teorema de Maschke, $R$ é completamente redutível como $G$-módulo: $R=\bigoplus V_i$ onde $V_i$ são ideais minimais à direita de $R$. Como na demonstração do Teorema de Clifford, sejam $S_1,\ldots,S_m$ os tipos de isomorfismo de $G$-submódulos simples (ideias minimais à direita) em $R$. Pelo Teorema de Jordan-Holder, $m&lt;\infty$. Com $i\in \{1,\ldots,m\}$, defina<br />
-\[<br />
-I_i=\sum W\mbox{ onde }W\leq_G R\mbox{ e } W\cong S_i.<br />
-\]<br />
-Claramente, $I_i$ é um $G$-submódulo de $R$ (ou seja, ideal à direita) e $R=I_1\oplus\cdots\oplus I_m$. Seja $r\in R$. Então $rS_i$ é um $G$-submódulo de $R$ e o mapa $s\mapsto rs$ é um $G$-homomorfismo sobrejetivo entre $S_i$ e $rS_i$. O núcleo deste homomorfismo é um $G$-submódulo de $S_i$. Como $S_i$ é simples, $S_i\cong r S_i$ ou $rS_i=0$. Isto implica que $r I_i\leq I_i$ e que $I_i$ é um ideal de $R$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>1. Pelo Teorema de Maschke, $R$ &eacute; completamente redut&iacute;vel como $G$-m&oacute;dulo: $R=\bigoplus V_i$ onde $V_i$ s&atilde;o ideais minimais &agrave; direita de $R$. Como na demonstra&ccedil;&atilde;o do Teorema de Clifford, sejam $S_1,\ldots,S_m$ os tipos de isomorfismo de $G$-subm&oacute;dulos simples (ideias minimais &agrave; direita) em $R$. Pelo Teorema de Jordan-Holder, $m&lt;\infty$. Com $i\in \{1,\ldots,m\}$, defina<br>
+\[<br>
+I_i=\sum W\mbox{ onde }W\leq_G R\mbox{ e } W\cong S_i.<br>
+\]<br>
+Claramente, $I_i$ &eacute; um $G$-subm&oacute;dulo de $R$ (ou seja, ideal &agrave; direita) e $R=I_1\oplus\cdots\oplus I_m$. Seja $r\in R$. Ent&atilde;o $rS_i$ &eacute; um $G$-subm&oacute;dulo de $R$ e o mapa $s\mapsto rs$ &eacute; um $G$-homomorfismo sobrejetivo entre $S_i$ e $rS_i$. O n&uacute;cleo deste homomorfismo &eacute; um $G$-subm&oacute;dulo de $S_i$. Como $S_i$ &eacute; simples, $S_i\cong r S_i$ ou $rS_i=0$. Isto implica que $r I_i\leq I_i$ e que $I_i$ &eacute; um ideal de $R$.</p>
 <p>&nbsp;</p>
-			</div><!-- .entry-content -->
+			</div>
 
 	<footer class="entry-footer">
-					</footer><!-- .entry-footer -->
+					</footer>
 
 	
 <div class="entry-author">
 	<div class="author-avatar">
-		<img alt='' src='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />	</div><!-- .author-avatar -->
+		<img alt="" src="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">	</div>
 
 	<div class="author-heading">
 		<h2 class="author-title">Published by <span class="author-name">schcs</span></h2>
-	</div><!-- .author-heading -->
+	</div>
 
 	<p class="author-bio">
-				<a class="author-link" href="https://schcs.github.io/WP/index.php/author/schcs/" rel="author">
+				<a class="author-link" href="http://schcs.github.io/index.php/author/schcs/" rel="author">
 			View all posts by schcs		</a>
-	</p><!-- .author-bio -->
-</div><!-- .entry-auhtor -->
-</article><!-- #post-## -->
+	</p>
+</div>
+</article>
 
 			
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>O Lema de Schur e o Teorema de Clifford</a></div><div class="nav-next"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" rel="next"><span class="meta-nav">Next &rsaquo;</span>O caracter e as relações de ortgonalidade</a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="http://schcs.github.io/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>O Lema de Schur e o Teorema de Clifford</a></div><div class="nav-next"><a href="http://schcs.github.io/index.php/2019/10/31/o-caracter/" rel="next"><span class="meta-nav">Next &rsaquo;</span>O caracter e as rela&ccedil;&otilde;es de ortgonalidade</a></div></div>
 	</nav>
 			
 <div id="comments" class="comments-area">
@@ -147,39 +129,37 @@ Claramente, $I_i$ é um $G$-submódulo de $R$ (ou seja, ideal à direita) e $R=I
 	
 	
 		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://schcs.github.io/WP/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
-<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
-<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='556' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://schcs.github.io/index.php/2019/10/30/a-algebra-de-grupo/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://schcs.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="556" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>			</form>
-			</div><!-- #respond -->
+			</div>
 	
-</div><!-- #comments -->
+</div>
 
 		
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 
-	</div><!-- #content -->
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
 						<div class="site-info">
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
-				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div><!-- .site-info -->
-		</div><!-- .site-info-wrapper -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
 
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/comment-reply.min.js?ver=4.9.15'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/wp-embed.min.js?ver=4.9.15'></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
 </body>
 </html>
