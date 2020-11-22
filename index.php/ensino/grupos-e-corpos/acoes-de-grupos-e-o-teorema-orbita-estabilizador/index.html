@@ -3,51 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+
 
 	
-<title>Ações de grupos e o Teorema Órbita-Estabilizador &#8211; Csaba Schneider</title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.15"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='penscratch-2-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.15' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-block-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='https://schcs.github.io/WP/index.php/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/acoes-de-grupos-e-o-teorema-orbita-estabilizador/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=831' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Facoes-de-grupos-e-o-teorema-orbita-estabilizador%2F" />
+<title>A&ccedil;&otilde;es de grupos e o Teorema &Oacute;rbita-Estabilizador &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="http://schcs.github.io/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="http://schcs.github.io/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.16" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://schcs.github.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="http://schcs.github.io/index.php/ensino/grupos-e-corpos/acoes-de-grupos-e-o-teorema-orbita-estabilizador/">
+
+<link rel="alternate" type="application/json+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Facoes-de-grupos-e-o-teorema-orbita-estabilizador%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Facoes-de-grupos-e-o-teorema-orbita-estabilizador%2F&amp;format=xml">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -61,19 +43,19 @@ MathJax.Hub.Config({
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="http://schcs.github.io/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle">
-				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"/><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"/></g></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://schcs.github.io/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="http://schcs.github.io/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://schcs.github.io/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
 
 	<div id="content" class="site-content">
 		
@@ -84,106 +66,105 @@ MathJax.Hub.Config({
 				
 <article id="post-831" class="post-831 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Ações de grupos e o Teorema Órbita-Estabilizador</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">A&ccedil;&otilde;es de grupos e o Teorema &Oacute;rbita-Estabilizador</h1>	</header>
 		<div class="entry-content">
-		<p>$\newcommand{\F}{\mathbb F}$Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ age em $\Omega$ se está dada uma função<br />
-\[<br />
-\Omega\times G\to \Omega,\quad (\omega,g)\mapsto \omega g<br />
-\]<br />
+		<p>$\newcommand{\F}{\mathbb F}$Seja $G$ um grupo e $\Omega$ um conjunto. Dizemos que $G$ age em $\Omega$ se est&aacute; dada uma fun&ccedil;&atilde;o<br>
+\[<br>
+\Omega\times G\to \Omega,\quad (\omega,g)\mapsto \omega g<br>
+\]<br>
 com as seguintes propriedades:</p>
 <ol>
 <li>$\alpha 1=\alpha$ para todo $\alpha\in\Omega$;</li>
 <li>$\alpha(gh)=(\alpha g)h$ para todo $\alpha\in \Omega$, $g,h\in G$.</li>
 </ol>
-<p>Se $\alpha\in\Omega$, o elemento $\alpha g$ é dito <em>imagem de $\alpha$ por $g$.</em></p>
-<p><strong>Exemplos. </strong>Nos seguintes exemplos apresentamos ações importantes de grupos. O leitor deve verificar que cada item define uma ação.</p>
+<p>Se $\alpha\in\Omega$, o elemento $\alpha g$ &eacute; dito <em>imagem de $\alpha$ por $g$.</em></p>
+<p><strong>Exemplos.&nbsp;</strong>Nos seguintes exemplos apresentamos a&ccedil;&otilde;es importantes de grupos. O leitor deve verificar que cada item define uma a&ccedil;&atilde;o.</p>
 <ol>
-<li>Seja $G\leq\mbox{Sym}(\Omega)$. Neste caso $G$ é dito um <em>grupo de permutação</em> sobre $\Omega$. O grupo  $G$ age naturalmente em $\Omega$.</li>
+<li>Seja $G\leq\mbox{Sym}(\Omega)$. Neste caso $G$ &eacute; dito um <em>grupo de permuta&ccedil;&atilde;o</em> sobre $\Omega$. O grupo&nbsp; $G$ age naturalmente em $\Omega$.</li>
 <li>Seja $G=D_4$ e $\Omega$ o conjunto das quatro pontas no quadrado. O grupo $G$ age em $\Omega$ naturalmente.</li>
-<li>Seja $G\leq GL(n,\F)$ e $\Omega=\F^n$. O grupo $G$ age em $\Omega$ pela ação $(v,g)\mapsto vg$ para todo $v\in \F^n$ e $g\in G$.</li>
-<li>Seja $G\leq GL(n,\F)$ e seja $\Omega=\{\left&lt;v\right&gt;\mid v\in \F^n\setminus\{0\}\}$. O conjunto $\Omega$ é chamado de <em>espaço projetivo</em>. O grupo $G$ age em $\Omega$ e a ação é $(\left&lt;v\right&gt;,g)\mapsto \left&lt;vg\right&gt;$ para todo $v\in \F^n$ e $g\in G$.</li>
-<li>Seja $G$ um grupo arbitrário e seja $\Omega=G$. O grupo $G$ age em $\Omega$ pela ação $(x,g)\mapsto xg$ para todo $x\in \Omega$ e $g\in G$.</li>
-<li>Sejam $G$ um grupo $H\leq G$ e $\Omega=\{Hg\mid g\in G\}$. O grupo $G$ age em $\Omega$ e a ação é $(Hx,g)\mapsto Hxg$ para todo $Hx\in\Omega$ e $g\in G$.</li>
-<li>Seja $G$ um grupo e ponha $\Omega=G$. Então $G$ age em $\Omega$ pela ação de conjugação: $(x,g)\mapsto x^g=g^{-1}xg$.</li>
+<li>Seja $G\leq GL(n,\F)$ e $\Omega=\F^n$. O grupo $G$ age em $\Omega$ pela a&ccedil;&atilde;o $(v,g)\mapsto vg$ para todo $v\in \F^n$ e $g\in G$.</li>
+<li>Seja $G\leq GL(n,\F)$ e seja $\Omega=\{\left&lt;v\right&gt;\mid v\in \F^n\setminus\{0\}\}$. O conjunto $\Omega$ &eacute; chamado de <em>espa&ccedil;o projetivo</em>. O grupo $G$ age em $\Omega$ e a a&ccedil;&atilde;o &eacute; $(\left&lt;v\right&gt;,g)\mapsto \left&lt;vg\right&gt;$ para todo $v\in \F^n$ e $g\in G$.</li>
+<li>Seja $G$ um grupo arbitr&aacute;rio e seja $\Omega=G$. O grupo $G$ age em $\Omega$ pela a&ccedil;&atilde;o $(x,g)\mapsto xg$ para todo $x\in \Omega$ e $g\in G$.</li>
+<li>Sejam $G$ um grupo $H\leq G$ e $\Omega=\{Hg\mid g\in G\}$. O grupo $G$ age em $\Omega$ e a a&ccedil;&atilde;o &eacute; $(Hx,g)\mapsto Hxg$ para todo $Hx\in\Omega$ e $g\in G$.</li>
+<li>Seja $G$ um grupo e ponha $\Omega=G$. Ent&atilde;o $G$ age em $\Omega$ pela a&ccedil;&atilde;o de conjuga&ccedil;&atilde;o: $(x,g)\mapsto x^g=g^{-1}xg$.</li>
 </ol>
-<p>Assuma que $G$ age em $\Omega$. Defina a seguinte relação $\equiv$ sobre $\Omega$. Se $\alpha,\beta\in\Omega$ então $\alpha\equiv\beta$ se existe $g\in G$ tal que $\alpha g=\beta$.</p>
-<p><strong>Exercício. </strong>A relação $\equiv$ é uma equivalência.</p>
-<p>As classes de equivalência da relação $\equiv$ são chamadas de <em>órbitas</em>. Se $\alpha\in\Omega$, então por definição, a órbita que contém $\alpha$ é o conjunto<br />
-\begin{eqnarray*}<br />
-\alpha G&amp;:=&amp;\{\beta\in\Omega\mid \alpha\equiv \beta\}\\&amp;=&amp;<br />
-\{\beta\in\Omega\mid \beta=\alpha g\mbox{ com algum $g\in G$}\}\\&amp;=&amp;<br />
-\{\alpha g\mid g\in G\}.<br />
+<p>Assuma que $G$ age em $\Omega$. Defina a seguinte rela&ccedil;&atilde;o $\equiv$ sobre $\Omega$. Se $\alpha,\beta\in\Omega$ ent&atilde;o $\alpha\equiv\beta$ se existe $g\in G$ tal que $\alpha g=\beta$.</p>
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>A rela&ccedil;&atilde;o $\equiv$ &eacute; uma equival&ecirc;ncia.</p>
+<p>As classes de equival&ecirc;ncia da rela&ccedil;&atilde;o $\equiv$ s&atilde;o chamadas de <em>&oacute;rbitas</em>. Se $\alpha\in\Omega$, ent&atilde;o por defini&ccedil;&atilde;o, a &oacute;rbita que cont&eacute;m $\alpha$ &eacute; o conjunto<br>
+\begin{eqnarray*}<br>
+\alpha G&amp;:=&amp;\{\beta\in\Omega\mid \alpha\equiv \beta\}\\&amp;=&amp;<br>
+\{\beta\in\Omega\mid \beta=\alpha g\mbox{ com algum $g\in G$}\}\\&amp;=&amp;<br>
+\{\alpha g\mid g\in G\}.<br>
 \end{eqnarray*}</p>
-<p>Se $G$ age em $\Omega$, então as órbitas de $G$ em $\Omega$ formam uma partição de $\Omega$.</p>
-<p><strong>Exemplo. </strong>Assuma que $G=GL(n,\F)$ e considere a ação de $G$ em $\Omega=\F^n$. Então $G$ tem duas órbitas em $\Omega$; nomeadamente, $\{0\}$ e $\Omega\setminus\{0\}$.</p>
-<p>O grupo $G$  é dito <em>transitivo</em> se $\Omega$ é uma órbita de $G$. Equivalentemente, $G$ é transitivo em $\Omega$, se para todo $\alpha,\beta\in\Omega$, existe $g\in G$ tal que $\alpha g=\beta$.</p>
-<p><strong>Exemplo. </strong>Seja $G=GL(n,\F)$ e considere a ação de $G$ sobe o espaço projetivo $\{\left&lt;v\right&gt;\mid v\in \F^n\setminus\{0\}\}$. O grupo $G$ é transitivo sobre $\Omega$.</p>
-<p>Dado $\alpha\in\Omega$, definimos o estabilizador de $\alpha$ em $G$ como<br />
-\[<br />
-G_\alpha=\{g\in G\mid \alpha g=\alpha\}.<br />
+<p>Se $G$ age em $\Omega$, ent&atilde;o as &oacute;rbitas de $G$ em $\Omega$ formam uma parti&ccedil;&atilde;o de $\Omega$.</p>
+<p><strong>Exemplo.&nbsp;</strong>Assuma que $G=GL(n,\F)$ e considere a a&ccedil;&atilde;o de $G$ em $\Omega=\F^n$. Ent&atilde;o $G$ tem duas &oacute;rbitas em $\Omega$; nomeadamente, $\{0\}$ e $\Omega\setminus\{0\}$.</p>
+<p>O grupo $G$&nbsp; &eacute; dito <em>transitivo</em>&nbsp;se $\Omega$ &eacute; uma &oacute;rbita de $G$. Equivalentemente, $G$ &eacute; transitivo em $\Omega$, se para todo $\alpha,\beta\in\Omega$, existe $g\in G$ tal que $\alpha g=\beta$.</p>
+<p><strong>Exemplo.&nbsp;</strong>Seja $G=GL(n,\F)$ e considere a a&ccedil;&atilde;o de $G$ sobe o espa&ccedil;o projetivo $\{\left&lt;v\right&gt;\mid v\in \F^n\setminus\{0\}\}$. O grupo $G$ &eacute; transitivo sobre $\Omega$.</p>
+<p>Dado $\alpha\in\Omega$, definimos o estabilizador de $\alpha$ em $G$ como<br>
+\[<br>
+G_\alpha=\{g\in G\mid \alpha g=\alpha\}.<br>
 \]</p>
-<p><strong>Exercício. </strong>$G_\alpha$ é um subgrupo de $G$.</p>
-<p><strong>Exemplo.</strong> Considere a ação de $G=GL(n,\F)$ sobre $\Omega=\{\left&lt;v\right&gt;\mid v\in\F^n\setminus\{0\}\}$. Seja $\alpha=\left&lt;(1,0,\ldots,0)\right&gt;$. Então o estabilizador $G_\alpha$ é o subgrupo de matrizes na forma<br />
-\[<br />
-\begin{pmatrix} a &amp; \underline 0\\ \underline u &amp; B\end{pmatrix}<br />
-\]<br />
-onde $a\in\F\setminus\{0\}$, $\underline 0\in\F^{n-1}$ é o vetor nulo, $\underline u\in\F^{n-1}$ e $B$ é uma matriz $(n-1)\times(n-1)$ invertivel.</p>
-<p>Assuma que $\Omega$, $G$, e $\alpha\in\Omega$ são como acima. Para, $\beta\in \alpha G$, considere o conjunto<br />
-\[<br />
-G_{\alpha\to\beta}=\{g\in G\mid \alpha g=\beta\}.<br />
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>$G_\alpha$ &eacute; um subgrupo de $G$.</p>
+<p><strong>Exemplo.</strong> Considere a a&ccedil;&atilde;o de $G=GL(n,\F)$ sobre $\Omega=\{\left&lt;v\right&gt;\mid v\in\F^n\setminus\{0\}\}$. Seja $\alpha=\left&lt;(1,0,\ldots,0)\right&gt;$. Ent&atilde;o o estabilizador $G_\alpha$ &eacute; o subgrupo de matrizes na forma<br>
+\[<br>
+\begin{pmatrix} a &amp; \underline 0\\ \underline u &amp; B\end{pmatrix}<br>
+\]<br>
+onde $a\in\F\setminus\{0\}$, $\underline 0\in\F^{n-1}$ &eacute; o vetor nulo, $\underline u\in\F^{n-1}$ e $B$ &eacute; uma matriz $(n-1)\times(n-1)$ invertivel.</p>
+<p>Assuma que $\Omega$, $G$, e $\alpha\in\Omega$ s&atilde;o como acima. Para, $\beta\in \alpha G$, considere o conjunto<br>
+\[<br>
+G_{\alpha\to\beta}=\{g\in G\mid \alpha g=\beta\}.<br>
 \]</p>
-<p><strong>Observações. </strong></p>
+<p><strong>Observa&ccedil;&otilde;es.&nbsp;</strong></p>
 <ol>
-<li>$G_{\alpha\to\alpha}=G_{\alpha}$ é um subgrupo de $G$.</li>
+<li>$G_{\alpha\to\alpha}=G_{\alpha}$ &eacute; um subgrupo de $G$.</li>
 <li>Como $\beta\in \alpha G$, o conjunto $G_{\alpha\to\beta}\neq\emptyset$.</li>
-<li>Seja $g\in G_{\alpha\to\beta}$ e $h\in G_\alpha$. Então<br />
-\[<br />
-\alpha(hg)=(\alpha h)g=\alpha g=\beta.<br />
-\]<br />
-Ou seja, $hg\in G_{\alpha\to \beta}$. Isto quer dizer que a classe lateral $G_\alpha g$ está contido em $G_{\alpha\to\beta}$.</li>
-<li>Seja $x$ another elemento de $G_{\alpha\to\beta}$. Então<br />
-\[<br />
-\alpha (xg^{-1})=(\alpha x)g^{-1}=\beta g^{-1}=\alpha.<br />
-\]<br />
+<li>Seja $g\in G_{\alpha\to\beta}$ e $h\in G_\alpha$. Ent&atilde;o<br>
+\[<br>
+\alpha(hg)=(\alpha h)g=\alpha g=\beta.<br>
+\]<br>
+Ou seja, $hg\in G_{\alpha\to \beta}$. Isto quer dizer que a classe lateral $G_\alpha g$ est&aacute; contido em $G_{\alpha\to\beta}$.</li>
+<li>Seja $x$ another elemento de $G_{\alpha\to\beta}$. Ent&atilde;o<br>
+\[<br>
+\alpha (xg^{-1})=(\alpha x)g^{-1}=\beta g^{-1}=\alpha.<br>
+\]<br>
 Ou seja $xg^{-1}\in G_\alpha$, ou seja $x\in G_\alpha g$. Isto implica que $G_{\alpha\to\beta}\subseteq G_\alpha g$.</li>
-<li>As duas observações anteriores implicam que $G_{\alpha\to\beta}=G_{\alpha}g$ onde $g\in G$ tal que $\alpha g=\beta$.  Ou seja, o conjunto $G_{\alpha\to\beta}$ é uma classe lateral de $G_\alpha$. Em particular, esta correspondência dá uma aplicação $\varphi:\alpha G\to \{G_\alpha g\mid g\in G\}$.</li>
+<li>As duas observa&ccedil;&otilde;es anteriores implicam que $G_{\alpha\to\beta}=G_{\alpha}g$ onde $g\in G$ tal que $\alpha g=\beta$.&nbsp; Ou seja, o conjunto $G_{\alpha\to\beta}$ &eacute; uma classe lateral de $G_\alpha$. Em particular, esta correspond&ecirc;ncia d&aacute; uma aplica&ccedil;&atilde;o $\varphi:\alpha G\to \{G_\alpha g\mid g\in G\}$.</li>
 </ol>
-<p><strong>Lema. </strong>Usando a notação introduzida acima, a aplicação $\varphi:\alpha G\to \{G_\alpha g\mid g\in G\}$ está bem definida e ela é uma bijeção entre $\alpha G$ e $\{G_\alpha g\mid g\in G\}$.</p>
-<p><strong>Demonstração. </strong>Boa definição: Assuma que $g_1,g_2\in G$ tais que $\alpha g_1=\alpha g_2=\beta$. Então $g_1g_2^{-1}\in G_\alpha$ e isto implica que $G_\alpha g_1=G_\alpha g_2$. Logo, a aplicação $\varphi$ está bem definida.</p>
-<p>Sobrejetiva: Se $G_\alpha g$ é uma classe lateral de $G_\alpha$, então $G_\alpha g=\varphi(\alpha g)$.</p>
-<p>Injetiva: Assuma que $\beta_1,\beta_2\in \Omega$ tais que $\varphi(\beta_1)=\varphi(\beta_2)$. Então existem $g_1,g_2\in G$ tais que $\beta_1=\alpha g_1$ e $\beta_2=\alpha g_2$. Mas pela definição de $\varphi$,<br />
-\[<br />
-G_\alpha g_1=\varphi(\alpha g_1)=\varphi(\beta_1)=\varphi(\beta_2)=\varphi(\alpha g_2)=G_\alpha g_2.<br />
-\]<br />
-Ou seja, $g_1g_2^{-1}\in G_\alpha$. Mas isto implica que $\alpha g_1g_2^{-1}=\alpha$ e que $\beta_1=\alpha g_1=\alpha g_2=\beta_2$. Portanto o mapa $\varphi$ é injetivo.</p>
-<p><strong>Teorema (Teorema Órbita-Estabilizador) </strong>Assuma que um grupo finito $G$ age transitivamente em um conjunto $\Omega$ e seja $\alpha\in\Omega$. Então $|G|=|G_\alpha||\Omega|$. Em particular $|\Omega|$ é um divisor de $|G|$.</p>
-			</div><!-- .entry-content -->
+<p><strong>Lema.&nbsp;</strong>Usando a nota&ccedil;&atilde;o introduzida acima, a aplica&ccedil;&atilde;o $\varphi:\alpha G\to \{G_\alpha g\mid g\in G\}$ est&aacute; bem definida e ela &eacute; uma bije&ccedil;&atilde;o entre $\alpha G$ e $\{G_\alpha g\mid g\in G\}$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Boa defini&ccedil;&atilde;o: Assuma que $g_1,g_2\in G$ tais que $\alpha g_1=\alpha g_2=\beta$. Ent&atilde;o $g_1g_2^{-1}\in G_\alpha$ e isto implica que $G_\alpha g_1=G_\alpha g_2$. Logo, a aplica&ccedil;&atilde;o $\varphi$ est&aacute; bem definida.</p>
+<p>Sobrejetiva: Se $G_\alpha g$ &eacute; uma classe lateral de $G_\alpha$, ent&atilde;o $G_\alpha g=\varphi(\alpha g)$.</p>
+<p>Injetiva: Assuma que $\beta_1,\beta_2\in \Omega$ tais que $\varphi(\beta_1)=\varphi(\beta_2)$. Ent&atilde;o existem $g_1,g_2\in G$ tais que $\beta_1=\alpha g_1$ e $\beta_2=\alpha g_2$. Mas pela defini&ccedil;&atilde;o de $\varphi$,<br>
+\[<br>
+G_\alpha g_1=\varphi(\alpha g_1)=\varphi(\beta_1)=\varphi(\beta_2)=\varphi(\alpha g_2)=G_\alpha g_2.<br>
+\]<br>
+Ou seja, $g_1g_2^{-1}\in G_\alpha$. Mas isto implica que $\alpha g_1g_2^{-1}=\alpha$ e que $\beta_1=\alpha g_1=\alpha g_2=\beta_2$. Portanto o mapa $\varphi$ &eacute; injetivo.</p>
+<p><strong>Teorema (Teorema &Oacute;rbita-Estabilizador)&nbsp;</strong>Assuma que um grupo finito $G$ age transitivamente em um conjunto $\Omega$ e seja $\alpha\in\Omega$. Ent&atilde;o $|G|=|G_\alpha||\Omega|$. Em particular $|\Omega|$ &eacute; um divisor de $|G|$.</p>
+			</div>
 	<footer class="entry-footer">
-			</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+			</footer>
+</article>
 
 				
 			
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 
-	</div><!-- #content -->
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
 						<div class="site-info">
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
-				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div><!-- .site-info -->
-		</div><!-- .site-info-wrapper -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
 
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/wp-embed.min.js?ver=4.9.15'></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
 </body>
 </html>
