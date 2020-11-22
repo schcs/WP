@@ -3,51 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+
 
 	
-<title>Números primos &#8211; Csaba Schneider</title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.15"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='penscratch-2-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.15' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-block-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='https://schcs.github.io/WP/index.php/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/numeros-primos/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=804' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fnumeros-primos%2F" />
+<title>N&uacute;meros primos &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="http://schcs.github.io/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="http://schcs.github.io/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.16" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://schcs.github.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="http://schcs.github.io/index.php/numeros-primos/">
+
+<link rel="alternate" type="application/json+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2Fnumeros-primos%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2Fnumeros-primos%2F&amp;format=xml">
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -61,19 +43,19 @@ MathJax.Hub.Config({
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="http://schcs.github.io/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle">
-				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"/><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"/></g></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://schcs.github.io/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="http://schcs.github.io/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://schcs.github.io/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
 
 	<div id="content" class="site-content">
 		
@@ -84,86 +66,85 @@ MathJax.Hub.Config({
 				
 <article id="post-804" class="post-804 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Números primos</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">N&uacute;meros primos</h1>	</header>
 		<div class="entry-content">
-		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\mdc}[2]{\mbox{mdc}(#1,#2)}$Vamos começar por uma conta detalhada usando o algoritmo de Euclides.</p>
-<p><strong>Exemplo. </strong>Vamos calcular $\mdc{232}{136}$. As divisões euclidianas serão as seguintes:<br />
-\begin{eqnarray*}<br />
-232&amp;=&amp;1\cdot 136+96\\<br />
-136&amp;=&amp;1\cdot 96+40\\<br />
-96&amp;=&amp;2\cdot 40+16\\<br />
-40&amp;=&amp;2\cdot 16+8\\<br />
-16&amp;=&amp;2\cdot 8+0.<br />
-\end{eqnarray*}<br />
-Obtemos então que $\mdc{232}{136}=8$.</p>
-<p>Determinemos agora números $u,v\in\Z$ tais que<br />
-\[<br />
-u\cdot 232+v\cdot 136=\mdc{232}{136}=8.<br />
-\]<br />
-Vamos de cima para baixo nas contas do Algoritmo de Euclides. Obtemos das divisões acima que<br />
-\begin{eqnarray*}<br />
-96&amp;=&amp;232-136\\<br />
-40&amp;=&amp;136-96=136-(232-136)=-232+2\cdot 136\\<br />
-16&amp;=&amp;96-2\cdot 40=(232-136)-2(-232+2\cdot 136)=3\cdot 232-5\cdot 136\\<br />
-8&amp;=&amp;40-2\cdot 16=(-232+2\cdot 136)-2(3\cdot 232-5\cdot 136)=-7\cdot 232+12\cdot 136.<br />
-\end{eqnarray*}<br />
-Então obtemos que<br />
-\[<br />
-8=\mdc{232}{136}=-7\cdot 232+12\cdot 136.<br />
-\]<br />
-Note que os coeficientes $u=-7$ e $v=12$ não são únicos.</p>
-<hr />
-<p>Um número inteiro $n$ diferente de $\pm 1$ e de $0$ é dito <em>primo</em> se os únicos divisores de $n$ são $\pm 1$ e $\pm n$. No caso contrário, o número é dito <em>composto</em>. Os números $1$, $-1$, e $0$ não são considerados nem primos nem compostos.</p>
-<p>Por exemplo, o número $-5$ é primo, pois ele é divisível por apenas $\pm 1$ e $\pm 5$. O número $6$ é composto, pois ele é divisível, por exemplo, por $2$.</p>
-<p>A seguinte é uma propriedade importante dos números primos.</p>
-<p><strong>Teorema. </strong>Sejam $p$ um primo e $a,b\in\Z$ tais que $p\mid ab$. Então $p\mid a$ ou $p\mid b$.</p>
-<p><strong>Demonstração. </strong>Assuma que as condições do Teorema estão válidas e que $p\nmid a$. Então $\mdc pa=1$ e obtemos do Algoritmo de Euclides que existem $u,v\in\Z$ tais que $up+va=1$. Multiplicando por $b$, obtemos que<br />
-\[<br />
-upb+vab=b.<br />
-\]<br />
-Como $p$ divide $ab$, o número $p$ divide $vab$, então $p$ divide as duas parcelas no lado esquerdo da última equação. Mas isso implica que $p\mid b$.</p>
-<p>O seguinte teorema é bem conhecido dos nossos estudos prévios. Aqui nós vamos apresentá-lo sem demonstração;</p>
-<p><strong>Teorema. </strong>Todo número natural maior ou igual a $2$ pode ser escrito como produto de primos positivos. Além disso, esta decomposição é unica a menos da ordem dos fatores.</p>
-<p>Por exemplo, temos que<br />
-\[<br />
-120=2\cdot 2\cdot 2\cdot 3\cdot 5=2\cdot 2\cdot 3\cdot 5\cdot 2=\cdots=2^3\cdot 3\cdot 5.<br />
+		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\mdc}[2]{\mbox{mdc}(#1,#2)}$Vamos come&ccedil;ar por uma conta detalhada usando o algoritmo de Euclides.</p>
+<p><strong>Exemplo.&nbsp;</strong>Vamos calcular $\mdc{232}{136}$. As divis&otilde;es euclidianas ser&atilde;o as seguintes:<br>
+\begin{eqnarray*}<br>
+232&amp;=&amp;1\cdot 136+96\\<br>
+136&amp;=&amp;1\cdot 96+40\\<br>
+96&amp;=&amp;2\cdot 40+16\\<br>
+40&amp;=&amp;2\cdot 16+8\\<br>
+16&amp;=&amp;2\cdot 8+0.<br>
+\end{eqnarray*}<br>
+Obtemos ent&atilde;o que $\mdc{232}{136}=8$.</p>
+<p>Determinemos agora n&uacute;meros $u,v\in\Z$ tais que<br>
+\[<br>
+u\cdot 232+v\cdot 136=\mdc{232}{136}=8.<br>
+\]<br>
+Vamos de cima para baixo nas contas do Algoritmo de Euclides. Obtemos das divis&otilde;es acima que<br>
+\begin{eqnarray*}<br>
+96&amp;=&amp;232-136\\<br>
+40&amp;=&amp;136-96=136-(232-136)=-232+2\cdot 136\\<br>
+16&amp;=&amp;96-2\cdot 40=(232-136)-2(-232+2\cdot 136)=3\cdot 232-5\cdot 136\\<br>
+8&amp;=&amp;40-2\cdot 16=(-232+2\cdot 136)-2(3\cdot 232-5\cdot 136)=-7\cdot 232+12\cdot 136.<br>
+\end{eqnarray*}<br>
+Ent&atilde;o obtemos que<br>
+\[<br>
+8=\mdc{232}{136}=-7\cdot 232+12\cdot 136.<br>
+\]<br>
+Note que os coeficientes $u=-7$ e $v=12$ n&atilde;o s&atilde;o &uacute;nicos.</p>
+<hr>
+<p>Um n&uacute;mero inteiro $n$ diferente de $\pm 1$ e de $0$ &eacute; dito <em>primo</em> se os &uacute;nicos divisores de $n$ s&atilde;o $\pm 1$ e $\pm n$. No caso contr&aacute;rio, o n&uacute;mero &eacute; dito <em>composto</em>. Os n&uacute;meros $1$, $-1$, e $0$ n&atilde;o s&atilde;o considerados nem primos nem compostos.</p>
+<p>Por exemplo, o n&uacute;mero $-5$ &eacute; primo, pois ele &eacute; divis&iacute;vel por apenas $\pm 1$ e $\pm 5$. O n&uacute;mero $6$ &eacute; composto, pois ele &eacute; divis&iacute;vel, por exemplo, por $2$.</p>
+<p>A seguinte &eacute; uma propriedade importante dos n&uacute;meros primos.</p>
+<p><strong>Teorema.&nbsp;</strong>Sejam $p$ um primo e $a,b\in\Z$ tais que $p\mid ab$. Ent&atilde;o $p\mid a$ ou $p\mid b$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Assuma que as condi&ccedil;&otilde;es do Teorema est&atilde;o v&aacute;lidas e que $p\nmid a$. Ent&atilde;o $\mdc pa=1$ e obtemos do Algoritmo de Euclides que existem $u,v\in\Z$ tais que $up+va=1$. Multiplicando por $b$, obtemos que<br>
+\[<br>
+upb+vab=b.<br>
+\]<br>
+Como $p$ divide $ab$, o n&uacute;mero $p$ divide $vab$, ent&atilde;o $p$ divide as duas parcelas no lado esquerdo da &uacute;ltima equa&ccedil;&atilde;o. Mas isso implica que $p\mid b$.</p>
+<p>O seguinte teorema &eacute; bem conhecido dos nossos estudos pr&eacute;vios. Aqui n&oacute;s vamos apresent&aacute;-lo sem demonstra&ccedil;&atilde;o;</p>
+<p><strong>Teorema.&nbsp;</strong>Todo n&uacute;mero natural maior ou igual a $2$ pode ser escrito como produto de primos positivos. Al&eacute;m disso, esta decomposi&ccedil;&atilde;o &eacute; unica a menos da ordem dos fatores.</p>
+<p>Por exemplo, temos que<br>
+\[<br>
+120=2\cdot 2\cdot 2\cdot 3\cdot 5=2\cdot 2\cdot 3\cdot 5\cdot 2=\cdots=2^3\cdot 3\cdot 5.<br>
 \]</p>
-<p><strong>Algoritmos. </strong>Neste momento não se sabe se existe algum algoritmo que pode determinar eficientemente a fatoração de um número  grande. De fato, muitos métodos na criptografia estão baseados na suposição que uma pessoa que intercepta a mensagem não vai conseguir fatorar os números envolvidos e então não consegue decifrar o conteúdo.</p>
-<p>O <a href="https://pt.wikipedia.org/wiki/Teste_de_primalidade_AKS">primeiro algoritmo</a> eficiente para testar primalidade de um número grande foi apresentado por <a title="Manindra Agrawal" href="https://pt.wikipedia.org/wiki/Manindra_Agrawal">Manindra Agrawal</a>, <a title="Neeraj Kayal" href="https://pt.wikipedia.org/wiki/Neeraj_Kayal">Neeraj Kayal</a> e <a href="https://en.wikipedia.org/wiki/Nitin_Saxena">Nitin Saxena</a> em 2002. Este algoritmo é conhecido como o Algoritmo AKS e é estudado no livro de Shoup.</p>
-<p>O seguinte teorema foi conhecido já na antiguidade.</p>
-<p><strong>Teorema (<a href="https://pt.wikipedia.org/wiki/Euclides">Euclides</a>). </strong>Existem infinitos primos.</p>
-<p><strong>Demonstração.</strong> Suponha com o objetivo de obter uma contradição que existem apenas finitos primos, nomeadamente, $p_1=2$, $p_2=3$, $p_3=5,\ldots,p_m$. Considere o número<br />
-\[<br />
-N=p_1p_2p_3\cdots p_m+1.<br />
-\]<br />
-Ora $N$ não é primo, pois ele é maior que todos os primos que supostamente existem. Além disso, $N$ deve ser divisível por algum primo $p$. Por outro lado, os primos $p_1,\ldots,p_m$ não dividem $N$, pois o resto de $N$ quando for dividido por estes primos é igual a $1$. Isto implica que $p$ precisa ser um novo primo que não está na suposta lista de todos os primos. Isto é uma contradição que significa que a nossa suposição foi errada; ou seja, o número dos primos precisa ser infinito.</p>
-			</div><!-- .entry-content -->
+<p><strong>Algoritmos.&nbsp;</strong>Neste momento n&atilde;o se sabe se existe algum algoritmo que pode determinar eficientemente a fatora&ccedil;&atilde;o de um n&uacute;mero&nbsp; grande. De fato, muitos m&eacute;todos na criptografia est&atilde;o baseados na suposi&ccedil;&atilde;o que uma pessoa que intercepta a mensagem n&atilde;o vai conseguir fatorar os n&uacute;meros envolvidos e ent&atilde;o n&atilde;o consegue decifrar o conte&uacute;do.</p>
+<p>O <a href="https://pt.wikipedia.org/wiki/Teste_de_primalidade_AKS">primeiro algoritmo</a> eficiente para testar primalidade de um n&uacute;mero grande foi apresentado por&nbsp;<a title="Manindra Agrawal" href="https://pt.wikipedia.org/wiki/Manindra_Agrawal">Manindra Agrawal</a>,&nbsp;<a title="Neeraj Kayal" href="https://pt.wikipedia.org/wiki/Neeraj_Kayal">Neeraj Kayal</a>&nbsp;e&nbsp;<a href="https://en.wikipedia.org/wiki/Nitin_Saxena">Nitin Saxena</a>&nbsp;em 2002. Este algoritmo &eacute; conhecido como o Algoritmo AKS e &eacute; estudado no livro de Shoup.</p>
+<p>O seguinte teorema foi conhecido j&aacute; na antiguidade.</p>
+<p><strong>Teorema (<a href="https://pt.wikipedia.org/wiki/Euclides">Euclides</a>).&nbsp;</strong>Existem infinitos primos.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Suponha com o objetivo de obter uma contradi&ccedil;&atilde;o que existem apenas finitos primos, nomeadamente, $p_1=2$, $p_2=3$, $p_3=5,\ldots,p_m$. Considere o n&uacute;mero<br>
+\[<br>
+N=p_1p_2p_3\cdots p_m+1.<br>
+\]<br>
+Ora $N$ n&atilde;o &eacute; primo, pois ele &eacute; maior que todos os primos que supostamente existem. Al&eacute;m disso, $N$ deve ser divis&iacute;vel por algum primo $p$. Por outro lado, os primos $p_1,\ldots,p_m$ n&atilde;o dividem $N$, pois o resto de $N$ quando for dividido por estes primos &eacute; igual a $1$. Isto implica que $p$ precisa ser um novo primo que n&atilde;o est&aacute; na suposta lista de todos os primos. Isto &eacute; uma contradi&ccedil;&atilde;o que significa que a nossa suposi&ccedil;&atilde;o foi errada; ou seja, o n&uacute;mero dos primos precisa ser infinito.</p>
+			</div>
 	<footer class="entry-footer">
-			</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+			</footer>
+</article>
 
 				
 			
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 
-	</div><!-- #content -->
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
 						<div class="site-info">
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
-				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div><!-- .site-info -->
-		</div><!-- .site-info-wrapper -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
 
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/wp-embed.min.js?ver=4.9.15'></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
 </body>
 </html>
