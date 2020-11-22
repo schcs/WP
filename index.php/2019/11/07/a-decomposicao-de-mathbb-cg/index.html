@@ -3,54 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
+
 
 	
-<title>A decomposição de $\mathbb CG$ &#8211; Csaba Schneider</title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; A decomposição de $\mathbb CG$ Comments Feed" href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.15"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='penscratch-2-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.15' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='penscratch-2-block-style-css'  href='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0' type='text/css' media='all' />
-<link rel='stylesheet' id='tablepress-default-css'  href='https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<link rel='https://api.w.org/' href='https://schcs.github.io/WP/index.php/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml" /> 
-<link rel='prev' title='O caracter e as relações de ortgonalidade' href='https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/' />
-<link rel='next' title='Integralidade' href='https://schcs.github.io/WP/index.php/2019/11/19/integralidade/' />
-<meta name="generator" content="WordPress 4.9.15" />
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/" />
-<link rel='shortlink' href='https://schcs.github.io/WP/?p=594' />
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2F2019%2F11%2F07%2Fa-decomposicao-de-mathbb-cg%2F" />
-<link rel="pingback" href="https://schcs.github.io/WP/xmlrpc.php"><script type="text/x-mathjax-config">
+<title>A decomposi&ccedil;&atilde;o de $\mathbb CG$ &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="http://schcs.github.io/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="http://schcs.github.io/index.php/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; A decomposi&ccedil;&atilde;o de $\mathbb CG$ Comments Feed" href="http://schcs.github.io/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.16" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="http://schcs.github.io/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+<link rel="prev" title="O caracter e as rela&ccedil;&otilde;es de ortgonalidade" href="http://schcs.github.io/index.php/2019/10/31/o-caracter/">
+<link rel="next" title="Integralidade" href="http://schcs.github.io/index.php/2019/11/19/integralidade/">
+
+<link rel="canonical" href="http://schcs.github.io/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/">
+
+<link rel="alternate" type="application/json+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F11%2F07%2Fa-decomposicao-de-mathbb-cg%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://schcs.github.io/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fschcs.github.io%2Findex.php%2F2019%2F11%2F07%2Fa-decomposicao-de-mathbb-cg%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   TeX: { equationNumbers: { autoNumber: "AMS" } }
 });
 </script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -64,19 +46,19 @@ MathJax.Hub.Config({
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="http://schcs.github.io/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle">
-				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"/><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"/></g></svg>
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
-</ul></div>		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://schcs.github.io/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="http://schcs.github.io/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="http://schcs.github.io/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
 
 	<div id="content" class="site-content">
 		
@@ -87,126 +69,126 @@ MathJax.Hub.Config({
 			
 <article id="post-594" class="post-594 post type-post status-publish format-standard hentry category-uncategorized">
 	<header class="entry-header">
-		<h1 class="entry-title">A decomposição de $\mathbb CG$</h1>		
+		<h1 class="entry-title">A decomposi&ccedil;&atilde;o de $\mathbb CG$</h1>		
 		<div class="entry-meta">
-			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/" rel="bookmark"><time class="entry-date published" datetime="2019-11-07T01:16:48+00:00">November 7, 2019</time><time class="updated" datetime="2019-11-12T11:13:13+00:00">November 12, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+			<span class="posted-on"><a href="http://schcs.github.io/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/" rel="bookmark"><time class="entry-date published" datetime="2019-11-07T01:16:48+00:00">November 7, 2019</time><time class="updated" datetime="2019-11-12T11:13:13+00:00">November 12, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="http://schcs.github.io/index.php/author/schcs/">schcs</a></span></span>					</div>
+	</header>
 
 	<div class="entry-content">
-		<p>$\newcommand{\C}{\mathbb C}$Assuma nesta página que $G$ é um grupo finito, $\chi_1,\ldots,\chi_k$ são os caracteres de $G$ irredutíveis e os graus destes caracteres são $n_1,\ldots,n_k$, respetivamente; ou seja, $1\chi_i=n_i$ para todo $i$.</p>
-<p>Seja $V=\C G$ considerado como um $G$-módulo seja $\varrho$ o caracter correspondente. O conjunto $G$ é uma base de $V$ e<br />
-\[<br />
-g\varrho=|\{h\in G\mid hg=h\}|.<br />
-\]<br />
+		<p>$\newcommand{\C}{\mathbb C}$Assuma nesta p&aacute;gina que $G$ &eacute; um grupo finito, $\chi_1,\ldots,\chi_k$ s&atilde;o os caracteres de $G$ irredut&iacute;veis e os graus destes caracteres s&atilde;o $n_1,\ldots,n_k$, respetivamente; ou seja, $1\chi_i=n_i$ para todo $i$.</p>
+<p>Seja $V=\C G$ considerado como um $G$-m&oacute;dulo seja $\varrho$ o caracter correspondente. O conjunto $G$ &eacute; uma base de $V$ e<br>
+\[<br>
+g\varrho=|\{h\in G\mid hg=h\}|.<br>
+\]<br>
 Obtemos a seguinte lema.</p>
-<p><strong>Teorema. </strong><br />
-\[<br />
-g\varrho=\left\{\begin{array}{cl} |G| &amp; \mbox{se $g=1$};\\<br />
-0 &amp; \mbox{se $g\neq 1$}\end{array}\right.<br />
-\]<br />
-e<br />
-\[<br />
-\varrho=\sum_{i=1}^k n_i\chi_i.<br />
-\]<br />
-Em particular,<br />
-\[<br />
-\sum_{i=1}^k n_i^2=|G|.<br />
+<p><strong>Teorema.&nbsp;</strong><br>
+\[<br>
+g\varrho=\left\{\begin{array}{cl} |G| &amp; \mbox{se $g=1$};\\<br>
+0 &amp; \mbox{se $g\neq 1$}\end{array}\right.<br>
+\]<br>
+e<br>
+\[<br>
+\varrho=\sum_{i=1}^k n_i\chi_i.<br>
+\]<br>
+Em particular,<br>
+\[<br>
+\sum_{i=1}^k n_i^2=|G|.<br>
 \]</p>
-<p><strong>Demonstração. </strong>A primeira afirmação segue da observação antes do teorema. Para provar a segunda afirmação, lembre que pelo Teorema de Maschke, $\C G$ é uma soma direta de $G$-módulos simples. Portanto<br />
-\[<br />
-\varrho=\alpha_1\chi_1+\cdots+\alpha_k\chi_k<br />
-\]<br />
-com alguns coeficientes $\alpha_i\geq 0$. Como $\chi_1,\ldots,\chi_k$ é um sistema ortonormal,<br />
-\[<br />
-\alpha_i=\left&lt;\varrho,\chi_i\right&gt;=\frac 1{|G|}\sum_{g\in G}(g\varrho)\overline{(g\chi_i)}=\frac 1{|G|}|G| n_i=n_i.<br />
-\]<br />
-A última afirmação segue calculando<br />
-\[<br />
-|G|=\dim \C G=1 \varrho=\sum_{i=1}^k n_i(1\chi_i)=\sum_{i=1}^k n_i^2.<br />
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>A primeira afirma&ccedil;&atilde;o segue da observa&ccedil;&atilde;o antes do teorema. Para provar a segunda afirma&ccedil;&atilde;o, lembre que pelo Teorema de Maschke, $\C G$ &eacute; uma soma direta de $G$-m&oacute;dulos simples. Portanto<br>
+\[<br>
+\varrho=\alpha_1\chi_1+\cdots+\alpha_k\chi_k<br>
+\]<br>
+com alguns coeficientes $\alpha_i\geq 0$. Como $\chi_1,\ldots,\chi_k$ &eacute; um sistema ortonormal,<br>
+\[<br>
+\alpha_i=\left&lt;\varrho,\chi_i\right&gt;=\frac 1{|G|}\sum_{g\in G}(g\varrho)\overline{(g\chi_i)}=\frac 1{|G|}|G| n_i=n_i.<br>
+\]<br>
+A &uacute;ltima afirma&ccedil;&atilde;o segue calculando<br>
+\[<br>
+|G|=\dim \C G=1 \varrho=\sum_{i=1}^k n_i(1\chi_i)=\sum_{i=1}^k n_i^2.<br>
 \]</p>
-<p><strong>Teorema. </strong>Os caracteres $\chi_1,\ldots,\chi_k$ formam uma base ortonormal do espaço de funções<br />
-\[<br />
-W=\{f\in\mbox{Func}(G,\C)\mid (g^x)f=gf\mbox{ para todo }g,x\in G\}.<br />
-\]<br />
-Em particular, o número de $\C$-representações irredutíveis de dimensão finita de $G$ é igual ao número das classes de conjugação de $G$.</p>
+<p><strong>Teorema.&nbsp;</strong>Os caracteres $\chi_1,\ldots,\chi_k$ formam uma base ortonormal do espa&ccedil;o de fun&ccedil;&otilde;es<br>
+\[<br>
+W=\{f\in\mbox{Func}(G,\C)\mid (g^x)f=gf\mbox{ para todo }g,x\in G\}.<br>
+\]<br>
+Em particular, o n&uacute;mero de $\C$-representa&ccedil;&otilde;es irredut&iacute;veis de dimens&atilde;o finita de $G$ &eacute; igual ao n&uacute;mero das classes de conjuga&ccedil;&atilde;o de $G$.</p>
 <p>Antes de provar o teorema, provaremos o seguinte lema.</p>
-<p><strong>Lema. </strong>Seja $f\in W$, e seja $\sigma$ uma representação irredutível de $G$ em $V$ com caracter $\chi$. Então<br />
-\[<br />
-\sigma_f=\sum_{g\in G} (gf)(g\sigma)=\left(\frac{|G|}{1\chi}\left&lt;f,\overline \chi\right&gt;\right)\cdot\mbox{id}.<br />
+<p><strong>Lema.&nbsp;</strong>Seja $f\in W$, e seja $\sigma$ uma representa&ccedil;&atilde;o irredut&iacute;vel de $G$ em $V$ com caracter $\chi$. Ent&atilde;o<br>
+\[<br>
+\sigma_f=\sum_{g\in G} (gf)(g\sigma)=\left(\frac{|G|}{1\chi}\left&lt;f,\overline \chi\right&gt;\right)\cdot\mbox{id}.<br>
 \]</p>
-<p><strong>Demonstração.</strong> Note que $\sigma_f\in\mbox{End}_{\C}(V)$.<br />
-Verificamos primeiro que $\sigma_f(h\sigma)=(h\sigma)\sigma_f$, ou seja $\sigma_f\in \mbox{End}_{G}(V)$. De fato<br />
-\begin{align*}<br />
-(h\sigma)^{-1}\sigma_f(h\sigma)&amp;=\sum_{g\in G}(gf)(h\sigma)^{-1}(g\sigma)(h\sigma)\\&amp;=\sum_{g\in G}(gf)((h^{-1}gh)\sigma)=\sum_{y\in G} ((h yh^{-1})f)(y\sigma)\\&amp;=\sum_{y\in G} (yf)(y\sigma)=\sigma_f.<br />
-\end{align*}<br />
-Portanto, $\sigma_f\in \mbox{End}_{G}(V)$, como foi afirmado. Como $V$ é um $G$-módulo simples, obtemos que $\sigma_f=\lambda\cdot\mbox{id}$ onde $\lambda\in\C^*$. Além disso,<br />
-\[<br />
-\lambda\dim V=(1\chi)\lambda=\mbox{Tr}(\sigma_f)=\sum_{g\in G}(gf)\mbox{Tr}(g\sigma)=<br />
-\sum_{g\in G}(gf)(g\chi)=|G|\left&lt;f,\overline \chi\right&gt;<br />
-\]<br />
+<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Note que $\sigma_f\in\mbox{End}_{\C}(V)$.<br>
+Verificamos primeiro que $\sigma_f(h\sigma)=(h\sigma)\sigma_f$, ou seja $\sigma_f\in&nbsp;\mbox{End}_{G}(V)$. De fato<br>
+\begin{align*}<br>
+(h\sigma)^{-1}\sigma_f(h\sigma)&amp;=\sum_{g\in G}(gf)(h\sigma)^{-1}(g\sigma)(h\sigma)\\&amp;=\sum_{g\in G}(gf)((h^{-1}gh)\sigma)=\sum_{y\in G} ((h yh^{-1})f)(y\sigma)\\&amp;=\sum_{y\in G} (yf)(y\sigma)=\sigma_f.<br>
+\end{align*}<br>
+Portanto, $\sigma_f\in&nbsp;\mbox{End}_{G}(V)$, como foi afirmado. Como $V$ &eacute; um $G$-m&oacute;dulo simples, obtemos que $\sigma_f=\lambda\cdot\mbox{id}$ onde $\lambda\in\C^*$. Al&eacute;m disso,<br>
+\[<br>
+\lambda\dim V=(1\chi)\lambda=\mbox{Tr}(\sigma_f)=\sum_{g\in G}(gf)\mbox{Tr}(g\sigma)=<br>
+\sum_{g\in G}(gf)(g\chi)=|G|\left&lt;f,\overline \chi\right&gt;<br>
+\]<br>
 Em particular, $\lambda=|G|\left&lt;f,\overline \chi\right&gt;/(1\chi)$ e $\sigma_f=|G|\left&lt;f,\overline \chi\right&gt;/(1\chi)\cdot\mbox{id}$.</p>
-<p><strong>Demonstração do Teorema. </strong>Já vimos que o sistema $\chi_1,\ldots,\chi_k$ é ortonormal em $W$. Portanto é suficiente provar que se $f\in W$ tal que $\left&lt;\chi_i,\overline f\right&gt;=\left&lt;f,\overline\chi_i\right&gt;=0$ para todo $i$, então $f=0$. Assuma que $f$ é  tal função. Para uma representação $\sigma$ de $G$, defina $\sigma_f$ como<br />
-\[<br />
-\sigma_f=\sum_{g\in G}(gf)(g\sigma).<br />
-\]<br />
-Se $\sigma$ for irredutível, então $\sigma_f=0$ pelo Lema anterior.<br />
-Se $\sigma$ não for irredutúvel, então o $G$-módulo $V$ correspondente pode ser escrito como uma soma direta $V=V_1\oplus\cdots\oplus V_m$ de $G$-módulos simples e temos a equação correspondente para o caracter:  $\chi=\sum_i\chi_i$. Seja $\sigma_i$ a representação induzida por $\sigma$ em $V_i$. Então $g\sigma=\sum_ig\sigma_i$. Logo<br />
-\[<br />
-\sigma_f=\sum_{g\in G}(gf)(g\sigma)=\sum_{g\in G}\sum_{i=1}^m (gf)(g\sigma_i)=\sum_{i=1}^m(\sigma_i)_f.<br />
-\]<br />
-Portanto<br />
-\[<br />
-\sigma_f=\sum_{i=1}^m(\sigma_i)_f=\sum_{i=1}^m\frac{|G|}{1\chi_i}\left&lt;f,\overline{\chi_i}\right&gt;\cdot\mbox{id}_{V_i}=0.<br />
-\]<br />
-Seja $\rho$ a representação de $G$ em $\C G$,<br />
-\[<br />
-0=1\rho_f=1\cdot \sum_{g\in G}(gf)(g\varrho)=\sum_{g\in G}(gf)g.<br />
-\]<br />
+<p><strong>Demonstra&ccedil;&atilde;o do Teorema.&nbsp;</strong>J&aacute; vimos que o sistema $\chi_1,\ldots,\chi_k$ &eacute; ortonormal em $W$. Portanto &eacute; suficiente provar que se $f\in W$ tal que $\left&lt;\chi_i,\overline f\right&gt;=\left&lt;f,\overline\chi_i\right&gt;=0$ para todo $i$, ent&atilde;o $f=0$. Assuma que $f$ &eacute;&nbsp; tal fun&ccedil;&atilde;o. Para uma representa&ccedil;&atilde;o $\sigma$ de $G$, defina $\sigma_f$ como<br>
+\[<br>
+\sigma_f=\sum_{g\in G}(gf)(g\sigma).<br>
+\]<br>
+Se $\sigma$ for irredut&iacute;vel, ent&atilde;o $\sigma_f=0$ pelo Lema anterior.<br>
+Se $\sigma$ n&atilde;o for irredut&uacute;vel, ent&atilde;o o $G$-m&oacute;dulo $V$ correspondente pode ser escrito como uma soma direta $V=V_1\oplus\cdots\oplus V_m$ de $G$-m&oacute;dulos simples e temos a equa&ccedil;&atilde;o correspondente para o caracter:&nbsp; $\chi=\sum_i\chi_i$. Seja $\sigma_i$ a representa&ccedil;&atilde;o induzida por $\sigma$ em $V_i$. Ent&atilde;o $g\sigma=\sum_ig\sigma_i$. Logo<br>
+\[<br>
+\sigma_f=\sum_{g\in G}(gf)(g\sigma)=\sum_{g\in G}\sum_{i=1}^m (gf)(g\sigma_i)=\sum_{i=1}^m(\sigma_i)_f.<br>
+\]<br>
+Portanto<br>
+\[<br>
+\sigma_f=\sum_{i=1}^m(\sigma_i)_f=\sum_{i=1}^m\frac{|G|}{1\chi_i}\left&lt;f,\overline{\chi_i}\right&gt;\cdot\mbox{id}_{V_i}=0.<br>
+\]<br>
+Seja $\rho$ a representa&ccedil;&atilde;o de $G$ em $\C G$,<br>
+\[<br>
+0=1\rho_f=1\cdot \sum_{g\in G}(gf)(g\varrho)=\sum_{g\in G}(gf)g.<br>
+\]<br>
 Portanto $gf=0$ para todo $g$ e $f=0$.</p>
-<p><strong>Corolário. </strong>Seja $g\in G$.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Seja $g\in G$.</p>
 <ol>
 <li>$\sum_{i=1}^k\overline{(g\chi_i)}(g\chi_i)=|C_G(g)|$.</li>
-<li>Se $g,h\in G$ pertencentes a classes distintos de conjugação,  então $\sum_{i=1}^k\overline{(g\chi_i)}(h\chi_i)=0$.</li>
+<li>Se $g,h\in G$ pertencentes a classes distintos de conjuga&ccedil;&atilde;o,&nbsp; ent&atilde;o&nbsp;$\sum_{i=1}^k\overline{(g\chi_i)}(h\chi_i)=0$.</li>
 </ol>
-<p><strong>Demonstração. </strong>Seja $f:G\rightarrow\C$ a função que é igual a 1 na classe de $g$ e zero nos outros elementos.  Pelo teorema anterior,<br />
-\[<br />
-f=\sum_{i=1}^k \left&lt;f,\chi_i\right&gt;\chi_i=\sum_{i=1}^k \frac{|g^G|}{|G|}<br />
-\overline{ (g\chi_i)}\chi_i=<br />
-\frac 1{|C_G(g)|}\sum_{i=1}^k\overline{(g\chi_i)}\chi_i.<br />
-\]<br />
-Logo, para $h\in G$, temos que<br />
-\[<br />
-hf=<br />
-\frac 1{|C_G(g)|}\sum_{i=1}^k\overline{(g\chi_i)}(h\chi_i).<br />
-\]<br />
-Tomando $h=g$, obtemos equação 1., tomando $h\not\in g^G$, obtemos equação 2.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Seja $f:G\rightarrow\C$ a fun&ccedil;&atilde;o que &eacute; igual a 1 na classe de $g$ e zero nos outros elementos.&nbsp; Pelo teorema anterior,<br>
+\[<br>
+f=\sum_{i=1}^k \left&lt;f,\chi_i\right&gt;\chi_i=\sum_{i=1}^k \frac{|g^G|}{|G|}<br>
+\overline{ (g\chi_i)}\chi_i=<br>
+\frac 1{|C_G(g)|}\sum_{i=1}^k\overline{(g\chi_i)}\chi_i.<br>
+\]<br>
+Logo, para $h\in G$, temos que<br>
+\[<br>
+hf=<br>
+\frac 1{|C_G(g)|}\sum_{i=1}^k\overline{(g\chi_i)}(h\chi_i).<br>
+\]<br>
+Tomando $h=g$, obtemos equa&ccedil;&atilde;o 1., tomando $h\not\in g^G$, obtemos equa&ccedil;&atilde;o 2.</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-			</div><!-- .entry-content -->
+			</div>
 
 	<footer class="entry-footer">
-					</footer><!-- .entry-footer -->
+					</footer>
 
 	
 <div class="entry-author">
 	<div class="author-avatar">
-		<img alt='' src='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&#038;d=mm&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />	</div><!-- .author-avatar -->
+		<img alt="" src="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">	</div>
 
 	<div class="author-heading">
 		<h2 class="author-title">Published by <span class="author-name">schcs</span></h2>
-	</div><!-- .author-heading -->
+	</div>
 
 	<p class="author-bio">
-				<a class="author-link" href="https://schcs.github.io/WP/index.php/author/schcs/" rel="author">
+				<a class="author-link" href="http://schcs.github.io/index.php/author/schcs/" rel="author">
 			View all posts by schcs		</a>
-	</p><!-- .author-bio -->
-</div><!-- .entry-auhtor -->
-</article><!-- #post-## -->
+	</p>
+</div>
+</article>
 
 			
 	<nav class="navigation post-navigation" role="navigation">
 		<h2 class="screen-reader-text">Post navigation</h2>
-		<div class="nav-links"><div class="nav-previous"><a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>O caracter e as relações de ortgonalidade</a></div><div class="nav-next"><a href="https://schcs.github.io/WP/index.php/2019/11/19/integralidade/" rel="next"><span class="meta-nav">Next &rsaquo;</span>Integralidade</a></div></div>
+		<div class="nav-links"><div class="nav-previous"><a href="http://schcs.github.io/index.php/2019/10/31/o-caracter/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>O caracter e as rela&ccedil;&otilde;es de ortgonalidade</a></div><div class="nav-next"><a href="http://schcs.github.io/index.php/2019/11/19/integralidade/" rel="next"><span class="meta-nav">Next &rsaquo;</span>Integralidade</a></div></div>
 	</nav>
 			
 <div id="comments" class="comments-area">
@@ -215,39 +197,37 @@ Tomando $h=g$, obtemos equação 1., tomando $h\not\in g^G$, obtemos equação 2
 	
 	
 		<div id="respond" class="comment-respond">
-		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://schcs.github.io/WP/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
-<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
-<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='594' id='comment_post_ID' />
-<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://schcs.github.io/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://schcs.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="594" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>			</form>
-			</div><!-- #respond -->
+			</div>
 	
-</div><!-- #comments -->
+</div>
 
 		
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 
-	</div><!-- #content -->
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
 						<div class="site-info">
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
-				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div><!-- .site-info -->
-		</div><!-- .site-info-wrapper -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
 
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/comment-reply.min.js?ver=4.9.15'></script>
-<script type='text/javascript' src='https://schcs.github.io/WP/wp-includes/js/wp-embed.min.js?ver=4.9.15'></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="http://schcs.github.io/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
 </body>
 </html>
