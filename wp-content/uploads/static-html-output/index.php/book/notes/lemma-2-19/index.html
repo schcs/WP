@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+<title>Lemma 2.19, Corollary 2.21 and Theorem 3.2 &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/book/notes/lemma-2-19/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fbook%2Fnotes%2Flemma-2-19%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fbook%2Fnotes%2Flemma-2-19%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</head>
+
+<body class="page-template-default page page-id-120 page-child parent-pageid-74 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-120" class="post-120 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Lemma 2.19, Corollary 2.21 and Theorem 3.2</h1>	</header>
+		<div class="entry-content">
+		<p>$\newcommand{\sym}[1]{{\rm Sym}\,#1}\newcommand{\fix}[2]{{\rm Fix}_{#1}(#2)}\newcommand{\wr}{\,{\rm wr}\,}\newcommand{\Z}{\mathbb Z}$<br>
+The problem was reported by Joris Buloron.</p>
+<p>Unfortunately, there is an oversight in the proof of Lemma 2.19, and so the assertion of the lemma may not be true for certain infinite permutation groups. A correct version of the lemma is the following.</p>
+<p><strong>Lemma 2.19.&nbsp;</strong>If $G$ is transitive on $\Omega$, $\omega\in\Omega$, and $N$ is a normal subgroup of $G$, then $G_\omega\leq N_G(N_\omega)$ and $\omega N_G(N_\omega)\subseteq\fix\Omega{N_\omega}$. Moreover, $\omega N_G(N_\omega)$ is a block of imprimitivity for $G$ of cardinality $|\omega N_G(N_\omega)| = |N_G(N_\omega):G_\omega|$. If $N_\omega$ has no infinite strictly ascending chain<br>
+\begin{equation}\label{eq:chain}<br>
+N_\omega &lt; N_{\omega_1} &lt; N_{\omega_2} &lt; \cdots<br>
+\end{equation}<br>
+of stabilisers (with $\omega,\omega_i\in\Omega$ for all $i\geq 1)$, then $\omega N_G(N_\omega)=\fix\Omega{N_\omega}$.&nbsp;In particular, no such chain exists if either&nbsp; $\fix\Omega{N_\omega}$ is finite or $G$ is a torsion group.</p>
+<p><strong>Proof.&nbsp;</strong>Since $N_\omega=N\cap G_\omega$ and $N$ is normal in $G$, we obtain that $N_\omega$ is normal in $G_\omega$, and so $G_\omega\leq N_G (N_\omega)$. It follows from Lemma 2.14.that $\omega N_G(N_\omega)$ is a block of imprimitivity for $G$ of cardinaltiy $|\omega N_G(N_\omega)| = |N_G(N_\omega):G_\omega|$. The claim that&nbsp;$\omega N_G(N_\omega)\subseteq\fix\Omega{N_\omega}$ can be proved following the argument in the book.</p>
+<p>Unfortunately, the proof that $\fix\Omega{N_\omega}\subseteq \omega N_G(N_\omega)$ is not correct&nbsp;in general when $G$ is infinite. Let us review our argument. If $\omega_1\in\fix\Omega{N_\omega}$, then there is some $g\in G$ such that $\omega_1=\omega g$. Furthermore, we have, for all $n\in N_\omega$, that $\omega gn=\omega g$, and, as $N$ is normal in $G$, $gng^{-1}\in G_\omega\cap N=N_\omega$. As this holds for all $n\in N_\omega$, this implies that $g N_\omega g^{-1}\leq N_\omega$, and so $N_\omega\leq g^{-1} N_\omega g$ (but it may not imply, as we claimed, that $N_\omega =g^{-1} N_\omega g$).</p>
+<p>Assume that the proper containment $N_\omega &lt; g^{-1}N_\omega g$ holds. Then we obtain that<br>
+$$<br>
+N_\omega &lt;g^{-1}N_\omega g&lt;g^{-1}(g^{-1}N_\omega g)g=g^{-2} N_\omega g^{2}.<br>
+$$<br>
+Calculating similarly the conjugate $g^{-k} N_\omega g^{k}$ for $k\geq 1$, we obtain the infinite strictly ascending chain of subgroups<br>
+$$<br>
+N_\omega&lt; g^{-1}N_\omega g&lt; g^{-2} N_\omega g^{2}&lt;\cdots&lt; g^{-k} N_\omega g^k&lt;\cdots.<br>
+$$<br>
+Since $g^{-k} N_\omega g^{k}=N_{\omega_k}$ where $\omega_k=\omega g^k$, we obtain the chain of stabilisers as in \eqref{eq:chain}.&nbsp; Assuming that no such chain exists,&nbsp; the equality $N_\omega =g^{-1} N_\omega g$ must hold and $g\in N_G(N_\omega)$ and $\omega_1=\omega g\in\omega N_G(N_\omega)$.&nbsp; Hence, in this case, $\fix\Omega{N_\omega}\subseteq \omega N_G(N_\omega)$ and the equality $\fix\Omega{N_\omega}= \omega N_G(N_\omega)$ follows.</p>
+<p>Let us finally show the last statement. Set $F:= \fix\Omega{N_\omega}$. Since $N_\omega \leq N_{\omega_i}$, we have that $\omega_i\in F$ for all $i\geq 1$. So if $F$ is finite, then we cannot have such an infinite chain. If $G$ is a torsion group, then $g^i=1$ for some $i\geq 1$, and so $\omega_i=\omega$, and we have a contradiction to the proper inclusion in \eqref{eq:chain}. $\Box$</p>
+<p>Note that if $N_\omega$ admits the strictly ascending chain \eqref{eq:chain}, then $N_\omega$ also admits the strictly descending chain<br>
+$$<br>
+N_\omega &gt; N_{\omega_{-1}}&gt;\cdots&gt; N_{\omega_{-k}}&gt;\cdots<br>
+$$<br>
+where $\omega_{-k}=\omega g^{-k}$ for all $k\geq 1$. Therefore, in this case, $N_\omega$ admits the following chain of stabilisers which is infinite in both directions:<br>
+$$<br>
+\cdots &lt; N_{\omega_{-k}}&lt;\cdots&lt;N_{\omega_{-1}}&lt;N_\omega &lt;N_{\omega_1}&lt; N_{\omega_2}&lt;\cdots&lt;N_{\omega_k}&lt;\cdots.<br>
+$$</p>
+<p><strong>Example.&nbsp;</strong>The following example is related to the construction given in the proof of Lemma 5.3 of the paper&nbsp;&nbsp;<a href="https://www.sciencedirect.com/science/article/pii/S002186938371152X" target="_blank" rel="noopener">Permutation group subdegrees and the common divisor graph</a> by C. E. Praeger and I. M. Isaacs.</p>
+<p><span lang="EN-US">Let $H$ be a group and let $G = H \wr \Z$ where $\Z$ is considered as an additive infinite cyclic group. The base group of $G$ is the normal subgroup $N = \prod_{z \in \Z} H_z$&nbsp; where $H_0=H$ and $H_z = H^{z}$ for all $z\in\Z$. Consider</span><span lang="EN-US">&nbsp;the coset action of $G$ on the right coset space&nbsp; $\Omega=[G:M]$ where $M=\prod_{z&lt; 0} H_z$. Let $K=\prod_{z\geq 0} H_z$. Note that every element of $\Omega$ can be written uniquely in the form $Mxz$ where $x\in K$ and $z\in\Z$.&nbsp; The action of $G$ under this identification can be worked out as follows. Let $x\in K$, $z\in\Z$ and $n\in N$. For $i\in \Z$ and $y\in N$, let $y_i$ denote the $i$-th coordinate of $y$. In our case, $x_i=1$ for $i&lt;0$. Then<br>
+$$<br>
+(Mxz)n=M(x n^{-z})z=Myz<br>
+$$<br>
+where $y\in K$ and $y_i=1$ for all $i&lt;0$ while $y_i=x_in_{i+z}$ for $i\geq 0$. Moreover, if $u\in\Z$, then<br>
+$$<br>
+(Mxz)u=Mx(zu).<br>
+$$<br>
+Choosing $\omega=M$, we have that $G_\omega=N_\omega=M$. The subgroup $M$ is corefree in $G$, and so $G$ can be viewed as a permutation group on $\Omega$.</span></p>
+<p><span lang="EN-US">The stabilizer $N_\omega=G_\omega=M$ fixes precisely the points of the set $$\{ Mxz \mid x\in K \mbox{ and } z\geq 0\}.$$&nbsp;</span><span lang="EN-US">Note that $N_G(G_{\omega})=N_G(N_{\omega})=N$, and so $$\omega N_G(G_\omega) = \omega N_G(N_\omega)=\omega N = \{Mx\mid x\in K\}.$$<br>
+Thus $\omega N_G(N_\omega)\subset \fix\Omega{N_\omega}$ with proper containment.</span></p>
+<p><span lang="EN-US">&nbsp;</span></p>
+<p><span lang="EN-US">For each $z&gt;0$, $M^{z} = \prod_{i&lt; z}H_i$ and this is the stabiliser (in $G$ and in $N$) of the point $\omega_i:= \omega^{z} = Mz$. </span><span lang="EN-US">&nbsp;</span><span lang="EN-US">&nbsp;W<u></u><u></u></span><u></u><span lang="EN-US">e have an infinite strictly ascending chain $N_\omega &lt; N_{\omega_1} &lt; \cdots$ and a descending chain $N_\omega &gt; N_{\omega_{-1}} &gt; \cdots$.<u></u></span></p>
+<p class="m_-1834779118619258334MsoListParagraph"><u></u><u></u>Further examples of groups in which a conjugate of a subgroup $X$ is strictly contained in $X$ are described in&nbsp;<a href="https://math.stackexchange.com/questions/107862/conjugate-subgroup-strictly-contained-in-the-initial-subgroup">this discussion of MathOverFlow</a>.</p>
+<p>The first sentence of Section 2.6 should read as follows.</p>
+<p><em>Lemma 2.19 shows us that, for $H \leq G_\omega$ , the normaliser $N_G(H)$ is transitive on the set $\fix \Omega H$ when $H = N_\omega$ , for some normal subgroup $N$ of $G$ that has no infinite strictly ascending chain of stabilisers.</em></p>
+<p>In consequence of the modifications in Lemma 2.12, Corollary 2.21 also needs to be adjusted.</p>
+<p><strong>Corollary 2.21.</strong>&nbsp;Let $G$ be a group acting primitively on $\Omega$ and let $N$ be a normal subgroup of $G$ which is not contained in the kernel of the action. Then $N$ is transitive and either $N$ induces a regular permutation group on $\Omega$&nbsp; or $N_G(N_\omega)=G_\omega$ for each $\omega\in\Omega$.&nbsp; In particular, a non-trivial normal subgroup of a primitive permutation group is transitive.&nbsp; Furthermore, if $N_\omega$ has no infinite strictly ascending chain of stabilisers as in \eqref{eq:chain}, then either $N$ induces a regular permutation group on $\Omega$ or $\fix \Omega{N_\omega}=\{\omega\}$ for each $\omega\in\Omega$.</p>
+<p>Also, in Theorem 3.2, statement (ii) will need to be changed:</p>
+<p><strong>Theorem 3.2(ii).</strong>&nbsp;$\omega C_{\sym\Omega}(G)=\omega N_G(G_\omega)\subseteq \fix\Omega{G_\omega}$.</p>
+<p>Parts (i) and (iii) of Theorem 3.2 can be proved as in the book. The new part (ii) follows from part (i) and from the new Lemma 2.19 above.</p>
+<p>In the proof of part (iv), more care needs to be taken. Recall that $G$ is a transitive permutation group on $\Omega$. Assume that $C_{\sym\Omega}(G)$ is transitive. Then, $\omega C_{\sym\Omega}(G)=\Omega$, and hence part (ii) implies that $\fix\Omega {G_\omega}=\Omega$. That is, $G$ is regular. Suppose now that $G$ is regular. Then $G_\alpha=1$ for each $\alpha\in\Omega$, and so there is no infinite strictly ascending chain of stabilisers starting with $G_\omega$. Applying Lemma 2.19 with $N=G$, we obtain that $\fix\Omega{G_\omega}=\omega N_G(G_\omega)=\omega C_{\sym\Omega}(G)$. Since $G$ is regular, $\fix\Omega{G_\omega}=\Omega$, and hence $C_{\sym\Omega}(G)$ is transitive.</p>
+<p>&nbsp;</p>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

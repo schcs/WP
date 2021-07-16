@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+<title>Divisibilidade e o MDC &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/algebra-a/divisibilidade-e-o-mdc/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Falgebra-a%2Fdivisibilidade-e-o-mdc%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Falgebra-a%2Fdivisibilidade-e-o-mdc%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</head>
+
+<body class="page-template-default page page-id-735 page-child parent-pageid-706 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-735" class="post-735 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Divisibilidade e o MDC</h1>	</header>
+		<div class="entry-content">
+		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\mdc}[2]{\mbox{mdc}(#1,#2)}$Sejam $a,b\in \Z$. Dizemos que <em>$b$ divide $a$</em> ou que <em>$a$ &eacute; um m&uacute;ltiplo de $b$</em> se existe $q\in\Z$, tal que $bq=a$. Usamos a nota&ccedil;&atilde;o $b|a$ para indicar que $b$ divide $a$.</p>
+<p><strong>Exemplos.&nbsp;</strong></p>
+<ol>
+<li>$\pm a|a$ e $\pm 1|a$&nbsp;para todo inteiro $a$.</li>
+<li>$a|0$ para todo inteiro $a$, mas se $0|a$ ent&atilde;o $a=0$. Em particular $0|0$.</li>
+</ol>
+<p><strong>Lema.</strong> As seguintes propriedades s&atilde;o v&aacute;lidas.</p>
+<ol>
+<li>Se $a|b$ e $b|a$ ent&atilde;o $b=\pm a$.</li>
+<li>Se $a|b$ e $b|c$ ent&atilde;o $a|c$.</li>
+<li>Se $a|b$ e $a|c$ ent&atilde;o $a|(b\pm c)$.</li>
+<li>Se $a|b$ e $c$ &eacute; um inteiro ent&atilde;o $a|bc$.</li>
+</ol>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Exerc&iacute;cio.</p>
+<p>Sejam $a$ e $b$ n&uacute;meros inteiros n&atilde;o simultaneamente iguais a zero. Definimos o <em>maior divisor comum de $a$ e $b$&nbsp;</em>como sendo o inteiro $d$ que satisfaz as seguintes propriedades:</p>
+<ol>
+<li>$d\geq 0$;</li>
+<li>$d|a$ e $d|b$;</li>
+<li>se $c$ &eacute; um inteiro tal que $c|a$ e $c|b$ ent&atilde;o $c|d$.</li>
+</ol>
+<p>N&atilde;o &eacute; imediatamente claro da defini&ccedil;&atilde;o que o maior divisor comum existe. No entanto, segue da defini&ccedil;&atilde;o que se ele existir, ent&atilde;o ele deve ser &uacute;nico. Isso porque se $d_1$ e $d_2$ s&atilde;o mdcs de $a$ e $b$, ent&atilde;o a defini&ccedil;&atilde;o implica que $d_1|d_2$ e $d_2|d_1$. Ora temos pelo lema anterior que $d_1=\pm d_2$, mas como $d_1$ e $d_2$ s&atilde;o n&atilde;o negativos, isso &eacute; poss&iacute;vel apenas quando $d_1=d_2$.</p>
+<p>O maior divisor comum de $a$ e $b$ ser&aacute; denotado por $\mdc ab$.</p>
+<p>&Eacute; claro que $\mdc ab=\mdc ba$ e que $\mdc ab=\mdc{\pm a}{\pm b}$. A defini&ccedil;&atilde;o tamb&eacute;m implica que $\mdc a0=|a|$ para todo $a\neq 0$.</p>
+<p>Se $a$ e $b$ s&atilde;o inteiros tais que $\mdc ab=1$, ent&atilde;o dizemos que $a$ e $b$ s&atilde;o <em>primos entre si</em> ou que eles s&atilde;o <em>coprimos</em>.</p>
+<p><strong>Lema.&nbsp;</strong>Sejam $a,b\in\Z$ com $b\neq 0$ e escreve $a=qb+r$ com $0\leq r&lt;|b|$ como no Teorema de Divis&atilde;o de Euclides. Ent&atilde;o $\mdc ab=\mdc br$ (assumindo que existem estes mdcs).</p>
+<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Seja $d=\mdc ab$. Afirmamos que $\mdc br=d$. Primeiro, $d\geq 0$ pela defini&ccedil;&atilde;o de mdc (propriedade 1. do mdc). Como $d=\mdc ab$, temos que $d|a$ e $d|b$. Pelo lema anterior, isto implica que $d|(a-qb)=r$. Logo $d|b$ e $d|r$ (propriedade 2. do mdc).</p>
+<p>Assuma que $c|b$ e $c|r$. Ent&atilde;o, $c|(bq+r)=a$, ent&atilde;o $c|a$ e $c|b$. Pela defini&ccedil;&atilde;o de mdc, temos que $c|d$ (propriedade 3. do mdc). Portanto $d=\mdc br$.</p>
+<p><strong>Exemplo.&nbsp;</strong>O lema anterior pode ser usado para determinar o mdc de dois n&uacute;meros naturais do modo seguinte. Sejam,. por exemplo, $a=115$ e $b=25$. Escreva<br>
+\[<br>
+115=4\cdot 25+10<br>
+\]<br>
+para concluir que $\mdc {115}{25}=\mdc{25}{10}$. Depois escreva<br>
+\[<br>
+25=2\cdot 10+5<br>
+\]<br>
+e obtenha que $\mdc{25}{10}=\mdc{10}{5}$.<br>
+Depois<br>
+\[<br>
+10=2\cdot 5+0<br>
+\]<br>
+que implica que $\mdc{10}5=\mdc 50=5$. Logo<br>
+\[<br>
+\mdc {115}{25}=\mdc{25}{10}=\mdc{10}{5}=\mdc 50=5.<br>
+\]<br>
+Esta conta segue essencialmente o Algoritmo de Eucl&iacute;des que ser&aacute; o conte&uacute;do da semana seguinte.</p>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

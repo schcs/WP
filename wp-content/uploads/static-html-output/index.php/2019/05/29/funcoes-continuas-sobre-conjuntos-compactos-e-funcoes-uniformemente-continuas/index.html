@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+<title>Fun&ccedil;&otilde;es cont&iacute;nuas sobre conjuntos compactos e fun&ccedil;&otilde;es uniformemente cont&iacute;nuas &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Fun&ccedil;&otilde;es cont&iacute;nuas sobre conjuntos compactos e fun&ccedil;&otilde;es uniformemente cont&iacute;nuas Comments Feed" href="https://schcs.github.io/WP/index.php/2019/05/29/funcoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+<link rel="prev" title="Exerc&iacute;cios: Limite de fun&ccedil;&otilde;es" href="https://schcs.github.io/WP/index.php/2019/05/20/exercicios-limites-de-funcoes/">
+<link rel="next" title="Fun&ccedil;&otilde;es deriv&aacute;veis" href="https://schcs.github.io/WP/index.php/2019/05/31/funcoes-derivaveis/">
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/2019/05/29/funcoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2F2019%2F05%2F29%2Ffuncoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2F2019%2F05%2F29%2Ffuncoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</head>
+
+<body class="post-template-default single single-post postid-241 single-format-standard no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-241" class="post-241 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title">Fun&ccedil;&otilde;es cont&iacute;nuas sobre conjuntos compactos e fun&ccedil;&otilde;es uniformemente cont&iacute;nuas</h1>		
+		<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/29/funcoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas/" rel="bookmark"><time class="entry-date published" datetime="2019-05-29T12:16:37+00:00">May 29, 2019</time><time class="updated" datetime="2019-05-31T13:48:48+00:00">May 31, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div>
+	</header>
+
+	<div class="entry-content">
+		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}\newcommand{\Q}{\mathbb Q}$<br>
+<strong>Lema.</strong>Seja $X\subseteq\R$ um conjunto compacto e seja $f:X\rightarrow\R$ uma fun&ccedil;&atilde;o cont&iacute;nua. Ent&atilde;o $f(X)$ &eacute; compacto.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Seja $(y_n)$ uma sequ&ecirc;ncia em $f(X)$. Ent&atilde;o existe uma sequ&ecirc;ncia $(x_n)$ em $X$ tal que $y_n=f(x_n)$.&nbsp; Como $X$ &eacute; compacto, $(x_n)$ possui uma subsequ&ecirc;ncia $(x_{k_n})$ convergente. tal que $x_{k_n}\rightarrow a$ com $a\in X$. Como $f(x)$ &eacute; cont&iacute;nua, $y_{k_n}=f(x_{k_n})\rightarrow f(a)$. Acabamos de demonstrar que toda sequ&ecirc;ncia $(y_n)$ de termos em $f(X)$ possui uma subsequ&ecirc;ncia convergente com limite em $f(X)$. Portanto $f(X)$ &eacute; compacto.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Sejam $X$ &eacute; um conjunto compacto e $f:X\rightarrow\R$ uma fun&ccedil;&atilde;o cont&iacute;nua. Ent&atilde;o $\inf f(X)$ e $\sup f(X)$ pertencem a $f(X)$. Portante existem $a,b\in X$ tal que $f(a)\leq f(x)\leq f(b)$ vale para todo $x\in X$.</p>
+<p><strong>Teorema.&nbsp;</strong>Seja $X$ um&nbsp;conjunto compacto e $f:X\rightarrow\R$ uma fun&ccedil;&atilde;o cont&iacute;nua e injetiva. Ent&atilde;o $f^{-1}:f(X)\rightarrow X$ &eacute; uma fun&ccedil;&atilde;o cont&iacute;nua.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Seja $Y=f(X)$, e seja $g:Y\rightarrow X$ a inversa de $f$. Assuma que $b\in Y$. Assuma que $(y_n)$ &eacute; uma sequ&ecirc;ncia de termos em $Y$ tal que $y_n\rightarrow b$. Defina $x_n=g(y_n)$. Ent&atilde;o $(x_n)$ &eacute; uma sequ&ecirc;ncia de termos em $X$. Como a sequ&ecirc;ncia $x_n$ &eacute; limitada, &eacute; suficiente provar que $a=g(b)$ &eacute; o &uacute;nico valor de ader&ecirc;ncia de $(x_n)$. Assuma que $(x_{k_n})$ &eacute; uma subsequ&ecirc;ncia de $(x_n)$ tal que $x_{k_n}\rightarrow a&rsquo;$. Como $X$ &eacute; compacto, $a&rsquo;\in X$.&nbsp; Dado que $f(x)$ &eacute; cont&iacute;nua,&nbsp; $$<br>
+f(a&rsquo;)=\lim_{n\rightarrow\infty}f(x_{k_n})=\lim_{n\rightarrow\infty}y_{k_n}=b=f(a).<br>
+$$<br>
+Isto implica que $f(a&rsquo;)=f(a)$. Como $f$ &eacute; cont&iacute;nua, obtemos que $a&rsquo;=a$.</p>
+<p><strong>Exemplo.&nbsp;</strong>Seja $f:[0,1]\cup (2,3]\rightarrow [0,1]\cup(1,2]$ a fun&ccedil;&atilde;o definida por<br>
+$$<br>
+f(x)=\left\{\begin{array}{ll}<br>
+x &amp; \mbox{se $x \in [0,1]$}\\<br>
+x-1 &amp; \mbox{se $x\in (2,3]$}.\end{array}\right.<br>
+$$<br>
+Ent&atilde;o $f$ &eacute; cont&iacute;nua, mas $f^{-1}$ n&atilde;o &eacute;.</p>
+<p>Uma fun&ccedil;&atilde;o $f:X\subseteq\R\rightarrow\R$ &eacute; dita uniformemente cont&iacute;nua se para todo $\varepsilon&gt;0$ existe $\delta&gt;0$ tal que $|x-y|\leq \delta$ implica que $|f(x)-f(y)|\leq \varepsilon$ para todo $x,y\in X$.</p>
+<p><strong>Exemplo.&nbsp;</strong>Seja $f:[a,b]\rightarrow\R$, $f(x)=x^2$. Seja $\varepsilon&gt;0$. Assuma que $M&gt;0$ &eacute; um real tal que $[a,b]\subseteq [-M,M]$ e seja $\delta\leq\varepsilon/(2M)$. Sejam $x,y\in[a,b]$ tal que $|x-y|\leq\delta$.&nbsp; Ent&atilde;o<br>
+$$<br>
+|f(x)-f(y)|=|x^2-y^2|=|x-y||x+y|\leq 2M|x-y|\leq 2M\delta\leq\varepsilon.<br>
+$$</p>
+<p><strong>Exemplo.&nbsp;</strong>Seja $f:\R\rightarrow\R$, $f(x)=x^2$. Assuma que $\varepsilon=1$. Seja $\delta&gt;0$ arbitr&aacute;rio e assuma $n\in \N^+$ tal que $n&gt;1/(2\delta)$. Pondo $x=n$ e $y=n+\delta$, calculemos que<br>
+$$<br>
+|f(x)-f(y)|=(n+\delta)^2-n^2=2n\delta+\delta^2&gt;2n\delta&gt;1.<br>
+$$<br>
+Logo esta fun&ccedil;&atilde;o n&atilde;o &eacute; uniformemente cont&iacute;nua.</p>
+<p><strong>Exemplo.&nbsp;</strong>Seja $f:(0,1]\rightarrow\R$, $f(x)=1/n$. Seja $\varepsilon=1/2$. Assuma que $\delta&gt;0$ arbitr&aacute;rio e seja $n\in \N^+$ tal que $1/n-1/(n+1)\leq\delta$. Pondo $x=1/n$ e $y=1/(n+1)$, obtemos que<br>
+$$<br>
+|f(x)-f(y)|=1&gt;\varepsilon.<br>
+$$<br>
+Portanto esta fun&ccedil;&atilde;o tamb&eacute;m n&atilde;o &eacute; uniformemente cont&iacute;nua.</p>
+<p><strong>Teorema.&nbsp;</strong>Seja $f:X\subseteq\R\rightarrow\R$ uma fun&ccedil;&atilde;o. As seguintes s&atilde;o equivalentes:</p>
+<ol>
+<li>$f(x)$ &eacute; uniformemente cont&iacute;nua em $X$;</li>
+<li>se $(x_n)$ &acute;e $(y_n)$ s&atilde;o sequ&ecirc;ncias em termos em $X$ tais que $(x_n-y_n)\rightarrow 0$, ent&atilde;o $(f(x_n)-f(y_n))\rightarrow 0$.</li>
+</ol>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>1.$\Rightarrow$2. Assuma que $f(x)$ &eacute; uniformemente cont&iacute;nua e que $(x_n)$ e $(y_n)$ s&atilde;o sequ&ecirc;ncias de termos em $X$ tais que $(x_n-y_n)\rightarrow 0$. Seja $\varepsilon&gt;0$. Existe $\delta&gt;0$ tal que $|x-y|\leq\delta$ implica $|f(x)-f(y)|\leq\varepsilon$. Existe ainda $n\in \N^+$ tal que se $n\geq N$, ent&atilde;o $|x_n-y_n|\leq\delta$. Isto quer dizer que se $n\geq N$, ent&atilde;o&nbsp;&nbsp;$|x_n-y_n|\leq\delta$, e consequentemente $|f(x_n)-f(y_n)|\leq\varepsilon$. Logo $(f(x_n)-f(y_n))\rightarrow 0$.</p>
+<p>2.$\Rightarrow$1. Assuma que vale a afirma&ccedil;&atilde;o 2. Assuma ainda que $f(x)$ n&atilde;o &eacute; uniformemente cont&iacute;nua em $X$. Existe $\varepsilon&gt;0$ tal que para todo $\delta&gt;0$ existem $x,y\in X$ com $|x-y|\leq\delta$, mas $|f(x)-f(y)|&gt;\varepsilon$. Seja $n\in\N^+$ e ponha $\delta=1/n$. Ent&atilde;o existem $x_n,y_n$ tal que $|x_n-y_n|\leq \delta$ mas $|f(x_n)-f(y_n)|&gt;\varepsilon$. Consideranto $(x_n)$ e $(y_n)$ como sequ&ecirc;ncias, elas n&atilde;o satisfazem a afirma&ccedil;&atilde;o 2,, que &eacute; uma contradi&ccedil;&atilde;o.</p>
+<p><strong>Teorema.&nbsp;</strong>Se $X$ &eacute; um conjunto compacto e $f:X\rightarrow\R$ &eacute; uma fun&ccedil;&atilde;o&nbsp; cont&iacute;nua, ent&atilde;o $f$ &eacute; uniformemente cont&iacute;nua em $X$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Assuma que $f(x)$ n&atilde;o &eacute; uniformemente cont&iacute;nua. Seja $\varepsilon&gt;0$ um n&uacute;mero real que n&atilde;o satisfaz a defini&ccedil;&atilde;o de continuidade uniforme. Seja $n\in\N^+$. Existem $x_n,y_n\in X$ tal que $|x_n-y_n|\leq 1/n$ mas $|f(x_n)-f(y_n)|&gt;\varepsilon$. Ent&atilde;o $(x_n-y_n)\rightarrow 0.$ Como $X$ &eacute; compacto, existe uma subsequ&ecirc;ncia $(x_{k_n})$ convergente com limite $a\in X$. Como $(x_{k_n}-y_{k_n})\rightarrow 0$, obtemos que $y_{k_n}\rightarrow a$. Logo<br>
+$$<br>
+f(x_{k_n})-f(y_{k_n})\rightarrow f(a)-f(a)=0<br>
+$$<br>
+que contradiz ao fato que $|f(x_{k_n})-f(y_{k_n})|&gt;\varepsilon$.</p>
+<p><strong>Teorema.</strong> Se $X$ &eacute; compacto e $f:X\rightarrow\R$ &eacute; uma fun&ccedil;&atilde;o uniformemente cont&iacute;nua, ent&atilde;o existe $\lim_{x\rightarrow a}f(x)$ para todo $a\in X&rsquo;$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Seja $a\in X&rsquo;$ e seja $(x_n)$ uma sequ&ecirc;ncia de termos em $X$ tal que $x_n\rightarrow a$. Seja $\varepsilon&gt;0$. Existe $\delta&gt;0$ tal que $|x-y|\leq\delta$ implica que $|f(x)-f(y)|\leq \varepsilon$ para todo $x,y\in X$. Existe tamb&eacute;m $N\in \N^+$ tal que $|x_n-x_m|\leq\delta$ se $n,m\geq N$. Assuma que $n\geq N$. Ent&atilde;o $|x_n-x_m|\leq\delta$ se $n,m\geq N$ e portanto $|f(x_n)-f(y_n)|\leq \varepsilon$. Isto implica que $f(x_n)$ &eacute; uma sequ&ecirc;ncia de Cauchy que &eacute; convergente. Portanto existe $\lim_{x\rightarrow a}f(x_n)$.</p>
+<p>Se $f:X\rightarrow\R$ &eacute; como no teorema anterior, ent&atilde;o pode-se definir $\bar f:\overline X\rightarrow\R$ como $\bar f(x)=f(x)$ se $x\in X$ e $\bar f(x)=\lim_{y\rightarrow x}f(y)$ se $x\not\in X$. A fun&ccedil;&atilde;o $\bar f$ &eacute; uma fun&ccedil;&atilde;o cont&iacute;nua tal que $\bar f|_X=f$. Ou seja, fun&ccedil;&otilde;es uniformemente cont&iacute;nuas podem ser extendidas ao fecho do seu dom&iacute;nio.</p>
+<p><strong>Teorema.&nbsp;</strong>Se $f:X\subseteq\R\rightarrow \R$ &eacute; uma fun&ccedil;&atilde;o uniformemente cont&iacute;nua e $X$ &eacute; um conjunto limitado, ent&atilde;o $f(X)$ &eacute; limitado.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Defina $\bar f:\overline X\rightarrow\R$ como no par&aacute;grafo anterior. Ent&atilde;o $\overline X$ &eacute; limitado e fechado; ou seja, $\overline X$ &eacute; compacto. Por um teorema anterior, $\bar f(\overline X)$ &eacute; compacto, e assim ele &eacute; limitado. Portanto $f(X)$ &eacute; tamb&eacute;m limitado.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+			</div>
+
+	<footer class="entry-footer">
+					</footer>
+
+	
+<div class="entry-author">
+	<div class="author-avatar">
+		<img alt="" src="https://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&amp;d=mm&amp;r=g" srcset="https://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">	</div>
+
+	<div class="author-heading">
+		<h2 class="author-title">Published by <span class="author-name">schcs</span></h2>
+	</div>
+
+	<p class="author-bio">
+				<a class="author-link" href="https://schcs.github.io/WP/index.php/author/schcs/" rel="author">
+			View all posts by schcs		</a>
+	</p>
+</div>
+</article>
+
+			
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://schcs.github.io/WP/index.php/2019/05/20/exercicios-limites-de-funcoes/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>Exerc&iacute;cios: Limite de fun&ccedil;&otilde;es</a></div><div class="nav-next"><a href="https://schcs.github.io/WP/index.php/2019/05/31/funcoes-derivaveis/" rel="next"><span class="meta-nav">Next &rsaquo;</span>Fun&ccedil;&otilde;es deriv&aacute;veis</a></div></div>
+	</nav>
+			
+<div id="comments" class="comments-area">
+
+	
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://schcs.github.io/WP/index.php/2019/05/29/funcoes-continuas-sobre-conjuntos-compactos-e-funcoes-uniformemente-continuas/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://schcs.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="241" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>			</form>
+			</div>
+	
+</div>
+
+		
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

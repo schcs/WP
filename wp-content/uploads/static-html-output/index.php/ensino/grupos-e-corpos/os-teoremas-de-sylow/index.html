@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+<title>Os Teoremas de Sylow &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/grupos-e-corpos/os-teoremas-de-sylow/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Fos-teoremas-de-sylow%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Fgrupos-e-corpos%2Fos-teoremas-de-sylow%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</head>
+
+<body class="page-template-default page page-id-938 page-child parent-pageid-684 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-938" class="post-938 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Os Teoremas de Sylow</h1>	</header>
+		<div class="entry-content">
+		<p>Lembremos, para um primo $p$, que um grupo finito chama-se $p$-grupo se $|G|$ &eacute; uma pot&ecirc;ncia de $p$.</p>
+<p>Lembremos tamb&eacute;m o Teorema de Lagrange que afirma que a ordem de um subgrupo de um grupo finito divide a ordem do grupo. A rec&iacute;proca do teorema n&atilde;o &eacute; v&aacute;lida: por exemplo, o grupo $A_4$ n&atilde;o possui subgrupo de ordem $6$ (verifique).</p>
+<p>Seja $G$ um grupo finito de ordem $n$. Assuma que $p$ &eacute; um primo e $\alpha\geq 0$ &eacute; um n&uacute;mero inteiro tal que $p^\alpha\mid n$, mas $p^{\alpha+1}\nmid n$. Se $H$ &eacute; um subgrupo de $G$ tal que $|H|=p^\alpha$, ent&atilde;o $H$ &eacute; dito <em>$p$-subgrupo de Sylow</em> de $G$.</p>
+<p><strong>Exemplo.&nbsp;</strong></p>
+<ol>
+<li>Se $p\nmid |G|$, ent&atilde;o $\{1\}$ &eacute; um $p$-subgrupo de Sylow de $G$.</li>
+<li>Seja $G=S_3$. Os subgrupos $\left&lt;(i,j)\right&gt;$ com $1\leq i&lt;j\leq 3$ s&atilde;o $2$-subgrupos de Sylow de $G$. O subgrupo $\left&lt;(1,2,3)\right&gt;$ &eacute; um $3$-subgrupo de Sylow de $G$.</li>
+<li>Seja $G=S_4$. Ent&atilde;o $D_4=\left&lt;(1,2,3,4),(1,3)\right&gt;$ &eacute; um $2$-subgrupo de Sylow de $G$, enquanto $\left&lt;(1,2,3)\right&gt;$ &eacute; um $3$-subgrupo de Sylow de $G$.</li>
+<li>Seja $G=GL(n,p)$. Temos que<br>
+\[<br>
+|G|=p^{n(n-1)/2}\prod_{i=1}^n(p^i-1).<br>
+\]<br>
+Portanto um $p$-subgrupo de Sylow de $G$ tem cardinalidade $p^{n(n-1)/2}$. Considere o subgrupo $U$ de matrizes triangulares superiores com uns no diagonal. Como $|U|=p^{n(n-1)/2}$, temos que $U$ &eacute; um $p$-subgrupo de Sylow de $G$. O mesmo $U$ &eacute; um $p$-subgrupo de Sylow de $SL(n,p)$.</li>
+</ol>
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>Seja $G$ um grupo e sejam $H$ e $K$ subgrupos de $G$ tal que $H$ &eacute; normalizado por $K$ (ou seja, $H^x=H$ para todo $x\in K$). Mostre que $HK$ &eacute; um subgrupo de $G$. Em particular, se $H$ &eacute; um subgrupo de $G$ e $K$ &eacute; um subgrupo normal de $G$, ent&atilde;o $HK$ &eacute; um subgrupo de $G$.</p>
+<p><strong>Teorema</strong> <strong>(<a href="https://pt.wikipedia.org/wiki/Peter_Ludwig_Mejdell_Sylow">Sylow</a>)</strong>. Seja $G$ um grupo finito de ordem $n$, seja $p$ um primo, e assuma que $p^\alpha$ (com $\alpha\geq 0$) &eacute; a maior pot&ecirc;ncia de $p$ que divide $n$. As seguintes s&atilde;o verdadeiras.</p>
+<ol>
+<li>$G$ possui um $p$-subgrupo de Sylow.</li>
+<li>Se $P$ e $Q$ s&atilde;o dois $p$-subgrupos de Sylow em $G$, ent&atilde;o $P$ e $Q$ s&atilde;o conjugados.</li>
+<li>Se $n_p$ &eacute; o n&uacute;mero de $p$-subgrupos de Sylow em $G$, ent&atilde;o $n_p\equiv 1\pmod p$.</li>
+</ol>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>1. Demonstramos a afirma&ccedil;&atilde;o por indu&ccedil;&atilde;o em $n$. Se $n=1$, ou se $n$ &eacute; um primo, ent&atilde;o o resultado &eacute; trivialmente verdadeiro. Assuma que a afirma&ccedil;&atilde;o &eacute; verdadeira para grupos de ordem menor que $n$. Assuma que $p^\alpha$ &eacute; a maior pot&ecirc;ncia de $p$ que divide $n$. Se $G$ possui um subgrupo pr&oacute;prio $H$ tal que $p^\alpha\mid |H|$, ent&atilde;o, pela hip&oacute;tese de indu&ccedil;&atilde;o, $H$ possui um $p$-subgrupo de Sylow e o mesmo ser&aacute; um $p$-subgrupo de Sylow de $G$. Assuma ent&atilde;o que a ordem de nenhum subgrupo $H$ de $G$ &eacute; divis&iacute;vel por $p^\alpha$. Considere a equa&ccedil;&atilde;o das classes de $G$:<br>
+\[<br>
+|G|=|Z(G)|+|C_1|+\cdots+|C_k|<br>
+\]<br>
+onde $C_1,\ldots,C_k$ s&atilde;o as classes de conjuga&ccedil;&atilde;o de $G$ com cardinalidade maior que um. Como $G$ n&atilde;o possui subgrupo pr&oacute;prio com ordem divis&iacute;vel por $p^\alpha$, o centralizador $C_G(g)$ de um elemento $g\in C_i$ satisfaz $p^\alpha\nmid |C_G(g)|$; ou seja $p\mid |C_i|$ para todo $i\geq 1$. Como os dois lados da equa&ccedil;&atilde;o das classes s&atilde;o divis&iacute;veis por $p$, temos que $p\mid |Z(G)|$. Por um exerc&iacute;cio anterior, $Z(G)$, sendo um grupo abeliano, possui um elemento $g$ de ordem $p$. Seja $H=\left&lt;g\right&gt;$. Ent&atilde;o $H\unlhd G$. Ponha $Q=G/H$ e observe que a maior pot&ecirc;ncia de $p$ que divide $|Q|$ &eacute; $p^{n-1}$. Portanto, pela hip&oacute;tese de indu&ccedil;&atilde;o, $Q$ possui um subgrupo $X$ de ordem $p^{\alpha-1}$. Seja<br>
+\[<br>
+Y=\{y\in G\mid Hy\in X\}.<br>
+\]<br>
+&Eacute; f&aacute;cil verificar que $Y$ &eacute; um subgrupo de $G$ que cont&eacute;m $X$ e que $X=Y/H$. Portanto $|Y|=p^\alpha$; ou seja, $Y$ &eacute; um $p$-subgrupo de Sylow de $G$.</p>
+<p>2. Seja $C=\{P^g\mid g\in G\}$ a classe de conjuga&ccedil;&atilde;o de $P$ em $G$. Note que os elementos de $C$ s&atilde;o $p$-subgrupos de Sylow de $G$. O grupo $G$ age no conjunto $C$ e o grupo $Q$ tamb&eacute;m age neste conjunto. Pelo Teorema &Oacute;rbita-Estabilizador,<br>
+\[<br>
+|C|=|G:N_G(P)|.<br>
+\]<br>
+Como $P\leq N_G(P)$, temos que $p^\alpha\mid |N_G(P)|$. Em particular $p\nmid |C|$. Assuma que $C_1,\ldots,C_r$ s&atilde;o as $Q$-&oacute;rbitas em $C$. Aplicando de novo o Teorema &Oacute;rbita-Estabilizador, temos que $|C_i|=p^{a_i}$ com $a_i\geq 0$ e temos que<br>
+\[<br>
+|C|=p^{a_1}+\cdots+p^{a_r}.<br>
+\]<br>
+Como $p\nmid |C|$, obtemos que existe algum $i$ tal que $a_i=0$; ou seja, existe uma $Q$-&oacute;rbita tal que $|C_i|=1$. Suponha que $C_i=\{R\}$. Ent&atilde;o $R$ &eacute; um $p$-subgrupo de Sylow tal que $R$ &eacute; normalizado por $Q$. Pelo exerc&iacute;cio antes do teorema, $RQ$ &eacute; um subgrupo de $G$ de ordem $|R||Q|/|R\cap Q|=p^{2\alpha}/|R\cap Q|$. Como $p^\alpha$ &eacute;&nbsp; a maior pot&ecirc;ncia que divide a ordem de $G$, o Teorema de Lagrange implica que $R=.Q$. Ou seja $Q$ &eacute; igual um conjugado de $P$.</p>
+<p>3. Seja $S$ o conjunto de $p$-subgrupos de Sylow de $G$ e seja $P\in S$. Temos que $P$ age em $S$ por conjuga&ccedil;&atilde;o e $\{P\}$ &eacute; uma $P$-&oacute;rbita. Afirmamos que $\{P\}$ &eacute; a &uacute;nica $p$-&oacute;rbita com cardinalidade uma. Assuma que $\{R\}$ &eacute; uma outra $P$-&oacute;rbita. O racioc&iacute;nio no par&aacute;grafo anterior mostra que $RP$ &eacute; um subgrupo de $G$, e portanto $R=P$. Sejam $S_1,\ldots,S_m$ as $P$-&oacute;rbitas com cardinalidade maior que um. Temos pelo Teorema &Oacute;rbita-Estabilizador que $|S_i|=p^{b_i}$ com $b_i\geq 1$ para todo $i$ e<br>
+\[<br>
+|S|=1+|S_1|+\cdots+|S_m|=1+p^{b_1}+\cdots+p^{b_m}\equiv 1\pmod p.<br>
+\]</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Sejam $G$ um grupo finito,&nbsp; $p$ um primo, e $H$ um $p$-subgrupo de Sylow em $G$ com $|H|=p^\alpha$.</p>
+<ol>
+<li>O subgrupo $H$ &eacute; normal em $G$ se e somente se ele &eacute; o &uacute;nico $p$-subgrupo de Sylow de $G$.</li>
+<li>O n&uacute;mero $n_p$ de $p$-subgrupos de $G$ satisfaz as condi&ccedil;&otilde;es<br>
+\[<br>
+n_p\equiv 1\pmod p,\quad n_p\mid |G|/p^\alpha.<br>
+\]</li>
+</ol>
+<p><strong>Exerc&iacute;cio.&nbsp;</strong>Seja $G$ um grupo finito, $p$ um primo e $H$ um $p$-subgrupo de $G$. Mostre que $H$ est&aacute; contido em um $p$-subgrupo de Sylow de $G$. [Dica: Adapte o argumento na demonstra&ccedil;&atilde;o da afirma&ccedil;&atilde;o 2 no teorema acima.]</p>
+<p><strong>Exemplo.&nbsp;</strong>N&atilde;o existe um grupo simples de ordem 100. De fato, se $G$ &eacute; um grupo de ordem 100, ent&atilde;o&nbsp; o n&uacute;mero de $5$-subgrupos de Sylow de $G$ &eacute; congruente com 1 m&oacute;dulo 5 mas tamb&eacute;m &eacute; um divisor de $100/25=4$. Portanto, $G$ possui &uacute;nico $5$-subgrupo de Sylow que precisa ser normal e assim $G$ n&atilde;o pode ser um grupo simples.</p>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	
+<title>Limite de fun&ccedil;&otilde;es &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Limite de fun&ccedil;&otilde;es Comments Feed" href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/feed/">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+<link rel="prev" title="Topologia da Reta: Pontos de acumula&ccedil;&atilde;o e conjuntos compactos" href="https://schcs.github.io/WP/index.php/2019/05/10/topologia-da-reta-pontos-de-acumulacao-e-conjuntos-compactos/">
+<link rel="next" title="Exerc&iacute;cios: Topologia" href="https://schcs.github.io/WP/index.php/2019/05/13/exercicios-topologia/">
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2F2019%2F05%2F13%2Flimite-de-funcoes%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2F2019%2F05%2F13%2Flimite-de-funcoes%2F&amp;format=xml">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+</head>
+
+<body class="post-template-default single single-post postid-205 single-format-standard no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-205" class="post-205 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title">Limite de fun&ccedil;&otilde;es</h1>		
+		<div class="entry-meta">
+			<span class="posted-on"><a href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/" rel="bookmark"><time class="entry-date published" datetime="2019-05-13T12:27:37+00:00">May 13, 2019</time><time class="updated" datetime="2019-05-20T12:18:24+00:00">May 20, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="sep"> ~ </span><a class="url fn n" href="https://schcs.github.io/WP/index.php/author/schcs/">schcs</a></span></span>					</div>
+	</header>
+
+	<div class="entry-content">
+		<p>$\newcommand{\N}{\mathbb N}\newcommand{\R}{\mathbb R}\newcommand{\Z}{\mathbb Z}\newcommand{\A}{\mathcal A}$Seja $X\subseteq\R$ um conjunto, $f:X\rightarrow\R$ uma fun&ccedil;&atilde;o, e $a\in X&rsquo;$. Dizemos que o limite da fun&ccedil;&atilde;o $f$ no ponto $a$ &eacute; $L\in\R$ se para todo $\varepsilon&gt;0$ existe $\delta&gt;0$ tal que $|f(x)-L|\leq\varepsilon$ sempre que $0&lt;|x-a|\leq\delta$. Escrevemos<br>
+$$<br>
+\lim_{x\rightarrow a}f(x)=L.<br>
+$$</p>
+<p><strong>Lema.&nbsp;</strong>Se existir $\lim_{x\rightarrow a}f(x)$, ent&atilde;o ele &eacute; &uacute;nico.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Assuma que n&atilde;o e os reais distintos $L$ e $M$ s&atilde;o ambos limites de $f(x)$ em $a$. Seja $\varepsilon=|L-M|$. Existem $\delta_1$ e $\delta_2$ tais que<br>
+$$<br>
+|f(x)-L|\leq \varepsilon/3\quad\mbox{se}\quad 0&lt;|x-a|\leq\delta_1<br>
+$$<br>
+e<br>
+$$<br>
+|f(x)-M|\leq \varepsilon/3\quad\mbox{se}\quad 0&lt;|x-a|\leq\delta_2.<br>
+$$<br>
+Seja $\delta=\min\{\delta_1,\delta_2\}$ e $x\in X$ tal que $0&lt;|x-a|\leq\delta$. Ent&atilde;o<br>
+\begin{eqnarray*}<br>
+\varepsilon&amp;=&amp;|L-M|=|L-f(x)+f(x)-M|\\&amp;\leq&amp; |L-f(x)|+|f(x)-M|\leq 2\varepsilon/3.<br>
+\end{eqnarray*}<br>
+Isso &eacute; uma contradi&ccedil;&atilde;o, ent&atilde;o $L=M$. $\Box$</p>
+<p><strong>Lema.&nbsp;</strong>Se existir&nbsp;$\lim_{x\rightarrow a}f(x)$, ent&atilde;o existem $A&gt;0$ e $\delta&gt;0$ tal que $|f(x)|\leq A$ para todo $x\in X\cap (a-\delta,a+\delta)$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Exerc&iacute;cio.</p>
+<p><strong>Lema.&nbsp;</strong>Sejam $f,g,h:X\rightarrow\R$ e $a\in X&rsquo;$ tais que $f(x)\leq g(x)\leq h(x)$ para todo $x\in X\setminus\{a\}$. Assuma que existem $\lim_{x\rightarrow a}f(x)$ e&nbsp;&nbsp;$\lim_{x\rightarrow a}h(x)$ e<br>
+$$<br>
+\lim_{x\rightarrow a}f(x)=\lim_{x\rightarrow a}h(x)=L.<br>
+$$<br>
+Ent&atilde;o existe $\lim_{x\rightarrow a}g(x)$ e &eacute; igual a $L$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o. </strong>Seja $\varepsilon&gt;0$.&nbsp;Existem $\delta_1,\delta_2&gt;0$ tal que<br>
+$$<br>
+|f(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_1<br>
+$$<br>
+e<br>
+$$<br>
+|h(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_2.<br>
+$$<br>
+Assuma que $\delta=\min\{\delta_1,\delta_2\}$. Seja $x\in X$ tal que $0&lt;|x-a|\leq \delta$. Tem-se que<br>
+$$<br>
+L-\varepsilon\leq f(x)\leq g(x)\leq h(x)\leq L+\varepsilon.<br>
+$$<br>
+Isto implica que se&nbsp;$0&lt;|x-a|\leq \delta$, ent&atilde;o $|g(x)-L|\leq\varepsilon$. Existe ent&atilde;o $\lim_{x\rightarrow a}f(x)$ e &eacute; igual a $L$. $\Box$</p>
+<p><strong>Lema.</strong> Sejam $f,g:X\rightarrow\R$ e $a\in X&rsquo;$ tais que existem $L=\lim_{x\rightarrow a}f(x)$ e $M=\lim_{x\rightarrow a}g(x)$ com $L&lt;M$. Ent&atilde;o existe $\delta&gt;0$ tal que $f(x)&lt; g(x)$ para todo $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Seja $\varepsilon=(M-L)/3$. Existem $\delta_1$ e $\delta_2$ tais que<br>
+$$<br>
+|f(x)-L|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_1<br>
+$$<br>
+e<br>
+$$<br>
+|g(x)-M|\leq \varepsilon\quad\mbox{se} \quad 0&lt;|x-a|\leq\delta_2.<br>
+$$<br>
+Isto implica que<br>
+$$<br>
+f(x)\leq L+\varepsilon&lt;M-\varepsilon\leq g(x)<br>
+$$<br>
+se $0&lt;|x-a|\leq \delta$ onde $\delta=\{\delta_1,\delta_2\}$. $\Box$</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Seja $f:X\rightarrow\R$ e $a\in X&rsquo;$. Se existir $\lim_{x\rightarrow a}f(x)$ e este limite &eacute; positivo, ent&atilde;o existe $\delta&gt;0$ tal que $f(x)&gt; 0$ para todo $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$.</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Sejam $X\subseteq\R$, $a\in X&rsquo;$, e $f,g:X\rightarrow\R$ tais que $f(x)\leq g(x)$ para todo $x\in X$ e existem $M=\lim_{x\rightarrow a}f(x)$ e $L=\lim_{x\rightarrow a}g(x)$. Tem-se que $M\leq L$.</p>
+<p><strong>Teorema.&nbsp;</strong>Sejam $X\subseteq\R$, $a\in X&rsquo;$&nbsp; e $f:X\rightarrow\R$ uma fun&ccedil;&atilde;o. As seguintes s&atilde;o equivalentes.</p>
+<ol>
+<li>existe $L=\lim_{x\rightarrow a} f(x)$;</li>
+<li>se $(x_n)$ &eacute; uma sequ&ecirc;ncia tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$ ent&atilde;o $f(x_n)\rightarrow L$.</li>
+</ol>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>1.$\Rightarrow$ 2. Seja $(x_n)$ uma sequ&ecirc;ncia tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Seja $\varepsilon&gt;0$. Existe $\delta&gt;0$ tal que $|f(x)-L|\leq\varepsilon$ para todo $x\in X$ tal que $0&lt;|x-a|\leq\delta$. Como $x_n\rightarrow a$, existe $N\in\N^+$ tal que $|x_n-a|\leq \delta$ se $n\geq N$. Obtem-se que se $n\geq N$, ent&atilde;o $|x_n-a|\leq \delta$, e assim $|f(x_n)-L|\leq\varepsilon$. Portanto $f(x_n)\rightarrow L$.</p>
+<p>2.$\Rightarrow$ 1. Assuma que a afirma&ccedil;&atilde;o 1. &eacute; falsa. Existe $\varepsilon&gt;0$ tal que para todo $\delta&gt;0$ existe $x\in X$ com $0&lt;|x-a|\leq \delta$ mas $|f(x)-L|&gt;\varepsilon$. Seja $n\in\N^+$. Existe ent&atilde;o $x_n\in X$ tal que $0&lt;|x_n-a|\leq 1/n$, mas $|f(x_n)-L|&gt;\varepsilon$. A sequ&ecirc;ncia $(x_n)$ converge a $a$, mas $f(x_n)$ n&atilde;o converge a $L$.&nbsp; $\Box$</p>
+<p><strong>Corol&aacute;rio.&nbsp;</strong>Sejam $X\subseteq\R$, $a\in X&rsquo;$&nbsp; e $f:X\rightarrow\R$ uma fun&ccedil;&atilde;o. As seguintes s&atilde;o equivalentes.</p>
+<ol>
+<li>existe $\lim_{x\rightarrow a}f(x)$;</li>
+<li>se $(x_n)$ &eacute; uma sequ&ecirc;ncia tal que $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$, ent&atilde;o $f(x_n)$ &eacute; convergente.</li>
+</ol>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Pelo teorema anterior, tem-se que a afirma&ccedil;&atilde;o 1. implica a afirma&ccedil;&atilde;o 2.</p>
+<p>Assuma afirma&ccedil;&atilde;o 2. Afirmamos que existe $L$ tal que se $(x_n)$ &eacute; uma sequ&ecirc;ncia como na afirma&ccedil;&atilde;o 2., ent&atilde;o $f(x_n)\rightarrow L$ (ou seja, o limite de $(f(x_n))$ n&atilde;o depende da sequ&ecirc;ncia $(x_n)$). De fato, se existessem $(x_n)$ e $(y_n)$ tais que $x_n,y_n\in X\setminus\{a\}$, $x_n\rightarrow a$, $y_n\rightarrow a$, mas $f(x_n)\rightarrow L$ e $f(y_n)\rightarrow M$ com $L\neq M$, ent&atilde;o tomando $(z_n)=(x_1,y_2,x_2,y_2,\ldots)$. ter&iacute;amos que $z_n\rightarrow a$, mas $f(z_n)$ &eacute; divergente. Portanto, a afirma&ccedil;&atilde;o verdadeira. Neste caso o teorema anterior implica que $\lim_{x\rightarrow a}=L$. $\Box$</p>
+<p><strong>Teorema.&nbsp;</strong>Sejam $f,g:X\subseteq\R\rightarrow\R$ fun&ccedil;&otilde;es, $a\in X&rsquo;$. Assuma que existem $M=\lim_{x\rightarrow a}f(x)$ e&nbsp;$L=\lim_{x\rightarrow a}g(x)$. As seguintes afirma&ccedil;&otilde;es s&atilde;o v&aacute;lidas.</p>
+<ol>
+<li>$\lim_{x\rightarrow a}(f(x)+g(x))=L+M$;</li>
+<li>$\lim_{x\rightarrow a}(f(x)\cdot g(x))=LM$;</li>
+<li>$\lim_{x\rightarrow a}(\alpha f(x))=\alpha L$ para todo $\alpha\in\R$;</li>
+<li>se $M\neq 0$ e $g(x)\neq 0$ para $x\in X$, ent&atilde;o $\lim_{x\rightarrow a}f(x)/g(x)=L/M$;</li>
+<li>se $L=0$ e $g(x)$ &eacute; uma fun&ccedil;&atilde;o limitada em $X$, ent&atilde;o $\lim_{x\rightarrow a}(f(x)\cdot g(x))=0$.</li>
+</ol>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Demonstraremos por exemplo a afirma&ccedil;&atilde;o 2. O resto &eacute; exerc&iacute;cio. Seja $(x_n)$ uma sequ&ecirc;ncia com $x_n\in X\setminus\{a\}$ e $x_n\rightarrow a$. Ent&atilde;o $f(x_n)+g(x_n)\rightarrow L+M$. Usando o teorema anterior, $\lim_{x\rightarrow a}(f(x)\cdot g(x))=LM$. $\Box$</p>
+<p><strong>Teorema. </strong>Sejam $X,Y\subseteq\R$, $f:X\rightarrow Y$, $g:Y\rightarrow\R$ fun&ccedil;&otilde;es, $a\in X&rsquo;$, $b\in Y\cap Y&rsquo;$ e assuma que $\lim_{x\rightarrow a}f(x)=b$ e $\lim_{y\rightarrow b}g(y)=g(b)$. Ent&atilde;o $\lim_{x\rightarrow a}f(g(x))=g(b)$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Seja $\varepsilon&gt;0$. Existe $\gamma&gt;0$ tal que se $y\in Y$ com $|y-b|\leq\gamma$, ent&atilde;o $|g(y)-g(b)|\leq\varepsilon$. Existe $\delta&gt;0$ tal que se $0&lt;|x-a|&lt;\delta$, ent&atilde;o $|f(x)-b|\leq\gamma$. Ent&atilde;o se $x\in X$ tal que $0&lt;|x-a|\leq \delta$, ent&atilde;o $|f(x)-b|\leq \gamma$, e $|g(f(x))-g(b)|\leq\varepsilon$. $\Box$</p>
+<h4>Limites laterais</h4>
+<p>Seja $X\subseteq\R$ e $a\in\R$. O ponto $a$ &eacute; dito <em>ponto de acumula&ccedil;&atilde;o &agrave; direita</em> de $X$ se $X\cap (a,a+\varepsilon)\neq\emptyset$ for all $\varepsilon&gt;0$. O conjunto de pontos de acumula&ccedil;&atilde;o &agrave; direita de $X$ &eacute; denotado por $X&rsquo;_+$.</p>
+<p>Sejam $f:X\rightarrow \R$, $a\in X&rsquo;_+$, e $L\in\R$. Diz se que o <em>limite lateral &agrave; direita</em> da fun&ccedil;&atilde;o $f$ no ponto $a$ &eacute; $L$ se para todo $\varepsilon&gt;0$ existe $\delta&gt;0$ tal que $|f(x)-L|\leq \varepsilon$ sempre que $x\in X\cap (a,a+\delta)$. Escrevemos<br>
+$$<br>
+\lim_{x\rightarrow a+}f(x)=L.<br>
+$$</p>
+<p>Define-se de modo an&aacute;logo os conceitos de ponto de acumula&ccedil;&atilde;o &agrave; esquerda e limite lateral &agrave; esquerda.</p>
+<p><strong>Lema.&nbsp;</strong>Seja $f:X\rightarrow \R$ uma fun&ccedil;&atilde;o e seja $a\in X&rsquo;_+\cap X&rsquo;_-$. Ent&atilde;o existe $\lim_{x\rightarrow a}f(x)$ se e somente se existem&nbsp;$\lim_{x\rightarrow a+}f(x)$ e&nbsp;$\lim_{x\rightarrow a-}f(x)$ e eles s&atilde;o iguais.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Pelas defini&ccedil;&otilde;es, se existe o limite, existem os limites laterais e s&atilde;o iguais. Assuma que existem os limites laterais e eles s&atilde;o iguais a $L$. Seja $\varepsilon&gt;0$. Ent&atilde;o existem $\delta_1,\ \delta_2&gt;0$ tal que se<br>
+$x\in X\cap (a,a+\delta_1)$, ent&atilde;o $|f(x)-L|\leq\varepsilon$ e se $x\in X\cap (a-\delta_2,a)$, ent&atilde;o $|f(x)-L|\leq\varepsilon$. Seja $\delta=\min\{\delta_1,\delta_2\}$. Se $x\in X\cap(a-\delta,a+\delta)\setminus\{a\}$, ent&atilde;o $|f(x)-L|\leq\varepsilon$. $\Box$</p>
+<p><strong>Teorema.&nbsp;</strong>Seja $f:X\subseteq\R\rightarrow\R$ uma fun&ccedil;&atilde;o mon&oacute;tona e limitada. Se $a\in X_+$, ent&atilde;o existe o limite lateral $\lim_{x\rightarrow a+}f(x)$.</p>
+<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Assuma sem perder generalidade que $f(x)$ &eacute; n&atilde;o decrescente. Afirmamos que<br>
+$$<br>
+\lim_{x\rightarrow a+}f(x)=\inf\{f(x)\mid x\in X,\ a&lt;x\}.<br>
+$$<br>
+Denote o lado direito da &uacute;ltima igualdade por $L$. Seja $\varepsilon&gt;0$. Ent&atilde;o $L+\varepsilon$ n&atilde;o &eacute; cota inferior de $\{f(x)\mid x\in X,\ a&lt;x\}$. Ent&atilde;o existe $\delta&gt;0$ tal que $a+\delta\in X$ e<br>
+$$<br>
+L\leq f(a+\delta)&lt;L+\varepsilon.<br>
+$$<br>
+Portanto, se $x\in X\cap (a,a+\delta)$ ent&atilde;o<br>
+$$<br>
+L-\varepsilon&lt;L\leq f(x)\leq f(a+\delta)&lt;L+\varepsilon;<br>
+$$<br>
+ou seja $|f(x)-L|\leq\varepsilon$. $\Box$</p>
+			</div>
+
+	<footer class="entry-footer">
+					</footer>
+
+	
+<div class="entry-author">
+	<div class="author-avatar">
+		<img alt="" src="https://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=60&amp;d=mm&amp;r=g" srcset="https://2.gravatar.com/avatar/b6649b954fec527bcbdf763382e96f5d?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">	</div>
+
+	<div class="author-heading">
+		<h2 class="author-title">Published by <span class="author-name">schcs</span></h2>
+	</div>
+
+	<p class="author-bio">
+				<a class="author-link" href="https://schcs.github.io/WP/index.php/author/schcs/" rel="author">
+			View all posts by schcs		</a>
+	</p>
+</div>
+</article>
+
+			
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://schcs.github.io/WP/index.php/2019/05/10/topologia-da-reta-pontos-de-acumulacao-e-conjuntos-compactos/" rel="prev"><span class="meta-nav">&lsaquo; Previous</span>Topologia da Reta: Pontos de acumula&ccedil;&atilde;o e conjuntos compactos</a></div><div class="nav-next"><a href="https://schcs.github.io/WP/index.php/2019/05/13/exercicios-topologia/" rel="next"><span class="meta-nav">Next &rsaquo;</span>Exerc&iacute;cios: Topologia</a></div></div>
+	</nav>
+			
+<div id="comments" class="comments-area">
+
+	
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://schcs.github.io/WP/index.php/2019/05/13/limite-de-funcoes/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://schcs.github.io/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="205" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>			</form>
+			</div>
+	
+</div>
+
+		
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
