@@ -120,7 +120,15 @@ content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
 		</style>
 	
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] } });
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] },
+TeX: {
+Macros: {
+R: "{\\mathbb R}",
+N: "{\\mathbb N}",
+C: "{\\mathbb C}",
+Z: "{\\mathbb Z}",
+Q: "{\\mathbb Q}"
+}}});
 </script>
 	
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -263,33 +271,53 @@ Vamos ver alguns exemplos do quiciente $q$ e do resto $r$ no Teorema da Divis&at
 </p></div>
 <h3>Computa&ccedil;&otilde;es com Python</h3>
 <p>Vamos ver agora como calcular o quociente e o resto na linguagem Python. O quociente de dois n&uacute;meros naturais pode ser calculado por &ldquo;//&rdquo; e o resto por &ldquo;%&rdquo;. Considere o seguinte exemplo:</p>
-<div class="code">&gt;&gt;&gt; 11//5<br>
-2<br>
-&gt;&gt;&gt; 11 % 5<br>
-1</div>
+<div class="code">
+<pre>
+&gt;&gt;&gt; 11//5
+2
+&gt;&gt;&gt; 11 % 5
+1
+</pre>
+</div>
 <p>Normalmente usamos vari&aacute;veis para guardar os n&uacute;meros que usamos na computa&ccedil;&atilde;o. Refazemos a computata&ccedil;&atilde;o anterior usando vari&aacute;veis:</p>
-<div class="code">&gt;&gt;&gt; a = 11<br>
-&gt;&gt;&gt; b = 5<br>
-&gt;&gt;&gt; a//b<br>
-2<br>
-&gt;&gt;&gt; a % b<br>
-1</div>
+<div class="code">
+<pre>
+&gt;&gt;&gt; a = 11
+&gt;&gt;&gt; b = 5
+&gt;&gt;&gt; a//b
+2
+&gt;&gt;&gt; a % b
+1
+</pre>
+</div>
 <p>Verifiquemos que o quociente e o resto satisfaz a igualdade no Teorema da Divis&atilde;o:</p>
-<div class="code">&gt;&gt;&gt; q = a//b; r = a % b<br>
-&gt;&gt;&gt; a == q*b+r<br>
-True</div>
+<div class="code">
+<pre>
+&gt;&gt;&gt; q = a//b; r = a % b
+&gt;&gt;&gt; a == q*b+r
+True
+</pre>
+</div>
 <p>Precisa-se prestar aten&ccedil;&atilde;o quando trabalhamos com n&uacute;meros negativos. Quando $a$ &eacute; negativo e $b$ &eacute; positivo, o quociente e o resto calculado por Python coincide com o que segue do Teorema.</p>
-<div class="code">&gt;&gt;&gt; a = -11; b = 5<br>
-&gt;&gt;&gt; a//b<br>
--3<br>
-&gt;&gt;&gt; a%b<br>
-4</div>
+<div class="code">
+<pre>
+&gt;&gt;&gt; a = -11; b = 5
+&gt;&gt;&gt; a//b
+-3
+&gt;&gt;&gt; a%b
+4
+</pre>
+</div>
 <p>Mas quando $b$ for negativo, o Python devolve um resto negativo que n&atilde;o &eacute; compat&iacute;vel com nosso Teorema.</p>
-<div class="code">&gt;&gt;&gt; a = 11; b = -5<br>
-&gt;&gt;&gt; a//b<br>
--3<br>
-&gt;&gt;&gt; a%b<br>
--4</div>
+<div class="code">
+<pre>
+&gt;&gt;&gt; a = 11; b = -5
+&gt;&gt;&gt; a//b
+-3
+&gt;&gt;&gt; a%b
+-4
+</pre>
+</div>
 <p>Nestes casos o output dado por Python precisa ser modificado para ser compat&iacute;vel com o Teorema de Divis&atilde;o enunciado anteriormente.</p>
 			</div>
 	<footer class="entry-footer">
