@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Divisibilidade entre n&uacute;meros inteiros &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://github.com/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://github.com/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://github.com/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://github.com/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://github.com/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://github.com/WP/index.php/ensino/fundamentos-de-algebra/divisibilidade-entre-numeros-inteiros/">
+
+<link rel="alternate" type="application/json+oembed" href="https://github.com/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgithub.com%2Fschcs%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdivisibilidade-entre-numeros-inteiros%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://github.com/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgithub.com%2Fschcs%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdivisibilidade-entre-numeros-inteiros%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 5px outset grey;
+	background-color: silver;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+
+.definition {
+  border: 5px outset green;
+  background-color: greenyellow;
+}
+
+.definition:before {
+content: "Defini&ccedil;&atilde;o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini&ccedil;&atilde;o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 5px outset peru;
+  background-color: khaki;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 5px outset salmon;
+  background-color: moccasin;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 5px outset hotpink;
+  background-color: lightpink;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.proof {
+  border: 5px outset green;
+  background-color: mediumspringgreen;
+}
+
+.proof:before {
+content: "Demonstra&ccedil;&atilde;o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
+}
+
+		</style>
+	</head>
+
+<body class="page-template-default page page-id-1196 page-child parent-pageid-1193 no-sidebar">
+
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://github.com/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://github.com/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://github.com/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://github.com/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1196" class="post-1196 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Divisibilidade entre n&uacute;meros inteiros</h1>	</header>
+		<div class="entry-content">
+		<h4>Defini&ccedil;&otilde;es e propriedades b&aacute;sicas</h4>
+<p>Os n&uacute;meros naturais s&atilde;o os n&uacute;meros $1$, $2$, $3$, etc. Alguns autores consideram o n&uacute;mero zero tamb&eacute;m natural, mas nesta disciplina os n&uacute;meros naturais come&ccedil;am com $1$. O conjunto dos n&uacute;meros naturais &eacute; denotado por $\N$, enquanto $\N_0$ denota o conjunto $\{0\}\cup\N$. Os n&uacute;meros inteiros s&atilde;o os n&uacute;meros naturais e os seus negativos. O conjunto dos n&uacute;meros inteiros &eacute; denotado por $\Z$ (pela palavra <em>zahlen</em> em alem&atilde;o); ou seja<br>
+\[<br>
+\Z=\{0,\pm 1,\pm 2,\pm 3,\ldots\}.<br>
+\]</p>
+<div class="definition">Sejam $a,b\in\Z$. Dizemos que &ldquo;$a$ divide $b$&rdquo;, ou &ldquo;$b$ &eacute; um m&uacute;ltiplo de $a$&rdquo; ou &ldquo;$b$ &eacute; divis&iacute;vel por $a$&rdquo; se existir $q\in\Z$ tal que $b=qa$. Quando $a$ divide $b$, escrevemos $a\mid b$, e quando $a$ n&atilde;o divide $b$, escrevemos $a\nmid b$.</div>
+<div class="example">
+<ul>
+<li>$2\mid 4$, $-2\mid 4$, $3\nmid 5$;</li>
+<li>$a\mid 0$ para todo $a\in\Z$; em particular $0\mid 0$;</li>
+<li>$0\nmid a$ para todo $a\in\Z\setminus\{0\}$.</li>
+</ul>
+</div>
+<p>Quando $a,b\in\Z$ e $a\mid b$, ent&atilde;o existe (por defini&ccedil;&atilde;o), um $q\in\Z$ tal que $b=qa$. Se $a\neq 0$, ent&atilde;o o n&uacute;mero $q$ &eacute; &uacute;nico e $q=b/a$; ou seja, $q$ &eacute; o quociente de $b$ por $a$. Quando $a=b=0$, temos que $a\mid b$, mas o quociente $0/0$ n&atilde;o &eacute; definido.</p>
+<div class="lemma">
+(As propriedades da divisibilidade.) Sejam $a,b,c\in\Z$. As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.
+<ol>
+<li>$a\mid a$;</li>
+<li>se $a\mid b$ e $b\mid c$, ent&atilde;o $a\mid c$;</li>
+<li>se $a\mid b$ e $b\mid a$., ent&atilde;o $a=\pm b$;</li>
+<li>se $a\mid b$, ent&atilde;o $a\mid bc$;</li>
+<li>se $a\mid b$ e $a\mid c$, ent&atilde;o $a\mid b\pm c$.</li>
+</ol>
+</div>
+<div class="proof">
+<p>Demonstraremos apenas duas destas afirma&ccedil;&otilde;es, o resto &eacute; exerc&iacute;cio.</p>
+<p>3. A afirma&ccedil;&atilde;o &eacute; trivialmente verdadeira pelas observa&ccedil;&otilde;es anteriores quando $a=0$ ou $b=0$. Assumamos portanto que $a\neq 0$ e $b\neq 0$. Suponha que $a\mid b$ e $b\mid a$. Ent&atilde;o existem $q_1,q_2\in\Z$ tais que<br>
+\begin{align*}<br>
+b&amp;=q_1a;\\<br>
+a&amp;=q_2b.<br>
+\end{align*}<br>
+Substituindo $b=q_1a$ na segunda equa&ccedil;&atilde;o, obtemos que<br>
+\[<br>
+a=q_2b=q_2q_1a.<br>
+\]<br>
+Como $a\neq 0$, a &uacute;ltima equa&ccedil;&atilde;o destacada implica que $q_2q_1=1$; ou seja (lembrando que $q_1$ e $q_2$ s&atilde;o inteiros) $q_1=q_2=1$ ou $q_1=q_2=-1$. Obtemos portanto que $a=\pm b$.</p>
+<p>5. Assuma que $a\mid b$ e $a\mid c$. Existem $q_1,q_2\in\Z$ tais que $b=q_1a$ e $c=q_2a$. Isso implica que<br>
+\[<br>
+b+c=q_1a+q_2a=(q_1+q_2)a;<br>
+\]<br>
+ou seja, $a\mid b+c$. Pode-se modificar o argumento trivialmente para mostrar que $a\mid b-c$.
+</p></div>
+<h4>O Teorema da Divis&atilde;o de Euclides</h4>
+<div class="theorem">(O Teorema da Divis&atilde;o de Euclides) Sejam $a,b\in\Z$ tais que $b\neq 0$. Ent&atilde;o existem unicamente $q,r\in\Z$ tais que<br>
+\[<br>
+a=qb+r\quad\mbox{e}\quad 0\leq r&lt;|b|.<br>
+\]</div>
+<div class="proof"><strong>Exist&ecirc;ncia.</strong> Suponha primeiro que $b$ &eacute; positivo. Vamos demonstrar a exist&ecirc;ncia primeiro para $a$ n&atilde;o negativo por indu&ccedil;&atilde;o em $a$. Quando $a=0$, pode escolher $q=r=0$ e a afirma&ccedil;&atilde;o sobre a exist&ecirc;ncia destes n&uacute;meros est&aacute; v&aacute;lida. Assuma que a afirma&ccedil;&atilde;o da exist&ecirc;ncia &eacute; verdadeira para algum $a\geq 0$; ou seja existem $q,r\in\Z$ tais que $a=qb+r$ e $0\leq r&lt;b$. O n&uacute;mero $a+1$ pode ser escrito como<br>
+\[<br>
+a+1=qb+r+1<br>
+\]<br>
+e temos ainda que $1\leq r+1\leq b$. Se $r+1&lt;b$, ent&atilde;o a express&atilde;o para $a$ na equa&ccedil;&atilde;o anterior &eacute; como desejada. Por outro lado, se $r+1=b$, ent&atilde;o<br>
+\[<br>
+a+1=qb+r+1=qb+b=(q+1)b=(q+1)b+0<br>
+\]<br>
+e obtemos uma express&atilde;o para $a+1$ que satisfaz as condi&ccedil;&otilde;es do teorema.Acabamos de provar a afirma&ccedil;&atilde;o da exist&ecirc;ncia para $a$ n&atilde;o negativo e $b$ positivo. 
+<p>Assuma agora que $a$ &eacute; negativo, mas $b$ cont&iacute;nua positivo. Como $-a$ &eacute; positivo, o teorema est&aacute; v&aacute;lido para $-a$ e $b$ e existem $q,r\in\Z$ tais que<br>
+\[<br>
+-a=qb+r\quad\mbox{e}\quad 0\leq r&lt; b.<br>
+\]<br>
+Se $r=0$, ent&atilde;o obtemos que $a=(-q)b+0$ que d&aacute; a express&atilde;o procurada. Caso contr&aacute;rio, quando $0&lt;r&lt;b$, obtemos que<br>
+\[<br>
+a=(-q)b-r=(-q-1)b+(-r+b)\quad\mbox{e}\quad 0&lt; -r+b&lt; b<br>
+\]<br>
+como foi desejado.</p>
+<p>Agora consideremos os caso quando $b$ &eacute; negativo e $a$ &eacute; arbitr&aacute;rio. Neste caso $-b$ &eacute; positivo e existem $q,r\in\Z$ tais que<br>
+\[<br>
+a=q(-b)+r\quad\mbox{e}\quad 0\leq r&lt; |b|<br>
+\]<br>
+e isso implica que<br>
+\[<br>
+a=(-q)b+r\quad\mbox{e}\quad 0\leq r&lt; |b|<br>
+\]<br>
+e podemos tomar os n&uacute;meros $-q$ e $r$.</p>
+<p><strong>Unicidade.</strong> Assuma que para algum $a,b\in\Z$ (com $b\neq 0$), temos $q_1,q_2,r_1,r_2\in\Z$ tais que<br>
+\[<br>
+a=q_1b+r_1\quad\mbox{e}\quad 0\leq r_1&lt;|b|<br>
+\]<br>
+e<br>
+\[<br>
+a=q_2b+r_2\quad\mbox{e}\quad 0\leq r_2&lt;|b|.<br>
+\]<br>
+Assuma sem perder generalidade que $r_2\geq r_1$. Neste caso temos que $0\leq r_2-r_1\leq r_2&lt;|b|$ e das duas equa&ccedil;&otilde;es anteriores obtemos tamb&eacute;m que<br>
+\[<br>
+(q_1-q_2)b=(r_2-r_1).<br>
+\]<br>
+Como $(q_1-q_2)b$ &eacute; um m&uacute;ltiplo de $b$, este n&uacute;mero s&oacute; pode cair no intervalo $[0,|b|-1]$ se $(q_1-q_2)b=0$. Como $b\neq 0$, a lei cancelativa implica que $q_1-q_2=0$; ou seja $q_1=q_2=q$. Ora<br>
+\[<br>
+a=qb+r_1=qb+r_2<br>
+\]<br>
+a aplicando a lei cancelativa aditivamente obtemos que $r_1=r_2$. Ent&atilde;o a decomposi&ccedil;&atilde;o do n&uacute;mero $a$ no teorema &eacute; &uacute;nica.</p>
+</div>
+<p>Os n&uacute;meros $q$ e $r$ s&atilde;o chamados do <mark>quociente</mark> e o <mark>resto</mark>, respetivamente, de $a$ por $b$.</p>
+<div class="example">
+Vamos ver alguns exemplos do quiciente $q$ e do resto $r$ no Teorema da Divis&atilde;o para alguns valores $a,b$. Pode-se verificar facilmente as seguintes afirma&ccedil;&otilde;es.
+<ol>
+<li> Se $a=13$ e $b=5$, ent&atilde;o $q=2$ e $r=3$.
+</li><li> Se $a=-13$ e $b=5$, ent&atilde;o $q=-3$ e $r=2$.
+</li><li> Se $a=13$ e $b=-5$, ent&atilde;o $q=-2$ e $r=3$.
+</li><li> Se $a=-13$ e $b=-5$, ent&atilde;o $q=3$ e $r=2$.
+</li></ol>
+<p>Explique porque $r\neq -3$ nos itens 2 e 4.
+</p></div>
+<h3>Computa&ccedil;&otilde;es com Python</h3>
+<p>Vamos ver agora como calcular o quociente e o resto na linguagem Python. O quociente de dois n&uacute;meros naturais pode ser calculado por &ldquo;//&rdquo; e o resto por &ldquo;%&rdquo;. Considere o seguinte exemplo:</p>
+<div class="code">&gt;&gt;&gt; 11//5<br>
+2<br>
+&gt;&gt;&gt; 11 % 5<br>
+1</div>
+<p>Normalmente usamos vari&aacute;veis para guardar os n&uacute;meros que usamos na computa&ccedil;&atilde;o. Refazemos a computata&ccedil;&atilde;o anterior usando vari&aacute;veis:</p>
+<div class="code">&gt;&gt;&gt; a = 11<br>
+&gt;&gt;&gt; b = 5<br>
+&gt;&gt;&gt; a//b<br>
+2<br>
+&gt;&gt;&gt; a % b<br>
+1</div>
+<p>Verifiquemos que o quociente e o resto satisfaz a igualdade no Teorema da Divis&atilde;o:</p>
+<div class="code">&gt;&gt;&gt; q = a//b; r = a % b<br>
+&gt;&gt;&gt; a == q*b+r<br>
+True</div>
+<p>Precisa-se prestar aten&ccedil;&atilde;o quando trabalhamos com n&uacute;meros negativos. Quando $a$ &eacute; negativo e $b$ &eacute; positivo, o quociente e o resto calculado por Python coincide com o que segue do Teorema.</p>
+<div class="code">&gt;&gt;&gt; a = -11; b = 5<br>
+&gt;&gt;&gt; a//b<br>
+-3<br>
+&gt;&gt;&gt; a%b<br>
+4</div>
+<p>Mas quando $b$ for negativo, o Python devolve um resto negativo que n&atilde;o &eacute; compat&iacute;vel com nosso Teorema.</p>
+<div class="code">&gt;&gt;&gt; a = 11; b = -5<br>
+&gt;&gt;&gt; a//b<br>
+-3<br>
+&gt;&gt;&gt; a%b<br>
+-4</div>
+<p>Nestes casos o output dado por Python precisa ser modificado para ser compat&iacute;vel com o Teorema de Divis&atilde;o enunciado anteriormente.</p>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
