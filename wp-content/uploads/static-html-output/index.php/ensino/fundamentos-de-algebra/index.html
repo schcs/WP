@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Fundamentos de &aacute;lgebra &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://github.com/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://github.com/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://github.com/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://github.com/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://github.com/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://github.com/WP/index.php/ensino/fundamentos-de-algebra/">
+
+<link rel="alternate" type="application/json+oembed" href="https://github.com/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgithub.com%2Fschcs%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://github.com/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgithub.com%2Fschcs%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 5px outset grey;
+	background-color: silver;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+
+.definition {
+  border: 5px outset green;
+  background-color: greenyellow;
+}
+
+.definition:before {
+content: "Defini&ccedil;&atilde;o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini&ccedil;&atilde;o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 5px outset peru;
+  background-color: khaki;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 5px outset salmon;
+  background-color: moccasin;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 5px outset hotpink;
+  background-color: lightpink;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.proof {
+  border: 5px outset green;
+  background-color: mediumspringgreen;
+}
+
+.proof:before {
+content: "Demonstra&ccedil;&atilde;o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
+}
+
+		</style>
+	</head>
+
+<body class="page-template-default page page-id-1193 page-parent page-child parent-pageid-64 no-sidebar">
+
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://github.com/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://github.com/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://github.com/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://github.com/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1193" class="post-1193 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Fundamentos de &aacute;lgebra</h1>	</header>
+		<div class="entry-content">
+		<p>Disciplina de gradua&ccedil;&atilde;o, Departamento de Matem&aacute;tica, UFMG.</p>
+<h4><span class="">Conte&uacute;do</span></h4>
+<p><strong>Bloco 1.</strong> N&uacute;meros inteiros: os princ&iacute;pios de boa ordena&ccedil;&atilde;o e indu&ccedil;&atilde;o; o Lema&nbsp; de Divis&atilde;o de Euclides; crit&eacute;rios de&nbsp;divisibilidade; representa&ccedil;&atilde;o de inteiros e racionais em bases; m&aacute;ximo divisor comum e m&iacute;nimo m&uacute;ltiplo comum; o&nbsp;MDC como combina&ccedil;&atilde;o linear; equa&ccedil;&otilde;es diofantinas lineares; n&uacute;meros primos; fatora&ccedil;&atilde;o; o Teorema Fundamental da Aritm&eacute;tica.</p>
+<p><strong>Bloco 2.</strong> Congru&ecirc;ncias: defini&ccedil;&atilde;o e propriedades elementares; congru&ecirc;ncias lineares; a fun&ccedil;&atilde;o de Euler; os&nbsp;teoremas de Fermat Euler, Wilson e do resto chin&ecirc;s; testes de primalidade; a criptografia RSA.</p>
+<p><strong>Bloco 3.</strong>&nbsp;Polin&ocirc;mios sobre um corpo; divisibilidade; o Lema de Divis&atilde;o; m&aacute;ximo divisor comum e m&iacute;nimo&nbsp;m&uacute;ltiplo comum; ra&iacute;zes, f&oacute;rmulas para ra&iacute;zes para polin&ocirc;mios de 2<sup>o</sup>&nbsp;e 3<sup>o&nbsp;</sup>grau; irredutibilidade e fatora&ccedil;&atilde;o&nbsp;sobre&nbsp;<strong>Q</strong>,&nbsp;<strong>R</strong>&nbsp;e&nbsp;<strong>C;</strong>&nbsp;o Teorema Fundamental da &Aacute;lgebra;&nbsp; o Lema de Gauss e o&nbsp;Crit&eacute;rio de Eisenstein; an&eacute;is; defini&ccedil;&atilde;o e exemplos; ideais; dom&iacute;nios de integridade; divisores de zero; an&eacute;is euclidianos.</p>
+<p><strong>Literatura recomendada</strong></p>
+<ul>
+<li>A. Vidigal, D. Avritzer, E. Farias e Soares, H. P. Bueno, M. C. C. Ferreira, e E. M. C. de Faria.&nbsp; Fundamentos de &Aacute;lgebra. Editora UFMG. 2005.</li>
+<li>S. C. Coutinho. Teoria de n&uacute;meros e criptografia RSA. IMPA-SBM ,segunda edi&ccedil;&atilde;o,&nbsp; 2014.</li>
+<li>A. Hefez. Curso de &Aacute;lgebra (vol 1). Cole&ccedil;&atilde;o Matem&aacute;tica universit&aacute;ria, IMPA &ndash; SBM, quinta edi&ccedil;&atilde;o, 2016.</li>
+<li>Arnaldo Garcia e Yves Lequain. Elementos de &aacute;lgebra, IMPA, sexta edi&ccedil;&atilde;o, 2018.</li>
+<li>F. C. P. Milies e S. P COELHO. N&uacute;meros: uma introdu&ccedil;&atilde;o &agrave; Matem&aacute;tica. Ed. USP, terceira edi&ccedil;&atilde;o, 2013.</li>
+<li>L. S. Childs. A concrete introduction to higher algebra, UTM, Springer-Verlag, 2009.</li>
+</ul>
+<h4>Notas e apostilas</h4>
+<h5>Bloco 1</h5>
+<ol>
+<li><a href="https://github.com/WP/index.php/ensino/fundamentos-de-algebra/divisibilidade-entre-numeros-inteiros/">Divis&atilde;o, quociente, e resto entre n&uacute;meros inteiros; O Teorema de Divis&atilde;o de Euclides</a></li>
+<li><a href="https://github.com/WP/index.php/ensino/fundamentos-de-algebra/expansao-de-numeros-naturais-na-base-b-e-a-expansao-decimal-de-numeros-racionais/">Expans&atilde;o de n&uacute;meros inteiros em uma base $b$</a></li>
+<li><a href="https://github.com/WP/index.php/ensino/fundamentos-de-algebra/criterios-de-divisibilidade/">Crit&eacute;rios de divisibilidade</a></li>
+<li><a href="https://github.com/WP/index.php/expansao-decimal-de-numeros-racionais/">Expans&atilde;o decimal de n&uacute;meros racionais</a></li>
+</ol>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
