@@ -32,16 +32,18 @@
 }
 
 .code {
-	border: 5px outset grey;
-	background-color: silver;
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
 	font-family: monospace;
   white-space: pre-wrap;
 	display: block;
 }
 
 .definition {
-  border: 5px outset green;
-  background-color: greenyellow;
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
 }
 
 .definition:before {
@@ -56,8 +58,9 @@ content: "Defini\00E7\00E3 o (" attr(text) ") ";
 
 
 .example {
-  border: 5px outset peru;
-  background-color: khaki;
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
 }
 
 .example:before {
@@ -72,8 +75,9 @@ content: "Exemplo (" attr(text) ") ";
 
 
 .lemma {
-  border: 5px outset salmon;
-  background-color: moccasin;
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
 }
 
 .lemma:before {
@@ -88,8 +92,9 @@ content: "Lema (" attr(text) ") ";
 
 
 .theorem {
-  border: 5px outset hotpink;
-  background-color: lightpink;
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
 }
 
 .theorem:before {
@@ -103,8 +108,9 @@ content: "Teorema (" attr(text) ") ";
 }
 
 .proof {
-  border: 5px outset green;
-  background-color: mediumspringgreen;
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
 }
 
 .proof:before {
@@ -166,11 +172,12 @@ Q: "{\\mathbb Q}"
 	<header class="entry-header">
 		<h1 class="entry-title">Crit&eacute;rios de divisibilidade</h1>	</header>
 		<div class="entry-content">
-		<p>Seja $a$ um n&uacute;mero natural escrito na base $10$ (decimal) como<br>
+		<div style="color:#000000;">
+Seja $a$ um n&uacute;mero natural escrito na base $10$ (decimal) como<br>
 \[<br>
 a=[a_na_{n-1}\cdots a_1a_0]_{10}=[a_na_{n-1}\cdots a_1a_0].<br>
 \]<br>
-&Eacute; bem conhecido que, para alguns valores de $b$, a divisibilidade de $a$ por $b$ pode ser determinado olhando apenas os d&iacute;gitos de $a$.</p>
+&Eacute; bem conhecido que, para alguns valores de $b$, a divisibilidade de $a$ por $b$ pode ser determinado olhando apenas os d&iacute;gitos de $a$.
 <div class="theorem">(Crit&eacute;rios de divisibilidade)<br>
 As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras para um n&uacute;mero natural $a=[a_na_{n-1}\cdots a_1a_0]$ escrito na base decimal.
 <ol>
@@ -212,6 +219,7 @@ a&amp;=[a_n\cdots a_1a_0]=\sum_{k=0}^n 10^ka_k=\sum_{k=0}^n (3q_k+1)a_k\\&amp;=3
 \end{align*}<br>
 No &uacute;ltima express&atilde;o, a primeira parcela &eacute; um m&uacute;ltiplo de $3$. Logo $a$ &eacute; divis&iacute;vel por $3$ se e somente se a segunda parcela na &uacute;ltima express&atilde;o &eacute; divis&iacute;vel por $3$, mas esta segunda parcela &eacute; justamente a soma dos d&iacute;gitos de $a$.
 </p></div>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>

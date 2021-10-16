@@ -32,16 +32,18 @@
 }
 
 .code {
-	border: 5px outset grey;
-	background-color: silver;
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
 	font-family: monospace;
   white-space: pre-wrap;
 	display: block;
 }
 
 .definition {
-  border: 5px outset green;
-  background-color: greenyellow;
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
 }
 
 .definition:before {
@@ -56,8 +58,9 @@ content: "Defini\00E7\00E3 o (" attr(text) ") ";
 
 
 .example {
-  border: 5px outset peru;
-  background-color: khaki;
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
 }
 
 .example:before {
@@ -72,8 +75,9 @@ content: "Exemplo (" attr(text) ") ";
 
 
 .lemma {
-  border: 5px outset salmon;
-  background-color: moccasin;
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
 }
 
 .lemma:before {
@@ -88,8 +92,9 @@ content: "Lema (" attr(text) ") ";
 
 
 .theorem {
-  border: 5px outset hotpink;
-  background-color: lightpink;
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
 }
 
 .theorem:before {
@@ -103,8 +108,9 @@ content: "Teorema (" attr(text) ") ";
 }
 
 .proof {
-  border: 5px outset green;
-  background-color: mediumspringgreen;
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
 }
 
 .proof:before {
@@ -166,7 +172,8 @@ Q: "{\\mathbb Q}"
 	<header class="entry-header">
 		<h1 class="entry-title">Divisibilidade entre n&uacute;meros inteiros</h1>	</header>
 		<div class="entry-content">
-		<h4>Defini&ccedil;&otilde;es e propriedades b&aacute;sicas</h4>
+		<div style="color:#000000;">
+<h4>Defini&ccedil;&otilde;es e propriedades b&aacute;sicas</h4>
 <p>Os n&uacute;meros naturais s&atilde;o os n&uacute;meros $1$, $2$, $3$, etc. Alguns autores consideram o n&uacute;mero zero tamb&eacute;m natural, mas nesta disciplina os n&uacute;meros naturais come&ccedil;am com $1$. O conjunto dos n&uacute;meros naturais &eacute; denotado por $\N$, enquanto $\N_0$ denota o conjunto $\{0\}\cup\N$. Os n&uacute;meros inteiros s&atilde;o os n&uacute;meros naturais e os seus negativos. O conjunto dos n&uacute;meros inteiros &eacute; denotado por $\Z$ (pela palavra <em>zahlen</em> em alem&atilde;o); ou seja<br>
 \[<br>
 \Z=\{0,\pm 1,\pm 2,\pm 3,\ldots\}.<br>
@@ -318,7 +325,8 @@ True
 -4
 </pre>
 </div>
-<p>Nestes casos o output dado por Python precisa ser modificado para ser compat&iacute;vel com o Teorema de Divis&atilde;o enunciado anteriormente.</p>
+<p>Nestes casos o output dado por Python precisa ser modificado para ser compat&iacute;vel com o Teorema de Divis&atilde;o enunciado anteriormente.
+</p></div>
 			</div>
 	<footer class="entry-footer">
 			</footer>
