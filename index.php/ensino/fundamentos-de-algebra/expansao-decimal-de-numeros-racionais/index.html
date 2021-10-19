@@ -73,6 +73,22 @@ font-style: normal;
 content: "Exemplo (" attr(text) ") ";
 }
 
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc&iacute;cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
 
 .lemma {
   border: 3px outset hotpink;
@@ -180,7 +196,7 @@ Comecemos por um resultado conhecido de c&aacute;lculo.
 \]<br>
 &eacute; convergente e a sua soma &eacute; igual a<br>
 \[<br>
-\frac{1}{q-1}.<br>
+\frac{1}{1-q}.<br>
 \]</div>
 <div class="proof">Exerc&iacute;cio</div>
 <p>No bloco anterior, estudamos expans&otilde;es de n&uacute;meros naturais na base $b$. Escrevemos naturais na base $b$ como $[a_na_{n-1}\cdots a_1a_0]_b$. Quando $b=10$, escrevemos o mesmo n&uacute;mero como $[a_na_{n-1}\cdots a_1a_0]$ (sem explicitamente indicar a base).</p>
@@ -201,7 +217,7 @@ A express&atilde;o acima mostra que cada fra&ccedil;&atilde;o decimal n&atilde;o
 \]<br>
 Como os termos da s&eacute;rie na &uacute;ltima linha s&atilde;o n&atilde;o negativas, a conta acima mostra que a s&eacute;rie que corresponde &agrave; expans&atilde;o $[0,a_{1}a_{2}\cdots]$ &eacute; convergente e converge a um n&uacute;mero n&atilde;o negativo menor ou igual a $1$.</div>
 <p>Note que o mesmo n&uacute;mero real pode ser escrito de maneiras distintas como fra&ccedil;&atilde;o decimal. Por exemplo, $1,00\cdots=0,99\cdots$.</p>
-<p>Considere a fra&ccedil;&atilde;o decimal $[0,a_{1}a_{2}\cdots]$. Esta fra&ccedil;&atilde;o chama-se peri&oacute;dica se existem $m\geq 0$ e $k\geq 1$ tais que $a_{r+k}=a_r$ para todo $k&gt; m$. A sequ&ecirc;ncia $[a_1\cdots a_m]$ chama-se do pr&eacute;-per&iacute;odo, enquanto a seq&ecirc;ncia $[a_{m+1}\cdots a_{m+r}]$ chama-se do per&iacute;odo da fra&ccedil;&atilde;o.</p>
+<p>Considere a fra&ccedil;&atilde;o decimal $[0,a_{1}a_{2}\cdots]$. Esta fra&ccedil;&atilde;o chama-se peri&oacute;dica se existem $m\geq 0$ e $r\geq 1$ tais que $a_{r+k}=a_k$ para todo $k&gt; m$. A sequ&ecirc;ncia $[a_1\cdots a_m]$ chama-se do pr&eacute;-per&iacute;odo, enquanto a seq&ecirc;ncia $[a_{m+1}\cdots a_{m+r}]$ chama-se do per&iacute;odo da fra&ccedil;&atilde;o.</p>
 <p>Uma fra&ccedil;&atilde;o peri&oacute;dica com pr&eacute;-per&iacute;odo $[a_1\cdots a_m]$ e per&iacute;odo $[a_{m+1}\cdots a_{m+r}]$ tem a forma<br>
 \[<br>
 [0,a_1\cdots a_ma_{m+1}\cdots a_{m+r}a_{m+1}\cdots a_{m+r}\cdots];<br>
@@ -214,11 +230,11 @@ Por exemplo<br>
 \[<br>
 1/44=0,02272727\cdots=0,02\overline{27}.<br>
 \]</p>
-<div class="teorema">
-<p>As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.</p>
+<div class="theorem">
+As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.
 <ol>
 <li>Toda expans&atilde;o decimal peri&oacute;dica representa um n&uacute;mero racional.</li>
-<li>Se $a/b$ &eacute; um n&uacute;mero racional, ent&atilde;o tal que $0&lt;a&lt;b$, ent&atilde;o sua expans&atilde;o racional &eacute; peri&oacute;dica</li>
+<li>Se $a/b$ &eacute; um n&uacute;mero racional, ent&atilde;o tal que $0&lt;a&lt;b$, ent&atilde;o sua expans&atilde;o decimal &eacute; peri&oacute;dica</li>
 </ol>
 </div>
 <div class="proof">1. Considere a expans&atilde;o decimal<br>
@@ -233,7 +249,8 @@ Tem-se que<br>
 \begin{align*}<br>
 a&amp;=\sum_{k=1}^\infty a_k10^{-k}=\frac u{10^{m}}+\sum_{k=1}^\infty \frac{v}{10^{m+kr}}\\&amp;=\frac u{10^{m}}+\frac{v}{10^{m+r}}\sum_{k=0}^\infty \frac{1}{10^{r}}=\frac{u}{10^{m}}+\frac{v}{10^{m+r}}\frac{1}{1-10^{-r}}.<br>
 \end{align*}<br>
-Ora note apenas que o n&uacute;mero no lado direito da &uacute;ltima equa&ccedil;&atilde;o &eacute; um n&uacute;mero racional.2. Assuma que $0&lt; a&lt;b$ e considere o racional $q=a/b$. Vamos determinar a sequ&ecirc;ncia de algarismos para $q$. Seja $a_0=a$, $q_0=0$ e escreva, usando o Teorema de Divis&atilde;o de Euclides,<br>
+Ora note apenas que o n&uacute;mero no lado direito da &uacute;ltima equa&ccedil;&atilde;o &eacute; um n&uacute;mero racional.
+<p>2. Assuma que $0&lt; a&lt;b$ e considere o racional $q=a/b$. Vamos determinar a sequ&ecirc;ncia de algarismos para $q$. Seja $a_0=a$, $q_0=0$ e escreva, usando o Teorema de Divis&atilde;o de Euclides,<br>
 \[<br>
 10a_0=q_1b+a_1\quad\mbox{onde}\quad 0\leq a_1&lt;b.<br>
 \]<br>
@@ -241,7 +258,8 @@ Assuma que as sequ&ecirc;ncias $a_0,\ldots,a_k$ e $q_0,\ldots,q_k$ s&atilde;o de
 \[<br>
 10a_k=q_{k+1}b+a_{k+1}\quad\mbox{onde}\quad 0\leq a_{k+1}&lt;b<br>
 \]<br>
-usando o Teorema de Divis&atilde;o de Euclides.Afirmamos que a expans&atilde;o decimal de $a/b$ &eacute; $[0,q_1q_2\cdots]$. Para isso n&oacute;s precisamos verificar que<br>
+usando o Teorema de Divis&atilde;o de Euclides. </p>
+<p>Afirmamos que a expans&atilde;o decimal de $a/b$ &eacute; $[0,q_1q_2\cdots]$. Para isso n&oacute;s precisamos verificar que<br>
 \[<br>
 \sum_{k=1}^\infty q_k10^{-k}\to \frac ab.<br>
 \]<br>
@@ -263,7 +281,8 @@ e assim<br>
 \[<br>
 \frac ab-[0,q_1\cdots q_k]=\frac{a_k}{10^kb}&lt;\frac{b}{10^kb}=10^{-k}.<br>
 \]<br>
-Isso implica que a sequ&ecirc;ncia $[0,q_1\cdots q_k]$ converge para $a/b$ quando $k\to\infty$ e ent&atilde;o a expans&atilde;o do n&uacute;mero racional $a/b$ &eacute; $[0,q_1q_2\cdots]$.Finalmente precisamos provar que a expans&atilde;o $[0,q_1q_2\cdots]$ de $a/b$ &eacute; peri&oacute;dica. Para isso, note que a sequ&ecirc;ncia $a_1,a_2,\ldots$ &eacute; uma seq&ecirc;ncia de n&uacute;meros naturais com $a_i\in\{0,\ldots,b-1\}$ para todo $i$. Ent&atilde;o vai existir $m$ e $r$ tal que $a_{m+r}=a_m$. Logo<br>
+Isso implica que a sequ&ecirc;ncia $[0,q_1\cdots q_k]$ converge para $a/b$ quando $k\to\infty$ e ent&atilde;o a expans&atilde;o do n&uacute;mero racional $a/b$ &eacute; $[0,q_1q_2\cdots]$.</p>
+<p>Finalmente precisamos provar que a expans&atilde;o $[0,q_1q_2\cdots]$ de $a/b$ &eacute; peri&oacute;dica. Para isso, note que a sequ&ecirc;ncia $a_1,a_2,\ldots$ &eacute; uma seq&ecirc;ncia de n&uacute;meros naturais com $a_i\in\{0,\ldots,b-1\}$ para todo $i$. Ent&atilde;o vai existir $m$ e $r$ tal que $a_{m+r}=a_m$. Logo<br>
 \[<br>
 q_{m+r+1}b+a_{m+r+1}=10a_{m+r}=10a_m=q_{m+1}b+a_{m+1}.<br>
 \]<br>
@@ -271,7 +290,7 @@ Obtemos pela unicidade na Teorema de Divis&atilde;o de Euclides que $q_{m+r+1}=q
 \[<br>
 q_{k+r}=q_{k}\quad e \quad a_{k+r}=a_{k}.<br>
 \]<br>
-para todo $k\geq m+1$. Ou seja, a expans&atilde;o do n&uacute;mero $a/b$ &eacute; peri&oacute;doca.
+para todo $k\geq m+1$. Ou seja, a expans&atilde;o do n&uacute;mero $a/b$ &eacute; peri&oacute;doca.</p>
 </div>
 <div class="example">A demonstra&ccedil;&atilde;o do resultado anterior d&aacute; um algoritmo para calcular a expans&atilde;o de um n&uacute;mero natural $a/b$ onde $0&lt;a&lt;b$. Considere por exemplo o racional $1/54$. Seguindo a demonstra&ccedil;&atilde;o do teorema para $a=1$ e $b=54$, fazemos a seguinte conta.\begin{align*}<br>
 10a=10=0\cdot 54+10\quad &amp;\Rightarrow\quad q_1=0\mbox{ e }a_1=10\\<br>
@@ -284,7 +303,7 @@ Observamos que $a_4=a_1$ como foi previsto na demonstra&ccedil;&atilde;o do teor
 \[<br>
 \frac 1{54}=0,0\overline{185}.<br>
 \]</div>
-<p>Obtemos tamb&eacute;m como consequ&ecirc;ncia do teorema anterior que existem n&uacute;mero irracionais no intervalo $[0,1]$. Por exemplo, considere o n&uacute;mero<br>
+<p>Obtemos tamb&eacute;m como consequ&ecirc;ncia do teorema anterior que existem n&uacute;meros irracionais no intervalo $[0,1]$. Por exemplo, considere o n&uacute;mero<br>
 \[<br>
 a=0,1010010001000010000010000001\cdots.<br>
 \]<br>

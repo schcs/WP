@@ -73,6 +73,22 @@ font-style: normal;
 content: "Exemplo (" attr(text) ") ";
 }
 
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc&iacute;cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
 
 .lemma {
   border: 3px outset hotpink;
@@ -178,6 +194,9 @@ Seja $a$ um n&uacute;mero natural escrito na base $10$ (decimal) como<br>
 a=[a_na_{n-1}\cdots a_1a_0]_{10}=[a_na_{n-1}\cdots a_1a_0].<br>
 \]<br>
 &Eacute; bem conhecido que, para alguns valores de $b$, a divisibilidade de $a$ por $b$ pode ser determinado olhando apenas os d&iacute;gitos de $a$.
+<div class="exercise">
+Demonstre que para todo $i\geq 0$, existe $q_i\in\N_0$ tal que $10^i=3q_i+1$.
+</div>
 <div class="theorem">(Crit&eacute;rios de divisibilidade)<br>
 As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras para um n&uacute;mero natural $a=[a_na_{n-1}\cdots a_1a_0]$ escrito na base decimal.
 <ol>
@@ -203,16 +222,7 @@ com<br>
 q=\sum_{k=1}^n10^{k-1}a_k\in\mathbb N.<br>
 \]<br>
 Como $2\mid 10$, obtemos que o n&uacute;mero $a$ &eacute; divis&iacute;vel por $10$ se e somente se o algarismo $a_0$ &eacute;.</p>
-<p>3. Primeiro afirmamos, para todo $i\geq 0$, que<br>
-\[<br>
-10^i=3q_i+1<br>
-\]<br>
-com algum $q_i\in\mathbb N_0$. A demonstra&ccedil;&atilde;o desta afirma&ccedil;&atilde;o ser&aacute; feita por indu&ccedil;&atilde;o em $i$. A afirma&ccedil;&atilde;o &eacute; &oacute;bvia quando $i=0$, pois neste caso $10^i=10^0=0\cdot 3+1$ e pode tomar $q_0=0$. Assuma que a afirma&ccedil;&atilde;o vale para algum $i$; ou seja $10^i=3q_i+1$ para algum $q_i$ e considere<br>
-\begin{align*}<br>
-10^{i+1}&amp;=10\cdot 10^i=10(3q_i+1)=30q_i+10=30q_i+3+1\\&amp;=3(10q_i+1)+1<br>
-\end{align*}<br>
-e podemos tomar $q_{i+1}=10q_i+1$.</p>
-<p>Agora considere<br>
+<p>3. Temos, pelo exerc&iacute;cio antes do teorema, para todo $i\geq 0$, existe $q_i\in\N_0$ tal que $10^i=3q_i+1$. Agora considere<br>
 \begin{align*}<br>
 a&amp;=[a_n\cdots a_1a_0]=\sum_{k=0}^n 10^ka_k=\sum_{k=0}^n (3q_k+1)a_k\\&amp;=3\sum_{k=0}^nq_ka_k+<br>
 \sum_{k=0}^na_k.<br>
