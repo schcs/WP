@@ -119,6 +119,22 @@ font-style: normal;
 content: "Teorema (" attr(text) ") ";
 }
 
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol&aacute;rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol&aacute;rio (" attr(text) ") ";
+}
+
 .proof {
   border: 3px outset green;
 	padding: 5px;
@@ -145,7 +161,8 @@ R: "{\\mathbb R}",
 N: "{\\mathbb N}",
 C: "{\\mathbb C}",
 Z: "{\\mathbb Z}",
-Q: "{\\mathbb Q}"
+Q: "{\\mathbb Q}",
+mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 }}});
 </script>
 	

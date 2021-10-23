@@ -123,6 +123,22 @@ font-style: normal;
 content: "Teorema (" attr(text) ") ";
 }
 
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol&aacute;rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol&aacute;rio (" attr(text) ") ";
+}
+
 .proof {
   border: 3px outset green;
 	padding: 5px;
@@ -149,7 +165,8 @@ R: "{\\mathbb R}",
 N: "{\\mathbb N}",
 C: "{\\mathbb C}",
 Z: "{\\mathbb Z}",
-Q: "{\\mathbb Q}"
+Q: "{\\mathbb Q}",
+mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 }}});
 </script>
 	
@@ -215,6 +232,9 @@ Q: "{\\mathbb Q}"
 <li><a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/expansao-de-numeros-naturais-na-base-b-e-a-expansao-decimal-de-numeros-racionais/">Expans&atilde;o de n&uacute;meros inteiros em uma base $b$</a></li>
 <li><a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/criterios-de-divisibilidade/">Crit&eacute;rios de divisibilidade</a></li>
 <li><a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/expansao-decimal-de-numeros-racionais/">Expans&atilde;o decimal de n&uacute;meros racionais</a></li>
+<li><a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-maior-divisor-comum/">O maior divisor comum</a></li>
+<li><a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-algoritmo-de-euclides/">O Algoritmo de Euclides</a></li>
+<li><a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/proporiedades-do-mdc/">Propriedaded do MDC</a></li>
 </ol>
 			</div>
 	<footer class="entry-footer">

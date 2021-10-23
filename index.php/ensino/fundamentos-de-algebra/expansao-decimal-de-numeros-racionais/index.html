@@ -123,6 +123,22 @@ font-style: normal;
 content: "Teorema (" attr(text) ") ";
 }
 
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol&aacute;rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol&aacute;rio (" attr(text) ") ";
+}
+
 .proof {
   border: 3px outset green;
 	padding: 5px;
@@ -149,7 +165,8 @@ R: "{\\mathbb R}",
 N: "{\\mathbb N}",
 C: "{\\mathbb C}",
 Z: "{\\mathbb Z}",
-Q: "{\\mathbb Q}"
+Q: "{\\mathbb Q}",
+mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 }}});
 </script>
 	
@@ -217,7 +234,7 @@ A express&atilde;o acima mostra que cada fra&ccedil;&atilde;o decimal n&atilde;o
 \]<br>
 Como os termos da s&eacute;rie na &uacute;ltima linha s&atilde;o n&atilde;o negativas, a conta acima mostra que a s&eacute;rie que corresponde &agrave; expans&atilde;o $[0,a_{1}a_{2}\cdots]$ &eacute; convergente e converge a um n&uacute;mero n&atilde;o negativo menor ou igual a $1$.</div>
 <p>Note que o mesmo n&uacute;mero real pode ser escrito de maneiras distintas como fra&ccedil;&atilde;o decimal. Por exemplo, $1,00\cdots=0,99\cdots$.</p>
-<p>Considere a fra&ccedil;&atilde;o decimal $[0,a_{1}a_{2}\cdots]$. Esta fra&ccedil;&atilde;o chama-se peri&oacute;dica se existem $m\geq 0$ e $r\geq 1$ tais que $a_{r+k}=a_k$ para todo $k&gt; m$. A sequ&ecirc;ncia $[a_1\cdots a_m]$ chama-se pr&eacute;-per&iacute;odo, enquanto a seq&ecirc;ncia $[a_{m+1}\cdots a_{m+r}]$ chama-se per&iacute;odo da fra&ccedil;&atilde;o.</p>
+<p>Considere a fra&ccedil;&atilde;o decimal $[0,a_{1}a_{2}\cdots]$. Esta fra&ccedil;&atilde;o chama-se peri&oacute;dica se existem $m\geq 0$ e $r\geq 1$ tais que $a_{r+k}=a_k$ para todo $k&gt; m$. A sequ&ecirc;ncia $[a_1\cdots a_m]$ chama-se pr&eacute;-per&iacute;odo, enquanto a sequ&ecirc;ncia $[a_{m+1}\cdots a_{m+r}]$ chama-se per&iacute;odo da fra&ccedil;&atilde;o.</p>
 <p>Uma fra&ccedil;&atilde;o peri&oacute;dica com pr&eacute;-per&iacute;odo $[a_1\cdots a_m]$ e per&iacute;odo $[a_{m+1}\cdots a_{m+r}]$ tem a forma<br>
 \[<br>
 [0,a_1\cdots a_ma_{m+1}\cdots a_{m+r}a_{m+1}\cdots a_{m+r}\cdots];<br>
