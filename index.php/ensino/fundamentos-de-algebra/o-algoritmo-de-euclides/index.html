@@ -206,7 +206,7 @@ mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 		<h1 class="entry-title">O algoritmo de Euclides</h1>	</header>
 		<div class="entry-content">
 		<div style="color: #000000;">
-Sejam $a,b\in\N_0$ com $a&lt;b$. O resultado provado no final da p&aacute;gina anterior sugere o seguinte processo recursivo para calcular o $\mbox{mdc}(a,b)$:
+Sejam $a,b\in\N_0$ com $b&lt;a$. O resultado provado no final da p&aacute;gina anterior sugere o seguinte processo recursivo para calcular o $\mbox{mdc}(a,b)$:
 <div class="code">
 Passo 1: Se $b=0$, ent&atilde;o $\mdc ab=a$.<br>
 Passo 2: Se $b \neq 0$ ent&atilde;o use o Teorema de Divis&atilde;o de Euclides para escrever $a=qb+r$ com $r\in\{0,\ldots,b-1\}$. <br>
@@ -224,7 +224,7 @@ def MDC_recursivo( a, b ):
         return MDC_recursivo( b, a % b ) 
 </div>
 </pre>
-<p>Para melhor analisarmos o algoritmo, n&oacute;s escrevemos o processo em uma maneira linear (n&atilde;o recursiva). O processo descrito abaixo &eacute; chamado Algoritmo de Euclides.<br>
+<p>Para melhor analisarmos o algoritmo, n&oacute;s escrevemos o processo em uma maneira linear (n&atilde;o recursiva). O processo descrito abaixo &eacute; chamado Algoritmo de Euclides. Sejam $a,b$ como acima.<br>
 \[<br>
 \begin{align*}<br>
 r_{-1}&amp;=a\\<br>
@@ -242,14 +242,14 @@ r_{d-1}&amp;=q_{d+1}r_d+0<br>
 \]</p>
 <p>A sequ&ecirc;ncia dos restos calculados satisfaz as desigualdades<br>
 \[<br>
-a&gt;b&gt;r_2&gt;r_3&gt;\cdots&gt;r_i&gt;\cdots&gt;r_d&gt;r_{d+1}=0.<br>
+a&gt;b&gt;r_1&gt;r_2&gt;\cdots&gt;r_i&gt;\cdots&gt;r_d&gt;r_{d+1}=0.<br>
 \]<br>
 Em outras palavras, a sequ&ecirc;ncia dos restos &eacute; uma sequ&ecirc;ncia decrescente de n&uacute;meros positivos. Note que tal sequ&ecirc;ncia sempre atinge o n&uacute;mero zero em um n&uacute;mero finitos de passos; ou seja, existe algum $d$ tal que $r_{d+1}=0$. Pelo racioc&iacute;nio acima, obtemos que<br>
 \begin{align*}<br>
 \mdc ab&amp;=\mdc b{r_1}=\mdc{r_1}{r_2}=\cdots=\mdc{r_i}{r_{i+1}}=\cdots\\&amp;=\mdc{r_{d-1}}{r_d}=\mdc{r_d}0=r_d.<br>
 \end{align*}</p>
 <p>Isso justifica o seguinte resultado.</p>
-<div class="lemma">Se $a,b\in \N_0$, ent&atilde;o o &uacute;ltimo resto n&atilde;o nulo $r_d$ calculado pelo Algoritmo de Euclides &eacute; igual a $\mdc ab$. O algoritmo termina depois de um n&uacute;mero finito de passos.
+<div class="lemma">Se $a,b\in \N_0$ tais que $b\neq 0$, ent&atilde;o o &uacute;ltimo resto n&atilde;o nulo $r_d$ calculado pelo Algoritmo de Euclides &eacute; igual a $\mdc ab$. O algoritmo termina depois de um n&uacute;mero finito de passos.
 </div>
 <p>Note que nos resultados acima, n&oacute;s assumimos que $a,b$ s&atilde;o n&uacute;meros n&atilde;o negativos. No entanto, o procedimento pode ser usado mesmo quando $a$ ou $b$ (ou os dois) s&atilde;o negativos, pois neste caso, simplesmente podemos trocar o n&uacute;mero negativo pelo seu sim&eacute;trico (que vai ser positivo) pelo fato que $\mdc ab=\mdc{\pm a}{\pm b}$. </p>
 <p>Em particular n&oacute;s finalmente conseguimos concluir o seguinte resultado sobre a exist&ecirc;ncia do $\mdc ab$.</p>
@@ -282,7 +282,7 @@ Em particular, se $a$ e $b$ s&atilde;o primos entre si, ent&atilde;o existem $u,
 N&oacute;s podemos assumir sem perda de generalidade que $0&lt;b&lt;a$. Com esta suposi&ccedil;&atilde;o, podemos executar o algoritmo de Euclides para $a$ e $b$. 
 <p>Afirmamos que, para todo $i\geq 1$, o resto $r_i$ pode ser escrito como $u_ia+v_ib$ com coeficientes $u_i,v_i\in\Z$. Verificaremos a afirma&ccedil;&atilde;o por indu&ccedil;&atilde;o em $i$. A afirma&ccedil;&atilde;o est&aacute; verdadeira para $i=1$, pois<br>
 \[<br>
-r_1=a-q_1b\quad\text{e assim}\quad u_1=1,\ v_1=q_1.<br>
+r_1=a-q_1b\quad\text{e assim}\quad u_1=1,\ v_1=-q_1.<br>
 \]<br>
 Assuma que $i\geq 1$ e, para $j\leq i$ existem $u_j,v_j\in \Z$ tais que<br>
 \[<br>
@@ -291,11 +291,11 @@ r_j=u_ja+v_jb.<br>
 Ora, segue da equa&ccedil;&atilde;o para $r_{i-1}$ que<br>
 \begin{align*}<br>
 r_{i+1}&amp;=r_{i-1}-q_{i+1}r_{i}=u_{i-1}a+v_{i-1}b-q_{i+1}(u_{i}a+v_{i}b)\\&amp;=<br>
-(q_{i+1}u_i+u_{i-1})a+(q_{i+1}v_i+v_{i-1})b.<br>
+(u_{i-1}-q_{i+1}u_i)a+(v_{i-1}-q_{i+1}v_i)b.<br>
 \end{align*}<br>
 Ou seja, podemos tomar<br>
 \[<br>
-u_{i+1}=q_{i+1}u_i+u_{i-1}\quad\mbox{e}\quad v_{i+1}=q_{i+1}v_i+v_{i-1}.<br>
+u_{i+1}=u_{i-1}-q_{i+1}u_i\quad\mbox{e}\quad v_{i+1}=v_{i-1}-q_{i+1}v_i.<br>
 \] </p>
 <p>Agora, temos que<br>
 \[<br>
