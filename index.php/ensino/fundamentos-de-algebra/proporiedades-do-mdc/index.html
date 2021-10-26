@@ -130,13 +130,13 @@ content: "Teorema (" attr(text) ") ";
 }
 
 .corollary:before {
-content: "Corol&aacute;rio. ";
+content: "Corol\00E1 rio. ";
 font-weight: bold;
 font-style: normal;
 }
 
 .corollary[text]:before {
-content: "Corol&aacute;rio (" attr(text) ") ";
+content: "Corol\00E1 rio (" attr(text) ") ";
 }
 
 .proof {
@@ -211,7 +211,7 @@ O &uacute;ltimo resultado na p&aacute;gina do Algoritmo de Euclides implica v&aa
 Sejam $a,b,c\in\Z\setminus\{0\}$. As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.
 <ol>
 <li>Se $c\mid ab$ e $\mdc bc=1$, ent&atilde;o $c\mid a$. </li>
-<li>Se $\mdc ab=\mdc ac=1$, ent&atilde;o $\mdc {ab}c=1$. </li>
+<li>Se $\mdc ab=\mdc bc=1$, ent&atilde;o $\mdc {ab}c=1$. </li>
 <li>Se $\mdc ab=d$, ent&atilde;o $\mdc{a/d}{b/d}=1$.</li>
 <li>Se $a\mid c$ e $b\mid c$, ent&atilde;o $(ab/\mdc ab)\mid c$.</li>
 <li>Se $a\mid c$, $b\mid c$ e $\mdc ab=1$, ent&atilde;o $ab\mid c$.</li>
@@ -231,7 +231,7 @@ Multiplique os dois lados desta igualdade por $b$ e obtenha<br>
 \[<br>
 b=uab+vbc.<br>
 \]<br>
-Pela defini&ccedil;&atilde;o de $d$, obtemos que $d\mid c$ e pela &uacute;ltima igualdade, obtemos que $d\mid b$. Logo $d\mid \mdc bc=1$; ou seja $d=\mdc{ab}c=1$. </p>
+Pela defini&ccedil;&atilde;o de $d$, tem-se  que $d\mid c$ e $d\mid ab$. Logo, pela &uacute;ltima igualdade, obtemos que $d\mid b$. Logo $d\mid \mdc bc=1$; ou seja $d=\mdc{ab}c=1$. </p>
 <p>3. Seja $d=\mdc ab$. Existem inteiros $q_1,q_2\in\Z$ tais que<br>
 \[<br>
 a=q_1d\quad\mbox{e}\quad b=q_2d.<br>

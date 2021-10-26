@@ -130,13 +130,13 @@ content: "Teorema (" attr(text) ") ";
 }
 
 .corollary:before {
-content: "Corol&aacute;rio. ";
+content: "Corol\00E1 rio. ";
 font-weight: bold;
 font-style: normal;
 }
 
 .corollary[text]:before {
-content: "Corol&aacute;rio (" attr(text) ") ";
+content: "Corol\00E1 rio (" attr(text) ") ";
 }
 
 .proof {
@@ -244,7 +244,7 @@ r_{d-1}&amp;=q_{d+1}r_d+0<br>
 \[<br>
 a&gt;b&gt;r_2&gt;r_3&gt;\cdots&gt;r_i&gt;\cdots&gt;r_d&gt;r_{d+1}=0.<br>
 \]<br>
-Em outras palavras, a sequ&ecirc;ncia dos restos &eacute; uma sequ&ecirc;ncia decrescente de n&uacute;meros positivos. Note que tal sequ&ecirc;ncia sempre atinge o n&uacute;mero zero em um n&uacute;mero finitos de passos; ou seja, existe algum $d$ tal que $r_d=0$. Pelo racioc&iacute;nio acima, obtemos que<br>
+Em outras palavras, a sequ&ecirc;ncia dos restos &eacute; uma sequ&ecirc;ncia decrescente de n&uacute;meros positivos. Note que tal sequ&ecirc;ncia sempre atinge o n&uacute;mero zero em um n&uacute;mero finitos de passos; ou seja, existe algum $d$ tal que $r_{d+1}=0$. Pelo racioc&iacute;nio acima, obtemos que<br>
 \begin{align*}<br>
 \mdc ab&amp;=\mdc b{r_1}=\mdc{r_1}{r_2}=\cdots=\mdc{r_i}{r_{i+1}}=\cdots\\&amp;=\mdc{r_{d-1}}{r_d}=\mdc{r_d}0=r_d.<br>
 \end{align*}</p>
@@ -252,7 +252,7 @@ Em outras palavras, a sequ&ecirc;ncia dos restos &eacute; uma sequ&ecirc;ncia de
 <div class="lemma">Se $a,b\in \N_0$, ent&atilde;o o &uacute;ltimo resto n&atilde;o nulo $r_d$ calculado pelo Algoritmo de Euclides &eacute; igual a $\mdc ab$. O algoritmo termina depois de um n&uacute;mero finito de passos.
 </div>
 <p>Note que nos resultados acima, n&oacute;s assumimos que $a,b$ s&atilde;o n&uacute;meros n&atilde;o negativos. No entanto, o procedimento pode ser usado mesmo quando $a$ ou $b$ (ou os dois) s&atilde;o negativos, pois neste caso, simplesmente podemos trocar o n&uacute;mero negativo pelo seu sim&eacute;trico (que vai ser positivo) pelo fato que $\mdc ab=\mdc{\pm a}{\pm b}$. </p>
-<p>Em particular n&oacute;s finalmente conseguimos concluir o seginte resultado sobre a exist&ecirc;ncia do $\mdc ab$.</p>
+<p>Em particular n&oacute;s finalmente conseguimos concluir o seguinte resultado sobre a exist&ecirc;ncia do $\mdc ab$.</p>
 <div class="corollary">
 Se $a,b\in\Z$ tais que $(a,b)\neq (0,0)$, ent&atilde;o existe $\mdc ab$.
 </div>
@@ -269,7 +269,7 @@ def MDC(a,b):
 </pre>
 <p>Uma outra consequ&ecirc;ncia do Algoritmo de Euclides &eacute; o seguinte resultado extremamente &uacute;til e bem conhecido.</p>
 <div class="theorem">
-Sejam $a,b\in\Z$ com $(a,b)\neq 0$. Ent&atilde;o existem $u.v\in\Z$ tais que<br>
+Sejam $a,b\in\Z$ com $(a,b)\neq 0$. Ent&atilde;o existem $u,v\in\Z$ tais que<br>
 \[<br>
 \mdc ab=ua+vb.<br>
 \]<br>
@@ -279,10 +279,10 @@ Em particular, se $a$ e $b$ s&atilde;o primos entre si, ent&atilde;o existem $u,
 \]
 </div>
 <div class="proof">
-Nos podemos assumir sem perda de generalidade que $0&lt;b&lt;a$. Com esta suposi&ccedil;&atilde;o, podemos executar o algoritmo de Euclides para $a$ e $b$. 
+N&oacute;s podemos assumir sem perda de generalidade que $0&lt;b&lt;a$. Com esta suposi&ccedil;&atilde;o, podemos executar o algoritmo de Euclides para $a$ e $b$. 
 <p>Afirmamos que, para todo $i\geq 1$, o resto $r_i$ pode ser escrito como $u_ia+v_ib$ com coeficientes $u_i,v_i\in\Z$. Verificaremos a afirma&ccedil;&atilde;o por indu&ccedil;&atilde;o em $i$. A afirma&ccedil;&atilde;o est&aacute; verdadeira para $i=1$, pois<br>
 \[<br>
-r_1=a-q_1b\quad\mbox{e assim}\quad u_1=1,\ v_1=q_1.<br>
+r_1=a-q_1b\quad\text{e assim}\quad u_1=1,\ v_1=q_1.<br>
 \]<br>
 Assuma que $i\geq 1$ e, para $j\leq i$ existem $u_j,v_j\in \Z$ tais que<br>
 \[<br>
