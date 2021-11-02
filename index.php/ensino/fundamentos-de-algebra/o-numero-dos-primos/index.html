@@ -238,8 +238,13 @@ def eratosthenes( n ):
     for i in range(2,sqrn+1):
         if prims[i]: 
             st = i**2
-            while st 
-
+            while st &lt;= n:
+                prims[st] = False
+                st = st + i
+                
+    return prims
+</div>
+</pre>
 <p>O Crivo de Erat&oacute;stenes n&atilde;o &eacute; um algoritmo eficiente, pois o passo geral precisa ser executada $\sqrt n$ vezes. Na pr&aacute;tica (por exemplo, na criptografia), n&oacute;s precisamos lidar com n&uacute;meros com $500$ ou mais algarismos. Se por exemplo, $n\approx 10^{500}$, ent&atilde;o $\sqrt n\approx 10^{250}$ e na pr&aacute;tica fica imposs&iacute;vel realizar a computa&ccedil;&atilde;o at&eacute; com um supercomputador.</p>
 <p>Est&aacute; bem conhecido que a fun&ccedil;&atilde;o $\pi(n)$ pode ser aproximada pelas fun&ccedil;&otilde;es<br>
 \[<br>
@@ -260,18 +265,18 @@ enquanto<br>
 Geralmente, a aproxima&ccedil;&atilde;o dada por $\sigma(n)$ &eacute; melhor, mas &eacute; mais dif&iacute;cil de calcular.</p>
 <p>Atualmente (novembro de 2021), o <a href="https://pt.wikipedia.org/wiki/Maior_n%C3%BAmero_primo_conhecido">maior primo conhecido</a> &eacute; $2^{282.589.933} &minus; 1$. Este n&uacute;mero tem $24.862.048$ algarismos na base decimal e foi encontrado em 2018. Este n&uacute;mero &eacute; um exemplo dos <a href="https://pt.wikipedia.org/wiki/Primo_de_Mersenne">primos de Mersenne</a>, ou seja primos na forma $2^p-1$ onde $p$ &eacute; um primo.
 </p></div>
-			</pre></div>
+			</div>
 	<footer class="entry-footer">
 			</footer>
-
+</article>
 
 				
 			
-		
+		</main>
 	</div>
 
 
-	</article></main></div>
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -287,5 +292,5 @@ Geralmente, a aproxima&ccedil;&atilde;o dada por $\sigma(n)$ &eacute; melhor, ma
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</div></body>
+</body>
 </html>
