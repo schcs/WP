@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Equa&ccedil;&otilde;es lineares diofantinas em duas vari&aacute;veis &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/equacoes-lineares-diofantinas-em-duas-variaveis/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fequacoes-lineares-diofantinas-em-duas-variaveis%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fequacoes-lineares-diofantinas-em-duas-variaveis%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+		</style>
+	
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] },
+TeX: {
+Macros: {
+R: "{\\mathbb R}",
+N: "{\\mathbb N}",
+C: "{\\mathbb C}",
+Z: "{\\mathbb Z}",
+Q: "{\\mathbb Q}",
+mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
+}}});
+</script>
+	
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body class="page-template-default page page-id-1381 page-child parent-pageid-1193 no-sidebar">
+
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1381" class="post-1381 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Equa&ccedil;&otilde;es lineares diofantinas em duas vari&aacute;veis</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+Uma equa&ccedil;&atilde;o linear diofantina&nbsp;em duas vari&aacute;veis tem a seguinte forma geral:<br>
+\[<br>
+ax+by=c<br>
+\]<br>
+onde $a,b,c\in\Z$.&nbsp;As vari&aacute;veis da equa&ccedil;&atilde;o s&atilde;o $x$ e $y$, os n&uacute;meros $a$, $b$, $c$ s&atilde;o par&acirc;metros.  O termo &ldquo;diofantina&rdquo; refere-se ao fato que n&oacute;s procuramos as solu&ccedil;&otilde;es no conjunto dos n&uacute;meros inteiros. Por exemplo<br>
+\[<br>
+5x+6y=-2<br>
+\]<br>
+&eacute; uma equa&ccedil;&atilde;o linear diofantina em duas vari&aacute;veis. As poss&iacute;veis solu&ccedil;&otilde;es da equa&ccedil;&atilde;o&nbsp; s&atilde;o n&uacute;meros inteiros.
+<p>Dado uma equa&ccedil;&atilde;o diofantina $ax+by=c$, n&oacute;s queremos achar respostas principalmente &agrave;s seguintes tr&ecirc;s perguntas:</p>
+<ol>
+<li>A equa&ccedil;&atilde;o possui solu&ccedil;&otilde;es? (Vamos considerar apenas solu&ccedil;&otilde;es inteiras.)</li>
+<li>Se sim, ache uma solu&ccedil;&atilde;o particular.</li>
+<li>Ache a solu&ccedil;&atilde;o geral; ou seja, o conjunto de todas as solu&ccedil;&otilde;es.</li>
+</ol>
+<div class="example">Considere a equa&ccedil;&atilde;o $5x-15y=6$. Observamos que o MDC dos coeficientes $5$ e $-15$ &eacute; igual a $5$. Portanto, quaisquer sejam os n&uacute;meros $x,y\in\Z$, o n&uacute;mero&nbsp; $5x-15y$ ser&aacute; divis&iacute;vel por $5$. Por outro lado, $5$ n&atilde;o divide o n&uacute;mero $6$ e obtemos que esta equa&ccedil;&atilde;o n&atilde;o possui solu&ccedil;&otilde;es.
+</div>
+<div class="example">Considere a equa&ccedil;&atilde;o<br>
+\[<br>
+21x-15y=12.<br>
+\]<br>
+Neste caso, $\mdc {21}{-15}=3$ divide 12. De fato vamos ver que esta equa&ccedil;&atilde;o possui solu&ccedil;&otilde;es e n&oacute;s vamos determinar o conjunto de todas as solu&ccedil;&otilde;es.
+<p>Primeiro vamos achar uma solu&ccedil;&atilde;o particular da equa&ccedil;&atilde;o<br>
+\[<br>
+21x-15y=\mdc {21}{-15}=3.<br>
+\]<br>
+Sabe-se do Algoritmo de Euclides que esta equa&ccedil;&atilde;o possui solu&ccedil;&atilde;o inteira. De fato, usando o Algoritmo de Euclides, fazemos a seguinte sequ&ecirc;ncia de divis&otilde;es:<br>
+\begin{eqnarray*}<br>
+21&amp;=&amp;1\cdot 15+6;\\<br>
+15&amp;=&amp;2\cdot 6+3;\\<br>
+6&amp;=&amp;2\cdot 3+0.<br>
+\end{eqnarray*}<br>
+Obtemos ent&atilde;o que $\mdc {21}{-15}=3$. Al&eacute;m disso, considerando as equa&ccedil;&otilde;es acima,<br>
+\begin{eqnarray*}<br>
+6&amp;=&amp;21-15;\\<br>
+3&amp;=&amp;15-2\cdot 6=15-2\cdot(21-15)=-2\cdot 21+3\cdot 15.<br>
+\end{eqnarray*}<br>
+Obtivemos ent&atilde;o que<br>
+\[<br>
+21\cdot(-2)-15\cdot(-3)=3.<br>
+\]<br>
+Agora multiplicamos a equa&ccedil;&atilde;o acima por $4$ e obtemos que<br>
+\[<br>
+21\cdot(-8)-15\cdot(-12)=12.<br>
+\]<br>
+Obtivemos que o par $(x_0,y_0)=(-8,-12)$ &eacute; uma solu&ccedil;&atilde;o particular da equa&ccedil;&atilde;o $21x-15y=12$.</p>
+<p>Vamos agora determinar a solu&ccedil;&atilde;o geral da equa&ccedil;&atilde;o; ou seja, vamos determinar o conjunto de todas as solu&ccedil;&otilde;es. A ideia &eacute; a seguinte: se $x_1,y_1\in\Z$ s&atilde;o tais que<br>
+\[<br>
+21x_1-15y_1=0,<br>
+\]<br>
+ent&atilde;o $(x_0+x_1,y_0+y_1)$ &eacute; uma outra solu&ccedil;&atilde;o da equa&ccedil;&atilde;o original e de fato todas as solu&ccedil;&otilde;es podem ser obtidas nesta forma.&nbsp; Esta &uacute;ltima equa&ccedil;&atilde;o &eacute;&nbsp; equivalente a equa&ccedil;&atilde;o<br>
+\[<br>
+7x_1=5y_1;<br>
+\]<br>
+ou seja,<br>
+\[<br>
+y_1=\frac{7 x_1}{5}.<br>
+\]<br>
+Como queremos obter apenas as solu&ccedil;&otilde;es inteiras, e $\mdc 75=1$, uma solu&ccedil;&atilde;o $x_1$ precisa ser divis&iacute;vel por $5$. Ent&atilde;o $x_1=5k$ para algum $k\in\Z$ e isto d&aacute; $y_1=7k$. &Eacute; f&aacute;cil verificar que se $k\in\Z$, o par $(x_1,y_1)=(5k,7k)$ &eacute; de fato uma solu&ccedil;&atilde;o da equa&ccedil;&atilde;o $21x_1-15y_1=0$. Portanto o conjunto das solu&ccedil;&otilde;es da equa&ccedil;&atilde;o<br>
+\[<br>
+21x_1-15y_1=0<br>
+\]<br>
+&eacute; dado por<br>
+\[<br>
+\{(x_1,y_1)=(5k,7k)\mid k\in \Z\}.<br>
+\]<br>
+Finalmente, obtemos o conjunto das solu&ccedil;&otilde;es (ou seja, a solu&ccedil;&atilde;o geral) da equa&ccedil;&atilde;o<br>
+\[<br>
+21x_1-15y_1=12<br>
+\]<br>
+como<br>
+\[<br>
+(x,y)=(-8+5k,-12+7k)\quad\mbox{onde}\quad k\in\Z.<br>
+\]
+</p></div>
+<p>A conta que fizemos nos &uacute;ltimos dois exemplos pode ser feita simbolicamente com uma equa&ccedil;&atilde;o geral na forma $ax+by=c$. Isto nos leva ao seguinte teorema.</p>
+<div class="theorem">
+Considere uma equa&ccedil;&atilde;o diofantina na forma<br>
+\[<br>
+ax+by=c<br>
+\]<br>
+onde $a.b,c\in\Z$ e $(a,b)\neq (0,0)$. Seja $d=\mdc ab$.
+<ol>
+<li>Se $d\nmid c$ ent&atilde;o a equa&ccedil;&atilde;o n&atilde;o possui solu&ccedil;&atilde;o inteira.</li>
+<li>Se $d\mid c$ ent&atilde;o a equa&ccedil;&atilde;o possui infinitas solu&ccedil;&otilde;es. Seja $(x_0.y_0)$ uma solu&ccedil;&atilde;o particular (que pode ser obtida pelo Algoritmo de Euclides). Ent&atilde;o a solu&ccedil;&atilde;o geral da equa&ccedil;&atilde;o est&aacute; dada por<br>
+\[<br>
+(x,y)=\left(x_0+k \frac bd,y_0-k\frac ad\right)\quad \mbox{onde}\quad k\in\Z.<br>
+\]</li>
+</ol></div>
+<div class="proof">
+(1) Seja $d=\mdc ab$. Note que $d\mid ax+by$ para todo $x,y\in \Z$. Portanto, se $d\nmid c$, ent&atilde;o  n&atilde;o existem $x,y\in\Z$ tais que $ax+by=c$ e a equa&ccedil;&atilde;o n&atilde;o possui solu&ccedil;&otilde;es inteiras.
+<p>(2) Assuma agora que $d\mid c$. Sabemos pelo algoritmo de Euclides que existem $x_1,x_2\in\Z$ tais que<br>
+\[<br>
+ax_1+by_1=d.<br>
+\]<br>
+Tomando $x_0=x_1c/d$ e $y_0=y_1c/d$, obtemos que $x_0,y_0\in\Z$ e<br>
+\[<br>
+ax_0+by_0=ax_1c/d+by_1c/d=(ax_1+by_1)c/d=c.<br>
+\]</p>
+<p>Vamos verificar agora que a express&atilde;o $(x,y)$ acima d&aacute; a solu&ccedil;&atilde;o geral da equa&ccedil;&atilde;o. Primeiro afirmamos que o par $(x,y)$ dado acima &eacute; uma solu&ccedil;&atilde;o da equa&ccedil;&atilde;o para $ax+by=c$ para todo $k\in\Z$. De fato, substituindo, obtemos que<br>
+\begin{align*}<br>
+ax+by&amp;=a(x_0+kb/d)+b(y_0-ka/d)\\&amp;=ax_0+by_0+akb/d-bka/d=c.<br>
+\end{align*}<br>
+Agora resta mostrar que toda solu&ccedil;&atilde;o da equa&ccedil;&atilde;o est&aacute; na forma dada pelo teorema. Assuma que $(x_1,y_1)\in\Z\times \Z$ &eacute; uma solu&ccedil;&atilde;o da equa&ccedil;&atilde;o. Ent&atilde;o<br>
+\[<br>
+ax_1+by_1=ax_0+by_0=c,<br>
+\]<br>
+ou seja<br>
+\[<br>
+a(x_1-x_0)=b(y_0-y_1).<br>
+\]<br>
+A &uacute;ltima equa&ccedil;&atilde;o pode ser dividido por $d$ e obtemos que<br>
+\[<br>
+\frac ad(x_1-x_0)=\frac bd(y_0-y_1).<br>
+\]<br>
+Note que $\mdc {a/d}{b/d}=1$ e isso implica que $x_1-x_0=k(b/d)$; ou seja<br>
+\[<br>
+x_1=x_0+k\frac bd<br>
+\]<br>
+com algum $k\in\Z$. Daqui, tem-se que<br>
+\[<br>
+y_0-y_1=\frac{a(x_1-x_0)}b=\frac{akb}{db}=\frac{ak}d;<br>
+\]<br>
+ou seja<br>
+\[<br>
+y_1=y_0-k\frac ad.<br>
+\]<br>
+Consequentemente<br>
+\[<br>
+(x,y)=\left(x_0+k\frac bd,y_0-k\frac ad\right)<br>
+\]<br>
+como foi afirmado.
+</p></div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
