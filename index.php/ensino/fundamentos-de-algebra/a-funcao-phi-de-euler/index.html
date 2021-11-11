@@ -214,7 +214,7 @@ Ou seja, $\varphi(n)$ &eacute; o n&uacute;mero de naturais entre $1$ e $n$ que s
 \[<br>
 \varphi(1)=\varphi(2)=1,\quad \varphi(3)=\varphi(4)=2,\quad \varphi(5)=4,\quad \mbox{etc}.<br>
 \]<br>
-A fun&ccedil;&atilde;o $\varphi$ &eacute; chamado fun&ccedil;&atilde;o de Euler, ou fun&ccedil;&atilde;o totiente de Euler. Segue imediatamente da defini&ccedil;&atilde;o de $\varphi$ que $\varphi(p)=p-1$ sempre que $p$ &eacute; primo. A seguinte resultado d&aacute; uma generaliza&ccedil;&atilde;o para o caso quando $n$ &eacute; uma pot&ecirc;ncia de primo.
+A fun&ccedil;&atilde;o $\varphi$ &eacute; chamado fun&ccedil;&atilde;o de Euler, ou fun&ccedil;&atilde;o totiente de Euler. Segue imediatamente da defini&ccedil;&atilde;o de $\varphi$ que $\varphi(p)=p-1$ sempre que $p$ &eacute; primo. O seguinte resultado d&aacute; uma generaliza&ccedil;&atilde;o para o caso quando $n$ &eacute; uma pot&ecirc;ncia de primo.
 <div class="lemma">
 Se $n=p^k$ onde $p$ &eacute; primo e $k\geq 1$, ent&atilde;o<br>
 \[<br>
@@ -235,11 +235,17 @@ Sejam $m,n\in\N$ primos entre si. Ent&atilde;o<br>
 \]
 </div>
 <div class="proof">
-Seja $a\in\{1,\ldots,mn\}$ e escreva $a=q_mm+r_m=q_nn+r_n$ onde $r_m\in\{0,\ldots,m-1\}$ e $r_n=\{0,\ldots,n-1\}$. Afirmamos primeiro que a aplica&ccedil;&atilde;o<br>
+Primeiro observe que $\mdc 0{mn}\neq 1$ e $\mdc{mn}{mn}\neq 1$, ent&atilde;o<br>
 \[<br>
-\psi:\{1,\ldots,mn\}\to \{1,\ldots,m\}\times\{1,\ldots,n\},\quad a\mapsto(r_m,r_n)<br>
+\varphi(mn)=|\{a\in\{0,\ldots,mn-1\}\mid \mdc a{mn}=1\}|.<br>
 \]<br>
-&eacute; uma bije&ccedil;&atilde;o. Como o dom&iacute;nio e o codom&iacute;nio t&ecirc;m a mesma cardinalidade, precisamos provar apenas que $\psi$ &eacute; injetiva. Assuma que $a_1,a_2\in\{1,\ldots,mn\}$ tais que $a_1\leq a_2$ e<br>
+(Ou seja, vamos contar os n&uacute;meros $a$ entre $0$ e $mn-1$ que s&atilde;o coprimos com $mn$.)<br>
+Seja $a\in\{0,\ldots,mn-1\}$ e escreva $a=q_mm+r_m=q_nn+r_n$ onde $r_m\in\{0,\ldots,m-1\}$ e $r_n=\{0,\ldots,n-1\}$. Afirmamos primeiro que a aplica&ccedil;&atilde;o<br>
+\begin{align*}<br>
+\psi&amp;:\{0,\ldots,mn-1\}\to \{0,\ldots,m-1\}\times\{0,\ldots,n-1\}|\\<br>
+a&amp;\mapsto(r_m,r_n)<br>
+\end{align*}<br>
+&eacute; uma bije&ccedil;&atilde;o. Como o dom&iacute;nio e o codom&iacute;nio t&ecirc;m a mesma cardinalidade, precisamos provar apenas que $\psi$ &eacute; injetiva. Assuma que $a_1,a_2\in\{0,\ldots,mn-1\}$ tais que $a_1\leq a_2$ e<br>
 \[<br>
 \psi(a_1)=\psi(a_2)=(r_m,r_n).<br>
 \]<br>
@@ -257,14 +263,14 @@ e $n\mid a_2-a_1$ e $m\mid a_2-a_1$. Lembrando que $\mdc mn=1$, isso implica que
 \mdc a{mn}=\mdc am\mdc an=\mdc {r_m}m\cdot\mdc {r_n}n.<br>
 \]<br>
 Mas a equa&ccedil;&atilde;o anterior implica tamb&eacute;m que $\mdc a{mn}=1$ se e somente se $\mdc {r_m}m=\mdc{r_n}n=1$. </p>
-<p>Restringindo a bije&ccedil;&atilde;o $\psi$ para o conjunto $X=\{a\in\{1,\ldots,mn\}\mid \mdc a{mn}=1\}$ obtemos uma bije&ccedil;&atilde;o<br>
+<p>Restringindo a bije&ccedil;&atilde;o $\psi$ para o conjunto $X=\{a\in\{0,\ldots,mn-1\}\mid \mdc a{mn}=1\}$ obtemos uma bije&ccedil;&atilde;o<br>
 \[<br>
 \psi:X\to Y\times Z<br>
 \]<br>
 onde<br>
 \begin{align*}<br>
-Y&amp;=\{r_m\in\{1,\ldots,m\}\mid \mdc a{m}=1\};\\<br>
-Z&amp;=\{r_n\in\{1,\ldots,n\}\mid \mdc a{n}=1\}.<br>
+Y&amp;=\{r_m\in\{0,\ldots,m-1\}\mid \mdc a{m}=1\};\\<br>
+Z&amp;=\{r_n\in\{0,\ldots,n-1\}\mid \mdc a{n}=1\}.<br>
 \end{align*}<br>
 A exist&ecirc;ncia da bije&ccedil;&atilde;o entre $X$ e $Y\times Z$ implica que $|X|=|Y\times Z|$. Assim<br>
 \[<br>

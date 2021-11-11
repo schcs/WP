@@ -221,7 +221,7 @@ onde $a,b,c\in\Z$.&nbsp;As vari&aacute;veis da equa&ccedil;&atilde;o s&atilde;o 
 <li>Se sim, ache uma solu&ccedil;&atilde;o particular.</li>
 <li>Ache a solu&ccedil;&atilde;o geral; ou seja, o conjunto de todas as solu&ccedil;&otilde;es.</li>
 </ol>
-<div class="example">Considere a equa&ccedil;&atilde;o $5x-15y=6$. Observamos que o MDC dos coeficientes $5$ e $-15$ &eacute; igual a $5$. Portanto, quaisquer sejam os n&uacute;meros $x,y\in\Z$, o n&uacute;mero&nbsp; $5x-15y$ ser&aacute; divis&iacute;vel por $5$. Por outro lado, $5$ n&atilde;o divide o n&uacute;mero $6$ e obtemos que esta equa&ccedil;&atilde;o n&atilde;o possui solu&ccedil;&otilde;es.
+<div class="example">Considere a equa&ccedil;&atilde;o $5x-15y=6$. Observamos que o MDC dos coeficientes $5$ e $-15$ &eacute; igual a $5$. Portanto, quaisquer que sejam os n&uacute;meros $x,y\in\Z$, o n&uacute;mero&nbsp; $5x-15y$ ser&aacute; divis&iacute;vel por $5$. Por outro lado, $5$ n&atilde;o divide o n&uacute;mero $6$ e obtemos que esta equa&ccedil;&atilde;o n&atilde;o possui solu&ccedil;&otilde;es.
 </div>
 <div class="example">Considere a equa&ccedil;&atilde;o<br>
 \[<br>
@@ -339,19 +339,86 @@ Consequentemente<br>
 \]<br>
 como foi afirmado.
 </p></div>
+<p>Vamos ver como implementar o procedimento na linguagem Python. Primeiro, precisamos de uma nova vers&atilde;o da fun&ccedil;&atilde;o XMDC que aceita tamb&eacute;m n&uacute;meros negativos.</p>
+<pre>
+<div class="code">
+# algoritmo extendido de Euclides
+def XMDC(a,b):
+
+    assert a != 0 or b != 0 
+
+    # n&oacute;s trabalhamos com n&uacute;meros positivos, mas aceitamos argumentos negativos
+    sign_a, sign_b = 1, 1
+    if a 
+
+<p>Ora, o procedimento apresentado na demonstra&ccedil;&atilde;o do teorema acima pode ser implementado com a seguinte fun&ccedil;&atilde;o.</p>
+<pre>
+<div class="code">
+# Resolver a equa&ccedil;&atilde;o ax + by = c
+def ResolvaDiofantina( a, b, c ):
+    
+    d, x0, y0 = XMDC( a, b )
+    
+    # verificar se a equa&ccedil;&atilde;o tem solu&ccedil;&atilde;o
+    if c % d != 0:
+        return false
+    
+    # obter uma solu&ccedil;&atilde;o particular
+    # temos x0*a + y0*b = d
+    x0, y0 = x0*c//d, y0*c//d
+    
+    # sol(k) &eacute; a solu&ccedil;&atilde;o com par&aacute;metro k
+    sol = lambda k : (x0+k*b//d, y0-k*a//d)
+    
+    return sol
 </div>
-			</div>
+</pre>
+<p>Note que quando a equa&ccedil;&atilde;o possui solu&ccedil;&otilde;es, ela vai possuir infinitas solu&ccedil;&otilde;es, mas a fun&ccedil;&atilde;o claramente n&atilde;o pode devolver uma lista infinita. Portanto, a fun&ccedil;&atilde;o acima devolve uma express&atilde;o lambda (ou fun&ccedil;&atilde;o lambda) que depende de um par&acirc;metro $k$ e para cada $k\in\Z$ devolve uma solu&ccedil;&atilde;o da equa&ccedil;&atilde;o e todas as solu&ccedil;&otilde;es podem ser obtidas assim. Resolvemos por exemplo a equa&ccedil;&atilde;o<br>
+\[<br>
+13x + 9y = 1<br>
+\]<br>
+usando nossa fun&ccedil;&atilde;o.</p>
+<pre>
+<div class="code">
+# 13*x + 9*y = 1
+&gt;&gt;&gt; sol = ResolvaDiofantina( 13, 9, 1 )
+&gt;&gt;&gt; sol(-9)
+(-83, 120)
+</div>
+</pre>
+<p>A computa&ccedil;&atilde;o acima mostra que $(-83,120)$ &eacute; uma solu&ccedil;&atilde;o particular.</p>
+<p>Podemos tamb&eacute;m gerar as solu&ccedil;&otilde;es da equa&ccedil;&atilde;o para os valores $k\in\{-5,\ldots,5\}$ com o seguinte c&oacute;digo</p>
+<pre>
+<div class="code">
+&gt;&gt;&gt; lista_sols = [ sol( k ) for k in range(-5, 6 )]
+&gt;&gt;&gt; lista_sols
+[(-47, 68),
+ (-38, 55),
+ (-29, 42),
+ (-20, 29),
+ (-11, 16),
+ (-2, 3),
+ (7, -10),
+ (16, -23),
+ (25, -36),
+ (34, -49),
+ (43, -62)]
+</div>
+</pre>
+<p>Cada par da lista em cima &eacute; uma solu&ccedil;&atilde;o de equa&ccedil;&atilde;o diofantina $13x + 9y = 1$.</p>
+</div>
+			</pre></div>
 	<footer class="entry-footer">
 			</footer>
-</article>
+
 
 				
 			
-		</main>
+		
 	</div>
 
 
-	</div>
+	</article></main></div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -367,5 +434,5 @@ como foi afirmado.
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</body>
+</div></body>
 </html>
