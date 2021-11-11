@@ -349,8 +349,24 @@ def XMDC(a,b):
 
     # n&oacute;s trabalhamos com n&uacute;meros positivos, mas aceitamos argumentos negativos
     sign_a, sign_b = 1, 1
-    if a 
-
+    if a &lt; 0: 
+        a, sign_a = -a, -1
+    
+    if b &lt; 0: 
+        b, sign_b = -b, -1
+        
+    prevu, u = 1, 0; prevv, v = 0, 1 
+    # r_{-1} = a = 1*a + 0*b, r_0 = b = 0*a + 1*b
+    
+    while b != 0:
+        q = a//b
+        u, prevu = prevu - q*u, u
+        v, prevv = prevv - q*v, v
+        a, b = b, a % b
+   
+    return a, sign_a*prevu, sign_b*prevv
+</div>
+</pre>
 <p>Ora, o procedimento apresentado na demonstra&ccedil;&atilde;o do teorema acima pode ser implementado com a seguinte fun&ccedil;&atilde;o.</p>
 <pre>
 <div class="code">
@@ -407,18 +423,18 @@ usando nossa fun&ccedil;&atilde;o.</p>
 </pre>
 <p>Cada par da lista em cima &eacute; uma solu&ccedil;&atilde;o de equa&ccedil;&atilde;o diofantina $13x + 9y = 1$.</p>
 </div>
-			</pre></div>
+			</div>
 	<footer class="entry-footer">
 			</footer>
-
+</article>
 
 				
 			
-		
+		</main>
 	</div>
 
 
-	</article></main></div>
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -434,5 +450,5 @@ usando nossa fun&ccedil;&atilde;o.</p>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</div></body>
+</body>
 </html>
