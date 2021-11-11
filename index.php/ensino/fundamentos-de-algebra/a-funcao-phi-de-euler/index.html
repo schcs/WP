@@ -239,25 +239,20 @@ Primeiro observe que $\mdc 0{mn}\neq 1$ e $\mdc{mn}{mn}\neq 1$, ent&atilde;o<br>
 \[<br>
 \varphi(mn)=|\{a\in\{0,\ldots,mn-1\}\mid \mdc a{mn}=1\}|.<br>
 \]<br>
-(Ou seja, vamos contar os n&uacute;meros $a$ entre $0$ e $mn-1$ que s&atilde;o coprimos com $mn$.)<br>
-Seja $a\in\{0,\ldots,mn-1\}$ e escreva $a=q_mm+r_m=q_nn+r_n$ onde $r_m\in\{0,\ldots,m-1\}$ e $r_n=\{0,\ldots,n-1\}$. Afirmamos primeiro que a aplica&ccedil;&atilde;o<br>
+(Ou seja, vamos contar os n&uacute;meros $a$ entre $0$ e $mn-1$ que s&atilde;o coprimos com $mn$.) Seja $a\in\{0,\ldots,mn-1\}$ e escreva<br>
+\[<br>
+a=q_mm+r_m=q_nn+r_n<br>
+\]<br>
+onde<br>
+\[<br>
+r_m\in\{0,\ldots,m-1\}\quad \mbox{e}\quad r_n=\{0,\ldots,n-1\}.<br>
+\]<br>
+Defina a aplica&ccedil;&atilde;o $\psi$ como na demonstra&ccedil;&atilde;o do Teorema Chin&ecirc;s dos restos:<br>
 \begin{align*}<br>
 \psi&amp;:\{0,\ldots,mn-1\}\to \{0,\ldots,m-1\}\times\{0,\ldots,n-1\}|\\<br>
-a&amp;\mapsto(r_m,r_n)<br>
+a&amp;\mapsto(r_m,r_n).<br>
 \end{align*}<br>
-&eacute; uma bije&ccedil;&atilde;o. Como o dom&iacute;nio e o codom&iacute;nio t&ecirc;m a mesma cardinalidade, precisamos provar apenas que $\psi$ &eacute; injetiva. Assuma que $a_1,a_2\in\{0,\ldots,mn-1\}$ tais que $a_1\leq a_2$ e<br>
-\[<br>
-\psi(a_1)=\psi(a_2)=(r_m,r_n).<br>
-\]<br>
-Isso implica que<br>
-\[<br>
-a_1=q_1m+r_m=q_2n+r_n\quad \mbox{e}\quad a_2=q_3m+r_m=q_4n+r_n<br>
-\]<br>
-com alguns $q_1,q_2,q_3,q_4\in\Z$. Daqui obtemos que<br>
-\[<br>
-a_2-a_1=(q_3-q_1)m=(q_4-q_2)n<br>
-\]<br>
-e $n\mid a_2-a_1$ e $m\mid a_2-a_1$. Lembrando que $\mdc mn=1$, isso implica que $mn\mid a_2-a_1$. Mas $0\leq a_2-a_1 &lt; mn$, e assim $a_2-a_1=0$; ou seja $a_2=a_1$. Assim obtemos que nossa fun&ccedil;&atilde;o $\psi:a\mapsto (r_m,r_n)$ &eacute; injetiva e precisa ser bijetiva.
+Pelo Teorema Chin&ecirc;s dos Restos, $\psi$ &eacute; bijetiva.
 <p>Agora note que $\mdc {r_n}n=\mdc an$ e $\mdc {r_m}m=\mdc am$. Usando o exerc&iacute;cio anterior, obtemos que<br>
 \[<br>
 \mdc a{mn}=\mdc am\mdc an=\mdc {r_m}m\cdot\mdc {r_n}n.<br>
