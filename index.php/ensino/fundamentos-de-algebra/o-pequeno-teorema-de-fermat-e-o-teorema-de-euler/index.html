@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>O Teorema Chin&ecirc;s dos Restos (Vers&atilde;o 2.0) &ndash; Csaba Schneider</title>
+<title>O Pequeno Teorema de Fermat e o Teorema de Euler &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -21,10 +21,10 @@
 
 
 
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-teorema-chines-dos-restos-versao-2-0/">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-pequeno-teorema-de-fermat-e-o-teorema-de-euler/">
 
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-chines-dos-restos-versao-2-0%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-chines-dos-restos-versao-2-0%2F&amp;format=xml">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-pequeno-teorema-de-fermat-e-o-teorema-de-euler%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-pequeno-teorema-de-fermat-e-o-teorema-de-euler%2F&amp;format=xml">
 		<style type="text/css" id="wp-custom-css">
 			pre {
 	font-family: monospace;
@@ -174,7 +174,7 @@ mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 </script>
 </head>
 
-<body class="page-template-default page page-id-1424 page-child parent-pageid-1193 no-sidebar">
+<body class="page-template-default page page-id-1435 page-child parent-pageid-1193 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -200,73 +200,124 @@ mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 
 			
 				
-<article id="post-1424" class="post-1424 page type-page status-publish hentry">
+<article id="post-1435" class="post-1435 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">O Teorema Chin&ecirc;s dos Restos (Vers&atilde;o 2.0)</h1>	</header>
+		<h1 class="entry-title">O Pequeno Teorema de Fermat e o Teorema de Euler</h1>	</header>
 		<div class="entry-content">
 		<div style="color:#000000">
-Sejam $m,n\in\N$ primos entre si, sejam $a,b\in\Z$ e considere o sistema<br>
-\begin{align*}<br>
-x &amp;\equiv a\pmod m\\<br>
-x &amp;\equiv b\pmod n<br>
-\end{align*}<br>
-de congru&ecirc;ncias.
-<p>Uma solu&ccedil;&atilde;o $x\in\Z$ deste sistema &eacute; um n&uacute;mero inteiro tal que o resto de $x$ &eacute; o mesmo que o resto de $a$ quando divididos por $m$ e o resto de $x$ &eacute; o mesmo que o resto de $b$ quando divididos por $n$. J&aacute; vimos em uma aula anterior que tal $x$ sempre existe. Seja $x_0$ uma solu&ccedil;&atilde;o deste sistema (ou seja, uma solu&ccedil;&atilde;o particular do sistema). &Eacute; f&aacute;cil verificar que $x_0+kmn$ com $k\in\Z$ tamb&eacute;m &eacute; uma solu&ccedil;&atilde;o; de fato,<br>
-\begin{align*}<br>
-x_0+kmn&amp;\equiv x_0\equiv a\pmod m\\<br>
-x_0+kmn&amp;\equiv x_0\equiv b\pmod n.<br>
-\end{align*}<br>
-Al&eacute;m disso, se $x\in\Z$ &eacute; uma outra solu&ccedil;&atilde;o, ent&atilde;o<br>
-\begin{align*}<br>
-x&amp;\equiv x_0\pmod m\\<br>
-x&amp;\equiv x_0\pmod n.<br>
-\end{align*}<br>
-Aplicando a defini&ccedil;&atilde;o de ser congruente, obtemos que $m\mid x-x_0$ e $n\mid x-x_0$. Como $\mdc mn=1$, tem-se que $mn\mid x-x_0$; ou seja, $x-x_0=kmn$ com algum $k\in\Z$. Portanto $x=x_0+kmn$. </p>
-<p>Com este argumento verificamos o seguinte resultado, que pode ser visto como uma vers&atilde;o do Teorema Chin&ecirc;s dos Restos.</p>
-<div class="theorem">
-Sejam $m,n\in\N$ primos entre si, sejam $a,b\in\Z$. Ent&atilde;o o<br>
-\begin{align*}<br>
-x &amp;\equiv a\pmod m\\<br>
-x &amp;\equiv b\pmod n<br>
-\end{align*}<br>
-de congru&ecirc;ncias sempre possui uma solu&ccedil;&atilde;o. Al&eacute;m disso, se $x_0$ &eacute; uma solu&ccedil;&atilde;o do sistema, ent&atilde;o o conjunto das solu&ccedil;&otilde;es (a solu&ccedil;&atilde;o geral) pode ser obtido como<br>
+<div class="exercise">
+Sejam $a,b\in\Z$ e seja $p\in\N$ um primo. Mostre que<br>
 \[<br>
-\{x_0+kmn\mid k\in\Z\}.<br>
+(a+b)^p\equiv a^p+b^p\pmod p<br>
+\]
+</div>
+<p>A afirma&ccedil;&atilde;o do exerc&iacute;cio anterior &eacute; conhecido como o <em>sonho do calouro</em>.</p>
+<div class="theorem">
+(O Pequeno Teorema de Fermat, vers&atilde;o com congru&ecirc;ncia) Seja $p\in\N$ um primo e $a\in\Z$. Ent&atilde;o<br>
+\[<br>
+a^p\equiv a\pmod p.<br>
+\]<br>
+Al&eacute;m disso, se $p\nmid a$, ent&atilde;o<br>
+\[<br>
+a^{p-1}\equiv 1\pmod p.<br>
 \]
 </div>
 <div class="proof">
-Veja o argumento antes do teorema.
-</div>
-<p>Note que uma solu&ccedil;&atilde;o particular para o sistema pode ser encontrada usando o Algoritmo Estendido de Euclides como fizemos no caso da primeira vers&atilde;o do Teorema Chin&ecirc;s. Note ainda que o teorema diz que o conjunto de solu&ccedil;&otilde;es &eacute; uma classe residual m&oacute;dulo $mn$ e este conjunto &eacute; o mesmo que o conjunto das solu&ccedil;&otilde;es da congru&ecirc;ncia<br>
+Vamos provar a primeira afirma&ccedil;&atilde;o. Como todo inteiro negativo &eacute; congruente com algum inteiro positivo m&oacute;dulo $p$, &eacute; suficiente provar a afirma&ccedil;&atilde;o para $a\in\N$. De fato, &eacute; suficiente provar para $a\in\{0,\ldots,p-1\}$, mas isso n&atilde;o simplifica nosso argumento. A prova vai por indu&ccedil;&atilde;o em $a$. Como $0^p=0\equiv 0\pmod p$, a afirma&ccedil;&atilde;o &eacute; verdadeira para $a=0$. Assuma que a afirma&ccedil;&atilde;o para algum $a$ e use o exerc&iacute;cio anterior para obter que<br>
 \[<br>
-x\equiv x_0\pmod{mn}.<br>
-\]</p>
-<div class="corollary">
-Com as condi&ccedil;&otilde;es no teorema anterior, o sistema<br>
-\begin{align*}<br>
-x &amp;\equiv a\pmod m\\<br>
-x &amp;\equiv b\pmod n<br>
-\end{align*}<br>
-de congru&ecirc;ncias &eacute; equivalente &agrave; congru&ecirc;ncia<br>
-\[<br>
-x\equiv c\pmod{mn}<br>
-\]<br>
-com algum $c\in\Z$.
-</div>
-<p>O n&uacute;mero $c$ no corol&aacute;rio pode ser determinado usando o Algoritmo Estendido de Euclides.
+(a+1)^p\equiv a^p+1^p=a+1\pmod p.<br>
+\] 
+<p>Agora a segunda afirma&ccedil;&atilde;o. Se $p\nmid a$, ent&atilde;o $a$ possui inverso m&oacute;dulo $p$. Multiplicando a congru&ecirc;ncia $a^p\equiv a\pmod p$ pelo inverso de $a$, obtemos que $a^{p-1}\equiv 1\pmod p$.
 </p></div>
+<p>Uma forma alternativa do Pequeno Teorema de Fermat usando $\Z_n$ &eacute; a seguinte.</p>
+<div class="theorem"> (Pequeno Teorema de Fermat, vers&atilde;o $\Z_n$). Seja $p\in\N$ primo e $\overline a\in\Z_n$. Ent&atilde;o<br>
+\[<br>
+\overline a^p=\overline a.<br>
+\]<br>
+Al&eacute;m disso, se $\overline a\neq\overline 0$, ent&atilde;o<br>
+\[<br>
+\overline a^{p-1}= \overline 1.<br>
+\]
+</div>
+<div class="corollary">
+Seja $p\in\N$ primo e $a\in\Z$ tal que $p\nmid a$. Ent&atilde;o $a^{p-2}$ &eacute; um inverso de $a$ m&oacute;dulo $p$. Equvalentemente<br>
+\[<br>
+\overline a^{-1}=\overline a^{p-2}.<br>
+\]
+</div>
+<div class="proof">
+O Pequeno Teorema de Fermat implica que<br>
+\[<br>
+1\equiv a^{p-1}=a\cdot a^{p-2}.<br>
+\]<br>
+Ora a defini&ccedil;&atilde;o do inverso modular implica que $a^{p-2}$ &eacute; um inverso de $a$ m&oacute;dulo $p$. A segunda afirma&ccedil;&atilde;o segue imediatamente da primeira.
+</div>
+<div class="exercise">
+Seja $n\in\N$ e seja<br>
+\[<br>
+\Z_n^*=\{\overline a\in\Z_n\mid\mbox{$\overline a$ &eacute; invert&iacute;vel}\}.<br>
+\]<br>
+Demonstre as seguintes propriedades de $\Z_n^*$:
+<ul>
+<li>$\overline 1,\overline{-1}\in\Z_n^*$, mas $\overline 0\not\in\Z_n^*$;</li>
+<li>$\Z_n^*$ &eacute; fechado para a multiplica&ccedil;&atilde;o; ou seja, se $\overline a,\overline b\in\Z_n^*$ ent&atilde;o $\overline a\overline b\in\Z_n^*$;</li>
+<li>$|\Z_n^*|=\varphi(n)$.</li>
+</ul>
+</div>
+<div class="exercise">
+Usando a nota&ccedil;&atilde;o do exerc&iacute;cio anterior, para $\overline a\in\Z_n$ defina<br>
+\[<br>
+\mu_{\overline a}:\Z_n\to \Z_n,\quad \mu_{\overline a}(\overline b)=\overline a\overline b.<br>
+\]<br>
+Mostre que as seguinte afirma&ccedil;&otilde;es s&atilde;o equivalentes:
+<ul>
+<li>$\mu_{\overline a}$ &eacute; injetiva;</li>
+<li>$\mu_{\overline a}$ &eacute; sobrejetiva;</li>
+<li>$\mu_{\overline a}$ &eacute; bijetiva;</li>
+<li>$\overline a\in\Z_n^*$.</li>
+</ul>
+</div>
+<div class="theorem"> (O Teorema de Euler.) Seja $n\in\N$ e $a\in\Z$ tal que $\mdc an=1$. Ent&atilde;o<br>
+\[<br>
+a^{\varphi(n)}\equiv 1\pmod n.<br>
+\]<br>
+Equivalentemente<br>
+\[<br>
+\overline a^{\varphi(n)}=\overline 1.<br>
+\]
+</div>
+<div class="proof">
+As duas afirma&ccedil;&otilde;es s&atilde;o claramente equivalentes e desta vez n&oacute;s vamos provar a segunda.<br>
+Usando o primeira exerc&iacute;cios nesta p&aacute;gina, assuma que<br>
+\[<br>
+\Z_n^*=\{\overline a_1,\overline a_2,\ldots,\overline a_{\varphi(n)}\}.<br>
+\]<br>
+Note que $\overline a\in\Z_n^*$, pois $\mdc an=1$. Considere o conjunto<br>
+\[<br>
+\overline a\Z_n^*=\{\overline a\overline a_1,\overline a\overline a_2,\ldots,\overline a\overline a_{\varphi(n)}\}<br>
+\]<br>
+Note que todo elemento de $a\Z_n^*$ est&aacute; contido em $\Z_n^*$ (primeiro exerc&iacute;cio) e se $i\neq j$, ent&atilde;o $\overline a\overline a_i\neq \overline a\overline a_j$. Portanto $a\Z_n^*=\Z_n^*$. Isso quer dizer que multiplicando os elementos de $\Z_n^*$ e os elementos de $a \Z_n^*$ n&oacute;s obtemos o mesmo elemento de $\Z_n$. De fato<br>
+\[<br>
+\prod_{i=1}^{\varphi(n)}{\overline a_i}=\prod_{i=1}^{\varphi(n)}{\overline a\overline a_i}=\overline a^{\varphi(n)}\prod_{i=1}^{\varphi(n)}{\overline a_i}.<br>
+\]<br>
+Ora, $\prod {\overline a_i}$ &eacute; um elemento invert&iacute;vel (primeiro exerc&iacute;cio) e podemos multiplicar os dois lados da &uacute;ltima equa&ccedil;&atilde;o acima com seu inverso. Fazendo isso, obtemos que<br>
+\[<br>
+\overline 1=\overline a^{\varphi(n)}.<br>
+\]
+</div>
+<p>Note que o Teorema de Euler implica o Pequeno Teorema de Fermat (tomando $n=p$ primo e observando que $\varphi(p)=p-1$), mas n&oacute;s decidimos deduzir o PTF de fatos mais elementares.</p>
 			</div>
 	<footer class="entry-footer">
 			</footer>
-</article>
+
 
 				
 			
-		</main>
+		
 	</div>
 
 
-	</div>
+	</article></main></div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -282,5 +333,5 @@ com algum $c\in\Z$.
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</body>
+</div></body>
 </html>
