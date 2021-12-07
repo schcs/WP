@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>$\Z_n$ &ndash; Csaba Schneider</title>
+<title>A ordem de um elemento de $\Z_n$ &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -21,10 +21,10 @@
 
 
 
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/z_n/">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/a-ordem-de-um-elemento-de-z_n/">
 
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fz_n%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fz_n%2F&amp;format=xml">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fa-ordem-de-um-elemento-de-z_n%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fa-ordem-de-um-elemento-de-z_n%2F&amp;format=xml">
 		<style type="text/css" id="wp-custom-css">
 			pre {
 	font-family: monospace;
@@ -174,7 +174,7 @@ mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 </script>
 </head>
 
-<body class="page-template-default page page-id-1417 page-child parent-pageid-1193 no-sidebar">
+<body class="page-template-default page page-id-1449 page-child parent-pageid-1193 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -200,83 +200,95 @@ mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 
 			
 				
-<article id="post-1417" class="post-1417 page type-page status-publish hentry">
+<article id="post-1449" class="post-1449 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">$\Z_n$</h1>	</header>
+		<h1 class="entry-title">A ordem de um elemento de $\Z_n$</h1>	</header>
 		<div class="entry-content">
 		<div style="color:#000000">
-Seja $n\in\N$ um n&uacute;mero natural e seja $a\in\Z$. N&oacute;s definimos em uma aula anterior a classe residual (ou a classe de congru&ecirc;ncia de $a$) m&oacute;dulo $n$ como<br>
+Seja $n\in\N$ e considere o conjunto $\Z_n$ das classes residuais. Comecemos com um exemplo motivador. 
+<div class="example">
+Considere $\Z_{20}$, tome um elemento invert&iacute;vel $\overline a\in\Z_{20}$ (ou seja, $\mdc an=1$), e vamos olhar na sequ&ecirc;ncia<br>
 \[<br>
-\overline a=\{a+kn\mid k\in\Z\}=\{b\in\Z\mid b\equiv a\pmod n\}.<br>
+\overline a^0,\overline a,\overline a^2,\overline a^3,\ldots<br>
 \]<br>
-Provamos ainda que $\overline a=\overline b$ se e somente se $a\equiv b\pmod n$. Assim h&aacute; exatamente $n$ classes residuais m&oacute;dulo $n$, nomeadamente,<br>
+Por conven&ccedil;&atilde;o, $\overline a^0=\overline 1$. Tomando por exemplo, $\overline a=\overline 3$, obtemos a sequ&ecirc;ncia<br>
 \[<br>
-\overline 0, \overline 1,\ldots,\overline{n-1}.<br>
+\overline 1,\overline 3,\overline 9,\overline 7,\overline 1,\overline 3,\overline 9,\overline 7,\overline 1,\overline 3,\overline 9,\overline 7,\ldots<br>
 \]<br>
-Denotamos por $\Z_n$ o conjunto das classes residuais m&oacute;dolo $n$; ou seja<br>
+Tomando, $\overline a =\overline 7$, obtemos a sequ&ecirc;ncia<br>
 \[<br>
-\Z_n=\{\overline 0,\overline 1,\ldots,\overline{n-1}\}.<br>
+\overline 1,\overline 7,\overline 9,\overline 3,\overline 1,\overline 7,\overline 9,\overline 3,\overline 1,\overline 7,\overline 9,\overline 3,\ldots<br>
 \]<br>
-Por exemplo,<br>
+Tomando $\overline a=\overline 9$, obtemos<br>
 \[<br>
-\Z_5=\{\overline 0, \overline 1,\overline 2,\overline 3,\overline 4\}.<br>
+\overline 1,\overline 9, \overline 1,\overline 9,\overline 1,\overline 9,\ldots<br>
 \]<br>
-N&oacute;s podemos definir duas opera&ccedil;&otilde;es, uma soma e uma multiplica&ccedil;&atilde;o, no conjunto das classes residuais pondo<br>
-\begin{align*}<br>
-\overline a+\overline b&amp;=\overline{a+b};\\<br>
-\overline a\cdot\overline b&amp;=\overline{a\cdot b}<br>
-\end{align*}<br>
-para todo $\overline a,\overline b\in\Z_n$. 
-<div class="lemma">
-As opera&ccedil;&otilde;es $+$ e $\cdot$ s&atilde;o bem definidas no conjunto $\Z_n$. Al&eacute;m disso estas opera&ccedil;&otilde;es satisfazem as seguintes propriedades para todo $\overline a,\overline b,\overline c\in\Z_n$:
+Olhando nestes exemplos, podemos fazer algumas observa&ccedil;&otilde;es (que, como o leitor pode verificar, s&atilde;o v&aacute;lidas para qualquer $\overline a\in\Z_n^*$):
 <ul>
-<li>$(\overline a+\overline b)+\overline c=\overline a+(\overline b+\overline c)$ (associatividade da adi&ccedil;&atilde;o);</li>
-<li>$\overline a+\overline b=\overline b+\overline a$ (comutatividade da adi&ccedil;&atilde;o);</li>
-<li>$\overline a+\overline 0=\overline a$ (elemento neutro para a adi&ccedil;&atilde;o);</li>
-<li>$\overline a+(\overline{-a})=\overline 0$ (elemento sim&eacute;trico para a adi&ccedil;&atilde;o);</li>
-<li>$(\overline a\overline b)\overline c=\overline a(\overline b\overline c)$ (associatividade da multiplica&ccedil;&atilde;o);</li>
-<li>$\overline a\overline b=\overline b\overline a$ (comutatividade da multiplia&ccedil;&atilde;o); </li>
-<li>$\overline a\overline 1=\overline a$ (elemento neutro da multiplica&ccedil;&atilde;o);</li>
-<li>$\overline a(\overline b+\overline c)=\overline a\overline b+\overline a\overline c$ (distributividade).
-</li></ul>
+<li>A sequ&ecirc;ncia sempre come&ccedil;a com $\overline 1$.</li>
+<li>Sempre existe algum $k\in\N$ tal que $\overline a^k=\overline 1$.</li>
+<li>A sequ&ecirc;ncia &eacute; peri&oacute;dica, pois quando $\overline a^k=\overline 1$, a sequ&#7869;ncia come&ccedil;a a se repetir.</li>
+<li>Seja $k\in\N$ o menor tal que $\overline a^k=\overline 1$. Os elementos $\overline a^0,\overline a,\ldots,\overline a^{k-1}$ s&atilde;o dois a dois distintos.
+</li></ul></div>
+<p>No resto desta p&aacute;gina vamos provar que as observa&ccedil;&otilde;es feitas no exemplo anterior s&atilde;o v&aacute;lidas para todo $\overline a\in\Z_n^*$.</p>
+<div class="lemma">
+Se $\overline a\in\Z_n$ &eacute; invert&iacute;vel, ent&atilde;o existe $k\geq 1$ tal que $\overline a^k=\overline 1$.
 </div>
 <div class="proof">
-O fato que a opera&ccedil;&otilde;es $+$ e $\cdot$ s&atilde;o bem definidas &eacute; equivalente ao seginte fato. Se $a_1,a_2,b_1,b_2\in\Z$ tais que $\overline{a_1}=\overline{a_2}$ e<br>
-$\overline{b_1}=\overline{b_2}$, ent&atilde;o<br>
-\begin{align*}<br>
-\overline{a_1}+\overline{b_1}&amp;=\overline{a_2}+\overline{b_2}\\<br>
-\overline{a_1}\overline{b_1}&amp;=\overline{a_2}\overline{b_2}\\<br>
-\end{align*}<br>
-As equa&ccedil;&otilde;es acima s&atilde;o equivalentes &agrave;s congru&ecirc;ncias<br>
-\begin{align*}<br>
-a_1+b_1&amp;\equiv a_2+b_2\pmod n\\<br>
-a_1b_1&amp;=a_2b_2\pmod n\\<br>
-\end{align*}<br>
-Mas estas congru&ecirc;ncias s&atilde;o verdadeiras por um resultado que provamos na aula sobre congru&#7869;ncias.
-<p>As propriedades listadas s&atilde;o mais ou menos &oacute;bvias. Vamos provar a distributividade. Obtemos usando a defini&ccedil;&atilde;o das opera&ccedil;&otilde;es que<br>
+Considere a sequ&ecirc;ncia $\overline a,\overline a^2,\overline a^3,\ldots$. Note, para todo $i\in\N$, que $\overline a^i\in\Z_n$ ent&atilde;o existem finitas possibilidades para o valor de $\overline a^i$. Portanto precisam existir alguns $i,j\geq 1$ tal que $i &lt; j$ e $\overline a^i=\overline a^j$. Como $\overline a$ &eacute; invert&iacute;vel, temos que $\overline a^i$ tamb&eacute;m &eacute;, e<br>
 \[<br>
-\overline a(\overline b+\overline c)=\overline a\overline{b+c}=\overline{a(b+c)}=\overline{ab+ac}=\overline{ab}+\overline{ac}=\overline a\overline b+\overline a\overline c.<br>
-\]
-</p></div>
+(\overline a^i)^{-1}=(\overline a^{-1})^i=\overline a^{-i}.<br>
+\]<br>
+Multiplicando a equa&ccedil;&atilde;o $\overline a^i=\overline a^j$ por $\overline a^{-i}$ obtemos que<br>
+\[<br>
+\overline 1 =\overline a^{j-i}.<br>
+\]<br>
+Como $j-i\geq 1$, o lema fica verificado.
+</div>
 <div class="definition">
-Dizemos que um elemento $\overline a\in\Z_n$ &eacute; invert&iacute;vel se existe $\overline b\in\Z_n$ tal que $\overline a\overline b=\overline 1$. Neste caso $\overline b$ &eacute; dito inverso de $\overline a$.
+Seja $\overline a\in\Z_n$ uma classe invert&iacute;vel. O menor n&uacute;mero natural $k$ tal que $\overline a^k=\overline 1$ chama-se a ordem de $\overline a$ (em $\Z_n$). A ordem de $\overline a$ em $\Z_n$ &eacute; denotado por $|\overline a|_n$ ou por $|\overline a|$ quando n&atilde;o h&aacute; perigo de confus&atilde;o.
 </div>
 <div class="lemma">
-Um elemento $\overline a\in\Z_n$ &eacute; invert&iacute;vel se e somente se $\mdc an=1$. Neste caso, o inverso de $\overline a$ &eacute; &uacute;nico.
+Seja $\overline a\in\Z_n$ um elemento  invert&iacute;vel e ponha $b=|\overline a|_n$.
+<ol>
+<li>Seja $k\in\N_0$ tal que $\overline a^k=\overline 1$. Ent&atilde;o $k$ &eacute; um m&uacute;ltiplo de $b$. </li>
+<li>As classes $\overline a^0,\overline a,\overline a^2,\ldots,\overline a^{b-1}$ s&atilde;o dois a dois distintas.</li>
+<li>$b$ &eacute; um divisor de $\varphi(n)$.</li>
+<li>Se $n$ &eacute; um primo, ent&atilde;o $b$ &eacute; um m&uacute;ltiplo de $n-1$. </li>
+</ol>
 </div>
 <div class="proof">
-Um elemento $\overline a$ &eacute; invert&iacute;vel se e somente se existir $\overline b\in\Z_n$ tal que $\overline a\overline b=\overline 1$; ou seja, $ab\equiv 1\pmod n$. Mas n&oacute;s j&aacute; vimos que esta condi&ccedil;&atilde;o &eacute; equivalente &agrave; condi&ccedil;&atilde;o que $\mdc an=1$. 
-<p>A unicidade do inverso tamb&eacute;m segue de um resultado anterior que afirmou que o conjunto dos inverso de $a$ m&oacute;dulo $n$ formam uma classe residual m&oacute;dulo $n$. Aqui n&oacute;s vamos fazer uma outra demonstra&ccedil;&atilde;o que usa apenas as propriedades que foram listadas no lema anterior. Assuma que $\overline b,\overline c\in\Z_n$ s&atilde;o inversos de $\overline a$; ou seja, $\overline a\overline b=\overline a\overline c=\overline 1$. Portanto<br>
+(1) Assuma que $\overline a^k=\overline 1$ e escreva $k=qb+r$ com $r\in\{0,\ldots,b-1\}$. Ora<br>
 \[<br>
-\overline b=\overline b\overline 1=\overline b(\overline a\overline c)=(\overline b\overline a)\overline c=\overline 1\overline c=\overline c.<br>
+\overline 1=\overline a^k=\overline a^{qb+r}=(\overline a^b)^q\overline a^r=\overline a^r.<br>
 \]<br>
-Daqui obtemos que $\overline b=\overline c$ como desejado.
+A defini&ccedil;&atilde;o de $b=|\overline a|_n$ e o fato que $0\leq r\leq b-1$ implicam que $r=1$, ou seja $k=q|\overline a|_n$ como foi afirmado.
+<p>(2) Assuma que $\overline a^i=\overline a^j$ com algum $i,j\in\{0,\ldots,b-1\}$ e $i\leq j$. Pelo racioc&iacute;nio da demonstra&ccedil;&atilde;o do lema anterior, obtemos que<br>
+\[<br>
+\overline 1=\overline a^{j-i}.<br>
+\]<br>
+Como $0\leq j-i\leq b-1$, a defini&ccedil;&atilde;o de $|\overline a|_n$ implica que $j-i=0$; ou seja $i=j$. </p>
+<p>(3) Essa afirma&ccedil;&atilde;o segue do Teorema de Euler que implica que $\overline a^{\varphi(a)}=\overline 1$ e da primeira parte do lema.</p>
+<p>(4) Esta parte segue diretamente da parte (3) e do fato que $\varphi(n)=n-1$ quando $n$ &eacute; primo.
 </p></div>
-<div class="corollary">
-Todo elemento diferente de $\overline 0$ &eacute; invert&iacute;vel em $\Z_n$ se e somente se $n$ &eacute; primo.
+<p>&Eacute; poss&iacute;vel escrever os resultados desta p&aacute;gina na linguagem das congru&ecirc;ncias. </p>
+<div class="definition">
+Seja $a\in\Z$ e seja $n\in\N$. Assuma que $a$ &eacute; invert&iacute;vel m&oacute;dulo $n$; ou seja $\mdc an=1$. A ordem de $a$ m&oacute;dulo $n$ &eacute; o menor inteiro positivo $k$ tal que $a^k\equiv 1\pmod n$. Denotamos a ordem de $a$ m&oacute;dulo $n$ por $|a|_n$.
 </div>
-<p>O corol&aacute;rio anterior implica que, se $p$ for primo, a estrutura $\Z_p$ comporta-se na mesma maneira como $\Q$, $\R$, ou $\C$ no sentido que pode fazer as opera&ccedil;&otilde;es $+$ e $\cdot$ e pode tamb&eacute;m dividir por qualquer elemento n&atilde;o nulo. N&oacute;s dizemos que a estrutura $\Z_p$ &eacute; um corpo finito. Corpos finitos t&ecirc;m muitas aplica&ccedil;&otilde;es na matem&aacute;tica, mas tamb&eacute;m fora da matem&aacute;tica tal como na engenharia, f&iacute;sica, qu&iacute;mica, etc.
-</p></div>
+<div class="lemma">
+Seja $a\in\Z$ e $n\in\N$ tais que $\mdc an=1$. As seguintes afirma&ccedil;&otilde;es s&atilde;o v&aacute;lidas.
+<ol>
+<li>A ordem $|a|_n$ existe.</li>
+<li>Se $a^k\equiv 1\pmod n$ com algum $k\in\N_0$. ent&atilde;o $k$ &eacute; um m&uacute;ltiplo de $|a|_n$.</li>
+<li>Se $i,j\in\{0,\ldots,|a|_n-1\}$ s&atilde;o tais que $a^i\equiv a^j\pmod n$, ent&atilde;o $i=j$.</li>
+<li>$|a|_n$ &eacute; um divisor de $\varphi(n)$.</li>
+<li>Se $n$ &eacute; um primo, ent&atilde;o $|a|_n$ &eacute; um divisor de $n-1$.
+</li></ol>
+</div>
+<div class="proof">
+As partes deste resultado seguem das afirma&ccedil;&otilde;es correspondentes sobre $\overline a\in\Z_n$.
+</div>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>
