@@ -207,7 +207,7 @@ mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 		<div style="color:#000000">
 Seja $n\in\N$ e considere o conjunto $\Z_n$ das classes residuais. Comecemos com um exemplo motivador. 
 <div class="example">
-Considere $\Z_{20}$, tome um elemento invert&iacute;vel $\overline a\in\Z_{20}$ (ou seja, $\mdc an=1$), e vamos olhar na sequ&ecirc;ncia<br>
+Considere $\Z_{20}$, tome um elemento invert&iacute;vel $\overline a\in\Z_{20}$ (ou seja, $\mdc a{20}=1$), e vamos olhar na sequ&ecirc;ncia<br>
 \[<br>
 \overline a^0,\overline a,\overline a^2,\overline a^3,\ldots<br>
 \]<br>
@@ -231,6 +231,7 @@ Olhando nestes exemplos, podemos fazer algumas observa&ccedil;&otilde;es (que, c
 <li>Seja $k\in\N$ o menor tal que $\overline a^k=\overline 1$. Os elementos $\overline a^0,\overline a,\ldots,\overline a^{k-1}$ s&atilde;o dois a dois distintos.
 </li></ul></div>
 <p>No resto desta p&aacute;gina vamos provar que as observa&ccedil;&otilde;es feitas no exemplo anterior s&atilde;o v&aacute;lidas para todo $\overline a\in\Z_n^*$.</p>
+<p>Note que o resultado seguinte segue do Teorema de Euler, mas n&oacute;s vamos dar uma demonstra&ccedil;&atilde;o diferente.</p>
 <div class="lemma">
 Se $\overline a\in\Z_n$ &eacute; invert&iacute;vel, ent&atilde;o existe $k\geq 1$ tal que $\overline a^k=\overline 1$.
 </div>
@@ -262,13 +263,13 @@ Seja $\overline a\in\Z_n$ um elemento  invert&iacute;vel e ponha $b=|\overline a
 \[<br>
 \overline 1=\overline a^k=\overline a^{qb+r}=(\overline a^b)^q\overline a^r=\overline a^r.<br>
 \]<br>
-A defini&ccedil;&atilde;o de $b=|\overline a|_n$ e o fato que $0\leq r\leq b-1$ implicam que $r=1$, ou seja $k=q|\overline a|_n$ como foi afirmado.
+A defini&ccedil;&atilde;o de $b=|\overline a|_n$ e o fato que $0\leq r\leq b-1$ implicam que $r=0$, ou seja $k=q|\overline a|_n$ como foi afirmado.
 <p>(2) Assuma que $\overline a^i=\overline a^j$ com algum $i,j\in\{0,\ldots,b-1\}$ e $i\leq j$. Pelo racioc&iacute;nio da demonstra&ccedil;&atilde;o do lema anterior, obtemos que<br>
 \[<br>
 \overline 1=\overline a^{j-i}.<br>
 \]<br>
 Como $0\leq j-i\leq b-1$, a defini&ccedil;&atilde;o de $|\overline a|_n$ implica que $j-i=0$; ou seja $i=j$. </p>
-<p>(3) Essa afirma&ccedil;&atilde;o segue do Teorema de Euler que implica que $\overline a^{\varphi(a)}=\overline 1$ e da primeira parte do lema.</p>
+<p>(3) Essa afirma&ccedil;&atilde;o segue do Teorema de Euler que implica que $\overline a^{\varphi(n)}=\overline 1$ e da primeira parte do lema.</p>
 <p>(4) Esta parte segue diretamente da parte (3) e do fato que $\varphi(n)=n-1$ quando $n$ &eacute; primo.
 </p></div>
 <p>&Eacute; poss&iacute;vel escrever os resultados desta p&aacute;gina na linguagem das congru&ecirc;ncias. </p>

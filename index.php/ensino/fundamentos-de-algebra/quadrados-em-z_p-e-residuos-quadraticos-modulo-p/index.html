@@ -205,7 +205,7 @@ mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
 		<h1 class="entry-title">Quadrados em $\Z_p$ e res&iacute;duos quadr&aacute;ticos m&oacute;dulo $p$</h1>	</header>
 		<div class="entry-content">
 		<div style="color:#000000">
-<p>Lembre da nota&ccedil;&atilde;o $\Z_p^*=\Z_p\setminus\{\overline 0\}$.</p>
+<p>Lembre da nota&ccedil;&atilde;o $\Z_p^*=\Z_p\setminus\{\overline 0\}$ ($p$ &eacute; primo).</p>
 <div class="definition">
 Seja $p\in\N$ um primo. Um elemento $\overline a\in\Z_p^*$ &eacute; dito quadrado se $\overline a=\overline b^2$ com algum $\overline b\in\Z_p^*$.
 </div>
@@ -252,15 +252,20 @@ Al&eacute;m disso, $\overline a$ e $\overline{-a}$ s&atilde;o distintos, pois se
 \[<br>
 \vartheta:\Z_p^*\to\Z_p^*,\quad \overline b\mapsto \overline a/\overline b=\overline a\overline b^{-1}.<br>
 \]<br>
-Note que $\vartheta$ &eacute; uma bije&ccedil;&atilde;o e que $\vartheta(\overline b)=\overline c$ se e somente se $\vartheta(\overline c)=\overline b$. Al&eacute;m disso $\overline b\vartheta(\overline b)=\overline a$ para todo $\overline b\in\Z_p^*$. </p>
+Note que $\vartheta$ &eacute; uma bije&ccedil;&atilde;o e que $\vartheta(\overline b)=\overline c$ se e somente se $\vartheta(\overline c)=\overline b$. Al&eacute;m disso $\overline b\vartheta(\overline b)=\overline a$ para todo $\overline b\in\Z_p^*$ e<br>
+o fato que $\overline a$ n&atilde;o &eacute; quadrado implica que $\vartheta(\overline b)\neq\overline b$ para todo $\overline b\in\Z_p^*$. </p>
 <p>Vamos enumerar os elementos de $\Z_p^*$ como<br>
 \[<br>
 \Z_p^*=\{\overline b_1,\vartheta(\overline b_1),\overline b_2,\vartheta(\overline b_2),\ldots,\overline b_<br>
 {(p-1)/2},\vartheta(\overline b_{(p-1)/2})\}.<br>
 \]<br>
-Ora, usando o Teorema de Wilson obtemos que<br>
+Ora, o Teorema de Wilson nos diz que<br>
+\[<br>
+-1\equiv (p-1)!\equiv 1\cdot 2\cdots (p-1)\pmod p<br>
+\]<br>
+e isso implica que<br>
 \begin{align*}<br>
--1&amp;\equiv (n-1)!\equiv 1\cdot 2\cdots (n-1)\\&amp;=(\overline b_1\vartheta(\overline b_1))(\overline b_2\vartheta(\overline b_2))\cdots(\overline b_{(p-1)/2}\vartheta(\overline b_{(p-1)/2}))\\&amp;=\overline a^{(p-1)/2}.<br>
+\overline{-1}&amp;= \overline 1\cdot \overline 2\cdots \overline{p-1}\\&amp;=(\overline b_1\vartheta(\overline b_1))(\overline b_2\vartheta(\overline b_2))\cdots(\overline b_{(p-1)/2}\vartheta(\overline b_{(p-1)/2}))\\&amp;=\overline a^{(p-1)/2}.<br>
 \end{align*}
 </p></div>
 <div class="definition">
@@ -289,12 +294,12 @@ Seja $p$ um primo com $p\geq 3$ e $a\in\Z$. Definimos o s&iacute;mbolo de Legend
 <div class="example">
 Considerando $p=7$ temos que<br>
 \[<br>
-\left(\frac a7\right)=\left\{\begin{array}{ll} 1 &amp; \mbox{$a\equiv 1,2,4\pmod 7$;}\\<br>
+\left(\frac a7\right)=\left\{\begin{array}{ll} 1 &amp; \mbox{se $a\equiv 1,2,4\pmod 7$;}\\<br>
 -1&amp; \mbox{se $a\equiv 3,5,6\pmod 7$;}\\<br>
-0 &amp; \mbox{se $a\equiv 0\pmod 7$}.\end{array}\right.<br>
+0 &amp; \mbox{se $a\equiv 0\pmod 7$.}\end{array}\right.<br>
 \]
 </div>
-<div class="lemma">
+<div class="theorem">
 Se $p$ &eacute; um primo com $p\geq 3$ e $a\in\Z$, ent&atilde;o<br>
 \[<br>
 \left(\frac ap\right)\equiv a^{(p-1)/2} \pmod p.<br>
