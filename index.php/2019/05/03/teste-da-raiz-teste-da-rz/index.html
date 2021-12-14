@@ -157,6 +157,21 @@ font-style: normal;
 content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
 }
 
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
 		</style>
 	
 <script type="text/x-mathjax-config">
