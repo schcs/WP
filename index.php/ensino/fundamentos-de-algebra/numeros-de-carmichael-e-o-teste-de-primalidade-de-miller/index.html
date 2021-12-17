@@ -232,7 +232,7 @@ Mostre que um n&uacute;mero de Carmichael &eacute; &iacute;mpar.
 \[<br>
 561=3\cdot 11\cdot 17.<br>
 \]<br>
-Seja $b\in\{1,\ldots,560\}$ arbitr&aacute;rio. N&oacute;s vamos mostrar que $b^{561}\equiv b\pmod{561}$. Esta congru&eacute;ncia &eacute; equivalente ao fato que $561\mid (b^{561}-b)$. Para provar esta divisibilidade, basta verificar que $3$, $11$, e $17$ s&atilde;o divisores de $b^{561}-b$ para todo $b\in\{1,\ldots,560\}$.</p>
+Seja $b\in\{1,\ldots,560\}$ arbitr&aacute;rio. N&oacute;s vamos mostrar que $b^{561}\equiv b\pmod{561}$. Esta congru&ecirc;ncia &eacute; equivalente ao fato que $561\mid (b^{561}-b)$. Para provar esta divisibilidade, basta verificar que $3$, $11$, e $17$ s&atilde;o divisores de $b^{561}-b$ para todo $b\in\{1,\ldots,560\}$.</p>
 <p>Primeiro tratamos a afirma&ccedil;&atilde;o que $17\mid (b^{561}-b)$; ou seja<br>
 \[<br>
 b^{561}\equiv b\pmod {17}.<br>
@@ -257,6 +257,24 @@ Seja $n\geq 2$ um n&uacute;mero natural  composto. Ent&atilde;o $n$ &eacute; um 
 <li>se $p$ &eacute; um primo que divide $n$, ent&atilde;o $p-1$ divide $n-1$.</li>
 </ol>
 </div>
+<div class="proof">
+Vamos come&ccedil;ar com a demonstra&ccedil;&atilde;o da volta. Assuma que $n\in\N$ satisfaz as duas propriedades no teorema. Escreva $n=p_1\cdots p_k$ onde os $p_i$ s&atilde;o primos distintos e seja $a\in\Z$. Precisamos provar que $a^n\equiv a\pmod n$; ou seja $n\mid a^n-a$, mas esta &uacute;ltima divisibilidade &eacute; equivalente &agrave;s divisibilidades que $p_i\mid a^n-a$ para todo $i$. 
+<p>Se $p_i\mid a$, ent&atilde;o $p_i\mid a^n-a$. Se $p_i\nmid a$, ent&atilde;o o Pequeno Teorema de Fermat implica que $a^{p_i-1}\equiv 1\pmod{p_i}$. Pela condi&ccedil;&atilde;o 1., temos que $p-1\mid n-1$; ou seja $n=q(p_i-1)+1$ com algum $q\in\Z$. Logo<br>
+\[<br>
+a^n=a^{q(p_i-1)+1}=(a^{p_i-1})^qa\equiv a\pmod{p_i}.<br>
+\]<br>
+Mas isso implica que $p_i\mid a^n-a$. Como isso &eacute; verdadeiro para todo $i\in\{1,\ldots,k\}$, obtemos que $n\mid a^n-a$; ou seja $a^n\equiv a\pmod n$.</p>
+<p>Agora consideremos a ida. Assuma que $n\in\N$ &eacute; um n&uacute;mero de Carmichael. Promeiro provaremos afirma&ccedil;&atilde;o 2. Assuma por contradi&ccedil;&atilde;o que $p^2\mid n$ com algum primo $p$. Como $n$ &eacute; Carmichael, $p^n\equiv p\pmod n$, ou seja $n\mid p^n-p$. Mas isso implica que<br>
+\[<br>
+p^2\mid p^n-p=p(p^{n-1}-1)<br>
+\]<br>
+o que &eacute; imposs&iacute;vel, pois o primeiro fator no lado direito &eacute; divis&iacute;vel por $p$, mas n&atilde;o por $p^2$, enquanto o segundo fator n&atilde;o &eacute; divis&iacute;vel por $p$.</p>
+<p>Agora assuma que $p$ &eacute; um primo tal que $p\mid n$. Precisamos provar que $p-1\mid n-1$. O Teorema da Raiz Primitiva implica que existe $a\in\Z$ tal que $|a|_p=p-1$ (ou seja, $a^{p-1}\equiv 1\pmod p$, mas $a^k\not\equiv 1\pmod p$ para todo $k\in\{1,\ldots,p-2\}$). Como $n$ &eacute; Carmichael, temos que $a^n\equiv a\pmod n$, e assim $a^n\equiv a\pmod p$ (como $p\mid n$). Mas $a$ &eacute; invert&iacute;vel m&oacute;dulo $p$ e assim $a^{n-1}\equiv 1\pmod p$ tamb&eacute;m segue. Isso implica que<br>
+\[<br>
+p-1=|a|_p\mid n-1<br>
+\]<br>
+e &eacute; isso que n&oacute;s queremos provar.
+</p></div>
 </div>
 			</div>
 	<footer class="entry-footer">
