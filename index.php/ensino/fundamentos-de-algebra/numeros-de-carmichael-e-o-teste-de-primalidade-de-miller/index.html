@@ -181,7 +181,8 @@ N: "{\\mathbb N}",
 C: "{\\mathbb C}",
 Z: "{\\mathbb Z}",
 Q: "{\\mathbb Q}",
-mdc: ["{\\mbox{mdc}(#1,#2)}", 2]
+mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+grau: ["{\\mbox{grau}(#1)}",1]
 }}});
 </script>
 	
@@ -264,7 +265,7 @@ Vamos come&ccedil;ar com a demonstra&ccedil;&atilde;o da volta. Assuma que $n\in
 a^n=a^{q(p_i-1)+1}=(a^{p_i-1})^qa\equiv a\pmod{p_i}.<br>
 \]<br>
 Mas isso implica que $p_i\mid a^n-a$. Como isso &eacute; verdadeiro para todo $i\in\{1,\ldots,k\}$, obtemos que $n\mid a^n-a$; ou seja $a^n\equiv a\pmod n$.</p>
-<p>Agora consideremos a ida. Assuma que $n\in\N$ &eacute; um n&uacute;mero de Carmichael. Promeiro provaremos afirma&ccedil;&atilde;o 2. Assuma por contradi&ccedil;&atilde;o que $p^2\mid n$ com algum primo $p$. Como $n$ &eacute; Carmichael, $p^n\equiv p\pmod n$, ou seja $n\mid p^n-p$. Mas isso implica que<br>
+<p>Agora consideremos a ida. Assuma que $n\in\N$ &eacute; um n&uacute;mero de Carmichael. Promeiro provaremos afirma&ccedil;&atilde;o 1. Assuma por contradi&ccedil;&atilde;o que $p^2\mid n$ com algum primo $p$. Como $n$ &eacute; Carmichael, $p^n\equiv p\pmod n$, ou seja $n\mid p^n-p$. Mas isso implica que<br>
 \[<br>
 p^2\mid p^n-p=p(p^{n-1}-1)<br>
 \]<br>
