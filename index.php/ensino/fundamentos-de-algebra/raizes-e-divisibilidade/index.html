@@ -292,28 +292,68 @@ e assuma que $\alpha\in\C$ tal que $f(\alpha)=0$. Ent&atilde;o, usando o exerc&i
 \end{align*}<br>
 Logo $f(\overline\alpha)=0$.
 </div>
-<p>Seja $f(x)=x^2+\alpha x+\beta\in\R[x]$ Lembre que o <strong>discriminante</strong> $\Delta$ de $f(x)$ &eacute; definido como $\Delta=\alpha^2-4\beta$. Ademais,  $f(x)$ possui duas ra&iacute;zes distintas em $\R$ se $\Delta &gt;  0$, $f(x)$ possui uma &uacute;nica raiz em $\R$ se $\Delta=0$ e $f(x)$ n&atilde;o possui ra&iacute;zes em $\R$ se $\Delta 
+<p>Seja $f(x)=x^2+\alpha x+\beta\in\R[x]$ Lembre que o <strong>discriminante</strong> $\Delta$ de $f(x)$ &eacute; definido como $\Delta=\alpha^2-4\beta$. Ademais,  $f(x)$ possui duas ra&iacute;zes distintas em $\R$ se $\Delta &gt;  0$, $f(x)$ possui uma &uacute;nica raiz em $\R$ se $\Delta=0$ e $f(x)$ n&atilde;o possui ra&iacute;zes em $\R$ se $\Delta &lt; 0$. </p>
+<div class="theorem">
 Seja $f(x)\in\R[x]$ um polin&ocirc;mio m&ocirc;nico de grau $k\geq 1$.  Ent&atilde;o $f(x)$ pode ser escrito na forma<br>
 \[<br>
 f(x)=(x-\alpha_1)\cdots (x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r)<br>
 \]<br>
-onde $s+2r=k$, $\alpha_i,\beta_j,\gamma_\ell\in\R$ com $\beta_i^2-4\gamma_i
-</p><div class="proof">
+onde $s+2r=k$, $\alpha_i,\beta_j,\gamma_\ell\in\R$ com $\beta_i^2-4\gamma_i &lt; 0$ para todo $i\in\{1,\ldots,r\}$.
+</div>
+<div class="proof">
 Usaremos indu&ccedil;&atilde;o por $k$. Se $k=1$, ent&atilde;o $f(x)=x-\alpha$ com algum $\alpha\in\R$ e o resultado est&aacute; v&aacute;lido.<br>
-Assuma que o teorema est&aacute; verdadeiro para polin&ocirc;mios $f(x)\in\F[x]$ com  $\grau{f(x)} 
+Assuma que o teorema est&aacute; verdadeiro para polin&ocirc;mios $f(x)\in\F[x]$ com  $\grau{f(x)} &lt; k$ e seja $f(x)\in\R[x]$ um polin&ocirc;mio de grau $k$. Pelo Teorema Fundamental da &Aacute;lgebra, existe $\alpha\in\C$ tal que $f(\alpha)=0$. 
+<p>Se $\alpha\in\R$, ent&atilde;o $x-\alpha\mid f(x)$ e $f(x)=(x-\alpha)q(x)$ com $q(x)\in\R[x]$ m&ocirc;nico e $\grau{q(x)}=k-1$. Pela hip&oacute;tese da indu&ccedil;&atilde;o,<br>
+\[<br>
+q(x)=(x-\alpha_1)\cdots (x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r)<br>
+\]<br>
+com $s+2r=k-1$ e $\beta_i^2-4\gamma_i &lt; 0$ para todo $i$.<br>
+Assim<br>
+\begin{align*}<br>
+f(x)&amp;=(x-\alpha)q(x)\\&amp;=(x-\alpha)(x-\alpha_1)\cdots(x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r).<br>
+\end{align*}<br>
+com $\alpha_i,\beta_j,\gamma_\ell\in\R$ e $\beta_i^2-4\gamma_i &lt; 0$ para todo $i$. </p>
+<p>Se $\alpha\not\in\R$, ent&atilde;o $f(\overline\alpha)=0$ e<br>
+\[<br>
+(x-\alpha)(x-\overline\alpha)\mid f(x).<br>
+\]<br>
+Note que<br>
+\[<br>
+(x-\alpha)(x-\overline\alpha)=x^2-(\alpha+\overline\alpha)x+\alpha\overline\alpha\in\R[x],<br>
+\]<br>
+pois se $\alpha=a+bi$, ent&atilde;o $\overline\alpha=a-bi$ e assim<br>
+\begin{align*}<br>
+\alpha+\overline\alpha&amp;=2a\in\R\\<br>
+\alpha\overline\alpha&amp;=a^2+b^2\in\R.<br>
+\end{align*}<br>
+Portanto<br>
+\[<br>
+(x-\alpha)(x-\overline\alpha)=x^2+\beta+\gamma\in\R[x]<br>
+\]<br>
+&eacute; um polin&ocirc;mio sem ra&iacute;zes em $\R$ e assim $\beta^2-4\gamma &lt; 0$.<br>
+Escreva $f(x)=(x^2+\beta+\gamma)q(x)$ com $q(x)\in\R[x]$ m&ocirc;nico e $\grau{g(x)}=k-2$. Pela hip&oacute;tese da indu&ccedil;&atilde;o,<br>
+\[<br>
+q(x)=(x-\alpha_1)\cdots (x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r)<br>
+\]<br>
+com $\alpha_i,\beta_i,\gamma_i\in\R$, $k-2=s+2r$ e $\beta_i^2-4\gamma_i &lt; 0 $ para todo $i\geq 1$. Ora,<br>
+\[<br>
+f(x)=(x-\alpha_1)\cdots (x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r)(x^2+\beta x+\gamma)<br>
+\]<br>
+como foi afirmado.
+</p></div>
 </div>
 			</div>
 	<footer class="entry-footer">
 			</footer>
-
+</article>
 
 				
 			
-		
+		</main>
 	</div>
 
 
-	</article></main></div>
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -329,5 +369,5 @@ Assuma que o teorema est&aacute; verdadeiro para polin&ocirc;mios $f(x)\in\F[x]$
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</div></body>
+</body>
 </html>
