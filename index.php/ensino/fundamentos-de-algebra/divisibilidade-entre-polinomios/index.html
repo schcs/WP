@@ -181,6 +181,8 @@ N: "{\\mathbb N}",
 C: "{\\mathbb C}",
 Z: "{\\mathbb Z}",
 Q: "{\\mathbb Q}",
+F: "{\\mathbb F}", 
+K: "{\\mathbb K}",
 mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
 grau: ["{\\mbox{grau}(#1)}",1]
 }}});
@@ -225,7 +227,7 @@ grau: ["{\\mbox{grau}(#1)}",1]
 Seja $R$ um anel e sejam $f(x),g(x)\in R[x]$. Dizemos que $f(x)$ <strong>divide</strong> $g(x)$, ou que $g(x)$ &eacute; <strong>divis&iacute;vel</strong> por $f(x)$ ou que $g(x)$ &eacute; um <strong>m&uacute;ltiplo</strong> de $f(x)$ se existir $h(x)\in R[x]$ tal que $f(x)h(x)=g(x)$. Quando $f(x)$ divide $g(x)$, escrevemos que $f(x)\mid g(x)$.
 </div>
 <div class="example">
-Podemos dizer por exemplo que $x+1\mid x^2-1$ considerando estes polin&ocirc;mios, por exemplo, em $\Z[x]$. De fato $x^2-1=(x-1)(x+1)$. Note que a divisibilidade entre dois polin&ocirc;mios depende do anel $R$ de coeficientes. Por exemplo se $f(x)=2x+2$ e $g(x)=x^2-1$ s&atilde;o polin&ocirc;mios em $\Q[x]$, ent&atilde;o $f(x)\mid g(x)$, pois $g(x)=f(x)h(x)$ onde $h(x)=(1/2)(x+1)$. Por outro lado, se consideramos estes polin&ocirc;mios em $\Z[x]$ ent&atilde;o $f(x)\nmid g(x)$.
+Podemos dizer por exemplo que $x+1\mid x^2-1$ considerando estes polin&ocirc;mios, por exemplo, em $\Z[x]$. De fato $x^2-1=(x-1)(x+1)$. Note que a divisibilidade entre dois polin&ocirc;mios depende do anel $R$ de coeficientes. Por exemplo se $f(x)=2x+2$ e $g(x)=x^2-1$ s&atilde;o polin&ocirc;mios em $\Q[x]$, ent&atilde;o $f(x)\mid g(x)$, pois $g(x)=f(x)h(x)$ onde $h(x)=(1/2)(x-1)$. Por outro lado, se consideramos estes polin&ocirc;mios em $\Z[x]$ ent&atilde;o $f(x)\nmid g(x)$.
 </div>
 <p>As propriedades principais da divisibilidade entre polin&ocirc;mios s&atilde;o as mesmas que entre n&uacute;meros inteiros. No seguinte lema n&oacute;s resumimos as propriedades mais importantes. Pode notar que o conceito da divisibilidade pode ser definido em um anel arbitr&aacute;rio (e n&atilde;o apenas nos an&eacute;is $\Z$ ou $R[x]$), mas n&oacute;s n&atilde;o vamos fazer isso nesta disciplina.</p>
 <div class="lemma">

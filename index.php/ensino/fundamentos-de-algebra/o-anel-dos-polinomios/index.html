@@ -181,6 +181,8 @@ N: "{\\mathbb N}",
 C: "{\\mathbb C}",
 Z: "{\\mathbb Z}",
 Q: "{\\mathbb Q}",
+F: "{\\mathbb F}", 
+K: "{\\mathbb K}",
 mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
 grau: ["{\\mbox{grau}(#1)}",1]
 }}});
@@ -253,7 +255,7 @@ Seja $R$ um anel e $f(x),g(x)\in R[x]\setminus\{0\}$.
 A primeira afirma&ccedil;&atilde;o segue da defini&ccedil;&atilde;o do produto. Assuma que $R$ &eacute; um dom&iacute;nio e sejam $f(x),g(x)\in R[x]$ tais que<br>
 \begin{align*}<br>
 f(x)&amp;=\alpha_nx^n+\alpha_{n-1}x^{n-1}+\cdots+\alpha_1x+\alpha_0\\<br>
-g(x)&amp;=\beta_mx^n+\beta_{m-1}x^{m-1}+\cdots+\beta_1x+\beta_0<br>
+g(x)&amp;=\beta_mx^m+\beta_{m-1}x^{m-1}+\cdots+\beta_1x+\beta_0<br>
 \end{align*}<br>
 com $\alpha_i,\beta_j\in R$ e com $\alpha_n,\beta_m\neq 0$. Em particular, $\grau{f(x)}=n$ e $\grau{g(x)}=m$ e<br>
 \[<br>
@@ -265,7 +267,7 @@ onde $\cdots$ significa uma soma de termos de grau menor que $m+n$. Como $R$ &ea
 \]
 </div>
 <div class="example">
-&Eacute; poss&iacute;vel que o grau do produto seja estritamente menor que a soma dos graus. Considere por exemplo $f(x)=\overline 2x+\overline 1$ e $g(x)=\overline 3x+\overline 1$. Ent&atilde;o $\grau{f(x)}=\grau{g(x)}=1$, mas<br>
+&Eacute; poss&iacute;vel que o grau do produto seja estritamente menor que a soma dos graus. Considere por exemplo $f(x)=\overline 2x+\overline 1$ e $g(x)=\overline 3x+\overline 1$ em $\Z_6[x]. Ent&atilde;o $\grau{f(x)}=\grau{g(x)}=1$, mas<br>
 \[<br>
 f(x)g(x)=(\overline 2x+\overline 1)(\overline 3x+\overline 1)=\overline 5x+\overline 1<br>
 \]<br>

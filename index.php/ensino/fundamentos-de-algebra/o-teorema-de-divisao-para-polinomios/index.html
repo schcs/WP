@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>O Teorema de Divis&atilde;o para polin&ocirc;mios &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-teorema-de-divisao-para-polinomios/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-de-divisao-para-polinomios%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-de-divisao-para-polinomios%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] },
+TeX: {
+Macros: {
+R: "{\\mathbb R}",
+N: "{\\mathbb N}",
+C: "{\\mathbb C}",
+Z: "{\\mathbb Z}",
+Q: "{\\mathbb Q}",
+F: "{\\mathbb F}", 
+K: "{\\mathbb K}",
+mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+grau: ["{\\mbox{grau}(#1)}",1]
+}}});
+</script>
+	
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body class="page-template-default page page-id-1577 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1577" class="post-1577 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">O Teorema de Divis&atilde;o para polin&ocirc;mios</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+<div class="example">
+Considere $f(x)=x^3-2x^2+x-1$ e $g(x)=x^2-1$ como polin&ocirc;mios em $\Q[x]$. Usando o m&eacute;todo bem conhecido do ensino m&eacute;dio, pode-se calcular o quociente de $f(x)$ por $g(x)$ e o resto:<br>
+\begin{align*}<br>
+&amp;x^3-2x^2+x-1 : x^2-1 = x-2\\<br>
+&amp;- [x^3-x] \\\hline<br>
+&amp;-2x^2+2x-1\\<br>
+-&amp; [-2x^2+2]\\\hline<br>
+&amp;2x-3<br>
+\end{align*}<br>
+Obtemos que<br>
+\[<br>
+f(x)=(x-2)g(x)+(2x-3)<br>
+\]<br>
+o pode-se dizer que o quociente de $f(x)$ por $g(x)$ &eacute; $x-2$ e o resto de $f(x)$ por $g(x)$ &eacute; $2x-3$.
+</div>
+<p>A conta que fizemos no exemplo anterior nos lembra da Teorema de Divis&atilde;o de Euclides que enunciamos na primeira parte da disciplina para n&uacute;meros inteiros. De fato, existe um teorema an&aacute;logo para polin&ocirc;mios que vamos enunciar e provar nesta p&aacute;gina.</p>
+<div class="theorem">(Teorema de Divis&atilde;o de Euclides para Polin&ocirc;mios)<br>
+Seja $\F$ um corpo (por exemplo $\Q$, $\R$, $\C$, ou $\Z_p$ com $p$ primo) e assuma que $f(x),g(x)\in \F[x]$ com $g(x)\neq 0$. Ent&atilde;o existem unicamente polin&ocirc;mios $q(x),r(x)\in \F[x]$ tais que<br>
+\[<br>
+f(x)=q(x)g(x)+r(x)\quad\mbox{e}\quad r(x)=0\mbox{ ou }\grau{r(x)}
+<div class="proof">
+<strong>Exist&#7869;ncia:</strong> Vamos provar a exist&ecirc;ncia por indu&ccedil;&atilde;o no grau de $f(x)$. Se $f(x)=0$, ent&atilde;o pode-se tomar $q(x)=r(x)=0$. Assuma ent&atilde;o que $f(x)\neq 0$ e seja $k=\grau{f(x)}$. Se $k=0$, ent&atilde;o $f(x)$ &eacute; constante; por exemplo $f(x)=\alpha$ onde $\alpha\in\F$. Se $\grau{g(x)}=0$ ent&atilde;o $g(x)=\beta$ com $\beta\in \F$ e pode tomar $q(x)=\alpha/\beta$ e $r(x)=0$. Se $\grau{g(x)} &gt; 0$, ent&atilde;o podemos tomar $q(x)=0$ e $r(x)=f(x)=\alpha$. &Eacute; f&aacute;cil verificar que estas escolhas para $q(x)$ e $r(x)$ satisfazem a equa&ccedil;&atilde;o no teorema.
+<p>Assuma agora que $k\geq 0$ e que a afirma&ccedil;&atilde;o da exist&ecirc;ncia no teorema est&aacute; v&aacute;lida para polin&ocirc;mios $f(x),g(x)\in\F[x]$ com $g(x)\neq 0$ e $\grau{f(x)} Unicidade: Assuma que temos para algum $f(x),g(x)\in\F[x]$ com $g(x)\neq 0$ que<br>
+\[<br>
+f(x)=q_1(x)g(x)+r_1(x)=q_2(x)g(x)+r_2(x)<br>
+\]<br>
+com $r_1(x)=0$ ou $\grau{r_1(x)} 
+</p><div class="definition">
+O polin&ocirc;mio $q(x)$ no teorema anterior chama-se o <strong>quociente</strong> de $f(x)$ por $g(x)$, enquanto $r(x)$ chama-se o <strong>resto</strong>.
+</div>
+<p>A biblioteca <a href="https://www.sympy.org/">SymPy</a> da linguagem Python pode ser usada para fazer computa&ccedil;&otilde;es com polin&ocirc;mios. Vamos por exemplo refazer o exemplo no in&iacute;cio desta p&aacute;gina em Python.</p>
+<pre>
+<div class="code">
+&gt;&gt;&gt; from sympy import poly, QQ
+&gt;&gt;&gt; from sympy.abc import x
+&gt;&gt;&gt; f = poly( x**3-2*x**2+x-1, domain = QQ )
+&gt;&gt;&gt; g = poly( x**2-1, domain = QQ )
+&gt;&gt;&gt; f//g
+Poly(x&minus;2,x,domain=&#8474;)
+&gt;&gt;&gt; f % g 
+Poly(2x&minus;3,x,domain=&#8474;)
+&gt;&gt;&gt; g*(f//g)+f%g  == f
+True
+</div>
+</pre>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+
+
+				
+			
+		
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</article></main></div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</div></div></body>
+</html>
