@@ -290,7 +290,7 @@ Assim<br>
 f(x)&amp;=x^{n-1}+x^{n-2}+\cdots+x+1\\<br>
 &amp;=\prod_{k=1}^{n-1}(x-\alpha_k)\\<br>
 &amp;=\prod_{k=1}^{n-1}(x-\exp(2k\pi i/n))\\<br>
-&amp;=\prod_{k=1}^{n-1}(x-\cos(2k\pi/n)+i\,\mbox{sen}(2k\pi/n))<br>
+&amp;=\prod_{k=1}^{n-1}(x-\cos(2k\pi/n)-i\,\mbox{sen}(2k\pi/n))<br>
 \end{align*}
 </div>
 <p>Lembre que se $z=a+bi\in\C$, ent&atilde;o o <strong>conjugado complexo</strong> $\overline z$ de $z$ est&aacute; definido como<br>
@@ -358,6 +358,11 @@ Portanto<br>
 \[<br>
 (x-\alpha)(x-\overline\alpha)=x^2+\beta+\gamma\in\R[x]<br>
 \]<br>
+com<br>
+\begin{align*}<br>
+\beta&amp;=-\alpha-\overline{\alpha}=-2a; \\<br>
+\gamma&amp;=\alpha\cdot\overline{\alpha}=a^2+b^2<br>
+\end{align*}<br>
 &eacute; um polin&ocirc;mio sem ra&iacute;zes em $\R$ e assim $\beta^2-4\gamma &lt; 0$.<br>
 Escreva $f(x)=(x^2+\beta+\gamma)q(x)$ com $q(x)\in\R[x]$ m&ocirc;nico e $\grau{g(x)}=k-2$. Pela hip&oacute;tese da indu&ccedil;&atilde;o,<br>
 \[<br>
