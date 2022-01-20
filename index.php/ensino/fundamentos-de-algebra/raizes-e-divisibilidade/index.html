@@ -242,6 +242,16 @@ f(\alpha)=\beta.<br>
 \]<br>
 Para provar a segunda afirma&ccedil;&atilde;o, observe que $\alpha$ &eacute; raiz do polin&ocirc;mio $f(x)$ se e somente se $f(\alpha)=0$ e isso vale se e somente se $f(x)=q(x)(x-\alpha)$ com algum $q(x)\in\F[x]$. Esta &uacute;ltima afirma&ccedil;&atilde;o &eacute; equivalente a dizer que $x-\alpha\mid f(x)$.
 </div>
+<div class="corollary">
+Seja $f(x)\in\F[x]\setminus\{0\}$ um polin&ocirc;mio. O n&uacute;mero das ra&iacute;zes de $f(x)$ em $\F$ &eacute; menor ou igual a $\grau{f(x)}$.
+</div>
+<div class="proof">
+Fazemos indu&ccedil;&atilde;o pelo $\grau{f(x)}$. Se $\grau{f(x)}=0$, ent&atilde;o $f(x)=\alpha$ com $\alpha\in\F\setminus\{0\}$ e $f(x)$ n&atilde;o possui ra&iacute;zes em $\F$ e assim a afirma&ccedil;&atilde;o &eacute; verdadeira. Assuma que um polin&ocirc;mio de $\F[x]$ de grau $k-1$ possui no m&aacute;ximo $k-1$ ra&iacute;zes em $\F$ e seja $f(x)\in\F[x]$ com grau $k$. Se $f(x)$ n&atilde;o possui ra&iacute;zes em $\F$ ent&atilde;o a afirma&ccedil;&atilde;o do corol&aacute;rio &eacute; verdadeira para $f(x)$. Assuma que $\alpha\in\F$ &eacute; raiz de $f(x)$. Ent&atilde;o $f(x)=(x-\alpha)g(x)$ com $\grau{g(x)}=k-1$. Se $\beta\in\F\setminus\{\alpha\}$ &eacute; raiz de $f(x)$, ent&atilde;o<br>
+\[<br>
+0=f(\beta)=(\beta-\alpha)g(\beta)<br>
+\]<br>
+e, como $\beta-\alpha\neq 0$, $g(\beta)=0$. Logo $\beta$ precisa ser raiz de $g(x)$. Obtemos assim que as raizes de $f(x)$ s&atilde;o $\alpha$ e as ra&iacute;zes de $g(x)$. Pela hip&oacute;tese de indu&ccedil;&atilde;o, $g(x)$ tem no m&aacute;ximo $k-1$ ra&iacute;zes, portanto $f(x)$ tem no m&aacute;ximo $k$ ra&iacute;zes.
+</div>
 <div class="theorem"> (O Teorema fundamental da &Aacute;lgebra)<br>
 Seja $f(x)\in\C[x]$ um polin&ocirc;mio de grau maior ou igual a $1$. Ent&atilde;o $f(x)$ possui raiz em $\C$.
 </div>
@@ -264,6 +274,24 @@ Portanto<br>
 \[<br>
 f(x)=q(x)(x-\alpha_k)=(x-\alpha_1)\cdots(x-\alpha_{k-1})(x-\alpha_k).<br>
 \]
+</div>
+<p>Na decomposi&ccedil;&atilde;o dada pelo teorema anterior os escalares $\alpha_1,\ldots,\alpha_k$ s&atilde;o as ra&iacute;zes complexas de $f(x)$ contadas com multiplicidade. Isso quer dizer que uma raiz pode ocorrer v&aacute;rias vezes nesta lista. </p>
+<div class="example">
+Considere o polin&ocirc;mio<br>
+\[<br>
+f(x)=x^{n-1}+x^{n-2}+\cdots+x+1\in\C[x]<br>
+\]<br>
+com $n\geq 2$. Note que $x^n-1=(x-1)f(x)$ e assim as ra&iacute;zes de  $f(x)$ s&atilde;o os n&uacute;meros $\alpha\in\C\setminus\{1\}$ tais que $\alpha^n=1$. Estes n&uacute;meros s&atilde;o $\alpha_1,\ldots,\alpha_{n-1}$ onde<br>
+\[<br>
+\alpha_k=\exp(2k\pi i/n)=\cos(2k\pi/n)+i\,\mbox{sen}(2k\pi/n).<br>
+\]<br>
+Assim<br>
+\begin{align*}<br>
+f(x)&amp;=x^{n-1}+x^{n-2}+\cdots+x+1\\<br>
+&amp;=\prod_{k=1}^{n-1}(x-\alpha_k)\\<br>
+&amp;=\prod_{k=1}^{n-1}(x-\exp(2k\pi i/n))\\<br>
+&amp;=\prod_{k=1}^{n-1}(x-\cos(2k\pi/n)+i\,\mbox{sen}(2k\pi/n))<br>
+\end{align*}
 </div>
 <p>Lembre que se $z=a+bi\in\C$, ent&atilde;o o <strong>conjugado complexo</strong> $\overline z$ de $z$ est&aacute; definido como<br>
 \[<br>
@@ -292,7 +320,7 @@ e assuma que $\alpha\in\C$ tal que $f(\alpha)=0$. Ent&atilde;o, usando o exerc&i
 \end{align*}<br>
 Logo $f(\overline\alpha)=0$.
 </div>
-<p>Seja $f(x)=x^2+\alpha x+\beta\in\R[x]$ Lembre que o <strong>discriminante</strong> $\Delta$ de $f(x)$ &eacute; definido como $\Delta=\alpha^2-4\beta$. Ademais,  $f(x)$ possui duas ra&iacute;zes distintas em $\R$ se $\Delta &gt;  0$, $f(x)$ possui uma &uacute;nica raiz em $\R$ se $\Delta=0$ e $f(x)$ n&atilde;o possui ra&iacute;zes em $\R$ se $\Delta &lt; 0$. </p>
+<p>Seja $f(x)=x^2+\alpha x+\beta\in\R[x]$. Lembre que o <strong>discriminante</strong> $\Delta$ de $f(x)$ &eacute; definido como $\Delta=\alpha^2-4\beta$. Ademais,  $f(x)$ possui duas ra&iacute;zes distintas em $\R$ se $\Delta &gt;  0$, $f(x)$ possui uma &uacute;nica raiz em $\R$ se $\Delta=0$ e $f(x)$ n&atilde;o possui ra&iacute;zes em $\R$ se $\Delta &lt; 0$. </p>
 <div class="theorem">
 Seja $f(x)\in\R[x]$ um polin&ocirc;mio m&ocirc;nico de grau $k\geq 1$.  Ent&atilde;o $f(x)$ pode ser escrito na forma<br>
 \[<br>
@@ -341,6 +369,39 @@ f(x)=(x-\alpha_1)\cdots (x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+
 \]<br>
 como foi afirmado.
 </p></div>
+<p>Na decomposi&ccedil;&atilde;o dada pelo teorema anterior os escalares $\alpha_1,\ldots,\alpha_s$ s&atilde;o as ra&iacute;zes reais de $f(x)$ contadas com multiplicidade. Isso quer dizer que uma raiz pode ocorrer v&aacute;rias vezes nesta lista. No caso de polin&ocirc;mios sobre $\R$, o n&uacute;mero das ra&iacute;zes de $f(x)$ pode ser menor que $\grau{f(x)}$.  </p>
+<div class="example">
+Considere o polin&ocirc;mio<br>
+\[<br>
+f(x)=x^{n-1}+x^{n-2}+\cdots+x+1\in\R[x]<br>
+\]<br>
+com $n\geq 2$. No exemplo anterior determinamos as ra&iacute;zes complexas de $f(x)$. Se $n$ for par, ent&atilde;o $f(x)$ possui uma &uacute;nica raiz real, nomeadamente o $-1$, enquanto se $n$ for &iacute;mpar, ent&atilde;o $f(x)$ n&atilde;o possui raiz real. Denotando por $\alpha_k$ a $k$-&eacute;sima raiz complexa de $f(x)$ como no exemplo anterior, temos, para $k\leq n/2$ que<br>
+\[<br>
+\overline{\alpha_k}=\alpha_{n-k}.<br>
+\]<br>
+Para $k\leq n/2$, seja<br>
+\[<br>
+\beta_k=-\alpha_k-\overline{\alpha_k}=-2\cos(2k\pi /n)<br>
+\]<br>
+e note que<br>
+\[<br>
+\alpha_k\cdot \overline{\alpha_k}=\cos^2(2k\pi /n)+\mbox{sen}^2(2k\pi /n)=1.<br>
+\]<br>
+Assim obtemos a seguinte decomposi&ccedil;&atilde;o. Se $n$ for par,<br>
+\begin{align*}<br>
+f(x)&amp;=(x+1)\prod_{k=1}^{(n-2)/2}(x^2+\beta_kx+1)\\&amp;=(x+1)\prod_{i=1}^{(n-2)/2}(x^2-2\cos(2k\pi/n)x+1);<br>
+\end{align*}<br>
+se $n$ for &iacute;mpar, ent&atilde;o<br>
+\begin{align*}<br>
+f(x)&amp;=\prod_{k=1}^{(n-1)/2}(x^2+\beta_kx+1)\\&amp;=\prod_{i=1}^{(n-1)/2}(x^2-2\cos(2k\pi/n)x+1).<br>
+\end{align*}
+</div>
+<div class="corollary">
+Um polin&ocirc;mio $f(x)\in\R[x]$ de grau &iacute;mpar possui raiz em $\R$.
+</div>
+<div class="proof">
+Se $\grau{f(x)}$ &eacute; impar, ent&atilde;o a sua decomposi&ccedil;&atilde;o dada pelo teorema anterior possui pelo menos um fator na forma $x-\alpha$ com $\alpha\in\R$ e assim $\alpha$ &eacute; raiz de $f(x)$.
+</div>
 </div>
 			</div>
 	<footer class="entry-footer">
