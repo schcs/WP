@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>O Teorema da Fatora&ccedil;&atilde;o para Polin&ocirc;mios &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-teorema-da-fatoracao-para-polinomios/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-da-fatoracao-para-polinomios%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-da-fatoracao-para-polinomios%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] },
+TeX: {
+Macros: {
+R: "{\\mathbb R}",
+N: "{\\mathbb N}",
+C: "{\\mathbb C}",
+Z: "{\\mathbb Z}",
+Q: "{\\mathbb Q}",
+F: "{\\mathbb F}", 
+K: "{\\mathbb K}",
+mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+grau: ["{\\mbox{grau}(#1)}",1]
+}}});
+</script>
+	
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body class="page-template-default page page-id-1630 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1630" class="post-1630 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">O Teorema da Fatora&ccedil;&atilde;o para Polin&ocirc;mios</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+<div class="theorem">
+Seja $\F$ um corpo e seja $f(x)\in\F[x]$ de grau maior ou igual a $1$. Ent&atilde;o $f(x)$ pode ser escrito na forma<br>
+\[<br>
+f(x)=\alpha q_1(x)\cdots q_k(x)<br>
+\]<br>
+onde $\alpha\in\F\setminus\{0\}$ e os $q_i(x)\in\F[x]$ s&atilde;o polin&ocirc;mios irredut&iacute;veis e m&ocirc;nicos. Al&eacute;m disso, esta fatora&ccedil;&atilde;o de $f(x)$ &eacute; &uacute;nica a menos da ordem dos fatores.
+</div>
+<p>Primeiro n&oacute;s provaremos um lema que pode ser considerado como an&aacute;logo de um resultado que j&aacute; provamos para n&uacute;meros inteiros.</p>
+<div class="lemma">
+Seja $f(x)\in\F[x]$ um polin&ocirc;mio irredut&iacute;vel e $g(x),h(x)\in\F[x]$ tal que $f(x)\mid g(x)h(x)$. Ent&atilde;o $f(x)\mid g(x)$ ou $f(x)\mid h(x)$.
+</div>
+<div class="proof">
+Assuma que $f(x)\nmid g(x)$. Precisamos provar que $f(x)\mid h(x)$. Ent&atilde;o $\mdc{f(x)}{g(x)}=1$ e existem $u(x),v(x)\in\F[x]$ tais que<br>
+\[<br>
+u(x)f(x)+v(x)g(x)=1.<br>
+\]<br>
+Multiplicando a equa&ccedil;&atilde;o anterior por $h(x)$ temos que<br>
+\[<br>
+u(x)f(x)h(x)+v(x)g(x)h(x)=h(x).<br>
+\]<br>
+Note que $f(x)$ divide as duas parcelas no lado esquerdo da &uacute;ltima equa&ccedil;&atilde;o, logo $f(x)$ precisa dividir $h(x)$ e &eacute; isso que precisamos provar.
+</div>
+<div class="proof">(O Teorema da Fatora&ccedil;&atilde;o)<br>
+<strong>Exist&ecirc;ncia:</strong> Vamos provar a exist&ecirc;ncia por indu&ccedil;&atilde;o em $\grau{f(x)}$. Se $\grau{f(x)}=1$, ent&atilde;o $f(x)$ &eacute; irredut&iacute;vel e<br>
+\[<br>
+f(x)=\alpha f_0(x)<br>
+\]<br>
+onde $\alpha\in\F\setminus\{0\}$ &eacute; o coeficiente l&iacute;der de $f(x)$ &eacute; $f_0(x)$ &eacute; irredut&iacute;vel e m&ocirc;nico. 
+<p>Assumamos que a afirma&ccedil;&atilde;o da exist&ecirc;ncia do teorema est&aacute; v&aacute;lida para polin&ocirc;mios de menor ou igual a $k-1\geq 1$ e seja $f(x)$ um polin&ocirc;mio de grau $k$. Se $f(x)$ &eacute; irredut&iacute;vel, ent&atilde;o<br>
+\[<br>
+f(x)=\alpha f_0(x)<br>
+\]<br>
+onde $\alpha\in\F\setminus\{0\}$ &eacute; o coeficiente l&iacute;der de $f(x)$ &eacute; $f_0(x)$ &eacute; irredut&iacute;vel e m&ocirc;nico e $f(x)$ pode ser fatorado. Se $f(x)$ n&atilde;o &eacute; irredut&iacute;vel, ent&atilde;o $f(x)=f_1(x)f_2(x)$ onde $f_1(x),f_2(x)\in\F[x]$ e $\grau{f_i(x)}\geq 1$. Pela hip&oacute;tese da indu&ccedil;&atilde;o,<br>
+\begin{align*}<br>
+f_1(x)&amp;=\alpha_1 q_1(x)\cdots q_k(x)\\<br>
+f_2(x)&amp;=\alpha_2 q_{k+1}(x)\cdots q_\ell(x)<br>
+\end{align*}<br>
+onde $\alpha_1,\alpha_2\in\F[x]\setminus\{0\}$ e os $q_i(x)$ s&atilde;o m&ocirc;nicos e irredut&iacute;veis. Ora,<br>
+\[<br>
+f(x)=f_1(x)f_2(x)=(\alpha_1\alpha_2) q_1(x)\cdots q_k(x)q_{k+1}(x)\cdots q_\ell.<br>
+\]</p>
+<p><strong>Unicidade.</strong> Demonstremos agora a unicidade por indu&ccedil;&atilde;o sobre o n&uacute;mero minimal de fatores. Assuma que $f(x)\in\F[x]$ tem apenas um fator;  ou seja $f(x)=\alpha f_0(x)$ onde $\alpha\in\F\setminus\{0\}$ e $f_0(x)$ &eacute; irredut&iacute;vel e m&ocirc;nico. Ent&atilde;o $f(x)$ tamb&eacute;m &eacute; irredit&uacute;vel e qualquer outra fatora&ccedil;&atilde;o tem tamb&eacute;m um un&iacute;co fator e tem a forma $f(x)=\beta f_1(x)$ onde $f_1(x)$ &eacute; m&ocirc;nico e irredut&iacute;vel. Agora $f_0(x)\mid f_1(x)$ e $f_1(x)\mid f_0(x)$. Como estes dois s&atilde;o m&ocirc;nicos temos que $f_0(x)=f_1(x)$. A igualdade $\alpha=\beta$ segue do fato que os dois s&atilde;o iguais ao coeficiente l&iacute;der de $f(x)$. </p>
+<p>Assuma que a afirma&ccedil;&atilde;o da unicidade est&aacute; v&aacute;lida para polin&ocirc;mios que podem ser escritos com $k-1$ fatores. Assuma que<br>
+\[<br>
+f(x)=\beta_1q_1(x)\cdots q_k(x)=\beta_2r_1(x)\ldots r_m(x)<br>
+\]<br>
+onde $m\geq k$, $\beta_1,\beta_2\in\F\setminus\{0\}$ e os $q_i(x)$ e $r_j(x)$ s&atilde;o m&ocirc;nicos e irredut&iacute;veis. Agora<br>
+\[<br>
+q_1(x)\mid f(x)=\beta_2r_1(x)\ldots r_m(x)<br>
+\]<br>
+e pelo lema no in&iacute;cio desta p&aacute;gina $q_1(x)\mid r_j(x)$ com algum $j$. Como $q_1(x)$ e $r_j(x)$ s&atilde;o m&ocirc;nicos e irredut&iacute;veis segue que $q_1(x)=r_j(x)$. Assuma sem perder a generalidade que $q_1(x)=r_1(x)$. Ent&atilde;o<br>
+\[<br>
+f(x)=\beta_1q_1(x)q_2(x)\cdots q_k(x)=\beta_2q_1(x)r_2(x)\ldots r_m(x).<br>
+\]<br>
+Como $\F[x]$ &eacute; um dom&iacute;nio, a lei cancelativa aplica-se e obtemos que<br>
+\[<br>
+\beta_1q_2(x)\cdots q_k(x)=\beta_2r_2(x)\ldots r_m(x).<br>
+\]<br>
+Agora a hip&oacute;tese de indu&ccedil;&atilde;o implica que $k=m$ e que os fatores $q_2(x),\ldots,q_k(x)$ e $r_2(x),\ldots,r_m(x)$ s&atilde;o os mesmos exceto possivelmente a sua ordem. Portanto os fatores $q_1(x),\ldots,q_k(x)$ e $r_1(x),\ldots,r_m(x)$ s&atilde;o os mesmos exceto possivelmente a sua ordem. O fato que $\beta_1=\beta_2$ segue, pois os dois s&atilde;o iguais ao coeficiente l&iacute;der de $f(x)$.
+</p></div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
