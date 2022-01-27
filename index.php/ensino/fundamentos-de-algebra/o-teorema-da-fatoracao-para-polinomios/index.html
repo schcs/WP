@@ -250,8 +250,8 @@ Note que $f(x)$ divide as duas parcelas no lado esquerdo da &uacute;ltima equa&c
 \[<br>
 f(x)=\alpha f_0(x)<br>
 \]<br>
-onde $\alpha\in\F\setminus\{0\}$ &eacute; o coeficiente l&iacute;der de $f(x)$ &eacute; $f_0(x)$ &eacute; irredut&iacute;vel e m&ocirc;nico. 
-<p>Assumamos que a afirma&ccedil;&atilde;o da exist&ecirc;ncia do teorema est&aacute; v&aacute;lida para polin&ocirc;mios de menor ou igual a $k-1\geq 1$ e seja $f(x)$ um polin&ocirc;mio de grau $k$. Se $f(x)$ &eacute; irredut&iacute;vel, ent&atilde;o<br>
+onde $\alpha\in\F\setminus\{0\}$ &eacute; o coeficiente l&iacute;der de $f(x)$ e $f_0(x)$ &eacute; irredut&iacute;vel e m&ocirc;nico. 
+<p>Assumamos que a afirma&ccedil;&atilde;o da exist&ecirc;ncia do teorema est&aacute; v&aacute;lida para polin&ocirc;mios de grau menor ou igual a $k-1\geq 1$ e seja $f(x)$ um polin&ocirc;mio de grau $k$. Se $f(x)$ &eacute; irredut&iacute;vel, ent&atilde;o<br>
 \[<br>
 f(x)=\alpha f_0(x)<br>
 \]<br>
@@ -264,7 +264,7 @@ onde $\alpha_1,\alpha_2\in\F[x]\setminus\{0\}$ e os $q_i(x)$ s&atilde;o m&ocirc;
 \[<br>
 f(x)=f_1(x)f_2(x)=(\alpha_1\alpha_2) q_1(x)\cdots q_k(x)q_{k+1}(x)\cdots q_\ell.<br>
 \]</p>
-<p><strong>Unicidade.</strong> Demonstremos agora a unicidade por indu&ccedil;&atilde;o sobre o n&uacute;mero minimal de fatores. Assuma que $f(x)\in\F[x]$ tem apenas um fator;  ou seja $f(x)=\alpha f_0(x)$ onde $\alpha\in\F\setminus\{0\}$ e $f_0(x)$ &eacute; irredut&iacute;vel e m&ocirc;nico. Ent&atilde;o $f(x)$ tamb&eacute;m &eacute; irredit&uacute;vel e qualquer outra fatora&ccedil;&atilde;o tem tamb&eacute;m um un&iacute;co fator e tem a forma $f(x)=\beta f_1(x)$ onde $f_1(x)$ &eacute; m&ocirc;nico e irredut&iacute;vel. Agora $f_0(x)\mid f_1(x)$ e $f_1(x)\mid f_0(x)$. Como estes dois s&atilde;o m&ocirc;nicos temos que $f_0(x)=f_1(x)$. A igualdade $\alpha=\beta$ segue do fato que os dois s&atilde;o iguais ao coeficiente l&iacute;der de $f(x)$. </p>
+<p><strong>Unicidade.</strong> Demonstremos agora a unicidade por indu&ccedil;&atilde;o sobre o n&uacute;mero minimal de fatores. Assuma que $f(x)\in\F[x]$ tem apenas um fator;  ou seja $f(x)=\alpha f_0(x)$ onde $\alpha\in\F\setminus\{0\}$ e $f_0(x)$ &eacute; irredut&iacute;vel e m&ocirc;nico. Ent&atilde;o $f(x)$ tamb&eacute;m &eacute; irredit&uacute;vel e qualquer outra fatora&ccedil;&atilde;o tem tamb&eacute;m um &uacute;nico fator e tem a forma $f(x)=\beta f_1(x)$ onde $f_1(x)$ &eacute; m&ocirc;nico e irredut&iacute;vel. Agora $f_0(x)\mid f_1(x)$ e $f_1(x)\mid f_0(x)$. Como estes dois s&atilde;o m&ocirc;nicos temos que $f_0(x)=f_1(x)$. A igualdade $\alpha=\beta$ segue do fato que os dois s&atilde;o iguais ao coeficiente l&iacute;der de $f(x)$. </p>
 <p>Assuma que a afirma&ccedil;&atilde;o da unicidade est&aacute; v&aacute;lida para polin&ocirc;mios que podem ser escritos com $k-1$ fatores. Assuma que<br>
 \[<br>
 f(x)=\beta_1q_1(x)\cdots q_k(x)=\beta_2r_1(x)\ldots r_m(x)<br>
@@ -283,6 +283,56 @@ Como $\F[x]$ &eacute; um dom&iacute;nio, a lei cancelativa aplica-se e obtemos q
 \]<br>
 Agora a hip&oacute;tese de indu&ccedil;&atilde;o implica que $k=m$ e que os fatores $q_2(x),\ldots,q_k(x)$ e $r_2(x),\ldots,r_m(x)$ s&atilde;o os mesmos exceto possivelmente a sua ordem. Portanto os fatores $q_1(x),\ldots,q_k(x)$ e $r_1(x),\ldots,r_m(x)$ s&atilde;o os mesmos exceto possivelmente a sua ordem. O fato que $\beta_1=\beta_2$ segue, pois os dois s&atilde;o iguais ao coeficiente l&iacute;der de $f(x)$.
 </p></div>
+<div class="example">
+Seja $f(x)\in\C[x]$ um polin&ocirc;mio de grau maior ou igual a um. Seja<br>
+\[<br>
+f(x)=\beta_n x^n+\cdots+\beta_1x+\beta_0<br>
+\]<br>
+com $\beta_n\neq 0$. Ent&atilde;o $f(x)=\beta_n f_0(x)$ onde $f_0(x)\in\C[x]$ &eacute; um polin&ocirc;mio m&ocirc;nico. Pelo teorema demonstrado na semana passada,<br>
+\[<br>
+f_0(x)=\prod_{i=1}^n(x-\alpha_i)<br>
+\]<br>
+onde os $\alpha_i$ s&atilde;o as ra&iacute;zes de $f_0(x)$ (e assim tamb&eacute;m as ra&iacute;zes de $f(x)$) contando com multiplicidade. Ora, a fatora&ccedil;&atilde;o de $f(x)$ em produto de irredut&iacute;veis &eacute;<br>
+\[<br>
+f(x)=\beta_n\prod_{i=1}^n(x-\alpha_i).<br>
+\]
+</div>
+<div class="example">
+Agora, seja $f(x)\in\R[x]$ um polin&ocirc;mio de grau maior ou igual a um. Seja<br>
+\[<br>
+f(x)=\beta_n x^n+\cdots+\beta_1x+\beta_0<br>
+\]<br>
+com $\beta_i\in\R$ e $\beta_n\neq 0$. Como acima, $f(x)=\beta_n f_0(x)$ onde $f_0(x)\in\R[x]$ &eacute; um polin&ocirc;mio m&ocirc;nico. Pelo teorema demonstrado na semana passada sobre polin&ocirc;mios em $\R[x]$,<br>
+\[<br>
+f_0(x)=\prod_{i=1}^s(x-\alpha_i)\prod_{j=1}^r(x^2+\gamma_jx+\delta_j)<br>
+\]<br>
+onde $\alpha_i,\gamma_j,\delta_j\in\R$ e $\gamma_j^2-4\delta_j &lt; 0$ para todo $j\geq 1$. Os fatores na fatora&ccedil;&atilde;o na equa&ccedil;&atilde;o anterior podem ser determinados usando as ra&iacute;zes de $f(x)$. De fato, as ra&iacute;zes de $f(x)$ (contando com multiplicidade) s&atilde;o<br>
+\[<br>
+\alpha_1,\ldots,\alpha_s,\alpha_{s+1},\overline{\alpha_{s+1}},\ldots,\alpha_{s+r},\overline{\alpha_{s+r}}<br>
+\]<br>
+onde $n=s+2r$ e $\alpha_i\in\R$ se e somente se $i\in\{1,\ldots,s\}$. A fatora&ccedil;&atilde;o de $f_0(x)$ pode ser escrita como<br>
+\[<br>
+f_0(x)=\prod_{i=1}^s(x-\alpha_i)\prod_{j={s+1}}^{s+r}(x^2-(\alpha_j+\overline{\alpha_j})x+\alpha_j\cdot\overline{\alpha_j}).<br>
+\]<br>
+Consequentemente a fatora&ccedil;&atilde;o de $f(x)$ &eacute;<br>
+\[<br>
+f(x)=\beta_n\prod_{i=1}^s(x-\alpha_i)\prod_{j={s+1}}^{s+r}(x^2-(\alpha_j+\overline{\alpha_j})x+\alpha_j\cdot\overline{\alpha_j}).<br>
+\]
+</div>
+<div class="example">
+No terceiro exemplo considere<br>
+\[<br>
+f(x)=x^5 &ndash; 2x^3 + x^2 + x &ndash; 1\in\Q[x].<br>
+\]<br>
+D&aacute; para verificar que $\alpha_1=1$ e $\alpha_2=-1$ s&atilde;o ra&iacute;zes de $f(x)$ e assim $f(x)$ &eacute; divis&iacute;vel por $(x-1)(x+1)=x^2-1$. Calculando o quociente, obtemos que<br>
+\[<br>
+f(x)=(x-1)(x+1)(x^3-x+1).<br>
+\]<br>
+O Teorema das Ra&iacute;zes Racionais implica que $x^3-x+1$ n&atilde;o possui ra&iacute;zes em $\Q$ e (sendo um polin&ocirc;mio de grau $3$) &eacute; irredut&iacute;vel. Ent&atilde;o a fatora&ccedil;&atilde;o de $f(x)$ &eacute;<br>
+\[<br>
+f(x)=x^5 &ndash; 2x^3 + x^2 + x &ndash; 1=(x-1)(x+1)(x^3-x+1)<br>
+\]
+</div>
 </div>
 			</div>
 	<footer class="entry-footer">
