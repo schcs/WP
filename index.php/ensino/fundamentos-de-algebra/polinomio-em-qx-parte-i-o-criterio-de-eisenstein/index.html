@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Polin&ocirc;mios em $\Q[x]$. Parte II: O Crit&eacute;rio de Eisenstein &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/polinomio-em-qx-parte-i-o-criterio-de-eisenstein/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fpolinomio-em-qx-parte-i-o-criterio-de-eisenstein%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fpolinomio-em-qx-parte-i-o-criterio-de-eisenstein%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] },
+TeX: {
+Macros: {
+R: "{\\mathbb R}",
+N: "{\\mathbb N}",
+C: "{\\mathbb C}",
+Z: "{\\mathbb Z}",
+Q: "{\\mathbb Q}",
+F: "{\\mathbb F}", 
+K: "{\\mathbb K}",
+mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+grau: ["{\\mbox{grau}(#1)}",1]
+}}});
+</script>
+	
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body class="page-template-default page page-id-1659 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1659" class="post-1659 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Polin&ocirc;mios em $\Q[x]$. Parte II: O Crit&eacute;rio de Eisenstein</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+<div class="theorem">(O Crit&eacute;rio de <a href="https://pt.wikipedia.org/wiki/Gotthold_Eisenstein">Eisenstein</a>) Seja<br>
+\[<br>
+f(x)=a_nx^n+\cdots+a_1x+a_0\in\Z[x]<br>
+\]<br>
+com $a_n\neq 0$ tal que existe um primo $p$ tal que $p\nmid a_n$, $p\mid a_i$ para todo $i\in\{0,\ldots,n-1\}$ e $p^2\nmid a_0$. Ent&atilde;o $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$.
+</div>
+<div class="proof">
+Assuma por procurar uma contradi&ccedil;&atilde;o que $f(x)$ &eacute; redut&iacute;vel em $\Q[x]$. Pelo Lema de Gauss, existem $g(x),h(x)\in\Z[x]$ tal que $f(x)=g(x)h(x)$. Assuma que<br>
+\begin{align*}<br>
+g(x)&amp;=b_rx^r+\cdots +b_1x+b_0\\<br>
+h(x)&amp;=c_sx^s+\cdots +c_1x+c_0<br>
+\end{align*}<br>
+com $b_r,c_s\neq 0$ e $r,s\geq 1$. Temos que $a_n=b_rc_s$ e $a_0=b_0c_0$. Como $p\nmid a_n$, temos que $p\nmid b_r$ e $p\nmid c_s$. Similarmente, como $p\mid a_0$ e $p^2\nmid a_0$, segue que $p\mid b_0$ ou $p\mid c_0$ mas $p$ n&atilde;o divide ambos $b_0$ e $c_0$. Assuma sem perder generalidade que $b\mid b_0$ e $p\nmid c_0$. Seja $t$ o menor &iacute;ndice tal que $p\nmid b_t$. O coeficiente $a_t$ &eacute; obtido como<br>
+\[<br>
+a_t=b_tc_0+b_{t-1}c_1+\cdots+b_1c_{t-1}+b_0c_t.<br>
+\]<br>
+Pelas condi&ccedil;&otilde;es do lema, $p\mid a_t$ e isso implica que $p\mid b_tc_0$ mas isso &eacute; imposs&iacute;vel como $p\nmid  b_t$ e $p\nmid c_0$. Logo a fatora&ccedil;&atilde;o $f(x)=g(x)h(x)$ n&atilde;o existe e assim $f(x)$ &eacute; irredut&iacute;vel.
+</div>
+<div class="example">
+Seja $f(x)=x^n-p\in\Z[x]$ onde $p$ &eacute; um primo. O crit&eacute;rio de Eisenstein vale para $f(x)$ e assim $f(x)$ &eacute; irredut&iacute;vel. em particular $\Q[x]$ possui polin&ocirc;mios irredut&iacute;veis de grau arbitr&aacute;rio.
+</div>
+<div class="example">
+Seja $p$ um primo e considere<br>
+\[<br>
+f(x)=x^{p-1}+x^{p-2}+\cdots+x+1\in\Z[x].<br>
+\]<br>
+O polin&ocirc;mio $f(x)$ &eacute; chamado polin&ocirc;mio ciclot&oacute;mico de grau $p$. Note que<br>
+\[<br>
+f(x)=\frac{x^p-1}{x-1}.<br>
+\]<br>
+Afirmamos que $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$. O Crit&eacute;rio de Eisenstein n&atilde;o &eacute; diretamente aplic&aacute;vel e n&oacute;s vamos fazer uma substitui&ccedil;&atilde;o de vari&aacute;vel $y=x+1$. Assim<br>
+\begin{align*}<br>
+f(y)&amp;=\frac{y^p-1}{y-1}=\frac{(x+1)^p-1}{(x+1)-1}\\<br>
+&amp;=\frac{x^p+p x^{p-1}+\binom p2x^{p-2}+\cdots+\binom p{p-2}x^2+px+1-1}{x}\\&amp;=<br>
+x^{p-1}+p x^{p-2}+\binom p2x^{p-3}+\cdots+\binom p{p-2}x+p.<br>
+\end{align*}<br>
+O coeficiente binomial $\binom pk$ &eacute; divis&iacute;vel por $p$ para todo $k\in\{1,\ldots,p-1\}$.<br>
+Pelo Crit&eacute;rio de Eisentein, $f(y)$ &eacute; irredut&iacute;vel. Como $x=y-1$, temos que $f(x)=f(y-1)$ &eacute; tamb&eacute;m irredut&iacute;vel.
+</div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
