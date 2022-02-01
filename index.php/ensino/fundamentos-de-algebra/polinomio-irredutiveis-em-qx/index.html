@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Polin&ocirc;mios em $\Q[x]$. Parte I: o Lema de Gauss &ndash; Csaba Schneider</title>
+<title>Polin&ocirc;mios em $\Q[x]$. Parte I: O Lema de Gauss &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -220,7 +220,7 @@ grau: ["{\\mbox{grau}(#1)}",1]
 				
 <article id="post-1655" class="post-1655 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Polin&ocirc;mios em $\Q[x]$. Parte I: o Lema de Gauss</h1>	</header>
+		<h1 class="entry-title">Polin&ocirc;mios em $\Q[x]$. Parte I: O Lema de Gauss</h1>	</header>
 		<div class="entry-content">
 		<div style="color:#000000">
 Polin&ocirc;mios irredut&iacute;veis t&ecirc;m descri&ccedil;&atilde;o muito simples em $\C[x]$ e em $\R[x]$. A situa&ccedil;&atilde;o &eacute; bem mais complicada em $\Q[x]$. Assuma que $f(x)\in\Q[x]$. Ent&atilde;o $f(x)$ pode ser escrito como<br>
@@ -230,7 +230,7 @@ f(x)=\frac{a_n}{b_n} x^n+\cdots +\frac{a_1}{b_1}x+\frac{a_0}{b_0}<br>
 onde $a_i,b_j\in\Z$.<br>
 Multiplicando $f(x)$ por um m&uacute;ltiplo comum dos denominadores, obtemos um polin&ocirc;mio<br>
 \[<br>
-f_1(x)=c_nx^n+\cdots+c_1x+c_1\in\Z[x].<br>
+f_1(x)=c_nx^n+\cdots+c_1x+c_0\in\Z[x].<br>
 \]<br>
 Al&eacute;m disso, como $f_1(x)$ foi obtido como um m&uacute;ltiplo de $f(x)$ por um constante n&atilde;o nulo, temos que $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$ se e somente se $f_1(x)$ &eacute; irredut&iacute;vel em $\Q[x]$. Portanto, quando consideramos a quest&atilde;o da irredutibilidade de um  polin&ocirc;mio $f(x)\in\Q[x]$, podemos assumir sem perder a generalidade que $f(x)\in\Z[x]$.
 <p>Dados $a_1,\ldots,a_k\in\Z$ n&atilde;o simultaneamente zero com $k\geq 2$, ent&atilde;o o MDC dos n&uacute;meros $a_i$ &eacute; definido como o n&uacute;mero $d$ que satisfaz as propriedades que </p>
@@ -245,10 +245,10 @@ Al&eacute;m disso, como $f_1(x)$ foi obtido como um m&uacute;ltiplo de $f(x)$ po
 \]</p>
 <p>O $\mbox{mmc}(a_1,\ldots,a_k)$ pode ser definido de modo an&aacute;logo.</p>
 <div class="definition">
-Seja $f(x)=a_nx^n+\cdots+c_1x+c_0\in\Z[x]\setminus\{0\}$. O <strong>conte&uacute;do</strong> de $f(x)$ &eacute; definido como $\mbox{mdc}(a_n,\ldots,a_1,a_0)$. O polin&ocirc;mio $f(x)$ &eacute; dito <strong>primitivo</strong> se seu conte&uacute;do &eacute; igual a $1$.
+Seja $f(x)=a_nx^n+\cdots+a_1x+a_0\in\Z[x]\setminus\{0\}$. O <strong>conte&uacute;do</strong> de $f(x)$ &eacute; definido como $\mbox{mdc}(a_n,\ldots,a_1,a_0)$. O polin&ocirc;mio $f(x)$ &eacute; dito <strong>primitivo</strong> se seu conte&uacute;do &eacute; igual a $1$.
 </div>
 <div class="example">
-O conte&uacute;do do polin&ocirc;mio $2x^2+4x-2\in\Z[x]$ &eacute; $2$, ent&atilde;o ele n&atilde;o &eacute; primitivo. O polin&ocirc;mio $2x^3-4x^2-1\in\Z[x]$ &eacute; $1$, ent&atilde;o ele &eacute; primitivo.
+O conte&uacute;do do polin&ocirc;mio $2x^2+4x-2\in\Z[x]$ &eacute; $2$, ent&atilde;o ele n&atilde;o &eacute; primitivo. O conte&uacute;do do polin&ocirc;mio $2x^3-4x^2-1\in\Z[x]$ &eacute; $1$, ent&atilde;o ele &eacute; primitivo.
 </div>
 <p>Se $f(x)\in\Z[x]$ e $\alpha\in\Z$ &eacute; seu conte&uacute;do, ent&atilde;o $f(x)=\alpha f_0(x)$ onde $f_0(x)\in\Z[x]$ &eacute; um polin&ocirc;mio primitivo. Por exemplo, $2x^2+4x-2=2(x^2+2x-1)$ onde $x^2+2x-1$ &eacute; primitivo. </p>
 <div class="definition">
@@ -256,7 +256,7 @@ Seja<br>
 \[<br>
 f(x)=a_nx^n+\cdots+a_1x+a_0\in\Z[x]<br>
 \]<br>
-e $p\in\Z$ um primo. Definimos a redu&ccedil;&atilde;o $\overline{f(x)}$ de $f(x)$ m&oacute;dulo $p$ como o polin&ocirc;mio<br>
+e $p\in\N$ um primo. Definimos a redu&ccedil;&atilde;o $\overline{f(x)}$ de $f(x)$ m&oacute;dulo $p$ como o polin&ocirc;mio<br>
 \[<br>
 \overline{f(x)}=\overline{a_n}x^n+\cdots+\overline{a_1}x+\overline{a_0}\in\Z_p[x]<br>
 \]<br>
@@ -274,15 +274,15 @@ Sejam $f(x),g(x)\in\Z[x]$ e $p$ um primo. Mostre para os polin&ocirc;mios reduzi
 \end{align*}
 </div>
 <div class="exercise">
-Seja $f(x)\in\Z[x]$ um polin&ocirc;mio redut&iacute;vel (em $\Z[x]$) e seja $p$ um primo. Assuma que a redu&ccedil;&atilde;o $\overline{f(x)}$ m&oacute;dulo $p$ tem o mesmo grau que $f(x)$. Mostre que $\overline{f(x)}$ &eacute; redut&iacute;vel.
+Seja $f(x)\in\Z[x]$ um polin&ocirc;mio primitivo e redut&iacute;vel (em $\Z[x]$) e seja $p$ um primo. Assuma que a redu&ccedil;&atilde;o $\overline{f(x)}$ m&oacute;dulo $p$ tem o mesmo grau que $f(x)$. Mostre que $\overline{f(x)}$ &eacute; redut&iacute;vel em $\Z_p[x]$.
 </div>
 <div class="lemma">
 Sejam $f(x),g(x)\in\Z[x]$ polin&ocirc;mios primitivos. Ent&atilde;o $f(x)g(x)$ &eacute; primitivo.
 </div>
 <div class="proof">
-Seja $h(x)=f(x)g(x)$ e assuma que $h(x)$ n&atilde;o &eacute; primitivo. Ent&atilde;o existe um primo $p$ tal que $p$ divide todos os coeficientes de $h(x)$. Sejam $\overline{f(x)}$, $\overline{g(x)}$, $\overline{h(x)}$ as redu&ccedil;&otilde;es de $f(x)$, $g(x)$ e $h(x)$. A frase anterior implica que $\overline{h(x)}=0$ e &eacute; segue do exerc&iacute;cio anterior que<br>
+Seja $h(x)=f(x)g(x)$ e assuma que $h(x)$ n&atilde;o &eacute; primitivo. Ent&atilde;o existe um primo $p$ tal que $p$ divide todos os coeficientes de $h(x)$. Sejam $\overline{f(x)}$, $\overline{g(x)}$, $\overline{h(x)}$ as redu&ccedil;&otilde;es de $f(x)$, $g(x)$ e $h(x)$, respetivamente, m&oacute;dulo $p$. A frase anterior implica que $\overline{h(x)}=0$ e &eacute; segue do exerc&iacute;cio anterior que<br>
 \[<br>
-0=\overline{h(x)}=\overline{f(x)}\cdot \overline{g(x)}.<br>
+0=\overline{h(x)}=\overline{f(x)}\cdot \overline{g(x)}\in\Z_p[x].<br>
 \]<br>
 Como $\Z_p[x]$ &eacute; um dom&iacute;nio, temos que $\overline{f(x)}=0$ ou $\overline{g(x)}=0$; ou seja $p$ divide os coeficientes de $f(x)$ ou $p$ divide os coeficientes de $g(x)$. Mas isso implica que $f(x)$ n&atilde;o &eacute; primitivo ou $g(x)$ n&atilde;o &eacute; primitivo que contradiz &agrave;s suposi&ccedil;&otilde;es do lema.
 </div>
@@ -299,9 +299,9 @@ f(x)=g(x)h(x)<br>
 onde $g(x),h(x)\in\Q[x]$ e $1\leq \grau{g(x)},\grau{h(x)}\leq \grau{f(x)}-1$. Precisamos provar que $f(x)$ pode ser fatorado como produto de polin&ocirc;mios em $\Z[x]$. Seja<br>
 \begin{align*}<br>
 g(x)&amp;=\frac{u_n}{v_n}x^n+\cdots+\frac{u_1}{v_1}x+\frac{u_0}{v_0}\\<br>
-h(x)&amp;=\frac{a_m}{b_m}x^m+\cdots+\frac{a_1}{b_1}x+\frac{a_0}{b_0}.<br>
+h(x)&amp;=\frac{a_m}{b_m}x^m+\cdots+\frac{a_1}{b_1}x+\frac{a_0}{b_0}<br>
 \end{align*}<br>
-Ponha $v=\mbox{mmc}(v_n,\ldots,v_0)$ e $b=\mbox{mmc}(b_m,\ldots,b_0)$ e multiplique a equa&ccedil;&atilde;o $f(x)=g(x)h(x)$ com $vb$ para obter que<br>
+onde os $u_i$, $v_i$, $a_i$, $b_i$ s&atilde;o inteiros. Ponha $v=\mbox{mmc}(v_n,\ldots,v_0)$ e $b=\mbox{mmc}(b_m,\ldots,b_0)$ e multiplique a equa&ccedil;&atilde;o $f(x)=g(x)h(x)$ com $vb$ para obter que<br>
 \[<br>
 vbf(x)=(vg(x))(bh(x)).<br>
 \]<br>
@@ -322,7 +322,7 @@ f(x)=g_0(x)h_0(x)<br>
 </div>
 <p>O significado do lema do Gauss &eacute; o seguinte: Se $f(x)\in\Z[x]$ pode ser fatorado como produto de polin&ocirc;mios $g(x),h(x)\in\Q[x]$ com grau maior ou igual que $1$, ent&atilde;o o mesmo pode ser fatorado como produto de polin&ocirc;mios $g_0(x),h_0(x)\in\Z[x]$ onde $\grau{g_0(x)}=\grau{g(x)}$ e $\grau{h_0(x)}=\grau{h(x)}$.</p>
 <div class="example">
-Seja $f(x)=x^4+x^2+x+1\in\Q[x]$ e vamos mostrar que $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$. Pelo Teorema das Ra&iacute;zes Racionais, $f(x)$ n&atilde;o tem ra&iacute;zes em $\Q$. Logo, se $f(x)$ fosse redut&iacute;vel, $f(x)=g(x)h(x)$ onde $g(x),h(x)\in\Q[x]$ ambos de grau $2$. Ora, o Lema de Gauss diz que n&oacute;s podemos assumir sem perder generalidade que $g(x),h(x)\in\Z[x]$. Assim $f(x)$ pode ser fatorado como<br>
+Seja $f(x)=x^4+x^2+x+1\in\Z[x]$ e vamos mostrar que $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$. Pelo Teorema das Ra&iacute;zes Racionais, $f(x)$ n&atilde;o tem ra&iacute;zes em $\Q$. Logo, se $f(x)$ fosse redut&iacute;vel, $f(x)=g(x)h(x)$ onde $g(x),h(x)\in\Q[x]$ ambos de grau $2$. Ora, o Lema de Gauss diz que n&oacute;s podemos assumir sem perder generalidade que $g(x),h(x)\in\Z[x]$. Assim $f(x)$ pode ser fatorado como<br>
 \begin{align*}<br>
 f(x)&amp;=(x^2+ax+b)(x^2+cx+d)\\&amp;=x^4+(a+c)x^3+(d+b+ac)x^2+(ad+bc)x+bd<br>
 \end{align*}<br>

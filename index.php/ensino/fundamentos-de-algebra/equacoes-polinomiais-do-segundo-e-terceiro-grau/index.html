@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Polin&ocirc;mios em $\Q[x]$. Parte II: O Crit&eacute;rio de Eisenstein &ndash; Csaba Schneider</title>
+<title>Equa&ccedil;&otilde;es polinomiais do segundo  grau &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -21,10 +21,10 @@
 
 
 
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/polinomio-em-qx-parte-i-o-criterio-de-eisenstein/">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/equacoes-polinomiais-do-segundo-e-terceiro-grau/">
 
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fpolinomio-em-qx-parte-i-o-criterio-de-eisenstein%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fpolinomio-em-qx-parte-i-o-criterio-de-eisenstein%2F&amp;format=xml">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fequacoes-polinomiais-do-segundo-e-terceiro-grau%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fequacoes-polinomiais-do-segundo-e-terceiro-grau%2F&amp;format=xml">
 		<style type="text/css" id="wp-custom-css">
 			pre {
 	font-family: monospace;
@@ -192,7 +192,7 @@ grau: ["{\\mbox{grau}(#1)}",1]
 </script>
 </head>
 
-<body class="page-template-default page page-id-1659 page-child parent-pageid-1193 no-sidebar">
+<body class="page-template-default page page-id-1673 page-child parent-pageid-1193 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -218,50 +218,53 @@ grau: ["{\\mbox{grau}(#1)}",1]
 
 			
 				
-<article id="post-1659" class="post-1659 page type-page status-publish hentry">
+<article id="post-1673" class="post-1673 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Polin&ocirc;mios em $\Q[x]$. Parte II: O Crit&eacute;rio de Eisenstein</h1>	</header>
+		<h1 class="entry-title">Equa&ccedil;&otilde;es polinomiais do segundo  grau</h1>	</header>
 		<div class="entry-content">
 		<div style="color:#000000">
-<div class="theorem">(O Crit&eacute;rio de <a href="https://pt.wikipedia.org/wiki/Gotthold_Eisenstein">Eisenstein</a>) Seja<br>
+Considere um polin&ocirc;mio<br>
 \[<br>
-f(x)=a_nx^n+\cdots+a_1x+a_0\in\Z[x]<br>
+f(x)=x^2+bx+c\in\F[x]<br>
 \]<br>
-com $a_n\neq 0$ tal que existe um primo $p$ tal que $p\nmid a_n$, $p\mid a_i$ para todo $i\in\{0,\ldots,n-1\}$ e $p^2\nmid a_0$. Ent&atilde;o $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$.
-</div>
-<div class="proof">
-Assuma por procurar uma contradi&ccedil;&atilde;o que $f(x)$ &eacute; redut&iacute;vel em $\Q[x]$. Pelo Lema de Gauss, existem $g(x),h(x)\in\Z[x]$ tal que $f(x)=g(x)h(x)$ tais que $1\leq \grau{g(x)},\grau{h(x)}\leq\grau{f(x)}-1$. Assuma que<br>
-\begin{align*}<br>
-g(x)&amp;=b_rx^r+\cdots +b_1x+b_0\\<br>
-h(x)&amp;=c_sx^s+\cdots +c_1x+c_0<br>
-\end{align*}<br>
-com $b_r,c_s\neq 0$, $r,s\geq 1$ e $r+s=n$. Temos que $a_n=b_rc_s$ e $a_0=b_0c_0$. Como $p\nmid a_n$, temos que $p\nmid b_r$ e $p\nmid c_s$. Similarmente, como $p\mid a_0$ e $p^2\nmid a_0$, segue que $p\mid b_0$ ou $p\mid c_0$ mas $p$ n&atilde;o divide ambos $b_0$ e $c_0$. Assuma sem perder generalidade que $b\mid b_0$ e $p\nmid c_0$. Seja $t$ o menor &iacute;ndice tal que $p\nmid b_t$. Ent&atilde;o $t\leq r &lt; n$. O coeficiente $a_t$ &eacute; obtido como<br>
+onde $\F$ &eacute; corpo arbitr&aacute;rio no qual $1+1\neq 0$. Queremos determinar as ra&iacute;zes de $f(x)$. Note que<br>
 \[<br>
-a_t=b_tc_0+b_{t-1}c_1+\cdots+b_1c_{t-1}+b_0c_t<br>
+x^2+bx+c=(x+b/2)^2-b^2/4+c,<br>
 \]<br>
-(se $\grau{h(x)} &lt; t$, ent&atilde;o tomamos $c_{s+1}=\cdots=c_t=0$).<br>
-Pelas condi&ccedil;&otilde;es do lema, $p\mid a_t$ e isso implica que $p\mid b_tc_0$ mas isso &eacute; imposs&iacute;vel como $p\nmid  b_t$ e $p\nmid c_0$. Logo a fatora&ccedil;&atilde;o $f(x)=g(x)h(x)$ n&atilde;o existe e assim $f(x)$ &eacute; irredut&iacute;vel.
-</div>
+e assim a equa&ccedil;&atilde;o $f(x)=0$ &eacute; equivalente &agrave; equa&ccedil;&atilde;o<br>
+\[<br>
+(x+b/2)^2=b^2/4-c=\frac{b^2-4c}4;<br>
+\]<br>
+ou seja<br>
+\[<br>
+x+b/2=\pm\frac{\sqrt{b^2-4c}}2.<br>
+\]<br>
+Assim as ra&iacute;zes do polin&ocirc;mio s&atilde;o $x_1$ e $x_2$ onde<br>
+\[<br>
+x_1=\frac{-b+\sqrt{b^2-4c}}2\quad\mbox{e}\quad x_2=\frac{-b-\sqrt{b^2-4c}}2.<br>
+\]<br>
+As duas ra&iacute;zes s&atilde;o frequentemente escritas na forma<br>
+\[<br>
+x_{1,2}=\frac{-b\pm\sqrt{b^2-4c}}2.<br>
+\]
+<p>Quando o polin&ocirc;mio $f(x)\in\F[x]$ est&aacute; na forma mais geral $f(x)=ax^2+bx+c$ com $a\neq 0$, as ra&iacute;zes de $f(x)$ s&atilde;o as mesmas que as ra&iacute;zes de<br>
+\[<br>
+x^2+(b/a)x+c/a<br>
+\]<br>
+que s&atilde;o<br>
+\[<br>
+\frac{-b/a\pm\sqrt{(b/a)^2-4c/a}}2=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.<br>
+\]</p>
 <div class="example">
-Seja $f(x)=x^n-p\in\Z[x]$ onde $p$ &eacute; um primo e $n\geq 1$. O crit&eacute;rio de Eisenstein vale para $f(x)$ e assim $f(x)$ &eacute; irredut&iacute;vel. em particular $\Q[x]$ possui polin&ocirc;mios irredut&iacute;veis de grau arbitr&aacute;rio.
-</div>
-<div class="example">
-Seja $p\in\N$ um primo e considere<br>
+Vamos achar todos os n&uacute;meros inteiros $x\in\Z$ para os quais $2x^2+3x-7\equiv 0\pmod{11}$. A congru&ecirc;ncia &eacute; equivalente &agrave; equa&ccedil;&atilde;o quadr&aacute;tica<br>
 \[<br>
-f(x)=x^{p-1}+x^{p-2}+\cdots+x+1\in\Z[x].<br>
+\overline 2x^2+\overline 3x+\overline 4=\overline 0<br>
 \]<br>
-O polin&ocirc;mio $f(x)$ &eacute; chamado polin&ocirc;mio ciclot&oacute;mico de grau $p$. Note que<br>
-\[<br>
-f(x)=\frac{x^p-1}{x-1}.<br>
-\]<br>
-Afirmamos que $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$. O Crit&eacute;rio de Eisenstein n&atilde;o &eacute; diretamente aplic&aacute;vel e n&oacute;s vamos fazer uma substitui&ccedil;&atilde;o de vari&aacute;vel $y=x+1$. Assim<br>
+sobre $\Z_{11}$. As solu&ccedil;&otilde;es nesta equa&ccedil;&atilde;o s&atilde;o<br>
 \begin{align*}<br>
-f(y)&amp;=\frac{y^p-1}{y-1}=\frac{(x+1)^p-1}{(x+1)-1}\\<br>
-&amp;=\frac{x^p+p x^{p-1}+\binom p2x^{p-2}+\cdots+\binom p{p-2}x^2+px+1-1}{x}\\&amp;=<br>
-x^{p-1}+p x^{p-2}+\binom p2x^{p-3}+\cdots+\binom p{p-2}x+p.<br>
+x_{1,2}&amp;=\frac{-\overline 3\pm\sqrt{\overline 3^2-4\cdot \overline 2\cdot \overline 4}}{\overline 4}\\&amp;=\frac{-\overline 3\pm\sqrt{-\overline {23}}}{\overline 4}\\&amp;=\frac{-\overline 3\pm\sqrt{-\overline 1}}{\overline 4}.<br>
 \end{align*}<br>
-O coeficiente binomial $\binom pk$ &eacute; divis&iacute;vel por $p$ para todo $k\in\{1,\ldots,p-1\}$.<br>
-Pelo Crit&eacute;rio de Eisentein, $f(y)$ &eacute; irredut&iacute;vel. Como $x=y-1$, temos que $f(x)=f(y-1)$ &eacute; tamb&eacute;m irredut&iacute;vel.
+Como $11\equiv 3\pmod 4$, $-\overline 1$ n&atilde;o &eacute; quadrado em $\Z_{11}$; ou seja, $\sqrt{-\overline 1}$ n&atilde;o existe em $\Z_{11}$ e a equa&ccedil;&atilde;o n&atilde;o possui solu&ccedil;&otilde;es. Portanto n&atilde;o existe $x\in\Z$ tal que $2x^2+3x-7\equiv 0\pmod{11}$.
 </div>
 </div>
 			</div>
