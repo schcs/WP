@@ -7,10 +7,25 @@
 
 
 <title>Algoritmos b&aacute;sicos &ndash; Csaba Schneider</title>
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$','$'],['\\(','\\)']], 
+    processEscapes: true
+  },
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
+  }
+};
+
+</script>
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -26,7 +41,7 @@
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Falgebra-a%2Falgoritmos-basicos%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Falgebra-a%2Falgoritmos-basicos%2F&amp;format=xml">
 		<style type="text/css" id="wp-custom-css">
-			pre {
+			/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -39,7 +54,7 @@
   white-space: pre-wrap;
 	display: block;
 }
-
+*/
 .definition {
   border: 3px outset green;
 	padding: 5px;
@@ -223,70 +238,113 @@ grau: ["{\\mbox{grau}(#1)}",1]
 	<header class="entry-header">
 		<h1 class="entry-title">Algoritmos b&aacute;sicos</h1>	</header>
 		<div class="entry-content">
-		<p>$\newcommand{\Z}{\mathbb Z}$Ao analisarmos os algoritmos que ocorrem na disciplina, geralmente contamos quantas opera&ccedil;&otilde;es precisamos&nbsp; para executar um algoritmo. Nosso objetivo aqui n&atilde;o &eacute; fazer uma an&aacute;lise detalhada da complexidade dos algoritmos. N&oacute;s queremos apenas decidir se um algoritmo pode ser aplicado na pr&aacute;tica para resolver problemas com n&uacute;meros grandes.</p>
-<p>Consideremos um exemplo f&aacute;cil. N&uacute;meros ser&atilde;o escritos na base 10. Os algarismos de um n&uacute;mero $a$ ser&atilde;o denotados por $a_{n-1},a_{n-2},\ldots,a_1,a_0$. Escrevemos que $a=[a_{n-1}a_{n-2}\cdots a_1a_0]_{10}$. O comprimento do n&uacute;mero $a$ &eacute; o n&uacute;mero $n$ de algarismos. O comprimento de $a$ ser&aacute; denotado por $\mbox{comp}(a)$.</p>
-<p><strong>Exemplo.</strong> Assuma que temos dois n&uacute;meros $a=[a_{m-1}\cdots a_1a_0]_{10}$ e $b=[b_{m-1}\cdots b_1b_0]_{10}$ dados por seus algarismos na base 10. Possivelmente colocando alguns zeros no in&iacute;cio de um destes n&uacute;meros, podemos assumir sem perder generalidade que eles t&ecirc;m o mesmo n&uacute;mero de algarismos. O seguinte algoritmo simples vai calcular as algarismos da soma $c=[c_{m}c_{m-1}\cdots c_1c_0]_{10}$.</p>
-<p><span style="color: #000080;"><strong>Algoritmo:</strong> Adi&ccedil;&atilde;o</span><br>
-<span style="color: #000080;"><strong>Input:</strong> N&uacute;meros naturais $a=[a_{m}\cdots a_1a_0]_{10}$, $b=[b_{m}\cdots b_1b_0]_{10}$ com $a_{m}=b_{m}=0$.</span></p>
-<div style="text-indent: 0px; color: #000080;">$x := 0$</div>
-<div style="text-indent: 0px; color: #000080;">Fa&ccedil;a para todo $i=0,\ldots m$</div>
-<div style="text-indent: 50px; color: #000080;">$c := a_i+b_i+x$</div>
-<div style="text-indent: 50px; color: #000080;">se $c\leq 9$ ent&atilde;o</div>
-<div style="text-indent: 100px; color: #000080;">$c_i:=c$ e $x:=0$</div>
-<div style="text-indent: 50px; color: #000080;">se $c &gt; 9$ ent&atilde;o</div>
-<div style="text-indent: 100px; color: #000080;">$c_i:=c-10$ e $x:=1$</div>
-<div style="text-indent: 0px; color: #000080;">Devolva $[c_mc_{m-1}\cdots c_1c_0]_{10}$</div>
-<div></div>
-<div>Este algoritmo simples tem um la&ccedil;o executado por $m+1$ vezes e cada execu&ccedil;&atilde;o do la&ccedil;o precisa de um n&uacute;mero constante de opera&ccedil;&otilde;es. Este &eacute; um algoritmo cuja complexidade &eacute; polinomial de primeiro grau em termos de $\mbox{comp}(a)+\mbox{comp}(b)$. Algoritmos polinomiais de pequeno grau (menor ou igual a 4) s&atilde;o considerados algoritmos pr&aacute;ticos.</div>
-<div></div>
-<div><strong>Exemplo.</strong> &Eacute; similarmente f&aacute;cil verificar que a diferen&ccedil;a $a-b$ pode ser calculado usando um constante vezes $\mbox{comp}(a)+\mbox{comp}(b)$ opera&ccedil;&otilde;es. O produto $ab$ pode ser calculado usando um constante vezes $\mbox{comp}(a)\cdot \mbox{comp}(b)$ opera&ccedil;&otilde;es.</div>
-<p><strong>Exemplo.&nbsp;</strong>Considere o seguinte algoritmo para determinar se um n&uacute;mero &eacute; primo ou n&atilde;o.</p>
-<p><span style="color: #000080;"><strong>Algoritmo:</strong> Primo</span><br>
-<span style="color: #000080;"><strong>Input:</strong> n&uacute;mero natural $a=[a_{m-1}\cdots a_1a_0]_{10}$</span></p>
-<div style="text-indent: 0px; color: #000080;">Fa&ccedil;a para todo $d=2,\ldots,\lfloor \sqrt a\rfloor$</div>
-<div style="text-indent: 50px; color: #000080;">se $d$ divide $a$ ent&atilde;o devolva Falso</div>
-<div style="text-indent: 0px; color: #000080;">devolva Verdadeiro</div>
-<p>Neste caso o comprimento do input&nbsp; &eacute; $m\sim \log_{10}a$ mas o algoritmo precisa executar o la&ccedil;o cerca de<br>
+		<div style="color: #000000;">
+<p>Ao analisarmos os algoritmos que ocorrem na disciplina, geralmente contamos quantas opera&ccedil;&otilde;es precisamos&nbsp; para executar a computa&ccedil;&atilde;o. Nosso objetivo aqui n&atilde;o &eacute; fazer uma an&aacute;lise detalhada da complexidade dos algoritmos. N&oacute;s queremos apenas decidir se um algoritmo pode ser aplicado na pr&aacute;tica para resolver problemas com n&uacute;meros grandes.Consideremos um exemplo f&aacute;cil. N&uacute;meros ser&atilde;o escritos na base 10. Os algarismos de um n&uacute;mero $a$ ser&atilde;o denotados por $a_{n-1},a_{n-2},\ldots,a_1,a_0$. Escrevemos que $a=[a_{n-1}a_{n-2}\cdots a_1a_0]_{10}$. O comprimento do n&uacute;mero $a$ &eacute; o n&uacute;mero $n$ de algarismos. O comprimento de $a$ ser&aacute; denotado por $\mbox{comp}(a)$.</p>
+<div class="example">Assuma que temos dois n&uacute;meros $a=[a_{m-1}\cdots a_1a_0]_{10}$ e $b=[b_{n-1}\cdots b_1b_0]_{10}$ dados por seus algarismos na base 10. O seguinte algoritmo simples vai calcular as algarismos da soma $c=[c_{m}c_{m-1}\cdots c_1c_0]_{10}$.
+<pre><code class="language-python">
+function adi&ccedil;&atilde;o( list1, list2; base = 10 ) 
+    
+    s = []; c = 0;
+    l1, l2 = length( list1 ), length( list2 )
+    for i in 1:max(l1,l2)
+        d = ( i&lt;=l1 ? list1[i] : 0 ) + ( i&lt;=l2 ? list2[i] : 0 ) + c
+        c = d &gt;= base 
+        push!( s, d % base )
+    end 
+    if c == 1 push!( s, 1 ) end
+    return s
+end 
+</code></pre>
+<p>Este algoritmo simples tem um la&ccedil;o executado por <code>max(l1,l2)</code> vezes e cada execu&ccedil;&atilde;o do la&ccedil;o precisa de um n&uacute;mero constante de opera&ccedil;&otilde;es. Este &eacute; um algoritmo cuja complexidade &eacute; polinomial de primeiro grau em termos de $\mbox{comp}(a)+\mbox{comp}(b)$ onde $a$ e $b$ s&atilde;o os dois n&uacute;meros no input.
+</p></div>
+<div class="example">&Eacute; similarmente f&aacute;cil verificar que a diferen&ccedil;a $a-b$ pode ser calculado usando um constante vezes $\mbox{comp}(a)+\mbox{comp}(b)$ opera&ccedil;&otilde;es.</div>
+<div class="example">
+Considere a seguinte algoritmo para a multiplica&ccedil;&atilde;o de dois n&uacute;meros inteiros.
+<pre><code class="language-python">
+function multiplica&ccedil;&atilde;o( list1, list2; base = 10 )
+    res = []; 
+    l1, l2 = length( list1 ), length( list2 )
+    for i in 1:l1 
+        pr = zeros( Int64, i-1 )
+        c = 0
+        for j in 1:l2
+            p = list1[i]*list2[j]+c
+            push!( pr, p % base )
+            c = p&divide;base
+        end
+        if c != 0 push!( pr, c ) end 
+        res = adi&ccedil;&atilde;o( res, pr )
+    end
+    return res
+end
+</code></pre>
+<p>Aqui tem dois la&ccedil;os e o n&uacute;cleo dos la&ccedil;os precisa de um n&uacute;mero constante de opera&ccedil;&otilde;es. Al&eacute;m disso, no la&ccedil;o exterior fazemos uma chamada para a fun&ccedil;&atilde;o adi&ccedil;&atilde;o. Pode concluir que o n&uacute;mero das opera&ccedil;&otilde;es que precisamos para executar este algoritmo &eacute; constante vezes $\mbox{comp}(a)\cdot\mbox{comp}(b)$ onde $a$ e $b$ s&atilde;o os dois n&uacute;meros no input.</p>
+<p>Vale a pena mencionar que dois n&uacute;meros naturais de comprimento menor ou igual a $n$ podem ser multiplicadas usando o <a href="https://pt.wikipedia.org/wiki/Algoritmo_Sch%C3%B6nhage-Strassen">Algoritmo Sch&ouml;nhage-Strassen</a> que precisa de constante vezes $n\log n\log\log n$ opera&ccedil;&otilde;es.
+</p></div>
+<p>Nos dois casos anteriores, o n&uacute;mero de opera&ccedil;&otilde;es que precisamos para executar o algoritmo foi polinomial no comprimento do input. No primeiro caso, foi polinomial do primeiro grau, e no segundo caso foi polinomial do segundo grau. Algoritmos polinomiais de pequeno grau (menor ou igual a 3 ou 4) s&atilde;o considerados algoritmos pr&aacute;ticos. Quando o input do algoritmo &eacute; um n&uacute;mero natural $n$, ent&atilde;o seu comprimento &eacute; $\log n$. </p>
+<div class="example">
+Considere a seguinte fun&ccedil;&atilde;o para determinar se um n&uacute;mero &eacute; primo ou n&atilde;o.
+<pre><code class="language-python">
+function &eacute;_primo( n )
+    
+    for i in 2:floor(sqrt(n))
+        if n % i == 0 
+            return false
+        end
+    end 
+    
+    return true
+end 
+</code></pre>
+<p>Neste caso o comprimento do input&nbsp; &eacute; $m\sim \log_{10}n$ mas o algoritmo precisa executar o la&ccedil;o cerca de<br>
 \[<br>
-\sqrt a=(10^{\log_{10}a})^{1/2}\sim 10^{m/2}<br>
+\sqrt n=(10^{\log_{10}n})^{1/2}\sim 10^{m/2}<br>
 \]<br>
 vezes para verificar se um n&uacute;mero &eacute; primo. Portanto este algoritmo &eacute; um algoritmo exponencial e n&atilde;o pode ser considerado como um algoritmo pr&aacute;tico. De fato, o algoritmo n&atilde;o vai funcionar com n&uacute;meros de 100-200 algarismos, enquanto n&uacute;meros deste tamanho s&atilde;o comuns em problemas computacionais.</p>
+</div>
 <p>Um dos algoritmos mais importantes na nossa disciplina &eacute; baseado no seguinte teorema.</p>
-<p><strong>Teorema de Divis&atilde;o de Euclides.&nbsp;</strong>Sejam $a,b\in\Z$ e assuma que $b\neq 0$. Ent&atilde;o existem unicamente n&uacute;meros $q,r\in \Z$ tais que<br>
+<div class="theorem">(Teorema de Divis&atilde;o de Euclides)&nbsp;Sejam $a,b\in\Z$ e assuma que $b\neq 0$. Ent&atilde;o existem unicamente n&uacute;meros $q,r\in \Z$ tais que<br>
 \[<br>
 a=qb+r\qquad\mbox{e}\qquad 0\leq r&lt;|b|.<br>
-\]</p>
+\]</div>
 <p>O n&uacute;meros $q$ e $r$ s&atilde;o chamados de <em>quociente</em> e <em>resto</em>.</p>
-<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Assumimos sem perder generalidade que $b&gt;0$. Se $b$ for negativo, fazemos o argumento com $-b$ a trocaremos o sinal do quociente $q$.</p>
+<div class="proof">
+Assumimos sem perder generalidade que $b&gt;0$. Se $b$ for negativo, fazemos o argumento com $-b$ a trocaremos o sinal do quociente $q$.
 <p><strong>Exist&ecirc;ncia.</strong> Seja $q$ o maior n&uacute;mero tal que $qb\leq a$ e seja $r=a-qb$. Temos claramente que $a=qb+r$. Al&eacute;m disso, $r\geq 0$. Se $r\geq b$, ent&atilde;o $r-b\geq 0$ e $r-b=a-(q+1)b\geq 0$ que implica que $(q+1)b\leq a$. Mas isso contradiz &agrave; suposi&ccedil;&atilde;o que $q$ foi escolhido maior poss&iacute;vel. Portanto temos que $0\leq r&lt;b$.</p>
 <p><strong>Unicidade.&nbsp;</strong>Assuma que $a=q_1b+r_1=q_2b+r_2$&nbsp; com $0\leq r_1,r_2&lt;b$. Ent&atilde;o<br>
 \[<br>
 (q_1-q_2)b=r_2-r_1.<br>
 \]<br>
 Temos por um lado que o lado esquerdo da &uacute;ltima equa&ccedil;&atilde;o &eacute; um divisor de $b$. Por outro lado, o lado direito satisfaz $-b&lt;r_2-r_1&lt;b$. O &uacute;nico divisor de $b$ que est&aacute; no intervalo aberto $(-b,b)$ &eacute; o zero, e assim obtemos que o n&uacute;mero representado pela equa&ccedil;&atilde;o em cima precisa ser igual a zero. Isso implica que $r_1=r_2$ e que $(q_1-q_2)b=0$. Como $b\neq 0$, obtemos&nbsp; que $q_1=q_2$. Portanto $q_1=q_2$ e&nbsp; $r_1=r_2$; ou seja, a decomposi&ccedil;&atilde;o de $a$ na forma $qb+r$ &acute;&eacute; &uacute;nica.</p>
+</div>
 <p>O quociente e o resto podem ser calculados com o seguinte algoritmo que deve ser familiar j&aacute; do ensino fundamental.</p>
-<p><span style="color: #000080;"><strong>Algoritmo:</strong> Divis&atilde;o com resto</span><br>
-<span style="color: #000080;"><strong>Input:</strong> n&uacute;meros naturais $a=[a_{k-1}&hellip;a_1a_0]_{10}$ e $b=[b_{l-1}&hellip;b_1b_0]_{10}$ com $a&gt;b$.&nbsp;</span></p>
-<div style="text-indent: 0px; color: #000080;">$d := k-l+1$</div>
-<div style="text-indent: 0px; color: #000080;">$r := a$</div>
-<div style="text-indent: 0px; color: #000080;">Fa&ccedil;a para $i=d-1,\ldots,0$</div>
-<div style="text-indent: 50px; color: #000080;">$q_i= \lfloor r/(10^i\cdot b)\rfloor$</div>
-<div style="text-indent: 50px; color: #000080;">$r=r-10^iq_ib$</div>
-<div style="text-indent: 0px; color: #000080;">devolva $[q_{d-1}&hellip;q_1q_0]_{10}$ e $r$</div>
-<div></div>
-<div>O algoritmo da divis&atilde;o precisa de um constante vezes $\mbox{comp}(q)\cdot&nbsp; \mbox{comp}(a)$ opera&ccedil;&otilde;es. Portanto este algoritmo &eacute; um algoritmo pr&aacute;tico.</div>
+<pre><code class="language-python">
+function div_resto( a, b )
+        
+    d = length( digits( a )) - length( digits( b ))
+    q = []
+    r = a
+    for i in d:-1:0
+        push!( q, floor( r&divide;(10^i*b)))
+        r -= 10^i*q[end]*b
+        i -= 1
+    end
+    return q, r
+end 
+</code></pre>
+<p>O algoritmo usado na fun&ccedil;&atilde;o anterior &eacute; pr&aacute;tico, pois o la&ccedil;o &eacute; executado <code>length(a)-length(b)=length(q)</code> vezes. Al&eacute;m disso, dentro do la&ccedil;o a opera&ccedil;&atilde;o dominante &eacute; computar <code>10^i*q[end]*b</code> que precisa de constante vezes <code>length(b)</code> opera&ccedil;&otilde;es. Portanto, o n&uacute;mero de opera&ccedil;&otilde;es necess&aacute;rio para este algoritmo &eacute; constante vezes <code>length(b)*length(q)</code> (onde <code>q</code> &eacute; o quociente) e assim o algoritmo pode ser considerado pr&aacute;tico.</p>
 			</div>
 	<footer class="entry-footer">
 			</footer>
-</article>
+
 
 				
 			
-		</main>
+		
 	</div>
 
 
-	</div>
+	</article></main></div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -298,9 +356,12 @@ Temos por um lado que o lado esquerdo da &uacute;ltima equa&ccedil;&atilde;o &ea
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</body>
+</div></body>
 </html>
