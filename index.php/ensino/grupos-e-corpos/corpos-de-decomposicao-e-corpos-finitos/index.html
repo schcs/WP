@@ -1,26 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <title>Corpos de decomposi&ccedil;&atilde;o e corpos finitos &ndash; Csaba Schneider</title>
-
-<script>
-MathJax = {
-  tex: {
-    inlineMath: [['$','$'],['\\(','\\)']], 
-    processEscapes: true
-  },
-  options: {
-    ignoreHtmlClass: 'tex2jax_ignore|editor-rich-text'
-  }
-};
-
-</script>
-<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -186,24 +171,30 @@ content: "Conjecture (" attr(text) ") ";
 }
 		</style>
 	
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] },
-TeX: {
-Macros: {
-R: "{\\mathbb R}",
-N: "{\\mathbb N}",
-C: "{\\mathbb C}",
-Z: "{\\mathbb Z}",
-Q: "{\\mathbb Q}",
-F: "{\\mathbb F}", 
-K: "{\\mathbb K}",
-mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
-grau: ["{\\mbox{grau}(#1)}",1]
-}}});
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
 </script>
-	
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+
+
+
 </head>
 
 <body class="page-template-default page page-id-1020 page-child parent-pageid-684 no-sidebar">
@@ -328,7 +319,6 @@ e portanto $\E$ &eacute; um corpo de decomposi&ccedil;&atilde;o de $x^q-x$. Em p
 	</footer>
 </div>
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>

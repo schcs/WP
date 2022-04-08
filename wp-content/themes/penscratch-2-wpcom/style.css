@@ -2,7 +2,7 @@
 Theme Name: Penscratch 2
 Theme URI: https://wordpress.com/themes/penscratch-2/
 Description: A clean, responsive writing theme with support for custom logos, featured images, fancy pull quotes, and more.
-Version: 2.0.3
+Version: 2.0.4
 Author: Automattic
 Author URI: https://wordpress.com/themes/
 License: GNU General Public License v2 or later
@@ -1379,6 +1379,12 @@ object {
 }
 .widget-title a {
 	color: #666;
+}
+
+/* Social links */
+.wp-block-social-links li.wp-social-link {
+	padding-top: 0;
+	border-top: none;
 }
 
 /* Calendar widget */
