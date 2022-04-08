@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -360,8 +361,8 @@ Pelo lema anterior, $a$ &eacute; um n&uacute;mero real, mas a sua expans&atilde;
 <p>Exatamente como a expans&atilde;o dos n&uacute;meros naturais pode ser calculada em qualquer base $d\geq 2$, a expans&atilde;o dos n&uacute;meros racionais tamb&eacute;m pode ser calculada em bases $d$ tal que $d\geq 2$. Os resultados em uma base arbitr&aacute;ria s&atilde;o muito similares aos resultados na base $d=10$ (caso decimal) e estes detalhes s&atilde;o omitidos. No entanto recomendamos que o leitor traduza os resultados acima para uma base $d\neq 10$.</p>
 <h3>Computa&ccedil;&atilde;o com Python</h3>
 <p>Vamos implementar o algoritmo obtido na demonstra&ccedil;&atilde;o do Teorema na linguagem Python. De fato, n&oacute;s implementamos o algoritmo em qualquer base (n&atilde;o apenas na base decimal), pois a diferen&ccedil;a &eacute; muito pequena. Pretendemos escrever uma fun&ccedil;&atilde;o que toma n&uacute;meros naturais $a$, $b$, $d$ tais que $0&lt;a&lt;b$ e $d\geq 2$ e devolve o pr&eacute;-per&iacute;odo e o per&iacute;odo da expans&atilde;o de $a/b$ na base $d$.</p>
-<div class="code">
-<pre>def ExpansaoDecimal( a, b, d ):
+<pre><code class="language-python">
+def ExpansaoDecimal( a, b, d ):
     
     # a &eacute; menor que b
     assert a&lt;b
@@ -382,14 +383,13 @@ Pelo lema anterior, $a$ &eacute; um n&uacute;mero real, mas a sua expans&atilde;
             return digitos[0:ind], digitos[ind:len(digitos)]
             
         restos.append(a)
-</pre>
-</div>
+</code></pre>
 <p>Podemos usar esta fun&ccedil;&atilde;o para verificar a conta no Exemplo.</p>
-<div class="code">
-<pre>ExpansaoDecimal( 1, 54, 10 )
-([0], [1, 8, 5])
+<pre><code class="language-python-repl">
+&gt;&gt;&gt; ExpansaoDecimal( 1, 54, 10 )
+&gt;&gt;&gt; ([0], [1, 8, 5])
+</code>
 </pre>
-</div>
 <p>Obtemos o mesmo resultado, nomeadamente que o pr&eacute;-per&iacute;odo de $1/54$ &eacute; $[0]$ e o per&iacute;odo &eacute; $[185]$.
 </p></div>
 			</div>
@@ -415,6 +415,8 @@ Pelo lema anterior, $a$ &eacute; um n&uacute;mero real, mas a sua expans&atilde;
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>

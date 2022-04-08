@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -372,8 +373,7 @@ Consequentemente<br>
 como foi afirmado.
 </p></div>
 <p>Vamos ver como implementar o procedimento na linguagem Python. Primeiro, precisamos de uma nova vers&atilde;o da fun&ccedil;&atilde;o XMDC que aceita tamb&eacute;m n&uacute;meros negativos.</p>
-<pre>
-<div class="code">
+<pre><code class="language-python">
 # algoritmo extendido de Euclides
 def XMDC(a,b):
 
@@ -397,11 +397,11 @@ def XMDC(a,b):
         a, b = b, a % b
    
     return a, sign_a*prevu, sign_b*prevv
-</div>
+</code>
 </pre>
 <p>Ora, o procedimento apresentado na demonstra&ccedil;&atilde;o do teorema acima pode ser implementado com a seguinte fun&ccedil;&atilde;o.</p>
 <pre>
-<div class="code">
+<code class="language-python">
 # Resolver a equa&ccedil;&atilde;o ax + by = c
 def ResolvaDiofantina( a, b, c ):
     
@@ -419,7 +419,7 @@ def ResolvaDiofantina( a, b, c ):
     sol = lambda k : (x0+k*b//d, y0-k*a//d)
     
     return sol
-</div>
+</code>
 </pre>
 <p>Note que quando a equa&ccedil;&atilde;o possui solu&ccedil;&otilde;es, ela vai possuir infinitas solu&ccedil;&otilde;es, mas a fun&ccedil;&atilde;o claramente n&atilde;o pode devolver uma lista infinita. Portanto, a fun&ccedil;&atilde;o acima devolve uma express&atilde;o lambda (ou fun&ccedil;&atilde;o lambda) que depende de um par&acirc;metro $k$ e para cada $k\in\Z$ devolve uma solu&ccedil;&atilde;o da equa&ccedil;&atilde;o e todas as solu&ccedil;&otilde;es podem ser obtidas assim. Resolvemos por exemplo a equa&ccedil;&atilde;o<br>
 \[<br>
@@ -427,17 +427,17 @@ def ResolvaDiofantina( a, b, c ):
 \]<br>
 usando nossa fun&ccedil;&atilde;o.</p>
 <pre>
-<div class="code">
+<code class="language-python-repl">
 # 13*x + 9*y = 1
 &gt;&gt;&gt; sol = ResolvaDiofantina( 13, 9, 1 )
 &gt;&gt;&gt; sol(-9)
 (-83, 120)
-</div>
+</code>
 </pre>
 <p>A computa&ccedil;&atilde;o acima mostra que $(-83,120)$ &eacute; uma solu&ccedil;&atilde;o particular.</p>
 <p>Podemos tamb&eacute;m gerar as solu&ccedil;&otilde;es da equa&ccedil;&atilde;o para os valores $k\in\{-5,\ldots,5\}$ com o seguinte c&oacute;digo</p>
 <pre>
-<div class="code">
+<code class="language-python-repl">
 &gt;&gt;&gt; lista_sols = [ sol( k ) for k in range(-5, 6 )]
 &gt;&gt;&gt; lista_sols
 [(-47, 68),
@@ -451,7 +451,7 @@ usando nossa fun&ccedil;&atilde;o.</p>
  (25, -36),
  (34, -49),
  (43, -62)]
-</div>
+</code>
 </pre>
 <p>Cada par da lista em cima &eacute; uma solu&ccedil;&atilde;o de equa&ccedil;&atilde;o diofantina $13x + 9y = 1$.</p>
 </div>
@@ -478,6 +478,8 @@ usando nossa fun&ccedil;&atilde;o.</p>
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>

@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -258,8 +259,7 @@ No entanto, se $n$ for grande, determinar o valor de $\pi(n)$ pode ser dif&iacut
 <li>Os n&uacute;meros que n&atilde;o foram eliminados da lista s&atilde;o os primos entre $1$ e $n$.</li>
 </ul>
 <p>Uma implementa&ccedil;&atilde;o simples em Python deste algoritmo &eacute; o seguinte. </p>
-<pre>
-<div class="code">
+<pre><code class="language-python">
 def eratosthenes( n ):
     prims = [ True for i in range(n+1) ]
     prims[0] = False; prims[1] = False
@@ -274,7 +274,7 @@ def eratosthenes( n ):
                 st = st + i
                 
     return prims
-</div>
+</code>
 </pre>
 <p>O Crivo de Erat&oacute;stenes n&atilde;o &eacute; um algoritmo eficiente, pois o passo geral precisa ser executada $\sqrt n$ vezes. Na pr&aacute;tica (por exemplo, na criptografia), n&oacute;s precisamos lidar com n&uacute;meros com $500$ ou mais algarismos. Se por exemplo, $n\approx 10^{500}$, ent&atilde;o $\sqrt n\approx 10^{250}$ e na pr&aacute;tica fica imposs&iacute;vel realizar a computa&ccedil;&atilde;o at&eacute; com um supercomputador.</p>
 <p>Est&aacute; bem conhecido que a fun&ccedil;&atilde;o $\pi(n)$ pode ser aproximada pelas fun&ccedil;&otilde;es<br>
@@ -319,6 +319,8 @@ Geralmente, a aproxima&ccedil;&atilde;o dada por $\sigma(n)$ &eacute; melhor, ma
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>

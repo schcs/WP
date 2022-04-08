@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -239,23 +240,21 @@ grau: ["{\\mbox{grau}(#1)}",1]
 		<div class="entry-content">
 		<div style="color: #000000;">
 Sejam $a,b\in\N_0$ com $b&lt;a$. O resultado provado no final da p&aacute;gina anterior sugere o seguinte processo recursivo para calcular o $\mbox{mdc}(a,b)$:
-<div class="code">
-Passo 1: Se $b=0$, ent&atilde;o $\mdc ab=a$.<br>
-Passo 2: Se $b \neq 0$ ent&atilde;o use o Teorema de Divis&atilde;o de Euclides para escrever $a=qb+r$ com $r\in\{0,\ldots,b-1\}$. <br>
-Passo 3: $\mdc ab=\mdc br$.
-</div>
+<p>
+<strong>Passo 1:</strong> Se $b=0$, ent&atilde;o $\mdc ab=a$.<br>
+<strong>Passo 2:</strong> Se $b \neq 0$ ent&atilde;o use o Teorema de Divis&atilde;o de Euclides para escrever $a=qb+r$ com $r\in\{0,\ldots,b-1\}$. <br>
+<strong>Passo 3:</strong> $\mdc ab=\mdc br$.
+</p>
 <p>O processo funciona, pois no Passo 3., os n&uacute;meros $b$ e $r$ s&atilde;o menores que $a$ e $b$. Logo, mais cedo ou mais tarde, o processo vai chegar at&eacute; uma situa&ccedil;&atilde;o quando $b=0$ e neste caso o valor do $\mdc ab$ ser&aacute; igual a $a$ pelo Passo 1. Veja o exemplo na p&aacute;gina anterior para uma computa&ccedil;&atilde;o detalhada seguindo este processo.</p>
 <p>Este algoritmo pode ser implementado em Python com a seguinte fun&ccedil;&atilde;o recursiva.</p>
-<pre>
-<div class="code">
+<pre><code class="language-python">
 def MDC_recursivo( a, b ):
             
     if b == 0:
         return a
     else:
         return MDC_recursivo( b, a % b ) 
-</div>
-</pre>
+</code></pre>
 <p>Para melhor analisarmos o algoritmo, n&oacute;s escrevemos o processo em uma maneira linear (n&atilde;o recursiva). O processo descrito abaixo &eacute; chamado Algoritmo de Euclides. Sejam $a,b$ como acima.<br>
 \[<br>
 \begin{align*}<br>
@@ -289,15 +288,14 @@ Em outras palavras, a sequ&ecirc;ncia dos restos &eacute; uma sequ&ecirc;ncia de
 Se $a,b\in\Z$ tais que $(a,b)\neq (0,0)$, ent&atilde;o existe $\mdc ab$.
 </div>
 <p>O procedimento acima pode tamb&eacute;m ser implementado em Python com a seguinte fun&ccedil;&atilde;o.</p>
-<pre>
-<div class="code">
+<pre><code class="language-python">
 def MDC(a,b):
 
     while b != 0:
         a, b = b, a % b  
 
     return a
-</div>
+</code>
 </pre>
 <p>Uma outra consequ&ecirc;ncia do Algoritmo de Euclides &eacute; o seguinte resultado extremamente &uacute;til e bem conhecido.</p>
 <div class="theorem">
@@ -341,7 +339,7 @@ e o teorema est&aacute; v&aacute;lido com $u=u_d$ e $v=v_d$.
 \]<br>
 &eacute; geralmente chamado Algoritmo Estendido de Euclides. A seguinte &eacute; uma implementa&ccedil;&atilde;o simples do Algoritmo Estendido em Python.</p>
 <pre>
-<div class="code">
+<code class="language-python">
 def XMDC(a,b):
         
     prevu, u = 1, 0; prevv, v = 0, 1 
@@ -353,7 +351,7 @@ def XMDC(a,b):
         a, b = b, a % b
    
     return a, prevu, prevv
-</div>
+</code>
 </pre>
 </div>
 			</div>
@@ -379,6 +377,8 @@ def XMDC(a,b):
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>

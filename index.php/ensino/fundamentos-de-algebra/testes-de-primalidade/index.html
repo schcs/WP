@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -268,15 +269,15 @@ Mostre para $2\leq b&lt;n$ que se $n$ &eacute; pseudoprimo na base $b$, ent&atil
 </div>
 <p>Com a seguinte fun&ccedil;&atilde;o em Python d&aacute; para verificar se um n&uacute;mero &eacute; pseudoprimo para a base $b$.</p>
 <pre>
-<div class="code">
+<code class="language-python">
 def PseudoPrimo( n, b ):
     return ExpModN( b, n-1, n ) == 1
-</div>
+</code>
 </pre>
 <p>Dado um n&uacute;mero $n\in\N$. Para testar se $n$ &eacute; primo ou composto, podemos testar se $n$ &eacute; pseudopromo para algumas bases $b\in\{2,\ldots,n-1\}$. Se $n$ n&atilde;o for pseudoprimo para uma destas bases, d&aacute; para concluir que $n$ &eacute; composto. Caso contr&aacute;rio, o teste &eacute; inconclusivo.</p>
 <p>Na primeira vers&atilde;o do teste, testamos se $n$ for pseudoprimo para as bases entre $2$ e $2\log n$. O n&uacute;mero $2\log n$ &eacute; arbitr&aacute;rio e pode ser mudado, mas para um teste eficiente, o n&uacute;mero de bases testadas precisa ser proporcional com o n&uacute;mero de algarismos de $n$; ou seja, proporcional com $\log n$.</p>
 <pre>
-<div class="code">
+<code class="language-python">
 def TesteFermat( n ):
     
     d = 2*int(log( n ))+1
@@ -284,11 +285,11 @@ def TesteFermat( n ):
         if not PseudoPrimo( n, b ):
             return "COMPOSTO"
     return "PROVAVELMENTE PRIMO"
-</div>
+</code>
 </pre>
 <p>Vamos testar quais s&atilde;o os n&uacute;meros compostos entre 2 e um milh&atilde;o que n&atilde;o s&atilde;o identificados como compostos usando este teste. </p>
 <pre>
-<div class="code">
+<code class="language-python">
 for n in range( 2, 1000000 ):
     if TesteFermat( n ) == "PROVAVELMENTE PRIMO" and not isprime( n ):
         print( n )
@@ -298,11 +299,11 @@ for n in range( 2, 1000000 ):
 410041
 488881
 512461
-</div>
+</code>
 </pre>
 <p>Em uma outra variante do teste de Fermat, podemos escolher as bases aleatoriamente entre $2$ e $2\log n$.</p>
 <pre>
-<div class="code">
+<code class="language-python">
 def TesteFermatRandom( n ):
     
     d = 2*int(log( n ))+1
@@ -311,18 +312,18 @@ def TesteFermatRandom( n ):
         if not PseudoPrimo( n, b ):
             return "COMPOSTO"
     return "PROVAVELMENTE PRIMO"
-</div>
+</code>
 </pre>
 <p>Vamos identificar agora os n&uacute;meros compostos entre 2 e 1000000 que n&atilde;o s&atilde;o identificados como compostos. Note que como o procedimento &eacute; aleat&oacute;rio, estes n&uacute;meros ser&atilde;o diferentes cada vez que rodarmos a computa&ccedil;&atilde;o.  </p>
 <pre>
-<div class="code">
+<code class="language-python">
 for n in range( 5, 1000000 ):
     if TesteFermatRandom( n ) == "PROVAVELMENTE PRIMO" and not isprime( n ):
         print( n )
 294409
 334153
 488881
-</div>
+</code>
 </pre>
 </div>
 			</div>
@@ -348,6 +349,8 @@ for n in range( 5, 1000000 ):
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>

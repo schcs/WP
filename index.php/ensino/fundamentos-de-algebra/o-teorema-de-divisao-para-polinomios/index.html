@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -305,7 +306,7 @@ O polin&ocirc;mio $q(x)$ no teorema anterior chama-se o <strong>quociente</stron
 </div>
 <p>A biblioteca <a href="https://www.sympy.org/">SymPy</a> da linguagem Python pode ser usada para fazer computa&ccedil;&otilde;es com polin&ocirc;mios. Vamos por exemplo refazer o exemplo no in&iacute;cio desta p&aacute;gina em Python.</p>
 <pre>
-<div class="code">
+<code class="language-python">
 &gt;&gt;&gt; from sympy import poly, QQ
 &gt;&gt;&gt; from sympy.abc import x
 &gt;&gt;&gt; f = poly( x**3-2*x**2+x-1, domain = QQ )
@@ -316,7 +317,7 @@ Poly(x&minus;2,x,domain=&#8474;)
 Poly(2x&minus;3,x,domain=&#8474;)
 &gt;&gt;&gt; g*(f//g)+f%g  == f
 True
-</div>
+</code>
 </pre>
 </div>
 			</div>
@@ -342,6 +343,8 @@ True
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>

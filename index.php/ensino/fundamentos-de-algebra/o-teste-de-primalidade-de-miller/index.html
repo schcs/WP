@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -277,7 +278,7 @@ b^{2^iq}\equiv -1\pmod n\quad\mbox{para algum} \quad i=0,\ldots,k-1.<br>
 <p>O Teorema de Miller acima implica que um n&uacute;mero primo $p$ &eacute; pseudoprimo forte para todas as bases $b\in\{2,\ldots,p-1\}$.</p>
 <p>A seguinte fun&ccedil;&atilde;o de Python verifica se um n&uacute;mero &eacute; pseudoprimo forte para uma base $b$.</p>
 <pre>
-<div class="code">
+<code class="language-python">
 def PseudoPrimoForte( n, b ):
     
     # primeiro escrevemos n - 1 = 2^k*q
@@ -301,11 +302,11 @@ def PseudoPrimoForte( n, b ):
     
     # caso contr&aacute;rio devolva false
     return False      
-</div>
+</code>
 </pre>
 <p>Na primeira vers&atilde;o do Teste de Miller, checamos se um n&uacute;mero $n$ &eacute; pseudoprimo forte para as bases entre $2$ e $2(\log n)^2$. </p>
 <pre>
-<div class="code">
+<code class="language-python">
 def TesteMiller( n ):
         
     k = min(n-1,int(2*log( n )**2))
@@ -314,7 +315,7 @@ def TesteMiller( n ):
             return "COMPOSTO"
         
     return "PRIMO (HGR)"
-</div>
+</code>
 </pre>
 <p>&Eacute; interessante notar que se a <a href="https://pt.wikipedia.org/wiki/Hip%C3%B3tese_generalizada_de_Riemann">Hip&oacute;tese Generalizada de Riemann</a> (HGR) for verdadeira, o Teste de Miller pode ser usado para obter um teste de primalidade que precisa de tempo polinomial.</p>
 <div class="conjecture">
@@ -328,7 +329,7 @@ Suponha que $n$ &eacute; um n&uacute;mero composto &iacute;mpar. Ent&atilde;o ex
 Seja $n$ um n&uacute;mero composto &iacute;mpar. Ent&atilde;o a propor&ccedil;&atilde;o das bases $b\in\{2,\ldots,n-2\}$ para os quais $n$ &eacute; pseudoprimo forte &eacute; no m&aacute;ximo $1/4$.
 </div>
 <pre>
-<div class="code">
+<code class="language-python">
 def TesteMillerRabin( n, k ):
         
     for i in range( k ):
@@ -337,7 +338,7 @@ def TesteMillerRabin( n, k ):
             return "COMPOSTO"
         
     return "PROVAVELMENTE PRIMO"
-</div>
+</code>
 </pre>
 </div>
 			</div>
@@ -363,6 +364,8 @@ def TesteMillerRabin( n, k ):
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>

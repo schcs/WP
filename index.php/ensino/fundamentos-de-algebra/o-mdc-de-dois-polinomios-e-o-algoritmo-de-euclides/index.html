@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -287,7 +288,7 @@ Segue do lema anterior.
 <p>O resultado anterior implica que o mdc de dois polin&ocirc;mios pode ser calculado similarmente ao mdc de dois n&uacute;meros inteiros usando o algoritmo de Euclides. O algoritmo funciona na mesma maneira como funcionou para n&uacute;meros inteiros. Repetimos a divis&atilde;o de Euclides at&eacute; o resto fica igual a zero. O processo termina depois de um n&uacute;mero finito de passos, pois a grau do resto se diminui em cada passo executado. Se $r(x)$ &eacute; o &uacute;ltimo resto n&atilde;o nulo, ent&atilde;o $\alpha^{-1}r(x)$ &eacute; o mdc de $f(x)$ e $g(x)$ onde $\alpha$ &eacute; o coeficiente l&iacute;der de $r(x)$. A multiplica&ccedil;&atilde;o por $\alpha^{-1}$ &eacute; necess&aacute;rio, pois o mdc &eacute; um polin&ocirc;mio m&ocirc;nico.</p>
 <p>O c&oacute;digo do procedimento em Python &eacute; o seguinte.</p>
 <pre>
-<div class="code">
+<code class="language-python">
 from sympy.polys.polytools import LC
 def MDC(a,b):
 
@@ -295,7 +296,7 @@ def MDC(a,b):
         a, b = b, a % b  
 
     return a//LC(a)
-</div>
+</code>
 </pre>
 <div class="corollary">
 Se $f(x),g(x)\in\F[x]$ n&atilde;o simultaneamente nulos, ent&atilde;o existe $\mdc{f(x)}{g(x)}$. Al&eacute;m disso, existem polin&ocirc;mios $u(x),v(x)\in \F[x]$ tais que<br>
@@ -308,7 +309,7 @@ Ambas afirma&ccedil;&otilde;es seguem do algoritmo de Euclides.
 </div>
 <p>O Algoritmo Extendido de Euclides que devolve o mdc e os dois polin&ocirc;mios $u(x)$ e $v(x)$ no resultado anterior funciona na mesma forma</p>
 <pre>
-<div class="code">
+<code class="language-python">
 from sympy.polys.polytools import LC
 def XMDC(a,b):
         
@@ -322,7 +323,7 @@ def XMDC(a,b):
    
     c = LC(a)
     return a//c, prevu//c, prevv//c
-</div>
+</code>
 </pre>
 <div class="definition">
 Dois polin&ocirc;mios $f(x),g(x)\in\F[x]$ s&atilde;o <strong>primos entre si</strong> ou <strong>coprimos</strong> se $\mdc{f(x)}{g(x)}=1$.
@@ -389,6 +390,8 @@ e que<br>
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>

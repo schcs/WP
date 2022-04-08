@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -267,7 +268,7 @@ Logo<br>
 <p>O algoritmo que obtemos assim &eacute; chamado Algoritmo de Exponencia&ccedil;&atilde;o (Potencia&ccedil;&atilde;o) R&aacute;pida, ou Algoritmo de Exponencia&ccedil;&atilde;o (Potencia&ccedil;&atilde;o) Modular. </p>
 <p>A seguinte fun&ccedil;&atilde;o em Python implementa o Algoritmo de Exponencia&ccedil;&atilde;o R&aacute;pida.</p>
 <pre>
-<div class="code">
+<code class="language-python">
 def ExpModN( a, k, n ):
     A = a; P = 1; K = k;
     
@@ -282,7 +283,7 @@ def ExpModN( a, k, n ):
             K = K//2
         A = A*A % n
     return P
-</div>
+</code>
 </pre>
 </div>
 			</div>
@@ -308,6 +309,8 @@ def ExpModN( a, k, n ):
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>

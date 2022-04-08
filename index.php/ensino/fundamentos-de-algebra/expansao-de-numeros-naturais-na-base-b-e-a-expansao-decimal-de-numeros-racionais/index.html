@@ -25,6 +25,7 @@ MathJax = {
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -325,8 +326,7 @@ que diz que $1=[1]_5$. </p>
 <li>Se $a\leq b-1$, ent&atilde;o $a$ tem &uacute;nico algarismo e assim $a=[a]_b$;</li>
 <li>Caso contr&aacute;rio, escreva $a=qp+a_0$ onde $a_0\in\{0,\ldots,b-1\}$. O &uacute;ltimo algarismo de $a$ ser&aacute; $a_0$ e os demais algarismos ser&atilde;o os algarismos de $q$ que poderemos determinar, pois $q&lt;a$.</li>
 </ol>
-<div class="code">
-<pre>
+<pre><code class="language-python">
 def NumeroEmBaseRecursivo( a, b ):
     
     # a e b precisam ser positivos
@@ -344,11 +344,9 @@ def NumeroEmBaseRecursivo( a, b ):
         digitos.append( r )
     
     return digitos
-</pre>
-</div>
+</code></pre>
 <p>A fun&ccedil;&atilde;o acima &eacute; muito elegante, mas na pr&aacute;tica fun&ccedil;&atilde;o recursiva deve ser evitada quando pode ser substitu&iacute;da por uma fun&ccedil;&atilde;o n&atilde;o recursiva. A seguinte fun&ccedil;&atilde;o faz a mesma computa&ccedil;&atilde;o evitando recurs&atilde;o.</p>
-<div class="code">
-<pre>
+<pre><code class="language-python">
 def NumeroEmBase( a, b ):
     
     # a e b precisam ser positivos
@@ -362,21 +360,19 @@ def NumeroEmBase( a, b ):
         a = a//b
     
     return digitos
-</pre>
-</div>
-</div>
+</code></pre>
 			</div>
 	<footer class="entry-footer">
 			</footer>
-</article>
+
 
 				
 			
-		</main>
+		
 	</div>
 
 
-	</div>
+	</article></main></div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -388,10 +384,12 @@ def NumeroEmBase( a, b ):
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js?ver=4.9.17"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</body>
+</div></body>
 </html>
