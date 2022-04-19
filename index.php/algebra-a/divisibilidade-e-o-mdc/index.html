@@ -228,34 +228,47 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">Divisibilidade e o MDC</h1>	</header>
 		<div class="entry-content">
-		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\mdc}[2]{\mbox{mdc}(#1,#2)}$Sejam $a,b\in \Z$. Dizemos que <em>$b$ divide $a$</em> ou que <em>$a$ &eacute; um m&uacute;ltiplo de $b$</em> se existe $q\in\Z$, tal que $bq=a$. Usamos a nota&ccedil;&atilde;o $b|a$ para indicar que $b$ divide $a$.</p>
-<p><strong>Exemplos.&nbsp;</strong></p>
+		<div style="color:#000000">
+<div class="definition">
+Sejam $a,b\in \Z$. Dizemos que <em>$b$ divide $a$</em> ou que <em>$a$ &eacute; um m&uacute;ltiplo de $b$</em> se existe $q\in\Z$, tal que $bq=a$. Usamos a nota&ccedil;&atilde;o $b|a$ para indicar que $b$ divide $a$.
+</div>
+<div class="exemplo">
 <ol>
 <li>$\pm a|a$ e $\pm 1|a$&nbsp;para todo inteiro $a$.</li>
 <li>$a|0$ para todo inteiro $a$, mas se $0|a$ ent&atilde;o $a=0$. Em particular $0|0$.</li>
 </ol>
-<p><strong>Lema.</strong> As seguintes propriedades s&atilde;o v&aacute;lidas.</p>
+</div>
+<div class="lemma"> As seguintes propriedades s&atilde;o v&aacute;lidas.
 <ol>
 <li>Se $a|b$ e $b|a$ ent&atilde;o $b=\pm a$.</li>
 <li>Se $a|b$ e $b|c$ ent&atilde;o $a|c$.</li>
 <li>Se $a|b$ e $a|c$ ent&atilde;o $a|(b\pm c)$.</li>
 <li>Se $a|b$ e $c$ &eacute; um inteiro ent&atilde;o $a|bc$.</li>
 </ol>
-<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Exerc&iacute;cio.</p>
-<p>Sejam $a$ e $b$ n&uacute;meros inteiros n&atilde;o simultaneamente iguais a zero. Definimos o <em>maior divisor comum de $a$ e $b$&nbsp;</em>como sendo o inteiro $d$ que satisfaz as seguintes propriedades:</p>
+</div>
+<div class="proof">Exerc&iacute;cio.
+</div>
+<div class="definition">
+Sejam $a$ e $b$ n&uacute;meros inteiros n&atilde;o simultaneamente iguais a zero. Definimos o <em>maior divisor comum de $a$ e $b$&nbsp;</em>como sendo o inteiro $d$ que satisfaz as seguintes propriedades:
 <ol>
 <li>$d\geq 0$;</li>
 <li>$d|a$ e $d|b$;</li>
 <li>se $c$ &eacute; um inteiro tal que $c|a$ e $c|b$ ent&atilde;o $c|d$.</li>
 </ol>
+</div>
 <p>N&atilde;o &eacute; imediatamente claro da defini&ccedil;&atilde;o que o maior divisor comum existe. No entanto, segue da defini&ccedil;&atilde;o que se ele existir, ent&atilde;o ele deve ser &uacute;nico. Isso porque se $d_1$ e $d_2$ s&atilde;o mdcs de $a$ e $b$, ent&atilde;o a defini&ccedil;&atilde;o implica que $d_1|d_2$ e $d_2|d_1$. Ora temos pelo lema anterior que $d_1=\pm d_2$, mas como $d_1$ e $d_2$ s&atilde;o n&atilde;o negativos, isso &eacute; poss&iacute;vel apenas quando $d_1=d_2$.</p>
 <p>O maior divisor comum de $a$ e $b$ ser&aacute; denotado por $\mdc ab$.</p>
 <p>&Eacute; claro que $\mdc ab=\mdc ba$ e que $\mdc ab=\mdc{\pm a}{\pm b}$. A defini&ccedil;&atilde;o tamb&eacute;m implica que $\mdc a0=|a|$ para todo $a\neq 0$.</p>
-<p>Se $a$ e $b$ s&atilde;o inteiros tais que $\mdc ab=1$, ent&atilde;o dizemos que $a$ e $b$ s&atilde;o <em>primos entre si</em> ou que eles s&atilde;o <em>coprimos</em>.</p>
-<p><strong>Lema.&nbsp;</strong>Sejam $a,b\in\Z$ com $b\neq 0$ e escreve $a=qb+r$ com $0\leq r&lt;|b|$ como no Teorema de Divis&atilde;o de Euclides. Ent&atilde;o $\mdc ab=\mdc br$ (assumindo que existem estes mdcs).</p>
-<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Seja $d=\mdc ab$. Afirmamos que $\mdc br=d$. Primeiro, $d\geq 0$ pela defini&ccedil;&atilde;o de mdc (propriedade 1. do mdc). Como $d=\mdc ab$, temos que $d|a$ e $d|b$. Pelo lema anterior, isto implica que $d|(a-qb)=r$. Logo $d|b$ e $d|r$ (propriedade 2. do mdc).</p>
-<p>Assuma que $c|b$ e $c|r$. Ent&atilde;o, $c|(bq+r)=a$, ent&atilde;o $c|a$ e $c|b$. Pela defini&ccedil;&atilde;o de mdc, temos que $c|d$ (propriedade 3. do mdc). Portanto $d=\mdc br$.</p>
-<p><strong>Exemplo.&nbsp;</strong>O lema anterior pode ser usado para determinar o mdc de dois n&uacute;meros naturais do modo seguinte. Sejam,. por exemplo, $a=115$ e $b=25$. Escreva<br>
+<div class="definition">
+Se $a$ e $b$ s&atilde;o inteiros tais que $\mdc ab=1$, ent&atilde;o dizemos que $a$ e $b$ s&atilde;o <em>primos entre si</em> ou que eles s&atilde;o <em>coprimos</em>.
+</div>
+<div class="lemma">Sejam $a,b\in\Z$ com $b\neq 0$ e escreve $a=qb+r$ com $0\leq r&lt;|b|$ como no Teorema de Divis&atilde;o de Euclides. Ent&atilde;o $\mdc ab=\mdc br$ (assumindo que existem estes mdcs).
+</div>
+<div class="proof">&nbsp;Seja $d=\mdc ab$. Afirmamos que $\mdc br=d$. Primeiro, $d\geq 0$ pela defini&ccedil;&atilde;o de mdc (propriedade 1. do mdc). Como $d=\mdc ab$, temos que $d|a$ e $d|b$. Pelo lema anterior, isto implica que $d|(a-qb)=r$. Logo $d|b$ e $d|r$ (propriedade 2. do mdc).
+<p>Assuma que $c|b$ e $c|r$. Ent&atilde;o, $c|(bq+r)=a$, ent&atilde;o $c|a$ e $c|b$. Pela defini&ccedil;&atilde;o de mdc, temos que $c|d$ (propriedade 3. do mdc). Portanto $d=\mdc br$.
+</p></div>
+<div class="example">
+O lema anterior pode ser usado para determinar o mdc de dois n&uacute;meros naturais do modo seguinte. Sejam,. por exemplo, $a=115$ e $b=25$. Escreva<br>
 \[<br>
 115=4\cdot 25+10<br>
 \]<br>
@@ -272,7 +285,9 @@ que implica que $\mdc{10}5=\mdc 50=5$. Logo<br>
 \[<br>
 \mdc {115}{25}=\mdc{25}{10}=\mdc{10}{5}=\mdc 50=5.<br>
 \]<br>
-Esta conta segue essencialmente o Algoritmo de Eucl&iacute;des que ser&aacute; o conte&uacute;do da semana seguinte.</p>
+Esta conta segue essencialmente o Algoritmo de Eucl&iacute;des que ser&aacute; o conte&uacute;do da semana seguinte.
+</div>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>
