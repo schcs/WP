@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>O maior divisor comum &ndash; Csaba Schneider</title>
+<title>Exerc&iacute;cios 8 &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -20,10 +20,10 @@
 
 
 
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-maior-divisor-comum/">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-a/exercicios-8/">
 
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-maior-divisor-comum%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-maior-divisor-comum%2F&amp;format=xml">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Fexercicios-8%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Fexercicios-8%2F&amp;format=xml">
 		<style type="text/css" id="wp-custom-css">
 			/*pre {
 	font-family: monospace;
@@ -197,7 +197,7 @@ MathJax = {
 
 </head>
 
-<body class="page-template-default page page-id-1322 page-child parent-pageid-1193 no-sidebar">
+<body class="page-template-default page page-id-954 page-child parent-pageid-706 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -224,79 +224,16 @@ MathJax = {
 
 			
 				
-<article id="post-1322" class="post-1322 page type-page status-publish hentry">
+<article id="post-954" class="post-954 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">O maior divisor comum</h1>	</header>
+		<h1 class="entry-title">Exerc&iacute;cios 8</h1>	</header>
 		<div class="entry-content">
-		<div style="color: #000000;">
-<div class="definition">
-Sejam $a$ e $b$ n&uacute;meros inteiros n&atilde;o simultaneamente iguais a zero. Definimos o <em>maior divisor comum de $a$ e $b$</em> como sendo o inteiro $d$ que satisfaz as seguintes propriedades:
-<ol>
-<li>$d\geq 0$;</li>
-<li>$d|a$ e $d|b$;</li>
-<li>se $c$ &eacute; um inteiro tal que $c|a$ e $c|b$ ent&atilde;o $c|d$.</li>
-</ol>
-</div>
-<p>N&atilde;o &eacute; imediatamente claro da defini&ccedil;&atilde;o que o maior divisor comum existe (isso ser&aacute; verificado depois). No entanto, o seguinte lema &eacute; v&aacute;lido</p>
-<div class="lemma">Se o maior divisor comum de dois n&uacute;meros $a,b\in\Z$ existir, ent&atilde;o ele &eacute;  &uacute;nico.
-</div>
-<div class="proof">
-Se $d_1$ e $d_2$ s&atilde;o ambos maiores divisores comuns de $a$ e $b$, ent&atilde;o a defini&ccedil;&atilde;o implica que $d_1|d_2$ e $d_2|d_1$. Ora temos por um lema anterior que $d_1=\pm d_2$, mas como $d_1$ e $d_2$ s&atilde;o n&atilde;o negativos, isso &eacute; poss&iacute;vel apenas quando $d_1=d_2$.
-</div>
-<p>O maior divisor comum de $a$ e $b$ (quando existir) ser&aacute; denotado por $\mdc ab$.</p>
-<div class="lemma">
-As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras para $a,b\in\Z$. 
-<ul>
-<li>Se existe $\mdc ab$, ent&atilde;o existe $\mdc ba$ e os dois s&atilde;o iguais.</li>
-<li>Se existe $\mdc ab$, ent&atilde;o existe $\mdc{\pm a}{\pm b}$ e todos s&atilde;o iguais.</li>
-<li>Para todo $a\neq 0$, existe $\mdc a0$ e $\mdc a0=|a|$.</li>
-<li>Para todo $a\neq 0$, existe $\mdc aa$ e $\mdc aa=|a|$.</li>
-</ul>
-</div>
-<div class="proof">Exerc&iacute;cio.
-</div>
-<p>O $\mdc 00$ n&atilde;o t&aacute; definido.</p>
-<p>Se $a$ e $b$ s&atilde;o inteiros tais que $\mdc ab=1$, ent&atilde;o dizemos que $a$ e $b$ s&atilde;o <em>primos entre si</em> ou que eles s&atilde;o <em>coprimos</em>.</p>
-<div class="lemma">Sejam $a,b,q$ n&uacute;meros inteiros. Ent&atilde;o existe $\mdc ab$ se e somente se existe $\mdc b{a+qb}$. Quando os dois MDCs existirem, ent&atilde;o<br>
-\[<br>
-\mdc ab=\mdc b{a+qb}.<br>
-\]
-</div>
-<div class="proof">
-Assuma primeiro que existe $d=\mdc ab$. Vamos provar que $\mdc b{a+qb}=d$ verificando as propriedades 1.-3. na defini&ccedil;&atilde;o do MDC. 
-<p>1. Como $d=\mdc ab$, ele &eacute; n&atilde;o negativo, ent&atilde;o propriedade 1. est&aacute; OK para $d$. </p>
-<p>2. Como $d\mid a$ e $d\mid b$, temos que $d\mid b$ e $d\mid a+qb$. Ou seja, propriedade 2. est&aacute; v&aacute;lida para $d$. </p>
-<p>3. Assuma que $c\mid b$ e $c\mid a+qb$. Ent&atilde;o $c\mid a+qb-qb=a$ e assim $c\mid a$. Como $d=\mdc ab$, obtemos que $c\mid d$ e a propriedade 3. tamb&eacute;m est&aacute; certa para $d$.</p>
-<p>Assim podemos concluir que $d=\mdc b{a+qb}$. A outra dire&ccedil;&atilde;o quando a suposi&ccedil;&atilde;o &eacute; que existe $\mdc b{a+qb}$ &eacute; an&aacute;loga.
-</p></div>
-<div class="corollary">Sejam $a,b\in\Z$ com $b\neq 0$ e escreve $a=qb+r$ com $0\leq r&lt;|b|$ como no Teorema de Divis&atilde;o de Euclides. Ent&atilde;o existe $\mdc ab$ se e somente se existe $\mdc br$. Quando os dois MDCs existirem, eles s&atilde;o iguais.</div>
-<div class="proof">
-Segue do lema anterior.
-</div>
-<div class="example">O lema anterior pode ser usado para determinar o MDC de dois n&uacute;meros naturais do modo seguinte. Sejam, por exemplo, $a=115$ e $b=25$. Escreva<br>
-\[<br>
-115=4\cdot 25+15<br>
-\]<br>
-Logo $\mdc {115}{25}$ e $\mdc{25}{10}$ existem (ou n&atilde;o) simultaneamente e, se existirem, s&atilde;o iguais. Depois escreva<br>
-\[<br>
-25=1\cdot 15+10.<br>
-\]<br>
-Conclu&iacute;mos que $\mdc{25}{10}$ e $\mdc{10}{5}$ existem (ou n&atilde;o) simultaneamente e, se existirem, s&atilde;o iguais.<br>
-Depois<br>
-\[<br>
-15=1\cdot 10+5<br>
-\]<br>
-e<br>
-\[<br>
-10=2\cdot 5+0<br>
-\]<br>
-que implica que $\mdc{10}5$ e $\mdc 50$ existem (ou n&atilde;o) simultaneamente e, se existirem, s&atilde;o iguais. Mas agora sabe-se que $\mdc 50$ existe e $\mdc 50=5$. Logo<br>
-\begin{align*}<br>
-\mdc {115}{25}&amp;=\mdc{25}{15}=\mdc{15}{10}=\mdc{10}{5}\\&amp;=\mdc 50=5.<br>
-\end{align*}<br>
-Esta conta segue essencialmente o Algoritmo de Euclides que ser&aacute; o conte&uacute;do da mat&eacute;ria seguinte.
-</div>
-</div>
+		<p>1. O Teorema de <a href="https://en.wikipedia.org/wiki/John_Wilson_(mathematician)">Wilson</a> afirma que um n&uacute;mero natural $n\geq 2$ &eacute; primo se e somente se $(n-1)!\equiv -1\pmod n$. Demonstre Wilson&rsquo;s Theorem.</p>
+<p>2. Mostre, usando o Teorema de Fermat, que $2^{70}+3^{70}$ &eacute; divis&iacute;vel por 13.</p>
+<p>3. Mostre que a equa&ccedil;&atilde;o $x^{13}+12x+13y^6=1$ n&atilde;o admite solu&ccedil;&otilde;es inteiras. [Dica: reduze m&oacute;dulo 13 e use o Pequeno Teorema de Fermat.]</p>
+<p>4. Teorema de Euler: Se $n\geq 2$ &eacute; um n&uacute;mero natural e $k\in\mathbb Z$ tais que $\mbox{mdc}(n,k)=1$,&nbsp; ent&atilde;o $k^{\varphi(n)}\equiv 1\pmod n$. Demonstre o Teorema de Euler. [Dica: Assuma que $U(n)=\{a_1,\ldots,a_{\varphi(n)}\}$. Mostre para $a\in U(n)$ que $\{aa_1,\ldots,aa_{\varphi(n)}\}= U(n)$ e conclua que $\prod_{i} a_i=\prod_i aa_i$.]</p>
+<p>5. Seja $a$ um n&uacute;mero inteiro escrito na base $10$. Mostre que o &uacute;ltimo algarismo de $n$ &eacute; igual ao &uacute;ltimo algarismo de $n^5$.</p>
+<p>6. Seja $p=4k+3$ um primo e considere a equa&ccedil;&atilde;o $\overline x^2= \overline a$ sobre $\mathbb Z_p$. Mostre que se a equa&ccedil;&atilde;o possui solu&ccedil;&atilde;o, ent&atilde;o $a^{k+1}$ e $-a^{k+1}$ ser&atilde;o solu&ccedil;&otilde;es.</p>
 			</div>
 	<footer class="entry-footer">
 			</footer>
