@@ -351,32 +351,32 @@ function XMDC(a,b)
 end
 </code>
 </pre>
-<p>Para verificarmos que o algoritmos de Euclides &eacute; um algoritmo pr&aacute;tico, precisamos dar uma estimativa para o n&uacute;mero dos passos do que ele precisa; ou seja, precisamos limitar o n&uacute;mero $m$.</p>
+<p>Para verificarmos que o algoritmos de Euclides &eacute; um algoritmo pr&aacute;tico, precisamos dar uma estimativa para o n&uacute;mero dos passos do que ele precisa; ou seja, precisamos limitar o n&uacute;mero $d$.</p>
 <p>A sequ&ecirc;ncia de Fibonacci &eacute; definida com a seguinte regra. Tomemos $F_0=F_1=1$, e para $i\geq 2$, definimos $F_i=F_{i-1}+F_{i-2}$. Os termos da sequ&ecirc;ncia s&atilde;o $1,1,2,3,5,8,13,21,34,\ldots$</p>
 <p>Denote $\varphi$ o n&uacute;mero $(1+\sqrt 5)/2$ (<a href="https://pt.wikipedia.org/wiki/Propor%C3%A7%C3%A3o_%C3%A1urea">n&uacute;mero &aacute;ureo</a>).</p>
 <div class="exercise">&nbsp;<br>
 Mostre, para $i\geq 1$, que $\varphi^{i-1}\leq F_i\leq\varphi^i$.
 </div>
 <div class="theorem">
-Seja $m$ o n&uacute;mero de passos que precisamos para executar o Algoritmo de Euclides para os n&uacute;meros $a$ e $b$ como acima. Ent&atilde;o $m\leq \log b/\log \varphi+1$.
+Seja $d$ o n&uacute;mero de passos que precisamos para executar o Algoritmo de Euclides para os n&uacute;meros $a$ e $b$ como acima. Ent&atilde;o $d\leq \log b/\log \varphi$.
 </div>
 <div class="proof">&nbsp;<br>
-Ponha $r_0=a$, $r_1=b$, e seja $r_2,\ldots,r_{m}$ a sequ&ecirc;ncia dos restos na computa&ccedil;&atilde;o acima. Defina $u_1=r_m$, $u_2=r_{m-1}$, $u_3=r_{m-2},\ldots,u_{m-1}=r_{2}$, $u_{m}=r_1=b$, $u_{m+1}=r_0=a$.
+Ponha $r_{-1}=a$, $r_0=b$, e seja $r_1,\ldots,r_{d}$ a sequ&ecirc;ncia dos restos na computa&ccedil;&atilde;o acima. Defina $u_1=r_d$, $u_2=r_{d-1}$, $u_3=r_{d-2},\ldots,u_{d-1}=r_{2}$, $u_{d}=r_1$, $u_{d+1}=r_0=b$, $u_{d+2}=r_{-1}=a$.
 <p><em>Afirma&ccedil;&atilde;o.</em>&nbsp;$u_i\geq F_i$. Provamos a afirma&ccedil;&atilde;o por indu&ccedil;&atilde;o em $i$. De fato, temos que $u_1\geq F_1=1$ e $u_2\geq F_2=2$. Se $i\geq 3$, ent&atilde;o considere a equa&ccedil;&atilde;o<br>
 \begin{eqnarray*}<br>
-u_i&amp;=&amp;r_{m-i+1}=r_{m-i+2}q_{m-i+2}+r_{m-i+3}\geq r_{m-i+2}+r_{m-i+3}\\&amp;=&amp;u_{i-1}+u_{i-2}\geq F_{i-1}+F_{i-2}=F_i.<br>
+u_i&amp;=&amp;r_{d-i+1}=r_{d-i+2}q_{d-i+2}+r_{d-i+3}\geq r_{d-i+2}+r_{d-i+3}\\&amp;=&amp;u_{i-1}+u_{i-2}\geq F_{i-1}+F_{i-2}=F_i.<br>
 \end{eqnarray*}<br>
 Combinando esta conta com o exerc&iacute;cio anterior, obtemos que<br>
 \[<br>
 u_i\geq F_i\geq \varphi^{i-1}\quad\mbox{para todo}\quad i\geq 1.<br>
 \]<br>
-Em particular $b=u_m\geq \varphi^{m-1}$. Tomando o logaritmo isso implica que $\log_{\varphi}b\geq m-1$. Passando para o logaritmo natural, tem-se que<br>
+Em particular $b=u_{d+1}\geq \varphi^{d}$. Tomando o logaritmo isso implica que $\log_{\varphi}b\geq d$. Passando para o logaritmo natural, tem-se que<br>
 \[<br>
-m\leq \frac{\log b}{\log\varphi}+1<br>
+d\leq \frac{\log b}{\log\varphi}<br>
 \]
 </p></div>
-<p>O resultado anterior implica que o n&uacute;mero de passos no Algoritmo de Euclides &eacute; limitado por uma fun&ccedil;&atilde;o logar&iacute;tmica em $b$ que quer dizer que o Algoritmo de Euclides &eacute; um algoritmo pr&aacute;tico.</p>
-</div>
+<p>O resultado anterior implica que o n&uacute;mero de passos no Algoritmo de Euclides &eacute; limitado por uma fun&ccedil;&atilde;o logar&iacute;tmica em $b$ que quer dizer que o Algoritmo de Euclides &eacute; um algoritmo pr&aacute;tico.
+</p></div>
 			</div>
 	<footer class="entry-footer">
 			</footer>
