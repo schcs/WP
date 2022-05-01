@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>&Aacute;lgebra A &ndash; Csaba Schneider</title>
+<title>N&uacute;mero dos primos &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -20,10 +21,10 @@
 
 
 
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-a/">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-a/numero-dos-primos/">
 
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2F&amp;format=xml">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Fnumero-dos-primos%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Fnumero-dos-primos%2F&amp;format=xml">
 		<style type="text/css" id="wp-custom-css">
 			/*pre {
 	font-family: monospace;
@@ -197,7 +198,7 @@ MathJax = {
 
 </head>
 
-<body class="page-template-default page page-id-706 page-parent page-child parent-pageid-64 no-sidebar">
+<body class="page-template-default page page-id-1766 page-child parent-pageid-706 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -224,41 +225,93 @@ MathJax = {
 
 			
 				
-<article id="post-706" class="post-706 page type-page status-publish hentry">
+<article id="post-1766" class="post-1766 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">&Aacute;lgebra A</h1>	</header>
+		<h1 class="entry-title">N&uacute;mero dos primos</h1>	</header>
 		<div class="entry-content">
-		<p>Disciplina de gradua&ccedil;&atilde;o &ndash; semestre I de 2020<br>
-<strong>Professor:&nbsp;</strong>Csaba Schneider<br>
-<strong>Ementa:</strong>&nbsp;Teoria de n&uacute;meros: indu&ccedil;&atilde;o, princ&iacute;pio da boa ordena&ccedil;&atilde;o, divisibilidade, bases de numera&ccedil;&atilde;o, n&uacute;meros primos, fatora&ccedil;&atilde;o e o teorema fundamental da aritm&eacute;tica, mmc e mdc, equa&ccedil;&otilde;es diofantinas lineares, congru&ecirc;ncias, teoremas de Eucler, Fermat, teorema do resto chin&ecirc;s. Criptografia: b&aacute;sica:cifras afins e exponenciais, RSA.</p>
-<p><strong>Bibliografia</strong><br>
-S. C. Coutinho, N&uacute;meros Inteiros e a Criptografia RSA. IMPA 2014.<br>
-Victor Shoup. <a href="https://shoup.net/ntb/ntb-v2.pdf">A computational introduction to number theory and algebra.</a> Cambridge University Press, 2018.</p>
-<p><strong>Notas, apostilas, exerc&iacute;cios</strong></p>
+		<div style="color:#000000">Para $n\in\N$, defina<br>
+\[<br>
+\pi(n)=|\{k\in\{2,\ldots,n\}\mid k\mbox{ &eacute; primo}\}|.<br>
+\]<br>
+Ou seja, $\pi(n)$ &eacute; o n&uacute;mero dos primos entre $2$ e $n$. &Eacute; f&aacute;cil computar o valor de $\pi(n)$ para $n$ pequeno:<br>
+\[<br>
+\pi(1)=0,\quad \pi(2)=1,\quad \pi(3)=\pi(4)=2,\quad \pi(5)=\pi(6)=3,\ldots<br>
+\]<br>
+No entanto, se $n$ for grande, determinar o valor de $\pi(n)$ pode ser dif&iacute;cil.
+<p>O Crivo de <a href="https://pt.wikipedia.org/wiki/Erat%C3%B3stenes">Erat&oacute;stenes</a>, &eacute; um algoritmo que pode ser usado para obter os primos que s&atilde;o menores ou iguais a um n&uacute;mero fixo $n$. A ideia do crivo &eacute; a seguinte. Assuma que voc&ecirc; quer determinar todos os primos entre $1$ e algum outro n&uacute;mero $n$.</p>
 <ul>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-a/algoritmos-basicos/">Algoritmos b&aacute;sicos</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-a/exercicios-1/">Exerc&iacute;cios 1</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/expansao-de-numeros-naturais-na-base-b-e-a-expansao-decimal-de-numeros-racionais/">Representa&ccedil;&atilde;o de inteiros em uma base $b$</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/expansao-decimal-de-numeros-racionais/">Expans&atilde;o decimal de n&uacute;meros racionais</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-a/divisibilidade-e-o-mdc/">Divisibilidade e o MDC</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-a/exercicios-2/">Exerc&iacute;cios 2</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-a/o-algoritmo-de-euclides/">O Algoritmo de Euclides</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-a/exercicios-3/">Exerc&iacute;cios 3</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-a/numeros-primos/">N&uacute;meros primos</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-a/numero-dos-primos/">O n&uacute;mero dos primos</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/algebra-a/exercicios-4-2/">Exerc&iacute;cio 4</a></li>
-<p>	
+<li>Escreva os n&uacute;meros de $1$ at&eacute; $n$ em uma lista na ordem crescente.</li>
+<li>Comece por eliminar o n&uacute;mero $1$ da sua lista, pois ele n&atilde;o &eacute; primo.</li>
+<li>O menor n&uacute;mero n&atilde;o eliminado na lista &eacute; $2$ que &eacute; primo. Elimine os m&uacute;ltiplos de $2$ a partir de $4$ da lista, pois eles n&atilde;o s&atilde;o primos.</li>
+<li>Menor n&uacute;mero n&atilde;o eliminado depois de $2$ &eacute;  o $3$. Elimine os m&uacute;ltiplos de $3$ a partir de $3^2=9$ da lista, pois eles n&atilde;o s&atilde;o primos.</li>
+<li>O menor n&uacute;mero n&atilde;o eliminado depois de $3$ &eacute; o $5$. Ele &eacute; primo. Elimine os m&uacute;ltiplos de $5$ da lista a partir de $5^2=25$, pois eles n&atilde;o s&atilde;o primos.</li>
+<li>No passo geral, ache o menor n&uacute;mero $p$ depois do &uacute;ltimo primo encontrado. Este n&uacute;mero $p$ ser&aacute; primo. Elimine os m&uacute;ltiplos de $p$ a partir de $p^2$ da lista, pois eles n&atilde;o s&atilde;o primos. Note que os demais m&uacute;ltiplos compostos de $p$ (que s&atilde;o menores de $p^2$) j&aacute; foram eliminados.</li>
+<li>Repita o passo geral at&eacute; $p &gt; \sqrt n$. </li>
+<li>Os n&uacute;meros que n&atilde;o foram eliminados da lista s&atilde;o os primos entre $1$ e $n$.</li>
+</ul>
+<p>Uma implementa&ccedil;&atilde;o simples em Julia deste algoritmo &eacute; o seguinte. </p>
+<pre><code class="language-python">
+function eratosthenes( n )
+	prims = [ true for i in 1:n ]
+	prims[1] = false
+	
+	sqrn = convert( Int64, floor(n^(1/2)))
+	
+	for i in 2:sqrn
+		if prims[i] == true
+			st = i^2
+			while st &lt;= n
+				prims[st] = false
+				st += i
+			end
+		end
+	end
+	
+	return prims	
+end
+</code>
+</pre>
+<p>O Crivo de Erat&oacute;stenes n&atilde;o &eacute; um algoritmo eficiente, pois o passo geral precisa ser executada $\sqrt n$ vezes. Na pr&aacute;tica (por exemplo, na criptografia), n&oacute;s precisamos lidar com n&uacute;meros com $500$ ou mais algarismos. Se por exemplo, $n\approx 10^{500}$, ent&atilde;o $\sqrt n\approx 10^{250}$ e na pr&aacute;tica fica imposs&iacute;vel realizar a computa&ccedil;&atilde;o at&eacute; com um supercomputador.</p>
+<p>Est&aacute; bem conhecido que a fun&ccedil;&atilde;o $\pi(n)$ pode ser aproximada pelas fun&ccedil;&otilde;es<br>
+\[<br>
+\lambda(n)=\frac n{\log n}<br>
+\]<br>
+e<br>
+\[<br>
+\sigma(n)=\int_2^n \frac{dt}{\log t}.<br>
+\]<br>
+Por exemplo, o n&uacute;mero dos primos entre $1$ e $10.000.000$ pode ser calculado com a fun&ccedil;&atilde;o acima:</p>
+<pre><code class="language-pythonrepl">
+julia&gt; pr = eratosthenes( 10^7 );
+
+julia&gt; counter( pr )
+Accumulator{Bool, Int64} with 2 entries:
+  0 =&gt; 9335421
+  1 =&gt; 664579
+  </code></pre>
+<p>Obtemos que<br>
+\[<br>
+\pi(10.000.000)=664579,<br>
+\]<br>
+enquanto<br>
+\[<br>
+\lambda(10.000.000)\approx 620420\quad\mbox{e}\quad \sigma(10.000.000)\approx 664917.<br>
+\]<br>
+Geralmente, a aproxima&ccedil;&atilde;o dada por $\sigma(n)$ &eacute; melhor, mas &eacute; mais dif&iacute;cil de calcular.</p>
+<p>Atualmente (novembro de 2021), o <a href="https://pt.wikipedia.org/wiki/Maior_n%C3%BAmero_primo_conhecido">maior primo conhecido</a> &eacute; $2^{82.589.933} &minus; 1$. Este n&uacute;mero tem $24.862.048$ algarismos na base decimal e foi encontrado em 2018. Este n&uacute;mero &eacute; um exemplo dos <a href="https://pt.wikipedia.org/wiki/Primo_de_Mersenne">primos de Mersenne</a>, ou seja primos na forma $2^p-1$ onde $p$ &eacute; um primo.
+</p></div>
+			</div>
 	<footer class="entry-footer">
 			</footer>
-
+</article>
 
 				
 			
-		
-	</p></ul></div>
+		</main>
+	</div>
 
 
-	</article></main></div>
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -270,9 +323,11 @@ Victor Shoup. <a href="https://shoup.net/ntb/ntb-v2.pdf">A computational introdu
 	</footer>
 </div>
 
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</div></body>
+</body>
 </html>
