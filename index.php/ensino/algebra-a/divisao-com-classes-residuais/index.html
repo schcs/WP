@@ -228,18 +228,20 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">Divis&atilde;o modular</h1>	</header>
 		<div class="entry-content">
-		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\cl}[1]{\overline{#1}}$Seja $n\geq 2$ um n&uacute;mero natural fixo. Lembre que $\Z_n$ denota o conjunto das classes residuais m&oacute;dulo $n$ e n&oacute;s definimos na aula anterior as opera&ccedil;&otilde;es $+$ e $\cdot$ entre elementos de $\Z_n$. Se $a,b\in\Z$, ent&atilde;o $\cl a,\cl b\in\Z_n$ e as express&otilde;es<br>
+		<div style="color:#000000">
+$\newcommand{\Z}{\mathbb Z}\newcommand{\cl}[1]{\overline{#1}}$Seja $n\geq 2$ um n&uacute;mero natural fixo. Lembre que $\Z_n$ denota o conjunto das classes residuais m&oacute;dulo $n$ e n&oacute;s definimos na aula anterior as opera&ccedil;&otilde;es $+$ e $\cdot$ entre elementos de $\Z_n$. Se $a,b\in\Z$, ent&atilde;o $\cl a,\cl b\in\Z_n$ e as express&otilde;es<br>
 \[<br>
 n\mid (a-b),\quad a\equiv b\pmod n, \quad \cl a=\cl<br>
 b<br>
 \]<br>
-t&ecirc;m o mesmo significado.</p>
+t&ecirc;m o mesmo significado.
 <p>Considere por exemplo o caso $n=10$ e seja $\cl a=\cl 3\in\Z_{10}$. Observando que $\cl 3\cdot \cl 7=\cl 1$, podemos concluir que o elemento $\cl a=\cl 3$ possui <em>inverso multiplicativo</em> em $\Z_{10}$. Neste caso escrevemos que $\cl 3^{-1}=\cl 7$ e $\cl 7^{-1}=\cl 3$. Ser&aacute; que todo elemento n&atilde;o nulo possui tal inverso multiplicativo? Considere por exemplo o elemento $\cl a=\cl 2\in\Z_{10}$. Se existisse $\cl b\in\Z_{10}$ tal que $\cl 2\cdot \cl b=\cl 1$, ent&atilde;o isso significaria que<br>
 \[<br>
 10\mid (2b-1).<br>
 \]<br>
 No entanto &eacute; f&aacute;cil observar que esta divisibilidade n&atilde;o pode ser poss&iacute;vel para nenhum $b$, pois $2b$ &eacute; um n&uacute;mero par, que diz que $2b-1$ &eacute; &iacute;mpar, e portanto n&atilde;o pode ser divis&iacute;vel por $10$.</p>
-<p><strong>Exemplo.&nbsp;</strong>Considere a congru&ecirc;ncia<br>
+<div class="example">
+Considere a congru&ecirc;ncia<br>
 \[<br>
 3\cdot x\equiv 8\pmod{10}.<br>
 \]<br>
@@ -251,9 +253,12 @@ Sabe-se que $\cl 3\cdot\cl 7=\cl 1$ em $\Z_{10}$ portanto esta equa&ccedil;&atil
 \[<br>
 \cl x=\cl 7\cdot\cl 8=\cl 6.<br>
 \]<br>
-Obtemos ent&atilde;o que as solu&ccedil;&otilde;es da congru&ecirc;ncia original s&atilde;o n&uacute;meros inteiros $x\in\Z$ tal que $\cl x=\cl 6$; ou seja $x\equiv 2\pmod {10}$.</p>
-<p><strong>Lema.&nbsp;</strong>Seja $n\geq 2$ um n&uacute;mero natural e seja $a\in\Z$. A classe residual $\cl a\in\Z_n$ possui inverso se e somente se $\mbox{mdc}(a,n)=1$.</p>
-<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Assuma primeiro que $\mbox{mdc}(a,n)=1$. Pelo algoritmo de Euclides obtemos que existem $u,v\in\Z$ tais que<br>
+Obtemos ent&atilde;o que as solu&ccedil;&otilde;es da congru&ecirc;ncia original s&atilde;o n&uacute;meros inteiros $x\in\Z$ tal que $\cl x=\cl 6$; ou seja $x\equiv 2\pmod {10}$.
+</div>
+<div class="lemma">Seja $n\geq 2$ um n&uacute;mero natural e seja $a\in\Z$. A classe residual $\cl a\in\Z_n$ possui inverso se e somente se $\mbox{mdc}(a,n)=1$.
+</div>
+<div class="proof">
+Assuma primeiro que $\mbox{mdc}(a,n)=1$. Pelo algoritmo de Euclides obtemos que existem $u,v\in\Z$ tais que<br>
 \[<br>
 ua+vn=1.<br>
 \]<br>
@@ -261,7 +266,7 @@ Traduzindo esta equa&ccedil;&atilde;o para a estrutura $\Z_n$, isto quer dizer q
 \[<br>
 \cl 1 =\cl{ua+vb}=\cl u\cl a+\cl v\cl n=\cl u\cl a+\cl v\cl 0=\cl u\cdot \cl a.<br>
 \]<br>
-Ou seja, $\cl u$ &eacute; inverso de $\cl a$ em $\Z_n$.</p>
+Ou seja, $\cl u$ &eacute; inverso de $\cl a$ em $\Z_n$.
 <p>Por outro lado, se existe $b\in\Z$ tal que $\cl b\cl a=\cl 1$, ent&atilde;o $n\mid (ab- 1)$ que implica que existe $q\in \Z$ tal que<br>
 \[<br>
 ab-1=qn.<br>
@@ -270,14 +275,15 @@ Isto &eacute; equivalente a equa&ccedil;&atilde;o diofantina<br>
 \[<br>
 ab-qn=1<br>
 \]<br>
-nas vari&aacute;veis $b$ e $q$. A exist&ecirc;ncia do inverso $\cl b$ implica que esta equa&ccedil;&atilde;o possui solu&ccedil;&otilde;es e segue pelo resultado na aula anterior,que $\mbox{mdc}(a,n)=1$.</p>
+nas vari&aacute;veis $b$ e $q$. A exist&ecirc;ncia do inverso $\cl b$ implica que esta equa&ccedil;&atilde;o possui solu&ccedil;&otilde;es e segue pelo resultado na aula anterior,que $\mbox{mdc}(a,n)=1$.
+</p></div>
 <p>Note que a demonstra&ccedil;&atilde;o acima &eacute; construtiva no sentido que mostra como achar o inverso de $\cl a\in \Z_n$ caso $\mbox{mdc}(a,n)=1$.</p>
 <p>Denotemos por $U(n)$ o conjunto das classes residuais invert&iacute;veis em $\Z_n$. Pelo resultado anterior<br>
 \begin{eqnarray*}<br>
 U(n)&amp;=&amp;\{\cl a\mid a\in\{0,\ldots,n-1\},\ \mbox{$\cl a$ &eacute; invert&iacute;vel em $\Z_n$}\}\\&amp;=&amp;<br>
 \{\cl a\mid&nbsp;a\in\{0,\ldots,n-1\}\mbox{ com mdc}(a,b)=1\}.<br>
 \end{eqnarray*}</p>
-<p><strong>Lema.&nbsp;</strong>As seguintes propriedades s&atilde;o v&aacute;lidas em $\Z_n$ para todo $n\geq 2$.</p>
+<div class="lemma">As seguintes propriedades s&atilde;o v&aacute;lidas em $\Z_n$ para todo $n\geq 2$.
 <ol>
 <li>$\cl 0\not\in U(n)$;</li>
 <li>$\cl 1\in U(n)$;</li>
@@ -286,9 +292,10 @@ U(n)&amp;=&amp;\{\cl a\mid a\in\{0,\ldots,n-1\},\ \mbox{$\cl a$ &eacute; invert&
 <li>se&nbsp;$\cl a\in U(n)$, ent&atilde;o $(\cl a)^{-1}\in U(n)$;</li>
 <li>se $n$ &eacute; um primo, ent&atilde;o todo elemento n&atilde;o nulo de $U(n)$ &eacute; invert&iacute;vel.</li>
 </ol>
-<p><strong>Demonstra&ccedil;&atilde;o.</strong> Exerc&iacute;cio.</p>
+</div>
+<div class="proof">Exerc&iacute;cio.</div>
 <p>Um elemento $\cl a\in\Z_n$ chama-se quadrado (ou &agrave;s vezes res&iacute;duo quadr&aacute;tico) se existe $\cl b\in\Z_n$ tal que $\cl b^2=\cl a$.</p>
-<p><strong>Exemplo.&nbsp;</strong>Calculando os quadrados dos elementos de $\Z_{11}$, obtemos que os quadrados de $\Z_{11}$ s&atilde;o $\{\cl 0, \cl 1, \cl 3, \cl 4, \cl 5, \cl 9\}$.&nbsp; Considere a congru&ecirc;ncia<br>
+<div class="exercise">Calculando os quadrados dos elementos de $\Z_{11}$, obtemos que os quadrados de $\Z_{11}$ s&atilde;o $\{\cl 0, \cl 1, \cl 3, \cl 4, \cl 5, \cl 9\}$.&nbsp; Considere a congru&ecirc;ncia<br>
 \[<br>
 3x^2\equiv 7\pmod {11}.<br>
 \]<br>
@@ -300,7 +307,9 @@ Temos que $\cl 3^{-1}=4$ e multiplicando os dois lados da equa&ccedil;&atilde;o 
 \[<br>
 \cl x^2=\cl 6.<br>
 \]<br>
-Como $\cl 6$ n&atilde;o &eacute; um quadrado em $\Z_{11}$, obtemos que esta equa&ccedil;&atilde;o n&atilde;o possui solu&ccedil;&atilde;o e a congru&ecirc;ncia original tamb&eacute;m n&atilde;o possui solu&ccedil;&atilde;o.</p>
+Como $\cl 6$ n&atilde;o &eacute; um quadrado em $\Z_{11}$, obtemos que esta equa&ccedil;&atilde;o n&atilde;o possui solu&ccedil;&atilde;o e a congru&ecirc;ncia original tamb&eacute;m n&atilde;o possui solu&ccedil;&atilde;o.
+</div>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>

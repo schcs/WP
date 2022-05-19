@@ -228,19 +228,21 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">Aritm&eacute;tica modular</h1>	</header>
 		<div class="entry-content">
-		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\cl}[1]{\overline{#1}}$Sejam $a$ e $b$ n&uacute;meros inteiros e seja $n$ um natural com $n\geq 2$. Dizemos que <em>$a$ &eacute; congruente com $b$ m&oacute;dulo $n$</em> se $n\mid (a-b)$. Neste caso escrevemos que<br>
+		<div style="color:#000000">
+$\newcommand{\Z}{\mathbb Z}\newcommand{\cl}[1]{\overline{#1}}$Sejam $a$ e $b$ n&uacute;meros inteiros e seja $n$ um natural com $n\geq 2$. Dizemos que <em>$a$ &eacute; congruente com $b$ m&oacute;dulo $n$</em> se $n\mid (a-b)$. Neste caso escrevemos que<br>
 \[<br>
 a\equiv b\pmod n.<br>
 \]<br>
-Por exemplo, $-2\equiv 3\pmod 5$, mas $2\not\equiv 3\pmod 5$.</p>
+Por exemplo, $-2\equiv 3\pmod 5$, mas $2\not\equiv 3\pmod 5$.
 <p>Note que $a\equiv b\pmod n$ se e somente se os restos de $a$ e $b$ quando divididos por $n$ s&atilde;o iguais.</p>
-<p><strong>Lema.&nbsp;</strong>Sejam $a,b,c\in\Z$ e $n\geq 2$. As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.</p>
+<div class="lemma">Sejam $a,b,c\in\Z$ e $n\geq 2$. As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.
 <ol>
 <li>$a\equiv a\pmod n$;</li>
 <li>se $a\equiv b\pmod n$, ent&atilde;o $b\equiv a\pmod n$;</li>
 <li>se $a\equiv b\pmod n$ e $b\equiv c\pmod n$, ent&atilde;o $a \equiv c\pmod n$.</li>
 </ol>
-<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Exerc&iacute;cio.</p>
+</div>
+<div class="proof">Exerc&iacute;cio.</div>
 <p>Seja $n\geq 2$ fixo. Dado $a\in\Z$, denote por $\cl a$ o conjunto de n&uacute;meros inteiros que s&atilde;o congruentes com $a$. Em s&iacute;mbolos,<br>
 \[<br>
 \cl a=\{b\in \Z\mid b\equiv a\bmod n\}.<br>
@@ -291,7 +293,8 @@ Verificaremos apenas o produto. Como $\cl{a_1}=\cl{a_2}$, temos que $n\mid (a_1-
 <li>Existe um elemento neutro para o produto; nomeadamente $\cl 1$. De fato $\cl a\cdot\cl 1=\cl 1\cdot\cl a=\cl a$.</li>
 <li>Temos a propriedade distributiva $\cl a\cdot(\cl b+\cl c)=\cl a\cdot\cl b+\cl a\cdot \cl c$.</li>
 </ol>
-<p>Isso quer dizer que aritm&eacute;tica em $\Z_n$ funciona mais ou menos na mesma maneira que em $\Z$.</p>
+<p>Isso quer dizer que aritm&eacute;tica em $\Z_n$ funciona mais ou menos na mesma maneira que em $\Z$.
+</p></div>
 			</div>
 	<footer class="entry-footer">
 			</footer>
