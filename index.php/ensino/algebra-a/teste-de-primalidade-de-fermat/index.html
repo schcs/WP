@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>Exerc&iacute;cios 8 &ndash; Csaba Schneider</title>
+<title>Teste de primalidade de Fermat &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -20,10 +20,10 @@
 
 
 
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-a/exercicios-8/">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-a/teste-de-primalidade-de-fermat/">
 
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Fexercicios-8%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Fexercicios-8%2F&amp;format=xml">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Fteste-de-primalidade-de-fermat%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Fteste-de-primalidade-de-fermat%2F&amp;format=xml">
 		<style type="text/css" id="wp-custom-css">
 			/*pre {
 	font-family: monospace;
@@ -197,7 +197,7 @@ MathJax = {
 
 </head>
 
-<body class="page-template-default page page-id-954 page-child parent-pageid-706 no-sidebar">
+<body class="page-template-default page page-id-1792 page-child parent-pageid-706 no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -224,19 +224,38 @@ MathJax = {
 
 			
 				
-<article id="post-954" class="post-954 page type-page status-publish hentry">
+<article id="post-1792" class="post-1792 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Exerc&iacute;cios 8</h1>	</header>
+		<h1 class="entry-title">Teste de primalidade de Fermat</h1>	</header>
 		<div class="entry-content">
-		<p>1. O Teorema de <a href="https://en.wikipedia.org/wiki/John_Wilson_(mathematician)">Wilson</a> afirma que um n&uacute;mero natural $n\geq 2$ &eacute; primo se e somente se $(n-1)!\equiv -1\pmod n$. Demonstre Wilson&rsquo;s Theorem.</p>
-<p>2. Mostre, usando o Teorema de Fermat, que $2^{70}+3^{70}$ &eacute; divis&iacute;vel por 13.</p>
-<p>3. Mostre que a equa&ccedil;&atilde;o $x^{13}+12x+13y^6=1$ n&atilde;o admite solu&ccedil;&otilde;es inteiras. [Dica: reduze m&oacute;dulo 13 e use o Pequeno Teorema de Fermat.]</p>
-<p></p>
-<p>4. Seja $a$ um n&uacute;mero inteiro escrito na base $10$. Mostre que o &uacute;ltimo algarismo de $n$ &eacute; igual ao &uacute;ltimo algarismo de $n^5$.</p>
-<p>5. Seja $p=4k+3$ um primo e considere a equa&ccedil;&atilde;o $\overline x^2= \overline a$ sobre $\mathbb Z_p$. Mostre que se a equa&ccedil;&atilde;o possui solu&ccedil;&atilde;o, ent&atilde;o $a^{k+1}$ e $-a^{k+1}$ ser&atilde;o solu&ccedil;&otilde;es.</p>
-<p>6. (Ol&iacute;mpiada de Matem&aacute;tica de Paraguay, 2009). Conte os n&uacute;meros $n$ entre<br>
-$1$ e $2022$ tal que o &uacute;ltimo d&iacute;gito de $n^{20}$ &eacute; 1.<br>
-[Dica: Use o Teorema de Euler para caraterizar os n&uacute;meros $n$ para os quais o &uacute;ltimo d&iacute;gito de $n^{20}$ &eacute; 1 veja tamb&eacute;m o <a href="http://youtu.be/iDrHPrmYG-0">v&iacute;deo de Michael Penn</a>.</p>
+		<div style="color:#000000">
+Para um primo $p$, o Pequeno Teorema de Fermat pode ser escrita tamb&eacute;m na forma<br>
+\begin{eqnarray*}<br>
+\cl a^p&amp;=&amp;\cl a\quad\mbox{para todo}\quad \cl a\in \Z_p;\\<br>
+\cl a^{p-1}&amp;=&amp;\cl 1\quad\mbox{para todo}\quad \cl a\in \Z_p\setminus\{\cl 0\};<br>
+\end{eqnarray*}
+<p>O Pequeno Teorema de Fermat pode ser usado para dar um crit&eacute;rio suficiente para decidir se um n&uacute;mero &eacute; composto.</p>
+<p><strong>Teste. </strong>Assuma que $n\geq 2$ &eacute; um n&uacute;mero natural. Se $b^{n-1}\not\equiv 1\pmod n$ para algum $b\in\{2,\ldots,n-2\}$, ent&atilde;o $n$ &eacute; um n&uacute;mero composto.</p>
+<p>Observe que a congru&ecirc;ncia $b^{n-1}\equiv 1\pmod n$ pode ser checada para $n$ muito grande (veja Exerc&iacute;cio 6 na Lista 7).</p>
+<p><strong>Exemplo.</strong> Seja $n=100000000000000000039000000005700000000000000002223$. Queremos saber se $n$ &eacute; um n&uacute;mero primo ou ele &eacute; composto. Usando nossa implementa&ccedil;&atilde;o do algoritmo para calcular $2^{n-1}\pmod n$, obtemos que<br>
+\[<br>
+2^{n-1}\pmod n\equiv 49681379328330755781687237993204141263211912506416 \neq 1.<br>
+\]<br>
+Obtemos ent&atilde;o que $n$ &eacute; um n&uacute;mero composto. &Eacute; muito mais dif&iacute;cil verificar que de fato<br>
+\[<br>
+n=100000000000000000039\cdot 10000000400000000000000000000057.<br>
+\]</p>
+<p>Se $n\geq 2$ e $b^{n-1}\equiv 1\pmod n$, ent&atilde;o o n&uacute;mero $n$ chama-se <em>pseudo primo</em> na base $b$.</p>
+<p><strong>Exerc&iacute;cio. </strong>Mostre para $2\leq b&lt;n$ que se $n$ &eacute; pseudo primo na base $b$, ent&atilde;o $\mbox{mdc}(n,b)=1$.</p>
+<p><span style="color: #000080;"><strong>Algoritmo:</strong> Teste de de primalidade Fermat</span><br>
+<span style="color: #000080;"><strong>Input:</strong> N&uacute;mero natural $n$.</span></p>
+<div style="text-indent: 0px; color: #000080;">$d := \lceil\log n\rceil$</div>
+<div style="text-indent: 0px; color: #000080;">Fa&ccedil;a $d$ vezes</div>
+<div style="text-indent: 50px; color: #000080;">seja $b$ um n&uacute;mero aleat&oacute;rio entre $2$ e $n-2$</div>
+<div style="text-indent: 50px; color: #000080;">se $b^{n-1}\not\equiv 1\pmod n$ ent&atilde;o</div>
+<div style="text-indent: 100px; color: #000080;">devolva FALSO</div>
+<div style="text-indent: 0px; color: #000080;">Devolva PROVAVELMENTE</div>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>

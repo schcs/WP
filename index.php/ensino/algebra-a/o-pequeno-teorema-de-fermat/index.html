@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<title>O Pequeno Teorema de Fermat &ndash; Csaba Schneider</title>
+<title>O Pequeno Teorema de Fermat e o Teorema de Euler &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -226,63 +226,112 @@ MathJax = {
 				
 <article id="post-930" class="post-930 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">O Pequeno Teorema de Fermat</h1>	</header>
+		<h1 class="entry-title">O Pequeno Teorema de Fermat e o Teorema de Euler</h1>	</header>
 		<div class="entry-content">
-		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\cl}[1]{\overline{#1}}$<strong>Lema.</strong> Seja $p$ um n&uacute;mero primo positivo e $a,b\in\Z$. Tem-se que<br>
+		<div style="color:#000000">
+<div class="lemma">
+Seja $p$ um n&uacute;mero primo positivo e $a,b\in\Z$. Tem-se que<br>
 \[<br>
 (a+b)^p\equiv a^p+b^p\pmod p.<br>
-\]</p>
-<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Exerc&iacute;cio.</p>
+\]
+</div>
+<div class="proof">
+Exerc&iacute;cio.
+</div>
 <p>Note que o lema acima pode ser expresso na estrutura $\Z_p$ (onde $p$ &eacute; primo). De fato, o lema &eacute; equivalente a afirmar que<br>
 \[<br>
-(\cl a+\cl b)^p=\cl a^p+\cl b^p\quad\mbox{para todo}\quad \cl a,\cl b\in\Z_p.<br>
+(\bar a+\bar b)^p=\bar a^p+\bar b^p\quad\mbox{para todo}\quad \bar a,\bar b\in\Z_p.<br>
 \]<br>
 Este mesmo lema &eacute; conhecido tamb&eacute;m como o <a href="https://pt.qwe.wiki/wiki/Freshman%27s_dream">Sonho do Calouro</a>.</p>
-<p><strong>Teorema (Pequeno Teorema de Fermat).&nbsp;</strong>Se $p$ &eacute; um primo positivo e $a\in \Z$, ent&atilde;o<br>
+<div class="theorem">(Pequeno Teorema de Fermat).&nbsp;<br>
+Se $p$ &eacute; um primo positivo e $a\in \Z$, ent&atilde;o<br>
 \begin{equation}\label{eq:cong}<br>
 a^p\equiv a\pmod p.<br>
 \end{equation}<br>
 Al&eacute;m disso, se $p\nmid a$, ent&atilde;o<br>
 \[<br>
 a^{p-1}\equiv 1\pmod p.<br>
-\]</p>
-<p><strong>Demonstra&ccedil;&atilde;o. </strong>Existe um &uacute;nico inteiro $a_0\in\{0,\ldots,p-1\}$ tal que $a\equiv a_0\pmod p$ e $a^p\equiv a_0^p\pmod p$. Possivelmente trocando $a$ com $a_0$, podemos assumir que $a\in\{0,\ldots,p-1\}$. Se $a=0$, ent&atilde;o a afirma&ccedil;&atilde;o ser&aacute; verdadeira trivialmente. Se $a&gt;0$ &eacute; um n&uacute;mero positivo,&nbsp; podemos escrever que $a=1+\cdots+1$ ($a$ vezes). Pelo lema anterior,<br>
+\]
+</div>
+<div class="proof">
+Existe um &uacute;nico inteiro $a_0\in\{0,\ldots,p-1\}$ tal que $a\equiv a_0\pmod p$ e $a^p\equiv a_0^p\pmod p$. Possivelmente trocando $a$ com $a_0$, podemos assumir que $a\in\{0,\ldots,p-1\}$. Se $a=0$, ent&atilde;o a afirma&ccedil;&atilde;o ser&aacute; verdadeira trivialmente. Se $a&gt;0$ &eacute; um n&uacute;mero positivo,&nbsp; podemos escrever que $a=1+\cdots+1$ ($a$ vezes). Pelo lema anterior,<br>
 \[<br>
 a^p=(1+\cdots+1)^p\equiv 1^p+\cdots+1^p=1+\cdots +1=a\pmod p.<br>
 \]<br>
-Isso mostra que a primeira afirma&ccedil;&atilde;o &eacute; v&aacute;lida.</p>
-<p>Assuma agora que $p\nmid a$. Como no par&aacute;grafo anterior, podemos assumir sem perder generalidade que $a\in\{1,\ldots,p-1\}$ (note que $a\neq 0$ pela condi&ccedil;&atilde;o que $p\nmid a$). Em particular, $a$ &eacute; invert&iacute;vel m&oacute;dulo $p$; ou seja existe $b\in\{1,\ldots,p-1\}$ tal que $ab\equiv 1\pmod p$. Multiplicando a congru&ecirc;ncia \eqref{eq:cong} por $b$, obtemos que<br>
+Isso mostra que a primeira afirma&ccedil;&atilde;o &eacute; v&aacute;lida.
+<p>Assuma agora que $p\nmid a$. Como no par&aacute;grafo anterior, podemos assumir sem perder generalidade que $a\in\{1,\ldots,p-1\}$ (note que $a\neq 0$ pela condi&ccedil;&atilde;o que $p\nmid a$). Em particular, $a$ &eacute; invert&iacute;vel m&oacute;dulo $p$; ou seja existe $b\in\{1,\ldots,p-1\}$ tal que $ab\equiv 1\pmod p$. Multiplicando a congru&ecirc;ncia $\bar a^p\equiv a\pmod p$ por $b$, obtemos que<br>
 \[<br>
 a^{p-1}\equiv (ba)a^{p-1}=ba^p\equiv ba\equiv 1\pmod p.<br>
-\]</p>
-<p>Para um primo $p$, o Pequeno Teorema de Fermat pode ser escrita tamb&eacute;m na forma<br>
-\begin{eqnarray*}<br>
-\cl a^p&amp;=&amp;\cl a\quad\mbox{para todo}\quad \cl a\in \Z_p;\\<br>
-\cl a^{p-1}&amp;=&amp;\cl 1\quad\mbox{para todo}\quad \cl a\in \Z_p\setminus\{\cl 0\};<br>
-\end{eqnarray*}</p>
-<p>O Pequeno Teorema de Fermat pode ser usado para dar um crit&eacute;rio suficiente para decidir se um n&uacute;mero &eacute; composto.</p>
-<p><strong>Teste.&nbsp;</strong>Assuma que $n\geq 2$ &eacute; um n&uacute;mero natural. Se $b^{n-1}\not\equiv 1\pmod n$ para algum $b\in\{2,\ldots,n-2\}$, ent&atilde;o $n$ &eacute; um n&uacute;mero composto.</p>
-<p>Observe que a congru&ecirc;ncia $b^{n-1}\equiv 1\pmod n$ pode ser checada para $n$ muito grande (veja Exerc&iacute;cio 6 na Lista 7).</p>
-<p><strong>Exemplo.</strong>&nbsp;Seja $n=100000000000000000039000000005700000000000000002223$. Queremos saber se $n$ &eacute; um n&uacute;mero primo ou ele &eacute; composto. Usando nossa implementa&ccedil;&atilde;o do algoritmo para calcular $2^{n-1}\pmod n$, obtemos que<br>
+\]
+</p></div>
+<div class="corollary">
+Seja $p\in\N$ primo e $a\in\Z$ tal que $p\nmid a$. Ent&atilde;o $a^{p-2}$ &eacute; um inverso de $a$ m&oacute;dulo $p$. Equivalentemente<br>
 \[<br>
-2^{n-1}\pmod n\equiv&nbsp;49681379328330755781687237993204141263211912506416 \neq 1.<br>
+\overline a^{-1}=\overline a^{p-2}.<br>
+\]
+</div>
+<div class="proof">
+O Pequeno Teorema de Fermat implica que<br>
+\[<br>
+1\equiv a^{p-1}=a\cdot a^{p-2}.<br>
 \]<br>
-Obtemos ent&atilde;o que $n$ &eacute; um n&uacute;mero composto. &Eacute; muito mais dif&iacute;cil verificar que de fato<br>
+Ora a defini&ccedil;&atilde;o do inverso modular implica que $a^{p-2}$ &eacute; um inverso de $a$ m&oacute;dulo $p$. A segunda afirma&ccedil;&atilde;o segue imediatamente da primeira.
+</div>
+<div class="exercise">
+Seja $n\in\N$ e seja<br>
 \[<br>
-n=100000000000000000039\cdot&nbsp;10000000400000000000000000000057.<br>
-\]</p>
-<p>Se $n\geq 2$ e $b^{n-1}\equiv 1\pmod n$, ent&atilde;o o n&uacute;mero $n$ chama-se <em>pseudo primo</em> na base $b$.</p>
-<p><strong>Exerc&iacute;cio.&nbsp;</strong>Mostre para $2\leq b&lt;n$ que se $n$ &eacute; pseudo primo na base $b$, ent&atilde;o $\mbox{mdc}(n,b)=1$.</p>
-<p><span style="color: #000080;"><strong>Algoritmo:</strong> Teste de de primalidade Fermat</span><br>
-<span style="color: #000080;"><strong>Input:</strong> N&uacute;mero natural $n$.</span></p>
-<div style="text-indent: 0px; color: #000080;">$d := \lceil\log n\rceil$</div>
-<div style="text-indent: 0px; color: #000080;">Fa&ccedil;a $d$ vezes</div>
-<div style="text-indent: 50px; color: #000080;">seja $b$ um n&uacute;mero aleat&oacute;rio entre $2$ e $n-2$</div>
-<div style="text-indent: 50px; color: #000080;">se $b^{n-1}\not\equiv 1\pmod n$ ent&atilde;o</div>
-<div style="text-indent: 100px; color: #000080;">devolva FALSO</div>
-<div style="text-indent: 0px; color: #000080;">Devolva PROVAVELMENTE</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+\Z_n^*=\{\overline a\in\Z_n\mid\mbox{$\overline a$ &eacute; invert&iacute;vel}\}.<br>
+\]<br>
+Demonstre as seguintes propriedades de $\Z_n^*$:
+<ul>
+<li>$\overline 1,\overline{-1}\in\Z_n^*$, mas $\overline 0\not\in\Z_n^*$;</li>
+<li>$\Z_n^*$ &eacute; fechado para a multiplica&ccedil;&atilde;o; ou seja, se $\overline a,\overline b\in\Z_n^*$ ent&atilde;o $\overline a\overline b\in\Z_n^*$;</li>
+<li>$|\Z_n^*|=\varphi(n)$.</li>
+</ul>
+</div>
+<div class="exercise">
+Usando a nota&ccedil;&atilde;o do exerc&iacute;cio anterior, para $\overline a\in\Z_n$ defina<br>
+\[<br>
+\mu_{\overline a}:\Z_n\to \Z_n,\quad \mu_{\overline a}(\overline b)=\overline a\overline b.<br>
+\]<br>
+Mostre que as seguinte afirma&ccedil;&otilde;es s&atilde;o equivalentes:
+<ul>
+<li>$\mu_{\overline a}$ &eacute; injetiva;</li>
+<li>$\mu_{\overline a}$ &eacute; sobrejetiva;</li>
+<li>$\mu_{\overline a}$ &eacute; bijetiva;</li>
+<li>$\overline a\in\Z_n^*$.</li>
+</ul>
+</div>
+<div class="theorem"> (O Teorema de Euler.) Seja $n\in\N$ e $a\in\Z$ tal que $\mdc an=1$. Ent&atilde;o<br>
+\[<br>
+a^{\varphi(n)}\equiv 1\pmod n.<br>
+\]<br>
+Equivalentemente<br>
+\[<br>
+\overline a^{\varphi(n)}=\overline 1.<br>
+\]
+</div>
+<div class="proof">
+As duas afirma&ccedil;&otilde;es s&atilde;o claramente equivalentes e desta vez n&oacute;s vamos provar a segunda.<br>
+Usando o exerc&iacute;cio imediatamente anterior a esse teorema, assuma que<br>
+\[<br>
+\Z_n^*=\{\overline a_1,\overline a_2,\ldots,\overline a_{\varphi(n)}\}.<br>
+\]<br>
+Note que $\overline a\in\Z_n^*$, pois $\mdc an=1$. Considere o conjunto<br>
+\[<br>
+\overline a\Z_n^*=\{\overline a\overline a_1,\overline a\overline a_2,\ldots,\overline a\overline a_{\varphi(n)}\}<br>
+\]<br>
+Note que todo elemento de $\overline a\Z_n^*$ est&aacute; contido em $\Z_n^*$ (exerc&iacute;cio anterior) e se $i\neq j$, ent&atilde;o $\overline a\overline a_i\neq \overline a\overline a_j$. Portanto $\overline a\Z_n^*=\Z_n^*$. Isso quer dizer que multiplicando os elementos de $\Z_n^*$ e os elementos de $\overline a \Z_n^*$ n&oacute;s obtemos o mesmo elemento de $\Z_n$. De fato<br>
+\[<br>
+\prod_{i=1}^{\varphi(n)}{\overline a_i}=\prod_{i=1}^{\varphi(n)}{\overline a\overline a_i}=\overline a^{\varphi(n)}\prod_{i=1}^{\varphi(n)}{\overline a_i}.<br>
+\]<br>
+Ora, $\prod {\overline a_i}$ &eacute; um elemento invert&iacute;vel (primeiro exerc&iacute;cio) e podemos multiplicar os dois lados da &uacute;ltima equa&ccedil;&atilde;o acima com seu inverso. Fazendo isso, obtemos que<br>
+\[<br>
+\overline 1=\overline a^{\varphi(n)}.<br>
+\]
+</div>
+<p>Note que o Teorema de Euler implica o Pequeno Teorema de Fermat (tomando $n=p$ primo e observando que $\varphi(p)=p-1$), mas n&oacute;s decidimos deduzir o PTF de fatos mais elementares.</p>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>
