@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Normaliza&ccedil;&atilde;o de Noether &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-comutativa/normalizacao-de-noether/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-comutativa%2Fnormalizacao-de-noether%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-comutativa%2Fnormalizacao-de-noether%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1833 page-child parent-pageid-1808 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1833" class="post-1833 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Normaliza&ccedil;&atilde;o de Noether</h1>	</header>
+		<div class="entry-content">
+		<div class="definition">Seja <span class="math inline">\(\mathbb F\subseteq\mathbb K\)</span> uma extens&atilde;o de corpos. Um subconjunto <span class="math inline">\(\Omega\subseteq \mathbb K\)</span> &eacute; dito <span><em>algebricamente dependente</em></span> (sobre <span class="math inline">\(\mathbb F\)</span>) se existe um polin&ocirc;mio <span class="math inline">\(f\in\mathbb F[t_1,\ldots,t_n]\setminus\{0\}\)</span> e elementos <span class="math inline">\(\alpha_1,\ldots,\alpha_n\in\Omega\)</span> distintos tais que <span class="math display">\[f(\alpha_1,\ldots,\alpha_n)=0.\]</span> Caso contr&aacute;rio, <span class="math inline">\(\Omega\)</span> &eacute; dito <span><em>algebricamente independente</em></span>. O subconjunto <span class="math inline">\(\emptyset\)</span> &eacute; considerado algebricamente independente.</div>
+<p>Usando o Lema de Zorn, pode-se provar que <span class="math inline">\(\mathbb K\)</span> possui subconjuntos maximais algebricamente independentes. Tal conjunto &eacute; dito <span><em>base transcendental</em></span> de <span class="math inline">\(\mathbb K\)</span> sobre <span class="math inline">\(\mathbb F\)</span>. Segue da defini&ccedil;&atilde;o que se <span class="math inline">\(B\)</span> &eacute; uma uma base transcendental de <span class="math inline">\(\mathbb K\)</span> sobre <span class="math inline">\(\mathbb F\)</span>, ent&atilde;o <span class="math inline">\(\mathbb K\)</span> &eacute; alg&eacute;brico sobre <span class="math inline">\(\mathbb F(B)\)</span>.</p>
+<div class="theorem">Seja <span class="math inline">\(\mathbb F\subseteq\mathbb K\)</span> uma extens&atilde;o de corpos.
+<ol>
+<li>
+<p>Toda base transcendental de <span class="math inline">\(\mathbb K\)</span> sobre <span class="math inline">\(\mathbb F\)</span> t&ecirc;m a mesma cardinalidade.</p>
+</li>
+<li>
+<p>As seguintes s&atilde;o equivalentes para um conjunto <span class="math inline">\(\Omega\subseteq \mathbb K\)</span>.</p>
+<ol>
+<li>
+<p><span class="math inline">\(\Omega\)</span> &eacute; uma base transcendental de <span class="math inline">\(\mathbb K\)</span> sobre <span class="math inline">\(\mathbb F\)</span>.</p>
+</li>
+<li>
+<p><span class="math inline">\(\Omega\)</span> &eacute; algebricamente indepdentente e <span class="math inline">\(\mathbb F(\Omega)\subseteq \mathbb K\)</span> &eacute; uma extens&atilde;o alg&eacute;brica.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Sejam <span class="math inline">\(X,Y\subseteq \mathbb K\)</span> tais que</p>
+<ol>
+<li>
+<p><span class="math inline">\(X\subseteq Y\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(X\)</span> &eacute; algebricamente independente;</p>
+</li>
+<li>
+<p>the extens&atilde;o <span class="math inline">\(\mathbb F(Y)\subseteq \mathbb K\)</span> &eacute; alg&eacute;brica.</p>
+</li>
+</ol>
+<p>Ent&atilde;o existe uma base transcendental <span class="math inline">\(B\)</span> de <span class="math inline">\(\mathbb K\)</span> sobre <span class="math inline">\(\mathbb F\)</span> tal que <span class="math inline">\(X\subseteq B\subseteq Y\)</span>.</p>
+</li>
+</ol>
+</div>
+<div class="corollary"> Assuma que <span class="math inline">\(\mathbb F[x_1,\ldots,x_n]\)</span> &eacute; um anel de polin&ocirc;mios em <span class="math inline">\(n\)</span> vari&aacute;veis e sejam <span class="math inline">\(t_1,\ldots,t_n\)</span> tais que a extens&atilde;o de an&eacute;is <span class="math inline">\(\mathbb F[t_1,\ldots,t_n]\subseteq \mathbb F[x_1,\ldots,x_n]\)</span> &eacute; integral. Ent&atilde;o <span class="math inline">\(t_1,\ldots,t_n\)</span> s&atilde;o algebricamente independentes.</div>
+<div class="proof">Sejam <span class="math inline">\(\mathbb K=\mathbb F(t_1,\ldots,t_n)\)</span> e <span class="math inline">\(\mathbb L=\mathbb F(x_1,\ldots,x_n)\)</span> os corpos de fra&ccedil;&otilde;es de <span class="math inline">\(\mathbb F[t_1,\ldots,t_n]\)</span> e <span class="math inline">\(\mathbb F[x_1,\ldots,x_n]\)</span>, respetivamente. Como <span class="math inline">\(x_i\)</span> &eacute; integral sobre <span class="math inline">\(\mathbb F[t_1,\ldots,t_n]\)</span>, <span class="math inline">\(x_i\)</span> &eacute; raiz de um polin&ocirc;mio m&ocirc;nico com coeficientes em <span class="math inline">\(\mathbb F[t_1,\ldots,t_n]\)</span> e assim <span class="math inline">\(x_i\)</span> &eacute; alg&eacute;brico sobre <span class="math inline">\(\mathbb K\)</span>. Logo, <span class="math inline">\(\mathbb L\)</span> &eacute; uma extens&atilde;o alg&eacute;brica de <span class="math inline">\(\mathbb K\)</span> e aplicando o teorema acima para <span class="math inline">\(X=\emptyset\)</span> e <span class="math inline">\(Y=\{t_1,\ldots,t_n\}\)</span>, um subconjunto <span class="math inline">\(Y'\subseteq \{t_1,\ldots,t_n\}\)</span> &eacute; base transcendental de <span class="math inline">\(\mathbb L\)</span> sobre <span class="math inline">\(\mathbb F\)</span>. Por outro lado, <span class="math inline">\(\{x_1,\ldots,x_n\}\)</span> &eacute; base transcendental de <span class="math inline">\(\mathbb L\)</span> sobre <span class="math inline">\(\mathbb K\)</span> e toda base transcendental tem <span class="math inline">\(n\)</span> elementos. Assim <span class="math inline">\(Y'=Y\)</span> e, em particular, <span class="math inline">\(\{t_1,\ldots,t_n\}\)</span> &eacute; um conjunto algebricamente independente.</div>
+<div class="lemma">Assuma que <span class="math inline">\(A\subseteq B\)</span> &eacute; uma extens&atilde;o de an&eacute;is e seja <span class="math inline">\(x\in B\)</span>. Se <span class="math inline">\(B\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(A\)</span>, ent&atilde;o <span class="math inline">\(B[x]\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(A[x]\)</span>.</div>
+<div class="proof">Seja <span class="math inline">\(B=(b_1,\ldots,b_k)_A\)</span>. Ent&atilde;o <span class="math inline">\(B[x]=(b_1,\ldots,b_k)_{A[x]}\)</span>.</div>
+<div class="exercise"> Assuma que <span class="math inline">\(\mathbb F[x_1,\ldots,x_n]\)</span> &eacute; uma &aacute;lgebra de polin&ocirc;mios em <span class="math inline">\(n\)</span> vari&aacute;veis e sejam <span class="math inline">\(X,Y\subseteq \{x_1,\ldots,x_n\}\)</span>. Ent&atilde;o <span class="math display">\[(X)_{\mathbb F[x_{x_1,\ldots,x_n}]}\cap \mathbb F[Y]\cong<br>
+        (X\cap Y)_{ \mathbb F[Y]}.\]</span> Em particular, se <span class="math inline">\(X\cap Y=\emptyset\)</span>, ent&atilde;o <span class="math inline">\((X)_{\mathbb F[x_{x_1,\ldots,x_n}]}\cap \mathbb F[Y]=0\)</span>.</div>
+<div class="lemma">(Lema 1)<br>
+Seja <span class="math inline">\(R=\mathbb F[x_1,\ldots,x_n]\)</span> uma &aacute;lgebra de polin&ocirc;mios e seja <span class="math inline">\(t_1\in R\setminus\{0\}\)</span> tal que <span class="math inline">\(t_1R\neq R\)</span>. Existem <span class="math inline">\(t_2,\ldots,t_n\)</span> tais que
+<ol>
+<li>
+<p><span class="math inline">\(t_1,t_2,\ldots,t_n\)</span> s&atilde;o algebricamente independentes sobre <span class="math inline">\(\mathbb F\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(R\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P=\mathbb F[t_1,\ldots,t_n]\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(t_1R\cap P = t_1P\)</span>.</p>
+</li>
+</ol>
+</div>
+<div class="proof">Seja <span class="math inline">\(\ell\)</span> um n&uacute;mero natural a ser determinado mais precisamente depois. Defina para <span class="math inline">\(i\in\{2,\ldots,n\}\)</span>, <span class="math inline">\(t_i=x_i-x_1^{\ell^{i-1}}\)</span>. Ponha <span class="math inline">\(P=\mathbb F[t_1,\ldots,t_n]\)</span> e observe que <span class="math inline">\(P[x_1]=R\)</span>. Afirmamos que <span class="math inline">\(x_1\)</span> &eacute; integral sobre <span class="math inline">\(\mathbb F[t_1,\ldots,t_n]\)</span>. Como <span class="math inline">\(t_1\in\mathbb F[x_1,\ldots,x_n]\)</span>, temos que <span class="math display">\[\label{eq:nagata}<br>
+    t_1=\sum_v \alpha_vx_1^{v_1}\cdots x_n^{v_n}=<br>
+    \sum_v \alpha_v x_1^{v_1}(t_2+x_1^{\ell})^{v_2}\cdots(t_n+x_1^{\ell^{n-1}})^{v_n}.\]</span> Usando a nota&ccedil;&atilde;o <span class="math display">\[\label{eq:n}<br>
+    n(v)=v_1+v_2\ell+v_3\ell^2+\ldots+v_n\ell^{n-1},\]</span> cada parcela na soma anterior tem a forma <span class="math display">\[\alpha_v x_1^{v_1}(t_2+x_1^{\ell})^{v_2}\cdots(t_n+x_1^{\ell^{n-1}})^{v_n}=<br>
+    x_1^{n(v)}+\mbox{(termos de grau menor em $t_1$).}\]</span> Ora assuma que <span class="math inline">\(\ell\)</span> &eacute; maior que todo expoente <span class="math inline">\(v_i\)</span> aparecendo em&nbsp;na express&atilde;o para <span class="math inline">\(t_1\)</span> acima. Neste caso <span class="math inline">\(n(v)\)</span> pode ser visto como a expans&atilde;o de um n&uacute;mero natural na base <span class="math inline">\(\ell\)</span>. Em particular, <span class="math inline">\(n(v)\neq n(v')\)</span> se <span class="math inline">\(v\neq v'\)</span>. Isso quer dizer que os termos <span class="math inline">\(\alpha_v x_1^{n(v)}\)</span> n&atilde;o se cancelam. Seja <span class="math inline">\(w\)</span> o vetor com <span class="math inline">\(\alpha_w\neq 0\)</span>  e <span class="math inline">\(n(w)\)</span> maximal. Neste caso <span class="math display">\[t_1=\alpha_wx_1^{n(w)}+\mbox{(termos de menor grau em $x_1$)}.\]</span> Assim, obtemos a equa&ccedil;&atilde;o <span class="math display">\[x_1^{n(w)}-t_1+\mbox{(termos de menor grau em $x_1$)}=0\]</span> na qual o lado esquerdo &eacute; um polin&ocirc;mio na vari&aacute;vel <span class="math inline">\(x_1\)</span> com coeficinetes em <span class="math inline">\(\mathbb F[t_1,\ldots,t_n]\)</span>. Portanto <span class="math inline">\(x_1\)</span> &eacute; integral sobre <span class="math inline">\(P=\mathbb F[t_1,\ldots,t_n]\)</span> e <span class="math inline">\(R\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(\mathbb F[t_1,\ldots,t_n]\)</span>. Ora, o lema&nbsp;acima implica tamb&eacute;m que <span class="math inline">\(t_1,\ldots,t_n\)</span> s&atilde;o algebricamente independentes sobre <span class="math inline">\(\mathbb F\)</span>.
+<p>Nos resta provar (3). Temos que <span class="math inline">\(t_1\in P\)</span> e <span class="math inline">\(t_1\in t_1R\)</span> e assim <span class="math inline">\(t_1P\subseteq t_1R\cap P\)</span>. Seja <span class="math inline">\(x\in t_1R\cap P\)</span> e escreva <span class="math inline">\(x=t_1y\)</span> onde <span class="math inline">\(y\in R\)</span>. Considere a cadeia de extens&otilde;es <span class="math display">\[P\subseteq R\cap \mbox{Frac}(P)\subseteq R\]</span> e observe que <span class="math inline">\(y\in R\cap \mbox{Frac}(P)\)</span>. Como <span class="math inline">\(R\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P\)</span>, temos que <span class="math inline">\(R\cap \mbox{Frac}(P)\)</span> (sendo um subm&oacute;dulo de um m&oacute;dulo finitamente gerado sobre um anel noetheriano) &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P\)</span>. Agora considerando <span class="math inline">\(R\cap \mbox{Frac}(P)\)</span> em <span class="math inline">\(\mbox{Frac}(P)\)</span>, temos que <span class="math inline">\(R\cap \mbox{Frac}(P)\)</span> &eacute; integral sobre <span class="math inline">\(P\)</span>, ou seja <span class="math inline">\(R\cap \mbox{Frac}(P)\)</span> est&aacute; contido na normaliza&ccedil;&atilde;o <span class="math inline">\(\widetilde P\)</span> de <span class="math inline">\(P\)</span> em <span class="math inline">\(\mbox{Frac}(P)\)</span>. Mas <span class="math inline">\(P\)</span>, sendo &aacute;lgebra de polin&ocirc;mios sobre um corpo, &eacute; DFU, e assim <span class="math inline">\(\widetilde P=P\)</span>. Isso implica que <span class="math inline">\(y\in P\)</span>, ou seja <span class="math inline">\(x\in t_1P\)</span>.</p></div>
+<div class="lemma">(Lema 2) Seja <span class="math inline">\(R=\mathbb F[x_1,\ldots,x_n]\)</span> uma &aacute;lgebra de polin&ocirc;mios e seja <span class="math inline">\(\mathfrak a\subsetneqq R\)</span> um ideal. Existem <span class="math inline">\(t_1,\ldots,t_n\)</span> tais que
+<ol>
+<li>
+<p><span class="math inline">\(t_1,t_2,\ldots,t_n\)</span> s&atilde;o algebricamente independentes sobre <span class="math inline">\(\mathbb F\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(R\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P=\mathbb F[t_1,\ldots,t_n]\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(\mathfrak a\cap P = (t_1,\ldots,t_h)\)</span> com algum <span class="math inline">\(h\in\{1,\ldots,n\}\)</span>.</p>
+</li>
+</ol>
+</div>
+<div class="proof">Primeiro, se $\mathfrak a=0$, ent&atilde;o podemos tomar $t_i=x_i$ para todo $i$. Assuma logo que $\mathfrak a\neq 0$ e use indu&ccedil;&atilde;o por <span class="math inline">\(n\)</span>. Quando <span class="math inline">\(n=1\)</span>, ent&atilde;o <span class="math inline">\(R=\mathbb F[x_1]\)</span> e <span class="math inline">\(\mathfrak a=t_1R\)</span> com algum <span class="math inline">\(t_1\in R\)</span> e o resultado est&aacute; v&aacute;lido pelo Lema 1. Assuma que o resultado est&aacute; v&aacute;lido para an&eacute;is de polin&ocirc;mios com <span class="math inline">\(n-1\)</span> vari&aacute;veis. Considere <span class="math inline">\(\mathfrak a\subseteq \mathbb F[t_1,\ldots,t_n]\)</span> como no enunciado. Lembrando que <span class="math inline">\(\mathfrak a\neq 0\)</span>, tomemos <span class="math inline">\(t_1\in\mathfrak a\)</span> arbitr&aacute;rio n&atilde;o nulo. Use Lema&nbsp;1 para obter elementos <span class="math inline">\(u_2,\ldots,u_n\)</span> tais que
+<ol>
+<li>
+<p><span class="math inline">\(t_1,u_2,\ldots,u_n\)</span> s&atilde;o algebricamente independentes.</p>
+</li>
+<li>
+<p><span class="math inline">\(R\)</span> &eacute; m&oacute;dulo finito sobre <span class="math inline">\(P_1=\mathbb F[t_1,u_2,\ldots,u_n]\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(t_1R\cap P_1=t_1P_1\)</span>.</p>
+</li>
+</ol>
+<p>Ora, usando a Hip&oacute;tese de Indu&ccedil;&atilde;o para o anel <span class="math inline">\(R_0=\mathbb F[u_2,\ldots,u_n]\)</span> e o ideal <span class="math inline">\(\mathfrak b=\mathfrak a\cap R_0\)</span>, ache <span class="math inline">\(t_2,\ldots,t_n\in R_0\)</span> tais que</p>
+<ol>
+<li>
+<p><span class="math inline">\(t_2,\ldots,t_n\)</span> s&atilde;o algebricamente independentes sobre <span class="math inline">\(\mathbb F\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(R_0\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P_0=\mathbb F[t_2,\ldots,t_n]\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(\mathfrak b\cap P_0=\mathfrak a\cap P_0=(t_2,\ldots,t_h)_{P_0}\)</span> com algum <span class="math inline">\(h\leq n\)</span>.</p>
+</li>
+</ol>
+<p>Seja <span class="math inline">\(P=\mathbb F[t_1,t_2,\ldots,t_n]\)</span>. Lembre que <span class="math inline">\(R\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P_1\)</span> e <span class="math inline">\(\mathbb F[u_2,\ldots,u_n]\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P_0\)</span>. Por um lema acima, <span class="math inline">\(P_1=\mathbb F[t_1,u_1,\ldots,u_n]\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P=\mathbb F[t_1,t_2,\ldots,t_n]\)</span>. Por transitividade, <span class="math inline">\(R\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P\)</span>. Um outro lema&nbsp;acima implica tamb&eacute;m que <span class="math inline">\(t_1,\ldots,t_n\)</span> s&atilde;o algebricamente independentes.</p>
+<p>Nos resta provar afirma&ccedil;&atilde;o <span class="math inline">\((3)\)</span>. Claramente <span class="math inline">\(t_1,\ldots,t_h\in \mathfrak a\cap P\)</span> e assim <span class="math inline">\((t_1,\ldots,t_h)_{P}\subseteq \mathfrak a\cap P\)</span>. Assuma que <span class="math inline">\(x\in\mathfrak a\cap P\)</span>. Escreva <span class="math display">\[x=f_0+f_1t_1+f_2t_1^2+\cdots +f_kt_1^k\]</span> com <span class="math inline">\(f_i\in\mathbb F[t_2,\ldots,t_n]\)</span> e note que <span class="math inline">\(f_0=x-\sum_{i\geq 1}f_it_1^i\in \mathfrak a\cap \mathbb F[t_2,\ldots,t_n]\)</span>. Por outro lado, <span class="math display">\[\mathfrak a\cap \mathbb F[t_2,\ldots,t_n]=(t_2,\ldots,t_h)_{P_0}\subseteq (t_2,\ldots,t_h)_{P}.\]</span> Logo <span class="math inline">\(f_0\in (t_2,\ldots,t_h)_{P}\)</span> e <span class="math inline">\(x\in (t_1,t_2,\ldots,t_h)_{P}\)</span>.</p></div>
+<div class="lemma">(Lema 3) Seja <span class="math inline">\(R=k[x_1,\ldots,x_n]\)</span> uma &aacute;lgebra de polin&ocirc;mios e seja <span class="math inline">\(\mathfrak a_1\subseteq \mathfrak a_2\subseteq \cdots\subseteq \mathfrak a_r\subsetneqq R\)</span> uma cadeia de ideais. Existem <span class="math inline">\(t_1,\ldots,t_n\)</span> tais que
+<ol>
+<li>
+<p><span class="math inline">\(t_1,t_2,\ldots,t_n\)</span> s&atilde;o algebricamente independentes;</p>
+</li>
+<li>
+<p><span class="math inline">\(R\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P=k[t_1,\ldots,t_n]\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(\mathfrak a_i\cap P = (t_1,\ldots,t_{h_i})\)</span> com algum <span class="math inline">\(h_i\in\{1,\ldots,n\}\)</span>.</p>
+</li>
+</ol>
+</div>
+<div class="proof">Indu&ccedil;&atilde;o por <span class="math inline">\(r\)</span>. O caso <span class="math inline">\(r=1\)</span> &eacute; o Lema&nbsp;2. A hip&oacute;tese da indu&ccedil;&atilde;o &eacute; que o lema &eacute; verdadeiro para uma cadeia de <span class="math inline">\(r-1\)</span> ideais.
+<p>Assuma que temos uma cadeia de <span class="math inline">\(r\)</span> ideais como no enunciado. Usando a hip&oacute;tese da indu&ccedil;&atilde;o para a cadeia <span class="math inline">\(\mathfrak a_1\subseteq \cdots \subseteq \mathfrak a_{r-1}\)</span> obtemos elementos <span class="math inline">\(u_1,\ldots,u_n\in R\)</span> tais que</p>
+<ol>
+<li>
+<p><span class="math inline">\(u_1,\ldots,u_n\)</span> s&atilde;o algebricamente independentes;</p>
+</li>
+<li>
+<p><span class="math inline">\(R\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P_1=k[u_1,\ldots,u_n]\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(\mathfrak a_i\cap P_1=(u_1,\ldots,u_{h_i})_{P_1}\)</span> com <span class="math inline">\(1\leq h_1\leq h_2\leq \cdots\leq  h_{r-1}\)</span>.</p>
+</li>
+</ol>
+<p>Seja <span class="math inline">\(h=h_{r-1}\)</span>. Ora, usando Lema&nbsp;2 para <span class="math inline">\(S=k[u_{h+1},\ldots,u_n]\)</span> e <span class="math inline">\(\mathfrak b=\mathfrak a_r\cap S\)</span>, obtenha <span class="math inline">\(t_{h+1},\ldots,t_n\)</span> tais que</p>
+<ol>
+<li>
+<p><span class="math inline">\(t_{h+1},\ldots,t_n\)</span> s&atilde;o algebricamente independentes;</p>
+</li>
+<li>
+<p><span class="math inline">\(S\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P_2=k[t_{h+1},\ldots,t_n]\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\((\mathfrak b\cap P_2)= \mathfrak a\cap P_2=(t_{h+1},\ldots,t_{h_r})_{P_2}\)</span> com algum <span class="math inline">\(h_r\in\{h+1,\ldots,n\}\)</span>.</p>
+</li>
+</ol>
+<p>Agora ponha <span class="math inline">\(t_i=u_i\)</span> para <span class="math inline">\(i\in\{1,\ldots,h\}\)</span>. Afirmamos que os elementos <span class="math inline">\(t_1,\ldots,t_h,t_{h+1},\ldots,t_n\)</span> satisfazem as afirma&ccedil;&otilde;es do Teorema. Primeiro temos que as extens&otilde;es <span class="math display">\[k[t_{h+1},\ldots,t_n] \subseteq k[u_{h+1},\ldots,u_n]\quad \mbox{e}\quad k[u_1,\ldots,u_n]\subseteq R\]</span> s&atilde;o m&oacute;dulo-finitas. Portanto <span class="math display">\[k[t_1,\ldots,t_{h},t_{h+1},\ldots,t_n]= k[u_1,\ldots,u_{h},t_{h+1},\ldots,t_n]\subseteq R\]</span> &eacute; m&oacute;dulo-finito. Isso tamb&eacute;m implica que <span class="math inline">\(t_1,\ldots,t_n\)</span> s&atilde;o algebricamente independentes.</p>
+<p>Seja <span class="math inline">\(i\in\{1,\ldots,r\}\)</span>. Temos que <span class="math inline">\(t_1,\ldots,t_{h_i}\in\mathfrak a_i\cap P\)</span> ent&atilde;o <span class="math display">\[(t_1,\ldots,t_{h_i})_P\subseteq \mathfrak a_i\cap P.\]</span> Para provar a outra inclus&atilde;o, assuma que <span class="math inline">\(x=\mathfrak a_i\cap P\)</span> e seja <span class="math inline">\(m=h_i\)</span>. Ent&atilde;o <span class="math display">\[x=\sum_v f_vt_1^{v_1}\cdots t_m^{v_m}\quad\mbox{com}\quad f_i\in k[t_{m+1},\ldots,t_n].\]</span> Note, para <span class="math inline">\(i\in\{1,\ldots,r-1\}\)</span>, que <span class="math display">\[\begin{aligned}<br>
+    f_0\in\mathfrak a_i\cap k[t_{m+1},\ldots,t_n]&amp;=<br>
+    (\mathfrak a_i\cap k[u_1,\ldots,u_n])\cap k[t_{m+1},\ldots,t_n]\\<br>
+    &amp;\subseteq (\mathfrak a_i\cap k[u_1,\ldots,u_n])\cap k[u_{m+1},\ldots,u_n]\\&amp;<br>
+    =(u_1,\ldots,u_m)_{P_1}\cap k[u_{m+1},\ldots,u_n]=0.\end{aligned}\]</span> Se <span class="math inline">\(i=r\)</span>, <span class="math display">\[\begin{aligned}<br>
+    f_0\in\mathfrak a_r\cap k[t_{m+1},\ldots,t_n]&amp;=(\mathfrak a_r\cap k[t_h,\ldots,t_n])\cap k[t_{m+1},\ldots,t_n]\\<br>
+    &amp;=(t_1,\ldots,t_m)_{P_2}\cap k[t_{m+1},\ldots,t_n]=0.\end{aligned}\]</span> Nos dois casos, <span class="math inline">\(f_0=0\)</span> e <span class="math inline">\(x\in (t_1,\ldots,t_h)_P\)</span>.</p></div>
+<div class="theorem"> (Teorema de Normaliza&ccedil;&atilde;o de Noether) Seja <span class="math inline">\(R=k[y_1,\ldots,y_n]\)</span> uma <span class="math inline">\(k\)</span>-&aacute;lgebra finitamente gerada e seja <span class="math inline">\(\mathfrak a_1\subseteq \mathfrak a_2\subseteq \cdots\subseteq \mathfrak a_r\subsetneqq R\)</span> uma cadeia de ideais. Existem <span class="math inline">\(t_1,\ldots,t_m\)</span> tais que
+<ol>
+<li>
+<p><span class="math inline">\(t_1,t_2,\ldots,t_m\)</span> s&atilde;o algebricamente independentes;</p>
+</li>
+<li>
+<p><span class="math inline">\(R\)</span> &eacute; m&oacute;dulo-finito sobre <span class="math inline">\(P=k[t_1,\ldots,t_m]\)</span>;</p>
+</li>
+<li>
+<p><span class="math inline">\(\mathfrak a_i\cap P = (t_1,\ldots,t_{h_i})\)</span> com algum <span class="math inline">\(h_i\in\{1,\ldots,n\}\)</span>.</p>
+</li>
+</ol>
+</div>
+<div class="proof">Seja <span class="math inline">\(R_0=k[x_1,\ldots,x_n]\)</span> a &aacute;lgebra de polin&ocirc;mios e considere o mapa <span class="math inline">\(\psi:R_0\to R\)</span> definido como <span class="math inline">\(\psi(x_i)=y_i\)</span> para todo <span class="math inline">\(i\)</span>. Seja <span class="math inline">\(\mathfrak b_0=\ker\psi=\psi^{-1}(0)\)</span> e <span class="math inline">\(\mathfrak b_i=\psi^{-1}(\mathfrak a_i)\)</span> para <span class="math inline">\(i\geq 1\)</span>. Aplique Lema&nbsp;3 para a &aacute;lgebra <span class="math inline">\(R_0\)</span> e a cadeia <span class="math inline">\(\mathfrak b_0\subseteq \mathfrak b_1\subseteq \cdots\subseteq \mathfrak b_r\)</span> e obtenha uma sequ&ecirc;ncia <span class="math inline">\(u_{-h},\ldots,u_0,u_1,\ldots,u_m\in R_0\)</span> que satisfaz a afirma&ccedil;&atilde;o do Lema&nbsp;3 com <span class="math inline">\((\ker \psi)\cap P_1=(u_{-h},\ldots,u_0)_{P_1}\)</span> com $P_=k[u_{-h},\ldots,u_m]$. Seja <span class="math inline">\(t_i=\psi(u_i)\)</span> para <span class="math inline">\(i\in\{1,\ldots,m\}\)</span> e ponha $P=k[t_1,\ldots,t_m]$.
+<p>Primeiro <span class="math display">\[k[t_1,\ldots,t_m]\cong P_1/(\ker(\psi)\cap P_1)=k[u_1,\ldots,u_n].\]</span> Logo, <span class="math inline">\(t_1,\ldots,t_m\)</span> s&atilde;o algebricamente independentes.</p>
+<p>Al&eacute;m disso, <span class="math display">\[P=k[t_1,\ldots,t_m]\cong (P_1+\ker\psi)/\ker\psi\quad\mbox{e}\quad<br>
+        R\cong R_0/\ker\psi.\]</span> Como a extens&atilde;o <span class="math inline">\(P_1\subseteq R_0\)</span> &eacute; m&oacute;dulo finita, a extens&atilde;o <span class="math inline">\(P\subseteq R\)</span> tamb&eacute;m &eacute;.</p>
+<p>Finalmente, nos resta provar que <span class="math inline">\(\mathfrak a_i\cap P=(t_1,\ldots,t_{h_i})_P\)</span>. Primeiro, note que <span class="math display">\[\begin{aligned}<br>
+        \psi(\mathfrak b_i\cap P_0)&amp;=\psi((u_{-h},\ldots,u_{h_i})_{\mathbb F[u_{-h},\ldots,u_m]})=<br>
+        \psi((u_{-h},\ldots,u_{h_i}))_{\psi(\mathbb F[u_{-h},\ldots,u_m])}\\&amp;=<br>
+        (t_1,\ldots,t_{h_i})_{P}.<br>
+    \end{aligned}\]</span> Logo <span class="math display">\[\mathfrak a_i\cap P=\psi(\psi^{-1}(\mathfrak a_i\cap P))=\psi(\psi^{-1}(\mathfrak a_i)\cap \psi^{-1}(P))=<br>
+        \psi(\mathfrak b_i\cap P_0)=(t_1,\ldots,t_{h_i})_{P}.\]</span></p></div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
