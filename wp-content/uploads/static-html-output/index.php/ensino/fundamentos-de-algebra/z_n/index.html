@@ -24,8 +24,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fz_n%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fz_n%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -168,12 +167,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -188,10 +185,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -210,7 +205,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -228,7 +224,7 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">$\Z_n$</h1>	</header>
 		<div class="entry-content">
-		<div style="color:#000000">
+		<div style="color:/#000000">
 Seja $n\in\N$ um n&uacute;mero natural e seja $a\in\Z$. N&oacute;s definimos em uma aula anterior a classe residual (ou a classe de congru&ecirc;ncia de $a$) m&oacute;dulo $n$ como<br>
 \[<br>
 \overline a=\{a+kn\mid k\in\Z\}=\{b\in\Z\mid b\equiv a\pmod n\}.<br>
@@ -262,7 +258,8 @@ As opera&ccedil;&otilde;es $+$ e $\cdot$ s&atilde;o bem definidas no conjunto $\
 <li>$\overline a\overline b=\overline b\overline a$ (comutatividade da multiplia&ccedil;&atilde;o); </li>
 <li>$\overline a\overline 1=\overline a$ (elemento neutro da multiplica&ccedil;&atilde;o);</li>
 <li>$\overline a(\overline b+\overline c)=\overline a\overline b+\overline a\overline c$ (distributividade).
-</li></ul>
+</li>
+</ul>
 </div>
 <div class="proof">
 O fato que a opera&ccedil;&otilde;es $+$ e $\cdot$ s&atilde;o bem definidas &eacute; equivalente ao seginte fato. Se $a_1,a_2,b_1,b_2\in\Z$ tais que $\overline{a_1}=\overline{a_2}$ e<br>
@@ -281,7 +278,8 @@ Mas estas congru&ecirc;ncias s&atilde;o verdadeiras por um resultado que provamo
 \[<br>
 \overline a(\overline b+\overline c)=\overline a\overline{b+c}=\overline{a(b+c)}=\overline{ab+ac}=\overline{ab}+\overline{ac}=\overline a\overline b+\overline a\overline c.<br>
 \]
-</p></div>
+</p>
+</div>
 <div class="definition">
 Dizemos que um elemento $\overline a\in\Z_n$ &eacute; invert&iacute;vel se existe $\overline b\in\Z_n$ tal que $\overline a\overline b=\overline 1$. Neste caso $\overline b$ &eacute; dito inverso de $\overline a$.
 </div>
@@ -295,12 +293,14 @@ Um elemento $\overline a$ &eacute; invert&iacute;vel se e somente se existir $\o
 \overline b=\overline b\overline 1=\overline b(\overline a\overline c)=(\overline b\overline a)\overline c=\overline 1\overline c=\overline c.<br>
 \]<br>
 Daqui obtemos que $\overline b=\overline c$ como desejado.
-</p></div>
+</p>
+</div>
 <div class="corollary">
 Todo elemento diferente de $\overline 0$ &eacute; invert&iacute;vel em $\Z_n$ se e somente se $n$ &eacute; primo.
 </div>
 <p>O corol&aacute;rio anterior implica que, se $p$ for primo, a estrutura $\Z_p$ comporta-se na mesma maneira como $\Q$, $\R$, ou $\C$ no sentido que pode fazer as opera&ccedil;&otilde;es $+$ e $\cdot$ e pode tamb&eacute;m dividir por qualquer elemento n&atilde;o nulo. N&oacute;s dizemos que a estrutura $\Z_p$ &eacute; um corpo finito. Corpos finitos t&ecirc;m muitas aplica&ccedil;&otilde;es na matem&aacute;tica, mas tamb&eacute;m fora da matem&aacute;tica tal como na engenharia, f&iacute;sica, qu&iacute;mica, etc.
-</p></div>
+</p>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>

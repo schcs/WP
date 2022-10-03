@@ -25,8 +25,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdivisibilidade-entre-numeros-inteiros%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdivisibilidade-entre-numeros-inteiros%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -169,12 +168,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -189,10 +186,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -211,7 +206,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -229,7 +225,7 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">Divisibilidade entre n&uacute;meros inteiros</h1>	</header>
 		<div class="entry-content">
-		<div style="color:#000000;">
+		<div style="color:/#000000;">
 <h4>Defini&ccedil;&otilde;es e propriedades b&aacute;sicas</h4>
 <p>Os n&uacute;meros naturais s&atilde;o os n&uacute;meros $1$, $2$, $3$, etc. Alguns autores consideram o n&uacute;mero zero tamb&eacute;m natural, mas nesta disciplina os n&uacute;meros naturais come&ccedil;am com $1$. O conjunto dos n&uacute;meros naturais &eacute; denotado por $\N$, enquanto $\N_0$ denota o conjunto $\{0\}\cup\N$. Os n&uacute;meros inteiros s&atilde;o os n&uacute;meros naturais e os seus negativos. O conjunto dos n&uacute;meros inteiros &eacute; denotado por $\Z$ (pela palavra <em>zahlen</em> em alem&atilde;o); ou seja<br>
 \[<br>
@@ -271,13 +267,15 @@ Como $a\neq 0$, a &uacute;ltima equa&ccedil;&atilde;o destacada implica que $q_2
 b+c=q_1a+q_2a=(q_1+q_2)a;<br>
 \]<br>
 ou seja, $a\mid b+c$. Pode-se modificar o argumento trivialmente para mostrar que $a\mid b-c$.
-</p></div>
+</p>
+</div>
 <h4>O Teorema da Divis&atilde;o de Euclides</h4>
 <div class="theorem">(O Teorema da Divis&atilde;o de Euclides) Sejam $a,b\in\Z$ tais que $b\neq 0$. Ent&atilde;o existem unicamente $q,r\in\Z$ tais que<br>
 \[<br>
 a=qb+r\quad\mbox{e}\quad 0\leq r&lt;|b|.<br>
 \]</div>
-<div class="proof"><strong>Exist&ecirc;ncia.</strong> Suponha primeiro que $b$ &eacute; positivo. Vamos demonstrar a exist&ecirc;ncia primeiro para $a$ n&atilde;o negativo por indu&ccedil;&atilde;o em $a$. Quando $a=0$, pode escolher $q=r=0$ e a afirma&ccedil;&atilde;o sobre a exist&ecirc;ncia destes n&uacute;meros est&aacute; v&aacute;lida. Assuma que a afirma&ccedil;&atilde;o da exist&ecirc;ncia &eacute; verdadeira para algum $a\geq 0$; ou seja existem $q,r\in\Z$ tais que $a=qb+r$ e $0\leq r&lt;b$. O n&uacute;mero $a+1$ pode ser escrito como<br>
+<div class="proof">
+<strong>Exist&ecirc;ncia.</strong> Suponha primeiro que $b$ &eacute; positivo. Vamos demonstrar a exist&ecirc;ncia primeiro para $a$ n&atilde;o negativo por indu&ccedil;&atilde;o em $a$. Quando $a=0$, pode escolher $q=r=0$ e a afirma&ccedil;&atilde;o sobre a exist&ecirc;ncia destes n&uacute;meros est&aacute; v&aacute;lida. Assuma que a afirma&ccedil;&atilde;o da exist&ecirc;ncia &eacute; verdadeira para algum $a\geq 0$; ou seja existem $q,r\in\Z$ tais que $a=qb+r$ e $0\leq r&lt;b$. O n&uacute;mero $a+1$ pode ser escrito como<br>
 \[<br>
 a+1=qb+r+1<br>
 \]<br>
@@ -327,12 +325,17 @@ a aplicando a lei cancelativa aditivamente obtemos que $r_1=r_2$. Ent&atilde;o a
 Vamos ver alguns exemplos do quiciente $q$ e do resto $r$ no Teorema da Divis&atilde;o para alguns valores $a,b$. Pode-se verificar facilmente as seguintes afirma&ccedil;&otilde;es.
 <ol>
 <li> Se $a=13$ e $b=5$, ent&atilde;o $q=2$ e $r=3$.
-</li><li> Se $a=-13$ e $b=5$, ent&atilde;o $q=-3$ e $r=2$.
-</li><li> Se $a=13$ e $b=-5$, ent&atilde;o $q=-2$ e $r=3$.
-</li><li> Se $a=-13$ e $b=-5$, ent&atilde;o $q=3$ e $r=2$.
-</li></ol>
+</li>
+<li> Se $a=-13$ e $b=5$, ent&atilde;o $q=-3$ e $r=2$.
+</li>
+<li> Se $a=13$ e $b=-5$, ent&atilde;o $q=-2$ e $r=3$.
+</li>
+<li> Se $a=-13$ e $b=-5$, ent&atilde;o $q=3$ e $r=2$.
+</li>
+</ol>
 <p>Explique porque $r\neq -3$ nos itens 2 e 4.
-</p></div>
+</p>
+</div>
 <h3>Computa&ccedil;&otilde;es com Python</h3>
 <p>Vamos ver agora como calcular o quociente e o resto na linguagem Python. O quociente de dois n&uacute;meros naturais pode ser calculado por &ldquo;//&rdquo; e o resto por &ldquo;%&rdquo;. Considere o seguinte exemplo:</p>
 <pre><code class="language-python-repl">
@@ -373,7 +376,8 @@ True
 -4
 </code></pre>
 <p>Nestes casos o output dado por Python precisa ser modificado para ser compat&iacute;vel com o Teorema de Divis&atilde;o enunciado anteriormente.
-</p></div>
+</p>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>

@@ -25,8 +25,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Falgebra-a%2Falgoritmos-basicos%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Falgebra-a%2Falgoritmos-basicos%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -169,12 +168,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -189,10 +186,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -211,7 +206,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -247,7 +243,8 @@ function adi&ccedil;&atilde;o( list1, list2; base = 10 )
 end 
 </code></pre>
 <p>Este algoritmo simples tem um la&ccedil;o executado por <code>max(l1,l2)</code> vezes e cada execu&ccedil;&atilde;o do la&ccedil;o precisa de um n&uacute;mero constante de opera&ccedil;&otilde;es. Este &eacute; um algoritmo cuja complexidade &eacute; polinomial de primeiro grau em termos de $\mbox{comp}(a)+\mbox{comp}(b)$ onde $a$ e $b$ s&atilde;o os dois n&uacute;meros no input.
-</p></div>
+</p>
+</div>
 <div class="example">&Eacute; similarmente f&aacute;cil verificar que a diferen&ccedil;a $a-b$ pode ser calculado usando um constante vezes $\mbox{comp}(a)+\mbox{comp}(b)$ opera&ccedil;&otilde;es.</div>
 <div class="example">
 Considere a seguinte algoritmo para a multiplica&ccedil;&atilde;o de dois n&uacute;meros inteiros.
@@ -271,7 +268,8 @@ end
 </code></pre>
 <p>Aqui tem dois la&ccedil;os e o n&uacute;cleo dos la&ccedil;os precisa de um n&uacute;mero constante de opera&ccedil;&otilde;es. Al&eacute;m disso, no la&ccedil;o exterior fazemos uma chamada para a fun&ccedil;&atilde;o adi&ccedil;&atilde;o. Pode concluir que o n&uacute;mero das opera&ccedil;&otilde;es que precisamos para executar este algoritmo &eacute; constante vezes $\mbox{comp}(a)\cdot\mbox{comp}(b)$ onde $a$ e $b$ s&atilde;o os dois n&uacute;meros no input.</p>
 <p>Vale a pena mencionar que dois n&uacute;meros naturais de comprimento menor ou igual a $n$ podem ser multiplicadas usando o <a href="https://pt.wikipedia.org/wiki/Algoritmo_Sch%C3%B6nhage-Strassen">Algoritmo Sch&ouml;nhage-Strassen</a> que precisa de constante vezes $n\log n\log\log n$ opera&ccedil;&otilde;es.
-</p></div>
+</p>
+</div>
 <p>Nos dois casos anteriores, o n&uacute;mero de opera&ccedil;&otilde;es que precisamos para executar o algoritmo foi polinomial no comprimento do input. No primeiro caso, foi polinomial do primeiro grau, e no segundo caso foi polinomial do segundo grau. Algoritmos polinomiais de pequeno grau (menor ou igual a 3 ou 4) s&atilde;o considerados algoritmos pr&aacute;ticos. Quando o input do algoritmo &eacute; um n&uacute;mero natural $n$, ent&atilde;o seu comprimento &eacute; $\log n$. </p>
 <div class="example">
 Considere a seguinte fun&ccedil;&atilde;o para determinar se um n&uacute;mero &eacute; primo ou n&atilde;o.
@@ -335,7 +333,8 @@ end
 	</div>
 
 
-	</article></main></div>
+	</article></main>
+</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -353,5 +352,6 @@ end
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</div></body>
+</div>
+</body>
 </html>

@@ -24,8 +24,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fpolinomios-irredutiveis%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fpolinomios-irredutiveis%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -168,12 +167,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -188,10 +185,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -210,7 +205,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -228,7 +224,7 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">Polin&ocirc;mios irredut&iacute;veis</h1>	</header>
 		<div class="entry-content">
-		<div style="color:#000000">
+		<div style="color:/#000000">
 <div class="definition">
 Seja $R$ um dom&iacute;nio e seja $a\in R$ tal que $a\neq 0$ e $a$ n&atilde;o &eacute; invert&iacute;vel (em $R$). O elemento $a$ &eacute; dito <strong>redut&iacute;vel</strong> se existem $b,c\in R$ tal que $a=bc$ e nem $b$ nem $c$ &eacute; invert&iacute;vel.  Caso contr&aacute;rio, o elemento $a$ &eacute; dito <strong>irredut&iacute;vel</strong>. O elemento $0\in R$ e os elementos invert&iacute;veis de $R$ n&atilde;o s&atilde;o nem redut&iacute;veis nem irredut&iacute;veis.
 </div>
@@ -256,7 +252,8 @@ As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras para um polin&ocirc
 e assim $\grau{g(x)}=0$ ou $\grau{h(x)}=0$. Logo um dos polin&ocirc;mios de $g(x)$ ou $h(x)$ &eacute; escalar n&atilde;o nulo. Como tais polin&ocirc;mios de $\F[x]$ s&atilde;o invert&iacute;veis, temos que $f(x)$ &eacute; irredut&iacute;vel.</p>
 <p>(3) Se $\grau{f(x)} &gt; 1$ e $\alpha\in\F$ &eacute; raiz de $f(x)$, ent&atilde;o $x-\alpha\mid f(x)$ e $f(x)=(x-\alpha)g(x)$ com $g(x)\in\F[x]$. Ademais, $\grau{g(x)}=\grau{f(x)}-1\geq 1$ e assim $f(x)$ pode ser fatorado como um produto de dois polin&ocirc;mios em tal forma que nenhum dos fatores &eacute; invert&iacute;vel. Portanto $f(x)$ &eacute; redut&iacute;vel.</p>
 <p>(4) Assuma que $\grau{f(x)}\in\{2,3\}$. Se $f(x)$ possui raiz, ent&atilde;o ele &eacute; redut&iacute;vel pelo tericeiro item. Vice versa, se $f(x)$ &eacute; redut&iacute;vel, ent&atilde;o  $f(x)=g(x)h(x)$. Considerando que $f(x)$ tem grau dois ou tr&ecirc;s, temos que ou $g(x)$ ou $h(x)$ tem grau $1$. Assim $f(x)$ &eacute; divis&iacute;vel por um polin&ocirc;mio na forma $\alpha x+\beta$ com $\alpha\neq 0$ e assim $-\beta/\alpha$ &eacute; raiz de $f(x)$.
-</p></div>
+</p>
+</div>
 <div class="exercise">(O Teorema das Ra&iacute;zes Racionais)<br>
 Seja $f(x)=\alpha_n x^n+\alpha_{n-1}x^{n-1}+\cdots+\alpha_1x+\alpha_0\in\Z[x]$ e assuma que $\alpha/\beta\in\Q$ tal que $\mdc{\alpha}\beta=1$ &eacute; uma raiz de $f(x)$. Mostre que $\alpha\mid \alpha_0$ e $\beta\mid \alpha_n$.
 </div>
@@ -267,7 +264,9 @@ Seja $f(x)=\alpha_n x^n+\alpha_{n-1}x^{n-1}+\cdots+\alpha_1x+\alpha_0\in\Z[x]$ e
 <li>Seja $f(x)=x^3+x+1\in \Q[x]$ usando o Teorema das Ra&iacute;zes Racionais, vemos que $f(x)$ n&atilde;o tem raiz em $\Q$ e assim $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$. </li>
 <li>Considerando $f(x)=x^3+x+1\in\R[x]$ temos que $f(x)$ possui raiz real (tendo grau &iacute;mpar) e assim $f(x)$ &eacute; redut&iacute;vel em $\R[x]$. O mesmo polin&ocirc;mio tamb&eacute;m &eacute; redut&iacute;vel em $\C[x]$.</li>
 <li>Seja $f(x)=x^3+x+\overline 1\in \Z_3[x]$. Claramente, $\overline 1\in\Z_3$ &eacute; raiz de $f(x)$ e assim $f(x)$ &eacute; redut&iacute;vel em $\Z_3[x]$.  </li>
-<li>Seja $f(x)=x^4+2x^2+1\in\R[x]$. Ent&atilde;o $f(x)=(x^2+1)^2$ e assim $f(x)$ &eacute; redut&iacute;vel mesmo que $f(x)$ n&atilde;o possui ra&iacute;z em $\R$.</li></ul></div>
+<li>Seja $f(x)=x^4+2x^2+1\in\R[x]$. Ent&atilde;o $f(x)=(x^2+1)^2$ e assim $f(x)$ &eacute; redut&iacute;vel mesmo que $f(x)$ n&atilde;o possui ra&iacute;z em $\R$.</li>
+</ul>
+</div>
 <div class="theorem">
 <ol>
 <li>Um polin&ocirc;mio $f(x)\in\C[x]$ &eacute; irredut&iacute;vel se e somente se $\grau{f(x)}=1$.</li>
@@ -282,9 +281,11 @@ f(x)=\alpha\prod_{i=1}^r (x-\alpha_i)\prod_{j=1}^s(x^2+\beta_jx+\gamma_j)<br>
 \]<br>
 onde $\alpha\in\R$ &eacute; o coeficiente l&iacute;der de $f(x)$.<br>
 O fato que $\grau{f(x)}\geq 3$ implica que o n&uacute;mero dos fatores &eacute; maior ou igual a dois e assim $f(x)$ &eacute; redut&iacute;vel.
-</p></div>
+</p>
+</div>
 <p>O problema de decidir se um polin&ocirc;mio &eacute; redut&iacute;vel ou irredut&iacute;vel em $\Q[x]$ ou $\Z_p[x]$ &eacute; bem mais complicado como n&oacute;s tamb&eacute;m vamos ver nas aulas seguintes.
-</p></div>
+</p>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>

@@ -3,30 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
 
-
-<title>Expans&atilde;o decimal de n&uacute;meros racionais &ndash; Csaba Schneider</title>
+<title>Expansão decimal de números racionais &#8211; Csaba Schneider</title>
+<meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
-
+<link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
-<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://schcs.github.io/WP/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="prismatic-blocks-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/css/styles-blocks.css?ver=6.0.2" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-green: #1c7c7c;--wp--preset--color--dark-gray: #666;--wp--preset--color--medium-gray: #999;--wp--preset--color--light-gray: #eee;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.2.1" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
-
-
-
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.14" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/1263">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.2">
 <link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/expansao-decimal-de-numeros-racionais/">
-
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fexpansao-decimal-de-numeros-racionais%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fexpansao-decimal-de-numeros-racionais%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=1263">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fexpansao-decimal-de-numeros-racionais%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fexpansao-decimal-de-numeros-racionais%2F&#038;format=xml">
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -169,12 +191,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
-	
-
-<script>
-MathJax = {
+}</style>
+		
+<!-- MathJax script -->
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -189,21 +209,19 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-
+<!-- End of MathJax script -->
 
 </head>
 
-<body class="page-template-default page page-id-1263 page-child parent-pageid-1193 no-sidebar">
+<body class="page-template-default page page-id-1263 page-child parent-pageid-1193 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
@@ -211,12 +229,13 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
-</ul></div>		</nav>
-	</header>
+</ul></div>		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
 		
@@ -227,43 +246,43 @@ MathJax = {
 				
 <article id="post-1263" class="post-1263 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Expans&atilde;o decimal de n&uacute;meros racionais</h1>	</header>
+		<h1 class="entry-title">Expansão decimal de números racionais</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<div style="color:#000000;">
-Comecemos por um resultado conhecido de c&aacute;lculo.
-<div class="lemma">Se $|q| &lt;1$, ent&atilde;o a s&eacute;rie<br>
+		<div style="color:/#000000;">
+Comecemos por um resultado conhecido de cálculo.
+<div class="lemma">Se $|q| &lt;1$, então a série<br>
 \[<br>
 \sum_{n=0}^\infty q^n<br>
 \]<br>
-&eacute; convergente e a sua soma &eacute; igual a<br>
+é convergente e a sua soma é igual a<br>
 \[<br>
 \frac{1}{1-q}.<br>
 \]</div>
-<div class="proof">Exerc&iacute;cio</div>
-<p>No bloco anterior, estudamos expans&otilde;es de n&uacute;meros naturais na base $b$. Escrevemos naturais na base $b$ como $[a_na_{n-1}\cdots a_1a_0]_b$. Quando $b=10$, escrevemos o mesmo n&uacute;mero como $[a_na_{n-1}\cdots a_1a_0]$ (sem explicitamente indicar a base).</p>
-<p>Uma fra&ccedil;&atilde;o decimal (ou expans&atilde;o decimal) n&atilde;o negativa &eacute; uma sequ&ecirc;ncia (possivelmente infinita) de algarismos na forma $[a_na_{n-1}\cdots a_1a_0,a_{-1}a_{-2}\cdots]$ onde $a_{i}\in\{0,\ldots,9\}$. O n&uacute;mero representado pela fra&ccedil;&atilde;o &eacute;<br>
+<div class="proof">Exercício</div>
+<p>No bloco anterior, estudamos expansões de números naturais na base $b$. Escrevemos naturais na base $b$ como $[a_na_{n-1}\cdots a_1a_0]_b$. Quando $b=10$, escrevemos o mesmo número como $[a_na_{n-1}\cdots a_1a_0]$ (sem explicitamente indicar a base).</p>
+<p>Uma fração decimal (ou expansão decimal) não negativa é uma sequência (possivelmente infinita) de algarismos na forma $[a_na_{n-1}\cdots a_1a_0,a_{-1}a_{-2}\cdots]$ onde $a_{i}\in\{0,\ldots,9\}$. O número representado pela fração é<br>
 \begin{align*}<br>
 a&amp;=\sum_{k=n}^{-\infty}a_k10^k=\sum_{k=0}^n a_k10^k+\sum_{k=1}^{\infty}a_{-k}10^{-k}\\&amp;=<br>
 [a_na_{n-1}\cdots a_1a_0]+\sum_{k=1}^{\infty}a_{-k}10^{-k}.<br>
 \end{align*}<br>
-A express&atilde;o acima mostra que cada fra&ccedil;&atilde;o decimal n&atilde;o negativa pode ser escrita como a soma de um n&uacute;mero natural e uma fra&ccedil;&atilde;o decimal na forma $[0,a_{-1}a_{-2}\cdots]$. Como os n&uacute;meros naturais foram tratados na unidade anterior, aqui vamos focar apenas fra&ccedil;&otilde;es na forma $[0,a_{-1}a_{-2}\cdots]$. Uma fra&ccedil;&atilde;o natural desta forma pode ser finita ou infinita. Quando a sequ&ecirc;ncia de algarismos depois da v&iacute;rgula &eacute; infinita, ent&atilde;o a fra&ccedil;&atilde;o &eacute; infinita; caso contr&aacute;rio a fra&ccedil;&atilde;o &eacute; finita. Uma fra&ccedil;&atilde;o finita pode ser escrita na forma $[0,a_{-1}a_{-2}\cdots a_{-n}]$. Note que uma fra&ccedil;&atilde;o finita pode ser considerada infinita adicionando uma sequ&ecirc;ncia infinita de zeros e assim n&oacute;s frequentemente assumimos que as fra&ccedil;&otilde;es analizadas s&atilde;o infinitas.</p>
-<div class="lemma">Para qualquer sequ&ecirc;ncia (possivelmente infinita) de algarismos, a expans&atilde;o $[0,a_{1}a_{2}\cdots]$ representa um n&uacute;mero real entre zero e um.</div>
-<div class="proof">Precisa provar que a s&eacute;rie<br>
+A expressão acima mostra que cada fração decimal não negativa pode ser escrita como a soma de um número natural e uma fração decimal na forma $[0,a_{-1}a_{-2}\cdots]$. Como os números naturais foram tratados na unidade anterior, aqui vamos focar apenas frações na forma $[0,a_{-1}a_{-2}\cdots]$. Uma fração natural desta forma pode ser finita ou infinita. Quando a sequência de algarismos depois da vírgula é infinita, então a fração é infinita; caso contrário a fração é finita. Uma fração finita pode ser escrita na forma $[0,a_{-1}a_{-2}\cdots a_{-n}]$. Note que uma fração finita pode ser considerada infinita adicionando uma sequência infinita de zeros e assim nós frequentemente assumimos que as frações analizadas são infinitas.</p>
+<div class="lemma">Para qualquer sequência (possivelmente infinita) de algarismos, a expansão $[0,a_{1}a_{2}\cdots]$ representa um número real entre zero e um.</div>
+<div class="proof">Precisa provar que a série<br>
 \[<br>
 \sum_{k=1}^\infty a_{k}10^{-k}<br>
 \]<br>
-&eacute; convergente e converge a um n&uacute;mero entre zero e um. Como $0\leq a_i\leq 9$ para todo $i$, obtemos que<br>
+é convergente e converge a um número entre zero e um. Como $0\leq a_i\leq 9$ para todo $i$, obtemos que<br>
 \[<br>
 \sum_{k=1}^\infty a_{k}10^{-k}\leq\sum_{k=1}^\infty 9\cdot 10^{-k}=\frac 9{10}\sum_{k=0}^\infty 10^{-k}=\frac 9{10}\frac 1{1-1/10}=1.<br>
 \]<br>
-Como os termos da s&eacute;rie na &uacute;ltima linha s&atilde;o n&atilde;o negativas, a conta acima mostra que a s&eacute;rie que corresponde &agrave; expans&atilde;o $[0,a_{1}a_{2}\cdots]$ &eacute; convergente e converge a um n&uacute;mero n&atilde;o negativo menor ou igual a $1$.</div>
-<p>Note que o mesmo n&uacute;mero real pode ser escrito de maneiras distintas como fra&ccedil;&atilde;o decimal. Por exemplo, $1,00\cdots=0,99\cdots$.</p>
-<p>Considere a fra&ccedil;&atilde;o decimal $[0,a_{1}a_{2}\cdots]$. Esta fra&ccedil;&atilde;o chama-se peri&oacute;dica se existem $m\geq 0$ e $r\geq 1$ tais que $a_{r+k}=a_k$ para todo $k&gt; m$. A sequ&ecirc;ncia $[a_1\cdots a_m]$ chama-se pr&eacute;-per&iacute;odo, enquanto a sequ&ecirc;ncia $[a_{m+1}\cdots a_{m+r}]$ chama-se per&iacute;odo da fra&ccedil;&atilde;o.</p>
-<p>Uma fra&ccedil;&atilde;o peri&oacute;dica com pr&eacute;-per&iacute;odo $[a_1\cdots a_m]$ e per&iacute;odo $[a_{m+1}\cdots a_{m+r}]$ tem a forma<br>
+Como os termos da série na última linha são não negativas, a conta acima mostra que a série que corresponde à expansão $[0,a_{1}a_{2}\cdots]$ é convergente e converge a um número não negativo menor ou igual a $1$.</div>
+<p>Note que o mesmo número real pode ser escrito de maneiras distintas como fração decimal. Por exemplo, $1,00\cdots=0,99\cdots$.</p>
+<p>Considere a fração decimal $[0,a_{1}a_{2}\cdots]$. Esta fração chama-se periódica se existem $m\geq 0$ e $r\geq 1$ tais que $a_{r+k}=a_k$ para todo $k&gt; m$. A sequência $[a_1\cdots a_m]$ chama-se pré-período, enquanto a sequência $[a_{m+1}\cdots a_{m+r}]$ chama-se período da fração.</p>
+<p>Uma fração periódica com pré-período $[a_1\cdots a_m]$ e período $[a_{m+1}\cdots a_{m+r}]$ tem a forma<br>
 \[<br>
 [0,a_1\cdots a_ma_{m+1}\cdots a_{m+r}a_{m+1}\cdots a_{m+r}\cdots];<br>
 \]<br>
-ou seja, a fra&ccedil;&atilde;o come&ccedil;a com a sequ&ecirc;ncia $[a_1\cdots a_m]$ e depois a sequ&ecirc;ncia $[a_{m+1}\cdots a_{m+r}]$ est&aacute; se repetindo. Neste caso escrevemos a fra&ccedil;&atilde;o como<br>
+ou seja, a fração começa com a sequência $[a_1\cdots a_m]$ e depois a sequência $[a_{m+1}\cdots a_{m+r}]$ está se repetindo. Neste caso escrevemos a fração como<br>
 \[<br>
 [0,a_1\cdots a_m\overline{a_{m+1}\cdots a_{m+r}}].<br>
 \]<br>
@@ -272,17 +291,17 @@ Por exemplo<br>
 1/44=0,02272727\cdots=0,02\overline{27}.<br>
 \]</p>
 <div class="theorem">
-As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.
+As seguintes afirmações são verdadeiras.
 <ol>
-<li>Toda expans&atilde;o decimal peri&oacute;dica representa um n&uacute;mero racional.</li>
-<li>Se $a/b$ &eacute; um n&uacute;mero racional tal que $0&lt;a&lt;b$, ent&atilde;o sua expans&atilde;o decimal &eacute; peri&oacute;dica</li>
+<li>Toda expansão decimal periódica representa um número racional.</li>
+<li>Se $a/b$ é um número racional tal que $0&lt;a&lt;b$, então sua expansão decimal é periódica</li>
 </ol>
 </div>
-<div class="proof">1. Considere a expans&atilde;o decimal<br>
+<div class="proof">1. Considere a expansão decimal<br>
 \[<br>
 [0,a_1a_2\cdots]=[0,a_1a_2\cdots a_m\overline{a_{m+1}\cdots a_{m+r}}]<br>
 \]<br>
-e seja $a$ o n&uacute;mero representado por esta expans&atilde;o. Pelo lema anterior, $0\leq a\leq 1$. Sejam $u$ e $v$ os n&uacute;meros naturais<br>
+e seja $a$ o número representado por esta expansão. Pelo lema anterior, $0\leq a\leq 1$. Sejam $u$ e $v$ os números naturais<br>
 \[<br>
 u=[a_1a_2\cdots a_m]\quad\mbox{e}\quad v=[a_{m+1}\cdots a_{m+r}].<br>
 \]<br>
@@ -290,31 +309,31 @@ Tem-se que<br>
 \begin{align*}<br>
 a&amp;=\sum_{k=1}^\infty a_k10^{-k}=\frac u{10^{m}}+\sum_{k=1}^\infty \frac{v}{10^{m+kr}}\\&amp;=\frac u{10^{m}}+\frac{v}{10^{m+r}}\sum_{k=0}^\infty \frac{1}{10^{kr}}=\frac{u}{10^{m}}+\frac{v}{10^{m+r}}\frac{1}{1-10^{-r}}.<br>
 \end{align*}<br>
-Ora note apenas que o n&uacute;mero no lado direito da &uacute;ltima equa&ccedil;&atilde;o &eacute; um n&uacute;mero racional.
-<p>2. Assuma que $0&lt; a&lt;b$ e considere o racional $q=a/b$. Vamos determinar a sequ&ecirc;ncia de algarismos para $q$. Seja $a_0=a$, $q_0=0$ e escreva, usando o Teorema de Divis&atilde;o de Euclides,<br>
+Ora note apenas que o número no lado direito da última equação é um número racional.
+<p>2. Assuma que $0&lt; a&lt;b$ e considere o racional $q=a/b$. Vamos determinar a sequência de algarismos para $q$. Seja $a_0=a$, $q_0=0$ e escreva, usando o Teorema de Divisão de Euclides,<br>
 \[<br>
 10a_0=q_1b+a_1\quad\mbox{onde}\quad 0\leq a_1&lt;b.<br>
 \]<br>
-Assuma que as sequ&ecirc;ncias $a_0,\ldots,a_k$ e $q_0,\ldots,q_k$ s&atilde;o determinadas, e defina $q_{k+1}$ e $a_{k+1}$ pela equa&ccedil;&atilde;o<br>
+Assuma que as sequências $a_0,\ldots,a_k$ e $q_0,\ldots,q_k$ são determinadas, e defina $q_{k+1}$ e $a_{k+1}$ pela equação<br>
 \[<br>
 10a_k=q_{k+1}b+a_{k+1}\quad\mbox{onde}\quad 0\leq a_{k+1}&lt;b<br>
 \]<br>
-usando o Teorema de Divis&atilde;o de Euclides. </p>
-<p>Afirmamos que a expans&atilde;o decimal de $a/b$ &eacute; $[0,q_1q_2\cdots]$. Para isso n&oacute;s precisamos verificar que<br>
+usando o Teorema de Divisão de Euclides. </p>
+<p>Afirmamos que a expansão decimal de $a/b$ é $[0,q_1q_2\cdots]$. Para isso nós precisamos verificar que<br>
 \[<br>
 \sum_{k=1}^\infty q_k10^{-k}\to \frac ab.<br>
 \]<br>
-De fato, n&oacute;s provaremos que<br>
+De fato, nós provaremos que<br>
 \[<br>
 10^k a=\sum_{i=1}^k10^{k-i}q_ib+a_k<br>
 \]<br>
-Para $k=1$, esta afirma&ccedil;&atilde;o segue da express&atilde;o acima para $10a_0=10a$. Assuma que esta igualdade &eacute; verdadeira para algum $k$. Ent&atilde;o<br>
+Para $k=1$, esta afirmação segue da expressão acima para $10a_0=10a$. Assuma que esta igualdade é verdadeira para algum $k$. Então<br>
 \begin{align*}<br>
 10^{k+1}a&amp;=10\cdot 10^ka=10\cdot\left(\sum_{i=1}^k10^{k-i}q_ib+a_k\right)<br>
 \\&amp;=\sum_{i=1}^{k}10^{k+1-i}q_ib+10a_k\\&amp;=<br>
 \sum_{i=1}^{k}10^{k+1-i}q_ib+q_{k+1}b+a_{k+1}\\&amp;=\sum_{i=1}^{k+1}10^{k+1-i}q_ib+a_{k+1}.<br>
 \end{align*}<br>
-Ent&atilde;o a afirma&ccedil;&atilde;o &eacute; verdadeira para todo $k$. Segue, para todo $k\geq 1$, da mesma afirma&ccedil;&atilde;o que<br>
+Então a afirmação é verdadeira para todo $k$. Segue, para todo $k\geq 1$, da mesma afirmação que<br>
 \[<br>
 \frac ab=\sum_{i=1}^k10^{-i}q_i+a_k/(10^kb)=[0,q_1\cdots q_k]+\frac{a_k}{10^kb};<br>
 \]<br>
@@ -322,79 +341,83 @@ e assim<br>
 \[<br>
 \frac ab-[0,q_1\cdots q_k]=\frac{a_k}{10^kb}&lt;\frac{b}{10^kb}=10^{-k}.<br>
 \]<br>
-Isso implica que a sequ&ecirc;ncia $[0,q_1\cdots q_k]$ converge para $a/b$ quando $k\to\infty$ e ent&atilde;o a expans&atilde;o do n&uacute;mero racional $a/b$ &eacute; $[0,q_1q_2\cdots]$.</p>
-<p>Finalmente precisamos provar que a expans&atilde;o $[0,q_1q_2\cdots]$ de $a/b$ &eacute; peri&oacute;dica. Para isso, note que a sequ&ecirc;ncia $a_1,a_2,\ldots$ &eacute; uma sequ&ecirc;ncia de n&uacute;meros naturais com $a_i\in\{0,\ldots,b-1\}$ para todo $i$. Ent&atilde;o vai existir $m$ e $r$ tal que $a_{m+r}=a_m$. Logo<br>
+Isso implica que a sequência $[0,q_1\cdots q_k]$ converge para $a/b$ quando $k\to\infty$ e então a expansão do número racional $a/b$ é $[0,q_1q_2\cdots]$.</p>
+<p>Finalmente precisamos provar que a expansão $[0,q_1q_2\cdots]$ de $a/b$ é periódica. Para isso, note que a sequência $a_1,a_2,\ldots$ é uma sequência de números naturais com $a_i\in\{0,\ldots,b-1\}$ para todo $i$. Então vai existir $m$ e $r$ tal que $a_{m+r}=a_m$. Logo<br>
 \[<br>
 q_{m+r+1}b+a_{m+r+1}=10a_{m+r}=10a_m=q_{m+1}b+a_{m+1}.<br>
 \]<br>
-Obtemos pela unicidade na Teorema de Divis&atilde;o de Euclides que $q_{m+r+1}=q_{m+1}$ e $a_{m+r+1}=a_{m+1}$. Similarmente, $q_{m+r+2}=q_{m+2}$ e $a_{m+r+2}=a_{m+2}$ e mais geralmente<br>
+Obtemos pela unicidade na Teorema de Divisão de Euclides que $q_{m+r+1}=q_{m+1}$ e $a_{m+r+1}=a_{m+1}$. Similarmente, $q_{m+r+2}=q_{m+2}$ e $a_{m+r+2}=a_{m+2}$ e mais geralmente<br>
 \[<br>
 q_{k+r}=q_{k}\quad e \quad a_{k+r}=a_{k}.<br>
 \]<br>
-para todo $k\geq m+1$. Ou seja, a expans&atilde;o do n&uacute;mero $a/b$ &eacute; peri&oacute;doca.</p>
+para todo $k\geq m+1$. Ou seja, a expansão do número $a/b$ é periódoca.</p>
 </div>
-<div class="example">A demonstra&ccedil;&atilde;o do resultado anterior d&aacute; um algoritmo para calcular a expans&atilde;o de um n&uacute;mero natural $a/b$ onde $0&lt;a&lt;b$. Considere por exemplo o racional $1/54$. Seguindo a demonstra&ccedil;&atilde;o do teorema para $a=1$ e $b=54$, fazemos a seguinte conta.\begin{align*}<br>
+<div class="example">A demonstração do resultado anterior dá um algoritmo para calcular a expansão de um número natural $a/b$ onde $0&lt;a&lt;b$. Considere por exemplo o racional $1/54$. Seguindo a demonstração do teorema para $a=1$ e $b=54$, fazemos a seguinte conta.\begin{align*}<br>
 10a=10=0\cdot 54+10\quad &amp;\Rightarrow\quad q_1=0\mbox{ e }a_1=10\\<br>
 10a_1=100=1\cdot 54+46\quad &amp;\Rightarrow\quad q_2=1\mbox{ e }a_2=46\\<br>
 10a_2=460=8\cdot 54+28\quad &amp;\Rightarrow\quad q_3=8\mbox{ e }a_3=28\\<br>
 10a_3=280=5\cdot 54+10\quad &amp;\Rightarrow\quad q_4=5\mbox{ e }a_4=10\\<br>
 10a_4=100=1\cdot 54+46\quad &amp;\Rightarrow\quad q_5=1\mbox{ e }a_5=46<br>
 \end{align*}<br>
-Observamos que $a_4=a_1$ como foi previsto na demonstra&ccedil;&atilde;o do teorema e a computa&ccedil;&atilde;o vai se repetir a partir deste ponto. Obtemos ent&atilde;o que<br>
+Observamos que $a_4=a_1$ como foi previsto na demonstração do teorema e a computação vai se repetir a partir deste ponto. Obtemos então que<br>
 \[<br>
 \frac 1{54}=0,0\overline{185}.<br>
 \]</div>
-<p>Obtemos tamb&eacute;m como consequ&ecirc;ncia do teorema anterior que existem n&uacute;meros irracionais no intervalo $[0,1]$. Por exemplo, considere o n&uacute;mero<br>
+<p>Obtemos também como consequência do teorema anterior que existem números irracionais no intervalo $[0,1]$. Por exemplo, considere o número<br>
 \[<br>
 a=0,1010010001000010000010000001\cdots.<br>
 \]<br>
-Pelo lema anterior, $a$ &eacute; um n&uacute;mero real, mas a sua expans&atilde;o decimal n&atilde;o &eacute; peri&oacute;doca, portanto este n&uacute;mero n&atilde;o &eacute; racional.</p>
-<p>Exatamente como a expans&atilde;o dos n&uacute;meros naturais pode ser calculada em qualquer base $d\geq 2$, a expans&atilde;o dos n&uacute;meros racionais tamb&eacute;m pode ser calculada em bases $d$ tal que $d\geq 2$. Os resultados em uma base arbitr&aacute;ria s&atilde;o muito similares aos resultados na base $d=10$ (caso decimal) e estes detalhes s&atilde;o omitidos. No entanto recomendamos que o leitor traduza os resultados acima para uma base $d\neq 10$.</p>
-<h3>Computa&ccedil;&atilde;o com Python</h3>
-<p>Vamos implementar o algoritmo obtido na demonstra&ccedil;&atilde;o do Teorema na linguagem Python. De fato, n&oacute;s implementamos o algoritmo em qualquer base (n&atilde;o apenas na base decimal), pois a diferen&ccedil;a &eacute; muito pequena. Pretendemos escrever uma fun&ccedil;&atilde;o que toma n&uacute;meros naturais $a$, $b$, $d$ tais que $0&lt;a&lt;b$ e $d\geq 2$ e devolve o pr&eacute;-per&iacute;odo e o per&iacute;odo da expans&atilde;o de $a/b$ na base $d$.</p>
+Pelo lema anterior, $a$ é um número real, mas a sua expansão decimal não é periódoca, portanto este número não é racional.</p>
+<p>Exatamente como a expansão dos números naturais pode ser calculada em qualquer base $d\geq 2$, a expansão dos números racionais também pode ser calculada em bases $d$ tal que $d\geq 2$. Os resultados em uma base arbitrária são muito similares aos resultados na base $d=10$ (caso decimal) e estes detalhes são omitidos. No entanto recomendamos que o leitor traduza os resultados acima para uma base $d\neq 10$.</p>
+<h3>Computação com Python</h3>
+<p>Vamos implementar o algoritmo obtido na demonstração do Teorema na linguagem Python. De fato, nós implementamos o algoritmo em qualquer base (não apenas na base decimal), pois a diferença é muito pequena. Pretendemos escrever uma função que toma números naturais $a$, $b$, $d$ tais que $0&lt;a&lt;b$ e $d\geq 2$ e devolve o pré-período e o período da expansão de $a/b$ na base $d$.</p>
 <pre><code class="language-python">
 def ExpansaoDecimal( a, b, d ):
     
-    # a &eacute; menor que b
+    # a é menor que b
     assert a&lt;b
     
-    #inicializamos as listas dos d&iacute;gitos e restos
+    #inicializamos as listas dos dígitos e restos
     digitos, restos = [], [a]
     
     while True:
-        # calculamos o seguinte d&iacute;gito a colocamos na lista
+        # calculamos o seguinte dígito a colocamos na lista
         digitos.append( d*a//b )
-        # calculamos o pr&oacute;ximo valor de a
+        # calculamos o próximo valor de a
         a = d*a % b
-        # verificamos se a j&aacute; apareceu entre os restos
+        # verificamos se a já apareceu entre os restos
         if a in restos:
-            # se sim, ind ser&aacute; o &iacute;ndice de a na lista restos
+            # se sim, ind será o índice de a na lista restos
             ind = restos.index( a )
-            # devolvemos a pr&eacute;-per&iacute;odo e o per&iacute;odo
+            # devolvemos a pré-período e o período
             return digitos[0:ind], digitos[ind:len(digitos)]
             
         restos.append(a)
 </code></pre>
-<p>Podemos usar esta fun&ccedil;&atilde;o para verificar a conta no Exemplo.</p>
+<p>Podemos usar esta função para verificar a conta no Exemplo.</p>
 <pre><code class="language-python-repl">
 &gt;&gt;&gt; ExpansaoDecimal( 1, 54, 10 )
 &gt;&gt;&gt; ([0], [1, 8, 5])
 </code>
 </pre>
-<p>Obtemos o mesmo resultado, nomeadamente que o pr&eacute;-per&iacute;odo de $1/54$ &eacute; $[0]$ e o per&iacute;odo &eacute; $[185]$.
-</p></div>
+<p>Obtemos o mesmo resultado, nomeadamente que o pré-período de $1/54$ é $[0]$ e o período é $[185]$.
+</p>
+</div>
 			</div>
+<!-- .entry-content -->
 	<footer class="entry-footer">
-			</footer>
-</article>
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
 
 				
 			
-		</main>
+		</main><!-- #main -->
 	</div>
+<!-- #primary -->
 
 
 	</div>
+<!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -402,15 +425,18 @@ def ExpansaoDecimal( a, b, d ):
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
 				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+<!-- .site-info -->
 		</div>
-	</footer>
+<!-- .site-info-wrapper -->
+	</footer><!-- #colophon -->
 </div>
+<!-- #page -->
 
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.2.1" id="prismatic-prism-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.2.1" id="prismatic-prism-python-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206" id="penscratch-2-navigation-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608" id="penscratch-2-scripts-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115" id="penscratch-2-skip-link-focus-fix-js"></script>
 
 </body>
 </html>

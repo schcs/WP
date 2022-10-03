@@ -12,22 +12,25 @@
 	<atom:link href="https://schcs.github.io/WP/index.php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 28 Sep 2020 01:12:31 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 23 Sep 2020 14:31:44 +0000</lastBuildDate>
 	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.9.15</generator>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
 	<item>
 		<title>O Teorema $pq$ de Burnside</title>
 		<link>https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/#respond</comments>
-		<pubDate>Wed, 20 Nov 2019 20:34:26 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Wed, 20 Nov 2019 20:34:26 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=633</guid>
-		<description><![CDATA[$\newcommand{\C}{\mathbb C}$Lema (Burnside). Se $G$ é um grupo finito que possui uma classe de conjugação com $p^m$ elementos, onde $p$ é um primo e $m\geq 1$, então $G$ não pode ser simples. Demonstração. Assuma com o objetivo de obter uma contradição que $G$ é simples. Seja $g\in G$ pertencente a uma classe $C$ com $p^m$ elementos como &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/" class="more-link">Continue reading <span class="screen-reader-text">O Teorema $pq$ de Burnside</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}$<strong>Lema (Burnside). </strong>Se $G$ é um grupo finito que possui uma classe de conjugação com $p^m$ elementos, onde $p$ é um primo e $m\geq 1$, então $G$ não pode ser simples.</p>
+
+					<description><![CDATA[$\newcommand{\C}{\mathbb C}$Lema (Burnside). Se $G$ é um grupo finito que possui uma classe de conjugação com $p^m$ elementos, onde $p$ é um primo e $m\geq 1$, então $G$ não pode ser simples. Demonstração. Assuma com o objetivo de obter uma contradição que $G$ é simples. Seja $g\in G$ pertencente a uma classe $C$ com $p^m$ elementos como &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/" class="more-link">Continue reading <span class="screen-reader-text">O Teorema $pq$ de Burnside</span></a>]]></description>
+										<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}$<strong>Lema (Burnside). </strong>Se $G$ é um grupo finito que possui uma classe de conjugação com $p^m$ elementos, onde $p$ é um primo e $m\geq 1$, então $G$ não pode ser simples.</p>
 <p><strong>Demonstração. </strong>Assuma com o objetivo de obter uma contradição que $G$ é simples. Seja $g\in G$ pertencente a uma classe $C$ com $p^m$ elementos como assumido no lema. Suponha que $\varrho$ é uma $\C$-representação não trivial irredutível de $G$ com caracter $\chi$. Pela simplicidade de $G$, $\ker\varrho=1$ e $G\cong G\varrho$. Assuma que $g\chi\neq 0$ e $p\nmid 1\chi$. Por um lema anterior, $g\varrho=\lambda\cdot\mbox{id}$, portanto $g\varrho\in Z(G\varrho)$, equivalentemente $g\in Z(G)=1$; ou seja, $g=1$. Mas isso é impossível, pois nós assumimos que $|g^G|&gt;1$. Obtivemos então que $g\chi=0$ para todo caracter irredutível tal que $p\nmid 1\chi$.</p>
 <p>Considere o caracter $\psi$ que corresponde à representação regular sobre $\C G$. Por um resultado anterior,<br />
 \[<br />
@@ -44,20 +47,24 @@ A última expressão na linha anterior é um número inteiro na forma $1+kp$ ond
 <p>Seja $Q$ um $q$-subgrupo de Sylow de $G$. O centro de $Q$ é não trivial e seja $g\in Z(Q)$. Como $Q\leq C_G(g)$ e $Z(G)=1$, tem-se que $|g^G|=|G:C_G(g)|=p^a$ com algum $a\neq 1$. Mas isso é impossível pelo resultado anterior.</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>Integralidade</title>
 		<link>https://schcs.github.io/WP/index.php/2019/11/19/integralidade/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/11/19/integralidade/#respond</comments>
-		<pubDate>Tue, 19 Nov 2019 00:20:14 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/11/19/integralidade/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Tue, 19 Nov 2019 00:20:14 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=626</guid>
-		<description><![CDATA[$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito inteiro algébrico se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$. Lema. As seguintes são verdadeiras. Se $\alpha_1,\ldots,\alpha_r$ são inteiros algébricos, então $\Z[\alpha_1,\ldots,\alpha_r]$ é finitamente gerado como um grupo abeliano (aditivo). Se $R$ é um subanel de $\C$ tal que $\Z\subseteq R$ e $R$ é finitamente &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/19/integralidade/" class="more-link">Continue reading <span class="screen-reader-text">Integralidade</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito <em>inteiro algébrico</em> se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$.</p>
+
+					<description><![CDATA[$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito inteiro algébrico se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$. Lema. As seguintes são verdadeiras. Se $\alpha_1,\ldots,\alpha_r$ são inteiros algébricos, então $\Z[\alpha_1,\ldots,\alpha_r]$ é finitamente gerado como um grupo abeliano (aditivo). Se $R$ é um subanel de $\C$ tal que $\Z\subseteq R$ e $R$ é finitamente &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/19/integralidade/" class="more-link">Continue reading <span class="screen-reader-text">Integralidade</span></a>]]></description>
+										<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}\newcommand{\K}{\mathbb K}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}$ Um elemento $\alpha\in\C$ é dito <em>inteiro algébrico</em> se $\alpha$ é raiz de um polinômio mônico em $\Z[t]$.</p>
 <p><strong>Lema. </strong>As seguintes são verdadeiras.</p>
 <ol>
 <li>Se $\alpha_1,\ldots,\alpha_r$ são inteiros algébricos, então $\Z[\alpha_1,\ldots,\alpha_r]$ é finitamente gerado como um grupo abeliano (aditivo).</li>
@@ -128,20 +135,24 @@ u=\prod_{\alpha\in G}t\alpha.<br />
 \]<br />
 Então $|u|&lt;1$ e $u\alpha=u$ para todo $\alpha\in G$. Logo $u\in \Q$. Mas $u$ é um inteiro algébrico tal que $|u|&lt;1$, então $u=0$. Isto diz que $t=0$, que mostra que $g\chi=0$.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/11/19/integralidade/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/11/19/integralidade/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>A decomposição de $\mathbb CG$</title>
 		<link>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/#respond</comments>
-		<pubDate>Thu, 07 Nov 2019 01:16:48 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Thu, 07 Nov 2019 01:16:48 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=594</guid>
-		<description><![CDATA[$\newcommand{\C}{\mathbb C}$Assuma nesta página que $G$ é um grupo finito, $\chi_1,\ldots,\chi_k$ são os caracteres de $G$ irredutíveis e os graus destes caracteres são $n_1,\ldots,n_k$, respetivamente; ou seja, $1\chi_i=n_i$ para todo $i$. Seja $V=\C G$ considerado como um $G$-módulo seja $\varrho$ o caracter correspondente. O conjunto $G$ é uma base de $V$ e \[ g\varrho=&#124;\{h\in G\mid &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/" class="more-link">Continue reading <span class="screen-reader-text">A decomposição de $\mathbb CG$</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}$Assuma nesta página que $G$ é um grupo finito, $\chi_1,\ldots,\chi_k$ são os caracteres de $G$ irredutíveis e os graus destes caracteres são $n_1,\ldots,n_k$, respetivamente; ou seja, $1\chi_i=n_i$ para todo $i$.</p>
+
+					<description><![CDATA[$\newcommand{\C}{\mathbb C}$Assuma nesta página que $G$ é um grupo finito, $\chi_1,\ldots,\chi_k$ são os caracteres de $G$ irredutíveis e os graus destes caracteres são $n_1,\ldots,n_k$, respetivamente; ou seja, $1\chi_i=n_i$ para todo $i$. Seja $V=\C G$ considerado como um $G$-módulo seja $\varrho$ o caracter correspondente. O conjunto $G$ é uma base de $V$ e \[ g\varrho=&#124;\{h\in G\mid &#8230; <a href="https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/" class="more-link">Continue reading <span class="screen-reader-text">A decomposição de $\mathbb CG$</span></a>]]></description>
+										<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}$Assuma nesta página que $G$ é um grupo finito, $\chi_1,\ldots,\chi_k$ são os caracteres de $G$ irredutíveis e os graus destes caracteres são $n_1,\ldots,n_k$, respetivamente; ou seja, $1\chi_i=n_i$ para todo $i$.</p>
 <p>Seja $V=\C G$ considerado como um $G$-módulo seja $\varrho$ o caracter correspondente. O conjunto $G$ é uma base de $V$ e<br />
 \[<br />
 g\varrho=|\{h\in G\mid hg=h\}|.<br />
@@ -231,20 +242,24 @@ Tomando $h=g$, obtemos equação 1., tomando $h\not\in g^G$, obtemos equação 2
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/11/07/a-decomposicao-de-mathbb-cg/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>O caracter e as relações de ortgonalidade</title>
 		<link>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/#respond</comments>
-		<pubDate>Thu, 31 Oct 2019 09:30:50 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Thu, 31 Oct 2019 09:30:50 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=560</guid>
-		<description><![CDATA[$\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}\newcommand{\tr}{{\rm tr}\,}$ Nesta página, grupos são finitos e representações são de dimensão finita. Lema. Seja $X$ uma matrix complexa com ordem finita. Então $X$ é diagonalizável e os autovalores de $X$ são raízes da unidade. Demonstração. Seja $X$ de ordem $n$. Então $X$ satisfaz o polinômio $t^n-1$ e o polinômio minimal $m_X(t)$ de &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" class="more-link">Continue reading <span class="screen-reader-text">O caracter e as relações de ortgonalidade</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}\newcommand{\tr}{{\rm tr}\,}$ Nesta página, grupos são finitos e representações são de dimensão finita.</p>
+
+					<description><![CDATA[$\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}\newcommand{\tr}{{\rm tr}\,}$ Nesta página, grupos são finitos e representações são de dimensão finita. Lema. Seja $X$ uma matrix complexa com ordem finita. Então $X$ é diagonalizável e os autovalores de $X$ são raízes da unidade. Demonstração. Seja $X$ de ordem $n$. Então $X$ satisfaz o polinômio $t^n-1$ e o polinômio minimal $m_X(t)$ de &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/" class="more-link">Continue reading <span class="screen-reader-text">O caracter e as relações de ortgonalidade</span></a>]]></description>
+										<content:encoded><![CDATA[<p>$\newcommand{\C}{\mathbb C}\newcommand{\F}{\mathbb F}\newcommand{\tr}{{\rm tr}\,}$ Nesta página, grupos são finitos e representações são de dimensão finita.</p>
 <p><strong>Lema. </strong>Seja $X$ uma matrix complexa com ordem finita. Então $X$ é diagonalizável e os autovalores de $X$ são raízes da unidade.</p>
 <p><strong>Demonstração. </strong>Seja $X$ de ordem $n$. Então $X$ satisfaz o polinômio $t^n-1$ e o polinômio minimal $m_X(t)$ de $X$ é um divisor de $t^n-1$. Como $t^n-1$ tem $n$ raízes distintas em $\C$, $m_X(t)$ também tem raízes distintas. Isto significa que $X$ é diagonalizável.</p>
 <p>Seja $Y$ uma matriz invertível tal que $X^Y$ é diagonal com $(\lambda_1,\ldots,\lambda_r)$ no diagonal. Como $X^n=I$, $(X^Y)^n=I$, e $\lambda_j^n=1$ para todo $j$; ou seja $\lambda_j$ é uma raiz da unidade.</p>
@@ -344,20 +359,24 @@ W=\{f\in \mbox{Func}(G,\C)\mid f(x)=f(g^{-1}xg)\mbox{ para todo }g,x\in G\}.<br
 Note que a dimensão de $W$ é igual ao número das classes de conjugação de $G$.  Se $\chi$ é um caracter de $G$, então $\chi\in W$. O teorema anterior pode ser enunciado no seguinte forma:</p>
 <p><strong>Corolário. </strong>Os caracteres irredutíveis $\chi_i$ de um grupo finito $G$ formam uma base ortonormal de $W$. Em particular, o número de classes de equivalência de representações irredutíveis de um grupo finito é finito e este número é menor ou igual ao número das classes de conjugação de $G$.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/31/o-caracter/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>A álgebra de grupo</title>
 		<link>https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/#respond</comments>
-		<pubDate>Wed, 30 Oct 2019 22:29:45 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Wed, 30 Oct 2019 22:29:45 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=556</guid>
-		<description><![CDATA[$\newcommand{\F}{\mathbb F}$Seja $G$ um grupo e $\F$ um corpo. A álgebra de grupo $\F G$ é definido como o conjunto de combinações lineares $\sum_{g\in G} \alpha_g g$ finitas. Claramente, $\F G$ é um $G$-módulo sobre $\F$ pela multiplicação à direita.  O seguinte lema é imediato. Lema. Se $U\leq \F G$, então $U$ é um $G$-submódulo se &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/" class="more-link">Continue reading <span class="screen-reader-text">A álgebra de grupo</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$Seja $G$ um grupo e $\F$ um corpo. A álgebra de grupo $\F G$ é definido como o conjunto de combinações lineares $\sum_{g\in G} \alpha_g g$ finitas. Claramente, $\F G$ é um $G$-módulo sobre $\F$ pela multiplicação à direita.  O seguinte lema é imediato.</p>
+
+					<description><![CDATA[$\newcommand{\F}{\mathbb F}$Seja $G$ um grupo e $\F$ um corpo. A álgebra de grupo $\F G$ é definido como o conjunto de combinações lineares $\sum_{g\in G} \alpha_g g$ finitas. Claramente, $\F G$ é um $G$-módulo sobre $\F$ pela multiplicação à direita.  O seguinte lema é imediato. Lema. Se $U\leq \F G$, então $U$ é um $G$-submódulo se &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/" class="more-link">Continue reading <span class="screen-reader-text">A álgebra de grupo</span></a>]]></description>
+										<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$Seja $G$ um grupo e $\F$ um corpo. A álgebra de grupo $\F G$ é definido como o conjunto de combinações lineares $\sum_{g\in G} \alpha_g g$ finitas. Claramente, $\F G$ é um $G$-módulo sobre $\F$ pela multiplicação à direita.  O seguinte lema é imediato.</p>
 <p><strong>Lema.</strong> Se $U\leq \F G$, então $U$ é um $G$-submódulo se e somente se $U$ é um ideal à direita de $\F G$. Se $V$ é um $G$-módulo simples, então existe um ideal maximal $I$ á direita de $\F G$ tal que $V\cong \F G/I$ como $G$-módulos.</p>
 <p><strong>Demonstração. </strong>A primeira afirmação é óbvia. Seja $V$ um $G$-módulo simples e seja $v\in V\setminus\{0\}$. Defina<br />
 \[<br />
@@ -379,20 +398,24 @@ I_i=\sum W\mbox{ onde }W\leq_G R\mbox{ e } W\cong S_i.<br />
 Claramente, $I_i$ é um $G$-submódulo de $R$ (ou seja, ideal à direita) e $R=I_1\oplus\cdots\oplus I_m$. Seja $r\in R$. Então $rS_i$ é um $G$-submódulo de $R$ e o mapa $s\mapsto rs$ é um $G$-homomorfismo sobrejetivo entre $S_i$ e $rS_i$. O núcleo deste homomorfismo é um $G$-submódulo de $S_i$. Como $S_i$ é simples, $S_i\cong r S_i$ ou $rS_i=0$. Isto implica que $r I_i\leq I_i$ e que $I_i$ é um ideal de $R$.</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/30/a-algebra-de-grupo/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>O Lema de Schur e o Teorema de Clifford</title>
 		<link>https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/#respond</comments>
-		<pubDate>Wed, 23 Oct 2019 22:41:51 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Wed, 23 Oct 2019 22:41:51 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=549</guid>
-		<description><![CDATA[$\newcommand{\F}{\mathbb F}$Teorema (O lema de Schur). Sejam $U$ e $V$ dois $\F G$-módulos simples e $\varphi:U\rightarrow V$ um $G$-homomorfismo. Então $\varphi=0$ ou $\varphi$ é um isomorfismo. Demonstração. Trivial. Só observar que $\ker\varphi$ e $\mbox{Im}\,\varphi$ são submódulos. Então temos duas possibilidades, $\ker\varphi=0$ e $\mbox{Im}\,\varphi=U$ (e $\varphi$ é um isomorfismo) ou $\ker\varphi=V$ e $\varphi=0$. Lembre que para um &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/" class="more-link">Continue reading <span class="screen-reader-text">O Lema de Schur e o Teorema de Clifford</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$<strong>Teorema (O lema de <a href="https://en.wikipedia.org/wiki/Issai_Schur">Schur</a>). </strong>Sejam $U$ e $V$ dois $\F G$-módulos simples e $\varphi:U\rightarrow V$ um $G$-homomorfismo. Então $\varphi=0$ ou $\varphi$ é um isomorfismo.</p>
+
+					<description><![CDATA[$\newcommand{\F}{\mathbb F}$Teorema (O lema de Schur). Sejam $U$ e $V$ dois $\F G$-módulos simples e $\varphi:U\rightarrow V$ um $G$-homomorfismo. Então $\varphi=0$ ou $\varphi$ é um isomorfismo. Demonstração. Trivial. Só observar que $\ker\varphi$ e $\mbox{Im}\,\varphi$ são submódulos. Então temos duas possibilidades, $\ker\varphi=0$ e $\mbox{Im}\,\varphi=U$ (e $\varphi$ é um isomorfismo) ou $\ker\varphi=V$ e $\varphi=0$. Lembre que para um &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/" class="more-link">Continue reading <span class="screen-reader-text">O Lema de Schur e o Teorema de Clifford</span></a>]]></description>
+										<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$<strong>Teorema (O lema de <a href="https://en.wikipedia.org/wiki/Issai_Schur">Schur</a>). </strong>Sejam $U$ e $V$ dois $\F G$-módulos simples e $\varphi:U\rightarrow V$ um $G$-homomorfismo. Então $\varphi=0$ ou $\varphi$ é um isomorfismo.</p>
 <p><strong>Demonstração. </strong>Trivial. Só observar que $\ker\varphi$ e $\mbox{Im}\,\varphi$ são submódulos. Então temos duas possibilidades, $\ker\varphi=0$ e $\mbox{Im}\,\varphi=U$ (e $\varphi$ é um isomorfismo) ou $\ker\varphi=V$ e $\varphi=0$.</p>
 <p>Lembre que para um $\F G$-módulo $V$, $\mbox{End}_G(V)$ é uma $\F$-álgebra. Uma $\F$-álgebra é dita álgebra de divisão se todo elemento não nulo é invertível. A álgebra dos quaternions é um exemplo de álgebras de divisão.</p>
 <p><strong>Corolário. </strong>Seja $V$ um $G$-módulo simples. Então $\mbox{End}_G(V)$ é uma álgebra de divisão.</p>
@@ -450,20 +473,24 @@ Wg_{1&#8242;}\oplus\cdots\oplus Wg_{k&#8217;}.<br />
 \end{align*}<br />
 Portanto, $Wg_1\oplus\cdots\oplus Wg_k$ é um $G$-submódulo. Pela simplicidade de $V$,  $Wg_1\oplus\cdots\oplus Wg_k=V$ e $W=V_1$.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/23/os-teoremas-de-schur-e-clifford-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>G-módulos e representações</title>
 		<link>https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/#respond</comments>
-		<pubDate>Wed, 23 Oct 2019 21:51:56 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Wed, 23 Oct 2019 21:51:56 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=542</guid>
-		<description><![CDATA[$\newcommand{\F}{\mathbb F}$$G$-módulos, representações, submódulos, módulos simples (irredutíveis), redutíveis, completamente redutíveis. A álgebra do grupo, seus submódulos. Módulo quociente. O Teorema de Maschke. Teorema (Maschke). Seja $G$ um grupo finito e $\F$ um corpo. As seguintes são equivalentes: Todo $G$-módulo de dimensão finita é completamente redutível. $\mbox{char}\,\F\nmid &#124;G&#124;$. Demonstração. 1.$\Rightarrow$ 2. Considere $\F G$ como um $G$-módulo. Seja &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/" class="more-link">Continue reading <span class="screen-reader-text">G-módulos e representações</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$$G$-módulos, representações, submódulos, módulos simples (irredutíveis), redutíveis, completamente redutíveis. A álgebra do grupo, seus submódulos. Módulo quociente. O Teorema de Maschke.</p>
+
+					<description><![CDATA[$\newcommand{\F}{\mathbb F}$$G$-módulos, representações, submódulos, módulos simples (irredutíveis), redutíveis, completamente redutíveis. A álgebra do grupo, seus submódulos. Módulo quociente. O Teorema de Maschke. Teorema (Maschke). Seja $G$ um grupo finito e $\F$ um corpo. As seguintes são equivalentes: Todo $G$-módulo de dimensão finita é completamente redutível. $\mbox{char}\,\F\nmid &#124;G&#124;$. Demonstração. 1.$\Rightarrow$ 2. Considere $\F G$ como um $G$-módulo. Seja &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/" class="more-link">Continue reading <span class="screen-reader-text">G-módulos e representações</span></a>]]></description>
+										<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$$G$-módulos, representações, submódulos, módulos simples (irredutíveis), redutíveis, completamente redutíveis. A álgebra do grupo, seus submódulos. Módulo quociente. O Teorema de Maschke.</p>
 <p><strong>Teorema (<a href="https://en.wikipedia.org/wiki/Heinrich_Maschke">Maschke</a>). </strong>Seja $G$ um grupo finito e $\F$ um corpo. As seguintes são equivalentes:</p>
 <ol>
 <li>Todo $G$-módulo de dimensão finita é completamente redutível.</li>
@@ -483,20 +510,24 @@ Como $U\cap W=0$, temos que $\sum_{g\in G}\beta_g=0$; ou seja $x\in I$. Portanto
 <p>Ora, se $\mbox{char}\,\F\mid |G|$, então $U\leq I$, então $U\oplus W$ é impossível.</p>
 <p>2. $\Rightarrow$ 1.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/23/g-modulos-e-representacoes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>Grupos livres</title>
 		<link>https://schcs.github.io/WP/index.php/2019/10/15/grupos-livres/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/10/15/grupos-livres/#respond</comments>
-		<pubDate>Tue, 15 Oct 2019 11:59:03 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/10/15/grupos-livres/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Tue, 15 Oct 2019 11:59:03 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=504</guid>
-		<description><![CDATA[Sejam $X,X^{-1}$ dois conjuntos distintos e assuma que existe uma bijeção $x\mapsto x^{-1}$ entre $X$ e $X^{-1}$.  Se $x^{-1}\in X^{-1}$, então escrevemos $(x^{-1})^{-1}=x$. Uma palavra em $X$ é uma expressão na forma \[ w=x_1x_2\cdots x_k \] onde $k\geq 0$ e $x_i\in X\cup X^{-1}$.  Se $k=0$, então $w$ é denotado por $e$ e é dita a &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/15/grupos-livres/" class="more-link">Continue reading <span class="screen-reader-text">Grupos livres</span></a>]]></description>
-				<content:encoded><![CDATA[<p>Sejam $X,X^{-1}$ dois conjuntos distintos e assuma que existe uma bijeção $x\mapsto x^{-1}$ entre $X$ e $X^{-1}$.  Se $x^{-1}\in X^{-1}$, então escrevemos $(x^{-1})^{-1}=x$. Uma <em>palavra</em> em $X$ é uma expressão na forma<br />
+
+					<description><![CDATA[Sejam $X,X^{-1}$ dois conjuntos distintos e assuma que existe uma bijeção $x\mapsto x^{-1}$ entre $X$ e $X^{-1}$.  Se $x^{-1}\in X^{-1}$, então escrevemos $(x^{-1})^{-1}=x$. Uma palavra em $X$ é uma expressão na forma \[ w=x_1x_2\cdots x_k \] onde $k\geq 0$ e $x_i\in X\cup X^{-1}$.  Se $k=0$, então $w$ é denotado por $e$ e é dita a &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/15/grupos-livres/" class="more-link">Continue reading <span class="screen-reader-text">Grupos livres</span></a>]]></description>
+										<content:encoded><![CDATA[<p>Sejam $X,X^{-1}$ dois conjuntos distintos e assuma que existe uma bijeção $x\mapsto x^{-1}$ entre $X$ e $X^{-1}$.  Se $x^{-1}\in X^{-1}$, então escrevemos $(x^{-1})^{-1}=x$. Uma <em>palavra</em> em $X$ é uma expressão na forma<br />
 \[<br />
 w=x_1x_2\cdots x_k<br />
 \]<br />
@@ -558,20 +589,24 @@ $$<br />
 $$<br />
 Esta apresentação é referida com a apresentação de <a href="https://en.wikipedia.org/wiki/Harold_Scott_MacDonald_Coxeter">Coxeter</a>.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/15/grupos-livres/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/15/grupos-livres/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>Formas clássicas e os grupos clássicos</title>
 		<link>https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/#respond</comments>
-		<pubDate>Tue, 08 Oct 2019 00:14:34 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Tue, 08 Oct 2019 00:14:34 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=472</guid>
-		<description><![CDATA[$\newcommand{\F}{\mathbb F}$Seja $\F$ um corpo e $V$ um espaço vetorial de dimensão $n$ sobre $\F$. Seja $\sigma\in \mbox{Aut}(\F)$. Um mapa $$ V\times V\rightarrow\F,\quad (u,v)\mapsto (u,v) $$ é dito $\sigma$-sesquilinear se \begin{align*} (\alpha u+\beta v,w)=&#38;\alpha(u,w)+\beta(v,w);\\ (u,\alpha v+\beta w)=&#38;(\alpha\sigma) (u,v)+(\beta\sigma)(v,w). \end{align*} Uma forma $\sigma$-sesquilinear $(\cdot,\cdot)$ é dita $\sigma$-hermitiana, se $(u,v)=(v,u)\sigma$. Uma forma $\mbox{id}$-sesquilinear é dita bilinear. Lema. Seja &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/" class="more-link">Continue reading <span class="screen-reader-text">Formas clássicas e os grupos clássicos</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$Seja $\F$ um corpo e $V$ um espaço vetorial de dimensão $n$ sobre $\F$. Seja $\sigma\in \mbox{Aut}(\F)$. Um mapa<br />
+
+					<description><![CDATA[$\newcommand{\F}{\mathbb F}$Seja $\F$ um corpo e $V$ um espaço vetorial de dimensão $n$ sobre $\F$. Seja $\sigma\in \mbox{Aut}(\F)$. Um mapa $$ V\times V\rightarrow\F,\quad (u,v)\mapsto (u,v) $$ é dito $\sigma$-sesquilinear se \begin{align*} (\alpha u+\beta v,w)=&#38;\alpha(u,w)+\beta(v,w);\\ (u,\alpha v+\beta w)=&#38;(\alpha\sigma) (u,v)+(\beta\sigma)(v,w). \end{align*} Uma forma $\sigma$-sesquilinear $(\cdot,\cdot)$ é dita $\sigma$-hermitiana, se $(u,v)=(v,u)\sigma$. Uma forma $\mbox{id}$-sesquilinear é dita bilinear. Lema. Seja &#8230; <a href="https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/" class="more-link">Continue reading <span class="screen-reader-text">Formas clássicas e os grupos clássicos</span></a>]]></description>
+										<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$Seja $\F$ um corpo e $V$ um espaço vetorial de dimensão $n$ sobre $\F$. Seja $\sigma\in \mbox{Aut}(\F)$. Um mapa<br />
 $$<br />
 V\times V\rightarrow\F,\quad (u,v)\mapsto (u,v)<br />
 $$<br />
@@ -686,20 +721,24 @@ $$</li>
 <p>Os grupos clássicos podem ser simples sobre um corpo $\F$ infinito ou sobre caraterística 2, mas a situação é mais complicada.</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>O Lema de Iwasawa e a simplicidade de PSL(n,F)</title>
 		<link>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/</link>
-		<comments>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/#respond</comments>
-		<pubDate>Mon, 30 Sep 2019 23:12:23 +0000</pubDate>
+					<comments>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/#respond</comments>
+		
 		<dc:creator><![CDATA[schcs]]></dc:creator>
+		<pubDate>Mon, 30 Sep 2019 23:12:23 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-
 		<guid isPermaLink="false">https://schcs.github.io/WP/?p=457</guid>
-		<description><![CDATA[$\newcommand{\F}{\mathbb F}$Lema (Iwasawa). Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que $\left&#60;A^g\mid g\in G\right&#62;=G$. Suponha ainda que $G$ é perfeito (ou seja, $G&#8217;=G$). Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples. Demonstração.  Trocando $G$ por &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/" class="more-link">Continue reading <span class="screen-reader-text">O Lema de Iwasawa e a simplicidade de PSL(n,F)</span></a>]]></description>
-				<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$<strong>Lema (<a href="https://en.wikipedia.org/wiki/Kenkichi_Iwasawa">Iwasawa</a>). </strong>Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que $\left&lt;A^g\mid g\in G\right&gt;=G$. Suponha ainda que $G$ é perfeito (ou seja, $G&#8217;=G$). Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples.</p>
+
+					<description><![CDATA[$\newcommand{\F}{\mathbb F}$Lema (Iwasawa). Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que $\left&#60;A^g\mid g\in G\right&#62;=G$. Suponha ainda que $G$ é perfeito (ou seja, $G&#8217;=G$). Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples. Demonstração.  Trocando $G$ por &#8230; <a href="https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/" class="more-link">Continue reading <span class="screen-reader-text">O Lema de Iwasawa e a simplicidade de PSL(n,F)</span></a>]]></description>
+										<content:encoded><![CDATA[<p>$\newcommand{\F}{\mathbb F}$<strong>Lema (<a href="https://en.wikipedia.org/wiki/Kenkichi_Iwasawa">Iwasawa</a>). </strong>Assuma que um grupo $G$ age primitivamente no conjunto $\Omega$ e um estabilizador $G_\alpha$ possui um subgrupo normal abeliano $A$ tal que $\left&lt;A^g\mid g\in G\right&gt;=G$. Suponha ainda que $G$ é perfeito (ou seja, $G&#8217;=G$). Denotando por $K$ o núcleo da ação de $G$ em $\Omega$, tem-se que $G/K$ é simples.</p>
 <p><strong>Demonstração. </strong> Trocando $G$ por $G/K$, podemos assumir sem perder generalidade que $K=1$; ou seja $G$ é um subgrupo de $S(\Omega)$. Seja $N\neq 1$ um subgrupo normal de $G$. Como $G_\alpha$ é maximal, $G_\alpha N=G$ e todo elemento $x\in G$ pode ser escrito como $x=gn$ onde $g\in G_\alpha$ e $n\in N$. Em particular, $A^x=A^{(gn)}=A^n$. Logo $AN=G$ e $G/N=A/(A\cap N)$ é abeliano. Como $G&#8217;=G$, obtemos que $(G/N)&#8217;=G/N$, que implica que $N=G$.  Ou seja $G$ é simples.</p>
 <p><strong>Teorema. </strong>Seja $n\geq 2$ e $\F$ um corpo (finito ou infinito) tal que $(n,|\F|)\neq (2,2), (2,3)$. Então o grupo $PSL(n,\F)$ é simples.</p>
 <p><strong>Demonstração. </strong>Nós vamos mostrar que as condições do Lema de Iwasawa estão válidas.</p>
@@ -748,8 +787,11 @@ I+\lambda e_{12}=\left[\begin{pmatrix} 1 &amp; x \\ 0 &amp; 1 \end{pmatrix},\beg
 $$</p>
 <p>&nbsp;</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
+					
+					<wfw:commentRss>https://schcs.github.io/WP/index.php/2019/09/30/o-lema-de-iwasawa-e-a-simplicidade-de-pslnf/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
 	</channel>
 </rss>

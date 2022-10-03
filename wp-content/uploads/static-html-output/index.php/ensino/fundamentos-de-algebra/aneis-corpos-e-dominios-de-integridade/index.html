@@ -24,8 +24,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Faneis-corpos-e-dominios-de-integridade%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Faneis-corpos-e-dominios-de-integridade%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -168,12 +167,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -188,10 +185,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -210,7 +205,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -228,7 +224,7 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">An&eacute;is, dom&iacute;nios e corpos</h1>	</header>
 		<div class="entry-content">
-		<div style="color:#000000">
+		<div style="color:/#000000">
 <div class="definition">
 Assuma que $R$ &eacute; um conjunto com pelo menos dois elementos equipado por duas opera&ccedil;&otilde;es $+$ (adi&ccedil;&atilde;o) e $\cdot$ (multiplica&ccedil;&atilde;o) que satisfazem as seguintes propriedades para todo $a,b,c\in R$:
 <ul>
@@ -242,7 +238,8 @@ Assuma que $R$ &eacute; um conjunto com pelo menos dois elementos equipado por d
 <li>$a\cdot (b+c)=a\cdot b+a\cdot c$ (distributividade).</li>
 </ul>
 <p>O conjunto $R$ com as opera&ccedil;&otilde;es $+$ e $\cdot$ &eacute; chamado <strong>anel</strong>. As vezes escrevemos que a estrutura $(R,+,\cdot)$ &eacute; um anel.
-</p></div>
+</p>
+</div>
 <p>Na defini&ccedil;&atilde;o anterior, o fato que $+$ e $\cdot$ s&atilde;o opera&ccedil;&otilde;es sobre $R$ quer dizer que $R$ &eacute; fechado para estas opera&ccedil;&otilde;es. Ou seja, se $a,b\in R$, ent&atilde;o $a+b,a\cdot b\in R$. O produto $a\cdot b$ &eacute; tamb&eacute;m denotado simplesmente por $ab$ quando n&atilde;o h&aacute; perigo de confus&atilde;o.</p>
 <p>Na verdade, o nosso conceito de an&eacute;is &eacute; conhecido na literatura como <strong>anel comutativo com identidade</strong>, mas, como n&oacute;s n&atilde;o vamos estudar outros tipos de an&eacute;is, optamos por simplificar a terminologia a chamar estes objetos simplesmente como an&eacute;is. Mas o leitor deve ficar ciente que em muitos livros a defini&ccedil;&atilde;o de anel n&atilde;o exige que a multiplica&ccedil;&atilde;o seja comutativa e as vezes os livros n&atilde;o assumem a exist&ecirc;ncia do elemento neutro para a multiplica&ccedil;&atilde;o. </p>
 <div class="example">
@@ -266,7 +263,8 @@ f\cdot g&amp;:[0,1]\to \R,\ (f\cdot g)(x)=f(x)\cdot g(x)\mbox{ para todo } x\in[
 \end{align*}<br>
 &Eacute; f&aacute;cil verificar que $(C([0,1]),+,\cdot)$ &eacute; um anel.</p>
 <p>Vamos terminar a lista dos exemplos com alguns exemplos que n&atilde;o s&atilde;o an&eacute;is. Por exemplo, o conjunto de n&uacute;meros pares $\{0,\pm 2,\pm 4,\ldots\}$ com as opera&ccedil;&otilde;es usuais n&atilde;o &eacute; anel, pois n&atilde;o possui elemento neutro. O conjunto de matrizes $2\times 2$ sobre $\R$ com a soma e produto entre matrizes n&atilde;o &eacute; anel (por nossa defini&ccedil;&atilde;o), pois a multiplica&ccedil;&atilde;o n&atilde;o &eacute; comutativa. O conjunto $\N_0$ dos inteiros n&atilde;o negativos tamb&eacute;m n&atilde;o &eacute; anel, pois os os elementos positivos n&atilde;o t&ecirc;m sim&eacute;tricos.
-</p></div>
+</p>
+</div>
 <p>Podemos observar que nos exemplo conhecidos, os elementos neutros $0$ e $1$ e o sim&eacute;trico de qualquer $a\in R$ s&atilde;o &uacute;nicos. Teoricamente poderia existir algum anel esquisito que possui dois elementos neutros, ou algum elemento com dois sim&eacute;tricos, mas o lema seguinte implica que isso &eacute; imposs&iacute;vel.</p>
 <div class="lemma">
 Seja $R$ um anel. Os elementos neutros $0$ e $1$ e, para $a\in R$, o sim&eacute;trico de $a$ s&atilde;o &uacute;nicos. Al&eacute;m disso, $0\cdot a =0$ para todo $a\in R$.
@@ -286,7 +284,8 @@ Ou seja $b=c$, e o sim&eacute;trico de $a$ &eacute; &uacute;nico.
 0\cdot a=(0+0)\cdot a=0\cdot a+0\cdot a.<br>
 \]<br>
 Somando o negativo $-(0\cdot a)$ de $0\cdot a$ aos dois lados da equa&ccedil;&atilde;o anterior, obtemos que $0=0\cdot a$ como foi afirmado.
-</p></div>
+</p>
+</div>
 <p>Se $R$ &eacute; um anel e $a,b\in R$ ent&atilde;o escrevemos $a-b$ para denotar $a+(-b)$.</p>
 <div class="definition">
 Seja $R$ um anel e seja $a\in R$. O elemento $a$ &eacute; dito <strong>invert&iacute;vel</strong> (ou <strong>unidade</strong>) se existir $b\in R$ tal que $ab=1$. O elemento $a$ &eacute; dito <strong>divisor de zero</strong> se $a\neq 0$ e existe $b\in R\setminus\{0\}$ tal que $ab=0$.
@@ -294,7 +293,8 @@ Seja $R$ um anel e seja $a\in R$. O elemento $a$ &eacute; dito <strong>invert&ia
 <div class="example">
 Por exemplo, os elementos invert&iacute;veis em $\Z$ e em $\Z[\sqrt 2]$ s&atilde;o $1$ e $-1$. Em $\Z[i]$, os invert&iacute;veis s&atilde;o $1,-1,i,-i$. Em $\Z_{10}$ os invert&iacute;veis s&atilde;o $\overline 1,\overline 3,\overline 7,\overline 9$. Em $\Q$, $\R$, $\C$ e em $\Z_p$, para $p$ primo, todos os elementos n&atilde;o nulos s&atilde;o invert&iacute;veis. 
 <p>Os an&eacute;is $\Z$, $\Z[i]$, $\Z[\sqrt 2]$, $\Q$, $\R$, $\C$ e $\Z_p$, para $p$ primo, n&atilde;o possuem divisores de zero. Os divisores de zero em $\Z_{10}$ s&atilde;o $\overline 2$, $\overline 4$, $\overline 5$, $\overline 6$, $\overline 8$.
-</p></div>
+</p>
+</div>
 <p>Note que segue do fato que $0\cdot a =0$ para todo $a\in R$ que $0$ nunca &eacute; invert&iacute;vel.</p>
 <p>Usando o mesmo argumento que o sim&eacute;trico de um elemento &eacute; &uacute;nico, pode-se provar que o inverso de um elemento $a\in R$ invert&iacute;vel &eacute; &uacute;nico. Assim, o inverso de $a\in R$ (quando existir) &eacute; escrito como $a^{-1}$. </p>
 <div class="exercise">Seja $a\in R$ um elemento invert&iacute;vel de um anel $R$. Mostre que $a$ n&atilde;o &eacute; divisor de zero.</div>

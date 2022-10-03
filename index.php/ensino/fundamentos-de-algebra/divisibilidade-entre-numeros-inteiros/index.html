@@ -3,30 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
 
-
-<title>Divisibilidade entre n&uacute;meros inteiros &ndash; Csaba Schneider</title>
+<title>Divisibilidade entre números inteiros &#8211; Csaba Schneider</title>
+<meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
-
+<link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
-<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://schcs.github.io/WP/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="prismatic-blocks-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/css/styles-blocks.css?ver=6.0.2" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-green: #1c7c7c;--wp--preset--color--dark-gray: #666;--wp--preset--color--medium-gray: #999;--wp--preset--color--light-gray: #eee;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.2.1" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
-
-
-
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.14" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/1196">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.2">
 <link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/divisibilidade-entre-numeros-inteiros/">
-
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdivisibilidade-entre-numeros-inteiros%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdivisibilidade-entre-numeros-inteiros%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=1196">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdivisibilidade-entre-numeros-inteiros%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdivisibilidade-entre-numeros-inteiros%2F&#038;format=xml">
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -169,12 +191,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
-	
-
-<script>
-MathJax = {
+}</style>
+		
+<!-- MathJax script -->
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -189,21 +209,19 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-
+<!-- End of MathJax script -->
 
 </head>
 
-<body class="page-template-default page page-id-1196 page-child parent-pageid-1193 no-sidebar">
+<body class="page-template-default page page-id-1196 page-child parent-pageid-1193 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
@@ -211,12 +229,13 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
-</ul></div>		</nav>
-	</header>
+</ul></div>		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
 		
@@ -227,15 +246,15 @@ MathJax = {
 				
 <article id="post-1196" class="post-1196 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Divisibilidade entre n&uacute;meros inteiros</h1>	</header>
+		<h1 class="entry-title">Divisibilidade entre números inteiros</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<div style="color:#000000;">
-<h4>Defini&ccedil;&otilde;es e propriedades b&aacute;sicas</h4>
-<p>Os n&uacute;meros naturais s&atilde;o os n&uacute;meros $1$, $2$, $3$, etc. Alguns autores consideram o n&uacute;mero zero tamb&eacute;m natural, mas nesta disciplina os n&uacute;meros naturais come&ccedil;am com $1$. O conjunto dos n&uacute;meros naturais &eacute; denotado por $\N$, enquanto $\N_0$ denota o conjunto $\{0\}\cup\N$. Os n&uacute;meros inteiros s&atilde;o os n&uacute;meros naturais e os seus negativos. O conjunto dos n&uacute;meros inteiros &eacute; denotado por $\Z$ (pela palavra <em>zahlen</em> em alem&atilde;o); ou seja<br>
+		<div style="color:/#000000;">
+<h4>Definições e propriedades básicas</h4>
+<p>Os números naturais são os números $1$, $2$, $3$, etc. Alguns autores consideram o número zero também natural, mas nesta disciplina os números naturais começam com $1$. O conjunto dos números naturais é denotado por $\N$, enquanto $\N_0$ denota o conjunto $\{0\}\cup\N$. Os números inteiros são os números naturais e os seus negativos. O conjunto dos números inteiros é denotado por $\Z$ (pela palavra <em>zahlen</em> em alemão); ou seja<br>
 \[<br>
 \Z=\{0,\pm 1,\pm 2,\pm 3,\ldots\}.<br>
 \]</p>
-<div class="definition">Sejam $a,b\in\Z$. Dizemos que &ldquo;$a$ divide $b$&rdquo;, ou &ldquo;$b$ &eacute; um m&uacute;ltiplo de $a$&rdquo; ou &ldquo;$b$ &eacute; divis&iacute;vel por $a$&rdquo; se existir $q\in\Z$ tal que $b=qa$. Quando $a$ divide $b$, escrevemos $a\mid b$, e quando $a$ n&atilde;o divide $b$, escrevemos $a\nmid b$.</div>
+<div class="definition">Sejam $a,b\in\Z$. Dizemos que &#8220;$a$ divide $b$&#8221;, ou &#8220;$b$ é um múltiplo de $a$&#8221; ou &#8220;$b$ é divisível por $a$&#8221; se existir $q\in\Z$ tal que $b=qa$. Quando $a$ divide $b$, escrevemos $a\mid b$, e quando $a$ não divide $b$, escrevemos $a\nmid b$.</div>
 <div class="example">
 <ul>
 <li>$2\mid 4$, $-2\mid 4$, $3\nmid 5$;</li>
@@ -243,59 +262,61 @@ MathJax = {
 <li>$0\nmid a$ para todo $a\in\Z\setminus\{0\}$.</li>
 </ul>
 </div>
-<p>Quando $a,b\in\Z$ e $a\mid b$, ent&atilde;o existe (por defini&ccedil;&atilde;o), um $q\in\Z$ tal que $b=qa$. Se $a\neq 0$, ent&atilde;o o n&uacute;mero $q$ &eacute; &uacute;nico e $q=b/a$; ou seja, $q$ &eacute; o quociente de $b$ por $a$. Quando $a=b=0$, temos que $a\mid b$, mas o quociente $0/0$ n&atilde;o &eacute; definido.</p>
+<p>Quando $a,b\in\Z$ e $a\mid b$, então existe (por definição), um $q\in\Z$ tal que $b=qa$. Se $a\neq 0$, então o número $q$ é único e $q=b/a$; ou seja, $q$ é o quociente de $b$ por $a$. Quando $a=b=0$, temos que $a\mid b$, mas o quociente $0/0$ não é definido.</p>
 <div class="lemma">
-(As propriedades da divisibilidade.) Sejam $a,b,c\in\Z$. As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.
+(As propriedades da divisibilidade.) Sejam $a,b,c\in\Z$. As seguintes afirmações são verdadeiras.
 <ol>
 <li>$a\mid a$;</li>
-<li>se $a\mid b$ e $b\mid c$, ent&atilde;o $a\mid c$;</li>
-<li>se $a\mid b$ e $b\mid a$., ent&atilde;o $a=\pm b$;</li>
-<li>se $a\mid b$, ent&atilde;o $a\mid bc$;</li>
-<li>se $a\mid b$ e $a\mid c$, ent&atilde;o $a\mid b\pm c$.</li>
+<li>se $a\mid b$ e $b\mid c$, então $a\mid c$;</li>
+<li>se $a\mid b$ e $b\mid a$., então $a=\pm b$;</li>
+<li>se $a\mid b$, então $a\mid bc$;</li>
+<li>se $a\mid b$ e $a\mid c$, então $a\mid b\pm c$.</li>
 </ol>
 </div>
 <div class="proof">
-<p>Demonstraremos apenas duas destas afirma&ccedil;&otilde;es, o resto &eacute; exerc&iacute;cio.</p>
-<p>3. A afirma&ccedil;&atilde;o &eacute; trivialmente verdadeira pelas observa&ccedil;&otilde;es anteriores quando $a=0$ ou $b=0$. Assumamos portanto que $a\neq 0$ e $b\neq 0$. Suponha que $a\mid b$ e $b\mid a$. Ent&atilde;o existem $q_1,q_2\in\Z$ tais que<br>
+<p>Demonstraremos apenas duas destas afirmações, o resto é exercício.</p>
+<p>3. A afirmação é trivialmente verdadeira pelas observações anteriores quando $a=0$ ou $b=0$. Assumamos portanto que $a\neq 0$ e $b\neq 0$. Suponha que $a\mid b$ e $b\mid a$. Então existem $q_1,q_2\in\Z$ tais que<br>
 \begin{align*}<br>
 b&amp;=q_1a;\\<br>
 a&amp;=q_2b.<br>
 \end{align*}<br>
-Substituindo $b=q_1a$ na segunda equa&ccedil;&atilde;o, obtemos que<br>
+Substituindo $b=q_1a$ na segunda equação, obtemos que<br>
 \[<br>
 a=q_2b=q_2q_1a.<br>
 \]<br>
-Como $a\neq 0$, a &uacute;ltima equa&ccedil;&atilde;o destacada implica que $q_2q_1=1$; ou seja (lembrando que $q_1$ e $q_2$ s&atilde;o inteiros) $q_1=q_2=1$ ou $q_1=q_2=-1$. Obtemos portanto que $a=\pm b$.</p>
+Como $a\neq 0$, a última equação destacada implica que $q_2q_1=1$; ou seja (lembrando que $q_1$ e $q_2$ são inteiros) $q_1=q_2=1$ ou $q_1=q_2=-1$. Obtemos portanto que $a=\pm b$.</p>
 <p>5. Assuma que $a\mid b$ e $a\mid c$. Existem $q_1,q_2\in\Z$ tais que $b=q_1a$ e $c=q_2a$. Isso implica que<br>
 \[<br>
 b+c=q_1a+q_2a=(q_1+q_2)a;<br>
 \]<br>
 ou seja, $a\mid b+c$. Pode-se modificar o argumento trivialmente para mostrar que $a\mid b-c$.
-</p></div>
-<h4>O Teorema da Divis&atilde;o de Euclides</h4>
-<div class="theorem">(O Teorema da Divis&atilde;o de Euclides) Sejam $a,b\in\Z$ tais que $b\neq 0$. Ent&atilde;o existem unicamente $q,r\in\Z$ tais que<br>
+</p>
+</div>
+<h4>O Teorema da Divisão de Euclides</h4>
+<div class="theorem">(O Teorema da Divisão de Euclides) Sejam $a,b\in\Z$ tais que $b\neq 0$. Então existem unicamente $q,r\in\Z$ tais que<br>
 \[<br>
 a=qb+r\quad\mbox{e}\quad 0\leq r&lt;|b|.<br>
 \]</div>
-<div class="proof"><strong>Exist&ecirc;ncia.</strong> Suponha primeiro que $b$ &eacute; positivo. Vamos demonstrar a exist&ecirc;ncia primeiro para $a$ n&atilde;o negativo por indu&ccedil;&atilde;o em $a$. Quando $a=0$, pode escolher $q=r=0$ e a afirma&ccedil;&atilde;o sobre a exist&ecirc;ncia destes n&uacute;meros est&aacute; v&aacute;lida. Assuma que a afirma&ccedil;&atilde;o da exist&ecirc;ncia &eacute; verdadeira para algum $a\geq 0$; ou seja existem $q,r\in\Z$ tais que $a=qb+r$ e $0\leq r&lt;b$. O n&uacute;mero $a+1$ pode ser escrito como<br>
+<div class="proof">
+<strong>Existência.</strong> Suponha primeiro que $b$ é positivo. Vamos demonstrar a existência primeiro para $a$ não negativo por indução em $a$. Quando $a=0$, pode escolher $q=r=0$ e a afirmação sobre a existência destes números está válida. Assuma que a afirmação da existência é verdadeira para algum $a\geq 0$; ou seja existem $q,r\in\Z$ tais que $a=qb+r$ e $0\leq r&lt;b$. O número $a+1$ pode ser escrito como<br>
 \[<br>
 a+1=qb+r+1<br>
 \]<br>
-e temos ainda que $1\leq r+1\leq b$. Se $r+1&lt;b$, ent&atilde;o a express&atilde;o para $a$ na equa&ccedil;&atilde;o anterior &eacute; como desejada. Por outro lado, se $r+1=b$, ent&atilde;o<br>
+e temos ainda que $1\leq r+1\leq b$. Se $r+1&lt;b$, então a expressão para $a$ na equação anterior é como desejada. Por outro lado, se $r+1=b$, então<br>
 \[<br>
 a+1=qb+r+1=qb+b=(q+1)b=(q+1)b+0<br>
 \]<br>
-e obtemos uma express&atilde;o para $a+1$ que satisfaz as condi&ccedil;&otilde;es do teorema.Acabamos de provar a afirma&ccedil;&atilde;o da exist&ecirc;ncia para $a$ n&atilde;o negativo e $b$ positivo. 
-<p>Assuma agora que $a$ &eacute; negativo, mas $b$ cont&iacute;nua positivo. Como $-a$ &eacute; positivo, o teorema est&aacute; v&aacute;lido para $-a$ e $b$ e existem $q,r\in\Z$ tais que<br>
+e obtemos uma expressão para $a+1$ que satisfaz as condições do teorema.Acabamos de provar a afirmação da existência para $a$ não negativo e $b$ positivo. 
+<p>Assuma agora que $a$ é negativo, mas $b$ contínua positivo. Como $-a$ é positivo, o teorema está válido para $-a$ e $b$ e existem $q,r\in\Z$ tais que<br>
 \[<br>
 -a=qb+r\quad\mbox{e}\quad 0\leq r&lt; b.<br>
 \]<br>
-Se $r=0$, ent&atilde;o obtemos que $a=(-q)b+0$ que d&aacute; a express&atilde;o procurada. Caso contr&aacute;rio, quando $0&lt;r&lt;b$, obtemos que<br>
+Se $r=0$, então obtemos que $a=(-q)b+0$ que dá a expressão procurada. Caso contrário, quando $0&lt;r&lt;b$, obtemos que<br>
 \[<br>
 a=(-q)b-r=(-q-1)b+(-r+b)\quad\mbox{e}\quad 0&lt; -r+b&lt; b<br>
 \]<br>
 como foi desejado.</p>
-<p>Agora consideremos os caso quando $b$ &eacute; negativo e $a$ &eacute; arbitr&aacute;rio. Neste caso $-b$ &eacute; positivo e existem $q,r\in\Z$ tais que<br>
+<p>Agora consideremos os caso quando $b$ é negativo e $a$ é arbitrário. Neste caso $-b$ é positivo e existem $q,r\in\Z$ tais que<br>
 \[<br>
 a=q(-b)+r\quad\mbox{e}\quad 0\leq r&lt; |b|<br>
 \]<br>
@@ -303,7 +324,7 @@ e isso implica que<br>
 \[<br>
 a=(-q)b+r\quad\mbox{e}\quad 0\leq r&lt; |b|<br>
 \]<br>
-e podemos tomar os n&uacute;meros $-q$ e $r$.</p>
+e podemos tomar os números $-q$ e $r$.</p>
 <p><strong>Unicidade.</strong> Assuma que para algum $a,b\in\Z$ (com $b\neq 0$), temos $q_1,q_2,r_1,r_2\in\Z$ tais que<br>
 \[<br>
 a=q_1b+r_1\quad\mbox{e}\quad 0\leq r_1&lt;|b|<br>
@@ -312,36 +333,41 @@ e<br>
 \[<br>
 a=q_2b+r_2\quad\mbox{e}\quad 0\leq r_2&lt;|b|.<br>
 \]<br>
-Assuma sem perder generalidade que $r_2\geq r_1$. Neste caso temos que $0\leq r_2-r_1\leq r_2&lt;|b|$ e das duas equa&ccedil;&otilde;es anteriores obtemos tamb&eacute;m que<br>
+Assuma sem perder generalidade que $r_2\geq r_1$. Neste caso temos que $0\leq r_2-r_1\leq r_2&lt;|b|$ e das duas equações anteriores obtemos também que<br>
 \[<br>
 (q_1-q_2)b=(r_2-r_1).<br>
 \]<br>
-Como $(q_1-q_2)b$ &eacute; um m&uacute;ltiplo de $b$, este n&uacute;mero s&oacute; pode cair no intervalo $[0,|b|-1]$ se $(q_1-q_2)b=0$. Como $b\neq 0$, a lei cancelativa implica que $q_1-q_2=0$; ou seja $q_1=q_2=q$. Ora<br>
+Como $(q_1-q_2)b$ é um múltiplo de $b$, este número só pode cair no intervalo $[0,|b|-1]$ se $(q_1-q_2)b=0$. Como $b\neq 0$, a lei cancelativa implica que $q_1-q_2=0$; ou seja $q_1=q_2=q$. Ora<br>
 \[<br>
 a=qb+r_1=qb+r_2<br>
 \]<br>
-a aplicando a lei cancelativa aditivamente obtemos que $r_1=r_2$. Ent&atilde;o a decomposi&ccedil;&atilde;o do n&uacute;mero $a$ no teorema &eacute; &uacute;nica.</p>
+a aplicando a lei cancelativa aditivamente obtemos que $r_1=r_2$. Então a decomposição do número $a$ no teorema é única.</p>
 </div>
-<p>Os n&uacute;meros $q$ e $r$ s&atilde;o chamados do <mark>quociente</mark> e o <mark>resto</mark>, respetivamente, de $a$ por $b$.</p>
+<p>Os números $q$ e $r$ são chamados do <mark>quociente</mark> e o <mark>resto</mark>, respetivamente, de $a$ por $b$.</p>
 <div class="example">
-Vamos ver alguns exemplos do quiciente $q$ e do resto $r$ no Teorema da Divis&atilde;o para alguns valores $a,b$. Pode-se verificar facilmente as seguintes afirma&ccedil;&otilde;es.
+Vamos ver alguns exemplos do quiciente $q$ e do resto $r$ no Teorema da Divisão para alguns valores $a,b$. Pode-se verificar facilmente as seguintes afirmações.
 <ol>
-<li> Se $a=13$ e $b=5$, ent&atilde;o $q=2$ e $r=3$.
-</li><li> Se $a=-13$ e $b=5$, ent&atilde;o $q=-3$ e $r=2$.
-</li><li> Se $a=13$ e $b=-5$, ent&atilde;o $q=-2$ e $r=3$.
-</li><li> Se $a=-13$ e $b=-5$, ent&atilde;o $q=3$ e $r=2$.
-</li></ol>
+<li> Se $a=13$ e $b=5$, então $q=2$ e $r=3$.
+</li>
+<li> Se $a=-13$ e $b=5$, então $q=-3$ e $r=2$.
+</li>
+<li> Se $a=13$ e $b=-5$, então $q=-2$ e $r=3$.
+</li>
+<li> Se $a=-13$ e $b=-5$, então $q=3$ e $r=2$.
+</li>
+</ol>
 <p>Explique porque $r\neq -3$ nos itens 2 e 4.
-</p></div>
-<h3>Computa&ccedil;&otilde;es com Python</h3>
-<p>Vamos ver agora como calcular o quociente e o resto na linguagem Python. O quociente de dois n&uacute;meros naturais pode ser calculado por &ldquo;//&rdquo; e o resto por &ldquo;%&rdquo;. Considere o seguinte exemplo:</p>
+</p>
+</div>
+<h3>Computações com Python</h3>
+<p>Vamos ver agora como calcular o quociente e o resto na linguagem Python. O quociente de dois números naturais pode ser calculado por &#8220;//&#8221; e o resto por &#8220;%&#8221;. Considere o seguinte exemplo:</p>
 <pre><code class="language-python-repl">
 &gt;&gt;&gt; 11//5
 2
 &gt;&gt;&gt; 11 % 5
 1
 </code></pre>
-<p>Normalmente usamos vari&aacute;veis para guardar os n&uacute;meros que usamos na computa&ccedil;&atilde;o. Refazemos a computata&ccedil;&atilde;o anterior usando vari&aacute;veis:</p>
+<p>Normalmente usamos variáveis para guardar os números que usamos na computação. Refazemos a computatação anterior usando variáveis:</p>
 <pre><code class="language-python-repl">
 &gt;&gt;&gt; a = 11
 &gt;&gt;&gt; b = 5
@@ -350,13 +376,13 @@ Vamos ver alguns exemplos do quiciente $q$ e do resto $r$ no Teorema da Divis&at
 &gt;&gt;&gt; a % b
 1
 </code></pre>
-<p>Verifiquemos que o quociente e o resto satisfaz a igualdade no Teorema da Divis&atilde;o:</p>
+<p>Verifiquemos que o quociente e o resto satisfaz a igualdade no Teorema da Divisão:</p>
 <pre><code class="language-python-repl">
 &gt;&gt;&gt; q = a//b; r = a % b
 &gt;&gt;&gt; a == q*b+r
 True
 </code></pre>
-<p>Precisa-se prestar aten&ccedil;&atilde;o quando trabalhamos com n&uacute;meros negativos. Quando $a$ &eacute; negativo e $b$ &eacute; positivo, o quociente e o resto calculado por Python coincide com o que segue do Teorema.</p>
+<p>Precisa-se prestar atenção quando trabalhamos com números negativos. Quando $a$ é negativo e $b$ é positivo, o quociente e o resto calculado por Python coincide com o que segue do Teorema.</p>
 <pre><code class="language-python-repl">
 &gt;&gt;&gt; a = -11; b = 5
 &gt;&gt;&gt; a//b
@@ -364,7 +390,7 @@ True
 &gt;&gt;&gt; a%b
 4
 </code></pre>
-<p>Mas quando $b$ for negativo, o Python devolve um resto negativo que n&atilde;o &eacute; compat&iacute;vel com nosso Teorema.</p>
+<p>Mas quando $b$ for negativo, o Python devolve um resto negativo que não é compatível com nosso Teorema.</p>
 <pre><code class="language-python-repl">
 &gt;&gt;&gt; a = 11; b = -5
 &gt;&gt;&gt; a//b
@@ -372,20 +398,24 @@ True
 &gt;&gt;&gt; a%b
 -4
 </code></pre>
-<p>Nestes casos o output dado por Python precisa ser modificado para ser compat&iacute;vel com o Teorema de Divis&atilde;o enunciado anteriormente.
-</p></div>
+<p>Nestes casos o output dado por Python precisa ser modificado para ser compatível com o Teorema de Divisão enunciado anteriormente.
+</p>
+</div>
 			</div>
+<!-- .entry-content -->
 	<footer class="entry-footer">
-			</footer>
-</article>
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
 
 				
 			
-		</main>
+		</main><!-- #main -->
 	</div>
+<!-- #primary -->
 
 
 	</div>
+<!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -393,15 +423,18 @@ True
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
 				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+<!-- .site-info -->
 		</div>
-	</footer>
+<!-- .site-info-wrapper -->
+	</footer><!-- #colophon -->
 </div>
+<!-- #page -->
 
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.2.1" id="prismatic-prism-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.2.1" id="prismatic-prism-python-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206" id="penscratch-2-navigation-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608" id="penscratch-2-scripts-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115" id="penscratch-2-skip-link-focus-fix-js"></script>
 
 </body>
 </html>

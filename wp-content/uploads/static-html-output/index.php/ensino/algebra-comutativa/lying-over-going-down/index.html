@@ -24,8 +24,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-comutativa%2Flying-over-going-down%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-comutativa%2Flying-over-going-down%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -168,12 +167,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -188,10 +185,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -210,7 +205,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -266,7 +262,8 @@ MathJax = {
 		@V{\varphi_R}VV @VV{\varphi_S}V\\<br>
         U^{-1}R @&gt;&gt;&gt; U^{-1}S<br>
     \end{CD}\]</span> Calculando a pr&eacute;-imagem em <span class="math inline">\(R\)</span> de <span class="math inline">\(\mathfrak r'\subseteq U^{-1}S\)</span> pela composi&ccedil;&atilde;o dos mapas das duas maneiras no diagrama, obtemos que <span class="math display">\[R\cap \mathfrak r=R\cap \varphi_S^{-1}(\mathfrak r')=\varphi_R^{-1}(\mathfrak r'\cap U^{-1}R)=\varphi_{R}^{-1}(\mathfrak pU^{-1}R)=\mathfrak p\]</span></p>
-<p>(4) Aplique (3) para o extens&atilde;o <span class="math inline">\(R/(\mathfrak a\cap R)\subseteq S/\mathfrak a\)</span>.</p></div>
+<p>(4) Aplique (3) para o extens&atilde;o <span class="math inline">\(R/(\mathfrak a\cap R)\subseteq S/\mathfrak a\)</span>.</p>
+</div>
 <div class="lemma">
 <span id="lem:coef_int" label="lem:coef_int"></span> Seja <span class="math inline">\(R\subseteq S\)</span> uma extens&atilde;o de an&eacute;is e <span class="math inline">\(f\in R[x]\)</span> um polin&ocirc;mio m&ocirc;nico. Assuma que <span class="math inline">\(f=gh\)</span> onde <span class="math inline">\(g,h\in S[x]\)</span> e <span class="math inline">\(g\)</span> &eacute; m&ocirc;nico.
 <ol>
@@ -279,10 +276,12 @@ MathJax = {
 </ol>
 </div>
 <div class="proof">(1) Seja <span class="math inline">\(R_1=R[x]/(f)\)</span>. Ent&atilde;o <span class="math inline">\(R_1\)</span> &eacute; gerado por <span class="math inline">\(1,\bar x,\bar x^2,\ldots,\bar x^{d-1}\)</span>. Assuma que <span class="math display">\[\alpha_0+\alpha_1\bar x+\cdots+\alpha_{d-1}\bar x^{d-1}\]</span> &eacute; uma depend&ecirc;ncia linear n&atilde;o trivial com <span class="math inline">\(\alpha_i\in R\)</span>. Ent&atilde;o <span class="math inline">\(\bar x\)</span> &eacute; ra&iacute;z do polin&ocirc;mio <span class="math display">\[q(x)=\alpha_0+\cdots+\alpha_{d-1}x^{d-1}\]</span> e <span class="math inline">\(q(x)\mid f(x)\)</span> mas isso &eacute; imposs&iacute;vel porque <span class="math inline">\(\deg q(x)&lt;\deg f(x)\)</span> e <span class="math inline">\(f(x)\)</span> &eacute; m&ocirc;nico. Assim <span class="math inline">\(R_1\)</span> &eacute; <span class="math inline">\(R\)</span>-m&oacute;dulo livre de posto <span class="math inline">\(d\)</span> e <span class="math inline">\(R\subseteq R_1\)</span>. Ademais, <span class="math inline">\(f(\bar x)=0\)</span> e <span class="math inline">\(f(x)=f_1(x)(x-\bar x)\)</span> com <span class="math inline">\(f_1\in R_1[x]\)</span>. Note que <span class="math inline">\(f_1\)</span> &eacute; m&ocirc;nico e <span class="math inline">\(\deg{f_1}=d-1\)</span>. Repetimos o processo para <span class="math inline">\(f_1\)</span> e no final obtemos <span class="math inline">\(T\)</span>, as ra&iacute;zes <span class="math inline">\(x_1=\bar x,\ldots,x_d\in T\)</span>.
-<p>(2) O coeficiente l&iacute;der de <span class="math inline">\(f\)</span> &eacute; o produto dos coeficientes l&iacute;deres de <span class="math inline">\(f\)</span> e <span class="math inline">\(g\)</span>. Como <span class="math inline">\(f\)</span> &eacute; m&ocirc;nico, <span class="math inline">\(g\)</span> &eacute; m&ocirc;nico, obtemos que <span class="math inline">\(h\)</span> &eacute; m&ocirc;nico. Aplicando (1), obtemos uma extens&atilde;o <span class="math inline">\(Q_1\)</span> de <span class="math inline">\(S\)</span> tal que <span class="math inline">\(g=\prod (x-y_i)\)</span> e uma extens&atilde;o <span class="math inline">\(Q_2\)</span> de <span class="math inline">\(S\)</span> tal que <span class="math inline">\(h=\prod(x-z_i)\)</span>. Os elementos <span class="math inline">\(y_i\)</span> e <span class="math inline">\(z_i\)</span> s&atilde;o integrais sobre <span class="math inline">\(R\)</span>, pois s&atilde;o ra&iacute;zes de <span class="math inline">\(f\)</span>. Mas os coeficientes de <span class="math inline">\(g\)</span> e <span class="math inline">\(h\)</span> s&atilde;o polin&ocirc;mios em <span class="math inline">\(y_i\)</span> e <span class="math inline">\(z_i\)</span> e eles tamb&eacute;m s&atilde;o integrais sobre <span class="math inline">\(R\)</span>.</p></div>
+<p>(2) O coeficiente l&iacute;der de <span class="math inline">\(f\)</span> &eacute; o produto dos coeficientes l&iacute;deres de <span class="math inline">\(f\)</span> e <span class="math inline">\(g\)</span>. Como <span class="math inline">\(f\)</span> &eacute; m&ocirc;nico, <span class="math inline">\(g\)</span> &eacute; m&ocirc;nico, obtemos que <span class="math inline">\(h\)</span> &eacute; m&ocirc;nico. Aplicando (1), obtemos uma extens&atilde;o <span class="math inline">\(Q_1\)</span> de <span class="math inline">\(S\)</span> tal que <span class="math inline">\(g=\prod (x-y_i)\)</span> e uma extens&atilde;o <span class="math inline">\(Q_2\)</span> de <span class="math inline">\(S\)</span> tal que <span class="math inline">\(h=\prod(x-z_i)\)</span>. Os elementos <span class="math inline">\(y_i\)</span> e <span class="math inline">\(z_i\)</span> s&atilde;o integrais sobre <span class="math inline">\(R\)</span>, pois s&atilde;o ra&iacute;zes de <span class="math inline">\(f\)</span>. Mas os coeficientes de <span class="math inline">\(g\)</span> e <span class="math inline">\(h\)</span> s&atilde;o polin&ocirc;mios em <span class="math inline">\(y_i\)</span> e <span class="math inline">\(z_i\)</span> e eles tamb&eacute;m s&atilde;o integrais sobre <span class="math inline">\(R\)</span>.</p>
+</div>
 <div class="corollary">Seja <span class="math inline">\(R\)</span> um dom&iacute;nio normal, <span class="math inline">\(\mathbb K=\mbox{Frac}(R)\)</span> e <span class="math inline">\(\mathbb K\subseteq \mathbb L\)</span> uma extens&atilde;o de corpos. Seja <span class="math inline">\(y\in\mathbb L\)</span> integral sobre <span class="math inline">\(R\)</span> e <span class="math inline">\(f\in\mathbb K[x]\)</span> o polin&ocirc;mio minimal (m&ocirc;nico) de <span class="math inline">\(y\)</span>. Ent&atilde;o <span class="math inline">\(f\in R[x]\)</span> e <span class="math inline">\(f(y)=0\)</span> &eacute; depend&ecirc;ncia integral.</div>
 <div class="proof">Como <span class="math inline">\(y\in \mathbb L\)</span> &eacute; integral, existe <span class="math inline">\(g\in R[x]\)</span> m&ocirc;nico tal que <span class="math inline">\(g(y)=0\)</span>. Pela defini&ccedil;&atilde;o do polin&ocirc;mio minimal, <span class="math inline">\(f(x)\mid g(x)\)</span> considerados como polin&ocirc;mios em <span class="math inline">\(\mathbb K[x]\)</span> e escreva <span class="math inline">\(g=fh\)</span> com <span class="math inline">\(h\in \mathbb K[x]\)</span>. Ent&atilde;o os coeficientes de <span class="math inline">\(f\)</span> s&atilde;o integrais sobre <span class="math inline">\(R\)</span>. Como <span class="math inline">\(R\)</span> &eacute; normal, <span class="math inline">\(f\in R[x]\)</span>.</div>
-<div class="exercise"><span id="ex:prim" label="ex:prim">[ex:prim]</span> Seja <span class="math inline">\(S\)</span> uma <span class="math inline">\(R\)</span> &aacute;lgebra com o mapa <span class="math inline">\(\varphi: R\to S\)</span>. Seja <span class="math inline">\(\mathfrak p\in\mbox{Spec}(R)\)</span> tal que <span class="math inline">\(\varphi^{-1}(\mathfrak pS)=\mathfrak p\)</span>. Ent&atilde;o existe um ideal <span class="math inline">\(\mathfrak q\in\mbox{Spec}(S)\)</span> tal que <span class="math inline">\(\varphi^{-1}(\mathfrak q)=\mathfrak p\)</span>.</div>
+<div class="exercise">
+<span id="ex:prim" label="ex:prim">[ex:prim]</span> Seja <span class="math inline">\(S\)</span> uma <span class="math inline">\(R\)</span> &aacute;lgebra com o mapa <span class="math inline">\(\varphi: R\to S\)</span>. Seja <span class="math inline">\(\mathfrak p\in\mbox{Spec}(R)\)</span> tal que <span class="math inline">\(\varphi^{-1}(\mathfrak pS)=\mathfrak p\)</span>. Ent&atilde;o existe um ideal <span class="math inline">\(\mathfrak q\in\mbox{Spec}(S)\)</span> tal que <span class="math inline">\(\varphi^{-1}(\mathfrak q)=\mathfrak p\)</span>.</div>
 <div class="theorem">Seja <span class="math inline">\(R\subseteq S\)</span> uma extens&atilde;o integral de dom&iacute;nios com <span class="math inline">\(R\)</span> normal, e <span class="math inline">\(\mathfrak p\subset \mathfrak q\)</span> primos em <span class="math inline">\(R\)</span> e <span class="math inline">\(\mathfrak q'\)</span> um primo em <span class="math inline">\(S\)</span> que est&aacute; acima de <span class="math inline">\(\mathfrak q\)</span>. Ent&atilde;o existe um primo <span class="math inline">\(\mathfrak p'\)</span> em <span class="math inline">\(S\)</span> que est&aacute; acima de <span class="math inline">\(\mathfrak p\)</span> e <span class="math inline">\(\mathfrak p'\subset \mathfrak q'\)</span>.</div>
 <div class="proof">Considere a localiza&ccedil;&atilde;o <span class="math inline">\(S_{(\mathfrak q')}\)</span>. Como <span class="math inline">\(R\)</span> e <span class="math inline">\(S\)</span> s&atilde;o dom&iacute;nios, temos que <span class="math inline">\(R\subseteq S\subseteq S_{(\mathfrak q')}\)</span>. Primeiro afirmamos que <span class="math inline">\(\mathfrak pS_{(\mathfrak q)}\cap R=\mathfrak p\)</span>. A inclus&atilde;o <span class="math inline">\(\mathfrak p\subseteq  \mathfrak pS_{(\mathfrak q)}\cap R\)</span> vale trivialmente, ent&atilde;o precisa-se provar que <span class="math inline">\(\mathfrak pS_{(\mathfrak q)}\cap R\subseteq \mathfrak p\)</span>.
 <p>Seja <span class="math inline">\(y\in \mathfrak pS_{(\mathfrak q')}\cap R\)</span> com <span class="math inline">\(y\in R\setminus \mathfrak p\)</span>. Assuma que <span class="math inline">\(y=x/s\)</span> onde <span class="math inline">\(x\in \mathfrak pS\)</span> e <span class="math inline">\(s \in S\setminus\mathfrak q'\)</span>. Seja <span class="math inline">\(\mathbb K=\mbox{Frac}(R)\)</span>.</p>
@@ -290,7 +289,8 @@ MathJax = {
         f(t)=t^n+a_1t^{n-1}+\cdots+a_n\in R[t]\]</span> onde <span class="math inline">\(a_i\in \mathfrak p\)</span>.</p>
 <p>Afirmamos que a equa&ccedil;&atilde;o minimal de <span class="math inline">\(s\)</span> sobre <span class="math inline">\(\mathbb K\)</span> &eacute; <span class="math display">\[m(t)= t^n+b_1t^{n-1}+\cdots+b_n=0\mbox{ com }b_i=a_i/y^i\in\mathbb K.\]</span> Substituindo <span class="math inline">\(s=x/y\)</span> em <span class="math inline">\(m(t)\)</span> d&aacute; zero. Por outro lado, se existir uma equa&ccedil;&atilde;o com <span class="math inline">\(\ell&lt;n\)</span> na forma <span class="math display">\[s^\ell+\beta_1 s^{\ell-1}+\cdots+\beta_\ell=0,\]</span> ent&atilde;o a mesma implica que <span class="math display">\[x^\ell+\beta_1y_1x^{\ell-1}+\cdots +\beta_\ell y_1^\ell=0\]</span> que seria uma equa&ccedil;&atilde;o integral para <span class="math inline">\(x\)</span>. Mas a equa&ccedil;&atilde;o minimal de <span class="math inline">\(x\)</span> tem grau <span class="math inline">\(n\)</span> e assim <span class="math inline">\(m(t)\)</span> deve ser a equa&ccedil;&atilde;o minimal de <span class="math inline">\(s\)</span> sobre <span class="math inline">\(\mathbb K\)</span>.</p>
 <p>Como <span class="math inline">\(y\not\in \mathfrak p\)</span>, <span class="math inline">\(b_i\in\mathfrak p\)</span> pois <span class="math inline">\(a_i=b_iy^i\in\mathfrak p\)</span>. Ent&atilde;o <span class="math inline">\(s^n\in\mathfrak pS\subseteq \mathfrak qS\subseteq\mathfrak q'\)</span>. Obtemos que <span class="math inline">\(s\in\mathfrak q'\)</span>, que &eacute; uma contradi&ccedil;&atilde;o. Assim <span class="math inline">\(y\in\mathfrak p\)</span> e <span class="math inline">\(\mathfrak pS_{(\mathfrak q')}\cap R\subseteq\mathfrak p\)</span> e temos que <span class="math inline">\(\mathfrak pS_{(\mathfrak q')}\cap R=\mathfrak p\)</span> .</p>
-<p>Pelo exerc&iacute;cio anterior, existe um primo <span class="math inline">\(\mathfrak p''\subseteq S_{(\mathfrak q')}\)</span> com <span class="math inline">\(\mathfrak p''\cap R=\mathfrak p\)</span>. Al&eacute;m disso, <span class="math inline">\(\mathfrak p''\subseteq \mathfrak q'R_{(\mathfrak q')}\)</span> pois <span class="math inline">\(\mathfrak q'R_{(\mathfrak q')}\)</span> &eacute; o &uacute;nico maximal. Defina <span class="math inline">\(\mathfrak p'=\mathfrak p''\cap S\)</span>. Ent&atilde;o <span class="math inline">\(\mathfrak p'\cap R=\mathfrak p''\cap S\cap R=\mathfrak p\)</span> e <span class="math inline">\(\mathfrak p'\subseteq \mathfrak q'\)</span>.</p></div>
+<p>Pelo exerc&iacute;cio anterior, existe um primo <span class="math inline">\(\mathfrak p''\subseteq S_{(\mathfrak q')}\)</span> com <span class="math inline">\(\mathfrak p''\cap R=\mathfrak p\)</span>. Al&eacute;m disso, <span class="math inline">\(\mathfrak p''\subseteq \mathfrak q'R_{(\mathfrak q')}\)</span> pois <span class="math inline">\(\mathfrak q'R_{(\mathfrak q')}\)</span> &eacute; o &uacute;nico maximal. Defina <span class="math inline">\(\mathfrak p'=\mathfrak p''\cap S\)</span>. Ent&atilde;o <span class="math inline">\(\mathfrak p'\cap R=\mathfrak p''\cap S\cap R=\mathfrak p\)</span> e <span class="math inline">\(\mathfrak p'\subseteq \mathfrak q'\)</span>.</p>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>

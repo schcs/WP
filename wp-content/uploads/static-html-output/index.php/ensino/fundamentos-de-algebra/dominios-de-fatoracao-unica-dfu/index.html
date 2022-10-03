@@ -24,8 +24,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdominios-de-fatoracao-unica-dfu%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdominios-de-fatoracao-unica-dfu%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -168,12 +167,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -188,10 +185,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -210,7 +205,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -228,7 +224,7 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">Dom&iacute;nios de Fatora&ccedil;&atilde;o &Uacute;nica (DFU)</h1>	</header>
 		<div class="entry-content">
-		<div style="color:#000000">
+		<div style="color:/#000000">
 O Teorema Fundamental da Aritm&eacute;tica e o Teorema da Fatora&ccedil;&atilde;o para Polin&ocirc;mios s&atilde;o resultados parecidos no sentido que os dois afirmam que os objetos em $\Z$ e em $\F[x]$ podem ser escritos unicamente como produtos de &ldquo;indecompon&iacute;veis&rdquo;. Os &ldquo;indecompon&iacute;veis&rdquo; em $\Z$ s&atilde;o os primos, enquanto os &ldquo;indecompon&iacute;veis&rdquo; em $\F[x]$ s&atilde;o os polin&ocirc;mios irredut&iacute;veis. N&oacute;s queremos generalizar esta observa&ccedil;&atilde;o para uma classe maior de estruturas alg&eacute;bricas.
 <p>Lembre que o conceito de elemento irredut&iacute;vel (ou redut&iacute;vel) foi definido na p&aacute;gina <a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/polinomios-irredutiveis/">Polin&ocirc;mios Irredut&iacute;veis</a>.</p>
 <div class="definition">
@@ -264,7 +260,8 @@ onde $\alpha_1,\alpha_2\in\R\setminus\{0\}$ (e $\alpha_1\alpha_2=1$).
 <div class="example">
 Se $R$ &eacute; um corpo, ent&atilde;o ele &eacute; DFU pois $R\setminus\{0\}$ n&atilde;o possui elementos n&atilde;o invert&iacute;veis. Ent&atilde;o a condi&ccedil;&atilde;o na defini&ccedil;&atilde;o de DFU &eacute; trivialmente v&aacute;lida para $R$. 
 <p>Pelo Teorema Fundamental da Aritm&eacute;tica, $\Z$ &eacute; DFU. Pelo Teorema da Fatora&ccedil;&atilde;o para Polin&ocirc;mios, $\F[x]$ &eacute; DFU sempre que $\F$ &eacute; um corpo.
-</p></div>
+</p>
+</div>
 <p>O seguinte teorema &eacute; &uacute;til para construir dom&iacute;nios de fatora&ccedil;&atilde;o &uacute;nica, mas a demonstra&ccedil;&atilde;o n&atilde;o ser&aacute; apresentada nesta disciplina.</p>
 <div class="theorem">
 Se $R$ &eacute; DFU, ent&atilde;o $R[x]$ &eacute; DFU.

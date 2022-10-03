@@ -3,30 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
 
-
-<title>O Teorema de Divis&atilde;o para polin&ocirc;mios &ndash; Csaba Schneider</title>
+<title>O Teorema de Divisão para polinômios &#8211; Csaba Schneider</title>
+<meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
-
+<link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
-<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://schcs.github.io/WP/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="prismatic-blocks-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/css/styles-blocks.css?ver=6.0.2" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-green: #1c7c7c;--wp--preset--color--dark-gray: #666;--wp--preset--color--medium-gray: #999;--wp--preset--color--light-gray: #eee;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.2.1" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
-
-
-
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.14" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/1577">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.2">
 <link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-teorema-de-divisao-para-polinomios/">
-
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-de-divisao-para-polinomios%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-de-divisao-para-polinomios%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=1577">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-de-divisao-para-polinomios%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-de-divisao-para-polinomios%2F&#038;format=xml">
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -169,12 +191,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
-	
-
-<script>
-MathJax = {
+}</style>
+		
+<!-- MathJax script -->
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -189,21 +209,19 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-
+<!-- End of MathJax script -->
 
 </head>
 
-<body class="page-template-default page page-id-1577 page-child parent-pageid-1193 no-sidebar">
+<body class="page-template-default page page-id-1577 page-child parent-pageid-1193 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
@@ -211,12 +229,13 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
-</ul></div>		</nav>
-	</header>
+</ul></div>		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
 		
@@ -227,75 +246,76 @@ MathJax = {
 				
 <article id="post-1577" class="post-1577 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">O Teorema de Divis&atilde;o para polin&ocirc;mios</h1>	</header>
+		<h1 class="entry-title">O Teorema de Divisão para polinômios</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<div style="color:#000000">
+		<div style="color:/#000000">
 <div class="example">
-Considere $f(x)=x^3-2x^2+x-1$ e $g(x)=x^2-1$ como polin&ocirc;mios em $\Q[x]$. Usando o m&eacute;todo bem conhecido do ensino m&eacute;dio, pode-se calcular o quociente de $f(x)$ por $g(x)$ e o resto:<br>
+Considere $f(x)=x^3-2x^2+x-1$ e $g(x)=x^2-1$ como polinômios em $\Q[x]$. Usando o método bem conhecido do ensino médio, pode-se calcular o quociente de $f(x)$ por $g(x)$ e o resto:<br>
 \begin{align*}<br>
-&amp;x^3-2x^2+x-1 : x^2-1 = x-2\\<br>
-&amp;- [x^3-x] \\\hline<br>
-&amp;-2x^2+2x-1\\<br>
--&amp; [-2x^2+2]\\\hline<br>
-&amp;2x-3<br>
+&#038;x^3-2x^2+x-1 : x^2-1 = x-2\\<br>
+&#038;- [x^3-x] \\\hline<br>
+&#038;-2x^2+2x-1\\<br>
+-&#038; [-2x^2+2]\\\hline<br>
+&#038;2x-3<br>
 \end{align*}<br>
 Obtemos que<br>
 \[<br>
 f(x)=(x-2)g(x)+(2x-3)<br>
 \]<br>
-Pode-se dizer que o quociente de $f(x)$ por $g(x)$ &eacute; $x-2$ e o resto de $f(x)$ por $g(x)$ &eacute; $2x-3$.
+Pode-se dizer que o quociente de $f(x)$ por $g(x)$ é $x-2$ e o resto de $f(x)$ por $g(x)$ é $2x-3$.
 </div>
-<p>A conta que fizemos no exemplo anterior nos lembra da Teorema de Divis&atilde;o de Euclides que enunciamos na primeira parte da disciplina para n&uacute;meros inteiros. De fato, existe um teorema an&aacute;logo para polin&ocirc;mios que vamos enunciar e provar nesta p&aacute;gina.</p>
-<div class="theorem">(Teorema de Divis&atilde;o de Euclides para Polin&ocirc;mios)<br>
-Seja $\F$ um corpo (por exemplo $\Q$, $\R$, $\C$, ou $\Z_p$ com $p$ primo) e assuma que $f(x),g(x)\in \F[x]$ com $g(x)\neq 0$. Ent&atilde;o existem unicamente polin&ocirc;mios $q(x),r(x)\in \F[x]$ tais que<br>
+<p>A conta que fizemos no exemplo anterior nos lembra da Teorema de Divisão de Euclides que enunciamos na primeira parte da disciplina para números inteiros. De fato, existe um teorema análogo para polinômios que vamos enunciar e provar nesta página.</p>
+<div class="theorem">(Teorema de Divisão de Euclides para Polinômios)<br>
+Seja $\F$ um corpo (por exemplo $\Q$, $\R$, $\C$, ou $\Z_p$ com $p$ primo) e assuma que $f(x),g(x)\in \F[x]$ com $g(x)\neq 0$. Então existem unicamente polinômios $q(x),r(x)\in \F[x]$ tais que<br>
 \[<br>
 f(x)=q(x)g(x)+r(x)\quad\mbox{e}\quad r(x)=0\mbox{ ou }\grau{r(x)} &lt; \grau{g(x)}.<br>
 \]
 </div>
 <div class="proof">
-<strong>Exist&ecirc;ncia:</strong> Vamos provar a exist&ecirc;ncia por indu&ccedil;&atilde;o no grau de $f(x)$. Se $f(x)=0$, ent&atilde;o pode-se tomar $q(x)=r(x)=0$. Assuma ent&atilde;o que $f(x)\neq 0$ e seja $k=\grau{f(x)}$. Se $k=0$, ent&atilde;o $f(x)$ &eacute; constante; por exemplo $f(x)=\alpha$ onde $\alpha\in\F$. Se $\grau{g(x)}=0$ ent&atilde;o $g(x)=\beta$ com $\beta\in \F$ e pode tomar $q(x)=\alpha/\beta$ e $r(x)=0$. Se $\grau{g(x)} &gt; 0$, ent&atilde;o podemos tomar $q(x)=0$ e $r(x)=f(x)=\alpha$. &Eacute; f&aacute;cil verificar que estas escolhas para $q(x)$ e $r(x)$ satisfazem a equa&ccedil;&atilde;o no teorema.
-<p>Assuma agora que $k\geq 0$ e que a afirma&ccedil;&atilde;o da exist&ecirc;ncia no teorema est&aacute; v&aacute;lida para polin&ocirc;mios $f(x),g(x)\in\F[x]$ com $g(x)\neq 0$ e $\grau{f(x)} &lt; k$. Seja $f(x)$ um polin&ocirc;mio de grau $k$. Se $\grau{g(x)} &gt;  \grau{f(x)}$ ent&atilde;o podemos tomar $q(x)=0$ e $r(x)=f(x)$. Assuma ent&atilde;o que $\grau{g(x)}\leq \grau{f(x)}$. Assuma que<br>
+<strong>Existência:</strong> Vamos provar a existência por indução no grau de $f(x)$. Se $f(x)=0$, então pode-se tomar $q(x)=r(x)=0$. Assuma então que $f(x)\neq 0$ e seja $k=\grau{f(x)}$. Se $k=0$, então $f(x)$ é constante; por exemplo $f(x)=\alpha$ onde $\alpha\in\F$. Se $\grau{g(x)}=0$ então $g(x)=\beta$ com $\beta\in \F$ e pode tomar $q(x)=\alpha/\beta$ e $r(x)=0$. Se $\grau{g(x)} > 0$, então podemos tomar $q(x)=0$ e $r(x)=f(x)=\alpha$. É fácil verificar que estas escolhas para $q(x)$ e $r(x)$ satisfazem a equação no teorema.
+<p>Assuma agora que $k\geq 0$ e que a afirmação da existência no teorema está válida para polinômios $f(x),g(x)\in\F[x]$ com $g(x)\neq 0$ e $\grau{f(x)} &lt; k$. Seja $f(x)$ um polinômio de grau $k$. Se $\grau{g(x)} &gt;  \grau{f(x)}$ então podemos tomar $q(x)=0$ e $r(x)=f(x)$. Assuma então que $\grau{g(x)}\leq \grau{f(x)}$. Assuma que<br>
 \begin{align*}<br>
-f(x)&amp;=\alpha_k x^k+\mbox{termos de menor grau};\\<br>
-g(x)&amp;=\beta_\ell x^\ell+\mbox{termos de menor grau};<br>
+f(x)&#038;=\alpha_k x^k+\mbox{termos de menor grau};\\<br>
+g(x)&#038;=\beta_\ell x^\ell+\mbox{termos de menor grau};<br>
 \end{align*}<br>
 com $\alpha_k,\beta_\ell\in\F\setminus\{0\}$. Considere<br>
 \[<br>
 f_1(x)=f(x)-(\alpha_k/\beta_\ell)x^{k-\ell}g(x).<br>
 \]<br>
-Temos que $\grau{f_1(x)} &lt; \grau{f(x)}$ ent&atilde;o a hip&oacute;tese da indu&ccedil;&atilde;o se aplica para $f_1(x)$ e podemos escrever<br>
+Temos que $\grau{f_1(x)} &lt; \grau{f(x)}$ então a hipótese da indução se aplica para $f_1(x)$ e podemos escrever<br>
 \[<br>
 f_1(x)=q_1(x)g(x)+r(x)<br>
 \]<br>
 onde<br>
 $r(x)=0$ ou $\grau{r(x)} &lt; \grau{g(x)}$. Ora, obtemos que<br>
 \begin{align*}<br>
-f(x)&amp;=f_1(x)+(\alpha_k/\beta_m)x^{k-\ell}g(x)\\&amp;=q_1(x)g(x)+r(x)+(\alpha_k/\beta_m)x^{k-\ell}g(x)\\&amp;=<br>
+f(x)&#038;=f_1(x)+(\alpha_k/\beta_m)x^{k-\ell}g(x)\\&#038;=q_1(x)g(x)+r(x)+(\alpha_k/\beta_m)x^{k-\ell}g(x)\\&#038;=<br>
 (q_1(x)+(\alpha_k/\beta_m)x^{k-\ell})g(x)+r(x).<br>
 \end{align*}<br>
-Podemos tomar ent&atilde;o $q(x)=q_1(x)+(\alpha_k/\beta_m)x^{k-\ell}$ e $r(x)$ como acima.</p>
+Podemos tomar então $q(x)=q_1(x)+(\alpha_k/\beta_m)x^{k-\ell}$ e $r(x)$ como acima.</p>
 <p><strong>Unicidade:</strong> Assuma que temos para algum $f(x),g(x)\in\F[x]$ com $g(x)\neq 0$ que<br>
 \[<br>
 f(x)=q_1(x)g(x)+r_1(x)=q_2(x)g(x)+r_2(x)<br>
 \]<br>
-com $r_1(x)=0$ ou $\grau{r_1(x)} &lt; \grau{g(x)}$ e $r_2(x)=0$ ou $\grau{r_2(x)} &lt; \grau{g(x)}$. A equa&ccedil;&atilde;o acima implica que<br>
+com $r_1(x)=0$ ou $\grau{r_1(x)} &lt; \grau{g(x)}$ e $r_2(x)=0$ ou $\grau{r_2(x)} &lt; \grau{g(x)}$. A equação acima implica que<br>
 \[<br>
 (q_1(x)-q_2(x))g(x)=r_2(x)-r_1(x).<br>
 \]<br>
-O lado esquerdo desta equa&ccedil;&atilde;o &eacute; um polin&ocirc;mio que ou &eacute; igual a zero ou seu grau &eacute; maior ou igual a grau de $g(x)$. No lado direito, temos um polin&ocirc;mio que &eacute; ou zero ou seu grau &eacute; menor que o grau de $g(x)$. Isso &eacute; poss&iacute;vel apenas quando os polin&ocirc;mios nos dois lados da equa&ccedil;&atilde;o s&atilde;o iguais a zero. Ou seja,<br>
+O lado esquerdo desta equação é um polinômio que ou é igual a zero ou seu grau é maior ou igual a grau de $g(x)$. No lado direito, temos um polinômio que é ou zero ou seu grau é menor que o grau de $g(x)$. Isso é possível apenas quando os polinômios nos dois lados da equação são iguais a zero. Ou seja,<br>
 \[<br>
 (q_1(x)-q_2(x))g(x)=0.<br>
 \]<br>
-Como $\F[x]$ &eacute; um dom&iacute;nio e $g(x)\neq 0$, temos que $q_1(x)-q_2(x)=0$; ou seja $q_1(x)=q_2(x)$. Denotando $q_1(x)=q_2(x)=q(x)$, obtemos que<br>
+Como $\F[x]$ é um domínio e $g(x)\neq 0$, temos que $q_1(x)-q_2(x)=0$; ou seja $q_1(x)=q_2(x)$. Denotando $q_1(x)=q_2(x)=q(x)$, obtemos que<br>
 \[<br>
 f(x)=q(x)g(x)+r_1(x)=q(x)g(x)+r_2(x),<br>
 \]<br>
-mas isso implica que $r_1(x)=r_2(x)$. Obtivemos assim que a decomposi&ccedil;&atilde;o de $f(x)$ &eacute; &uacute;nica.
-</p></div>
-<div class="definition">
-O polin&ocirc;mio $q(x)$ no teorema anterior chama-se o <strong>quociente</strong> de $f(x)$ por $g(x)$, enquanto $r(x)$ chama-se o <strong>resto</strong>.
+mas isso implica que $r_1(x)=r_2(x)$. Obtivemos assim que a decomposição de $f(x)$ é única.
+</p>
 </div>
-<p>A biblioteca <a href="https://www.sympy.org/">SymPy</a> da linguagem Python pode ser usada para fazer computa&ccedil;&otilde;es com polin&ocirc;mios. Vamos por exemplo refazer o exemplo no in&iacute;cio desta p&aacute;gina em Python.</p>
+<div class="definition">
+O polinômio $q(x)$ no teorema anterior chama-se o <strong>quociente</strong> de $f(x)$ por $g(x)$, enquanto $r(x)$ chama-se o <strong>resto</strong>.
+</div>
+<p>A biblioteca <a href="https://www.sympy.org/">SymPy</a> da linguagem Python pode ser usada para fazer computações com polinômios. Vamos por exemplo refazer o exemplo no início desta página em Python.</p>
 <pre>
 <code class="language-python">
 &gt;&gt;&gt; from sympy import poly, QQ
@@ -303,26 +323,29 @@ O polin&ocirc;mio $q(x)$ no teorema anterior chama-se o <strong>quociente</stron
 &gt;&gt;&gt; f = poly( x**3-2*x**2+x-1, domain = QQ )
 &gt;&gt;&gt; g = poly( x**2-1, domain = QQ )
 &gt;&gt;&gt; f//g
-Poly(x&minus;2,x,domain=&#8474;)
+Poly(x−2,x,domain=ℚ)
 &gt;&gt;&gt; f % g 
-Poly(2x&minus;3,x,domain=&#8474;)
+Poly(2x−3,x,domain=ℚ)
 &gt;&gt;&gt; g*(f//g)+f%g  == f
 True
 </code>
 </pre>
 </div>
 			</div>
+<!-- .entry-content -->
 	<footer class="entry-footer">
-			</footer>
-</article>
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
 
 				
 			
-		</main>
+		</main><!-- #main -->
 	</div>
+<!-- #primary -->
 
 
 	</div>
+<!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -330,15 +353,18 @@ True
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
 				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+<!-- .site-info -->
 		</div>
-	</footer>
+<!-- .site-info-wrapper -->
+	</footer><!-- #colophon -->
 </div>
+<!-- #page -->
 
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.2.1" id="prismatic-prism-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.2.1" id="prismatic-prism-python-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206" id="penscratch-2-navigation-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608" id="penscratch-2-scripts-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115" id="penscratch-2-skip-link-focus-fix-js"></script>
 
 </body>
 </html>

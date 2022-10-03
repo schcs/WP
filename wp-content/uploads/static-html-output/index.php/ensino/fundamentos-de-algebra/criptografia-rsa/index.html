@@ -24,8 +24,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fcriptografia-rsa%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fcriptografia-rsa%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -168,12 +167,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -188,10 +185,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -210,7 +205,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -228,7 +224,7 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">Criptografia RSA</h1>	</header>
 		<div class="entry-content">
-		<div style="color:#000000">
+		<div style="color:/#000000">
 Na &aacute;rea da criptografia, a suposi&ccedil;&atilde;o geral &eacute; que dois parceiros (que podem ser duas pessoas, ou dois computadores) querem trocar informa&ccedil;&atilde;o sigilosa usando um canal de comunica&ccedil;&atilde;o que est&aacute; dispon&iacute;vel para terceiros. Os dois parceiros geralmente chamam-se A(lice) e B(ob) e um poss&iacute;vel terceiro chama-se E(va). Assume-se que as mensagens enviadas por Alice e Bob s&atilde;o n&uacute;meros. A Eva consegue interceptar as mensagens enviadas. O objetivo &eacute; desenvolver m&eacute;todos seguros de codifica&ccedil;&atilde;o para as mensagens que podem garantir que Eva n&atilde;o vai conseguir descodificar as mensagens interceptadas.
 <p>Um m&eacute;todo, conhecido como criptografia RSA, foi desenvolvido pelos matem&aacute;ticos  <a title="Ron Rivest" href="https://en.wikipedia.org/wiki/Ron_Rivest">Ron Rivest</a>, <a title="Adi Shamir" href="https://en.wikipedia.org/wiki/Adi_Shamir">Adi Shamir</a>, and <a title="Leonard Adleman" href="https://en.wikipedia.org/wiki/Leonard_Adleman">Leonard Adleman </a>e foi publicado em 1977.</p>
 <div class="exercise">Lembre que a fun&ccedil;&atilde;o $\varphi$ de Euler &eacute; definida como<br>
@@ -287,7 +283,8 @@ com algum $k$ inteiro.  Ent&atilde;o<br>
 b^{ed}=b^{k(p-1)(q-1)+1}=(b^{p-1})^{k(q-1)}\cdot b\equiv b\pmod p.<br>
 \]<br>
 Obtivemos ent&atilde;o que $b^{ed}\equiv b\pmod n$ que equivale &agrave; afirma&ccedil;&atilde;o que $D(C(b))=b$ que implica que o m&eacute;todo usado por Bob vai descodificar a mensagem da Alice.
-</p></div>
+</p>
+</div>
 <p>A seguran&ccedil;a do m&eacute;todo est&aacute; baseado no fato que para aplicar a fun&ccedil;&atilde;o $D$ de descodifica&ccedil;&atilde;o, o Bob precisa calcular o valor de $d$ que precisa do valor de $\varphi(n)=(p-1)(q-1)$. Claramente, se algu&eacute;m sabe $p$ e $q$ ent&atilde;o consegue calcular $\varphi(n)$ e tamb&eacute;m a chave privada $d$. Mas a chave p&uacute;blica cont&eacute;m o apenas o n&uacute;mero $n$ e n&atilde;o os seus fatores $p$ e $q$. Neste momento n&oacute;s n&atilde;o conhecemos nenhum algoritmo que pode ser usado para fatorar n&uacute;meros muito grandes.</p>
 <p>O seguinte resultado implica que a determina&ccedil;&atilde;o de $\varphi(n)$ &eacute; computacionalmente equivalente &agrave; determina&ccedil;&atilde;o dos fatores $p$ e $q$ de $n$.</p>
 <div class="lemma">
@@ -308,7 +305,8 @@ p-q=\sqrt{(p+q)^2-4n}.<br>
 Isto implica, que conseguimos determinar o valor de $p-q$. Sabendo $p+q$ e $p-q$, &eacute; f&aacute;cil determinar $p$ e $q$.
 </div>
 <p>Vale mencionar que existe um algoritmo qu&acirc;ntico eficiente para determinar a fatora&ccedil;&atilde;o de um n&uacute;mero. Este algoritmo &eacute; conhecido como o <a href="https://pt.wikipedia.org/wiki/Algoritmo_de_Shor">Algoritmo de Shor</a> e foi publicado em 1994. Este algoritmo neste momento n&atilde;o implica nenhum perigo para a seguran&ccedil;a de mensagens criptografadas, mas no futuro os computadores qu&acirc;nticos podem se desenvolver o suficiente para poder quebrar o algoritmo RSA. Neste momento muitos matem&aacute;ticos trabalham no desenvolvimento e algoritmos que s&atilde;o seguros contra ataques de computadores qu&acirc;nticos (<a href="https://pt.wikipedia.org/wiki/Criptografia_p%C3%B3s-qu%C3%A2ntica">criptografia p&oacute;s-qu&acirc;ntica</a>).
-</p></div>
+</p>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>

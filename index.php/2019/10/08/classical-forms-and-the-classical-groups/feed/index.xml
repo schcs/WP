@@ -6,13 +6,16 @@
 	
 	>
 <channel>
-	<title>Comments on: Formas clássicas e os grupos clássicos</title>
+	<title>
+	Comments on: Formas clássicas e os grupos clássicos	</title>
 	<atom:link href="https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/index.php/2019/10/08/classical-forms-and-the-classical-groups/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 28 Sep 2020 01:13:01 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.9.15</generator>
+	<lastBuildDate>Thu, 10 Oct 2019 11:15:45 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
 </channel>
 </rss>

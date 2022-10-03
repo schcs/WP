@@ -6,13 +6,16 @@
 	
 	>
 <channel>
-	<title>Comments on: Topologia da Reta: Pontos de acumulação e conjuntos compactos</title>
+	<title>
+	Comments on: Topologia da Reta: Pontos de acumulação e conjuntos compactos	</title>
 	<atom:link href="https://schcs.github.io/WP/index.php/2019/05/10/topologia-da-reta-pontos-de-acumulacao-e-conjuntos-compactos/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/index.php/2019/05/10/topologia-da-reta-pontos-de-acumulacao-e-conjuntos-compactos/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 28 Sep 2020 01:13:14 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.9.15</generator>
+	<lastBuildDate>Fri, 10 May 2019 14:51:11 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
 </channel>
 </rss>

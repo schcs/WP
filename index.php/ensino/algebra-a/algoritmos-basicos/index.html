@@ -3,30 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
 
-
-<title>Algoritmos b&aacute;sicos &ndash; Csaba Schneider</title>
+<title>Algoritmos básicos &#8211; Csaba Schneider</title>
+<meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
-
+<link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
-<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/schcs.github.io\/WP\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://schcs.github.io/WP/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="prismatic-blocks-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/css/styles-blocks.css?ver=6.0.2" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--dark-green: #1c7c7c;--wp--preset--color--dark-gray: #666;--wp--preset--color--medium-gray: #999;--wp--preset--color--light-gray: #eee;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.2.1" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
-
-
-
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.14" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/712">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.2">
 <link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-a/algoritmos-basicos/">
-
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Falgoritmos-basicos%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-a%2Falgoritmos-basicos%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=712">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-a%2Falgoritmos-basicos%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-a%2Falgoritmos-basicos%2F&#038;format=xml">
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -169,12 +191,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
-	
-
-<script>
-MathJax = {
+}</style>
+		
+<!-- MathJax script -->
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -189,21 +209,19 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
-
+<!-- End of MathJax script -->
 
 </head>
 
-<body class="page-template-default page page-id-712 page-child parent-pageid-706 no-sidebar">
+<body class="page-template-default page page-id-712 page-child parent-pageid-706 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="https://schcs.github.io/WP/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
@@ -211,12 +229,13 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
-</ul></div>		</nav>
-	</header>
+</ul></div>		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
 		
@@ -227,13 +246,13 @@ MathJax = {
 				
 <article id="post-712" class="post-712 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Algoritmos b&aacute;sicos</h1>	</header>
+		<h1 class="entry-title">Algoritmos básicos</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
 		<div style="color: #000000;">
-<p>Ao analisarmos os algoritmos que ocorrem na disciplina, geralmente contamos quantas opera&ccedil;&otilde;es precisamos&nbsp; para executar a computa&ccedil;&atilde;o. Nosso objetivo aqui n&atilde;o &eacute; fazer uma an&aacute;lise detalhada da complexidade dos algoritmos. N&oacute;s queremos apenas decidir se um algoritmo pode ser aplicado na pr&aacute;tica para resolver problemas com n&uacute;meros grandes.Consideremos um exemplo f&aacute;cil. N&uacute;meros ser&atilde;o escritos na base 10. Os algarismos de um n&uacute;mero $a$ ser&atilde;o denotados por $a_{n-1},a_{n-2},\ldots,a_1,a_0$. Escrevemos que $a=[a_{n-1}a_{n-2}\cdots a_1a_0]_{10}$. O comprimento do n&uacute;mero $a$ &eacute; o n&uacute;mero $n$ de algarismos. O comprimento de $a$ ser&aacute; denotado por $\mbox{comp}(a)$.</p>
-<div class="example">Assuma que temos dois n&uacute;meros $a=[a_{m-1}\cdots a_1a_0]_{10}$ e $b=[b_{n-1}\cdots b_1b_0]_{10}$ dados por seus algarismos na base 10. O seguinte algoritmo simples vai calcular as algarismos da soma $c=[c_{m}c_{m-1}\cdots c_1c_0]_{10}$.
+<p>Ao analisarmos os algoritmos que ocorrem na disciplina, geralmente contamos quantas operações precisamos  para executar a computação. Nosso objetivo aqui não é fazer uma análise detalhada da complexidade dos algoritmos. Nós queremos apenas decidir se um algoritmo pode ser aplicado na prática para resolver problemas com números grandes.Consideremos um exemplo fácil. Números serão escritos na base 10. Os algarismos de um número $a$ serão denotados por $a_{n-1},a_{n-2},\ldots,a_1,a_0$. Escrevemos que $a=[a_{n-1}a_{n-2}\cdots a_1a_0]_{10}$. O comprimento do número $a$ é o número $n$ de algarismos. O comprimento de $a$ será denotado por $\mbox{comp}(a)$.</p>
+<div class="example">Assuma que temos dois números $a=[a_{m-1}\cdots a_1a_0]_{10}$ e $b=[b_{n-1}\cdots b_1b_0]_{10}$ dados por seus algarismos na base 10. O seguinte algoritmo simples vai calcular as algarismos da soma $c=[c_{m}c_{m-1}\cdots c_1c_0]_{10}$.
 <pre><code class="language-python">
-function adi&ccedil;&atilde;o( list1, list2; base = 10 ) 
+function adição( list1, list2; base = 10 ) 
     
     s = []; c = 0;
     l1, l2 = length( list1 ), length( list2 )
@@ -246,13 +265,14 @@ function adi&ccedil;&atilde;o( list1, list2; base = 10 )
     return s
 end 
 </code></pre>
-<p>Este algoritmo simples tem um la&ccedil;o executado por <code>max(l1,l2)</code> vezes e cada execu&ccedil;&atilde;o do la&ccedil;o precisa de um n&uacute;mero constante de opera&ccedil;&otilde;es. Este &eacute; um algoritmo cuja complexidade &eacute; polinomial de primeiro grau em termos de $\mbox{comp}(a)+\mbox{comp}(b)$ onde $a$ e $b$ s&atilde;o os dois n&uacute;meros no input.
-</p></div>
-<div class="example">&Eacute; similarmente f&aacute;cil verificar que a diferen&ccedil;a $a-b$ pode ser calculado usando um constante vezes $\mbox{comp}(a)+\mbox{comp}(b)$ opera&ccedil;&otilde;es.</div>
+<p>Este algoritmo simples tem um laço executado por <code>max(l1,l2)</code> vezes e cada execução do laço precisa de um número constante de operações. Este é um algoritmo cuja complexidade é polinomial de primeiro grau em termos de $\mbox{comp}(a)+\mbox{comp}(b)$ onde $a$ e $b$ são os dois números no input.
+</p>
+</div>
+<div class="example">É similarmente fácil verificar que a diferença $a-b$ pode ser calculado usando um constante vezes $\mbox{comp}(a)+\mbox{comp}(b)$ operações.</div>
 <div class="example">
-Considere a seguinte algoritmo para a multiplica&ccedil;&atilde;o de dois n&uacute;meros inteiros.
+Considere a seguinte algoritmo para a multiplicação de dois números inteiros.
 <pre><code class="language-python">
-function multiplica&ccedil;&atilde;o( list1, list2; base = 10 )
+function multiplicação( list1, list2; base = 10 )
     res = []; 
     l1, l2 = length( list1 ), length( list2 )
     for i in 1:l1 
@@ -261,22 +281,23 @@ function multiplica&ccedil;&atilde;o( list1, list2; base = 10 )
         for j in 1:l2
             p = list1[i]*list2[j]+c
             push!( pr, p % base )
-            c = p&divide;base
+            c = p÷base
         end
         if c != 0 push!( pr, c ) end 
-        res = adi&ccedil;&atilde;o( res, pr )
+        res = adição( res, pr )
     end
     return res
 end
 </code></pre>
-<p>Aqui tem dois la&ccedil;os e o n&uacute;cleo dos la&ccedil;os precisa de um n&uacute;mero constante de opera&ccedil;&otilde;es. Al&eacute;m disso, no la&ccedil;o exterior fazemos uma chamada para a fun&ccedil;&atilde;o adi&ccedil;&atilde;o. Pode concluir que o n&uacute;mero das opera&ccedil;&otilde;es que precisamos para executar este algoritmo &eacute; constante vezes $\mbox{comp}(a)\cdot\mbox{comp}(b)$ onde $a$ e $b$ s&atilde;o os dois n&uacute;meros no input.</p>
-<p>Vale a pena mencionar que dois n&uacute;meros naturais de comprimento menor ou igual a $n$ podem ser multiplicadas usando o <a href="https://pt.wikipedia.org/wiki/Algoritmo_Sch%C3%B6nhage-Strassen">Algoritmo Sch&ouml;nhage-Strassen</a> que precisa de constante vezes $n\log n\log\log n$ opera&ccedil;&otilde;es.
-</p></div>
-<p>Nos dois casos anteriores, o n&uacute;mero de opera&ccedil;&otilde;es que precisamos para executar o algoritmo foi polinomial no comprimento do input. No primeiro caso, foi polinomial do primeiro grau, e no segundo caso foi polinomial do segundo grau. Algoritmos polinomiais de pequeno grau (menor ou igual a 3 ou 4) s&atilde;o considerados algoritmos pr&aacute;ticos. Quando o input do algoritmo &eacute; um n&uacute;mero natural $n$, ent&atilde;o seu comprimento &eacute; $\log n$. </p>
+<p>Aqui tem dois laços e o núcleo dos laços precisa de um número constante de operações. Além disso, no laço exterior fazemos uma chamada para a função adição. Pode concluir que o número das operações que precisamos para executar este algoritmo é constante vezes $\mbox{comp}(a)\cdot\mbox{comp}(b)$ onde $a$ e $b$ são os dois números no input.</p>
+<p>Vale a pena mencionar que dois números naturais de comprimento menor ou igual a $n$ podem ser multiplicadas usando o <a href="https://pt.wikipedia.org/wiki/Algoritmo_Sch%C3%B6nhage-Strassen">Algoritmo Schönhage-Strassen</a> que precisa de constante vezes $n\log n\log\log n$ operações.
+</p>
+</div>
+<p>Nos dois casos anteriores, o número de operações que precisamos para executar o algoritmo foi polinomial no comprimento do input. No primeiro caso, foi polinomial do primeiro grau, e no segundo caso foi polinomial do segundo grau. Algoritmos polinomiais de pequeno grau (menor ou igual a 3 ou 4) são considerados algoritmos práticos. Quando o input do algoritmo é um número natural $n$, então seu comprimento é $\log n$. </p>
 <div class="example">
-Considere a seguinte fun&ccedil;&atilde;o para determinar se um n&uacute;mero &eacute; primo ou n&atilde;o.
+Considere a seguinte função para determinar se um número é primo ou não.
 <pre><code class="language-python">
-function &eacute;_primo( n )
+function é_primo( n )
     
     for i in 2:floor(sqrt(n))
         if n % i == 0 
@@ -287,28 +308,28 @@ function &eacute;_primo( n )
     return true
 end 
 </code></pre>
-<p>Neste caso o comprimento do input&nbsp; &eacute; $m\sim \log_{10}n$ mas o algoritmo precisa executar o la&ccedil;o cerca de<br>
+<p>Neste caso o comprimento do input  é $m\sim \log_{10}n$ mas o algoritmo precisa executar o laço cerca de<br>
 \[<br>
 \sqrt n=(10^{\log_{10}n})^{1/2}\sim 10^{m/2}<br>
 \]<br>
-vezes para verificar se um n&uacute;mero &eacute; primo. Portanto este algoritmo &eacute; um algoritmo exponencial e n&atilde;o pode ser considerado como um algoritmo pr&aacute;tico. De fato, o algoritmo n&atilde;o vai funcionar com n&uacute;meros de 100-200 algarismos, enquanto n&uacute;meros deste tamanho s&atilde;o comuns em problemas computacionais.</p>
+vezes para verificar se um número é primo. Portanto este algoritmo é um algoritmo exponencial e não pode ser considerado como um algoritmo prático. De fato, o algoritmo não vai funcionar com números de 100-200 algarismos, enquanto números deste tamanho são comuns em problemas computacionais.</p>
 </div>
-<p>Um dos algoritmos mais importantes na nossa disciplina &eacute; baseado no seguinte teorema.</p>
-<div class="theorem">(Teorema de Divis&atilde;o de Euclides)&nbsp;Sejam $a,b\in\mathbb Z$ e assuma que $b\neq 0$. Ent&atilde;o existem unicamente n&uacute;meros $q,r\in \mathbb Z$ tais que<br>
+<p>Um dos algoritmos mais importantes na nossa disciplina é baseado no seguinte teorema.</p>
+<div class="theorem">(Teorema de Divisão de Euclides) Sejam $a,b\in\mathbb Z$ e assuma que $b\neq 0$. Então existem unicamente números $q,r\in \mathbb Z$ tais que<br>
 \[<br>
 a=qb+r\qquad\mbox{e}\qquad 0\leq r&lt;|b|.<br>
 \]</div>
-<p>O n&uacute;meros $q$ e $r$ s&atilde;o chamados de <em>quociente</em> e <em>resto</em>.</p>
+<p>O números $q$ e $r$ são chamados de <em>quociente</em> e <em>resto</em>.</p>
 <div class="proof">
 Assumimos sem perder generalidade que $b&gt;0$. Se $b$ for negativo, fazemos o argumento com $-b$ a trocaremos o sinal do quociente $q$.
-<p><strong>Exist&ecirc;ncia.</strong> Seja $q$ o maior n&uacute;mero tal que $qb\leq a$ e seja $r=a-qb$. Temos claramente que $a=qb+r$. Al&eacute;m disso, $r\geq 0$. Se $r\geq b$, ent&atilde;o $r-b\geq 0$ e $r-b=a-(q+1)b\geq 0$ que implica que $(q+1)b\leq a$. Mas isso contradiz &agrave; suposi&ccedil;&atilde;o que $q$ foi escolhido maior poss&iacute;vel. Portanto temos que $0\leq r&lt;b$.</p>
-<p><strong>Unicidade.&nbsp;</strong>Assuma que $a=q_1b+r_1=q_2b+r_2$&nbsp; com $0\leq r_1,r_2&lt;b$. Ent&atilde;o<br>
+<p><strong>Existência.</strong> Seja $q$ o maior número tal que $qb\leq a$ e seja $r=a-qb$. Temos claramente que $a=qb+r$. Além disso, $r\geq 0$. Se $r\geq b$, então $r-b\geq 0$ e $r-b=a-(q+1)b\geq 0$ que implica que $(q+1)b\leq a$. Mas isso contradiz à suposição que $q$ foi escolhido maior possível. Portanto temos que $0\leq r&lt;b$.</p>
+<p><strong>Unicidade. </strong>Assuma que $a=q_1b+r_1=q_2b+r_2$  com $0\leq r_1,r_2&lt;b$. Então<br>
 \[<br>
 (q_1-q_2)b=r_2-r_1.<br>
 \]<br>
-Temos por um lado que o lado esquerdo da &uacute;ltima equa&ccedil;&atilde;o &eacute; um divisor de $b$. Por outro lado, o lado direito satisfaz $-b&lt;r_2-r_1&lt;b$. O &uacute;nico divisor de $b$ que est&aacute; no intervalo aberto $(-b,b)$ &eacute; o zero, e assim obtemos que o n&uacute;mero representado pela equa&ccedil;&atilde;o em cima precisa ser igual a zero. Isso implica que $r_1=r_2$ e que $(q_1-q_2)b=0$. Como $b\neq 0$, obtemos&nbsp; que $q_1=q_2$. Portanto $q_1=q_2$ e&nbsp; $r_1=r_2$; ou seja, a decomposi&ccedil;&atilde;o de $a$ na forma $qb+r$ &acute;&eacute; &uacute;nica.</p>
+Temos por um lado que o lado esquerdo da última equação é um divisor de $b$. Por outro lado, o lado direito satisfaz $-b&lt;r_2-r_1&lt;b$. O único divisor de $b$ que está no intervalo aberto $(-b,b)$ é o zero, e assim obtemos que o número representado pela equação em cima precisa ser igual a zero. Isso implica que $r_1=r_2$ e que $(q_1-q_2)b=0$. Como $b\neq 0$, obtemos  que $q_1=q_2$. Portanto $q_1=q_2$ e  $r_1=r_2$; ou seja, a decomposição de $a$ na forma $qb+r$ ´é única.</p>
 </div>
-<p>O quociente e o resto podem ser calculados com o seguinte algoritmo que deve ser familiar j&aacute; do ensino fundamental.</p>
+<p>O quociente e o resto podem ser calculados com o seguinte algoritmo que deve ser familiar já do ensino fundamental.</p>
 <pre><code class="language-python">
 function div_resto( a, b )
         
@@ -316,26 +337,30 @@ function div_resto( a, b )
     q = []
     r = a
     for i in d:-1:0
-        push!( q, floor( r&divide;(10^i*b)))
+        push!( q, floor( r÷(10^i*b)))
         r -= 10^i*q[end]*b
         i -= 1
     end
     return q, r
 end 
 </code></pre>
-<p>O algoritmo usado na fun&ccedil;&atilde;o anterior &eacute; pr&aacute;tico, pois o la&ccedil;o &eacute; executado <code>length(a)-length(b)=length(q)</code> vezes. Al&eacute;m disso, dentro do la&ccedil;o a opera&ccedil;&atilde;o dominante &eacute; computar <code>10^i*q[end]*b</code> que precisa de constante vezes <code>length(b)</code> opera&ccedil;&otilde;es. Portanto, o n&uacute;mero de opera&ccedil;&otilde;es necess&aacute;rio para este algoritmo &eacute; constante vezes <code>length(b)*length(q)</code> (onde <code>q</code> &eacute; o quociente) e assim o algoritmo pode ser considerado pr&aacute;tico.</p>
+<p>O algoritmo usado na função anterior é prático, pois o laço é executado <code>length(a)-length(b)=length(q)</code> vezes. Além disso, dentro do laço a operação dominante é computar <code>10^i*q[end]*b</code> que precisa de constante vezes <code>length(b)</code> operações. Portanto, o número de operações necessário para este algoritmo é constante vezes <code>length(b)*length(q)</code> (onde <code>q</code> é o quociente) e assim o algoritmo pode ser considerado prático.</p>
 			</div>
+<!-- .entry-content -->
 	<footer class="entry-footer">
-			</footer>
-
+			</footer><!-- .entry-footer -->
+<!-- #post-## -->
 
 				
 			
-		
+		<!-- #main -->
 	</div>
+<!-- #primary -->
 
 
-	</article></main></div>
+	</article></main>
+</div>
+<!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -343,15 +368,19 @@ end
 				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
 				<span class="sep"> ~ </span>
 				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+<!-- .site-info -->
 		</div>
-	</footer>
+<!-- .site-info-wrapper -->
+	</footer><!-- #colophon -->
 </div>
+<!-- #page -->
 
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.2.1" id="prismatic-prism-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.2.1" id="prismatic-prism-python-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206" id="penscratch-2-navigation-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608" id="penscratch-2-scripts-js"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115" id="penscratch-2-skip-link-focus-fix-js"></script>
 
-</div></body>
+</div>
+</body>
 </html>

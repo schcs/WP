@@ -25,8 +25,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fexpansao-de-numeros-naturais-na-base-b-e-a-expansao-decimal-de-numeros-racionais%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fexpansao-de-numeros-naturais-na-base-b-e-a-expansao-decimal-de-numeros-racionais%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -169,12 +168,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -189,10 +186,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -211,7 +206,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -229,7 +225,7 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">Expans&atilde;o de n&uacute;meros naturais na base $b$</h1>	</header>
 		<div class="entry-content">
-		<div style="color:#000000;">
+		<div style="color:/#000000;">
 <h3>Expans&atilde;o de naturais na base $b$</h3>
 <p>N&uacute;meros naturais s&atilde;o escritos normalmente como sequ&ecirc;ncias de algarismos na base decimal. Por exemplo, a sequ&ecirc;ncia $1056$ significa o n&uacute;mero<br>
 \[<br>
@@ -286,7 +282,8 @@ q=[a_n\cdots a_1]_b=[c_m\cdots c_1]_b.<br>
 \]<br>
 A hip&oacute;tese de indu&ccedil;&atilde;o aplica-se para o n&uacute;mero $q$, e assim as as sequ&ecirc;ncias<br>
 $[a_n\cdots a_1]_b$ e $[c_m\cdots c_1]_b$ s&atilde;o iguais. Portanto as duas expans&otilde;es para o n&uacute;mero $a$ s&atilde;o iguais como foi afirmado.
-</p></div>
+</p>
+</div>
 <div class="example">Seguindo a demonstra&ccedil;&atilde;o do teorema anterior, obtemos um algoritmo para determinar a sequ&ecirc;ncia dos d&iacute;gitos de um n&uacute;mero natural em uma base $b$. Tome o n&uacute;mero $a=168$ e seja $b=5$. 
 <p>Passo 1:<br>
 \[<br>
@@ -309,7 +306,8 @@ ou seja, o seguinte algarismo &eacute; $1$ e os demais algarismos s&atilde;o os 
 \]<br>
 que diz que $1=[1]_5$. </p>
 <p>Juntando as pe&ccedil;as, obtemos que $168=[1133]_5$.
-</p></div>
+</p>
+</div>
 <h3>Computa&ccedil;&atilde;o com Python</h3>
 <p>Escrevemos uma <a href="https://www.letscode.com.br/blog/funcoes-e-mais-funcoes-em-python">fun&ccedil;&atilde;o em Python</a> que vai realizar a computa&ccedil;&atilde;o dos algarismos para um dado natural $a$ e base $b$. </p>
 <p>A primeira fun&ccedil;&atilde;o &eacute; uma fun&ccedil;&atilde;o recursiva. A ideia &eacute; a seguinte:</p>
@@ -363,7 +361,8 @@ def NumeroEmBase( a, b ):
 	</div>
 
 
-	</article></main></div>
+	</article></main>
+</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -381,5 +380,6 @@ def NumeroEmBase( a, b ):
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</div></body>
+</div>
+</body>
 </html>

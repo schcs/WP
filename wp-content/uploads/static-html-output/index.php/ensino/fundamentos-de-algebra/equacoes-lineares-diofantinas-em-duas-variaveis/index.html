@@ -25,8 +25,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fequacoes-lineares-diofantinas-em-duas-variaveis%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fequacoes-lineares-diofantinas-em-duas-variaveis%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -169,12 +168,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -189,10 +186,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -211,7 +206,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -229,7 +225,7 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">Equa&ccedil;&otilde;es lineares diofantinas em duas vari&aacute;veis</h1>	</header>
 		<div class="entry-content">
-		<div style="color:#000000">
+		<div style="color:/#000000">
 Uma equa&ccedil;&atilde;o linear diofantina&nbsp;em duas vari&aacute;veis tem a seguinte forma geral:<br>
 \[<br>
 ax+by=c<br>
@@ -304,7 +300,8 @@ como<br>
 \[<br>
 (x,y)=(-8+5k,-12+7k)\quad\mbox{onde}\quad k\in\Z.<br>
 \]
-</p></div>
+</p>
+</div>
 <p>A conta que fizemos nos &uacute;ltimos dois exemplos pode ser feita simbolicamente com uma equa&ccedil;&atilde;o geral na forma $ax+by=c$. Isto nos leva ao seguinte teorema.</p>
 <div class="theorem">
 Considere uma equa&ccedil;&atilde;o diofantina na forma<br>
@@ -318,7 +315,8 @@ onde $a,b,c\in\Z$ e $(a,b)\neq (0,0)$. Seja $d=\mdc ab$.
 \[<br>
 (x,y)=\left(x_0+k \frac bd,y_0-k\frac ad\right)\quad \mbox{onde}\quad k\in\Z.<br>
 \]</li>
-</ol></div>
+</ol>
+</div>
 <div class="proof">
 (1) Seja $d=\mdc ab$. Note que $d\mid ax+by$ para todo $x,y\in \Z$. Portanto, se $d\nmid c$, ent&atilde;o  n&atilde;o existem $x,y\in\Z$ tais que $ax+by=c$ e a equa&ccedil;&atilde;o n&atilde;o possui solu&ccedil;&otilde;es inteiras.
 <p>(2) Assuma agora que $d\mid c$. Sabemos pelo algoritmo de Euclides que existem $x_1,y_1\in\Z$ tais que<br>
@@ -362,7 +360,8 @@ Consequentemente<br>
 (x_1,y_1)=\left(x_0+k\frac bd,y_0-k\frac ad\right)<br>
 \]<br>
 como foi afirmado.
-</p></div>
+</p>
+</div>
 <p>Vamos ver como implementar o procedimento na linguagem Python. Primeiro, precisamos de uma nova vers&atilde;o da fun&ccedil;&atilde;o XMDC que aceita tamb&eacute;m n&uacute;meros negativos.</p>
 <pre><code class="language-python">
 # algoritmo extendido de Euclides

@@ -24,8 +24,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-comutativa%2Fdimensao%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-comutativa%2Fdimensao%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -168,12 +167,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -188,10 +185,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -210,7 +205,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -231,11 +227,13 @@ MathJax = {
 		<div class="theorem">Assuma que <span class="math inline">\(k\)</span> &eacute; um corpo e <span class="math inline">\(R\)</span> &eacute; um <span class="math inline">\(\mathbb K\)</span>-dom&iacute;nio finitamente gerado. Assuma que <span class="math inline">\(\mathfrak p_1\subset\mathfrak p_2\subset\cdots\subset \mathfrak p_r\)</span> &eacute; uma cadeia em <span class="math inline">\(\mbox{Spec}(R)\)</span> e seja <span class="math inline">\(d\)</span> o grau de transcend&ecirc;ncia de <span class="math inline">\(\mbox{Frac}(R)\)</span> sobre <span class="math inline">\(k\)</span>. Ent&atilde;o <span class="math inline">\(r\leq d\)</span> com igualdade se e somente se a cadeia <span class="math inline">\((\mathfrak p_i)\)</span> &eacute; saturada no sentido que ela n&atilde;o &eacute; refinamento de uma cadeia mais longa.</div>
 <div class="proof">Use o Teorema de Normaliza&ccedil;&atilde;o de Noether para escolher <span class="math inline">\(t_1,\ldots,t_n\in R\)</span> algebricamente independentes tal que <span class="math display">\[\mathfrak p_i\cap P=(t_1,\ldots,t_{h_i})_P\]</span> para <span class="math inline">\(i\in\{1,\ldots,r\}\)</span> onde <span class="math inline">\(P=k[t_1,\ldots,t_n]\)</span>. Ponha <span class="math inline">\(\mathbb L=\mbox{Frac}(R)\)</span> e <span class="math inline">\(\mathbb K=\mbox{Frac}(P)\)</span>. Se <span class="math inline">\(a/b\in\mathbb L\)</span>, ent&atilde;o <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> s&atilde;o integrais sobre <span class="math inline">\(R\)</span> e <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> s&atilde;o obviamente alg&eacute;bricos sobre <span class="math inline">\(\mathbb K=\mbox{Frac}(R)\)</span>. Assim <span class="math inline">\(a/b\)</span> &eacute; alg&eacute;brico sobre <span class="math inline">\(\mathbb K\)</span>. Logo, a extens&atilde;o <span class="math inline">\(\mathbb K\subseteq \mathbb L\)</span> &eacute; alg&eacute;brica e assim <span class="math inline">\(d=n\)</span>. O primo <span class="math inline">\(\mathfrak p_i\)</span> est&aacute; acima de <span class="math inline">\(\mathfrak p_i\cap P\)</span> e o lema de incomparabilidade implica que <span class="math inline">\(\mathfrak p_i\cap P\neq \mathfrak p_{i+1}\cap P\)</span> para todo <span class="math inline">\(i\)</span> e <span class="math inline">\(h_1&lt;h_2&lt;\cdots&lt;h_r\)</span>. Logo <span class="math inline">\(r\leq n=d\)</span>. Em particular, <span class="math inline">\(d\)</span> &eacute; o maior valor poss&iacute;vel para <span class="math inline">\(r\)</span> e neste caso a cadeia &eacute; saturada.
 <p>Assuma que a cadeia <span class="math inline">\((\mathfrak p_i)\)</span> &eacute; saturada e tem comprimento <span class="math inline">\(r\)</span>. Neste caso <span class="math inline">\(\mathfrak p_1=0\)</span> e <span class="math inline">\(h_1=0\)</span> e <span class="math inline">\(\mathfrak p_r\)</span> &eacute; maximal. Como <span class="math inline">\(P\subseteq R\)</span> &eacute; integral, temos que <span class="math inline">\(\mathfrak p_r\cap P\)</span> &eacute; maximal e <span class="math inline">\(h_r=n\)</span>. Se <span class="math inline">\(r&lt;n\)</span>, precisa existir algum <span class="math inline">\(i\)</span> tal que <span class="math inline">\(h_{i}+2\leq h_{i+1}\)</span> temos que <span class="math display">\[\mathfrak p_i\cap P=(t_1,\ldots,t_{h_i})_P\subset (t_1,\ldots,t_{h_{i}},t_{h_i+1})_P \subset<br>
-    (t_1,\ldots,t_{h_{i+1}})_P=\mathfrak p_{i+1}\cap P.\]</span> Ponha <span class="math inline">\(\mathfrak r= (t_1,\ldots,t_{h_{i}},t_{h_i+1})_P\)</span>. Ent&atilde;o <span class="math inline">\(P/(\mathfrak p_i\cap P)\cong k[t_{h_i+1},\ldots,t_n]\)</span> &eacute; um anel de polin&ocirc;mios sobre <span class="math inline">\(k\)</span>, e &eacute; um dom&iacute;nio normal. Al&eacute;m disso, o mapa <span class="math inline">\(P/(\mathfrak p_i\cap P)\to R/\mathfrak p_i\)</span> definido por <span class="math inline">\(p+(\mathfrak p_i\cap P)\mapsto p+\mathfrak p_i\)</span> &eacute; injetiva e <span class="math inline">\(P/(\mathfrak p_i\cap P)\subseteq R/\mathfrak p_i\)</span> &eacute; uma extens&atilde;o integral, pois <span class="math inline">\(P\subseteq R\)</span> &eacute; integral. Pelo Teorema de Going-down, existe um primo <span class="math inline">\(\mathfrak p\in \mbox{Spec}(R)\)</span> tal que <span class="math inline">\(\mathfrak p/\mathfrak p_i\in\mbox{Spec}(R/\mathfrak p_i)\)</span> est&aacute; acima de <span class="math inline">\(\mathfrak r/(\mathfrak p_i\cap P)\)</span> e <span class="math inline">\(\mathfrak p/\mathfrak p_i\subset \mathfrak p_{i+1}/\mathfrak p_i\)</span>. Como <span class="math inline">\(\mathfrak r/(\mathfrak p_i\cap P)\neq 0\)</span>, <span class="math inline">\(\mathfrak p\neq \mathfrak p_i\)</span> e <span class="math inline">\(\mathfrak p_i\subset \mathfrak p\subset \mathfrak p_{i+1}\)</span>. Obtivemos uma contradi&ccedil;&atilde;o, pois a cadeia <span class="math inline">\((\mathfrak p_i)\)</span> foi assumida saturada.</p></div>
+    (t_1,\ldots,t_{h_{i+1}})_P=\mathfrak p_{i+1}\cap P.\]</span> Ponha <span class="math inline">\(\mathfrak r= (t_1,\ldots,t_{h_{i}},t_{h_i+1})_P\)</span>. Ent&atilde;o <span class="math inline">\(P/(\mathfrak p_i\cap P)\cong k[t_{h_i+1},\ldots,t_n]\)</span> &eacute; um anel de polin&ocirc;mios sobre <span class="math inline">\(k\)</span>, e &eacute; um dom&iacute;nio normal. Al&eacute;m disso, o mapa <span class="math inline">\(P/(\mathfrak p_i\cap P)\to R/\mathfrak p_i\)</span> definido por <span class="math inline">\(p+(\mathfrak p_i\cap P)\mapsto p+\mathfrak p_i\)</span> &eacute; injetiva e <span class="math inline">\(P/(\mathfrak p_i\cap P)\subseteq R/\mathfrak p_i\)</span> &eacute; uma extens&atilde;o integral, pois <span class="math inline">\(P\subseteq R\)</span> &eacute; integral. Pelo Teorema de Going-down, existe um primo <span class="math inline">\(\mathfrak p\in \mbox{Spec}(R)\)</span> tal que <span class="math inline">\(\mathfrak p/\mathfrak p_i\in\mbox{Spec}(R/\mathfrak p_i)\)</span> est&aacute; acima de <span class="math inline">\(\mathfrak r/(\mathfrak p_i\cap P)\)</span> e <span class="math inline">\(\mathfrak p/\mathfrak p_i\subset \mathfrak p_{i+1}/\mathfrak p_i\)</span>. Como <span class="math inline">\(\mathfrak r/(\mathfrak p_i\cap P)\neq 0\)</span>, <span class="math inline">\(\mathfrak p\neq \mathfrak p_i\)</span> e <span class="math inline">\(\mathfrak p_i\subset \mathfrak p\subset \mathfrak p_{i+1}\)</span>. Obtivemos uma contradi&ccedil;&atilde;o, pois a cadeia <span class="math inline">\((\mathfrak p_i)\)</span> foi assumida saturada.</p>
+</div>
 <div class="definition">Seja <span class="math inline">\(R\)</span> um anel. A dimens&atilde;o de Krull de <span class="math inline">\(R\)</span> &eacute; o supremo dos comprimentos das cadeias <span class="math display">\[\mathfrak p_1\subset\mathfrak p_2\subset \cdots \subset \mathfrak p_k\]</span> de ideais primos em <span class="math inline">\(R\)</span>. A dimens&atilde;o de Krull est&aacute; denotado por <span class="math inline">\(\dim R\)</span>.</div>
 <div class="example">A dimens&atilde;o de um corpo &eacute; zero; $\dim \Z=1$, $\dim\F[x_1,\ldots,x_k]=k$ onde os $x_i$ s&atilde;o inc&ocirc;gnitas.</div>
 <div class="theorem" .>Se <span class="math inline">\(R\)</span> &eacute; um <span class="math inline">\(k\)</span>-dom&iacute;nio finitamente gerado, ent&atilde;o <span class="math inline">\(\dim R\)</span> &eacute; igual ao grau de transcend&ecirc;ncia de <span class="math inline">\(\mbox{Frac}(R)\)</span> sobre <span class="math inline">\(k\)</span>.</div>
-<div class="theorem">Seja <span class="math inline">\(R\)</span> um <span class="math inline">\(k\)</span>-dom&iacute;nio finitamente gerado, seja <span class="math inline">\(\mathfrak p\in\mbox{Spec}(R)\)</span> e seja <span class="math inline">\(\mathfrak m\)</span> um ideal maximal em <span class="math inline">\(R\)</span>. Ent&atilde;o <span class="math display">\[\dim R_{(\mathfrak p)}+\dim R/\mathfrak p=\dim R\quad\mbox{e}\quad \dim R_{(\mathfrak m)}=\dim R.\]</span></div>
+<div class="theorem">Seja <span class="math inline">\(R\)</span> um <span class="math inline">\(k\)</span>-dom&iacute;nio finitamente gerado, seja <span class="math inline">\(\mathfrak p\in\mbox{Spec}(R)\)</span> e seja <span class="math inline">\(\mathfrak m\)</span> um ideal maximal em <span class="math inline">\(R\)</span>. Ent&atilde;o <span class="math display">\[\dim R_{(\mathfrak p)}+\dim R/\mathfrak p=\dim R\quad\mbox{e}\quad \dim R_{(\mathfrak m)}=\dim R.\]</span>
+</div>
 <div class="proof">Assuma que <span class="math display">\[\mathfrak p_1\subset \mathfrak p_2\subset \cdots\subset \mathfrak p=\mathfrak p_i\subset\cdots \subset \mathfrak p_r\]</span> &eacute; uma cadeia saturada dos primos que cont&eacute;m <span class="math inline">\(\mathfrak p\)</span>. Ent&atilde;o <span class="math inline">\(r\)</span> &eacute; igual ao grau de transcend&ecirc;ncia de <span class="math inline">\(R\)</span> sobre <span class="math inline">\(k\)</span> e <span class="math inline">\(r=\dim R\)</span>. Por outro lado <span class="math display">\[\label{eq:c1}<br>
     \mathfrak p_i/\mathfrak p\subset \cdots\subset \mathfrak p_r/\mathfrak p_i\]</span> &eacute; uma cadeia em <span class="math inline">\(\mbox{Spec}(R/\mathfrak p)\)</span> e <span class="math display">\[\label{eq:c2}<br>
     \mathfrak p_1 R_{(\mathfrak p)}\subset \cdots \subset\mathfrak p_i R_{(\mathfrak p)}\]</span> &eacute; uma cadeia em <span class="math inline">\(\mbox{Spec}(R_{(\mathfrak p)})\)</span>. Assim <span class="math inline">\(\dim R/\mathfrak p+\dim R_{(\mathfrak p)}\geq \dim R\geq r\)</span>. Por outro lado, cadeias como as duas acima resultam em cadeias em <span class="math inline">\(\mbox{Spec}(R)\)</span> e assim <span class="math inline">\(\dim R\geq<br>

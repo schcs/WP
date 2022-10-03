@@ -24,8 +24,7 @@
 
 <link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fa-ordem-de-um-elemento-de-z_n%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fa-ordem-de-um-elemento-de-z_n%2F&amp;format=xml">
-		<style type="text/css" id="wp-custom-css">
-			/*pre {
+		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
@@ -168,12 +167,10 @@ font-style: normal;
 
 .conjecture[text]:before {
 content: "Conjecture (" attr(text) ") ";
-}
-		</style>
+}</style>
 	
 
-<script>
-MathJax = {
+<script>MathJax = {
   tex: {
     inlineMath:  [['$', '$'], ['\\(', '\\)']],
     macros: {
@@ -188,10 +185,8 @@ MathJax = {
 		grau: ["{\\mbox{grau}(#1)}",1]
 		}
   }
-};
-</script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+};</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 
 
@@ -210,7 +205,8 @@ MathJax = {
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu">
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
 <li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
 <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 <li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
@@ -228,7 +224,7 @@ MathJax = {
 	<header class="entry-header">
 		<h1 class="entry-title">A ordem de um elemento de $\Z_n$</h1>	</header>
 		<div class="entry-content">
-		<div style="color:#000000">
+		<div style="color:/#000000">
 Seja $n\in\N$ e considere o conjunto $\Z_n$ das classes residuais. Comecemos com um exemplo motivador. 
 <div class="example">
 Considere $\Z_{20}$, tome um elemento invert&iacute;vel $\overline a\in\Z_{20}$ (ou seja, $\mdc a{20}=1$), e vamos olhar na sequ&ecirc;ncia<br>
@@ -253,7 +249,9 @@ Olhando nestes exemplos, podemos fazer algumas observa&ccedil;&otilde;es (que, c
 <li>Sempre existe algum $k\in\N$ tal que $\overline a^k=\overline 1$.</li>
 <li>A sequ&ecirc;ncia &eacute; peri&oacute;dica, pois quando $\overline a^k=\overline 1$, a sequ&ecirc;ncia come&ccedil;a a se repetir.</li>
 <li>Seja $k\in\N$ o menor tal que $\overline a^k=\overline 1$. Os elementos $\overline a^0,\overline a,\ldots,\overline a^{k-1}$ s&atilde;o dois a dois distintos.
-</li></ul></div>
+</li>
+</ul>
+</div>
 <p>No resto desta p&aacute;gina vamos provar que as observa&ccedil;&otilde;es feitas no exemplo anterior s&atilde;o v&aacute;lidas para todo $\overline a\in\Z_n^*$.</p>
 <p>Note que o resultado seguinte segue do Teorema de Euler, mas n&oacute;s vamos dar uma demonstra&ccedil;&atilde;o diferente.</p>
 <div class="lemma">
@@ -295,7 +293,8 @@ A defini&ccedil;&atilde;o de $b=|\overline a|_n$ e o fato que $0\leq r\leq b-1$ 
 Como $0\leq j-i\leq b-1$, a defini&ccedil;&atilde;o de $|\overline a|_n$ implica que $j-i=0$; ou seja $i=j$. </p>
 <p>(3) Essa afirma&ccedil;&atilde;o segue do Teorema de Euler que implica que $\overline a^{\varphi(n)}=\overline 1$ e da primeira parte do lema.</p>
 <p>(4) Esta parte segue diretamente da parte (3) e do fato que $\varphi(n)=n-1$ quando $n$ &eacute; primo.
-</p></div>
+</p>
+</div>
 <p>&Eacute; poss&iacute;vel escrever os resultados desta p&aacute;gina na linguagem das congru&ecirc;ncias. </p>
 <div class="definition">
 Seja $a\in\Z$ e seja $n\in\N$. Assuma que $a$ &eacute; invert&iacute;vel m&oacute;dulo $n$; ou seja $\mdc an=1$. A ordem de $a$ m&oacute;dulo $n$ &eacute; o menor inteiro positivo $k$ tal que $a^k\equiv 1\pmod n$. Denotamos a ordem de $a$ m&oacute;dulo $n$ por $|a|_n$.
@@ -308,7 +307,8 @@ Seja $a\in\Z$ e $n\in\N$ tais que $\mdc an=1$. As seguintes afirma&ccedil;&otild
 <li>Se $i,j\in\{0,\ldots,|a|_n-1\}$ s&atilde;o tais que $a^i\equiv a^j\pmod n$, ent&atilde;o $i=j$.</li>
 <li>$|a|_n$ &eacute; um divisor de $\varphi(n)$.</li>
 <li>Se $n$ &eacute; um primo, ent&atilde;o $|a|_n$ &eacute; um divisor de $n-1$.
-</li></ol>
+</li>
+</ol>
 </div>
 <div class="proof">
 As partes deste resultado seguem das afirma&ccedil;&otilde;es correspondentes sobre $\overline a\in\Z_n$.

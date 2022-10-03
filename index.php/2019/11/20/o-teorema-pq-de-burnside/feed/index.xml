@@ -6,13 +6,16 @@
 	
 	>
 <channel>
-	<title>Comments on: O Teorema $pq$ de Burnside</title>
+	<title>
+	Comments on: O Teorema $pq$ de Burnside	</title>
 	<atom:link href="https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/feed/" rel="self" type="application/rss+xml" />
 	<link>https://schcs.github.io/WP/index.php/2019/11/20/o-teorema-pq-de-burnside/</link>
 	<description>Universidade Federal de Minas Gerais</description>
-	<lastBuildDate>Mon, 28 Sep 2020 01:12:59 +0000</lastBuildDate>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.9.15</generator>
+	<lastBuildDate>Thu, 21 Nov 2019 11:29:12 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
 </channel>
 </rss>
