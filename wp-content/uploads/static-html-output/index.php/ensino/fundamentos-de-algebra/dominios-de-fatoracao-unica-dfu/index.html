@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Dom&iacute;nios de Fatora&ccedil;&atilde;o &Uacute;nica (DFU) &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/dominios-de-fatoracao-unica-dfu/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdominios-de-fatoracao-unica-dfu%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fdominios-de-fatoracao-unica-dfu%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1650 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1650" class="post-1650 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Dom&iacute;nios de Fatora&ccedil;&atilde;o &Uacute;nica (DFU)</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+O Teorema Fundamental da Aritm&eacute;tica e o Teorema da Fatora&ccedil;&atilde;o para Polin&ocirc;mios s&atilde;o resultados parecidos no sentido que os dois afirmam que os objetos em $\Z$ e em $\F[x]$ podem ser escritos unicamente como produtos de &ldquo;indecompon&iacute;veis&rdquo;. Os &ldquo;indecompon&iacute;veis&rdquo; em $\Z$ s&atilde;o os primos, enquanto os &ldquo;indecompon&iacute;veis&rdquo; em $\F[x]$ s&atilde;o os polin&ocirc;mios irredut&iacute;veis. N&oacute;s queremos generalizar esta observa&ccedil;&atilde;o para uma classe maior de estruturas alg&eacute;bricas.
+<p>Lembre que o conceito de elemento irredut&iacute;vel (ou redut&iacute;vel) foi definido na p&aacute;gina <a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/polinomios-irredutiveis/">Polin&ocirc;mios Irredut&iacute;veis</a>.</p>
+<div class="definition">
+Um dom&iacute;nio $R$ &eacute; dito <strong>dom&iacute;nio de fatora&ccedil;&atilde;o &uacute;nica</strong> (ou <strong>DFU</strong>) se todo elemento $a\in R\setminus\{0\}$ tal que $a$ n&atilde;o &eacute; invert&iacute;vel pode ser escrito como<br>
+\[<br>
+a=q_1\cdots q_k<br>
+\]<br>
+onde os $q_i$ s&atilde;o irredut&iacute;veis e esta fatora&ccedil;&atilde;o &eacute; &uacute;nica no seguinte sentido. Se<br>
+\[<br>
+a=q_1\cdots q_k=r_1\cdots r_m<br>
+\]<br>
+tais que os $q_i$ e os $r_j$ s&atilde;o irredut&iacute;veis, ent&atilde;o $k=m$ e os fatores $r_1,\ldots,r_m$ podem ser reindexados em tal modo que<br>
+\[<br>
+r_i=\alpha_i q_i<br>
+\]<br>
+vale com $\alpha_i\in R$ invert&iacute;vel para todo $i\in\{1,\ldots,k\}$.
+</div>
+<div class="example">
+Para entender melhor a interpreta&ccedil;&atilde;o da unicidade na defini&ccedil;&atilde;o anterior, considere por exemplo $R=\R[x]$. O polin&ocirc;mio $x^2-1\in\R[x]$ pode ser escrito de v&aacute;rias maneiras como produto de irredut&iacute;veis:<br>
+\[<br>
+x^2-1=(x+1)(x-1)=(2x+2)\left(\frac x2-\frac 12\right)=\left(\frac x3-\frac 13\right)(3x+3).<br>
+\]<br>
+Em todas estas fatora&ccedil;&otilde;es, um dos fatores &eacute; $\alpha_1(x+1)$ enquanto o outro &eacute; $\alpha_2(x-1)$ onde $\alpha_1,\alpha_2\in\R\setminus\{0\}$; ou seja $\alpha_1,\alpha_2$ s&atilde;o elemento invert&iacute;veis em $\R[x]$.  &Eacute; f&aacute;cil verificar usando os resultados estudados que todas as fatora&ccedil;&otilde;es de $x^2-1$ em fatores irredut&iacute;veis s&atilde;o na forma<br>
+\[<br>
+x^2-1=(\alpha_1(x+1))(\alpha_2(x-1))<br>
+\]<br>
+ou<br>
+\[<br>
+x^2-1=(\alpha_1(x-1))(\alpha_2(x+1))<br>
+\]<br>
+onde $\alpha_1,\alpha_2\in\R\setminus\{0\}$ (e $\alpha_1\alpha_2=1$).
+</div>
+<div class="example">
+Se $R$ &eacute; um corpo, ent&atilde;o ele &eacute; DFU pois $R\setminus\{0\}$ n&atilde;o possui elementos n&atilde;o invert&iacute;veis. Ent&atilde;o a condi&ccedil;&atilde;o na defini&ccedil;&atilde;o de DFU &eacute; trivialmente v&aacute;lida para $R$. 
+<p>Pelo Teorema Fundamental da Aritm&eacute;tica, $\Z$ &eacute; DFU. Pelo Teorema da Fatora&ccedil;&atilde;o para Polin&ocirc;mios, $\F[x]$ &eacute; DFU sempre que $\F$ &eacute; um corpo.
+</p></div>
+<p>O seguinte teorema &eacute; &uacute;til para construir dom&iacute;nios de fatora&ccedil;&atilde;o &uacute;nica, mas a demonstra&ccedil;&atilde;o n&atilde;o ser&aacute; apresentada nesta disciplina.</p>
+<div class="theorem">
+Se $R$ &eacute; DFU, ent&atilde;o $R[x]$ &eacute; DFU.
+</div>
+<div class="example">
+O teorema anterior implica que $\Z[x]$ &eacute; DFU. Para um anel $R$, o conjunto $R[x,y]$ de polin&ocirc;mios em duas vari&aacute;veis pode ser visto como o anel $(R[x])[y]$ de polin&ocirc;mios na vari&aacute;vel $y$ sobre o anel $R[x]$ dos polin&ocirc;mios na vari&aacute;vel $x$. Similarmente, n&oacute;s podemos olhar em $R[x_1,\ldots,x_k]$ recursivamente como o anel $(R[x_1,\ldots,x_{k-1}])[x_k]$. Logo, o teorema anterior implica que se $R$ &eacute; um DFU, ent&atilde;o $R[x_1,\ldots,x_k]$ &eacute; DFU para todo $k\geq 1$. Em particular, $\Z[x_1,\ldots,x_k]$ &eacute; DFU e, se $\F$ &eacute; um corpo, $\F[x_1,\ldots,x_k]$ tamb&eacute;m &eacute; DFU.
+</div>
+<div class="example">
+O dom&iacute;nio mais conhecido que n&atilde;o &eacute; DFU &eacute; $\Z[\sqrt{-5}]$. Neste dom&iacute;nio, podemos fatorar o elemento $6$ como<br>
+\[<br>
+6=2\cdot 3=(1+\sqrt{-5})(1-\sqrt{-5}).<br>
+\]<br>
+Pode-se verificar que os fatores nas duas descomposi&ccedil;&otilde;es s&atilde;o irredut&iacute;veis, mas os fatores na segunda decomposi&ccedil;&atilde;o n&atilde;o s&atilde;o m&uacute;ltiplos dos fatores na primeira decomposi&ccedil;&atilde;o por elementos invert&iacute;veis, pois os &uacute;nicos invert&iacute;veis em $\Z[\sqrt{-5}]$ s&atilde;o $1$ e $-1$.
+</div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

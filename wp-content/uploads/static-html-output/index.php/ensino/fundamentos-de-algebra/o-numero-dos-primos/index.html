@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>O n&uacute;mero dos primos &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-numero-dos-primos/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-numero-dos-primos%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-numero-dos-primos%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1368 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1368" class="post-1368 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">O n&uacute;mero dos primos</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">Para $n\in\N$, defina<br>
+\[<br>
+\pi(n)=|\{k\in\{2,\ldots,n\}\mid k\mbox{ &eacute; primo}\}|.<br>
+\]<br>
+Ou seja, $\pi(n)$ &eacute; o n&uacute;mero dos primos entre $2$ e $n$. &Eacute; f&aacute;cil computar o valor de $\pi(n)$ para $n$ pequeno:<br>
+\[<br>
+\pi(1)=0,\quad \pi(2)=1,\quad \pi(3)=\pi(4)=2,\quad \pi(5)=\pi(6)=3,\ldots<br>
+\]<br>
+No entanto, se $n$ for grande, determinar o valor de $\pi(n)$ pode ser dif&iacute;cil.
+<p>O Crivo de <a href="https://pt.wikipedia.org/wiki/Erat%C3%B3stenes">Erat&oacute;stenes</a>, &eacute; um algoritmo que pode ser usado para obter os primos que s&atilde;o menores ou iguais a um n&uacute;mero fixo $n$. A ideia do crivo &eacute; a seguinte. Assuma que voc&ecirc; quer determinar todos os primos entre $1$ e algum outro n&uacute;mero $n$.</p>
+<ul>
+<li>Escreva os n&uacute;meros de $1$ at&eacute; $n$ em uma lista na ordem crescente.</li>
+<li>Comece por eliminar o n&uacute;mero $1$ da sua lista, pois ele n&atilde;o &eacute; primo.</li>
+<li>O menor n&uacute;mero n&atilde;o eliminado na lista &eacute; $2$ que &eacute; primo. Elimine os m&uacute;ltiplos de $2$ a partir de $4$ da lista, pois eles n&atilde;o s&atilde;o primos.</li>
+<li>Menor n&uacute;mero n&atilde;o eliminado depois de $2$ &eacute;  o $3$. Elimine os m&uacute;ltiplos de $3$ a partir de $3^2=9$ da lista, pois eles n&atilde;o s&atilde;o primos.</li>
+<li>O menor n&uacute;mero n&atilde;o eliminado depois de $3$ &eacute; o $5$. Ele &eacute; primo. Elimine os m&uacute;ltiplos de $5$ da lista a partir de $5^2=25$, pois eles n&atilde;o s&atilde;o primos.</li>
+<li>No passo geral, ache o menor n&uacute;mero $p$ depois do &uacute;ltimo primo encontrado. Este n&uacute;mero $p$ ser&aacute; primo. Elimine os m&uacute;ltiplos de $p$ a partir de $p^2$ da lista, pois eles n&atilde;o s&atilde;o primos. Note que os demais m&uacute;ltiplos compostos de $p$ (que s&atilde;o menores de $p^2$) j&aacute; foram eliminados.</li>
+<li>Repita o passo geral at&eacute; $p &gt; \sqrt n$. </li>
+<li>Os n&uacute;meros que n&atilde;o foram eliminados da lista s&atilde;o os primos entre $1$ e $n$.</li>
+</ul>
+<p>Uma implementa&ccedil;&atilde;o simples em Python deste algoritmo &eacute; o seguinte. </p>
+<pre><code class="language-python">
+def eratosthenes( n ):
+    prims = [ True for i in range(n+1) ]
+    prims[0] = False; prims[1] = False
+    
+    sqrn = int(n**(1/2))
+    
+    for i in range(2,sqrn+1):
+        if prims[i]: 
+            st = i**2
+            while st &lt;= n:
+                prims[st] = False
+                st = st + i
+                
+    return prims
+</code>
+</pre>
+<p>O Crivo de Erat&oacute;stenes n&atilde;o &eacute; um algoritmo eficiente, pois o passo geral precisa ser executada $\sqrt n$ vezes. Na pr&aacute;tica (por exemplo, na criptografia), n&oacute;s precisamos lidar com n&uacute;meros com $500$ ou mais algarismos. Se por exemplo, $n\approx 10^{500}$, ent&atilde;o $\sqrt n\approx 10^{250}$ e na pr&aacute;tica fica imposs&iacute;vel realizar a computa&ccedil;&atilde;o at&eacute; com um supercomputador.</p>
+<p>Est&aacute; bem conhecido que a fun&ccedil;&atilde;o $\pi(n)$ pode ser aproximada pelas fun&ccedil;&otilde;es<br>
+\[<br>
+\lambda(n)=\frac n{\log n}<br>
+\]<br>
+e<br>
+\[<br>
+\sigma(n)=\int_2^n \frac{dt}{\log t}.<br>
+\]<br>
+Por exemplo, o n&uacute;mero dos primos entre $1$ e $10.000.000$ &eacute; $664579$. Ou seja<br>
+\[<br>
+\pi(10.000.000)=664579,<br>
+\]<br>
+enquanto<br>
+\[<br>
+\lambda(10.000.000)\approx 620420\quad\mbox{e}\quad \sigma(10.000.000)\approx 664917.<br>
+\]<br>
+Geralmente, a aproxima&ccedil;&atilde;o dada por $\sigma(n)$ &eacute; melhor, mas &eacute; mais dif&iacute;cil de calcular.</p>
+<p>Atualmente (novembro de 2021), o <a href="https://pt.wikipedia.org/wiki/Maior_n%C3%BAmero_primo_conhecido">maior primo conhecido</a> &eacute; $2^{82.589.933} &minus; 1$. Este n&uacute;mero tem $24.862.048$ algarismos na base decimal e foi encontrado em 2018. Este n&uacute;mero &eacute; um exemplo dos <a href="https://pt.wikipedia.org/wiki/Primo_de_Mersenne">primos de Mersenne</a>, ou seja primos na forma $2^p-1$ onde $p$ &eacute; um primo.
+</p></div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.0"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

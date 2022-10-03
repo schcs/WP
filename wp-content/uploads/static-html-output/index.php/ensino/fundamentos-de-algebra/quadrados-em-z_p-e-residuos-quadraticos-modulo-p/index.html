@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Quadrados em $\Z_p$ e res&iacute;duos quadr&aacute;ticos m&oacute;dulo $p$ &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/quadrados-em-z_p-e-residuos-quadraticos-modulo-p/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fquadrados-em-z_p-e-residuos-quadraticos-modulo-p%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fquadrados-em-z_p-e-residuos-quadraticos-modulo-p%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1459 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1459" class="post-1459 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Quadrados em $\Z_p$ e res&iacute;duos quadr&aacute;ticos m&oacute;dulo $p$</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+<p>Lembre da nota&ccedil;&atilde;o $\Z_p^*=\Z_p\setminus\{\overline 0\}$ ($p$ &eacute; primo).</p>
+<div class="definition">
+Seja $p\in\N$ um primo. Um elemento $\overline a\in\Z_p^*$ &eacute; dito quadrado se $\overline a=\overline b^2$ com algum $\overline b\in\Z_p^*$.
+</div>
+<div class="example">
+Em $\Z_5^*$, os elementos s&atilde;o $\overline 1,\overline 2,\overline 3,\overline 4$, os seus quadrados s&atilde;o $\overline 1,\overline 4,\overline 4,\overline 1$. Ent&atilde;o $\Z_5^*$ possui dois quadrados, nomeadamente $\overline 1$ e $\overline 4$.  Uma conta simples mostra que os quadrados dos elementos de $\Z_7^*$ s&atilde;o $\overline 1,\overline 4,\overline 2,\overline 2,\overline 4,\overline 1$. Ent&atilde;o os quadrados de $\Z_7^*$ s&atilde;o $\overline 1$, $\overline 2$ e $\overline 4$.
+</div>
+<p>No resto da p&aacute;gina $p$ &eacute; um primo com $p\geq 3$. </p>
+<div class="exercise">
+Seja $p$ um primo &iacute;mpar e seja $\overline a\in\Z_p^*$. Mostre que $\overline a^{(p-1)/2}\in\{\overline 1,\overline{-1}\}$.
+</div>
+<div class="example">
+Motivado pelo exerc&iacute;cio anterior, vamos calcular $\overline a^3$ para todo $\overline a\in\Z_7^*$.<br>
+\begin{array}{|c||c|c|c|c|c|c|}<br>
+\hline<br>
+\overline a &amp; \overline 1 &amp; \overline 2 &amp; \overline 3&amp; \overline 4&amp; \overline 5 &amp; \overline 6 \\\hline<br>
+\overline a^3 &amp; \overline 1 &amp; \overline 1 &amp; \overline{-1}&amp; \overline 1&amp; \overline {-1} &amp; \overline {-1} \\\hline<br>
+ \end{array}<br>
+Observamos duas coisas:
+<ul>
+<li>Se $\overline a\in\Z_7^*$ &eacute; quadrado, ent&atilde;o $\overline a^3=\overline 1$.</li>
+<li>Se $\overline a\in\Z_7^*$ n&atilde;o &eacute; quadrado, ent&atilde;o $\overline a^3=\overline{-1}$.</li>
+</ul>
+</div>
+<p>No lema seguinte demonstramos que as observa&ccedil;&otilde;es feitas no exemplo anterior n&atilde;o s&atilde;o coincid&ecirc;ncias.</p>
+<div class="lemma">
+Seja $p$ um primo com $p\geq 3$. O n&uacute;mero de quadrados em $\Z_p^*$ &eacute; $(p-1)/2$. Al&eacute;m disso, $\overline a\in\Z_p^*$ &eacute; um quadrado se e somente se $\overline a^{(p-1)/2}=\overline 1$ e $\overline a$ n&atilde;o &eacute; quadrado se e somente se $\overline a^{(p-1)/2}=\overline{-1}$.
+</div>
+<div class="proof">
+Considere<br>
+\[<br>
+\psi:\Z_p^*\to\Z_p^*,\quad \overline a\mapsto \overline a^{2}.<br>
+\]<br>
+Temos que a imagem de $\psi$ &eacute; precisamente o conjunto dos quadrados em $\Z_p^*$. Al&eacute;m disso, assuma que $\overline a,\overline b\in\Z_p^*$ tais que $\psi(\overline a)=\psi(\overline b)$; ou seja $\overline a^2=\overline b^2$. A &uacute;ltima equa&ccedil;&atilde;o &eacute; equivalente ao fato que $p\mid a^2-b^2=(a-b)(a+b)$ implicando que $p\mid a-b$ ou $p\mid a+b$ e assim<br>
+\[<br>
+b\equiv \pm a\pmod p\quad\mbox{e}\quad \overline b=\pm\overline a.<br>
+\]<br>
+Al&eacute;m disso, $\overline a$ e $\overline{-a}$ s&atilde;o distintos, pois se $\overline a=\overline{-a}$, ent&atilde;o $\overline 2\overline a=\overline 0$ que implica (como $\overline 2$ &eacute; invert&iacute;vel) que $\overline a=0$ que n&atilde;o &eacute; o caso, pois $\overline a\in\Z_p^*$. 
+<p>Portanto cada elemento $\overline b$ na imagem de $\psi$ existem precisamente dois elementos $\overline a$ e $-\overline a$ tal que $\psi(\overline a)=\psi(-\overline a)=\overline b$. Como $|\Z_p^*|=p-1$ a imagem de $\psi$ cont&eacute;m $(p-1)/2$ elementos e assim h&aacute; $(p-1)/2$ quadrados em $\Z_p^*$.   </p>
+<p>Assuma que $\overline a\in\Z_p^*$ &eacute; um quadrado. Seja $\overline b\in\Z_p^*$ tal que $\overline a=\overline b^2$. O Pequeno Teorema de Fermat implica que<br>
+\[<br>
+\overline a^{(p-1)/2}=(\overline b^2)^{(p-1)/2}=\overline b^{p-1}=\overline 1.<br>
+\]</p>
+<p>Agora assuma que $\overline a\in\Z_p^*$ n&atilde;o &eacute; um quadrado. Defina<br>
+\[<br>
+\vartheta:\Z_p^*\to\Z_p^*,\quad \overline b\mapsto \overline a/\overline b=\overline a\overline b^{-1}.<br>
+\]<br>
+Note que $\vartheta$ &eacute; uma bije&ccedil;&atilde;o e que $\vartheta(\overline b)=\overline c$ se e somente se $\vartheta(\overline c)=\overline b$. Al&eacute;m disso $\overline b\vartheta(\overline b)=\overline a$ para todo $\overline b\in\Z_p^*$ e o fato que $\overline a$ n&atilde;o &eacute; quadrado implica que $\vartheta(\overline b)\neq\overline b$ para todo $\overline b\in\Z_p^*$. </p>
+<p>Vamos enumerar os elementos de $\Z_p^*$ como<br>
+\[<br>
+\Z_p^*=\{\overline b_1,\vartheta(\overline b_1),\overline b_2,\vartheta(\overline b_2),\ldots,\overline b_<br>
+{(p-1)/2},\vartheta(\overline b_{(p-1)/2})\}.<br>
+\]<br>
+Ora, o Teorema de Wilson nos diz que<br>
+\[<br>
+-1\equiv (p-1)!\equiv 1\cdot 2\cdots (p-1)\pmod p<br>
+\]<br>
+e isso implica que<br>
+\begin{align*}<br>
+\overline{-1}&amp;= \overline 1\cdot \overline 2\cdots \overline{p-1}\\&amp;=(\overline b_1\vartheta(\overline b_1))(\overline b_2\vartheta(\overline b_2))\cdots(\overline b_{(p-1)/2}\vartheta(\overline b_{(p-1)/2}))\\&amp;=\overline a^{(p-1)/2}.<br>
+\end{align*}
+</p></div>
+<div class="definition">
+Seja $p$ um primo com $p\geq 3$ e seja $a\in\Z$ tal que $p \nmid a$. O n&uacute;mero $a$ &eacute; dito res&iacute;duo quadr&aacute;tico m&oacute;dulo $p$ se $a\equiv b^2\pmod p$ com algum $b\in\Z$. Caso contr&aacute;rio, $a$ &eacute; dito res&iacute;duo n&atilde;o quadr&aacute;tico (m&oacute;dulo $p$).
+</div>
+<p>&Eacute; imediato da defini&ccedil;&atilde;o que $a$ &eacute; res&iacute;duo quadr&aacute;tico m&oacute;dulo $p$ se e somente se $\overline a$ &eacute; um quadrado em $\Z_p$. </p>
+<div class="example">
+Um n&uacute;mero $a\in\Z$ &eacute; res&iacute;duo quadr&aacute;tico m&oacute;dulo $7$ se e somente se<br>
+\[<br>
+a\equiv 1,2,4\pmod 7<br>
+\]<br>
+enquanto $a$ &eacute; res&iacute;duo n&atilde;o quadr&aacute;tico se e somente se<br>
+\[<br>
+a\equiv 3,5,6\pmod 7.<br>
+\]<br>
+Se $a\equiv 0\pmod 7$, ent&atilde;o o conceito n&atilde;o &eacute; definido para $a$.
+</div>
+<div class="definition">
+Seja $p$ um primo com $p\geq 3$ e $a\in\Z$. Definimos o s&iacute;mbolo de Legendre $(\frac ap)$ como<br>
+\[<br>
+\left(\frac ap\right)=\left\{\begin{array}{ll} 1 &amp; \mbox{se $a$ &eacute; res&iacute;duo quadr&aacute;tico m&oacute;dulo $p$;}\\<br>
+-1&amp; \mbox{se $a$ &eacute; res&iacute;duo n&atilde;o quadr&aacute;tico m&oacute;dulo $p$;}\\<br>
+0 &amp; \mbox{se $p\mid a$}.\end{array}\right.<br>
+\]
+</div>
+<div class="example">
+Considerando $p=7$ temos que<br>
+\[<br>
+\left(\frac a7\right)=\left\{\begin{array}{ll} 1 &amp; \mbox{se $a\equiv 1,2,4\pmod 7$;}\\<br>
+-1&amp; \mbox{se $a\equiv 3,5,6\pmod 7$;}\\<br>
+0 &amp; \mbox{se $a\equiv 0\pmod 7$.}\end{array}\right.<br>
+\]
+</div>
+<div class="theorem">
+Se $p$ &eacute; um primo com $p\geq 3$ e $a\in\Z$, ent&atilde;o<br>
+\[<br>
+\left(\frac ap\right)\equiv a^{(p-1)/2} \pmod p.<br>
+\]
+</div>
+<p>O seguinte teorema famoso &eacute; conhecido como a Lei da Reciprocidade Quadr&aacute;tica. Este teorema ser&aacute; apresentado sem demonstra&ccedil;&atilde;o.</p>
+<div class="theorem">
+Sejam $p$ e $q$ primos com $p,q\geq 3$. Ent&atilde;o<br>
+\[<br>
+\left(\frac pq\right)\left(\frac qp\right)=(-1)^{\frac{p-1}2\frac{q-1}2}<br>
+\]
+</div>
+<p>Para saber mais detalhes sobre o assunto, assista o <a href="https://youtu.be/X63MWZIN3gM">v&iacute;deo</a> no canal Mathologer.</p>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

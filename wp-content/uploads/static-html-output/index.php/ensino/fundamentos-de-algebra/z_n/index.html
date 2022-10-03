@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>$\Z_n$ &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/z_n/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fz_n%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fz_n%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1417 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1417" class="post-1417 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">$\Z_n$</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+Seja $n\in\N$ um n&uacute;mero natural e seja $a\in\Z$. N&oacute;s definimos em uma aula anterior a classe residual (ou a classe de congru&ecirc;ncia de $a$) m&oacute;dulo $n$ como<br>
+\[<br>
+\overline a=\{a+kn\mid k\in\Z\}=\{b\in\Z\mid b\equiv a\pmod n\}.<br>
+\]<br>
+Provamos ainda que $\overline a=\overline b$ se e somente se $a\equiv b\pmod n$. Assim h&aacute; exatamente $n$ classes residuais m&oacute;dulo $n$, nomeadamente,<br>
+\[<br>
+\overline 0, \overline 1,\ldots,\overline{n-1}.<br>
+\]<br>
+Denotamos por $\Z_n$ o conjunto das classes residuais m&oacute;dolo $n$; ou seja<br>
+\[<br>
+\Z_n=\{\overline 0,\overline 1,\ldots,\overline{n-1}\}.<br>
+\]<br>
+Por exemplo,<br>
+\[<br>
+\Z_5=\{\overline 0, \overline 1,\overline 2,\overline 3,\overline 4\}.<br>
+\]<br>
+N&oacute;s podemos definir duas opera&ccedil;&otilde;es, uma soma e uma multiplica&ccedil;&atilde;o, no conjunto das classes residuais pondo<br>
+\begin{align*}<br>
+\overline a+\overline b&amp;=\overline{a+b};\\<br>
+\overline a\cdot\overline b&amp;=\overline{a\cdot b}<br>
+\end{align*}<br>
+para todo $\overline a,\overline b\in\Z_n$. 
+<div class="lemma">
+As opera&ccedil;&otilde;es $+$ e $\cdot$ s&atilde;o bem definidas no conjunto $\Z_n$. Al&eacute;m disso estas opera&ccedil;&otilde;es satisfazem as seguintes propriedades para todo $\overline a,\overline b,\overline c\in\Z_n$:
+<ul>
+<li>$(\overline a+\overline b)+\overline c=\overline a+(\overline b+\overline c)$ (associatividade da adi&ccedil;&atilde;o);</li>
+<li>$\overline a+\overline b=\overline b+\overline a$ (comutatividade da adi&ccedil;&atilde;o);</li>
+<li>$\overline a+\overline 0=\overline a$ (elemento neutro para a adi&ccedil;&atilde;o);</li>
+<li>$\overline a+(\overline{-a})=\overline 0$ (elemento sim&eacute;trico para a adi&ccedil;&atilde;o);</li>
+<li>$(\overline a\overline b)\overline c=\overline a(\overline b\overline c)$ (associatividade da multiplica&ccedil;&atilde;o);</li>
+<li>$\overline a\overline b=\overline b\overline a$ (comutatividade da multiplia&ccedil;&atilde;o); </li>
+<li>$\overline a\overline 1=\overline a$ (elemento neutro da multiplica&ccedil;&atilde;o);</li>
+<li>$\overline a(\overline b+\overline c)=\overline a\overline b+\overline a\overline c$ (distributividade).
+</li></ul>
+</div>
+<div class="proof">
+O fato que a opera&ccedil;&otilde;es $+$ e $\cdot$ s&atilde;o bem definidas &eacute; equivalente ao seginte fato. Se $a_1,a_2,b_1,b_2\in\Z$ tais que $\overline{a_1}=\overline{a_2}$ e<br>
+$\overline{b_1}=\overline{b_2}$, ent&atilde;o<br>
+\begin{align*}<br>
+\overline{a_1}+\overline{b_1}&amp;=\overline{a_2}+\overline{b_2}\\<br>
+\overline{a_1}\overline{b_1}&amp;=\overline{a_2}\overline{b_2}\\<br>
+\end{align*}<br>
+As equa&ccedil;&otilde;es acima s&atilde;o equivalentes &agrave;s congru&ecirc;ncias<br>
+\begin{align*}<br>
+a_1+b_1&amp;\equiv a_2+b_2\pmod n\\<br>
+a_1b_1&amp;=a_2b_2\pmod n\\<br>
+\end{align*}<br>
+Mas estas congru&ecirc;ncias s&atilde;o verdadeiras por um resultado que provamos na aula sobre congru&#7869;ncias.
+<p>As propriedades listadas s&atilde;o mais ou menos &oacute;bvias. Vamos provar a distributividade. Obtemos usando a defini&ccedil;&atilde;o das opera&ccedil;&otilde;es que<br>
+\[<br>
+\overline a(\overline b+\overline c)=\overline a\overline{b+c}=\overline{a(b+c)}=\overline{ab+ac}=\overline{ab}+\overline{ac}=\overline a\overline b+\overline a\overline c.<br>
+\]
+</p></div>
+<div class="definition">
+Dizemos que um elemento $\overline a\in\Z_n$ &eacute; invert&iacute;vel se existe $\overline b\in\Z_n$ tal que $\overline a\overline b=\overline 1$. Neste caso $\overline b$ &eacute; dito inverso de $\overline a$.
+</div>
+<div class="lemma">
+Um elemento $\overline a\in\Z_n$ &eacute; invert&iacute;vel se e somente se $\mdc an=1$. Neste caso, o inverso de $\overline a$ &eacute; &uacute;nico.
+</div>
+<div class="proof">
+Um elemento $\overline a$ &eacute; invert&iacute;vel se e somente se existir $\overline b\in\Z_n$ tal que $\overline a\overline b=\overline 1$; ou seja, $ab\equiv 1\pmod n$. Mas n&oacute;s j&aacute; vimos que esta condi&ccedil;&atilde;o &eacute; equivalente &agrave; condi&ccedil;&atilde;o que $\mdc an=1$. 
+<p>A unicidade do inverso tamb&eacute;m segue de um resultado anterior que afirmou que o conjunto dos inverso de $a$ m&oacute;dulo $n$ formam uma classe residual m&oacute;dulo $n$. Aqui n&oacute;s vamos fazer uma outra demonstra&ccedil;&atilde;o que usa apenas as propriedades que foram listadas no lema anterior. Assuma que $\overline b,\overline c\in\Z_n$ s&atilde;o inversos de $\overline a$; ou seja, $\overline a\overline b=\overline a\overline c=\overline 1$. Portanto<br>
+\[<br>
+\overline b=\overline b\overline 1=\overline b(\overline a\overline c)=(\overline b\overline a)\overline c=\overline 1\overline c=\overline c.<br>
+\]<br>
+Daqui obtemos que $\overline b=\overline c$ como desejado.
+</p></div>
+<div class="corollary">
+Todo elemento diferente de $\overline 0$ &eacute; invert&iacute;vel em $\Z_n$ se e somente se $n$ &eacute; primo.
+</div>
+<p>O corol&aacute;rio anterior implica que, se $p$ for primo, a estrutura $\Z_p$ comporta-se na mesma maneira como $\Q$, $\R$, ou $\C$ no sentido que pode fazer as opera&ccedil;&otilde;es $+$ e $\cdot$ e pode tamb&eacute;m dividir por qualquer elemento n&atilde;o nulo. N&oacute;s dizemos que a estrutura $\Z_p$ &eacute; um corpo finito. Corpos finitos t&ecirc;m muitas aplica&ccedil;&otilde;es na matem&aacute;tica, mas tamb&eacute;m fora da matem&aacute;tica tal como na engenharia, f&iacute;sica, qu&iacute;mica, etc.
+</p></div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

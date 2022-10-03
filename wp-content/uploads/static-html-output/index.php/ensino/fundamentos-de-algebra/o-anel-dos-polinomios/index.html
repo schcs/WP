@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>O anel dos polin&ocirc;mios &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-anel-dos-polinomios/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-anel-dos-polinomios%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-anel-dos-polinomios%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1557 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1557" class="post-1557 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">O anel dos polin&ocirc;mios</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+Seja $R$ um anel e considere o conjunto dos polin&ocirc;mios $R[x]$ sobre $R$. N&oacute;s introduzimos duas opera&ccedil;&otilde;es $+$ e $\cdot$ no conjunto $R[x]$. Sejam $f(x),g(x)\in R[x]$ dados como<br>
+\begin{align*}<br>
+f(x)&amp;=\alpha_nx^n+\alpha_{n-1}x^{n-1}+\cdots+\alpha_1x+\alpha_0\\<br>
+g(x)&amp;=\beta_nx^n+\beta_{n-1}x^{n-1}+\cdots+\beta_1x+\beta_0<br>
+\end{align*}<br>
+onde $\alpha_i,\beta_i\in R$. (Note que n&oacute;s n&atilde;o assumimos que $\alpha_n\neq 0$ e $\beta_n\neq 0$) ent&atilde;o os graus de $f(x)$ e $g(x)$ podem n&atilde;o coincidir.) Defina<br>
+\begin{align*}<br>
+f(x)+g(x)&amp;=(\alpha_n+\beta_n)x^n+(\alpha_{n-1}+\beta_{n-1})x^{n-1}+\cdots+(\alpha_1+\beta_1)x+\alpha_0+\beta_0;\\<br>
+f(x)g(x)&amp;=c_{2n}x^{2n}+c_{2n-1}x^{2n-1}+\cdots +c_1x+c_0<br>
+\end{align*}<br>
+onde<br>
+\[<br>
+c_k=\sum_{i,j\in\{0,\ldots,n\}\\ i+j=k} a_ib_j.<br>
+\]
+<div class="example">
+Considere $f(x)=x^3+\overline 2x$ e $g(x)=\overline 2x+\overline 1$ em $\Z_3[x]$. Ent&atilde;o<br>
+\begin{align*}<br>
+f(x)+g(x) &amp;= x^3+x+\overline 1\\<br>
+f(x)g(x) &amp; = (x^3+\overline 2x)(\overline 2x+\overline 1)=\overline 2x^4+x^3+x^2+\overline 2x.<br>
+\end{align*}
+</div>
+<div class="lemma">
+Seja $R$ um anel e $f(x),g(x)\in R[x]\setminus\{0\}$. 
+<ul>
+<li>$f(x)g(x)=0$ ou $\grau{f(x)g(x)}\leq \grau{f(x)}+\grau{g(x)}$.</li>
+<li>Se $R$ for um dom&iacute;nio, ent&atilde;o $f(x)g(x)\neq 0$ e $\grau{f(x)g(x)}= \grau{f(x)}+\grau{g(x)}$</li>
+</ul>
+</div>
+<div class="proof">
+A primeira afirma&ccedil;&atilde;o segue da defini&ccedil;&atilde;o do produto. Assuma que $R$ &eacute; um dom&iacute;nio e sejam $f(x),g(x)\in R[x]$ tais que<br>
+\begin{align*}<br>
+f(x)&amp;=\alpha_nx^n+\alpha_{n-1}x^{n-1}+\cdots+\alpha_1x+\alpha_0\\<br>
+g(x)&amp;=\beta_mx^m+\beta_{m-1}x^{m-1}+\cdots+\beta_1x+\beta_0<br>
+\end{align*}<br>
+com $\alpha_i,\beta_j\in R$ e com $\alpha_n,\beta_m\neq 0$. Em particular, $\grau{f(x)}=n$ e $\grau{g(x)}=m$ e<br>
+\[<br>
+f(x)g(x)=\alpha_n\beta_mx^{m+n}+\cdots<br>
+\]<br>
+onde $\cdots$ significa uma soma de termos de grau menor que $m+n$. Como $R$ &eacute; um dom&iacute;nio, $\alpha_n\beta_m\neq 0$ e temos que $f(x)g(x)\neq 0$ e que<br>
+\[<br>
+\grau{f(x)g(x)}=m+n=\grau{f(x)}+\grau{g(x)}.<br>
+\]
+</div>
+<div class="example">
+&Eacute; poss&iacute;vel que o grau do produto seja estritamente menor que a soma dos graus. Considere por exemplo $f(x)=\overline 2x+\overline 1$ e $g(x)=\overline 3x+\overline 1$ em $\Z_6[x]$. Ent&atilde;o $\grau{f(x)}=\grau{g(x)}=1$, mas<br>
+\[<br>
+f(x)g(x)=(\overline 2x+\overline 1)(\overline 3x+\overline 1)=\overline 5x+\overline 1<br>
+\]<br>
+e assim $\grau{f(x)g(x)}=1$.
+</div>
+<div class="theorem">
+Seja $R$ um anel. As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.
+<ol>
+<li>$R[x]$ &eacute; um anel com as opera&ccedil;&otilde;es de $+$ e $\cdot$ entre polin&ocirc;mios.</li>
+<li>$R[x]$ &eacute; um dom&iacute;nio se e somente se $R$ &eacute; um dom&iacute;nio.</li>
+<li>Se $R$ &eacute; um dom&iacute;nio, ent&atilde;o os elementos invert&iacute;veis de $R[x]$ s&atilde;o os elementos invert&iacute;veis de $R$ (considerados como polin&ocirc;mios de grau zero).</li>
+</ol></div>
+<div class="proof">
+(1) Exerc&iacute;cio.
+<p>(2) Se $R$ &eacute; um dom&iacute;nio, ent&atilde;o $R[x]$ &eacute; dom&iacute;nio pelo lema anterior. Vice versa, se $R[x]$ &eacute; um dom&iacute;nio e $a,b\in R\setminus\{0\}$, ent&atilde;o $a$ e $b$ podem ser considerados como elementos de grau zero em $R[x]$. Como $R[x]$ &eacute; dom&iacute;nio, temos que $ab\neq 0$ e obtemos que $R$ tamb&eacute;m &eacute; dom&iacute;nio. </p>
+<p>(3) Seja $R$ um dom&iacute;nio. &Eacute; f&aacute;cil verificar que um elemento invert&iacute;vel $\alpha\in R$ &eacute; invert&iacute;vel em $R[x]$. Assuma que $f(x)\in R[x]$ invert&iacute;vel. Ent&atilde;o existe $g(x)\in R[x]$ tal que $f(x)g(x)=1$. Da&iacute; temos que $f(x),g(x)\neq 0$ e<br>
+\[<br>
+0=\grau{1}=\grau{f(x)g(x)}=\grau{f(x)}+\grau{g(x)}.<br>
+\]<br>
+Como os graus de $f(x)$ e de $g(x)$ s&atilde;o inteiros n&atilde;o negativos, segue que<br>
+\[<br>
+\grau{f(x)}=\grau{g(x)}=0;<br>
+\]<br>
+ou seja $f(x)=\alpha$ e $g(x)=\beta$ com $\alpha,\beta\in R$ e $\alpha\beta=1$. Portanto $f(x)=\alpha$ &eacute; um elemento invert&iacute;vel de $R$.
+</p></div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

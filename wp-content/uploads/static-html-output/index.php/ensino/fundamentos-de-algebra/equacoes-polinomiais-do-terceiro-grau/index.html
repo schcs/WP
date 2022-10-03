@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Equa&ccedil;&otilde;es polinomiais do terceiro grau &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/equacoes-polinomiais-do-terceiro-grau/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fequacoes-polinomiais-do-terceiro-grau%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fequacoes-polinomiais-do-terceiro-grau%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1677 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1677" class="post-1677 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Equa&ccedil;&otilde;es polinomiais do terceiro grau</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+Nesta p&aacute;gina vamos estudar equa&ccedil;&otilde;es do terceiro grau. Para um tratamento mais detalhado, divertido, hist&oacute;rico, assista os v&iacute;deos nos canais <a href="https://youtu.be/N-KXStupwsc">Mathologer</a> e <a href="https://youtu.be/cUzklzVXJwo">Veritasium</a>.
+<p>Considere uma equa&ccedil;&atilde;o na forma<br>
+\begin{equation}<br>
+ax^3+bx^2+cx+d=0<br>
+\end{equation}<br>
+onde $a,b,c,d\in\C$ com $a\neq 0$. N&oacute;s vamos determinar as ra&iacute;zes complexas desta equa&ccedil;&atilde;o. O procedimento ser&aacute; apresentado em v&aacute;rios passos.</p>
+<p><strong>Passo 1.</strong> A equa&ccedil;&atilde;o original tem as mesmas ra&iacute;zes que a equa&ccedil;&atilde;o<br>
+\[<br>
+x^3+(b/a)x^2+(c/a)x+d/a=0.<br>
+\]<br>
+Assim n&oacute;s consideremos apenas equa&ccedil;&otilde;es na forma<br>
+\begin{equation}\label{eq:orig}<br>
+x^3+ax^2+bx+c=0\tag{1}.<br>
+\end{equation}</p>
+<p><strong>Passo 2.</strong> Introduza uma nova vari&aacute;vel $y=x+a/3$. Substituindo,<br>
+\[<br>
+0=x^3+ax^2+bx+c=(y-a/3)^3+a(y-a/3)^2+b(y-a/3)+c.<br>
+\]<br>
+Abrindo as par&ecirc;nteses, obtemos que o coeficiente de $y^2$ na equa&ccedil;&atilde;o anterior &eacute; $-3a/3+a=0$ e a equa&ccedil;&atilde;o fica na forma<br>
+\begin{equation}\label{eq:pq}<br>
+y^3+py+q=0\tag{2}<br>
+\end{equation}<br>
+onde<br>
+\[<br>
+p=b-\frac{a^2}3\quad\mbox{e}\quad q=c-\frac{ab}3+\frac{2a^3}{27}.<br>
+\]<br>
+Se $\alpha\in\C$ &eacute; raiz da equa&ccedil;&atilde;o \eqref{eq:pq}, ent&atilde;o $\beta=\alpha-a/3$ &eacute; raiz da equa&ccedil;&atilde;o (\ref{eq:orig}).  </p>
+<p><strong>Passo 3.</strong> Assuma que $\alpha\in\C$ &eacute; raiz da equa&ccedil;&atilde;o \eqref{eq:pq}. Escreva $\alpha=u+v$ com $u,v\in\C$ onde $u$ e $v$ ser&atilde;o determinados mais tarde. Obtem-se que<br>
+\begin{align*}<br>
+0&amp;=(u+v)^3+p(u+v)+q\\&amp;=u^3+3u^2v+3uv^2+v^3+pu+pv+q\\&amp;=(u^3+v^3+q)+(3uv+p)(u+v).<br>
+\end{align*}<br>
+Vamos escolher $u,v\in\C$ tais que<br>
+\begin{align*}<br>
+u^3+v^3&amp;=-q\\<br>
+uv&amp;=-p/3<br>
+\end{align*}<br>
+pois esta escolha garante a igualdade na equa&ccedil;&atilde;o anterior.<br>
+O sistema das duas equa&ccedil;&otilde;es para $u$ e $v$  implica que<br>
+\begin{align*}<br>
+u^3+v^3&amp;=-q\\<br>
+u^3v^3&amp;=-p^3/27.<br>
+\end{align*}<br>
+Assim $u^3$ e $v^3$ s&atilde;o solu&ccedil;&otilde;es da equa&ccedil;&atilde;o<br>
+\[<br>
+t^2+qt-p^3/27=0<br>
+\]<br>
+e obtemos da f&oacute;rmula quadr&aacute;tica que<br>
+\begin{equation}\label{eq:u3}<br>
+u^3=\frac{-q\pm \sqrt{q^2-4p^3/27}}2\tag{3}<br>
+\end{equation}<br>
+Logo<br>
+\[<br>
+u = \sqrt[3]{\frac{-q\pm \sqrt{q^2-4p^3/27}}2}<br>
+\]<br>
+e<br>
+\[<br>
+v = \frac{-p}{3u}.<br>
+\]<br>
+Agora $\alpha=u+v$ &eacute; solu&ccedil;&atilde;o da equa&ccedil;&atilde;o \eqref{eq:pq} e<br>
+\[<br>
+\beta=\alpha-a/3=u+v-a/3<br>
+\]<br>
+&eacute; solu&ccedil;&atilde;o da equa&ccedil;&atilde;o \eqref{eq:orig}.  Observe que na equa&ccedil;&atilde;o \eqref{eq:u3}, temos tr&ecirc;s escolhas para $u$ que resulta em tr&ecirc;s solu&ccedil;&otilde;es para a equa&ccedil;&atilde;o \eqref{eq:orig}. </p>
+<div class="example">
+Considere a equa&ccedil;&atilde;o<br>
+\[<br>
+f(x)=x^3-6x^2+9x-3=0.<br>
+\]<br>
+Substitu&iacute;mos $y=x-2$, e obtemos que<br>
+\[<br>
+g(y)=f(y+2)=y^3-3y-1=0.<br>
+\]<br>
+Assuma que $\alpha=u+v$ &eacute; uma raiz da equa&ccedil;&atilde;o $g(y)=0$. Ent&atilde;o $u^3$ e $v^3$ s&atilde;o ra&iacute;zes de<br>
+\[<br>
+t^2-t+1<br>
+\]<br>
+e assim<br>
+\[<br>
+u^3=\frac{1+\sqrt{-3}}2=\frac 12+\frac{\sqrt 3}2i=\cos(\pi/3)+i\mbox{sen}(\pi/3).<br>
+\]<br>
+As tr&ecirc;s ra&iacute;zes c&uacute;bicas de $u^3$ s&atilde;o<br>
+\begin{align*}<br>
+u_1&amp;=\cos(\pi/9)+i\mbox{sen}(\pi/9)\\<br>
+u_2&amp;=\cos(7\pi/9)+i\mbox{sen}(7\pi/9)\\<br>
+u_3&amp;=\cos(13\pi/9)+i\mbox{sen}(13\pi/9)\\<br>
+\end{align*}<br>
+e os valores de $v$ correspondentes s&atilde;o<br>
+\begin{align*}<br>
+v_1&amp;=u_1^{-1}=\cos(\pi/9)-i\mbox{sen}(\pi/9)\\<br>
+v_2&amp;=u_2^{-1}=\cos(7\pi/9)-i\mbox{sen}(7\pi/9)\\<br>
+v_3&amp;=u_3^{-1}=\cos(13\pi/9)+i\mbox{sen}(13\pi/9).<br>
+\end{align*}<br>
+As solu&ccedil;&otilde;es da equa&ccedil;&atilde;o $g(y)=0$ s&atilde;o obtidos como<br>
+\begin{align*}<br>
+\alpha_1&amp;=u_1+v_1=2\cos(\pi/9)\\<br>
+\alpha_2&amp;=u_2+v_2=2\cos(7\pi/9)\\<br>
+\alpha_3&amp;=u_3+v_3=2\cos(13\pi/9).<br>
+\end{align*}<br>
+As solu&ccedil;&otilde;es da equa&ccedil;&atilde;o original $f(x)=0$ s&atilde;o<br>
+\begin{align*}<br>
+\beta_1&amp;=\alpha_1+2=2\cos(\pi/9)+2\\<br>
+\beta_2&amp;=\alpha_2+2=2\cos(7\pi/9)+2\\<br>
+\beta_3&amp;=\alpha_3+2=2\cos(13\pi/9)+2.<br>
+\end{align*}
+</div>
+<p>O procedimento acima poderia ser escrito na forma de uma f&oacute;rmula c&uacute;bica, mas esta f&oacute;rmula, devido a sua complexidade, n&atilde;o seria &uacute;til na pr&aacute;tica. Existe um procedimento similar, mas bem mais complicado, para resolver equa&ccedil;&otilde;es do quarto grau e este procedimento tamb&eacute;m poderia ser escrito como uma f&oacute;rmula qu&aacute;rtica.  O v&iacute;deo do canal Mathologer inserido no in&iacute;cio da p&aacute;gina mostra a f&oacute;rmula geral c&uacute;bica. A partir de grau cinco, n&atilde;o existe mais tais f&oacute;rmulas e este resultado &eacute; conhecido como o Teorema de <a href="https://pt.wikipedia.org/wiki/Niels_Henrik_Abel">Abel</a>&ndash;<a href="https://pt.wikipedia.org/wiki/Paolo_Ruffini">Ruffini</a>. </p>
+<div class="theorem">(O Teorema de Abel-Ruffini)<br>
+Se $k\geq 5$, ent&atilde;o n&atilde;o existe f&oacute;rmula para obter as ra&iacute;zes complexas de um polin&ocirc;mio arbitr&aacute;rio de grau $k$ usando apenas os coeficientes do polin&ocirc;mio, constantes, as opera&ccedil;&otilde;es da adi&ccedil;&atilde;o, subtra&ccedil;&atilde;o, multiplica&ccedil;&atilde;o, divis&atilde;o, e tomando $n$-esimas ra&iacute;zes para $n\geq 2$.
+</div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

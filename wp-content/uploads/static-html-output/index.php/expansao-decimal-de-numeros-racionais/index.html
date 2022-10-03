@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta charset="UTF-8">
+
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <title>Expans&atilde;o decimal de n&uacute;meros racionais &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://github.com/WP/index.php/feed/">
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://github.com/WP/index.php/comments/feed/">
-<link rel="stylesheet" id="penscratch-2-reset-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-style-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="tablepress-default-css" href="https://github.com/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
-<script type="text/javascript" src="https://github.com/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-<script type="text/javascript" src="https://github.com/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
 
 
 
-<link rel="canonical" href="https://github.com/WP/index.php/expansao-decimal-de-numeros-racionais/">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/expansao-decimal-de-numeros-racionais/">
 
-<link rel="alternate" type="application/json+oembed" href="https://github.com/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgithub.com%2Fschcs%2FWP%2Findex.php%2Fexpansao-decimal-de-numeros-racionais%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://github.com/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgithub.com%2Fschcs%2FWP%2Findex.php%2Fexpansao-decimal-de-numeros-racionais%2F&amp;format=xml">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fexpansao-decimal-de-numeros-racionais%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fexpansao-decimal-de-numeros-racionais%2F&amp;format=xml">
 		<style type="text/css" id="wp-custom-css">
 			pre {
 	font-family: monospace;
@@ -117,7 +118,22 @@ content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
 }
 
 		</style>
-	</head>
+	
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$']] },
+TeX: {
+Macros: {
+R: "{\\mathbb R}",
+N: "{\\mathbb N}",
+C: "{\\mathbb C}",
+Z: "{\\mathbb Z}",
+Q: "{\\mathbb Q}"
+}}});
+</script>
+	
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
 
 <body class="page-template-default page page-id-1263 no-sidebar">
 
@@ -125,7 +141,7 @@ content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://github.com/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
@@ -133,9 +149,9 @@ content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://github.com/WP/index.php/publications/">Publications</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://github.com/WP/index.php/ensino/">Ensino</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://github.com/WP/index.php/book/">Book</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
 </ul></div>		</nav>
 	</header>
 
@@ -151,8 +167,14 @@ content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
 		<h1 class="entry-title">Expans&atilde;o decimal de n&uacute;meros racionais</h1>	</header>
 		<div class="entry-content">
 		<p>Comecemos por um resultado conhecido de c&aacute;lculo.</p>
-<div class="lemma">
-Se $|q|
+<div class="lemma">Se $|q| &lt;m1$, ent&atilde;o s&eacute;rie<br>
+\[<br>
+\sum_{n=0}^\infty q^n<br>
+\]<br>
+&eacute; convergente e a sua soma &eacute; igual a<br>
+\[<br>
+\frac{1}{q-1}.<br>
+\]</div>
 <div class="proof">Exerc&iacute;cio</div>
 <p>No bloco anterior, estudamos expans&otilde;es de n&uacute;meros naturais na base $b$. Escrevemos naturais na base $b$ como $[a_na_{n-1}\cdots a_1a_0]_b$. Quando $b=10$, escrevemos o mesmo n&uacute;mero como $[a_na_{n-1}\cdots a_1a_0]$ (sem explicitamente indicar a base).</p>
 <p>Uma fra&ccedil;&atilde;o decimal (ou expans&atilde;o decimal) n&atilde;o negativa &eacute; uma sequ&ecirc;ncia (possivelmente infinita) de algarismos na forma $[a_na_{n-1}\cdots a_1a_0,a_{-1}a_{-2}\cdots]$ onde $a_{i}\in\{0,\ldots,9\}$. O n&uacute;mero representado pela fra&ccedil;&atilde;o &eacute;<br>
@@ -160,12 +182,9 @@ Se $|q|
 a&amp;=\sum_{k=n}^{-\infty}a_k10^k=\sum_{k=0}^n a_k10^k+\sum_{k=1}^{\infty}a_{-k}10^{-k}\\&amp;=<br>
 [a_na_{n-1}\cdots a_1a_0]+\sum_{k=1}^{\infty}a_{-k}10^{-k}.<br>
 \end{align*}<br>
-A express&atilde;o acima mostra que cada fra&ccedil;&atilde;o decimal n&atilde;o negativa pode ser escrita como a soma de um n&uacute;mero natural e uma fra&ccedil;&atilde;o decimal na forma $[0,a_{-1}a_{-2}\cdots]$. Como os n&uacute;meros naturais foram tratados na unidade anterior, aqui vamos focar apenas fra&ccedil;&otilde;es na forma $[0,a_{-1}a_{-2}\cdots]$. Uma fra&ccedil;&atilde;o natural desta forma pode ser finita ou infinita. Quando a sequ&ecirc;ncia de algarismos depois da v&iacute;rgula &eacute; infinita, ent&atilde;o a fra&ccedil;&atilde;o &eacute; infinita; caso contr&aacute;rio a fra&ccedil;&atilde;o &eacute; finita. Uma fra&ccedil;&atilde;o finita pode ser escrita na forma $[0,a_{-1}a_{-2}\cdots a_{-n}]$. Note que uma fra&ccedil;&atilde;o finita pode ser considerada infinita adicionando uma sequ&ecirc;ncia infinita de zeros e assim n&oacute;s frequentemente assumimos que as fra&ccedil;&otilde;es analizadas s&atilde;o infinitas.  </p>
-<div class="lemma">
-Para qualquer seq&ecirc;ncia (possivelmente infinita) de algarismos, a expans&atilde;o $[0,a_{1}a_{2}\cdots]$ representa um n&uacute;mero real entre zero e um.
-</div>
-<div class="proof">
-Precisa provar que a s&eacute;rie<br>
+A express&atilde;o acima mostra que cada fra&ccedil;&atilde;o decimal n&atilde;o negativa pode ser escrita como a soma de um n&uacute;mero natural e uma fra&ccedil;&atilde;o decimal na forma $[0,a_{-1}a_{-2}\cdots]$. Como os n&uacute;meros naturais foram tratados na unidade anterior, aqui vamos focar apenas fra&ccedil;&otilde;es na forma $[0,a_{-1}a_{-2}\cdots]$. Uma fra&ccedil;&atilde;o natural desta forma pode ser finita ou infinita. Quando a sequ&ecirc;ncia de algarismos depois da v&iacute;rgula &eacute; infinita, ent&atilde;o a fra&ccedil;&atilde;o &eacute; infinita; caso contr&aacute;rio a fra&ccedil;&atilde;o &eacute; finita. Uma fra&ccedil;&atilde;o finita pode ser escrita na forma $[0,a_{-1}a_{-2}\cdots a_{-n}]$. Note que uma fra&ccedil;&atilde;o finita pode ser considerada infinita adicionando uma sequ&ecirc;ncia infinita de zeros e assim n&oacute;s frequentemente assumimos que as fra&ccedil;&otilde;es analizadas s&atilde;o infinitas.</p>
+<div class="lemma">Para qualquer seq&ecirc;ncia (possivelmente infinita) de algarismos, a expans&atilde;o $[0,a_{1}a_{2}\cdots]$ representa um n&uacute;mero real entre zero e um.</div>
+<div class="proof">Precisa provar que a s&eacute;rie<br>
 \[<br>
 \sum_{k=1}^\infty a_{k}10^{-k}<br>
 \]<br>
@@ -173,8 +192,7 @@ Precisa provar que a s&eacute;rie<br>
 \[<br>
 \sum_{k=1}^\infty a_{k}10^{-k}\leq\sum_{k=1}^\infty 9\cdot 10^{-k}=\frac 9{10}\sum_{k=0}^\infty 10^{-k}=\frac 9{10}\frac 1{1-1/10}=1.<br>
 \]<br>
-Como os termos da s&eacute;rie na &uacute;ltima linha s&atilde;o n&atilde;o negativas, a conta acima mostra que a s&eacute;rie que corresponde &agrave; expans&atilde;o $[0,a_{1}a_{2}\cdots]$ &eacute; convergente e converge a um n&uacute;mero n&atilde;o negativo menor ou igual a $1$.
-</div>
+Como os termos da s&eacute;rie na &uacute;ltima linha s&atilde;o n&atilde;o negativas, a conta acima mostra que a s&eacute;rie que corresponde &agrave; expans&atilde;o $[0,a_{1}a_{2}\cdots]$ &eacute; convergente e converge a um n&uacute;mero n&atilde;o negativo menor ou igual a $1$.</div>
 <p>Note que o mesmo n&uacute;mero real pode ser escrito de maneiras distintas como fra&ccedil;&atilde;o decimal. Por exemplo, $1,00\cdots=0,99\cdots$.</p>
 <p>Considere a fra&ccedil;&atilde;o decimal $[0,a_{1}a_{2}\cdots]$. Esta fra&ccedil;&atilde;o chama-se peri&oacute;dica se existem $m\geq 0$ e $k\geq 1$ tais que $a_{r+k}=a_r$ para todo $k&gt; m$. A sequ&ecirc;ncia $[a_1\cdots a_m]$ chama-se do pr&eacute;-per&iacute;odo, enquanto a seq&ecirc;ncia $[a_{m+1}\cdots a_{m+r}]$ chama-se do per&iacute;odo da fra&ccedil;&atilde;o.</p>
 <p>Uma fra&ccedil;&atilde;o peri&oacute;dica com pr&eacute;-per&iacute;odo $[a_1\cdots a_m]$ e per&iacute;odo $[a_{m+1}\cdots a_{m+r}]$ tem a forma<br>
@@ -190,14 +208,13 @@ Por exemplo<br>
 1/44=0,02272727\cdots=0,02\overline{27}.<br>
 \]</p>
 <div class="teorema">
-As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.
+<p>As seguintes afirma&ccedil;&otilde;es s&atilde;o verdadeiras.</p>
 <ol>
 <li>Toda expans&atilde;o decimal peri&oacute;dica representa um n&uacute;mero racional.</li>
-<li>Se $a/b$ &eacute; um n&uacute;mero racional, ent&atilde;o tal que $0&lt;a&lt;b$, ent&atilde;o sua expans&atilde;o racional &eacute; peri&oacute;dica
-</li></ol>
+<li>Se $a/b$ &eacute; um n&uacute;mero racional, ent&atilde;o tal que $0&lt;a&lt;b$, ent&atilde;o sua expans&atilde;o racional &eacute; peri&oacute;dica</li>
+</ol>
 </div>
-<div class="proof">
-1. Considere a expans&atilde;o decimal<br>
+<div class="proof">1. Considere a expans&atilde;o decimal<br>
 \[<br>
 [0,a_1a_2\cdots]=[0,a_1a_2\cdots a_m\overline{a_{m+1}\cdots a_{m+r}}]<br>
 \]<br>
@@ -209,8 +226,7 @@ Tem-se que<br>
 \begin{align*}<br>
 a&amp;=\sum_{k=1}^\infty a_k10^{-k}=\frac u{10^{m}}+\sum_{k=1}^\infty \frac{v}{10^{m+kr}}\\&amp;=\frac u{10^{m}}+\frac{v}{10^{m+r}}\sum_{k=0}^\infty \frac{1}{10^{r}}=\frac{u}{10^{m}}+\frac{v}{10^{m+r}}\frac{1}{1-10^{-r}}.<br>
 \end{align*}<br>
-Ora note apenas que o n&uacute;mero no lado direito da &uacute;ltima equa&ccedil;&atilde;o &eacute; um n&uacute;mero racional.
-<p>2. Assuma que $0&lt; a&lt;b$ e considere o racional $q=a/b$. Vamos determinar a sequ&ecirc;ncia de algarismos para $q$. Seja $a_0=a$, $q_0=0$ e escreva, usando o Teorema de Divis&atilde;o de Euclides,<br>
+Ora note apenas que o n&uacute;mero no lado direito da &uacute;ltima equa&ccedil;&atilde;o &eacute; um n&uacute;mero racional.2. Assuma que $0&lt; a&lt;b$ e considere o racional $q=a/b$. Vamos determinar a sequ&ecirc;ncia de algarismos para $q$. Seja $a_0=a$, $q_0=0$ e escreva, usando o Teorema de Divis&atilde;o de Euclides,<br>
 \[<br>
 10a_0=q_1b+a_1\quad\mbox{onde}\quad 0\leq a_1&lt;b.<br>
 \]<br>
@@ -218,8 +234,7 @@ Assuma que as sequ&ecirc;ncias $a_0,\ldots,a_k$ e $q_0,\ldots,q_k$ s&atilde;o de
 \[<br>
 10a_k=q_{k+1}b+a_{k+1}\quad\mbox{onde}\quad 0\leq a_{k+1}&lt;b<br>
 \]<br>
-usando o Teorema de Divis&atilde;o de Euclides.</p>
-<p>Afirmamos que a expans&atilde;o decimal de $a/b$ &eacute; $[0,q_1q_2\cdots]$. Para isso n&oacute;s precisamos verificar que<br>
+usando o Teorema de Divis&atilde;o de Euclides.Afirmamos que a expans&atilde;o decimal de $a/b$ &eacute; $[0,q_1q_2\cdots]$. Para isso n&oacute;s precisamos verificar que<br>
 \[<br>
 \sum_{k=1}^\infty q_k10^{-k}\to \frac ab.<br>
 \]<br>
@@ -241,7 +256,7 @@ e assim<br>
 \[<br>
 \frac ab-[0,q_1\cdots q_k]=\frac{a_k}{10^kb}&lt;\frac{b}{10^kb}=10^{-k}.<br>
 \]<br>
-Isso implica que a sequ&ecirc;ncia $[0,q_1\cdots q_k]$ converge para $a/b$ quando $k\to\infty$ e ent&atilde;o a expans&atilde;o do n&uacute;mero racional $a/b$ &eacute; $[0,q_1q_2\cdots]$.</p>
+Isso implica que a sequ&ecirc;ncia $[0,q_1\cdots q_k]$ converge para $a/b$ quando $k\to\infty$ e ent&atilde;o a expans&atilde;o do n&uacute;mero racional $a/b$ &eacute; $[0,q_1q_2\cdots]$.
 <p>Finalmente precisamos provar que a expans&atilde;o $[0,q_1q_2\cdots]$ de $a/b$ &eacute; peri&oacute;dica. Para isso, note que a sequ&ecirc;ncia $a_1,a_2,\ldots$ &eacute; uma seq&ecirc;ncia de n&uacute;meros naturais com $a_i\in\{0,\ldots,b-1\}$ para todo $i$. Ent&atilde;o vai existir $m$ e $r$ tal que $a_{m+r}=a_m$. Logo<br>
 \[<br>
 q_{m+r+1}b+a_{m+r+1}=10a_{m+r}=10a_m=q_{m+1}b+a_{m+1}.<br>
@@ -250,11 +265,9 @@ Obtemos pela unicidade na Teorema de Divis&atilde;o de Euclides que $q_{m+r+1}=q
 \[<br>
 q_{k+r}=q_{k}\quad e \quad a_{k+r}=a_{k}.<br>
 \]<br>
-para todo $k\geq m+1$. Ou seja, a expans&atilde;o do n&uacute;mero $a/b$ &eacute; peri&oacute;doca.
-</p></div>
-<div class="example">
-A demonstra&ccedil;&atilde;o do resultado anterior d&aacute; um algoritmo para calcular a expans&atilde;o de um n&uacute;mero natural $a/b$ onde $0&lt;a&lt;b$. Considere por exemplo o racional $1/54$. Seguindo a demonstra&ccedil;&atilde;o do teorema para $a=1$ e $b=54$, fazemos a seguinte conta.
-<p>\begin{align*}<br>
+para todo $k\geq m+1$. Ou seja, a expans&atilde;o do n&uacute;mero $a/b$ &eacute; peri&oacute;doca.</p>
+</div>
+<div class="example">A demonstra&ccedil;&atilde;o do resultado anterior d&aacute; um algoritmo para calcular a expans&atilde;o de um n&uacute;mero natural $a/b$ onde $0&lt;a&lt;b$. Considere por exemplo o racional $1/54$. Seguindo a demonstra&ccedil;&atilde;o do teorema para $a=1$ e $b=54$, fazemos a seguinte conta.\begin{align*}<br>
 10a=10=0\cdot 54+10\quad &amp;\Rightarrow\quad q_1=0\mbox{ e }a_1=10\\<br>
 10a_1=100=1\cdot 54+46\quad &amp;\Rightarrow\quad q_2=1\mbox{ e }a_2=46\\<br>
 10a_2=460=8\cdot 54+28\quad &amp;\Rightarrow\quad q_3=8\mbox{ e }a_3=28\\<br>
@@ -264,8 +277,7 @@ A demonstra&ccedil;&atilde;o do resultado anterior d&aacute; um algoritmo para c
 Observamos que $a_4=a_1$ como foi previsto na demonstra&ccedil;&atilde;o do teorema e a computa&ccedil;&atilde;o vai ser repretir a partir deste ponto. Obtemos ent&atilde;o que<br>
 \[<br>
 \frac 1{54}=0,0\overline{185}.<br>
-\]
-</p></div>
+\]</div>
 <p>Obtemos tamb&eacute;m como consequ&ecirc;ncia do teorema anterior que existem n&uacute;mero irracionais no intervalo $[0,1]$. Por exemplo, considere o n&uacute;mero<br>
 \[<br>
 a=0,1010010001000010000010000001\cdots.<br>
@@ -275,8 +287,7 @@ Pelo lema anterior, $a$ &eacute; um n&uacute;mero real, mas a sua expans&atilde;
 <h3>Computa&ccedil;&atilde;o com Python</h3>
 <p>Vamos implementar o algoritmo obtido na demonstra&ccedil;&atilde;o do Teorema na linguagem Python. De fato, n&oacute;s implementamos o algoritmo em qualquer base (n&atilde;o apenas na base decimal), pois a diferen&ccedil;a &eacute; muito pequena. Pretendemos escrever uma fun&ccedil;&atilde;o que toma n&uacute;meros naturais $a$, $b$, $d$ tais que $0&lt;a&lt;b$ e $d\geq 2$ e devolve o pr&eacute;-per&iacute;odo e o per&iacute;odo da expans&atilde;o de $a/b$ na base $d$.</p>
 <div class="code">
-<pre>
-def ExpansaoDecimal( a, b, d ):
+<pre>def ExpansaoDecimal( a, b, d ):
     
     # a &eacute; menor que b
     assert a&lt;b
@@ -301,24 +312,23 @@ def ExpansaoDecimal( a, b, d ):
 </div>
 <p>Podemos usar esta fun&ccedil;&atilde;o para verificar a conta no Exemplo.</p>
 <div class="code">
-<pre>
-ExpansaoDecimal( 1, 54, 10 )
+<pre>ExpansaoDecimal( 1, 54, 10 )
 ([0], [1, 8, 5])
 </pre>
 </div>
-<p>Obtemos o mesmo resultado, nomeadamente que o pr&eacute;-per&iacute;odo de $1/54$ &eacute; $[0]$ e o per&iacute;odo &eacute; $[185]$. </p>
+<p>Obtemos o mesmo resultado, nomeadamente que o pr&eacute;-per&iacute;odo de $1/54$ &eacute; $[0]$ e o per&iacute;odo &eacute; $[185]$.</p>
 			</div>
 	<footer class="entry-footer">
 			</footer>
-
+</article>
 
 				
 			
-		
+		</main>
 	</div>
 
 
-	</article></main></div>
+	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info-wrapper clear">
@@ -330,9 +340,9 @@ ExpansaoDecimal( 1, 54, 10 )
 	</footer>
 </div>
 
-<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
-<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
-<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
-</div></body>
+</body>
 </html>

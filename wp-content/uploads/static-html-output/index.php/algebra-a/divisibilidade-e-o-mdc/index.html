@@ -8,55 +8,58 @@
 <title>Divisibilidade e o MDC &ndash; Csaba Schneider</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://github.com/WP/index.php/feed/">
-<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://github.com/WP/index.php/comments/feed/">
-<link rel="stylesheet" id="penscratch-2-reset-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-style-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
-<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="tablepress-default-css" href="https://github.com/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
-<script type="text/javascript" src="https://github.com/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
-<script type="text/javascript" src="https://github.com/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
 
 
 
-<link rel="canonical" href="https://github.com/WP/index.php/algebra-a/divisibilidade-e-o-mdc/">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/algebra-a/divisibilidade-e-o-mdc/">
 
-<link rel="alternate" type="application/json+oembed" href="https://github.com/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgithub.com%2Fschcs%2FWP%2Findex.php%2Falgebra-a%2Fdivisibilidade-e-o-mdc%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://github.com/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fgithub.com%2Fschcs%2FWP%2Findex.php%2Falgebra-a%2Fdivisibilidade-e-o-mdc%2F&amp;format=xml">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Falgebra-a%2Fdivisibilidade-e-o-mdc%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Falgebra-a%2Fdivisibilidade-e-o-mdc%2F&amp;format=xml">
 		<style type="text/css" id="wp-custom-css">
-			pre {
+			/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
 }
 
 .code {
-	border: 5px outset grey;
-	background-color: silver;
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
 	font-family: monospace;
   white-space: pre-wrap;
 	display: block;
 }
-
+*/
 .definition {
-  border: 5px outset green;
-  background-color: greenyellow;
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
 }
 
 .definition:before {
-content: "Defini&ccedil;&atilde;o. ";
+content: "Defini\00E7\00E3 o. ";
 font-weight: bold;
 font-style: normal;
 }
 
 .definition[text]:before {
-content: "Defini&ccedil;&atilde;o (" attr(text) ") ";
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
 }
 
 
 .example {
-  border: 5px outset peru;
-  background-color: khaki;
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
 }
 
 .example:before {
@@ -69,10 +72,27 @@ font-style: normal;
 content: "Exemplo (" attr(text) ") ";
 }
 
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
 
 .lemma {
-  border: 5px outset salmon;
-  background-color: moccasin;
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
 }
 
 .lemma:before {
@@ -87,8 +107,9 @@ content: "Lema (" attr(text) ") ";
 
 
 .theorem {
-  border: 5px outset hotpink;
-  background-color: lightpink;
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
 }
 
 .theorem:before {
@@ -101,31 +122,87 @@ font-style: normal;
 content: "Teorema (" attr(text) ") ";
 }
 
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
 .proof {
-  border: 5px outset green;
-  background-color: mediumspringgreen;
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
 }
 
 .proof:before {
-content: "Demonstra&ccedil;&atilde;o. ";
+content: "Demonstra\00E7\00E3 o. ";
 font-weight: bold;
 font-style: normal;
 }
 
 .proof[text]:before {
-content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
 }
 
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
 		</style>
-	</head>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
 
 <body class="page-template-default page page-id-735 page-child parent-pageid-706 no-sidebar">
-
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-							<p class="site-title"><a href="https://github.com/" rel="home">Csaba Schneider</a></p>
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
 							<p class="site-description">Universidade Federal de Minas Gerais</p>
 					</div>
 
@@ -133,9 +210,10 @@ content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
 			<button class="menu-toggle">
 				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
 				Menu			</button>
-			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://github.com/WP/index.php/publications/">Publications</a></li>
-<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://github.com/WP/index.php/ensino/">Ensino</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://github.com/WP/index.php/book/">Book</a></li>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
 </ul></div>		</nav>
 	</header>
 
@@ -150,34 +228,47 @@ content: "Demonstra&ccedil;&atilde;o (" attr(text) ") ";
 	<header class="entry-header">
 		<h1 class="entry-title">Divisibilidade e o MDC</h1>	</header>
 		<div class="entry-content">
-		<p>$\newcommand{\Z}{\mathbb Z}\newcommand{\mdc}[2]{\mbox{mdc}(#1,#2)}$Sejam $a,b\in \Z$. Dizemos que <em>$b$ divide $a$</em> ou que <em>$a$ &eacute; um m&uacute;ltiplo de $b$</em> se existe $q\in\Z$, tal que $bq=a$. Usamos a nota&ccedil;&atilde;o $b|a$ para indicar que $b$ divide $a$.</p>
-<p><strong>Exemplos.&nbsp;</strong></p>
+		<div style="color:#000000">
+<div class="definition">
+Sejam $a,b\in \Z$. Dizemos que <em>$b$ divide $a$</em> ou que <em>$a$ &eacute; um m&uacute;ltiplo de $b$</em> se existe $q\in\Z$, tal que $bq=a$. Usamos a nota&ccedil;&atilde;o $b|a$ para indicar que $b$ divide $a$.
+</div>
+<div class="exemplo">
 <ol>
 <li>$\pm a|a$ e $\pm 1|a$&nbsp;para todo inteiro $a$.</li>
 <li>$a|0$ para todo inteiro $a$, mas se $0|a$ ent&atilde;o $a=0$. Em particular $0|0$.</li>
 </ol>
-<p><strong>Lema.</strong> As seguintes propriedades s&atilde;o v&aacute;lidas.</p>
+</div>
+<div class="lemma"> As seguintes propriedades s&atilde;o v&aacute;lidas.
 <ol>
 <li>Se $a|b$ e $b|a$ ent&atilde;o $b=\pm a$.</li>
 <li>Se $a|b$ e $b|c$ ent&atilde;o $a|c$.</li>
 <li>Se $a|b$ e $a|c$ ent&atilde;o $a|(b\pm c)$.</li>
 <li>Se $a|b$ e $c$ &eacute; um inteiro ent&atilde;o $a|bc$.</li>
 </ol>
-<p><strong>Demonstra&ccedil;&atilde;o.&nbsp;</strong>Exerc&iacute;cio.</p>
-<p>Sejam $a$ e $b$ n&uacute;meros inteiros n&atilde;o simultaneamente iguais a zero. Definimos o <em>maior divisor comum de $a$ e $b$&nbsp;</em>como sendo o inteiro $d$ que satisfaz as seguintes propriedades:</p>
+</div>
+<div class="proof">Exerc&iacute;cio.
+</div>
+<div class="definition">
+Sejam $a$ e $b$ n&uacute;meros inteiros n&atilde;o simultaneamente iguais a zero. Definimos o <em>maior divisor comum de $a$ e $b$&nbsp;</em>como sendo o inteiro $d$ que satisfaz as seguintes propriedades:
 <ol>
 <li>$d\geq 0$;</li>
 <li>$d|a$ e $d|b$;</li>
 <li>se $c$ &eacute; um inteiro tal que $c|a$ e $c|b$ ent&atilde;o $c|d$.</li>
 </ol>
+</div>
 <p>N&atilde;o &eacute; imediatamente claro da defini&ccedil;&atilde;o que o maior divisor comum existe. No entanto, segue da defini&ccedil;&atilde;o que se ele existir, ent&atilde;o ele deve ser &uacute;nico. Isso porque se $d_1$ e $d_2$ s&atilde;o mdcs de $a$ e $b$, ent&atilde;o a defini&ccedil;&atilde;o implica que $d_1|d_2$ e $d_2|d_1$. Ora temos pelo lema anterior que $d_1=\pm d_2$, mas como $d_1$ e $d_2$ s&atilde;o n&atilde;o negativos, isso &eacute; poss&iacute;vel apenas quando $d_1=d_2$.</p>
 <p>O maior divisor comum de $a$ e $b$ ser&aacute; denotado por $\mdc ab$.</p>
 <p>&Eacute; claro que $\mdc ab=\mdc ba$ e que $\mdc ab=\mdc{\pm a}{\pm b}$. A defini&ccedil;&atilde;o tamb&eacute;m implica que $\mdc a0=|a|$ para todo $a\neq 0$.</p>
-<p>Se $a$ e $b$ s&atilde;o inteiros tais que $\mdc ab=1$, ent&atilde;o dizemos que $a$ e $b$ s&atilde;o <em>primos entre si</em> ou que eles s&atilde;o <em>coprimos</em>.</p>
-<p><strong>Lema.&nbsp;</strong>Sejam $a,b\in\Z$ com $b\neq 0$ e escreve $a=qb+r$ com $0\leq r&lt;|b|$ como no Teorema de Divis&atilde;o de Euclides. Ent&atilde;o $\mdc ab=\mdc br$ (assumindo que existem estes mdcs).</p>
-<p><strong>Demonstra&ccedil;&atilde;o.</strong>&nbsp;Seja $d=\mdc ab$. Afirmamos que $\mdc br=d$. Primeiro, $d\geq 0$ pela defini&ccedil;&atilde;o de mdc (propriedade 1. do mdc). Como $d=\mdc ab$, temos que $d|a$ e $d|b$. Pelo lema anterior, isto implica que $d|(a-qb)=r$. Logo $d|b$ e $d|r$ (propriedade 2. do mdc).</p>
-<p>Assuma que $c|b$ e $c|r$. Ent&atilde;o, $c|(bq+r)=a$, ent&atilde;o $c|a$ e $c|b$. Pela defini&ccedil;&atilde;o de mdc, temos que $c|d$ (propriedade 3. do mdc). Portanto $d=\mdc br$.</p>
-<p><strong>Exemplo.&nbsp;</strong>O lema anterior pode ser usado para determinar o mdc de dois n&uacute;meros naturais do modo seguinte. Sejam,. por exemplo, $a=115$ e $b=25$. Escreva<br>
+<div class="definition">
+Se $a$ e $b$ s&atilde;o inteiros tais que $\mdc ab=1$, ent&atilde;o dizemos que $a$ e $b$ s&atilde;o <em>primos entre si</em> ou que eles s&atilde;o <em>coprimos</em>.
+</div>
+<div class="lemma">Sejam $a,b\in\Z$ com $b\neq 0$ e escreve $a=qb+r$ com $0\leq r&lt;|b|$ como no Teorema de Divis&atilde;o de Euclides. Ent&atilde;o $\mdc ab=\mdc br$ (assumindo que existem estes mdcs).
+</div>
+<div class="proof">&nbsp;Seja $d=\mdc ab$. Afirmamos que $\mdc br=d$. Primeiro, $d\geq 0$ pela defini&ccedil;&atilde;o de mdc (propriedade 1. do mdc). Como $d=\mdc ab$, temos que $d|a$ e $d|b$. Pelo lema anterior, isto implica que $d|(a-qb)=r$. Logo $d|b$ e $d|r$ (propriedade 2. do mdc).
+<p>Assuma que $c|b$ e $c|r$. Ent&atilde;o, $c|(bq+r)=a$, ent&atilde;o $c|a$ e $c|b$. Pela defini&ccedil;&atilde;o de mdc, temos que $c|d$ (propriedade 3. do mdc). Portanto $d=\mdc br$.
+</p></div>
+<div class="example">
+O lema anterior pode ser usado para determinar o mdc de dois n&uacute;meros naturais do modo seguinte. Sejam,. por exemplo, $a=115$ e $b=25$. Escreva<br>
 \[<br>
 115=4\cdot 25+10<br>
 \]<br>
@@ -194,7 +285,9 @@ que implica que $\mdc{10}5=\mdc 50=5$. Logo<br>
 \[<br>
 \mdc {115}{25}=\mdc{25}{10}=\mdc{10}{5}=\mdc 50=5.<br>
 \]<br>
-Esta conta segue essencialmente o Algoritmo de Eucl&iacute;des que ser&aacute; o conte&uacute;do da semana seguinte.</p>
+Esta conta segue essencialmente o Algoritmo de Eucl&iacute;des que ser&aacute; o conte&uacute;do da semana seguinte.
+</div>
+</div>
 			</div>
 	<footer class="entry-footer">
 			</footer>
@@ -218,9 +311,9 @@ Esta conta segue essencialmente o Algoritmo de Eucl&iacute;des que ser&aacute; o
 	</footer>
 </div>
 
-<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
-<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
-<script type="text/javascript" src="https://github.com/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
 
 </body>
 </html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Ra&iacute;zes e divisibilidade &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/raizes-e-divisibilidade/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fraizes-e-divisibilidade%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fraizes-e-divisibilidade%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1590 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1590" class="post-1590 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Ra&iacute;zes e divisibilidade</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+Seja $\F$ um corpo. Lembre que $\alpha\in\F$ &eacute; raiz de um polin&ocirc;mio $f(x)\in\F[x]$ se $f(\alpha)=0$.
+<div class="lemma">
+Seja $f(x)\in\F[x]\setminus\{0\}$ um polin&ocirc;mio e $\alpha\in\F$. Ent&atilde;o existe um polin&ocirc;mio $q(x)\in\F[x]$ tal que<br>
+\[<br>
+f(x)=q(x)(x-\alpha)+f(\alpha).<br>
+\]<br>
+Em particular, $x-\alpha\mid f(x)$ se e somente se $f(\alpha)=0$ (ou seja, $\alpha$ &eacute; raiz do polin&ocirc;mio $f(x)$).
+</div>
+<div class="proof">
+Use o Teorema de Divis&atilde;o de Euclides para escrever<br>
+\[<br>
+f(x)=q(x)(x-\alpha)+\beta<br>
+\]<br>
+com $\beta\in\F$. Substituindo $\alpha$ na equa&ccedil;&atilde;o anterior, obtemos que<br>
+\[<br>
+f(\alpha)=\beta.<br>
+\]<br>
+Para provar a segunda afirma&ccedil;&atilde;o, observe que $\alpha$ &eacute; raiz do polin&ocirc;mio $f(x)$ se e somente se $f(\alpha)=0$ e isso vale se e somente se $f(x)=q(x)(x-\alpha)$ com algum $q(x)\in\F[x]$. Esta &uacute;ltima afirma&ccedil;&atilde;o &eacute; equivalente a dizer que $x-\alpha\mid f(x)$.
+</div>
+<div class="corollary">
+Seja $f(x)\in\F[x]\setminus\{0\}$ um polin&ocirc;mio. O n&uacute;mero das ra&iacute;zes de $f(x)$ em $\F$ &eacute; menor ou igual a $\grau{f(x)}$.
+</div>
+<div class="proof">
+Fazemos indu&ccedil;&atilde;o pelo $\grau{f(x)}$. Se $\grau{f(x)}=0$, ent&atilde;o $f(x)=\alpha$ com $\alpha\in\F\setminus\{0\}$ e $f(x)$ n&atilde;o possui ra&iacute;zes em $\F$ e assim a afirma&ccedil;&atilde;o &eacute; verdadeira. Assuma que um polin&ocirc;mio de $\F[x]$ de grau $k-1$ possui no m&aacute;ximo $k-1$ ra&iacute;zes em $\F$ e seja $f(x)\in\F[x]$ com grau $k$. Se $f(x)$ n&atilde;o possui ra&iacute;zes em $\F$ ent&atilde;o a afirma&ccedil;&atilde;o do corol&aacute;rio &eacute; verdadeira para $f(x)$. Assuma que $\alpha\in\F$ &eacute; raiz de $f(x)$. Ent&atilde;o $f(x)=(x-\alpha)g(x)$ com $\grau{g(x)}=k-1$. Se $\beta\in\F\setminus\{\alpha\}$ &eacute; raiz de $f(x)$, ent&atilde;o<br>
+\[<br>
+0=f(\beta)=(\beta-\alpha)g(\beta)<br>
+\]<br>
+e, como $\beta-\alpha\neq 0$, $g(\beta)=0$. Logo $\beta$ precisa ser raiz de $g(x)$. Obtemos assim que as raizes de $f(x)$ s&atilde;o $\alpha$ e as ra&iacute;zes de $g(x)$. Pela hip&oacute;tese de indu&ccedil;&atilde;o, $g(x)$ tem no m&aacute;ximo $k-1$ ra&iacute;zes, portanto $f(x)$ tem no m&aacute;ximo $k$ ra&iacute;zes.
+</div>
+<div class="theorem"> (O Teorema fundamental da &Aacute;lgebra)<br>
+Seja $f(x)\in\C[x]$ um polin&ocirc;mio de grau maior ou igual a $1$. Ent&atilde;o $f(x)$ possui raiz em $\C$.
+</div>
+<div class="theorem">
+Seja $f(x)\in\C[x]$ um polin&ocirc;mio m&ocirc;nico de grau $k\geq 1$. Ent&atilde;o existem $\alpha_1,\ldots,\alpha_k\in\C$ tais que<br>
+\[<br>
+f(x)=(x-\alpha_1)(x-\alpha_2)\cdots(x-\alpha_k).<br>
+\]
+</div>
+<div class="proof">
+Vamos fazer indu&ccedil;&atilde;o em $k$. Se $k=1$, ent&atilde;o $f(x)=x-\alpha$ ($f(x)$ &eacute; m&ocirc;nico), ent&atilde;o a afirma&ccedil;&atilde;o est&aacute; verdadeira. Assuma que a afirma&ccedil;&atilde;o est&aacute; v&aacute;lida para polin&ocirc;mios de grau menor que $k$ e seja $\grau{f(x)}=k$. Pelo Teorema Fundamental da &Aacute;lgebra, $f(x)$ possui raiz $\alpha_k\in\C$ e assim $x-\alpha_k\mid f(x)$ pelo lema anterior. Escreva<br>
+\[<br>
+f(x)=(x-\alpha_k)q(x)<br>
+\]<br>
+e note que $q(x)$ &eacute; m&ocirc;nico e $\grau{q(x)}=k-1$. Pela hip&oacute;tese da indu&ccedil;&atilde;o, existem $\alpha_1,\ldots,\alpha_{k-1}\in\C$ tais que<br>
+\[<br>
+q(x)=(x-\alpha_1)\cdots (x-\alpha_{k-1}).<br>
+\]<br>
+Portanto<br>
+\[<br>
+f(x)=q(x)(x-\alpha_k)=(x-\alpha_1)\cdots(x-\alpha_{k-1})(x-\alpha_k).<br>
+\]
+</div>
+<p>Na decomposi&ccedil;&atilde;o dada pelo teorema anterior os escalares $\alpha_1,\ldots,\alpha_k$ s&atilde;o as ra&iacute;zes complexas de $f(x)$ contadas com multiplicidade. Isso quer dizer que uma raiz pode ocorrer v&aacute;rias vezes nesta lista. </p>
+<div class="example">
+Considere o polin&ocirc;mio<br>
+\[<br>
+f(x)=x^{n-1}+x^{n-2}+\cdots+x+1\in\C[x]<br>
+\]<br>
+com $n\geq 2$. Note que $x^n-1=(x-1)f(x)$ e assim as ra&iacute;zes de  $f(x)$ s&atilde;o os n&uacute;meros $\alpha\in\C\setminus\{1\}$ tais que $\alpha^n=1$. Estes n&uacute;meros s&atilde;o $\alpha_1,\ldots,\alpha_{n-1}$ onde<br>
+\[<br>
+\alpha_k=\exp(2k\pi i/n)=\cos(2k\pi/n)+i\,\mbox{sen}(2k\pi/n).<br>
+\]<br>
+Assim<br>
+\begin{align*}<br>
+f(x)&amp;=x^{n-1}+x^{n-2}+\cdots+x+1\\<br>
+&amp;=\prod_{k=1}^{n-1}(x-\alpha_k)\\<br>
+&amp;=\prod_{k=1}^{n-1}(x-\exp(2k\pi i/n))\\<br>
+&amp;=\prod_{k=1}^{n-1}(x-\cos(2k\pi/n)-i\,\mbox{sen}(2k\pi/n))<br>
+\end{align*}
+</div>
+<p>Lembre que se $z=a+bi\in\C$, ent&atilde;o o <strong>conjugado complexo</strong> $\overline z$ de $z$ est&aacute; definido como<br>
+\[<br>
+\overline z=a-bi.<br>
+\]</p>
+<div class="exercise">
+Demonstre para $z_1,z_2\in\C$ que 
+<ul>
+<li>$\overline{z_1+z_2}=\overline{z_1}+\overline{z_2}$;</li>
+<li>$\overline{z_1z_2}=\overline{z_1}\cdot\overline{z_2}$;</li>
+<li>$\overline{z_1}=z_1$ se e somente se $z_1\in\R$.</li>
+</ul>
+</div>
+<div class="lemma">
+Seja $f(x)\in\R[x]$ e seja $\alpha\in\C$. Se $\alpha$ raiz de $f(x)$, ent&atilde;o $\overline\alpha$ tamb&eacute;m &eacute;.
+</div>
+<div class="proof">
+Seja<br>
+\[<br>
+f(x)=\alpha_nx^n+\cdots+\alpha_1x+\alpha_0<br>
+\]<br>
+e assuma que $\alpha\in\C$ tal que $f(\alpha)=0$. Ent&atilde;o, usando o exerc&iacute;cio anterior, obtemos que<br>
+\begin{align*}<br>
+0&amp;=\overline 0=\overline{f(\alpha)}=\overline{\alpha_n\alpha^n+\cdots+\alpha_1\alpha+\alpha_0}\\&amp;=<br>
+\alpha_n\overline \alpha^n+\cdots+\alpha_1\overline \alpha+\alpha_0.<br>
+\end{align*}<br>
+Logo $f(\overline\alpha)=0$.
+</div>
+<p>Seja $f(x)=x^2+\alpha x+\beta\in\R[x]$. Lembre que o <strong>discriminante</strong> $\Delta$ de $f(x)$ &eacute; definido como $\Delta=\alpha^2-4\beta$. Ademais,  $f(x)$ possui duas ra&iacute;zes distintas em $\R$ se $\Delta &gt;  0$, $f(x)$ possui uma &uacute;nica raiz em $\R$ se $\Delta=0$ e $f(x)$ n&atilde;o possui ra&iacute;zes em $\R$ se $\Delta &lt; 0$. </p>
+<div class="theorem">
+Seja $f(x)\in\R[x]$ um polin&ocirc;mio m&ocirc;nico de grau $k\geq 1$.  Ent&atilde;o $f(x)$ pode ser escrito na forma<br>
+\[<br>
+f(x)=(x-\alpha_1)\cdots (x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r)<br>
+\]<br>
+onde $s+2r=k$, $\alpha_i,\beta_j,\gamma_\ell\in\R$ com $\beta_i^2-4\gamma_i &lt; 0$ para todo $i\in\{1,\ldots,r\}$.
+</div>
+<div class="proof">
+Usaremos indu&ccedil;&atilde;o por $k$. Se $k=1$, ent&atilde;o $f(x)=x-\alpha$ com algum $\alpha\in\R$ e o resultado est&aacute; v&aacute;lido.<br>
+Assuma que o teorema est&aacute; verdadeiro para polin&ocirc;mios $f(x)\in\F[x]$ com  $\grau{f(x)} &lt; k$ e seja $f(x)\in\R[x]$ um polin&ocirc;mio de grau $k$. Pelo Teorema Fundamental da &Aacute;lgebra, existe $\alpha\in\C$ tal que $f(\alpha)=0$. 
+<p>Se $\alpha\in\R$, ent&atilde;o $x-\alpha\mid f(x)$ e $f(x)=(x-\alpha)q(x)$ com $q(x)\in\R[x]$ m&ocirc;nico e $\grau{q(x)}=k-1$. Pela hip&oacute;tese da indu&ccedil;&atilde;o,<br>
+\[<br>
+q(x)=(x-\alpha_1)\cdots (x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r)<br>
+\]<br>
+com $s+2r=k-1$ e $\beta_i^2-4\gamma_i &lt; 0$ para todo $i$.<br>
+Assim<br>
+\begin{align*}<br>
+f(x)&amp;=(x-\alpha)q(x)\\&amp;=(x-\alpha)(x-\alpha_1)\cdots(x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r).<br>
+\end{align*}<br>
+com $\alpha_i,\beta_j,\gamma_\ell\in\R$ e $\beta_i^2-4\gamma_i &lt; 0$ para todo $i$. </p>
+<p>Se $\alpha\not\in\R$, ent&atilde;o $f(\overline\alpha)=0$ e<br>
+\[<br>
+(x-\alpha)(x-\overline\alpha)\mid f(x).<br>
+\]<br>
+Note que<br>
+\[<br>
+(x-\alpha)(x-\overline\alpha)=x^2-(\alpha+\overline\alpha)x+\alpha\overline\alpha\in\R[x],<br>
+\]<br>
+pois se $\alpha=a+bi$, ent&atilde;o $\overline\alpha=a-bi$ e assim<br>
+\begin{align*}<br>
+\alpha+\overline\alpha&amp;=2a\in\R\\<br>
+\alpha\overline\alpha&amp;=a^2+b^2\in\R.<br>
+\end{align*}<br>
+Portanto<br>
+\[<br>
+(x-\alpha)(x-\overline\alpha)=x^2+\beta+\gamma\in\R[x]<br>
+\]<br>
+com<br>
+\begin{align*}<br>
+\beta&amp;=-\alpha-\overline{\alpha}=-2a; \\<br>
+\gamma&amp;=\alpha\cdot\overline{\alpha}=a^2+b^2<br>
+\end{align*}<br>
+&eacute; um polin&ocirc;mio sem ra&iacute;zes em $\R$ e assim $\beta^2-4\gamma &lt; 0$.<br>
+Escreva $f(x)=(x^2+\beta+\gamma)q(x)$ com $q(x)\in\R[x]$ m&ocirc;nico e $\grau{g(x)}=k-2$. Pela hip&oacute;tese da indu&ccedil;&atilde;o,<br>
+\[<br>
+q(x)=(x-\alpha_1)\cdots (x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r)<br>
+\]<br>
+com $\alpha_i,\beta_i,\gamma_i\in\R$, $k-2=s+2r$ e $\beta_i^2-4\gamma_i &lt; 0 $ para todo $i\geq 1$. Ora,<br>
+\[<br>
+f(x)=(x-\alpha_1)\cdots (x-\alpha_s)(x^2+\beta_1x+\gamma_1)\cdots (x^2+\beta_rx+\gamma_r)(x^2+\beta x+\gamma)<br>
+\]<br>
+como foi afirmado.
+</p></div>
+<p>Na decomposi&ccedil;&atilde;o dada pelo teorema anterior os escalares $\alpha_1,\ldots,\alpha_s$ s&atilde;o as ra&iacute;zes reais de $f(x)$ contadas com multiplicidade. Isso quer dizer que uma raiz pode ocorrer v&aacute;rias vezes nesta lista. No caso de polin&ocirc;mios sobre $\R$, o n&uacute;mero das ra&iacute;zes de $f(x)$ pode ser menor que $\grau{f(x)}$.  </p>
+<div class="example">
+Considere o polin&ocirc;mio<br>
+\[<br>
+f(x)=x^{n-1}+x^{n-2}+\cdots+x+1\in\R[x]<br>
+\]<br>
+com $n\geq 2$. No exemplo anterior determinamos as ra&iacute;zes complexas de $f(x)$. Se $n$ for par, ent&atilde;o $f(x)$ possui uma &uacute;nica raiz real, nomeadamente o $-1$, enquanto se $n$ for &iacute;mpar, ent&atilde;o $f(x)$ n&atilde;o possui raiz real. Denotando por $\alpha_k$ a $k$-&eacute;sima raiz complexa de $f(x)$ como no exemplo anterior, temos, para $k\leq n/2$ que<br>
+\[<br>
+\overline{\alpha_k}=\alpha_{n-k}.<br>
+\]<br>
+Para $k\leq n/2$, seja<br>
+\[<br>
+\beta_k=-\alpha_k-\overline{\alpha_k}=-2\cos(2k\pi /n)<br>
+\]<br>
+e note que<br>
+\[<br>
+\alpha_k\cdot \overline{\alpha_k}=\cos^2(2k\pi /n)+\mbox{sen}^2(2k\pi /n)=1.<br>
+\]<br>
+Assim obtemos a seguinte decomposi&ccedil;&atilde;o. Se $n$ for par,<br>
+\begin{align*}<br>
+f(x)&amp;=(x+1)\prod_{k=1}^{(n-2)/2}(x^2+\beta_kx+1)\\&amp;=(x+1)\prod_{i=1}^{(n-2)/2}(x^2-2\cos(2k\pi/n)x+1);<br>
+\end{align*}<br>
+se $n$ for &iacute;mpar, ent&atilde;o<br>
+\begin{align*}<br>
+f(x)&amp;=\prod_{k=1}^{(n-1)/2}(x^2+\beta_kx+1)\\&amp;=\prod_{i=1}^{(n-1)/2}(x^2-2\cos(2k\pi/n)x+1).<br>
+\end{align*}
+</div>
+<div class="corollary">
+Um polin&ocirc;mio $f(x)\in\R[x]$ de grau &iacute;mpar possui raiz em $\R$.
+</div>
+<div class="proof">
+Se $\grau{f(x)}$ &eacute; impar, ent&atilde;o a sua decomposi&ccedil;&atilde;o dada pelo teorema anterior possui pelo menos um fator na forma $x-\alpha$ com $\alpha\in\R$ e assim $\alpha$ &eacute; raiz de $f(x)$.
+</div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

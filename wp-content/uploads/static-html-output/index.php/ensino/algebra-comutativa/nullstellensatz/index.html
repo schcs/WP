@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Nullstellensatz &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-comutativa/nullstellensatz/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-comutativa%2Fnullstellensatz%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-comutativa%2Fnullstellensatz%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1821 page-child parent-pageid-1808 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1821" class="post-1821 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Nullstellensatz</h1>	</header>
+		<div class="entry-content">
+		<div class="lemma"> Seja <span class="math inline">\(A\subseteq B\)</span> uma extens&atilde;o integral de dom&iacute;nios. Ent&atilde;o <span class="math inline">\(A\)</span> &eacute; corpo se e somente se <span class="math inline">\(B\)</span> &eacute; corpo.</div>
+<div class="proof">Assuma que <span class="math inline">\(A\)</span> &eacute; corpo e seja <span class="math inline">\(x\in B\)</span>. Ent&atilde;o <span class="math inline">\(x\)</span> &eacute; integral e existem <span class="math inline">\(\alpha_1,\ldots,\alpha_n\in A\)</span> tais que <span class="math display">\[x^n+\alpha_1x^{n-1}+\cdots+\alpha_{n-1}x+\alpha_n=0.\]</span> Como <span class="math inline">\(B\)</span> &eacute; dom&iacute;nio <span class="math inline">\(\alpha_n\neq 0\)</span>; ou seja <span class="math display">\[x(x^{n-1}+\alpha_1x^{n-2}+\cdots+\alpha_{n-1})=-\alpha_n.\]</span> Como <span class="math inline">\(A\)</span> &eacute; corpo, <span class="math inline">\(-\alpha_n\)</span> &eacute; invert&iacute;vel e assim <span class="math inline">\(x\)</span> tamb&eacute;m &eacute; invert&iacute;vel.
+<p>Agora assuma que <span class="math inline">\(B\)</span> &eacute; corpo e seja <span class="math inline">\(x\in A\)</span>. O elemento <span class="math inline">\(x\)</span> &eacute; invert&iacute;vel em <span class="math inline">\(B\)</span>, ent&atilde;o existe <span class="math inline">\(1/x\in B\)</span> que &eacute; integral sobre <span class="math inline">\(A\)</span>. Logo existem <span class="math inline">\(\alpha_1,\ldots,\alpha_n\in A\)</span> tais que <span class="math display">\[\frac 1{x^n}+\alpha_1\frac 1{x^{n-1}}+\cdots+\alpha_{n-1}\frac 1x+\alpha_n=0.\]</span> Multiplicando por <span class="math inline">\(x^{n-1}\)</span>, obtemos que <span class="math display">\[\frac 1x+\alpha_1+\alpha_2x+\cdots+\alpha_{n-1}x^{n-2}+\alpha_nx^{n-1}=0;\]</span> ou seja <span class="math inline">\(1/x\in A\)</span>.</p></div>
+<div class="theorem">(Nullstellensatz de Zariski) Seja <span class="math inline">\(\mathbb K\)</span> um corpo que &eacute; tamb&eacute;m uma <span class="math inline">\(\mathbb F\)</span>-alg&eacute;bra finitamente gerada. Ent&atilde;o <span class="math inline">\(\dim_\mathbb F\mathbb K\)</span> &eacute; finita e <span class="math inline">\(\mathbb K\)</span> &eacute; uma extens&atilde;o alg&eacute;brica de <span class="math inline">\(\mathbb F\)</span>.</div>
+<div class="proof">Pelo Teorema de Normaliza&ccedil;&atilde;o, existem <span class="math inline">\(t_1,\ldots,t_m\in \mathbb K\)</span> algebricamente independentes tais que <span class="math inline">\(\mathbb K\)</span> &eacute; finitamente gerada  sobre <span class="math inline">\(\mathbb F[t_1,\ldots,t_m]\)</span>. Como <span class="math inline">\(\mathbb K\)</span> &eacute; corpo, <span class="math inline">\(\mathbb F[t_1,\ldots,t_m]\)</span> &eacute; tamb&eacute;m corpo e <span class="math inline">\(m=0\)</span>. Logo <span class="math inline">\(\mathbb K\)</span> m&oacute;dulo finito sobre $\mathbb F$ e <span class="math inline">\(\dim_\mathbb F\mathbb K\)</span> &eacute; finita.</div>
+<div class="corollary"> Seja <span class="math inline">\(\varphi:R\to S\)</span> um morfismo de <span class="math inline">\(\mathbb F\)</span>-&aacute;lgebras finitamente geradas. Se <span class="math inline">\(\mathfrak m\)</span> &eacute; maximal em <span class="math inline">\(S\)</span>, ent&atilde;o <span class="math inline">\(\varphi^{-1}(\mathfrak m)\)</span> &eacute; maximal em <span class="math inline">\(R\)</span></div>
+<div class="proof">Seja <span class="math inline">\(\mathbb K=S/\mathfrak m\)</span> e <span class="math inline">\(\mathfrak n=\varphi^{-1}(\mathfrak m)\)</span>. Pelo Nullstellensatz de Zariski, <span class="math inline">\(\mathbb K\)</span> &eacute; uma extens&atilde;o finita de <span class="math inline">\(\mathbb F\)</span>. Al&eacute;m disso, <span class="math inline">\(\varphi\)</span> induz um morfismo injetivo <span class="math inline">\(R/\mathfrak n\to S/\mathfrak m\)</span> definido por <span class="math inline">\(r+\mathfrak n\mapsto \varphi(r)+\mathfrak m\)</span>. Logo <span class="math inline">\(R/\mathfrak n\subseteq S/\mathfrak m\)</span>. Como <span class="math inline">\(\dim_\mathbb FS/\mathfrak m\)</span> &eacute; finita, <span class="math inline">\(\dim_{\mathbb F}R/\mathfrak n\)</span> &eacute; finita e o primeiro lema implica que <span class="math inline">\(R/\mathfrak n\)</span> &eacute; um corpo. Logo <span class="math inline">\(\mathfrak n\)</span> &eacute; maximal em <span class="math inline">\(R\)</span>.</div>
+<div class="exercise">Seja <span class="math inline">\(\mathbb F[x_1,\ldots,x_n]\)</span> uma &aacute;lgebra finitamente gerada e sejam <span class="math inline">\(\alpha_1,\ldots,\alpha_n\in \mathbb F\)</span>. Mostre que <span class="math inline">\((x_1-\alpha_1,\ldots,x_n-\alpha_n)\)</span> &eacute; um ideal maximal.</div>
+<div class="theorem">Seja <span class="math inline">\(\mathbb F\)</span> algebricamente fechado e <span class="math inline">\(\mathfrak m\)</span> um ideal maximal de uma <span class="math inline">\(\mathbb F\)</span>-&aacute;lgebra <span class="math inline">\(\mathbb F[y_1,\ldots,y_n]\)</span> finitamente gerada. Ent&atilde;o existem <span class="math inline">\(\alpha_1,\ldots,\alpha_n\in\mathbb F\)</span> tais que <span class="math display">\[\mathfrak m=(x_1-\alpha_1,\ldots,x_n-\alpha_n).\]</span></div>
+<div class="proof">Como o ideal <span class="math inline">\(\mathfrak m\)</span> &eacute; maximal, <span class="math inline">\(\mathbb K=\mathbb F[x_1,\ldots,x_n]/\mathfrak m\)</span> &eacute; um corpo e &eacute; tamb&eacute;m uma &aacute;lgebra finitamente gerada sobre <span class="math inline">\(\mathbb F\)</span>. Pelo Nullstellensatz de Zariski, <span class="math inline">\(\mathbb K\)</span> &eacute; extens&atilde;o finita de <span class="math inline">\(\mathbb F\)</span> e <span class="math inline">\(\mathbb K=\mathbb F\)</span> pelo fato que <span class="math inline">\(\mathbb F\)</span> &eacute; algebricamente fechado. Ou seja, existe um morfismo <span class="math inline">\(\psi: \mathbb F[x_1,\ldots,x_n]\to\mathbb F\)</span> com n&uacute;cleo <span class="math inline">\(\mathfrak m\)</span>. Pondo <span class="math inline">\(\alpha_i=\psi(x_i)\)</span>, <span class="math inline">\(x_i-\alpha_i\in \mathfrak m\)</span>; ou seja <span class="math inline">\((x_1-\alpha_1,\ldots,x_n-\alpha_n)\subseteq \mathfrak m\)</span>. O ideal <span class="math inline">\((x_1-\alpha_1,\ldots,x_n-\alpha_n)\)</span> &eacute; maximal pelo exerc&iacute;cio anterior que implica igualdade.</div>
+<div class="theorem">Seja <span class="math inline">\(\mathbb F\)</span> um corpo algebricamente fechado e seja <span class="math inline">\(\mathfrak a\subset \mathbb F[x_1,\ldots,x_n]\)</span> um ideal pr&oacute;prio na &aacute;lgebra dos polin&ocirc;mios. Ent&atilde;o <span class="math display">\[V(\mathfrak a)=\{(\alpha_1,\ldots,\alpha_n)\in\mathbb F^n\mid f(\alpha_1,\ldots,\alpha_n)=0\mbox{ para todo }f\in \mathfrak a\}\neq \emptyset.\]</span></div>
+<div class="proof">Seja <span class="math inline">\(\mathfrak m=(x_1-\alpha_1,\ldots,x_n-\alpha_n)\)</span> um ideal maximal que cont&eacute;m <span class="math inline">\(\mathfrak a\)</span>. Ent&atilde;o <span class="math display">\[(\alpha_1,\ldots,\alpha_n)\in V(\mathfrak m)\subseteq V(\mathfrak a).\]</span></div>
+<div class="exercise">Seja <span class="math inline">\(R\)</span> um anel e considere <span class="math inline">\(R[x_1,\ldots,x_n]\)</span>. Assuma que <span class="math inline">\(f\in R[x_1]\)</span>. Ent&atilde;o <span class="math display">\[R[x_1,\ldots,x_n]/(fR[x_1,\ldots,x_n])\cong (R[x_1]/(fR[x_1])[x_2,\ldots,x_n].\]</span></div>
+<div class="theorem">Seja <span class="math inline">\(R=\mathbb F[x_1,\ldots,x_n]\)</span> um anel de polin&ocirc;mios e <span class="math inline">\(\mathfrak m\subseteq R\)</span> um ideal maximal. Ent&atilde;o <span class="math inline">\(\mathfrak m\)</span> &eacute; gerado por <span class="math inline">\(n\)</span> elementos.</div>
+<div class="proof">Indu&ccedil;&atilde;o por <span class="math inline">\(n\)</span>. Quando <span class="math inline">\(n=0\)</span>, &eacute; trivial pois o &uacute;nico ideal maximal de <span class="math inline">\(\mathbb F\)</span> &eacute; o zero. Assuma que o resultado est&aacute; verdadeiro para <span class="math inline">\(\mathbb F[x_1,\ldots,x_{n-1}]\)</span> e seja <span class="math inline">\(\mathfrak m\)</span> um ideal maximal de <span class="math inline">\(R=\mathbb F[x_1,\ldots,x_{n}]\)</span>. Seja <span class="math inline">\(\mathbb K=R/\mathfrak m\)</span>. Pelo Nullstellensatz de Zariski, <span class="math inline">\(\mathbb K\)</span> &eacute; um corpo e &eacute; uma extens&atilde;o finita de <span class="math inline">\(\mathbb F\)</span>. Seja <span class="math inline">\(R_0=\mathbb F[x_1]\)</span> e <span class="math inline">\(\mathfrak n=\mathfrak m\cap R_0\)</span>. Ent&atilde;o <span class="math inline">\(\mathfrak n=(f_1)_{R_0}\)</span> e seja <span class="math inline">\(\mathbb L=R_0/\mathfrak n\)</span>. Pelo corol&aacute;rio acima, <span class="math inline">\(\mathfrak n\)</span> &eacute; maximal. Ora <span class="math inline">\(R/(\mathfrak nR)\cong \mathbb L[x_2,\ldots,x_n]\)</span> e <span class="math inline">\(\mathfrak m/(\mathfrak nR)\)</span> &eacute; maximal em <span class="math inline">\(R/(\mathfrak nR)\cong \mathbb L[x_2,\ldots,x_n]\)</span>. Pela hip&oacute;tese da indu&ccedil;&atilde;o, <span class="math inline">\(\mathfrak m/(\mathfrak nR)\)</span> &eacute; gerado por <span class="math inline">\(f_2,\ldots,f_n\)</span> e <span class="math inline">\(\mathfrak m\)</span> &eacute; gerado por <span class="math inline">\(f_1,f_2,\ldots,f_n\)</span>.</div>
+<div class="theorem">Assuma que <span class="math inline">\(R=\mathbb F[x_1,\ldots,x_n]\)</span> &eacute; uma &aacute;lgebra finitamente gerada e <span class="math inline">\(\mathfrak a\neq R\)</span> &eacute; um ideal. Ent&atilde;o <span class="math display">\[\sqrt{(\mathfrak a)}=\bigcap_{\mathfrak a\subseteq \mathfrak m}\mathfrak m\]</span> onde a interse&ccedil;&atilde;o est&aacute; tomada para todos os ideais maximais de <span class="math inline">\(R\)</span> que cont&ecirc;m <span class="math inline">\(\mathfrak a\)</span>.</div>
+<div class="theorem">Quocientando por <span class="math inline">\(\mathfrak a\)</span>, podemos assumir que <span class="math inline">\(\mathfrak a=0\)</span>. Como <span class="math inline">\(\sqrt{0}\)</span> &eacute; o nilradical que est&aacute; contido no radical de Jacobson, temos que <span class="math inline">\(\sqrt{0}\subseteq \bigcap \mathfrak m\)</span>. Ora assuma que <span class="math inline">\(f\not\in \sqrt{0}\)</span>. Ent&atilde;o <span class="math inline">\(f\)</span> n&atilde;o &eacute; nilpotente, e a localiza&ccedil;&atilde;o <span class="math inline">\(R_f\neq 0\)</span>. Seja <span class="math inline">\(\mathfrak n\)</span> um ideal maximal de <span class="math inline">\(R_f\)</span>. Como <span class="math inline">\(R_f\cong R[X]/(1-fX)\)</span>, temos que <span class="math inline">\(R_f\)</span> &eacute; finitamente gerada como <span class="math inline">\(\mathbb F\)</span>-&aacute;lgebra e assim o corpo <span class="math inline">\(R_f/\mathfrak n\)</span> &eacute; uma extens&atilde;o finita de <span class="math inline">\(\mathbb F\)</span>. Seja <span class="math inline">\(\mathfrak m=\mathfrak n\cap R\)</span>. Pelo corol&aacute;rio em cima, <span class="math inline">\(\mathfrak m\)</span> &eacute; maximal e <span class="math inline">\(R/\mathfrak m\)</span> &eacute; um corpo. Mas <span class="math inline">\(f\)</span> &eacute; invert&iacute;vel em <span class="math inline">\(R_f\)</span> e assim <span class="math inline">\(f/1\not\in \mathfrak n\)</span> e <span class="math inline">\(f\not\in\mathfrak m\)</span>. Logo <span class="math inline">\(f\not\in\bigcap\mathfrak m\)</span>.</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

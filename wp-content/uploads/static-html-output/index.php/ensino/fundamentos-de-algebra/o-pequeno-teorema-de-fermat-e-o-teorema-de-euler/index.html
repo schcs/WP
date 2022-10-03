@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>O Pequeno Teorema de Fermat e o Teorema de Euler &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-pequeno-teorema-de-fermat-e-o-teorema-de-euler/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-pequeno-teorema-de-fermat-e-o-teorema-de-euler%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-pequeno-teorema-de-fermat-e-o-teorema-de-euler%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1435 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1435" class="post-1435 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">O Pequeno Teorema de Fermat e o Teorema de Euler</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+<div class="exercise">
+Sejam $a,b\in\Z$ e seja $p\in\N$ um primo. Mostre que<br>
+\[<br>
+(a+b)^p\equiv a^p+b^p\pmod p<br>
+\]
+</div>
+<p>A afirma&ccedil;&atilde;o do exerc&iacute;cio anterior &eacute; conhecido como o <em>sonho do calouro</em>.</p>
+<div class="theorem">
+(O Pequeno Teorema de Fermat, vers&atilde;o com congru&ecirc;ncia) Seja $p\in\N$ um primo e $a\in\Z$. Ent&atilde;o<br>
+\[<br>
+a^p\equiv a\pmod p.<br>
+\]<br>
+Al&eacute;m disso, se $p\nmid a$, ent&atilde;o<br>
+\[<br>
+a^{p-1}\equiv 1\pmod p.<br>
+\]
+</div>
+<div class="proof">
+Vamos provar a primeira afirma&ccedil;&atilde;o. Como todo inteiro negativo &eacute; congruente com algum inteiro positivo m&oacute;dulo $p$, &eacute; suficiente provar a afirma&ccedil;&atilde;o para $a\in\N$. De fato, &eacute; suficiente provar para $a\in\{0,\ldots,p-1\}$, mas isso n&atilde;o simplifica nosso argumento. A prova vai por indu&ccedil;&atilde;o em $a$. Como $0^p=0\equiv 0\pmod p$, a afirma&ccedil;&atilde;o &eacute; verdadeira para $a=0$. Assuma que a afirma&ccedil;&atilde;o para algum $a$ e use o exerc&iacute;cio anterior para obter que<br>
+\[<br>
+(a+1)^p\equiv a^p+1^p=a+1\pmod p.<br>
+\] 
+<p>Agora a segunda afirma&ccedil;&atilde;o. Se $p\nmid a$, ent&atilde;o $a$ possui inverso m&oacute;dulo $p$. Multiplicando a congru&ecirc;ncia $a^p\equiv a\pmod p$ pelo inverso de $a$, obtemos que $a^{p-1}\equiv 1\pmod p$.
+</p></div>
+<p>Uma forma alternativa do Pequeno Teorema de Fermat usando $\Z_n$ &eacute; a seguinte.</p>
+<div class="theorem"> (Pequeno Teorema de Fermat, vers&atilde;o $\Z_n$). Seja $p\in\N$ primo e $\overline a\in\Z_n$. Ent&atilde;o<br>
+\[<br>
+\overline a^p=\overline a.<br>
+\]<br>
+Al&eacute;m disso, se $\overline a\neq\overline 0$, ent&atilde;o<br>
+\[<br>
+\overline a^{p-1}= \overline 1.<br>
+\]
+</div>
+<div class="corollary">
+Seja $p\in\N$ primo e $a\in\Z$ tal que $p\nmid a$. Ent&atilde;o $a^{p-2}$ &eacute; um inverso de $a$ m&oacute;dulo $p$. Equivalentemente<br>
+\[<br>
+\overline a^{-1}=\overline a^{p-2}.<br>
+\]
+</div>
+<div class="proof">
+O Pequeno Teorema de Fermat implica que<br>
+\[<br>
+1\equiv a^{p-1}=a\cdot a^{p-2}.<br>
+\]<br>
+Ora a defini&ccedil;&atilde;o do inverso modular implica que $a^{p-2}$ &eacute; um inverso de $a$ m&oacute;dulo $p$. A segunda afirma&ccedil;&atilde;o segue imediatamente da primeira.
+</div>
+<div class="exercise">
+Seja $n\in\N$ e seja<br>
+\[<br>
+\Z_n^*=\{\overline a\in\Z_n\mid\mbox{$\overline a$ &eacute; invert&iacute;vel}\}.<br>
+\]<br>
+Demonstre as seguintes propriedades de $\Z_n^*$:
+<ul>
+<li>$\overline 1,\overline{-1}\in\Z_n^*$, mas $\overline 0\not\in\Z_n^*$;</li>
+<li>$\Z_n^*$ &eacute; fechado para a multiplica&ccedil;&atilde;o; ou seja, se $\overline a,\overline b\in\Z_n^*$ ent&atilde;o $\overline a\overline b\in\Z_n^*$;</li>
+<li>$|\Z_n^*|=\varphi(n)$.</li>
+</ul>
+</div>
+<div class="exercise">
+Usando a nota&ccedil;&atilde;o do exerc&iacute;cio anterior, para $\overline a\in\Z_n$ defina<br>
+\[<br>
+\mu_{\overline a}:\Z_n\to \Z_n,\quad \mu_{\overline a}(\overline b)=\overline a\overline b.<br>
+\]<br>
+Mostre que as seguinte afirma&ccedil;&otilde;es s&atilde;o equivalentes:
+<ul>
+<li>$\mu_{\overline a}$ &eacute; injetiva;</li>
+<li>$\mu_{\overline a}$ &eacute; sobrejetiva;</li>
+<li>$\mu_{\overline a}$ &eacute; bijetiva;</li>
+<li>$\overline a\in\Z_n^*$.</li>
+</ul>
+</div>
+<div class="theorem"> (O Teorema de Euler.) Seja $n\in\N$ e $a\in\Z$ tal que $\mdc an=1$. Ent&atilde;o<br>
+\[<br>
+a^{\varphi(n)}\equiv 1\pmod n.<br>
+\]<br>
+Equivalentemente<br>
+\[<br>
+\overline a^{\varphi(n)}=\overline 1.<br>
+\]
+</div>
+<div class="proof">
+As duas afirma&ccedil;&otilde;es s&atilde;o claramente equivalentes e desta vez n&oacute;s vamos provar a segunda.<br>
+Usando o exerc&iacute;cio imediatamente anterior a esse teorema, assuma que<br>
+\[<br>
+\Z_n^*=\{\overline a_1,\overline a_2,\ldots,\overline a_{\varphi(n)}\}.<br>
+\]<br>
+Note que $\overline a\in\Z_n^*$, pois $\mdc an=1$. Considere o conjunto<br>
+\[<br>
+\overline a\Z_n^*=\{\overline a\overline a_1,\overline a\overline a_2,\ldots,\overline a\overline a_{\varphi(n)}\}<br>
+\]<br>
+Note que todo elemento de $\overline a\Z_n^*$ est&aacute; contido em $\Z_n^*$ (exerc&iacute;cio anterior) e se $i\neq j$, ent&atilde;o $\overline a\overline a_i\neq \overline a\overline a_j$. Portanto $\overline a\Z_n^*=\Z_n^*$. Isso quer dizer que multiplicando os elementos de $\Z_n^*$ e os elementos de $\overline a \Z_n^*$ n&oacute;s obtemos o mesmo elemento de $\Z_n$. De fato<br>
+\[<br>
+\prod_{i=1}^{\varphi(n)}{\overline a_i}=\prod_{i=1}^{\varphi(n)}{\overline a\overline a_i}=\overline a^{\varphi(n)}\prod_{i=1}^{\varphi(n)}{\overline a_i}.<br>
+\]<br>
+Ora, $\prod {\overline a_i}$ &eacute; um elemento invert&iacute;vel (primeiro exerc&iacute;cio) e podemos multiplicar os dois lados da &uacute;ltima equa&ccedil;&atilde;o acima com seu inverso. Fazendo isso, obtemos que<br>
+\[<br>
+\overline 1=\overline a^{\varphi(n)}.<br>
+\]
+</div>
+<p>Note que o Teorema de Euler implica o Pequeno Teorema de Fermat (tomando $n=p$ primo e observando que $\varphi(p)=p-1$), mas n&oacute;s decidimos deduzir o PTF de fatos mais elementares.</p>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+
+
+				
+			
+		
+	</div>
+
+
+	</article></main></div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</div></body>
+</html>

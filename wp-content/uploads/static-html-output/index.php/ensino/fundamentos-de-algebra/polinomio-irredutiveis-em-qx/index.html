@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Polin&ocirc;mios em $\Q[x]$. Parte I: O Lema de Gauss &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/polinomio-irredutiveis-em-qx/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fpolinomio-irredutiveis-em-qx%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fpolinomio-irredutiveis-em-qx%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1655 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1655" class="post-1655 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Polin&ocirc;mios em $\Q[x]$. Parte I: O Lema de Gauss</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+Polin&ocirc;mios irredut&iacute;veis t&ecirc;m descri&ccedil;&atilde;o muito simples em $\C[x]$ e em $\R[x]$. A situa&ccedil;&atilde;o &eacute; bem mais complicada em $\Q[x]$. Assuma que $f(x)\in\Q[x]$. Ent&atilde;o $f(x)$ pode ser escrito como<br>
+\[<br>
+f(x)=\frac{a_n}{b_n} x^n+\cdots +\frac{a_1}{b_1}x+\frac{a_0}{b_0}<br>
+\]<br>
+onde $a_i,b_j\in\Z$.<br>
+Multiplicando $f(x)$ por um m&uacute;ltiplo comum dos denominadores, obtemos um polin&ocirc;mio<br>
+\[<br>
+f_1(x)=c_nx^n+\cdots+c_1x+c_0\in\Z[x].<br>
+\]<br>
+Al&eacute;m disso, como $f_1(x)$ foi obtido como um m&uacute;ltiplo de $f(x)$ por um constante n&atilde;o nulo, temos que $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$ se e somente se $f_1(x)$ &eacute; irredut&iacute;vel em $\Q[x]$. Portanto, quando consideramos a quest&atilde;o da irredutibilidade de um  polin&ocirc;mio $f(x)\in\Q[x]$, podemos assumir sem perder a generalidade que $f(x)\in\Z[x]$.
+<p>Dados $a_1,\ldots,a_k\in\Z$ n&atilde;o simultaneamente zero com $k\geq 2$, ent&atilde;o o MDC dos n&uacute;meros $a_i$ &eacute; definido como o n&uacute;mero $d$ que satisfaz as propriedades que </p>
+<ul>
+<li>$d\geq 0$;</li>
+<li>$d\mid a_i$ para todo $i\in\{1,\ldots,k\}$;</li>
+<li>Se $c\in\Z$ tal que $c\mid a_i$ para todo $i$, ent&atilde;o $c\mid d$.
+</li></ul>
+<p>Pode-se monstrar como no caso do $\mdc ab$ que o MDC de $a_1,\ldots,a_k$ existe unicamente e assim pode ser escrito como $\mbox{mdc}(a_1,\ldots,a_k)$. Al&eacute;m disso, para $k\geq 3$, vale que<br>
+\[<br>
+\mbox{mdc}(a_1,\ldots,a_k)=\mbox{mdc}(\mbox{mdc}(a_1,\ldots,a_{k-1}),a_k).<br>
+\]</p>
+<p>O $\mbox{mmc}(a_1,\ldots,a_k)$ pode ser definido de modo an&aacute;logo.</p>
+<div class="definition">
+Seja $f(x)=a_nx^n+\cdots+a_1x+a_0\in\Z[x]\setminus\{0\}$. O <strong>conte&uacute;do</strong> de $f(x)$ &eacute; definido como $\mbox{mdc}(a_n,\ldots,a_1,a_0)$. O polin&ocirc;mio $f(x)$ &eacute; dito <strong>primitivo</strong> se seu conte&uacute;do &eacute; igual a $1$.
+</div>
+<div class="example">
+O conte&uacute;do do polin&ocirc;mio $2x^2+4x-2\in\Z[x]$ &eacute; $2$, ent&atilde;o ele n&atilde;o &eacute; primitivo. O conte&uacute;do do polin&ocirc;mio $2x^3-4x^2-1\in\Z[x]$ &eacute; $1$, ent&atilde;o ele &eacute; primitivo.
+</div>
+<p>Se $f(x)\in\Z[x]$ e $\alpha\in\Z$ &eacute; seu conte&uacute;do, ent&atilde;o $f(x)=\alpha f_0(x)$ onde $f_0(x)\in\Z[x]$ &eacute; um polin&ocirc;mio primitivo. Por exemplo, $2x^2+4x-2=2(x^2+2x-1)$ onde $x^2+2x-1$ &eacute; primitivo. </p>
+<div class="definition">
+Seja<br>
+\[<br>
+f(x)=a_nx^n+\cdots+a_1x+a_0\in\Z[x]<br>
+\]<br>
+e $p\in\N$ um primo. Definimos a redu&ccedil;&atilde;o $\overline{f(x)}$ de $f(x)$ m&oacute;dulo $p$ como o polin&ocirc;mio<br>
+\[<br>
+\overline{f(x)}=\overline{a_n}x^n+\cdots+\overline{a_1}x+\overline{a_0}\in\Z_p[x]<br>
+\]<br>
+onde $\overline{a_i}\in\Z_p$ &eacute; a classe residual que cont&eacute;m $a_i$.
+</div>
+<div class="example">
+A redu&ccedil;&atilde;o do polin&ocirc;mio $10x^2+7x-3$ m&oacute;dulo $5$ &eacute; $\overline 2x+\overline 2\in\Z_5[x]$.<br>
+Note que a redu&ccedil;&atilde;o de um polin&ocirc;mio $a_nx^n+\cdots+a_1x+a_0$ m&oacute;dulo $p$ &eacute; $0$ se e somente se $p\mid a_i$ para todo $i$.
+</div>
+<div class="exercise">
+Sejam $f(x),g(x)\in\Z[x]$ e $p$ um primo. Mostre para os polin&ocirc;mios reduzidos m&oacute;dulo $p$ que<br>
+\begin{align*}<br>
+\overline{f(x)+g(x)}&amp;=\overline{f(x)}+\overline{g(x)}\\<br>
+\overline{f(x)g(x)}&amp;=\overline{f(x)}\cdot\overline{g(x)}\\<br>
+\end{align*}
+</div>
+<div class="exercise">
+Seja $f(x)\in\Z[x]$ um polin&ocirc;mio primitivo e redut&iacute;vel (em $\Z[x]$) e seja $p$ um primo. Assuma que a redu&ccedil;&atilde;o $\overline{f(x)}$ m&oacute;dulo $p$ tem o mesmo grau que $f(x)$. Mostre que $\overline{f(x)}$ &eacute; redut&iacute;vel em $\Z_p[x]$.
+</div>
+<div class="lemma">
+Sejam $f(x),g(x)\in\Z[x]$ polin&ocirc;mios primitivos. Ent&atilde;o $f(x)g(x)$ &eacute; primitivo.
+</div>
+<div class="proof">
+Seja $h(x)=f(x)g(x)$ e assuma que $h(x)$ n&atilde;o &eacute; primitivo. Ent&atilde;o existe um primo $p$ tal que $p$ divide todos os coeficientes de $h(x)$. Sejam $\overline{f(x)}$, $\overline{g(x)}$, $\overline{h(x)}$ as redu&ccedil;&otilde;es de $f(x)$, $g(x)$ e $h(x)$, respetivamente, m&oacute;dulo $p$. A frase anterior implica que $\overline{h(x)}=0$ e segue do exerc&iacute;cio anterior que<br>
+\[<br>
+0=\overline{h(x)}=\overline{f(x)}\cdot \overline{g(x)}\in\Z_p[x].<br>
+\]<br>
+Como $\Z_p[x]$ &eacute; um dom&iacute;nio, temos que $\overline{f(x)}=0$ ou $\overline{g(x)}=0$; ou seja $p$ divide os coeficientes de $f(x)$ ou $p$ divide os coeficientes de $g(x)$. Mas isso implica que $f(x)$ n&atilde;o &eacute; primitivo ou $g(x)$ n&atilde;o &eacute; primitivo que contradiz &agrave;s suposi&ccedil;&otilde;es do lema.
+</div>
+<p>Dado um polin&ocirc;mio primitivo $f(x)\in\Z[x]$, nos perguntamos se $f(x)$ &eacute; redut&iacute;vel em $\Q[x]$ ou em $\Z[x]$. Se $f(x)$ &eacute; redut&iacute;vel em $\Z[x]$, ent&atilde;o ele &eacute; claramente redut&iacute;vel em $\Q[x]$. O caso contr&aacute;rio n&atilde;o &eacute; t&atilde;o &oacute;bvio, mas segue do seguinte resultado conhecido como o Lema de <a href="https://pt.wikipedia.org/wiki/Carl_Friedrich_Gauss">Gauss</a>.</p>
+<div class="theorem">(Lema de Gauss)<br>
+Seja $f(x)\in\Z[x]$ um polin&ocirc;mio redut&iacute;vel em $\Q[x]$. Ent&atilde;o $f(x)$ &eacute; redut&iacute;vel em $\Z[x]$.
+</div>
+<div class="proof">
+Dividir $f(x)$ com seu conte&uacute;do n&atilde;o altera a redutibilidade do polin&ocirc;mio em $\Q[x]$ e assim n&oacute;s podemos assumir sem perder generalidade que $f(x)$ &eacute; primitivo.<br>
+Assuma que $f(x)$ &eacute; redut&iacute;vel em $\Q[x]$ e pode ser fatorado como<br>
+\[<br>
+f(x)=g(x)h(x)<br>
+\]<br>
+onde $g(x),h(x)\in\Q[x]$ e $1\leq \grau{g(x)},\grau{h(x)}\leq \grau{f(x)}-1$. Precisamos provar que $f(x)$ pode ser fatorado como produto de polin&ocirc;mios em $\Z[x]$. Seja<br>
+\begin{align*}<br>
+g(x)&amp;=\frac{u_n}{v_n}x^n+\cdots+\frac{u_1}{v_1}x+\frac{u_0}{v_0}\\<br>
+h(x)&amp;=\frac{a_m}{b_m}x^m+\cdots+\frac{a_1}{b_1}x+\frac{a_0}{b_0}<br>
+\end{align*}<br>
+onde os $u_i$, $v_i$, $a_i$, $b_i$ s&atilde;o inteiros. Ponha $v=\mbox{mmc}(v_n,\ldots,v_0)$ e $b=\mbox{mmc}(b_m,\ldots,b_0)$ e multiplique a equa&ccedil;&atilde;o $f(x)=g(x)h(x)$ com $vb$ para obter que<br>
+\[<br>
+vbf(x)=(vg(x))(bh(x)).<br>
+\]<br>
+Observe que $vbf(x), vg(x), bh(x)\in\Z[x]$. Sejam $c_1$ e $c_2$ os conte&uacute;dos de $vg(x)$ e $bh(x)$, respetivamente. Ent&atilde;o<br>
+\begin{align*}<br>
+vg(x)&amp;=c_1g_0(x)\\<br>
+bh(x)&amp;=c_2h_0(x)<br>
+\end{align*}<br>
+onde $g_0(x),h_0(x)$ s&atilde;o polin&ocirc;mios primitivos. Assim,<br>
+\[<br>
+vbf(x)=(vg(x))(bh(x))=(c_1g_0(x))(c_2h_0(x))=c_1c_2g_0(x)h_0(x).<br>
+\]<br>
+Como $f(x)$ &eacute; primitivo, o conte&uacute;do de $vbf(x)$ &eacute; $vb$. Por outro lado, o lema anterior implica que $g_0(x)h_0(x)$ &eacute; primitivo, ent&atilde;o o conte&uacute;do do lado direito &eacute; $c_1c_2$. Como os dois lados da equa&ccedil;&atilde;o s&atilde;o (obviamente) iguais, temos que $vb=c_1c_2$ e este termo pode ser cancelado. Assim<br>
+\[<br>
+f(x)=g_0(x)h_0(x)<br>
+\]<br>
+&eacute; uma fatora&ccedil;&atilde;o de $f(x)$ com $g_0(x),h_0(x)\in\Z[x]$ e $\grau{g_0(x)}=\grau{g(x)}$ e $\grau{h_0(x)}=\grau{h(x)}$. Assim $f(x)$ &eacute; redut&iacute;vel em $\Z[x]$.
+</div>
+<p>O significado do lema do Gauss &eacute; o seguinte: Se $f(x)\in\Z[x]$ pode ser fatorado como produto de polin&ocirc;mios $g(x),h(x)\in\Q[x]$ com grau maior ou igual que $1$, ent&atilde;o o mesmo pode ser fatorado como produto de polin&ocirc;mios $g_0(x),h_0(x)\in\Z[x]$ onde $\grau{g_0(x)}=\grau{g(x)}$ e $\grau{h_0(x)}=\grau{h(x)}$.</p>
+<div class="example">
+Seja $f(x)=x^4+x^2+x+1\in\Z[x]$ e vamos mostrar que $f(x)$ &eacute; irredut&iacute;vel em $\Q[x]$. Pelo Teorema das Ra&iacute;zes Racionais, $f(x)$ n&atilde;o tem ra&iacute;zes em $\Q$. Logo, se $f(x)$ fosse redut&iacute;vel, $f(x)=g(x)h(x)$ onde $g(x),h(x)\in\Q[x]$ ambos de grau $2$. Ora, o Lema de Gauss diz que n&oacute;s podemos assumir sem perder generalidade que $g(x),h(x)\in\Z[x]$. Assim $f(x)$ pode ser fatorado como<br>
+\begin{align*}<br>
+f(x)&amp;=(x^2+ax+b)(x^2+cx+d)\\&amp;=x^4+(a+c)x^3+(d+b+ac)x^2+(ad+bc)x+bd<br>
+\end{align*}<br>
+onde $a,b,c,d\in\Z$.<br>
+Comparando os coeficientes de $f(x)$ com os coeficientes do polin&ocirc;mio na &uacute;ltima equa&ccedil;&atilde;o, obtemos que<br>
+$a+c=0$ e $bd=1$. Assim, $b=d=1$ ou $b=d=-1$  e $1=ad+bc=\pm(a+c)$ que contradiz &agrave; equa&ccedil;&atilde;o que $a+c=0$. Portanto, tal fatora&ccedil;&atilde;o n&atilde;o existe e $f(x)$ &eacute; irredut&iacute;vel.
+</div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

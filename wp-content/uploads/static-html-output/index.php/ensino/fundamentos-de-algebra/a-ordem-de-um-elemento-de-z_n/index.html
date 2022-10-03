@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>A ordem de um elemento de $\Z_n$ &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/a-ordem-de-um-elemento-de-z_n/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fa-ordem-de-um-elemento-de-z_n%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fa-ordem-de-um-elemento-de-z_n%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1449 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1449" class="post-1449 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">A ordem de um elemento de $\Z_n$</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+Seja $n\in\N$ e considere o conjunto $\Z_n$ das classes residuais. Comecemos com um exemplo motivador. 
+<div class="example">
+Considere $\Z_{20}$, tome um elemento invert&iacute;vel $\overline a\in\Z_{20}$ (ou seja, $\mdc a{20}=1$), e vamos olhar na sequ&ecirc;ncia<br>
+\[<br>
+\overline a^0,\overline a,\overline a^2,\overline a^3,\ldots<br>
+\]<br>
+Por conven&ccedil;&atilde;o, $\overline a^0=\overline 1$. Tomando por exemplo, $\overline a=\overline 3$, obtemos a sequ&ecirc;ncia<br>
+\[<br>
+\overline 1,\overline 3,\overline 9,\overline 7,\overline 1,\overline 3,\overline 9,\overline 7,\overline 1,\overline 3,\overline 9,\overline 7,\ldots<br>
+\]<br>
+Tomando, $\overline a =\overline 7$, obtemos a sequ&ecirc;ncia<br>
+\[<br>
+\overline 1,\overline 7,\overline 9,\overline 3,\overline 1,\overline 7,\overline 9,\overline 3,\overline 1,\overline 7,\overline 9,\overline 3,\ldots<br>
+\]<br>
+Tomando $\overline a=\overline 9$, obtemos<br>
+\[<br>
+\overline 1,\overline 9, \overline 1,\overline 9,\overline 1,\overline 9,\ldots<br>
+\]<br>
+Olhando nestes exemplos, podemos fazer algumas observa&ccedil;&otilde;es (que, como o leitor pode verificar, s&atilde;o v&aacute;lidas para qualquer $\overline a\in\Z_n^*$):
+<ul>
+<li>A sequ&ecirc;ncia sempre come&ccedil;a com $\overline 1$.</li>
+<li>Sempre existe algum $k\in\N$ tal que $\overline a^k=\overline 1$.</li>
+<li>A sequ&ecirc;ncia &eacute; peri&oacute;dica, pois quando $\overline a^k=\overline 1$, a sequ&ecirc;ncia come&ccedil;a a se repetir.</li>
+<li>Seja $k\in\N$ o menor tal que $\overline a^k=\overline 1$. Os elementos $\overline a^0,\overline a,\ldots,\overline a^{k-1}$ s&atilde;o dois a dois distintos.
+</li></ul></div>
+<p>No resto desta p&aacute;gina vamos provar que as observa&ccedil;&otilde;es feitas no exemplo anterior s&atilde;o v&aacute;lidas para todo $\overline a\in\Z_n^*$.</p>
+<p>Note que o resultado seguinte segue do Teorema de Euler, mas n&oacute;s vamos dar uma demonstra&ccedil;&atilde;o diferente.</p>
+<div class="lemma">
+Se $\overline a\in\Z_n$ &eacute; invert&iacute;vel, ent&atilde;o existe $k\geq 1$ tal que $\overline a^k=\overline 1$.
+</div>
+<div class="proof">
+Considere a sequ&ecirc;ncia $\overline a,\overline a^2,\overline a^3,\ldots$. Note, para todo $i\in\N$, que $\overline a^i\in\Z_n$ ent&atilde;o existem finitas possibilidades para o valor de $\overline a^i$. Portanto precisam existir alguns $i,j\geq 1$ tal que $i &lt; j$ e $\overline a^i=\overline a^j$. Como $\overline a$ &eacute; invert&iacute;vel, temos que $\overline a^i$ tamb&eacute;m &eacute;, e<br>
+\[<br>
+(\overline a^i)^{-1}=(\overline a^{-1})^i=\overline a^{-i}.<br>
+\]<br>
+Multiplicando a equa&ccedil;&atilde;o $\overline a^i=\overline a^j$ por $\overline a^{-i}$ obtemos que<br>
+\[<br>
+\overline 1 =\overline a^{j-i}.<br>
+\]<br>
+Como $j-i\geq 1$, o lema fica verificado.
+</div>
+<div class="definition">
+Seja $\overline a\in\Z_n$ uma classe invert&iacute;vel. O menor n&uacute;mero natural $k$ tal que $\overline a^k=\overline 1$ chama-se a ordem de $\overline a$ (em $\Z_n$). A ordem de $\overline a$ em $\Z_n$ &eacute; denotado por $|\overline a|_n$ ou por $|\overline a|$ quando n&atilde;o h&aacute; perigo de confus&atilde;o.
+</div>
+<div class="lemma">
+Seja $\overline a\in\Z_n$ um elemento  invert&iacute;vel e ponha $b=|\overline a|_n$.
+<ol>
+<li>Seja $k\in\N_0$ tal que $\overline a^k=\overline 1$. Ent&atilde;o $k$ &eacute; um m&uacute;ltiplo de $b$. </li>
+<li>As classes $\overline a^0,\overline a,\overline a^2,\ldots,\overline a^{b-1}$ s&atilde;o dois a dois distintas.</li>
+<li>$b$ &eacute; um divisor de $\varphi(n)$.</li>
+<li>Se $n$ &eacute; um primo, ent&atilde;o $b$ &eacute; um divisor de $n-1$. </li>
+</ol>
+</div>
+<div class="proof">
+(1) Assuma que $\overline a^k=\overline 1$ e escreva $k=qb+r$ com $r\in\{0,\ldots,b-1\}$. Ora<br>
+\[<br>
+\overline 1=\overline a^k=\overline a^{qb+r}=(\overline a^b)^q\overline a^r=\overline a^r.<br>
+\]<br>
+A defini&ccedil;&atilde;o de $b=|\overline a|_n$ e o fato que $0\leq r\leq b-1$ implicam que $r=0$, ou seja $k=q|\overline a|_n$ como foi afirmado.
+<p>(2) Assuma que $\overline a^i=\overline a^j$ com algum $i,j\in\{0,\ldots,b-1\}$ e $i\leq j$. Pelo racioc&iacute;nio da demonstra&ccedil;&atilde;o do lema anterior, obtemos que<br>
+\[<br>
+\overline 1=\overline a^{j-i}.<br>
+\]<br>
+Como $0\leq j-i\leq b-1$, a defini&ccedil;&atilde;o de $|\overline a|_n$ implica que $j-i=0$; ou seja $i=j$. </p>
+<p>(3) Essa afirma&ccedil;&atilde;o segue do Teorema de Euler que implica que $\overline a^{\varphi(n)}=\overline 1$ e da primeira parte do lema.</p>
+<p>(4) Esta parte segue diretamente da parte (3) e do fato que $\varphi(n)=n-1$ quando $n$ &eacute; primo.
+</p></div>
+<p>&Eacute; poss&iacute;vel escrever os resultados desta p&aacute;gina na linguagem das congru&ecirc;ncias. </p>
+<div class="definition">
+Seja $a\in\Z$ e seja $n\in\N$. Assuma que $a$ &eacute; invert&iacute;vel m&oacute;dulo $n$; ou seja $\mdc an=1$. A ordem de $a$ m&oacute;dulo $n$ &eacute; o menor inteiro positivo $k$ tal que $a^k\equiv 1\pmod n$. Denotamos a ordem de $a$ m&oacute;dulo $n$ por $|a|_n$.
+</div>
+<div class="lemma">
+Seja $a\in\Z$ e $n\in\N$ tais que $\mdc an=1$. As seguintes afirma&ccedil;&otilde;es s&atilde;o v&aacute;lidas.
+<ol>
+<li>A ordem $|a|_n$ existe.</li>
+<li>Se $a^k\equiv 1\pmod n$ com algum $k\in\N_0$. ent&atilde;o $k$ &eacute; um m&uacute;ltiplo de $|a|_n$.</li>
+<li>Se $i,j\in\{0,\ldots,|a|_n-1\}$ s&atilde;o tais que $a^i\equiv a^j\pmod n$, ent&atilde;o $i=j$.</li>
+<li>$|a|_n$ &eacute; um divisor de $\varphi(n)$.</li>
+<li>Se $n$ &eacute; um primo, ent&atilde;o $|a|_n$ &eacute; um divisor de $n-1$.
+</li></ol>
+</div>
+<div class="proof">
+As partes deste resultado seguem das afirma&ccedil;&otilde;es correspondentes sobre $\overline a\in\Z_n$.
+</div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

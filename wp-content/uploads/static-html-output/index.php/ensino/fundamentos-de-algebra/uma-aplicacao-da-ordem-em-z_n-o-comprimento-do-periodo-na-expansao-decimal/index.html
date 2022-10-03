@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>O per&iacute;odo e o pr&eacute;-per&iacute;odo na expans&atilde;o decimal &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/uma-aplicacao-da-ordem-em-z_n-o-comprimento-do-periodo-na-expansao-decimal/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fuma-aplicacao-da-ordem-em-z_n-o-comprimento-do-periodo-na-expansao-decimal%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fuma-aplicacao-da-ordem-em-z_n-o-comprimento-do-periodo-na-expansao-decimal%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1455 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1455" class="post-1455 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">O per&iacute;odo e o pr&eacute;-per&iacute;odo na expans&atilde;o decimal</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+Sejam $1\leq a &lt; b$ n&uacute;meros naturais e considere a fra&ccedil;&atilde;o $a/b$. J&aacute; sabemos que $a/b$ pode ser escrito como<br>
+\[<br>
+a/b=0,q_1q_2q_3\cdots<br>
+\]<br>
+onde os $q_i$ s&atilde;o algarismos, $q_i\in\{0,\ldots,9\}$ e a sequ&ecirc;ncia dos algarismos &eacute; peri&oacute;dica com um poss&iacute;vel pr&eacute;-per&iacute;odo.
+<div class="lemma">
+Escreva o n&uacute;mero racional $x\in(0,1)$ na forma $x=a/(10^lb)$ onde $10\nmid a$, $\mdc ab=\mdc {10}b=1$. Ent&atilde;o as seguintes s&atilde;o verdadeiras.
+<ol>
+<li>O comprimento do pr&eacute;-per&iacute;odo da expans&atilde;o decimal de $x$ &eacute; $l$.</li>
+<li>O comprimento do per&iacute;odo da expans&atilde;o decimal de $x$ &eacute; $|10|_b$.
+</li></ol>
+</div>
+<div class="proof">
+Lembre de uma aula anterior que os algarismos de $x=a/(10^lb)$ s&atilde;o computados por determinar os termos das sequ&ecirc;ncias $a_0,a_1,\ldots$ e $q_0,q_1,\ldots$ que s&atilde;o definidas pelas regras<br>
+\[<br>
+a_0=a\quad\mbox{e}\quad q_0=0<br>
+\]<br>
+e<br>
+\[<br>
+10a_k=q_{k+1}10^lb+a_{k+1}\mbox{ com }a_{k+1}\in\{0,\ldots,10^lb-1\}\mbox{ para }k\geq 0.<br>
+\]<br>
+A defini&ccedil;&atilde;o destas sequ&ecirc;ncias implica que $0\leq a_i\leq 10^lb-1$ e que $q_i\in\{0,\ldots,9\}$ e a sequ&#7869;ncia dos $q_i$ &eacute; a sequ&ecirc;ncia dos algarismos.
+<p>Note que a equa&ccedil;&atilde;o anterior implica que<br>
+\[<br>
+a_{k+1}\equiv 10 a_k\pmod{10^lb}.<br>
+\]<br>
+Usando indu&ccedil;&atilde;o, obtemos que<br>
+\[<br>
+a_{k+1}=10^{k+1}a\pmod{10^lb}.<br>
+\]</p>
+<p>O per&iacute;odo da expans&atilde;o &eacute; definido como o menor $r\in\N$ tal que $a_{i}=a_{i+r}$ com algum $i\geq 1$. Primeiro afirmamos que $i=l$ e isso implica a primeira afirma&ccedil;&atilde;o que o comprimento do pr&eacute;-per&iacute;odo &eacute; $l$. Assuma com o objetivo de obter uma contradi&ccedil;&atilde;o que que $i &lt; l$ e $a_{i}=a_{i+r}$ com algum $r\geq 1$. Ent&atilde;o<br>
+\[<br>
+10^ia\equiv a_i=a_{i+r}\equiv 10^{i+r}a\pmod{10^lb}.<br>
+\]<br>
+Logo<br>
+\[<br>
+10^lb\mid 10^{i+r}a-10^ia=10^ia(10^r-1)<br>
+\]<br>
+mas isso &eacute; uma contradi&ccedil;&atilde;o, pois $i &lt; l$, $10\nmid a$ e $\mdc{10}{10^r-1}=1$. </p>
+<p>Assuma agora que $s=|10|_b$. Afirmamos que $a_{l+s}=a_l$ e isso implica que o per&iacute;odo e menor ou igual a $s$. De fato note que $10^s\equiv 1\pmod b$ e isso implica que<br>
+\[<br>
+a_{s+l}\equiv a10^{s+l}\equiv a10^l\equiv a_l\pmod{10^lb}.<br>
+\]<br>
+Portanto $a_{l+s}=a_l$. </p>
+<p>Finalmente afirmamos que o per&iacute;odo &eacute; um m&uacute;ltiplo que $s$. Assuma que $t\in\N$ tal que $a_l=a_{l+t}$. Logo<br>
+\[<br>
+10^la\equiv a_l=a_{l+t}\equiv 10^{l+t}a\pmod{10^lb}<br>
+\]<br>
+e assim $10^lb\mid 10^{l+t}a-10^{l}a=10^la(10^t-1)$. Da&iacute; tem-se que $b\mid a(10^t-1)$. Como $\mdc ab=1$, segue que $b\mid 10^t-1$; ou seja $10^t\equiv 1\pmod b$. Segue dos resultados que estudamos sobre a ordem modular de um n&uacute;mero que $t$ &eacute; um m&uacute;ltipo de $|10|_b=s$. Em particular $s\leq t$ e juntando este fato com o fato que $t\leq s$ (obtido no par&aacute;grafo anterior), finalmente obtemos que $s=|10|_b$ coincide como o per&iacute;odo da expans&atilde;o do n&uacute;mero $x=a/(10^lb)$.</p>
+</div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

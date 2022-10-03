@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>An&eacute;is, dom&iacute;nios e corpos &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/aneis-corpos-e-dominios-de-integridade/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Faneis-corpos-e-dominios-de-integridade%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Faneis-corpos-e-dominios-de-integridade%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1544 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1544" class="post-1544 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">An&eacute;is, dom&iacute;nios e corpos</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+<div class="definition">
+Assuma que $R$ &eacute; um conjunto com pelo menos dois elementos equipado por duas opera&ccedil;&otilde;es $+$ (adi&ccedil;&atilde;o) e $\cdot$ (multiplica&ccedil;&atilde;o) que satisfazem as seguintes propriedades para todo $a,b,c\in R$:
+<ul>
+<li>$a+(b+c)=(a+b)+c$ (associatividade da adi&ccedil;&atilde;o);</li>
+<li>$a+b=b+a$ (comutatividade da adi&ccedil;&atilde;o);</li>
+<li>existe um elemento $0\in R$ (elemento neutro aditivo) tal que $a+0=a$;</li>
+<li>para todo elemento $a\in R$ existe um elemento denotado por $-a$ (sim&eacute;trico de $a$) tal que $a+(-a)=0$;</li>
+<li>$a\cdot(b\cdot c)=(a\cdot b)\cdot c$ (associatividade da multiplica&ccedil;&atilde;o);</li>
+<li>$a\cdot b=b\cdot a$ (comutatividade da multiplica&ccedil;&atilde;o);</li>
+<li>existe um elemento $1\in R$ (elemento neutro multiplicativo) tal que $1\cdot a=a$;</li>
+<li>$a\cdot (b+c)=a\cdot b+a\cdot c$ (distributividade).</li>
+</ul>
+<p>O conjunto $R$ com as opera&ccedil;&otilde;es $+$ e $\cdot$ &eacute; chamado <strong>anel</strong>. As vezes escrevemos que a estrutura $(R,+,\cdot)$ &eacute; um anel.
+</p></div>
+<p>Na defini&ccedil;&atilde;o anterior, o fato que $+$ e $\cdot$ s&atilde;o opera&ccedil;&otilde;es sobre $R$ quer dizer que $R$ &eacute; fechado para estas opera&ccedil;&otilde;es. Ou seja, se $a,b\in R$, ent&atilde;o $a+b,a\cdot b\in R$. O produto $a\cdot b$ &eacute; tamb&eacute;m denotado simplesmente por $ab$ quando n&atilde;o h&aacute; perigo de confus&atilde;o.</p>
+<p>Na verdade, o nosso conceito de an&eacute;is &eacute; conhecido na literatura como <strong>anel comutativo com identidade</strong>, mas, como n&oacute;s n&atilde;o vamos estudar outros tipos de an&eacute;is, optamos por simplificar a terminologia a chamar estes objetos simplesmente como an&eacute;is. Mas o leitor deve ficar ciente que em muitos livros a defini&ccedil;&atilde;o de anel n&atilde;o exige que a multiplica&ccedil;&atilde;o seja comutativa e as vezes os livros n&atilde;o assumem a exist&ecirc;ncia do elemento neutro para a multiplica&ccedil;&atilde;o. </p>
+<div class="example">
+Os exemplos mais comuns de an&eacute;is s&atilde;o os conjuntos $\Z$, $\Q$, $\R$, $\C$ com as suas respetivas opera&ccedil;&otilde;es $+$ e $\cdot$. Pelo que estudamos na segunda parte da disciplina, podemos afirmar que $(\Z_n,+,\cdot)$ tamb&eacute;m &eacute; um anel para todo $n\geq 2$. Um exemplo interessante de an&eacute;is &eacute; o anel de inteiros gaussianos:<br>
+\[<br>
+\Z[i]=\{a+bi\mid a,b\in\Z\}.<br>
+\]<br>
+&Eacute; f&aacute;cil verificar que $\Z[i]$ &eacute; um anel com as opera&ccedil;&otilde;es de $+$ e $\cdot$. Um exemplo similar &eacute; o anel<br>
+\[<br>
+\Z[\sqrt 2]=\{a+b\sqrt 2\mid a,b\in\Z\}.<br>
+\]<br>
+O leitor pode verificar que $\Z[\sqrt 2]$ &eacute; um anel.
+<p>Exemplos importantes de an&eacute;is aparecem na &aacute;rea de c&aacute;lculo e an&aacute;lise. Considere por exemplo o conjunto<br>
+\[<br>
+C([0,1])=\{f:[0,1]\to \R\mid \mbox{$f$ &eacute; cont&iacute;nua}\}.<br>
+\]<br>
+Tomando $f,g\in C([0,1])$,  a soma $f+g$ e o produto $f\cdot g$ podem ser definidos como<br>
+\begin{align*}<br>
+f+g&amp;:[0,1]\to \R,\ (f+g)(x)=f(x)+g(x)\mbox{ para todo } x\in[0,1];\\<br>
+f\cdot g&amp;:[0,1]\to \R,\ (f\cdot g)(x)=f(x)\cdot g(x)\mbox{ para todo } x\in[0,1].<br>
+\end{align*}<br>
+&Eacute; f&aacute;cil verificar que $(C([0,1]),+,\cdot)$ &eacute; um anel.</p>
+<p>Vamos terminar a lista dos exemplos com alguns exemplos que n&atilde;o s&atilde;o an&eacute;is. Por exemplo, o conjunto de n&uacute;meros pares $\{0,\pm 2,\pm 4,\ldots\}$ com as opera&ccedil;&otilde;es usuais n&atilde;o &eacute; anel, pois n&atilde;o possui elemento neutro. O conjunto de matrizes $2\times 2$ sobre $\R$ com a soma e produto entre matrizes n&atilde;o &eacute; anel (por nossa defini&ccedil;&atilde;o), pois a multiplica&ccedil;&atilde;o n&atilde;o &eacute; comutativa. O conjunto $\N_0$ dos inteiros n&atilde;o negativos tamb&eacute;m n&atilde;o &eacute; anel, pois os os elementos positivos n&atilde;o t&ecirc;m sim&eacute;tricos.
+</p></div>
+<p>Podemos observar que nos exemplo conhecidos, os elementos neutros $0$ e $1$ e o sim&eacute;trico de qualquer $a\in R$ s&atilde;o &uacute;nicos. Teoricamente poderia existir algum anel esquisito que possui dois elementos neutros, ou algum elemento com dois sim&eacute;tricos, mas o lema seguinte implica que isso &eacute; imposs&iacute;vel.</p>
+<div class="lemma">
+Seja $R$ um anel. Os elementos neutros $0$ e $1$ e, para $a\in R$, o sim&eacute;trico de $a$ s&atilde;o &uacute;nicos. Al&eacute;m disso, $0\cdot a =0$ para todo $a\in R$.
+</div>
+<div class="proof">
+Assuma por exemplo que $0_1$ e $0_2$ s&atilde;o elementos neutros para adi&ccedil;&atilde;o em um anel $R$. Usando os axiomas do anel, obtemos que<br>
+\[<br>
+0_1=0_1+0_2=0_2+0_1=0_2.<br>
+\]<br>
+Ent&atilde;o $0_1=0_2$ e o elemento neutro para a soma &eacute; &uacute;nico. Pode-se usar o mesmo argumento para provar que o elemento neutro para a multiplica&ccedil;&atilde;o tamb&eacute;m &eacute; &uacute;nico. Assuma que $a\in R$ e sejam $b,c\in R$ tais que $b$ e $c$ s&atilde;o sim&eacute;tricos de $a$. De novo, usamos os axiomas para obter que<br>
+\[<br>
+b=b+0=b+(a+c)=(b+a)+c=(a+b)+c=0+c=c.<br>
+\]<br>
+Ou seja $b=c$, e o sim&eacute;trico de $a$ &eacute; &uacute;nico.
+<p>Finalmente, assuma que $a\in R$. Ent&atilde;o<br>
+\[<br>
+0\cdot a=(0+0)\cdot a=0\cdot a+0\cdot a.<br>
+\]<br>
+Somando o negativo $-(0\cdot a)$ de $0\cdot a$ aos dois lados da equa&ccedil;&atilde;o anterior, obtemos que $0=0\cdot a$ como foi afirmado.
+</p></div>
+<p>Se $R$ &eacute; um anel e $a,b\in R$ ent&atilde;o escrevemos $a-b$ para denotar $a+(-b)$.</p>
+<div class="definition">
+Seja $R$ um anel e seja $a\in R$. O elemento $a$ &eacute; dito <strong>invert&iacute;vel</strong> (ou <strong>unidade</strong>) se existir $b\in R$ tal que $ab=1$. O elemento $a$ &eacute; dito <strong>divisor de zero</strong> se $a\neq 0$ e existe $b\in R\setminus\{0\}$ tal que $ab=0$.
+</div>
+<div class="example">
+Por exemplo, os elementos invert&iacute;veis em $\Z$ e em $\Z[\sqrt 2]$ s&atilde;o $1$ e $-1$. Em $\Z[i]$, os invert&iacute;veis s&atilde;o $1,-1,i,-i$. Em $\Z_{10}$ os invert&iacute;veis s&atilde;o $\overline 1,\overline 3,\overline 7,\overline 9$. Em $\Q$, $\R$, $\C$ e em $\Z_p$, para $p$ primo, todos os elementos n&atilde;o nulos s&atilde;o invert&iacute;veis. 
+<p>Os an&eacute;is $\Z$, $\Z[i]$, $\Z[\sqrt 2]$, $\Q$, $\R$, $\C$ e $\Z_p$, para $p$ primo, n&atilde;o possuem divisores de zero. Os divisores de zero em $\Z_{10}$ s&atilde;o $\overline 2$, $\overline 4$, $\overline 5$, $\overline 6$, $\overline 8$.
+</p></div>
+<p>Note que segue do fato que $0\cdot a =0$ para todo $a\in R$ que $0$ nunca &eacute; invert&iacute;vel.</p>
+<p>Usando o mesmo argumento que o sim&eacute;trico de um elemento &eacute; &uacute;nico, pode-se provar que o inverso de um elemento $a\in R$ invert&iacute;vel &eacute; &uacute;nico. Assim, o inverso de $a\in R$ (quando existir) &eacute; escrito como $a^{-1}$. </p>
+<div class="exercise">Seja $a\in R$ um elemento invert&iacute;vel de um anel $R$. Mostre que $a$ n&atilde;o &eacute; divisor de zero.</div>
+<div class="lemma">(A lei do cancelamento)<br>
+Seja $R$ um anel, $a,b,c\in R$ tal que $a\neq 0$, $a$ n&atilde;o &eacute; divisor de zero e<br>
+\[<br>
+ab=ac.<br>
+\]<br>
+Ent&atilde;o $b=c$.
+</div>
+<div class="proof">
+Assuma que $ab=ac$; ou seja<br>
+\[<br>
+0=ab-ac=a(b-c).<br>
+\]<br>
+Como $a$ n&atilde;o &eacute; zero e n&atilde;o &eacute; divisor de zero, segue que $b-c=0$; ou seja $b=c$.
+</div>
+<div class="example">
+Sejam $a=\overline 4$, $b=\overline 1$, $c=\overline 3$ elementos em $\Z_8$. Ent&atilde;o temos que<br>
+\[<br>
+a\cdot b=\overline 4=\overline{12}=a\cdot c<br>
+\]<br>
+mas $b\neq c$. Ent&atilde;o a condi&ccedil;&atilde;o no lema anterior que $a$ n&atilde;o pode ser um divisor de zero &eacute; necess&aacute;ria.
+</div>
+<div class="definition">
+Um anel $R$ chama-se <strong>dom&iacute;nio de integridade</strong> ou simplesmente <strong>dom&iacute;nio</strong>  se $R$ n&atilde;o possui divisores de zero. O anel $R$ chama-se <strong>corpo</strong> se todo elemento $a\in R\setminus\{0\}$ &eacute; invertivel.
+</div>
+<p>Se $R$ &eacute; um dom&iacute;nio de integridade e $a,b\in R$ tais que $ab=0$, ent&atilde;o $a=0$ ou $b=0$.</p>
+<div class="example">
+Entre os exemplos acima, $\Z$, $\Z[i]$, $\Z[\sqrt 2]$ s&atilde;o dom&iacute;nios, mas eles n&atilde;o s&atilde;o corpos. Os an&eacute;is $\Q$, $\R$, $\C$ e $\Z_p$, para $p$ primo, s&atilde;o corpos. Se $n$ &eacute; um n&uacute;mero composto, ent&atilde;o $\Z_n$ n&atilde;o &eacute; corpo nem &eacute; dom&iacute;nio.
+</div>
+<div class="lemma">
+Se $R$ &eacute; corpo, ele &eacute; dom&iacute;nio.
+</div>
+<div class="proof">
+Assuma que $R$ &eacute; um corpo e $a\in R\setminus\{0\}$. O fato que $R$ &eacute; corpo implica que $a$ &eacute; invert&iacute;vel e obtemos do exerc&iacute;cio acima que $a$ n&atilde;o &eacute; divisor de zero.
+</div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>

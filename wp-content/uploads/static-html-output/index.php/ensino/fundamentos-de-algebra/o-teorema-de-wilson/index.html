@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>O Teorema de Wilson &ndash; Csaba Schneider</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
+<link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Comments Feed" href="https://schcs.github.io/WP/index.php/comments/feed/">
+<link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=4.9.17" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="penscratch-2-block-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/blocks.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://schcs.github.io/WP/wp-content/plugins/tablepress/css/default.min.css?ver=1.9.2" type="text/css" media="all">
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+
+
+
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-teorema-de-wilson/">
+
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-de-wilson%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fo-teorema-de-wilson%2F&amp;format=xml">
+		<style type="text/css" id="wp-custom-css">
+			/*pre {
+	font-family: monospace;
+  white-space: pre-wrap;	
+}
+
+.code {
+	border: 3px outset grey;
+	background-color: #f2f2f2;
+	padding: 5px;
+	font-family: monospace;
+  white-space: pre-wrap;
+	display: block;
+}
+*/
+.definition {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffff;
+}
+
+.definition:before {
+content: "Defini\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.definition[text]:before {
+content: "Defini\00E7\00E3 o (" attr(text) ") ";
+}
+
+
+.example {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.example:before {
+content: "Exemplo. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.example[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+.exercise {
+  border: 3px outset #00aaff;
+  background-color: #e6f7ff;
+	padding: 5px;
+}
+
+.exercise:before {
+content: "Exerc\00ed cio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.exerice[text]:before {
+content: "Exemplo (" attr(text) ") ";
+}
+
+
+.lemma {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.lemma:before {
+content: "Lema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.lemma[text]:before {
+content: "Lema (" attr(text) ") ";
+}
+
+
+.theorem {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.theorem:before {
+content: "Teorema. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.theorem[text]:before {
+content: "Teorema (" attr(text) ") ";
+}
+
+.corollary {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.corollary:before {
+content: "Corol\00E1 rio. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.corollary[text]:before {
+content: "Corol\00E1 rio (" attr(text) ") ";
+}
+
+.proof {
+  border: 3px outset green;
+	padding: 5px;
+  background-color: #e6ffcc;
+}
+
+.proof:before {
+content: "Demonstra\00E7\00E3 o. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.proof[text]:before {
+content: "Demonstra\00E7\00E3 o (" attr(text) ") ";
+}
+
+.conjecture {
+  border: 3px outset hotpink;
+  background-color: #fff2e6;
+	padding: 5px;
+}
+
+.conjecture:before {
+content: "Conjectura. ";
+font-weight: bold;
+font-style: normal;
+}
+
+.conjecture[text]:before {
+content: "Conjecture (" attr(text) ") ";
+}
+		</style>
+	
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath:  [['$', '$'], ['\\(', '\\)']],
+    macros: {
+		R: "{\\mathbb R}",
+		N: "{\\mathbb N}",
+		C: "{\\mathbb C}",
+		Z: "{\\mathbb Z}",
+		Q: "{\\mathbb Q}",
+		F: "{\\mathbb F}", 
+		K: "{\\mathbb K}",
+		mdc: ["{\\mbox{mdc}(#1,#2)}", 2],
+		grau: ["{\\mbox{grau}(#1)}",1]
+		}
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+</head>
+
+<body class="page-template-default page page-id-1442 page-child parent-pageid-1193 no-sidebar">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+	<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+							<p class="site-title"><a href="https://schcs.github.io/" rel="home">Csaba Schneider</a></p>
+							<p class="site-description">Universidade Federal de Minas Gerais</p>
+					</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16"><rect x="0" fill="none" width="16" height="16"></rect><g><path id="menu-icon" d="M0 14h16v-2H0v2zM0 2v2h16V2H0zm0 7h16V7H0v2z"></path></g></svg>
+				Menu			</button>
+			<div class="menu-menu-container"><ul id="menu-menu" class="menu"><li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://schcs.github.io/WP/index.php/publications/">Publications</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-70"><a href="https://schcs.github.io/WP/index.php/ensino/">Ensino</a></li>
+<li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://schcs.github.io/WP/index.php/book/">Book</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1703"><a href="https://schcs.github.io/WP/index.php/software/">Software</a></li>
+</ul></div>		</nav>
+	</header>
+
+	<div id="content" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1442" class="post-1442 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">O Teorema de Wilson</h1>	</header>
+		<div class="entry-content">
+		<div style="color:#000000">
+<div class="lemma"> Seja $p$ um primo e seja $\overline a\in\Z_p$.  
+<ol>
+<li>Se $\overline a^2=\overline 1$ ent&atilde;o $\overline a\in\{\overline 1,\overline{-1}\}$.</li>
+<li>Se $\overline a\neq\overline 0$ e $\overline a^{-1}=\overline a$ ent&atilde;o $\overline a\in\{\overline 1,\overline{-1}\}$.
+</li></ol>
+</div>
+<div class="proof">
+Vamos provar a primeira afirma&ccedil;&atilde;o. Assuma que $\overline a^2=\overline 1$. Ent&atilde;o $a^2\equiv 1\pmod p$ e $p\mid a^2-1=(a-1)(a+1)$. Como $p$ &eacute; primo, isso implica que $p\mid (a-1)$ ou $p\mid (a+1)$; ou seja $a\equiv 1\pmod p$ ou $a\equiv -1\pmod p$. No primeiro caso $\overline a=\overline 1$, enquanto no segundo $\overline a=\overline{-1}$. 
+<p>Na segunda afirma&ccedil;&atilde;o, assuma que $\overline a^{-1}=\overline a$ e multiplique os dois lados com $\overline a$ para obter que $\overline 1=\overline a^2$. Agora a primeira afirma&ccedil;&atilde;o implica que $\overline a\in\{\overline 1,\overline{-1}\}$.
+</p></div>
+<p>Podemos expressar estes resultados na linguagem das congru&ecirc;ncias na forma seguinte.</p>
+<div class="lemma">
+Seja $p$ um primo e seja $a\in\Z$.  
+<ol>
+<li>Se $a^2\equiv 1\pmod p$ ent&atilde;o $a\equiv \pm 1\pmod p$.</li>
+<li>Assuma que $p\nmid a$ e seja $b$ um inverso de $a$ m&oacute;dulo $p$. Se $b\equiv a\pmod p$, ent&atilde;o $a\equiv \pm 1\pmod p$.
+</li></ol>
+</div>
+<div class="theorem">(O Teorema de Wilson). Um n&uacute;mero $n\in\N$ &eacute; primo se e somente se $(n-1)!\equiv -1\pmod n$.
+</div>
+<div class="proof">
+Vamos come&ccedil;ar com a volta, pois esta dire&ccedil;&atilde;o &eacute; mais f&aacute;cil. Assuma que $(n-1)!\equiv -1\pmod n$ e seja $a\in\{1,\ldots,n-1\}$ tal que $a\mid n$. Em particular, $a\mid (n-1)!$. A congru&ecirc;ncia $(n-1)!\equiv -1\pmod n$ implica que $n\mid (n-1)!+1$ e obtemos destas duas divisibilidades que $a\mid 1$ que implica que $a=1$. Obtivemos ent&atilde;o que o &uacute;nico divisor de $n$ entre $1$ e $n-1$ &eacute; o $1$ e assim $n$ &eacute; primo.   
+<p>Agora demonstremos a ida. Assuma que $p$ &eacute; primo e escreva<br>
+\[<br>
+(n-1)!=1\cdot 2\cdot 3\cdots (n-2)\cdot (n-1).<br>
+\]<br>
+Note que todo fator neste produto possui inverso m&oacute;dulo $p$ pois $p$ &eacute; primo. Al&eacute;m disso, se $a\in\{1,\ldots,n-1\}$ ent&atilde;o existe &uacute;nico elemento $b\in\{1,\ldots,n-1\}$ tal que $b$ &eacute; inverso de $a$ m&oacute;dulo $p$; ou seja, $ab\equiv 1\pmod p$. Pelo lema anterior $b=a$ se e somente se $a=1$ ou $a=n-1$, Isso quer dizer que no produto na &uacute;ltima linha destacada m&oacute;dulo $p$, cada fator aparece com seu inverso exceto o primeiro ($1$) e o &uacute;ltimo ($n-1$). Assim<br>
+\[<br>
+(n-1)!=1\cdot 2\cdot 3\cdots (n-2)\cdot (n-1)\equiv n-1\equiv -1\pmod p.<br>
+\]
+</p></div>
+</div>
+			</div>
+	<footer class="entry-footer">
+			</footer>
+</article>
+
+				
+			
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info-wrapper clear">
+						<div class="site-info">
+				<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+				<span class="sep"> ~ </span>
+				Theme: Penscratch 2 by <a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>.			</div>
+		</div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608"></script>
+<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115"></script>
+
+</body>
+</html>
