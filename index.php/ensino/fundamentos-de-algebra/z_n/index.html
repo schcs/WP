@@ -415,13 +415,21 @@ Mas estas congruências são verdadeiras por um resultado que provamos na aula s
 <div style="color:black;">
 <div class="definition">
 Dizemos que um elemento $\overline a\in\Z_n$ é invertível se existe $\overline b\in\Z_n$ tal que $\overline a\overline b=\overline 1$. Neste caso $\overline b$ é dito inverso de $\overline a$ e escrevemos $\overline b=\overline a^{-1}$.</div>
-<div class="example">Por exemplo $3\in\Z_{10}$ é invertível, pois $\bar 3\cdot \bar 7=\bar 1$. Logo $\bar 3^{-1}=\bar 7$. Por outro lado, $\bar 2\in\Z_{10}$ não é invertível.</div>
+<div class="example">Por exemplo $\bar 3\in\Z_{10}$ é invertível, pois $\bar 3\cdot \bar 7=\bar 1$. Logo $\bar 3^{-1}=\bar 7$. Por outro lado, $\bar 2\in\Z_{10}$ não é invertível.</div>
 Pode-se observar para $n\geq 2$ que os elementos $\bar 1,\overline{-1}=\overline{n-1}$ 
 são sempre invertíveis, enquanto $\bar 0$ nunca é invertível. Denotamos por $\Z_n^*$ o conjunto de classes invertíveis em $\Z_n$. Por exemplo, $\Z_6^*=\{\bar 1,\bar 5\}$.
 <div class="lemma">
 Um elemento $\overline a\in\Z_n$ é invertível se e somente se $\mdc an=1$. Neste caso, o inverso de $\overline a$ é único e ele pode ser encontrado usando o Algoritmo Estendido de Euclides.</div>
 <div class="proof">
-Um elemento $\overline a$ é invertível se e somente se existir $\overline b\in\Z_n$ tal que $\overline a\overline b=\overline 1$; ou seja, $ab\equiv 1\pmod n$. Mas nós já vimos que esta condição é equivalente à condição que $\mdc an=1$ e que neste caso uma solução pode ser encontrada usando o Algoritmo Estendido de Euclides.
+Um elemento $\overline a$ é invertível se e somente se existir $\overline b\in\Z_n$ tal que $\overline a\overline b=\overline 1$; ou seja, $ab\equiv 1\pmod n$. Isso acontece se e somente se $ab-1=kn$ com algum $k\in\Z$; ou seja, a equação diofantina 
+\[
+ab-kn=1
+\]
+possui solução $(b,k)$ em $\Z$. Mas nós já vimos que esta equação tem soluções inteiras se e somente se $\mdc an=1$ e que neste caso uma solução pode ser encontrada usando o Algoritmo Estendido de Euclides. Se $(b,k)$ é uma solução, então 
+\[
+ab=1+kn\equiv 1\pmod n
+\]
+e assim $\bar a\cdot\bar b=\bar 1$ e $\bar b=\bar a^{-1}$.
 A unicidade do inverso também segue de um resultado anterior que afirmou que o conjunto dos inverso de $a$ módulo $n$ formam uma classe residual módulo $n$. Aqui nós vamos fazer uma outra demonstração que usa apenas as propriedades que foram listadas no lema anterior. Assuma que $\overline b,\overline c\in\Z_n$ são inversos de $\overline a$; ou seja, $\overline a\overline b=\overline a\overline c=\overline 1$. Portanto
 \[
 \overline b=\overline b\overline 1=\overline b(\overline a\overline c)=(\overline b\overline a)\overline c=\overline 1\overline c=\overline c.
