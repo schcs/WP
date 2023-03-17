@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<title>Expansão de números naturais na base $b$ &#8211; Csaba Schneider</title>
+<title>Espaço quociente &#8211; Csaba Schneider</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -34,7 +34,6 @@ img.emoji {
 .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
-<link rel="stylesheet" id="prismatic-prism-css" href="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/css/theme-twilight.css?ver=3.3" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-reset-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/css/reset.css?ver=1.0" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-style-css" href="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/style.css?ver=6.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="penscratch-2-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab%3A300%2C400%2C700&#038;subset=latin%2Clatin-ext" type="text/css" media="all">
@@ -43,14 +42,14 @@ img.emoji {
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
-<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/1241">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2091">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 6.1.1">
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/expansao-de-numeros-naturais-na-base-b-e-a-expansao-decimal-de-numeros-racionais/">
-<link rel="shortlink" href="https://schcs.github.io/WP/?p=1241">
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fexpansao-de-numeros-naturais-na-base-b-e-a-expansao-decimal-de-numeros-racionais%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fexpansao-de-numeros-naturais-na-base-b-e-a-expansao-decimal-de-numeros-racionais%2F&#038;format=xml">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/espaco-quociente/">
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=2091">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fespaco-quociente%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fespaco-quociente%2F&#038;format=xml">
 		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
@@ -219,7 +218,7 @@ content: "Conjecture (" attr(text) ") ";
 
 </head>
 
-<body class="page-template-default page page-id-1241 page-child parent-pageid-1193 wp-embed-responsive no-sidebar">
+<body class="page-template-default page page-id-2091 page-child parent-pageid-2021 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -247,132 +246,46 @@ content: "Conjecture (" attr(text) ") ";
 
 			
 				
-<article id="post-1241" class="post-1241 page type-page status-publish hentry">
+<article id="post-2091" class="post-2091 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Expansão de números naturais na base $b$</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Espaço quociente</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
 		<div style="color:black;">
-<h3>Expansão de naturais na base $b$</h3>
-<p>Números naturais são escritos normalmente como sequências de algarismos na base decimal. Por exemplo, a sequência $1056$ significa o número<br>
-\[<br>
-1\cdot 1000+0\cdot 100+5\cdot 10+6.<br>
-\]<br>
-Mais geralmente, a sequência $[a_na_{n-1}\cdots a_1a_0]$ denota o número<br>
-\[<br>
-\sum_{k=0}^n a_k\cdot 10^k.<br>
-\]</p>
-<p>É possível fazer a mesma coisa em uma outra base $b$ assumindo que $b\geq 2$.</p>
-<div class="theorem">
-Assuma que $a$ e $b$ são números  naturais e $b\geq 2$. Então $a$ pode ser escrito unicamente na forma<br>
-\[<br>
-a=[a_na_{n-1}\cdots a_0]_b=\sum_{k=0}^n a_kb^k<br>
-\]<br>
-onde $n\geq 0$ e $a_k\in\{0,\ldots,b-1\}$ para todo $k$.</div>
-<p>Os números $a_k$ são chamados de algarismos de $a$ na base $b$.</p>
-<div class="proof">
-<strong>Existência.</strong> Usaremos indução por $a$. Se $a\in\{0,\ldots,b-1\}$ então $a$ pode ser escrito como $[a]_b$. Assuma agora que $a\geq b$ e os números menores que $a$ podem ser escritos na base $b$. Usando o Teorema de Divisão de Euclides, escreva $a=qb+a_0$ onde $0\leq a_0\leq b-1$. Como $b\geq 2$, temos que $q&lt;a$, e a hipótese de indução é válida para $q$. Portanto<br>
-existem $a_n,\ldots,a_1\in\{0,\ldots,b-1\}$ tais que<br>
-\[<br>
-q=[a_na_{n-1}\cdots a_1]_b=\sum_{k=1}^n a_kb^{k-1}<br>
-\]<br>
-e<br>
-\[<br>
-a=bq+a_0=b\left(\sum_{k=1}^n a_kb^{k-1}\right)+a_0=\sum_{k=0}^n a_kb^{k}=[a_na_{n-1}\cdots a_1a_0]_b<br>
-\]<br>
-Então a expressão desejada para $a$ existe.
-<p><strong>Unicidade.</strong> Provaremos esta parte também por indução em $a$. Se $a\in\{0,\ldots,b-1\}$, então $a=[a]_b$ é a única expansão de $a$ na base $b$. Assuma que $a\geq b$ e assuma também que todo número menor que $a$ possui única expansão na base $b$. Suponha que $a$ possui duas expansões<br>
-\[<br>
-a=[a_n\cdots a_1a_0]_b=\sum_{k=0}^n a_kb^k<br>
-\]<br>
-e<br>
-\[<br>
-a=[c_m\cdots c_1c_0]_b=\sum_{k=0}^m c_kb^k.<br>
-\]<br>
-Como acima, escreva $a=qb+r$ onde $0\leq r\leq b-1$ e note que os números $q$ e $r$ são únicos. Pelas duas expressões para o número $a$ obtemos que<br>
-\[<br>
-a=\sum_{k=0}^n a_kb^k=b\cdot\left(\sum_{k=1}^n a_kb^{k-1}\right)+a_0<br>
-\]<br>
-e<br>
-\[<br>
-a=\sum_{k=0}^m c_kb^k=b\cdot\left(\sum_{k=1}^m c_kb^{k-1}\right)+c_0.<br>
-\]<br>
-Pela unicidade do resto no Teorema de Euclides, obtemos que $r=a_0=c_0$; ou seja, os últimos algarismos são determinados unicamento.</p>
-<p>Agora,<br>
-\[<br>
-q=(a-r)/b=\sum_{k=1}^n a_kb^{k-1}=\sum_{k=1}^m c_kb^{k-1};<br>
-\]<br>
-ou seja<br>
-\[<br>
-q=[a_n\cdots a_1]_b=[c_m\cdots c_1]_b.<br>
-\]<br>
-A hipótese de indução aplica-se para o número $q$, e assim as as sequências<br>
-$[a_n\cdots a_1]_b$ e $[c_m\cdots c_1]_b$ são iguais. Portanto as duas expansões para o número $a$ são iguais como foi afirmado.</p>
-</div>
-<div class="example">Seguindo a demonstração do teorema anterior, obtemos um algoritmo para determinar a sequência dos dígitos de um número natural em uma base $b$. Tome o número $a=168$ e seja $b=5$.
-<p>Passo 1:<br>
-\[<br>
-168=33\cdot 5+3,<br>
-\]<br>
-portanto o último algarismo de $168$ é $3$ e os demais algarismos são os algarismos de $33$.</p>
-<p>Passo 2:<br>
-\[<br>
-33 = 6\cdot 5+3.<br>
-\]<br>
-Logo o penúltimo algarismo é $3$ e os demais algarismos são os algarismos de $6$.</p>
-<p>Passo 3:<br>
-\[<br>
-6=1\cdot 5+1;<br>
-\]<br>
-ou seja, o seguinte algarismo é $1$ e os demais algarismos são os algarismos de $1$.</p>
-<p>Passo  4:<br>
-\[<br>
-1=0\cdot 5+1<br>
-\]<br>
-que diz que $1=[1]_5$.</p>
-<p>Juntando as peças, obtemos que $168=[1133]_5$.</p>
-</div>
-<h3>Computação com Python</h3>
-<p>Escrevemos uma <a href="https://www.letscode.com.br/blog/funcoes-e-mais-funcoes-em-python">função em Python</a> que vai realizar a computação dos algarismos para um dado natural $a$ e base $b$.</p>
-<p>A primeira função é uma função recursiva. A ideia é a seguinte:</p>
+Seja $V$ um espaço vetorial e $U\leq V$. Para $v\in V$ definimos<br>
+$$<br>
+v+U=\{v+u\mid u \in U\}.<br>
+$$<br>
+Claramente $v+U\subseteq V$ e o conjunto $v+U$ chama-se uma <b>classe lateral</b> em $V$.
+<div class="lemma">
+As seguintes são equivalentes para $v_1,v_2\in V$:
 <ol>
-<li>Se $a\leq b-1$, então $a$ tem único algarismo e assim $a=[a]_b$;</li>
-<li>Caso contrário, escreva $a=qp+a_0$ onde $a_0\in\{0,\ldots,b-1\}$. O último algarismo de $a$ será $a_0$ e os demais algarismos serão os algarismos de $q$ que poderemos determinar, pois $q&lt;a$.</li>
+<li>$v_1+U=v_2+U$</li>
+<li>$v_1-v_2\in U$</li>
 </ol>
-<pre><code class="language-python">
-def NumeroEmBaseRecursivo( a, b ):
-    
-    # a e b precisam ser positivos
-    assert( a &gt; 0 and b &gt; 1 )
-    # calcular quociente e resto de a por b
-    q, r = a//b, a%b
-    
-    if q == 0:
-        # se q é zero, temos único dígito
-        digitos = [r]
-    else:
-        # caso contrário calculamos os dígitos de q
-        digitos = NumeroEmBaseRecursivo( q, b )
-        # adicionamos o último dígito
-        digitos.append( r )
-    
-    return digitos
-</code></pre>
-<p>A função acima é muito elegante, mas na prática função recursiva deve ser evitada quando pode ser substituída por uma função não recursiva. A seguinte função faz a mesma computação evitando recursão.</p>
-<pre><code class="language-python">
-def NumeroEmBase( a, b ):
-    
-    # a e b precisam ser positivos
-    assert( a &gt; 0 and b &gt; 1 )
-    # inicializamos a lista de dígitos
-    digitos = []
-    
-    while a &gt; 0:
-        # o dígito seguinte será o último dígito de a
-        digitos.insert( 0, a%b )
-        a = a//b
-    
-    return digitos
-</code></pre>
+<p>Em particular, $v+U=0+U$ se e somente se $v\in U$.</p>
+</div>
+<div class="proof">
+Exercício.</div>
+<div class="definition">
+Seja $V$ um espaço vetorial sobre um corpo $\F$ e $U\leq V$. Definimos os espaço quociente $V/U$ como o conjunto<br>
+$$<br>
+V/U=\{v+U\mid v\in V\}<br>
+$$<br>
+com as operações<br>
+$$<br>
+(v+U)+(w+U)=(v+w)+U\quad\mbox{e}\quad\alpha(v+U)=(\alpha v)+U<br>
+$$<br>
+para todo $v,w\in V$ e $\alpha\in \F$.</div>
+<div class="theorem">
+As operações em $V/U$ estão bem definidas e o conjunto $V/U$ com estas operações é um $\F$-espaço vetorial.</div>
+<div class="proof">
+O leitor pode verificar a maioria destas afirmações. Aqui só comentamos que $0_{V/U}=0_V+U$ e $-(v+U)=(-v)+U$.</div>
+<div class="theorem">
+Seja $V$ um espaço vetorial, $U\leq V$, e seja $X$ uma base de $U$. Assuma que $X\cup Y$ é uma base de $V$ com $X\cap Y=\emptyset$. Então<br>
+$$<br>
+\{y+U\mid y\in Y\}<br>
+$$<br>
+é uma base de $V/U$. Em particular, se $\dim V/U=\dim V-\dim U$.</div>
 </div>
 			</div>
 <!-- .entry-content -->
@@ -403,8 +316,6 @@ def NumeroEmBase( a, b ):
 </div>
 <!-- #page -->
 
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/prism-core.js?ver=3.3" id="prismatic-prism-js"></script>
-<script type="text/javascript" src="https://schcs.github.io/WP/wp-content/plugins/prismatic/lib/prism/js/lang-python.js?ver=3.3" id="prismatic-prism-python-js"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/navigation.js?ver=20120206" id="penscratch-2-navigation-js"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/penscratch-2.js?ver=20170608" id="penscratch-2-scripts-js"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-content/themes/penscratch-2-wpcom/js/skip-link-focus-fix.js?ver=20130115" id="penscratch-2-skip-link-focus-fix-js"></script>
