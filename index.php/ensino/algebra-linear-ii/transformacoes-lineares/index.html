@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<title>Espaço quociente &#8211; Csaba Schneider</title>
+<title>Transformações lineares &#8211; Csaba Schneider</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -42,14 +42,14 @@ img.emoji {
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
-<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2091">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2104">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 6.1.1">
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/espaco-quociente/">
-<link rel="shortlink" href="https://schcs.github.io/WP/?p=2091">
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fespaco-quociente%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fespaco-quociente%2F&#038;format=xml">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/transformacoes-lineares/">
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=2104">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Ftransformacoes-lineares%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Ftransformacoes-lineares%2F&#038;format=xml">
 		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
@@ -218,7 +218,7 @@ content: "Conjecture (" attr(text) ") ";
 
 </head>
 
-<body class="page-template-default page page-id-2091 page-child parent-pageid-2021 wp-embed-responsive no-sidebar">
+<body class="page-template-default page page-id-2104 page-child parent-pageid-2021 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -246,86 +246,67 @@ content: "Conjecture (" attr(text) ") ";
 
 			
 				
-<article id="post-2091" class="post-2091 page type-page status-publish hentry">
+<article id="post-2104" class="post-2104 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Espaço quociente</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Transformações lineares</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
 		<div style="color:black;">
-Seja $V$ um espaço vetorial e $U\leq V$. Para $v\in V$ definimos<br>
-$$<br>
-v+U=\{v+u\mid u \in U\}.<br>
-$$<br>
-Claramente $v+U\subseteq V$ e o conjunto $v+U$ chama-se uma <b>classe lateral</b> em $V$.
-<div class="lemma">
-As seguintes são equivalentes para $v_1,v_2\in V$:
-<ol>
-<li>$v_1+U=v_2+U$</li>
-<li>$v_1-v_2\in U$</li>
-</ol>
-<p>Em particular, $v+U=0+U$ se e somente se $v\in U$.</p>
-</div>
-<div class="proof">
-Exercício.</div>
 <div class="definition">
-Seja $V$ um espaço vetorial sobre um corpo $\F$ e $U\leq V$. Definimos os espaço quociente $V/U$ como o conjunto<br>
+Sejam $U$ e $V$ espaços vetoriais sobre o mesmo corpo $\F$. Uma aplicação $f:U\to V$ é dito <b>linear</b> se<br>
 $$<br>
-V/U=\{v+U\mid v\in V\}<br>
+f(u+v)=f(u)+f(v)\quad \mbox{e}\quad f(\alpha u)=\alpha f(u)<br>
 $$<br>
-com as operações<br>
+valem para todo $u,v\in U$ e $\alpha\in \F$.</div>
+<p>Uma condição equivalente à condição na definição anterior é que<br>
 $$<br>
-(v+U)+(w+U)=(v+w)+U\quad\mbox{e}\quad\alpha(v+U)=(\alpha v)+U<br>
+f(\alpha u+\beta v)=\alpha f(u)+\beta f(v)<br>
 $$<br>
-para todo $v,w\in V$ e $\alpha\in \F$.</div>
-<div class="theorem">
-As operações em $V/U$ estão bem definidas e o conjunto $V/U$ com estas operações é um $\F$-espaço vetorial.</div>
-<div class="proof">
-O leitor pode verificar a maioria destas afirmações. Aqui só comentamos que $0_{V/U}=0_V+U$ e $-(v+U)=(-v)+U$.</div>
-<div class="theorem">
-Seja $V$ um espaço vetorial, $U\leq V$, e seja $X$ uma base de $U$. Assuma que $X\cup Y$ é uma base de $V$ com $X\cap Y=\emptyset$. Então<br>
+vale para todo $u,v\in V$ e $\alpha,\beta\in\F$.<br>
+Também segue diretamente da definição que se $u_1,\ldots,u_k\in U$ e $\alpha_1,\ldots,\alpha_k\in\F$, então<br>
 $$<br>
-\bar Y=\{y+U\mid y\in Y\}<br>
+f(\alpha_1u_1+\cdots+\alpha_ku_k)=\alpha_1f(u_1)+\cdots+\alpha_kf(u_k);<br>
 $$<br>
-é uma base de $V/U$. Em particular, se $\dim V/U=\dim V-\dim U$.</div>
-<div class="proof">
-Seja $v\in V$ arbitrário. Então<br>
+ou seja, uma transformação linear preserva combinações lineares.</p>
+<div class="exercise">
+Mostre que $f(0_U)=0_V$ para qualquer transformação linear $f:U\to V$.</div>
+<div class="example">
+Exemplos são dados na aula, e nas notas do John e Rodney.</div>
+<div class="lemma">
+Seja $U$ um $\F$-espaço vetorial com base $X=\{x_i\mid i \in I\}$. Seja $V$ um outro $\F$-espaço e escolha $y_i\in V$ para todo $i\in I$. Então existe uma única transformação linear $f:U\to V$ tal que<br>
 $$<br>
-v=\sum_{i=1}^k \alpha_ix_i+\sum_{i=1}^m\beta_i y_i<br>
-$$<br>
-com $\alpha_i,\beta_i\in \F$, $x_i\in X$, $y_i\in Y$. Ora, como $x_i\in U$, segue que<br>
-\begin{align*}<br>
-v+U&amp;=\left(\sum_{i=1}^k \alpha_ix_i+\sum_{i=1}^m\beta_i y_i\right)+U\\<br>
-&amp;=\left(\sum_{i=1}^k \alpha_ix_i+U\right)+\left(\sum_{i=1}^m\beta_i y_i +U\right)\\<br>
-&amp;=\sum_{i=1}^m\beta_i y_i+U=\sum_{i=1}^m\beta_i(y_i+U)<br>
-\end{align*}<br>
-Portanto $\bar Y$ é um conjunto gerador de $V/U$.
-<p>Assuma que<br>
-$$<br>
-0=\sum_{i=1}^m \alpha_i (y_i+U)=\left(\sum_{i=1}^m \alpha_i y_i\right)+U.<br>
-$$<br>
-é uma combinação linear do vetor nulo de $V/U$ com $\alpha_i\in\F$ e $y_i\in Y$ (distintos). Segue que<br>
-$$<br>
-\sum_{i=1}^m \alpha_i y_i\in U<br>
-$$<br>
-e assim<br>
-$$<br>
-\sum_{i=1}^m \alpha_i y_i=\sum_{i=1}^k\beta_i x_i<br>
-$$<br>
-com $\beta_i\in \F$ e $x_i\in X$ (distintos).<br>
-Ou seja<br>
-$$<br>
-\sum_{i=1}^m \alpha_i y_i-\sum_{i=1}^k\beta_i x_i=0.<br>
-$$<br>
-Mas como os $x_i$ e os $y_j$ são L.I., temos que a combinação linear na linha anterior é trivial. Logo $\alpha_i=0$ e $\beta_i=0$ para todo $i$. Isso implica que $\bar Y$ é L.I. e também que $\bar Y$ é base de $V/U$.</p>
-</div>
-<div class="corollary">
-Seja $V$ um espaço vetorial e $U\leq V$. Então<br>
-$$<br>
-\dim U+\dim V/U=\dim V.<br>
-$$<br>
-Em particular, se $V$ tem dimensão finita,<br>
-$$<br>
-\dim V/U=\dim V-\dim U.<br>
+f(x_i)=y_i\quad\mbox{para todo}\quad i\in I.<br>
 $$</div>
+<div class="proof">
+Se $u\in U$, então $u$ pode ser escrito unicamente na forma<br>
+$$<br>
+u=\alpha_1x_1+\cdots+\alpha_k x_k<br>
+$$<br>
+com $\alpha_i\in \F$ e $x_i\in X$. Defina<br>
+$$<br>
+f(u)=\alpha_1f(x_1)+\cdots+\alpha_k f(x_k).<br>
+$$<br>
+O fato que $f$ está bem definida, ela é linear e que ela é única é exercício para o leitor.</div>
+<div class="definition">
+Seja $f:U\to V$ uma transformação linear. Então<br>
+$$<br>
+\mbox{Im}\,f=\{f(u)\mid u \in U\}\quad\mbox{e}\quad \ker f=\{u\in U\mid f(u)=0\}.<br>
+$$<br>
+O conjunto $\mbox{Im}\,f$ chama-se a <b>imagem</b>, enquanto $\ker f$ chama-se o <b>núcleo</b> de $f$.</div>
+<div class="lemma">
+Se $f:U\to V$ é uma transformação linear, então $\mbox{Im}\,f\leq V$ e $\ker f\leq U$.</div>
+<p>Lembre que uma função $\varphi:X\to Y$ é dita <b>injetiva</b> se $\varphi(x_1)=\varphi(x_2)$ implica que $x_1=x_2$ para todo $x_1,x_2\in X$.</p>
+<div class="lemma">
+Uma transformação linear $f:U\to V$ é injetiva se e somente se $\ker f=\{0\}$.</div>
+<div class="proof">
+Assuma que $f$ é injetiva e seja $u\in \ker f$. Então $f(u)=f(0)=0$. Mas a definição da injetividade implica neste caso que $u=0$. Logo $\ker f=\{0\}$.
+<p>Assuma agora que $\ker f=\{0\}$ e sejam $u_1,u_2\in U$ tal que $f(u_1)=f(u_2)$. Neste caso,<br>
+$$<br>
+0=f(u_1)-f(u_2)=f(u_1+u_2);<br>
+$$<br>
+ou seja, $u_1-u_2\in\ker f$. Como $\ker f$ contém apenas a vetor nulo, tem~se que $u_1-u_2=0$; ou seja $u_1=u_2$. Portanto, $f$ é injetiva.</p>
+</div>
+<div class="exercise">
+Sejam $f:U\to V$ e $g:V\to W$ transformações lineares. Mostre que $g\circ f:U\to W$ é  linear.</div>
 </div>
 			</div>
 <!-- .entry-content -->

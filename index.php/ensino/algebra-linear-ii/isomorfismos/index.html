@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<title>Espaço quociente &#8211; Csaba Schneider</title>
+<title>Isomorfismos &#8211; Csaba Schneider</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -42,14 +42,14 @@ img.emoji {
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
-<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2091">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2116">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 6.1.1">
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/espaco-quociente/">
-<link rel="shortlink" href="https://schcs.github.io/WP/?p=2091">
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fespaco-quociente%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fespaco-quociente%2F&#038;format=xml">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/isomorfismos/">
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=2116">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fisomorfismos%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps://schcs.github.io/WP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fisomorfismos%2F&#038;format=xml">
 		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
@@ -218,7 +218,7 @@ content: "Conjecture (" attr(text) ") ";
 
 </head>
 
-<body class="page-template-default page page-id-2091 page-child parent-pageid-2021 wp-embed-responsive no-sidebar">
+<body class="page-template-default page page-id-2116 page-child parent-pageid-2021 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -246,85 +246,64 @@ content: "Conjecture (" attr(text) ") ";
 
 			
 				
-<article id="post-2091" class="post-2091 page type-page status-publish hentry">
+<article id="post-2116" class="post-2116 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Espaço quociente</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Isomorfismos</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
 		<div style="color:black;">
-Seja $V$ um espaço vetorial e $U\leq V$. Para $v\in V$ definimos<br>
+Uma transformação linear $f:U\to V$ é dito <b>isomorfismo</b> se $f$ é injetiva e sobrejetiva. Neste caso, podemos definir o inverso<br>
 $$<br>
-v+U=\{v+u\mid u \in U\}.<br>
-$$<br>
-Claramente $v+U\subseteq V$ e o conjunto $v+U$ chama-se uma <b>classe lateral</b> em $V$.
-<div class="lemma">
-As seguintes são equivalentes para $v_1,v_2\in V$:
+f^{-1}:V\to U,\quad f^{-1}(v)=u\mbox{ se e somente se }f(u)=v.<br>
+$$
+<div class="exercise">
+Seja $f:U\to V$ um isomorfismo. Mostre que $f^{-1}:V\to U$ é linear.</div>
+<p>Dizemos que $U$ e $V$ são isomorfos se existir um isomorfismo $f:U\to V$. Neste caso escrevemos que $U\cong V$. Note que espaços isomorfos são definidos sobre o mesmo corpo.</p>
+<p>É fácil verificar que a aplicação identidade $\mbox{id}_V:V\to V$ é um isomorfismo para qualquer espaço $V$ e que a composição de isomorfismos é isomorfismo. Portanto, temos, para quaisquer espaços vetoriais $U$, $V$, $W$,  que</p>
 <ol>
-<li>$v_1+U=v_2+U$</li>
-<li>$v_1-v_2\in U$</li>
+<li>$V\cong V$;</li>
+<li>se $V\cong U$ então $U\cong V$;</li>
+<li>se $U\cong V$ e $V\cong W$, então $U\cong W$.</li>
 </ol>
-<p>Em particular, $v+U=0+U$ se e somente se $v\in U$.</p>
-</div>
+<div class="example">
+Seja $V$ um espaço de dimensão finita sobre um corpo $\F$. Assuma que $\dim V=n$. Seja $B=\{b_1,\ldots,b_n\}$ uma base de $V$. Se $v\in V$, então $v$ pode ser escrito unicamente na forma<br>
+$$<br>
+v=\alpha_1 b_1+\cdots+\alpha_n b_n.<br>
+$$<br>
+O vetor $(\alpha_1,\ldots,\alpha_n)$ é chamado de <b>vetor das coordenadas de $v$ na base $B$</b> e é denotado por $[v]_B$ ou mais simplesmente $v_B$. É fácil verificar que a transformação $f:V\to \F^n$ definido como<br>
+$$<br>
+f(v)=[v]_B\quad\mbox{para}\quad v\in V<br>
+$$<br>
+é um isomorfismo entre $V$ e $\F^n$.</div>
+<div class="corollary">
+Se $V$ é um $\F$-espaço vetorial de dimensão $n$, então $V\cong \F^n$. Mais geralmente, se $U$ e $V$ são $\F$-espaços vetoriais de dimensão finita tais que $\dim U=\dim V$, então $U\cong V$.</div>
+<div class="theorem">(O Teorema de Núcleo e Imagem)<br>
+Seja $f:U\to V$ uma transformação linear. Defina $\bar f:U/\ker f\to \mbox{Im}\,f$ com a regra<br>
+$$<br>
+\bar f(u+\ker f)=f(u)\quad\mbox{para todo}\quad u\in U.<br>
+$$<br>
+Então $f$ é um isomorfismo bem definido e $U/\ker f\cong \mbox{Im}\,f$.</div>
 <div class="proof">
-Exercício.</div>
-<div class="definition">
-Seja $V$ um espaço vetorial sobre um corpo $\F$ e $U\leq V$. Definimos os espaço quociente $V/U$ como o conjunto<br>
+Primeiro verificamos que $\bar f$ está bem definido. Sejam $u_1,u_2\in U$ tais que $u_1+\ker f=u_2+\ker f$; ou seja, $u_1-u_2\in \ker f$. Logo<br>
 $$<br>
-V/U=\{v+U\mid v\in V\}<br>
+f(u_1)-f(u_2)=f(u_1-u_2)=0<br>
 $$<br>
-com as operações<br>
+e assim $f(u_1)=f(u_2)$. Então $\bar f(u+\ker f)$ não depende da representante da classe lateral $u+\ker f$. Note também que $\bar f(u+\ker f)=f(u)\in \mbox{Im}\,f$ para todo $u\in U$. Portanto a aplicação $\bar f:U/\ker f\to \mbox{Im}\,f$ está bem definida.
+<p>É fácil verificar que $\bar f$ é linear. Verifiquemos que $\bar f$ é injetiva. Precisa provar que $\ker \bar f=0$. Seja $u+\ker f\in \ker\bar f$. Neste caso<br>
 $$<br>
-(v+U)+(w+U)=(v+w)+U\quad\mbox{e}\quad\alpha(v+U)=(\alpha v)+U<br>
+0=\bar f(u+\ker f)=f(u);<br>
 $$<br>
-para todo $v,w\in V$ e $\alpha\in \F$.</div>
-<div class="theorem">
-As operações em $V/U$ estão bem definidas e o conjunto $V/U$ com estas operações é um $\F$-espaço vetorial.</div>
-<div class="proof">
-O leitor pode verificar a maioria destas afirmações. Aqui só comentamos que $0_{V/U}=0_V+U$ e $-(v+U)=(-v)+U$.</div>
-<div class="theorem">
-Seja $V$ um espaço vetorial, $U\leq V$, e seja $X$ uma base de $U$. Assuma que $X\cup Y$ é uma base de $V$ com $X\cap Y=\emptyset$. Então<br>
-$$<br>
-\bar Y=\{y+U\mid y\in Y\}<br>
-$$<br>
-é uma base de $V/U$. Em particular, se $\dim V/U=\dim V-\dim U$.</div>
-<div class="proof">
-Seja $v\in V$ arbitrário. Então<br>
-$$<br>
-v=\sum_{i=1}^k \alpha_ix_i+\sum_{i=1}^m\beta_i y_i<br>
-$$<br>
-com $\alpha_i,\beta_i\in \F$, $x_i\in X$, $y_i\in Y$. Ora, como $x_i\in U$, segue que<br>
-\begin{align*}<br>
-v+U&amp;=\left(\sum_{i=1}^k \alpha_ix_i+\sum_{i=1}^m\beta_i y_i\right)+U\\<br>
-&amp;=\left(\sum_{i=1}^k \alpha_ix_i+U\right)+\left(\sum_{i=1}^m\beta_i y_i +U\right)\\<br>
-&amp;=\sum_{i=1}^m\beta_i y_i+U=\sum_{i=1}^m\beta_i(y_i+U)<br>
-\end{align*}<br>
-Portanto $\bar Y$ é um conjunto gerador de $V/U$.
-<p>Assuma que<br>
-$$<br>
-0=\sum_{i=1}^m \alpha_i (y_i+U)=\left(\sum_{i=1}^m \alpha_i y_i\right)+U.<br>
-$$<br>
-é uma combinação linear do vetor nulo de $V/U$ com $\alpha_i\in\F$ e $y_i\in Y$ (distintos). Segue que<br>
-$$<br>
-\sum_{i=1}^m \alpha_i y_i\in U<br>
-$$<br>
-e assim<br>
-$$<br>
-\sum_{i=1}^m \alpha_i y_i=\sum_{i=1}^k\beta_i x_i<br>
-$$<br>
-com $\beta_i\in \F$ e $x_i\in X$ (distintos).<br>
-Ou seja<br>
-$$<br>
-\sum_{i=1}^m \alpha_i y_i-\sum_{i=1}^k\beta_i x_i=0.<br>
-$$<br>
-Mas como os $x_i$ e os $y_j$ são L.I., temos que a combinação linear na linha anterior é trivial. Logo $\alpha_i=0$ e $\beta_i=0$ para todo $i$. Isso implica que $\bar Y$ é L.I. e também que $\bar Y$ é base de $V/U$.</p>
+ou seja $u\in \ker f$ e $u+\ker f=\ker f=0_{U/\ker f}$.  Segeu que $\bar f$ é injetiva.</p>
+<p>Ora se $v\in \mbox{Im}\,f$, então $f(u)=v$ com algum $u\in U$ e segeu que $\bar f(u+\ker f)=v$. Logo $\bar f$ é sobrejetiva.</p>
+<p>Obtivemos que $\bar f:U/\ker f\to \mbox{Im}\,f$ é um isomorfismo e assim  $U/\ker f\cong \mbox{Im}\,f$.</p>
 </div>
 <div class="corollary">
-Seja $V$ um espaço vetorial e $U\leq V$. Então<br>
+Se $f:U\to V$ é uma transformação linear entre espaços vetoriais, então<br>
 $$<br>
-\dim U+\dim V/U=\dim V.<br>
+\dim V=\dim \ker f+\dim \mbox{Im}\,f.<br>
 $$<br>
-Em particular, se $V$ tem dimensão finita,<br>
+Se $U$ e $V$ têm dimensão finita, então<br>
 $$<br>
-\dim V/U=\dim V-\dim U.<br>
+\dim \mbox{Im}\,f=\dim V-\dim\ker f.<br>
 $$</div>
 </div>
 			</div>
