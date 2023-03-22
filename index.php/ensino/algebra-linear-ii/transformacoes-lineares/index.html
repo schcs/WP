@@ -272,10 +272,7 @@ Mostre que $f(0_U)=0_V$ para qualquer transformação linear $f:U\to V$.</div>
 <div class="example">
 Exemplos são dados na aula, e nas notas do John e Rodney.</div>
 <div class="lemma">
-Seja $U$ um $\F$-espaço vetorial com base $X=\{x_i\mid i \in I\}$. Seja $V$ um outro $\F$-espaço e escolha $y_i\in V$ para todo $i\in I$. Então existe uma única transformação linear $f:U\to V$ tal que<br>
-$$<br>
-f(x_i)=y_i\quad\mbox{para todo}\quad i\in I.<br>
-$$</div>
+Seja $U$ um $\F$-espaço vetorial com base $X=\{x_i\mid i \in I\}$. Seja $V$ um outro $\F$-espaço e seja $f_0:X\to V$ uma aplicação qualquer. Então existe uma única transformação linear $f:U\to V$ tal que $f|_X=f_0$.</div>
 <div class="proof">
 Se $u\in U$, então $u$ pode ser escrito unicamente na forma<br>
 $$<br>
@@ -283,9 +280,19 @@ u=\alpha_1x_1+\cdots+\alpha_k x_k<br>
 $$<br>
 com $\alpha_i\in \F$ e $x_i\in X$. Defina<br>
 $$<br>
-f(u)=\alpha_1f(x_1)+\cdots+\alpha_k f(x_k).<br>
+f(u)=\alpha_1f_0(x_1)+\cdots+\alpha_k f_0(x_k).<br>
 $$<br>
 O fato que $f$ está bem definida, ela é linear e que ela é única é exercício para o leitor.</div>
+<p>A relação entre as aplicações no lema anterior pode ser expressa na forma de um diagrama comutativo:<br>
+\begin{array}{ccc}<br>
+U &amp; \stackrel{f}{\longrightarrow} &amp; V\\<br>
+i\uparrow &amp;\nearrow f_0&amp;\\<br>
+X &amp;  &amp;<br>
+\end{array}<br>
+A aplicação $i:X\to U$ é a inclusão $i(x)=x$ para todo $x\in X$. O resultado diz que para todo $f_0:X\to V$ existe unicamente $f:U\to V$. Denotando por $\mbox{Hom}(U,V)$ o conjunto de aplicações lineares de $U$ para $V$, temos que a corresponência $f_0\mapsto f$  determina uma bijeção<br>
+$$<br>
+\mbox{Func}(X,V)\to \mbox{Hom}(U,V).<br>
+$$</p>
 <div class="definition">
 Seja $f:U\to V$ uma transformação linear. Então<br>
 $$<br>
