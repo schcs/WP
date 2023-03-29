@@ -268,13 +268,20 @@ $$<br>
 [f(v)]_C=[f]_C^B[v]_B.<br>
 $$</div>
 <div class="proof">
-Considere os espaços $\F^k$ e $\F^m$. Sabemos que o mapa $V\to\F^k$ definido como $v\mapsto [v]_B$ é um isomorfosmo. Logo, ele tem inverso que denotemos por $\varphi$. Mais precisamente, para $u=(\alpha_1,\ldots,\alpha_k)\in\F^k$, $\varphi(u)=\sum_i\alpha_i b_i$.
-<p>Seja $v\in V$ arbitrário e assuma que $u=[v]_B$ (ou seja, $\varphi(u)=v$). O lado esquerdo da equação do lema pode ser escrito como  $[f(\varphi(u))]_C$, enquanto o lado direito, pode ser escrito como $[f]_C^Bu$. Note que a transformação $u\mapsto [f(\varphi(u))]_C$ é linear (pois ela e composição de transformações lineares) e a transformação $u\mapsto [f]_C^Bu$ é também linear (multiplicação matricial). Logo para provar que as duas transformações são iguais, é suficente verificar que eles são iguais em uma base de $\F^k$. Considere a base canônica $e_1,\ldots,e_k$ de $\F^k$. Usando a definição de $[f]_C^B$,<br>
+Nos dois lados da equação temos que calcular a imagem de $v\in V$ por uma transformação linear $V\to \F^m$. No lado esquerdo temos que aplicar a composição<br>
 $$<br>
-[f(\varphi(e_i))]_C=[f(b_i)]_C=\mbox{$i$-ésima coluna de $[f]_C^B$}.<br>
+v\mapsto f(v)\mapsto [f(v)]_C<br>
 $$<br>
-Mas $[f]_C^Be_i$ também é apenas a $i$-ésima coluna de $[f]_C^B$. Logo as duas expressões na equação do lema são iguais para todo $v\in V$.</p>
-</div>
+e no lado direito temos<br>
+$$<br>
+v\mapsto [v]_B\mapsto [f]^B_C[v]_B.<br>
+$$<br>
+Precisa-se provar que estas duas transformações são iguais.<br>
+Para provar que as duas transformações são iguais, é suficente verificar que eles são iguais em uma base de $V$. Usando a base $B$, temos que<br>
+$$<br>
+[f(b_i)]_C=\mbox{$i$-ésima coluna de $[f]_C^B$}.<br>
+$$<br>
+Mas $[b_i]_B$ é o vetor $e_i$ na base canônica de $\F^k$, então $[f]_C^B[b_i]_B$ também é apenas a $i$-ésima coluna de $[f]_C^B$. Logo as duas expressões na equação do lema são iguais para todo $v\in V$.</div>
 <div class="exercise">
 Sejam $V$, $U$, e $W$ espaços vetoriais com bases $B$, $C$ e $D$ e sejam $f:V\to U$ e $g:U\to W$ transformações lineares. Mostre que<br>
 $$<br>
