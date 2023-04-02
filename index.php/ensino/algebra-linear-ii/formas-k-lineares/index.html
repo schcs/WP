@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<title>Congruências com incógnitas &#8211; Csaba Schneider</title>
+<title>Formas $k$-lineares e o determinante &#8211; Csaba Schneider</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -42,14 +42,14 @@ img.emoji {
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.3" id="jquery-core-js"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
-<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/1920">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2176">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 6.2">
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/congruencias-com-incognitas/">
-<link rel="shortlink" href="https://schcs.github.io/WP/?p=1920">
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fcongruencias-com-incognitas%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Ffundamentos-de-algebra%2Fcongruencias-com-incognitas%2F#038;format=xml">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/formas-k-lineares/">
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=2176">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fformas-k-lineares%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Fformas-k-lineares%2F#038;format=xml">
 		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
@@ -218,7 +218,7 @@ content: "Conjecture (" attr(text) ") ";
 
 </head>
 
-<body class="page-template-default page page-id-1920 page-child parent-pageid-1193 wp-embed-responsive no-sidebar">
+<body class="page-template-default page page-id-2176 page-child parent-pageid-2021 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -246,83 +246,118 @@ content: "Conjecture (" attr(text) ") ";
 
 			
 				
-<article id="post-1920" class="post-1920 page type-page status-publish hentry">
+<article id="post-2176" class="post-2176 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Congruências com incógnitas</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Formas $k$-lineares e o determinante</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
 		<div style="color:black;">
+<div class="definition">
+Sejam $V$ e $W$ espaços vetoriais sobre $\F$, $k\geq 1$, e considere o produto cartesiano $V^k=V\times \cdots\times V$ de $k$ cópias de $V$. Dizemos que uma aplicação $f:V^k\to W$ é $k$-linear se ela é linear em todas as variáveis. Em outras palávras,<br>
+$$<br>
+f(v_1,\ldots,\alpha v_i+\beta w,\ldots v_k)=\alpha f(v_1,\ldots,v_i,\ldots v_k)+\beta f(v_1,\ldots,w,\ldots v_k)<br>
+$$<br>
+vale para todo $i\in\{1,\ldots,k\}$, $v_i\in V$ e $w\in V$. Uma aplicação $V^k\to \F$ $k$-linear é chamada de <b>forma (ou funcional) $k$-linear.</b>
+</div>
 <div class="example">
-Seja $x$ uma incógnita e considere a congruência<br>
-\[<br>
-x\equiv 4\pmod 6.<br>
-\]<br>
-As soluções desta congruência são números inteiros que são congruentes com $4$ módulo $6$. Claramente $x=4$ é uma solução particular desta congruência e o conjunto das soluções é<br>
-\[<br>
-\{6k+4\mid k\in\Z\}.<br>
-\]</div>
-<div class="example">
-Considere agora o seguinte exemplo um pouco mais complicado:<br>
-\[<br>
-3x\equiv 4\pmod {10}.<br>
-\]<br>
-Note que $3$ é invertível módulo $10$ e o seu inverso é $7$, pois $3\cdot 7=21\equiv 1\pmod {10}$. Multiplicando os dois lados desta congruência por $7$, obtemos que<br>
-\[<br>
-x\equiv 21x=7\cdot 3x=7\cdot 4=28\equiv 8\pmod{10}.<br>
-\]<br>
-Logo, a congruência neste exemplo é equivalente à congruência<br>
-\[<br>
-x\equiv 8\pmod{10}.<br>
-\]<br>
-As soluções desta última congruência, e também da congruência anterior, são números no conjunto<br>
-\[<br>
-\{10k+8\mid k\in\Z\}.<br>
-\]</div>
-<div class="example">
-Considere a congruência<br>
-\[<br>
-3x\equiv 5\pmod 6.<br>
-\]<br>
-Note que uma solução $x\in\Z$ desta congruência satisfaz a equação diofantina $3x-5=6k$ com algum $k\in\Z$, ou seja<br>
-\[<br>
-3x-6k=5.<br>
-\]<br>
-Mas, como $\mdc 36\nmid 5$, esta equação diofantina não possui solução e assim a conguência anterior também não possui solução.</div>
-<div class="example">
-Considere a congruência<br>
-\[<br>
-6x\equiv 4\pmod {10}.<br>
-\]<br>
-Note que $x$ é solução desta congruência se e somente se $10\mid 6x-4$ que ocorre se e somente se $5\mid 3x-2$. Ou seja, a congruência original deste exemplo é equivalente à congruência<br>
-\[<br>
-3x\equiv 2\pmod{5}.<br>
-\]<br>
-Multiplicando os dois lados desta congruência com $2$ (que é o inverso modular de $3$ módulo $5$), obtemos que<br>
-\[<br>
-x\equiv 4\pmod 5<br>
-\]<br>
-e as soluções são<br>
-\[<br>
-\{5k+4\mid k \in\Z\}.<br>
-\]</div>
-<div class="theorem">
-Sejam $a,b\in\Z$ e $n\in\N$. Considere a congruência<br>
-\[<br>
-ax\equiv b\pmod n.<br>
-\]<br>
-A congruência possui solução se e somente se $\mdc an\mid b$. Neste caso, pondo $d=\mdc an$, $a_1=a/d$, $b_1=b/d$ e $n_1=n/d$ (e notando que estes são inteiros), a congruência é equivalente à congruência<br>
-\[<br>
-a_1 x\equiv b_1\pmod{n_1}<br>
-\]<br>
-onde $\mdc {a_1}{n_1}=1$. Seja $c\in\Z$ inverso de $a_1$ módulo $n_1$. Então uma solução particular desta congruência é $x_0=cb_1$ e a solução geral é<br>
-\[<br>
-\{cb_1+kn_1\mid k\in\Z\}.<br>
-\]</div>
+Uma forma $1$-linear é simplesmente uma forma linear $V\to \F$. Uma forma $2$-linear é frequentemente chamada de <b>bilinear</b>, enquanto uma forma $3$-linear e chamada de <b>trilinear</b>.
+<p>Se $V=\R^n$, então o produto interno $\langle\cdot ,\cdot\rangle$ é bilinear. Por outro lado, se $V=\C^n$, então o produto interno  $\langle\cdot ,\cdot\rangle$ não é bilinear (porque?). Se $V=\F^n$, então a aplicação<br>
+$$<br>
+d:V^n\to \F,\quad d(a_1,\ldots,a_n)=\det A,<br>
+$$<br>
+onde $A$ é a matriz formada pelas linhas $a_1,\ldots,a_n$, é $n$-linear.</p>
+</div>
+<p>Para $V, W$ espaços sobre $\F$ e $k\geq 1$, o conjunto das aplicações $k$-lineares é um espaço vetorial sobre $\F$. Este espaço é denotado por $L^k(V,W)$. O espaço $L^k(V,\F)$ é escrito como $L^k(V)$. Note que $V^*=L^1(V)$.</p>
+<div class="lemma">
+Sejam $V$ e $W$ espaços vetoriais sobre $\F$  e $B$ uma base de $V$. Seja $f_0$ um mapa arbitrário $f_0:B^k\to W$. Existe uma única aplicação $k$-linear $f:V^k\to W$ tal que $f|_{B^k}=f_0$.</div>
 <div class="proof">
-Seja $d=\mdc an$. Então $x$ é solução da congruência original se e somente se $n\mid ax-b$. Se $d\nmid b$, então esta divisibilide é impossível, pois $d\mid n$ e $d\mid ax$ e a congruência não possiu solução. Caso $d\mid b$, a divisibilidade $n\mid ax-b$ ocorre se e somente se $n_1\mid a_1x-b_1$ e neste caso, a congruência original é equivalente à congruência<br>
-\[<br>
-a_1 x\equiv b_1\pmod{n_1}.<br>
-\]<br>
-Agora $\mdc{a_1}{n_1}=1$ e $a_1$ é invertível módulo $n_1$. A afirmção final do teorema pode ser verificada multiplicando os dois lados da última congruência por um inverso modular $c$ de $a_1$.</div>
+Exercício.</div>
+<div class="example">
+Seja $V=\R^n$ com a base canônica $e_1,\ldots,e_n$. Está bem conhecido que o produto interno $\langle \cdot,\cdot\rangle$ está determinado pelos valores de $\langle e_i,e_j\rangle$ com $i,j\in\{1,\ldots,n\}$. De fato, se $v,w\in\R^n$ (vetores linhas), então<br>
+$$<br>
+\langle v,w\rangle=v G w^t<br>
+$$<br>
+onde $G$ é a matriz $G=(\langle e_i,e_j\rangle)$ (matriz de Gram).</div>
+<div class="exercise">
+Assumindo que $\dim V=m$ e $\dim W=n$, determine $L^k(V,W)$.</div>
+<div class="definition">
+Seja $f:V^k\to W$ uma aplicação $k$-linear. A aplicação $f$ é dita simétrica se<br>
+\begin{align*}<br>
+&amp;f(v_1,\ldots,v_{i-1},v_i,v_{i+1},\ldots,v_{j-1},v_j,v_{j+1},\ldots,v_n)\\&amp;=f(v_1,\ldots,v_{i-1},v_j,v_{i+1},\ldots,v_{j-1},v_i,v_{j+1},\ldots,v_n).<br>
+\end{align*}<br>
+A aplicação $f$ é dita alternada se<br>
+$$<br>
+f(v_1,\ldots,v_n)=0<br>
+$$<br>
+sempre que $v_i=v_j$ com algum $i\neq j$. Os espaços de aplicações $k$-lineares simétricas e alternadas $V^k\to W$ estão denotados por  $S^k(V,W)$ e $A^k(V,W)$, respetivamente. Escrevemos também $S^1(V)=S^1(V,\F)$ e $A^1(V,\F)=A^1(V)$.</div>
+<div class="example">
+O produto interno $\langle\cdot,\cdot\rangle$ é uma forma simétrica bilinear. O determinante $d:(\F^n)^n\to\F$ é alternada.</div>
+<div class="lemma">
+Seja $f:V^k\times \F$ uma forma alternada. As seguintes afirmações são válidas:
+<ol>
+<li>
+$$<br>
+f(\ldots,v_i,\ldots,v_j,\ldots)=-f(\ldots,v_j,\ldots,v_i,\ldots)<br>
+$$</li>
+<li>Se $v_1,\ldots,v_k$ são linearmente dependentes, então $f(v_1,\ldots,v_k)=0$.</li>
+</ol>
+</div>
+<div class="proof">
+1. Calculamos que<br>
+\begin{align*}<br>
+0&amp;=f(\ldots,v_i+v_j,\ldots,v_i+v_j,\ldots)\\&amp;=f(\ldots,v_i,\ldots,v_i,\ldots)+f(\ldots,v_i,\ldots,v_j,\ldots)\\&amp;+f(\ldots,v_j,\ldots,v_i,\ldots)+f(\ldots,v_j,\ldots,v_j,\ldots)\\&amp;=f(\ldots,v_i,\ldots,v_j,\ldots)+f(\ldots,v_j,\ldots,v_i,\ldots).<br>
+\end{align*}
+<p>2. Se os $v_i$ são L.D., então algum $v_i$ é combinação linear dos demais vetores no sistema. Assuma que $v_1$ é combinação linear de $v_2,\ldots,v_k$. Ou seja,<br>
+$$<br>
+v_1=\alpha_2 v_2+\cdots+\alpha_k v_k.<br>
+$$<br>
+Então<br>
+\begin{align*}<br>
+&amp;f(v_1,v_2,\ldots,v_k)\\&amp;=<br>
+f(\alpha_2 v_2+\cdots+\alpha_k v_k,v_2,\ldots,v_k)\\&amp;=<br>
+\alpha_2 f(v_2,v_2,\ldots,v_k)+\cdots+\alpha_k f(v_k,v_2,\ldots,v_k)=0.<br>
+\end{align*}</p>
+</div>
+<p>Se $X$ é um conjunto, uma aplicação $\sigma:X\to X$ invertível (ou seja, sobrejetiva injetiva) é chamada de <b>permutação</b> de $X$. A composição de permutações de $X$ é uma permutação de $X$. Uma transposição de $X$ é uma permutação que troca $i,j\in X$ distintos e deixa os demais elementos de $X$ fixados. Quando $X$ é finito, qualquer permutação de $X$ pode ser obtida como uma composição de transposições (qualquer configuração de um baralho pode ser atingida  trocando duas cartas e repetindo tais trocas). É um fato na teoria das permutações que se $\sigma:X\to X$ é uma permutação e<br>
+$$<br>
+\sigma=\sigma_1\circ\cdots\circ \sigma_m<br>
+$$<br>
+onde os $\sigma_i$ são transposições, então a paridade do número $m$ depende apenas da permuação $\sigma$. Se a paridade de $m$ é par, então a permutação $\sigma$ é <b>par</b>, caso contrário $\sigma$ é <b>ímpar</b>. Além disso, escrevemos<br>
+$$<br>
+(-1)^\sigma=\left\{\begin{array}{cc}<br>
+1 &amp; \mbox{se $\sigma$ for par;}\\ -1 &amp; \mbox{se $\sigma$ for ímpar.}\end{array}\right.<br>
+$$</p>
+<div class="corollary">
+Seja $V$ um espaço vetorial de dimensão $n$ com base $B=\{b_1,\ldots,b_n\}$ e $f:V^k\to W$ uma aplicação $k$-linear alternada.
+<ol>
+<li>Se $v_1,\ldots,v_k\in V$ e $\sigma$ é uma permutação do conjunto $\{1,\ldots,k\}$, então<br>
+$$<br>
+f(v_{\sigma(1)},\ldots,v_{\sigma(k)})=(-1)^\sigma f(v_1,\ldots,v_k).<br>
+$$</li>
+<li>$f$ está determinada pelos valores $f(b_{i_1},\ldots,b_{i_k})$ com $i_1&lt;\cdots&lt;i_k$.</li>
+</ol>
+</div>
+<div class="proof">
+1. Se $\sigma$ é a composição de $m$ transposições, então a permutação $v_{\sigma(1)},\ldots,v_{\sigma(k)}$ de vetores pode ser  obtida da configuração original $v_1,\ldots,v_k$ aplicando as $k$ transposições um por um. Cada transposição multiplica o valor de $f$ por $-1$, logo depois de aplicar $m$ transposições, o valor original $f(v_1,\ldots,v_k)$ será multiplicado por $(-1)^m=(-1)^\sigma$.
+<p>2. Já demonstramos que $f$ está determinado pelos valores $f(b_{i_1},\ldots,b_{i_k})$ com $i_j\in\{1,\ldots,n\}$. Note que se $i_j=i_l$ com $j\neq l$, então $f(b_{i_1},\ldots,b_{i_k})=0$. Logo pode-se dizer que $f$ está determinado pelos valores $f(b_{i_1},\ldots,b_{i_k})$ onde os $i_j$ são distintos. Existe uma única permutação $\sigma$ de $\{1,\ldots,k\}$ tal que $i_{\sigma(1)}&lt; i_{\sigma(2)}&lt; \cdots &lt;i_{\sigma(k)}$. Pelo item 1., temos que<br>
+$$<br>
+(-1)^\sigma f(b_{i_1},\ldots,b_{i_k})=f(b_{i_{\sigma(1)}},\ldots,b_{i_{\sigma(k)}})<br>
+$$</p>
+</div>
+<div class="exercise">
+Determine a dimensão de $A^k(V,W)$ onde $\dim V=m$ e $\dim W=n$.</div>
+<div class="corollary">
+Seja $V$ um espaço vetorial sobre $\F$ de dimensão $n$ com base $\{b_1,\ldots,b_n\}$. Assuma que $\alpha\in\F$. Então existe uma única forma $n$-linear $f:V^k\to \F$ tal que $f(b_1,\ldots,b_n)=\alpha$. Consequentemente $\dim A^n(V)=1$.</div>
+<div class="corollary">
+Existe uma única forma $n$-linear $f:(\F^n)^n\to \F$ tal que $f(e_1,\ldots,e_n)=1$. Se $a_i=\sum_j a_{i,j} b_j$, então<br>
+$$<br>
+f(v_1,\ldots,v_n)=\sum_{\sigma} (-1)^\sigma a_{1,\sigma(1)}\cdots a_{n,\sigma(n)}<br>
+$$<br>
+onde a soma está tomada sobre o conjunto das permutações do conjunto $\{1,\ldots,n\}$.<br>
+Em outras palávras,<br>
+$$<br>
+f(a_1,\ldots,a_n)=\det A<br>
+$$<br>
+onde $A$ é a matriz com linhas $a_1,\ldots,a_n$.</div>
 </div>
 			</div>
 <!-- .entry-content -->
