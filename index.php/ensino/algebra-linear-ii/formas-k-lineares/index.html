@@ -259,7 +259,7 @@ $$<br>
 vale para todo $i\in\{1,\ldots,k\}$, $v_i\in V$ e $w\in V$. Uma aplicação $V^k\to \F$ $k$-linear é chamada de <b>forma (ou funcional) $k$-linear.</b>
 </div>
 <div class="example">
-Uma forma $1$-linear é simplesmente uma forma linear $V\to \F$. Uma forma $2$-linear é frequentemente chamada de <b>bilinear</b>, enquanto uma forma $3$-linear e chamada de <b>trilinear</b>.
+Uma forma $1$-linear é simplesmente uma forma linear $V\to \F$. Uma aplicação ou forma $2$-linear é frequentemente chamada de <b>bilinear</b>, enquanto uma aplicação ou forma $3$-linear e chamada de <b>trilinear</b>.
 <p>Se $V=\R^n$, então o produto interno $\langle\cdot ,\cdot\rangle$ é bilinear. Por outro lado, se $V=\C^n$, então o produto interno  $\langle\cdot ,\cdot\rangle$ não é bilinear (porque?). Se $V=\F^n$, então a aplicação<br>
 $$<br>
 d:V^n\to \F,\quad d(a_1,\ldots,a_n)=\det A,<br>
@@ -344,16 +344,15 @@ $$<br>
 $$</p>
 </div>
 <div class="exercise">
-Determine a dimensão de $A^k(V,W)$ onde $\dim V=m$ e $\dim W=n$.</div>
+Determine a dimensão de $S^k(V,W)$ e $A^k(V,W)$ onde $\dim V=m$ e $\dim W=n$.</div>
 <div class="corollary">
 Seja $V$ um espaço vetorial sobre $\F$ de dimensão $n$ com base $\{b_1,\ldots,b_n\}$. Assuma que $\alpha\in\F$. Então existe uma única forma $n$-linear $f:V^k\to \F$ tal que $f(b_1,\ldots,b_n)=\alpha$. Consequentemente $\dim A^n(V)=1$.</div>
 <div class="corollary">
-Existe uma única forma $n$-linear $f:(\F^n)^n\to \F$ tal que $f(e_1,\ldots,e_n)=1$. Se $a_i=\sum_j a_{i,j} b_j$, então<br>
+Existe uma única forma $n$-linear $f:(\F^n)^n\to \F$ tal que $f(e_1,\ldots,e_n)=1$. Se $a_i=\sum_j a_{i,j} b_j\in V$, então<br>
 $$<br>
-f(v_1,\ldots,v_n)=\sum_{\sigma} (-1)^\sigma a_{1,\sigma(1)}\cdots a_{n,\sigma(n)}<br>
+f(a_1,\ldots,a_n)=\sum_{\sigma} (-1)^\sigma a_{1,\sigma(1)}\cdots a_{n,\sigma(n)}<br>
 $$<br>
-onde a soma está tomada sobre o conjunto das permutações do conjunto $\{1,\ldots,n\}$.<br>
-Em outras palávras,<br>
+onde a soma está tomada sobre o conjunto das permutações do conjunto $\{1,\ldots,n\}$. Em outras palávras,<br>
 $$<br>
 f(a_1,\ldots,a_n)=\det A<br>
 $$<br>
