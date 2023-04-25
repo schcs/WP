@@ -253,6 +253,73 @@ content: "Conjecture (" attr(text) ") ";
 		<div style="color:black;">
 <p><a href="https://schcs.github.io/WP/index.php/ensino/fundamentos-de-algebra/o-teorema-da-fatoracao-para-polinomios/">O Teorema da Fatoração para Polinômios</a> (revisão da disciplina Fundamentos de Álgebra).</p>
 <p>Nesta página $V$ é um $\F$-espaço de dimensão finita a $f\in\mbox{End}(V)$.</p>
+<p>Começamos por três exemplos motivadores.</p>
+<div class="example">
+Seja $f:\F^5\to \F^5$ um endomorfismo e $B$ é base de $\F^5$ tal que<br>
+$$<br>
+[f]_B^B=\begin{pmatrix}<br>
+2 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\ 0 &amp; 2 &amp; 0 &amp; 0&amp; 0\\ 0 &amp; 0 &amp; 2 &amp; 0&amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 3&amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0&amp; 3\\<br>
+\end{pmatrix}.<br>
+$$<br>
+Ou seja, $f$ é diagonalizável com autovalores $2$ e $3$. O polinômio minimal de $f$ é $m_f(t)=(t-2)(t-3)=t^2-5t+6$ enquanto o polinômio caraterístico é $\mbox{pcar}_f(t)=(t-2)^3(t-3)^2$. O espaço $\F^5$ decompõe-se<br>
+$$<br>
+\F^5=\langle b_1,b_2,b_3\rangle\oplus\langle b_4,b_5\rangle=V_2\oplus V_3=\ker(f-2\mbox{id})\oplus\ker(f-3\mbox{id}).<br>
+$$<br>
+Ou seja, a fatoração do polinômio minimal $m_f(t)$ em produto de irredutúveis está refletida em uma fatoração de $V$ em uma soma direta de autoespaços.</div>
+<div class="example">
+A fatoração do domínio do endomorfismo como no exemplo anterior não é sempre possível. Considere por exemplo<br>
+$f:\F^5\to \F^5$ um endomorfismo e $B$ é base de $\F^5$ tal que<br>
+$$<br>
+[f]_B^B=\begin{pmatrix}<br>
+2 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 2 &amp; 0 &amp; 0&amp; 0\\ 0 &amp; 0 &amp; 2 &amp; 0&amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 3&amp; 1\\ 0 &amp; 0 &amp; 0 &amp; 0&amp; 3\\<br>
+\end{pmatrix}.<br>
+$$<br>
+O polinômio caraterístico de $f$ é o mesmo que no exemplo anterior: $\mbox{pcar}_f(t)=(t-2)^3(t-3)^2$. Logo,  operador $f$ tem dois autovalores $2$ e $3$, mas os autoespaços são $V_2=\langle b_1\rangle$ e $V_3=\langle b_4\rangle$. Em particular $\F^5\neq V_2\oplus V_3$. Por outro lado, note que as matrizes de $f-2\mbox{id}$ e $f-3\mbox{id}$ são<br>
+$$<br>
+\begin{pmatrix}<br>
+0 &amp; 1 &amp; 0 &amp; 0  &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 0&amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0&amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 1&amp; 1\\ 0 &amp; 0 &amp; 0 &amp; 0&amp; 1\\<br>
+\end{pmatrix}\quad e\quad<br>
+\begin{pmatrix}<br>
+-1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0&amp; 0\\ 0 &amp; 0 &amp; -1 &amp; 0&amp; 0\\ 0 &amp; 0 &amp; 0 &amp; 0&amp; 1\\ 0 &amp; 0 &amp; 0 &amp; 0&amp; 0\\<br>
+\end{pmatrix}.<br>
+$$<br>
+Logo o polinômio minimal de $f$ é $m_f(t)=(t-2)^2(t-3)^2$. Além disso,<br>
+$$<br>
+W_2=\langle b_1,b_2,b_3\rangle =\ker[(f-2\mbox{id})^2]\mbox{ e }W_3=\langle b_4,b_5\rangle =\ker[(f-3\mbox{id})^2]<br>
+$$<br>
+e<br>
+$$<br>
+\F^5=W_2\oplus W_3.<br>
+$$<br>
+Em outras palavras, $\F^5$ não se decompões como soma direta dos autoespaços, mas existe uma decomposição de $\F^5$ reletindo a decomposição de $m_f(t)$. Os espaços $W_2$ e $W_3$ são chamados de <b>autoespaços generalizados</b>.</div>
+<div class="example">
+Seja $f:\R^4\to \R^4$ um endomorfismo com matriz<br>
+$$<br>
+X=[f]_B^B=\begin{pmatrix} 0 &amp; 0 &amp; 0 &amp; -1\\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; -1 \\ 0 &amp; 0 &amp; 1 &amp; 0\end{pmatrix}<br>
+$$<br>
+em uma base $B=\{b_1,b_2,b_3,b_4\}$.  Note que a matriz $X$ é a matriz companheira do polinômio $t^4+t^2+1$. Por um exercício nas listas,<br>
+$$<br>
+\mbox{pcar}_f(t)=m_f(t)=t^4+t^2+1=(t^2+t+1)(t^2-t+1).<br>
+$$<br>
+Temos ainda que os fatores no lado direito da linha anterior são irredutíveis e $\mbox{pcar}_f(t)$ não possui raiz em $\R$. Portanto, $f$ não tem autovalores e nem tem autoespaços generalizados não triviais.
+<p>Por outro lando, observe que substituindo $f$ nos dois fatores de $\mbox{pcar}_f(t)$, obtemos os endomorfismos com as seguintes matrizes:<br>
+$$<br>
+\begin{pmatrix}1 &amp; 0 &amp; -1 &amp; -1 \\ 1 &amp; 1 &amp; 0 &amp; -1 \\ 1 &amp; 1 &amp; 0 &amp; -1\\ 0 &amp; 1 &amp; 1 &amp; 0\end{pmatrix}\quad\mbox{e}\quad<br>
+\begin{pmatrix}1 &amp; 0 &amp; -1 &amp; 1 \\ -1 &amp; 1 &amp; 0 &amp; -1 \\ 1 &amp; -1 &amp; 0 &amp; 1\\ 0 &amp; 1 &amp; -1 &amp; 0\end{pmatrix}.<br>
+$$<br>
+Calculando as forma escalonadas destas matrizes, os núcleos destes endomorfismos são<br>
+$$<br>
+\ker (f^2+f+1)=\langle b_1+b_4,b_2-b_3+b_4\rangle<br>
+$$<br>
+e<br>
+$$<br>
+\ker (f^2-f+1)=\langle b_1-b_4,b_2+b_3+b_4\rangle.<br>
+$$<br>
+Obtemos neste caso a decomposição<br>
+$$<br>
+\R^4=\ker(f^2+f+1)\oplus \ker(f^2-f+1).<br>
+$$</p>
+</div>
 <div class="exercise">
 Seja $p:V\to V$ uma projeção. Então $p$ comuta com $f$ (ou seja $pf=fp$) se e somente se $\ker p$ e $\mbox{Im}(p)$ são invariantes por $f$.</div>
 <div class="theorem">(O Teorema da Decomposisão Primária)<br>
@@ -290,8 +357,7 @@ $$<br>
 V=\mbox{Im}(h_1(f)r_1(f))\oplus\cdots\oplus \mbox{Im}(h_k(f)r_k(f)).<br>
 $$</p>
 <p>Próximo afirmamos que $\mbox{Im}(h_i(f)r_i(f))=\ker(q_i(f)^{\alpha_i})$ para todo $i$.<br>
-Seja $v\in V$ e escreva $v=v_1+\cdots+v_k$ com $v_i\in \mbox{Im}(h_j(f)r_j(f))$. Se $v\in \mbox{Im}(h_i(f)r_i(f))$, então<br>
-$v=(h_i(f)r_i(f))(w)$ e<br>
+Se $v\in \mbox{Im}(h_i(f)r_i(f))$, então $v=(h_i(f)r_i(f))(w)$ e<br>
 $$<br>
 q_i^{\alpha_i}(f)(v)=q_i^{\alpha_i}(f)h_i(f)r_i(f)(w)=h_i(f)q_i^{\alpha_i}(f)r_i(f)(w)=0.<br>
 $$<br>
@@ -307,11 +373,11 @@ q_1^{\beta_1}(f)\cdots q_k^{\beta_k}(f)(v_1)+\cdots+q_1^{\beta_1}(f)\cdots q_k^{
 \end{align*}<br>
 Obtemos que $m_f(t)=q_1^{\alpha_1}\cdots q_k^{\alpha_k}$ divide $q_1^{\beta_1}\cdots q_k^{\beta_k}$. Pelo Teorema da Fatoração para Polinômios, obtemos que $\alpha_i\leq \beta_i$ para todo $i$ e $\alpha_i=\beta_i$ segue para todo $i$. Logo $m_i(t)=q_i^{\alpha_i}$.</p>
 </div>
-<p>O Teorema escpectral é o caso particilar $\F=\C$ do Teorema da Decomposição Primária. Neste caso<br>
+<p>O Teorema espectral é o caso particilar $\F=\C$ do Teorema da Decomposição Primária. Neste caso<br>
 $$<br>
 m_f(t)=(t-\lambda_1)^{\alpha_1}\cdots (t-\lambda_k)^{\alpha_k}<br>
 $$<br>
-com $\lambda_1,\ldots,\lambda_k\in \C$ e $\alpha_i\geq 1$.</p>
+com $\lambda_1,\ldots,\lambda_k\in \C$ distintos e $\alpha_i\geq 1$.</p>
 <div class="theorem">(O Teorema Espectral)<br>
 Assuma que $\F=\C$ e $f:V\to V$ é como acima. Neste caso,<br>
 $$<br>
