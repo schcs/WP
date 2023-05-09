@@ -260,14 +260,16 @@ tal que o grafo de $f(x)$ passe pelos pontos $P_1$, $P_2$, $P_3$, $P_4$. Em outr
 \[<br>
 f(1)=1,\quad f(-1)=1,\quad f(2)=1,\quad f(-2)=-11.<br>
 \]<br>
-Substituindo em $f(x)$ obtemos que<br>
+Substituindo em $f(x)$ obtemos o seguinte sistema de equações lineares.<br>
 \begin{align*}<br>
 \alpha_0+\alpha_1+\alpha_2+\alpha_3&amp;=1\\<br>
 \alpha_0-\alpha_1+\alpha_2-\alpha_3&amp;=1\\<br>
 \alpha_0+2\alpha_1+4\alpha_2+8\alpha_3&amp;=1\\<br>
 \alpha_0-2\alpha_1+4\alpha_2-8\alpha_3&amp;=-11<br>
-\end{align*}
+\end{align*}<br>
+Para resolver o problema da interpolação, precisamos resolver o sistema acima.
 <pre><code class="language-r">
+// definimos a matriz do sistema
 A = [ 1 1 1 1; 1 -1 1 -1; 1 2 4 8; 1 -2 4 -8 ]
  A  = 
 
@@ -276,6 +278,7 @@ A = [ 1 1 1 1; 1 -1 1 -1; 1 2 4 8; 1 -2 4 -8 ]
    1.   2.   4.   8.
    1.  -2.   4.  -8.
 
+// definimos o vetor b
 --&gt; b = [1;1;1;-11] 
  b  = 
 
@@ -284,6 +287,8 @@ A = [ 1 1 1 1; 1 -1 1 -1; 1 2 4 8; 1 -2 4 -8 ]
    1.
   -11.
 
+// calculamos a solução do sistema usando 
+// o método da matriz inversa
 --&gt; A^-1*b
  ans  =
 
@@ -298,12 +303,18 @@ f(x)=x^3-2x^2-x+3<br>
 \]<br>
 Para visualizar o polinômio obtido, podemos executar as seguintes linhas.</p>
 <pre><code class="language-r">
+// definimos primeiro o polinômio
 --&gt; p = poly( [3,-1,-2,1], &quot;x&quot;, &quot;coeff&quot; )
  p  = 
 
   3 -x -2x^2 +x^3
 
---&gt; plot( -3:.1:3, p )
+// usamos a seguinte instrução para visualizar a curva
+// a expressão &quot;-3:0.1:3&quot; significa a lista de valores 
+// entre -3 e 3 com incremento de 0.1.
+// 
+// Esta linha deve abrir uma nova janela 
+--&gt; plot( -3:0.1:3, p )
 </code></pre>
 <p>Obtemos uma imagem da seguinte forma.</p>
 <p><img decoding="async" class="alignnone size-medium wp-image-2288" src="https://schcs.github.io/WP/wp-content/uploads/2023/05/poly-300x226.jpeg" alt="" width="300" height="226" srcset="https://schcs.github.io/WP/wp-content/uploads/2023/05/poly-300x226.jpeg 300w, https://schcs.github.io/WP/wp-content/uploads/2023/05/poly.jpeg 610w" sizes="(max-width: 300px) 100vw, 300px"></p>

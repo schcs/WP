@@ -315,16 +315,27 @@ Então $p(t)=\alpha_0+\alpha_1 t+\cdots+\alpha_{m-1}t^{m-1}\in I_{f,v}$; ou seja
 0 &amp; 0 &amp; 0 &amp; \ddots &amp; 1\\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \end{pmatrix}<br>
 \]</p>
 <div class="lemma">
+Seja $V$ um $f$-espaço cíclico com base $B=\{f^{m-1}(v),f^{m-2}(v),\ldots,f(v),v\}$. Então<br>
+\[<br>
+m_f(t)=\mbox{pcar}_f(t)=t^m.<br>
+\]</div>
+<div class="proof">
+Podemos observar que a matriz $[f]_B^B$ é a matriz companheira do polinômio $t^n$. Por um exercício em uma lista anterior, $m_f(t)=\mbox{pcar}_f(t)=t^m$.
+<p>Alternativamente, podemos também observar que $f^m(b)=0$ para todo $b\in B$. Portanto $f^m=0$ e obtemos que $m_f(t)\mid t^m$. Por outro lado, $f^{m-1}(f)(v)\neq 0$ e assim $t^{m-1}$ não é múltiplo de $m_f(t)$. Portanto $m_f(t)=t^m$.</p>
+</div>
+<div class="lemma">
 Suponha que $f:V\to V$ é um endomorfismo tal que $m_f(t)=(t-\lambda)^k$. Já vimos em cima que $f_0=f-\lambda\mbox{id}_V$ é nilpotente e agora assuma que $V$ é $f_0$-cíclico. Ou seja, existe $v\in V$ tal que $B=\{f_0^{n-1}(v),\ldots,f_0(v),v\}$ é base de $V$. Tem-se que<br>
 \[<br>
 [f]_B^B=\begin{pmatrix} \lambda &amp; 1 &amp;  0 &amp; \cdots &amp; 0  \\ 0 &amp; \lambda &amp; 1 &amp; \cdots &amp; 0\\<br>
 0 &amp; 0 &amp; 0 &amp; \ddots &amp; 1\\ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; \lambda \end{pmatrix}<br>
-\]</div>
+\]<br>
+Além disso, $m_f(t)=(t-\lambda)^n$.</div>
 <div class="proof">
 Só notar que $f=f_0+\lambda\mbox{id}_V$ e então<br>
 \[<br>
 [f]_B^B=[f_0]_B^B+[\lambda\mbox{id}_V]_B^B=[f_0]_B^B+I_n<br>
-\]</div>
+\]<br>
+Observe também que $f_0=f-\lambda\mbox{id}_V$ tem polinômio minimal $t^n$ pelo resultado anterior. Logo $m_f(t)=(t-\lambda) ^n$.</div>
 <div class="definition">
 A matriz no lema anterior chama-se <b>bloco de Jordan</b> com autovalor $\lambda$.</div>
 <div class="theorem">(O Teorema da Decomposição em Espaços Cíclicos)<br>
@@ -341,6 +352,12 @@ Como foi observado em cima, $f_0=f-\lambda\mbox{id}_V$ é nilpotente. Pelo Teore
 Seja $f:V\to V$ um endomorfismo com $m_f(t)=(t-\lambda_1)^{\alpha_1}\cdots (t-\lambda_k)^{\alpha_k}$. Então existe uma base de $V$ na qual a matriz de $f$ é diagonal em blocos e cada bloco é um bloco de Jordan com autovalor $\lambda_i$.</div>
 <div class="proof">
 Pelo Teorema Espectral, $V=W_1\oplus\cdots\oplus W_k$ onde $W_i=\ker(f-\lambda\mbox{id})^{\alpha_i}$. Além disso, $W_i$ é $f$-invariante e, pondo $f_i=f|_{W_i}$, $m_{f_i}(t)=(t-\lambda_i)^{\alpha_i}$. Escolha uma base $B_i$ para cada $W_i$ tal que $[f_i]_{B_i}^{B_i}$ é diagonal em blocos onde cada bloco é um bloco de Jordan com autovalor $\lambda_i$. Juntando as bases $B_i$, obtemos que $B=B_1\cup\cdots\cup B_k$ é uma base que satisfaz a afirmação do Corolário.</div>
+<div class="corollary">
+Seja $f:V\to V$ um endomorfismo de em $\C$-espaço $V$ (de dimensão finita) Então existe uma base de $V$ na qual a matriz de $f$ é diagonal em blocos e cada bloco é um bloco de Jordan.</div>
+<div class="definition">
+Dizemos que uma matriz está na forma normal de Jordan, se ela é diagonal em blocos e cada bloco é um bloco de Jordan.</div>
+<div class="corollary">
+Seja $A$ uma matriz $n\times n$ em $M_{n\times n}(\C)$. Então existe uma matriz $X\in M_{n\times n}(\C)$ invertível tal que $XAX^{-1}$ está na forma normal de Jordan. Ou seja, cada matriz $A\in M_{n\times n}(\C)$ é conjugada (semelhante) a uma matriz na forma normal de Jordan.</div>
 </div>
 			</div>
 <!-- .entry-content -->

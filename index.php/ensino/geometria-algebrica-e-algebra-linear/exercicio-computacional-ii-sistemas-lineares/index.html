@@ -261,18 +261,21 @@ x -y +2z &amp;= -1\\<br>
 \end{align*}<br>
 Primeiro, definimos a matriz do sistema e o vetor dos valores no lado direito:
 <pre><code class="language-r">
+// a matriz do sistema
+// observe que a matriz pode ser definida sem usar &quot;;&quot;
 --&gt; A = [1 1 -1 
-  &gt; 1 -1 2
-  &gt; 2 -1 -1 ]
+   1 -1 2
+   2 -1 -1 ]
  A  = 
 
    1.   1.  -1.
    1.  -1.   2.
    2.  -1.  -1.
 
+// o vetor b
 --&gt; b = [ -2
-  &gt; -1
-  &gt; 1]
+   -1
+   1]
  b  = 
 
   -2.
@@ -291,6 +294,7 @@ Primeiro, definimos a matriz do sistema e o vetor dos valores no lado direito:
    2.  -1.  -1.
 
 // Adicionamos o vetor b à matriz A0 como 4a coluna
+// observe o uso de &quot;:&quot;
 --&gt; A0(:,4) = b
  A0  = 
 
@@ -307,7 +311,7 @@ computamos a forma escalondada de A0.
    0.   1.   0.  -2.
    0.   0.   1.  -1.
   </code></pre>
-<p>Os números que aparecem na última coluna representam a soluão do sistema: $x=-1$, $y=-2$, $z=-1$.</p>
+<p>Os números que aparecem na última coluna representam a solução do sistema: $x=-1$, $y=-2$, $z=-1$.</p>
 <p>Ora, vamos usar o método da matriz inversa.</p>
 <pre><code class="language-r">
 // calculamos a inversa da matriz A
@@ -358,10 +362,12 @@ computamos a forma escalondada de A0.
 
 // a solução será obtida por calcular os determinantes de 
 // A1, A2, A3 e dividir pelo detarminante de A
---&gt; [det(A1)/det(A), det(A2)/det(A), det(A3)/det(A)]
+--&gt; [det(A1)/det(A); det(A2)/det(A); det(A3)/det(A)]
  ans  =
 
-  -0.999999999999999888978  -2.  -0.999999999999999888978
+  -0.999999999999999888978  
+  -2.  
+  -0.999999999999999888978
 </code></pre>
 <p>Observem de novo que uma solução aproximada foi obtida.</p>
 </div>

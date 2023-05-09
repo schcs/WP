@@ -351,7 +351,7 @@ at line     3 of function %s_p_s ( /usr/local/lib/scilab-2023.0.0/share/scilab/m
 </code></pre>
 <h4>
 O Determinante</h4>
-<p>O determinante de uma matriz $A$ pode ser calculada pela função <ver>det(A)</ver>.</p>
+<p>O determinante de uma matriz $A$ pode ser calculado pela função <ver>det(A)</ver>.</p>
 <pre><code class="language-r">
 --&gt; A
  A  = 
@@ -365,9 +365,48 @@ O Determinante</h4>
 
   -13.000000000000001776357
 </code></pre>
-<p>Note que o resultado não é um número inteiro, mesmo que as entradas da matriz são inteiras. Isso acontece porque o sistema Scilab usa aproximações para fazer computações numéricas. O determinante desta matriz é $-13$ e a pequena diferença obtida nesta computação geralmente não faz problema na prática.</p>
+<p>Note que o resultado não é um número inteiro, mesmo que as entradas da matriz sejam inteiras. Isso acontece porque o sistema Scilab usa aproximações para fazer computações numéricas. O determinante desta matriz é $-13$ e a pequena diferença obtida nesta computação geralmente não faz problema na prática.</p>
+<h3>
+Acessar entradas e partes de matrizes</h3>
+<p>Observe nas seguintes instruções como acessar entradas e submatrizes de matrizes.</p>
+<pre><code class="language-r">
+// definimos uma matriz A
+--&gt; A = [1 -1 -2; 0 3 -1; -1 0 -2]
+ A  = 
+
+   1.  -1.  -2.
+   0.   3.  -1.
+  -1.   0.  -2.
+
+// a entrada de A na primeira linha e segunda coluna
+--&gt; A(1,2)
+ ans  =
+
+  -1.
+
+// a primeira linha de A
+--&gt; A(1,:)
+ ans  =
+
+   1.  -1.  -2.
+
+// a segunda coluna de A
+--&gt; A(:,2)
+ ans  =
+
+  -1.
+   3.
+   0.
+
+// a submatriz de entradas nas linhas 1-2 e nas colunas 2-3
+--&gt; A(1:2,2:3)
+ ans  =
+
+  -1.  -2.
+   3.  -1.
+</code></pre>
 <div class="exercise">
-Considere as seguintes três matrizes.<br>
+Considere as seguintes duas matrizes.<br>
 \[<br>
 A = {\begin{pmatrix}4&amp;1&amp;2&amp;4&amp;2&amp;2\cr 2&amp;2&amp;2&amp;3&amp;3&amp;4\cr 4&amp;2&amp;1&amp;4&amp;0&amp;2\cr 1&amp;0&amp;2&amp;4&amp;3&amp;0\cr 0&amp;4&amp;0&amp;4&amp;0&amp;0\cr 2&amp;3&amp;4&amp;1&amp;2&amp;1\cr \end{pmatrix}}<br>
 \]<br>
