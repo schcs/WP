@@ -706,7 +706,7 @@ $$</li>
 </tr>
 </tbody>
 </table>
-
+<!-- #tablepress-1 from cache -->
 <p>Simplificando a definição verdadeira, no caso de formas simétricas, denotamos ainda por $\Omega^+(n,q)$, $\Omega^-(n,q)$, e por $\Omega(n,q)$, o subgrupo derivado de $SO^+(n,q)$, $SO^-(n,q)$, e $SO(n,q)$, respetivamente. Escrevemos $P\Omega(n,\F)=\Omega(n,\F)/(Z\cap \Omega(n,\F))$ e $P\Omega^\pm(n,\F)=\Omega^\pm(n,\F)/(Z\cap \Omega^\pm(n,\F))$.</p>
 <p><strong>Teorema. </strong>As seguintes afirmações são verdadeiras.</p>
 <ol>
