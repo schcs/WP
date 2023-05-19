@@ -405,8 +405,47 @@ B(u,v)=\frac 12(Q(u+v)-Q(u)-Q(v))<br>
 \]<br>
 e $B$ está determinada por $Q$.</p>
 </div>
+<div class="exercise">
+Seja $V$ um espaço de dimensão maior ou igual a $2$ sobre $\C$ e seja $B$ uma forma simétrica em $V$. Mostre que $V$ possui um vetor não nulo isotrópico. Este exercício mostra que é mesmo necessário usar o conjugado complexo na segunda variável na definição do produto interno para $\C$-espaços. Usando formas simétricas, não é possível obter um produto interno que resulta em uma métrica.</div>
+<div class="exercise">
+Seja $B$ uma forma sesquilinear reflexiva sobre um espaço $V$ de dimensão finita. Assuma que $G$ é a matriz da forma em uma base de $V$. Mostre que $\dim \mbox{Rad}(V)=\dim V-\mbox{posto}(G)$. Em particular, $B$ é não degenerada se e somente se $G$ é invertível.</div>
 <div class="proof">
 Simples, só aplicar a definição de $Q$.</div>
+<div class="definition">
+Seja $V$ um espaço com forma sesquilinear reflexiva $B$ e $U\leq V$. Definimos o <b>complemento ortogonal</b> $U^\perp$ de $U$ como<br>
+\[<br>
+U^\perp=\{v\in V\mid B(v,u)=0\mbox{ para todo }u\in U\}.<br>
+\]</div>
+<div class="lemma">
+As seguintes afirmações são válidas para o complemento ortogonal em relação a uma forma $\sigma$-sesquilinear reflexiva:
+<ol>
+<li>$U^\perp\leq V$;</li>
+<li>Se $U\leq W$, então $W^\perp\leq U^\perp$;</li>
+<li>$\mbox{Rad}(V)=V^\perp$ e $V^\perp\leq U^\perp$ para todo $U\leq V$;</li>
+<li>Se $B$ é não degenerada e $\dim V$ é finita, então $\dim U^\perp+\dim U=\dim V$.</li>
+</ol>
+</div>
+<div class="proof">
+As afirmações 1., 2., 3. são simples. Vamos provar apenas 4. Assuma que $\dim V=n$, que $X=\{b_1,\ldots,b_n\}$ é uma base de $V$ tal que $\{b_1,\ldots,b_k\}$ é base de $U$, e seja $G=G_X(B)$ a matriz de $B$ na base $X$. Temos por resultado anterior que um vetor $v$ com $[v]_X=(\alpha_1,\ldots,\alpha_n)^t$ pertençe a $U^\perp$ se e somente se<br>
+\[<br>
+(\alpha_1,\ldots,\alpha_n)G [w]_B^\sigma =0\quad \mbox{para todo}\quad w\in U<br>
+\]<br>
+que vale se e somente se<br>
+\[<br>
+(\alpha_1,\ldots,\alpha_n)G [b_i]_B^\sigma =0\quad \mbox{para todo}\quad i\in\{1,\ldots,k\}.<br>
+\]<br>
+A equação anterior é equivalente ao sistema de equações<br>
+\[<br>
+(\alpha_1,\ldots,\alpha_n)G e_i =0\quad \mbox{para todo}\quad i\in\{1,\ldots,k\}<br>
+\]<br>
+onde $e_1,\ldots,e_n$ é a base canônica de $\F^n$. Mas o sistema anterior é um sistema linear homogêneo com incôgnitas $\alpha_1,\ldots,\alpha_n$ e a matriz desta sistema está formada pelas primeiras $k$ linhas de $G^t$. Como $B$ é não degenerada, $G^t$ tem posto $k$ e o espaço de soluções tem dimensão $n-k$.</div>
+<p>Na situação do item 4. do resultado anterior, se $U\perp\cap U=0$, então $V=U\oplus U^\perp$ e escrevemos que $V=U\perp U^\perp$ para indicar que os dois espaços na decomposição são ortogonais.</p>
+<div class="example">
+Considere $V=\C^2$ com a forma bilinear simétrica $B(v,w)=v_1w_1+v_2w_2$ (observe que não aplicamos o conjugado complexo na segunda variável!). Note que esta forma está não degenerada, pois na base canônica a sua matriz é a matriz identidade. Considere a base $\{(1,i),(1,-i)\}$ de $\C^2$. Nesta base a matriz da forma é<br>
+\[<br>
+\begin{pmatrix} 0 &amp; 2 \\ 2 &amp; 0\end{pmatrix}<br>
+\]<br>
+Se $U=\langle (1,i)\rangle$, então $U^\perp =U$ e $\C^2\neq U\oplus U^\perp$.</div>
 </div>
 			</div>
 <!-- .entry-content -->
