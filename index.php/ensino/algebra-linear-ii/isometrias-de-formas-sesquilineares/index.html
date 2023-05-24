@@ -252,17 +252,17 @@ content: "Conjecture (" attr(text) ") ";
 		<div class="entry-content">
 		<div style="color:black;">
 <div class="definition">
-Sejam $(V,B)$ e $(W,C)$ $\F$-espaços vetoriais com formas sesquilineares reflexivas. Um <b>morfismo</b> entre $V$ e $W$ é uma transformação linear $f:V\to W$ tal que $C(f(v),f(w))=B(v,w)$ para todo $v,w\in V$. Um morfismo bijetivo $f:V\to W$ é chamado <b>isometria</b>. Dois espaços $(V,B)$ e $(W,C)$ são <b>isomorficos</b> se existir uma isometria $f:V\to W$.</div>
+Sejam $(V,B)$ e $(W,C)$ $\F$-espaços vetoriais com formas sesquilineares reflexivas. Um <b>morfismo</b> entre $(V,B)$ e $(W,C)$ é uma transformação linear $f:V\to W$ tal que $C(f(v),f(w))=B(v,w)$ para todo $v,w\in V$. Um morfismo bijetivo $f:V\to W$ é chamado <b>isometria</b>. Dois espaços $(V,B)$ e $(W,C)$ são <b>isométricos</b> se existir uma isometria $f:V\to W$.</div>
 <div class="lemma">
 Assuma que $f$ é um morfismo entre $(V,B)$ e $(W,C)$. Então $\ker f\leq \mbox{Rad}(B)$. Em particular, se $B$ é não degenerada, então $f$ é injetiva.</div>
 <div class="proof">
-Seja $v\in\ker f$ e $w\in V$ arbitrário. Então $B(v,w)=C(f(v),f(w))=0$ e $v\in \mbox{Rad}(B)$. Se $B$ for não degenerada, então $\mbox{Rad}(B)=0$ e $\ker f=0$ e $f$ é injetiva.</div>
+Seja $v\in\ker f$ e $w\in V$ arbitrário. Então $B(v,w)=C(f(v),f(w))=0$ e $v\in \mbox{Rad}(B)$. Se $B$ for não degenerada, então $\mbox{Rad}(B)=0$ e $\ker f=0$ e, consequentemente, $f$ é injetiva.</div>
 <div class="corollary">
-Seja $V$ um espaço vetorial de dimensão finita com forma sesquilinear reflexiva e não degenerada. Se $f:V\to V$ é um morfismo, então $f$ é uma isometria de $V$. Em particular $f$ é um automorfismo de $V$.</div>
+Seja $V$ um espaço vetorial de dimensão finita com forma sesquilinear reflexiva e não degenerada $B$. Se $f:V\to V$ é um morfismo, então $f$ é uma isometria de $V$. Em particular $f$ é um automorfismo de $V$.</div>
 <div class="definition">
-Seja $V$ um espaço com forma sesquilinear reflexiva $B$. Um sistema de vetores $X$ de $V$ é dito <b>ortogonal</b> se $B(b_i,b_j)=0$ para todo $b_i,b_j\in X$ distintos. O sistema $X$ é dito <b>ortonormal</b> se ele é ortogonal e $Q(b_i)=B(b_i,b_i)=1$ para todo $b_i\in X$.</div>
+Seja $V$ um espaço com forma sesquilinear reflexiva $B$. Um sistema de vetores $X$ de $V$ é dito <b>ortogonal</b> se $B(b_i,b_j)=0$ (ou seja, $b_i\perp b_j$) para todo $b_i,b_j\in X$ distintos. O sistema $X$ é dito <b>ortonormal</b> se ele é ortogonal e $Q(b_i)=B(b_i,b_i)=1$ para todo $b_i\in X$.</div>
 <div class="exercise">
-Seja $B$ uma forma $\sigma$-hermitiana sobre um espaço $V$.
+Seja $B$ uma forma $\sigma$-sesquilinear reflexiva sobre um espaço $V$.
 <ol>
 <li>Mostre que um sistema $X$ ortogonal com $Q(b,b)\neq 0$ para todo $b\in X$ é l.i.</li>
 <li>Seja $X$ uma base ortogonal com $Q(b,b)\neq 0$ para todo $b\in X$. Mostre para $v\in V$ que<br>
@@ -276,11 +276,11 @@ v=\sum_{b\in X} \frac{B(v,b)}{B(b,b)}b<br>
 Seja $V$ um $\F$-espaço de dimensão finita sobre um corpo de caraterística diferente de $2$ e $B$ uma forma $\sigma$-Hermitiana (incluindo simétrica). Então $V$ possui uma base ortogonal.</div>
 <div class="proof">
 Seja $V_0=\mbox{Rad}(V)$ e escreva $V=W\perp V_0$ com um complemento $W$ de $V_0$ qualquer. A restrição de $B$ para $W$ é não degenerada. Se $X_W$ é uma base ortogonal de $W$ e $X_0$ é uma base qualquer de $V_0$, então $X_W\cup X_0$ é base ortogonal de $V$. Então precisamos achar base ortogonal no espaço $W$ e assumimos sem perder a generalidade que $B$ é não degenerada em $V$.
-<p>Avançamos por indução em $\dim V$. Se $\dim V=1$, então qualquer vetor $v\in V\setminus\{0\}$ é uma base ortogonal. Assuma que espaços de dimensão $n-1$ com formas não degeneradas têm bases ortogonais e assuma que $\dim V=n$. Seja $Q$ a forma quadrática associada com $B$; ou seja $Q(v)=B(v,v)$. Afirmamos que existe $v\in V$ tal que $Q(v)\neq 0$. Caso contrário, escolha $u,v\in V$ tal que $B(u,v)=\alpha$ e obtenha por um lema na página anterior que<br>
+<p>Avançamos por indução em $\dim V$. Se $\dim V=1$, então qualquer vetor $v\in V\setminus\{0\}$ é uma base ortogonal. Assuma que espaços de dimensão $n-1$ com formas não degeneradas têm bases ortogonais e assuma que $\dim V=n$. Seja $Q$ a forma quadrática associada com $B$; ou seja $Q(v)=B(v,v)$. Afirmamos que existe $v\in V$ tal que $Q(v)\neq 0$. Caso contrário, escolha $u,v\in V$ tal que $B(u,v)=1$ (eles existem) e obtenha por um lema na página anterior que<br>
 \[<br>
-0=B(u,v)+B(v,u)=B(u,v)+B(u,v)^\sigma=\alpha+\alpha^\sigma.<br>
+0=B(u,v)+B(v,u)=B(u,v)+B(u,v)^\sigma=1+1^\sigma.<br>
 \]<br>
-Ou seja, $\alpha^\sigma=-\alpha$. Mas se $\mbox{car}(\F)\neq 2$, então $\alpha\mapsto -\alpha$ não é automorfismo, pois, por exemplo $1^\sigma=1$ e não é $-1$. Logo existe vetor $b_1\in V$ tal que $Q(b_1)=B(b_1,b_1)\neq 0$. Seja $U=\langle b_1\rangle$ e considere $U^\perp$. Temos que $\dim U^\perp=\dim V-1$ ($B$ é não degenerada). Além disso, se $w$ pertençe ao radical de $B$ restringida a $U^\perp$, então $w\perp b_1$ e $w\in\mbox{Rad}(B)$. Logo a restrição de $B$ para $U^\perp$ é não degenerada. Pela hipótese da indução $U^\perp$ possui uma base $\{b_2,\ldots,b_n\}$ ortogonal. Ora $\{b_1,\ldots,b_n\}$ é base ortogonal de $V$.</p>
+Ou seja, $1^\sigma=-1$. Mas se $\mbox{car}(\F)\neq 2$, isso é impossível, pois $1^\sigma=1$ para todo automorfismo de $\F$.  Logo existe vetor $b_1\in V$ tal que $Q(b_1)=B(b_1,b_1)\neq 0$. Seja $U=\langle b_1\rangle$ e considere $U^\perp$. Temos que $\dim U^\perp=\dim V-1$ ($B$ é não degenerada). Além disso, se $w$ pertençe ao radical de $B$ restringida a $U^\perp$, então $w\perp b_1$ e $w\in\mbox{Rad}(B)$. Logo a restrição de $B$ para $U^\perp$ é não degenerada. Pela hipótese da indução $U^\perp$ possui uma base $\{b_2,\ldots,b_n\}$ ortogonal. Ora $\{b_1,\ldots,b_n\}$ é base ortogonal de $V$.</p>
 </div>
 <div class="exercise">
 Seja $\sigma\in\mbox{Aut}(\R)$. Mostre que
@@ -290,20 +290,20 @@ Seja $\sigma\in\mbox{Aut}(\R)$. Mostre que
 <li>$\sigma$ é contínua;</li>
 <li>sabendo que $Q\subseteq \mbox{Fix}(\sigma)$, deduza que $\sigma=\mbox{id}_\R$.</li>
 </ol>
-<p>[Dica: math.stackexchange.com/q/449404]</p>
+<p>[Dica: <a href="https://math.stackexchange.com/q/449404">consulte a discussão</a> na página de StackExchange.]</p>
 </div>
 <div class="exercise">
-Seja $\sigma\in\mbox{Aut}(\C)$ tal que $\R\subseteq \mbox{Fix}(\sigma)$. Mostre que $\sigma=\mbox{id}_\C$ ou $\sigma$ é o conjugado complexo. [Dica: considere as raízes do polinômio $t^2+1$.]</div>
+Seja $\sigma\in\mbox{Aut}(\C)$ tal que $\sigma$ é contínuo. Mostre que $\sigma=\mbox{id}_\C$ ou $\sigma$ é o conjugado complexo. [Dica: considere as raízes do polinômio $t^2+1$.] Tem uma boa <a href="https://math.stackexchange.com/q/412010">discussão</a> dos automorfismos de $\C$ que não são contínuos no StackExchange.</div>
 <div class="corollary">
 Assuma que $V$ e $B$ são como no resultado anterior e assuma que $B$ é não-degenerada.
 <ol>
-<li>Se $\F=\C$ e $\sigma=\mbox{id}_\C$ ou $\sigma$ é o conjugado complexo, então $V$ possui uma base ortonornal.</li>
-<li>Se $\F=\R$, então $\sigma=\mbox{id}_\F$ (exercício anterior) e $V$ possui uma base ortogonal $\{b_1,\ldots,b_n\}$ tal que $B(b_i,b_i)=\pm 1$. Além disso, o número $p$ de $b_i$ com $B(b_i,b_i)=-1$ é independente a base escolhida.</li>
+<li>Se $\F=\C$ e $\sigma=\mbox{id}_\C$, então $V$ possui uma base ortonornal.</li>
+<li>Se $\F=\R$ ou $\F=\C$ e $\sigma$ é o conjugado complexo, então $V$ possui uma base ortogonal $\{b_1,\ldots,b_n\}$ tal que $B(b_i,b_i)=\pm 1$. Além disso, o número $p$ de $b_i$ com $B(b_i,b_i)=-1$ é independente a base escolhida.</li>
 </ol>
 </div>
 <div class="proof">
 Assuma que $\{b_1,\ldots,b_n\}$ é base ortogonal de $V$ e seja $\alpha_i=B(b_i,b_i)\neq 0$.
-<p>1. Se $B$ é simétrica, então podemos substituir $b_i$ por $b_i&#8217;=(\alpha_i)^{1/2} b_i$ e $\{b_1&#8242;,\ldots,b_n&#8217;\}$ é base ortonormal. Se $B$ é $\sigma$-Hermitiana com $\sigma$ sendo o conjugado complexo, então $\alpha_i\in\mbox{Fix}(\sigma)=\R$ (por resultado anterior) e substituimos $b_i$ por $b_i&#8217;=(\alpha_i)^{1/2}b_i$. Obtemos neste caso também que $\{b_1&#8242;,\ldots,b_n&#8217;\}$ é base ortonormal.</p>
+<p>1. Se $\F=\C$ e $B$ é simétrica, então podemos substituir $b_i$ por $b_i&#8217;=(\alpha_i)^{1/2} b_i$ e $\{b_1&#8242;,\ldots,b_n&#8217;\}$ é base ortonormal.</p>
 <p>2. Ponha $b_i&#8217;=|\alpha_i|^{1/2}b_i$. Ora $\{b_1&#8242;,\ldots,b_n&#8217;\}$ é base com $B(b_i&#8217;,b_i&#8217;)=\pm 1$.</p>
 <p>Assuma agora que $X=\{b_1,\ldots,b_k,b_{k+1},\ldots,b_n\}$ é base de $V$ tal que $Q(b_i)=-1$ para $i\in\{1,\ldots,k\}$ e $Q(b_i)=1$ para os demais $i$. Seja  $Y=\{c_1,\ldots,c_m,c_{m+1},\ldots,c_n\}$ uma outra base com $Q(c_j)=-1$ para $j\in\{1,\ldots,m\}$ e $Q(c_j)=1$ para os demais $j$. Assuma que $k\geq m$. Afirmamos que<br>
 \[<br>
@@ -319,21 +319,21 @@ Logo<br>
 \]<br>
 Aplicando $Q$ nos vetores $v$ e $w$ nos dois lados da equação acima, obtemos que $Q(v) \leq 0$, enquanto $Q(w) \geq 0$. Portanto $Q(v)=Q(w)=0$ e $\alpha_i=0$ para todo $i$. Isso implica que $k+n-m\leq n$; ou seja, $k\leq m$; ou seja $k=m$.</p>
 </div>
-<div class="definition">O par $(p,n-p)$ no resultado anterior é chamado <b>assinatura</b> de $B$. A assinatura de uma forma simétrica não degenerada sobre um $\R$-espaço de dimensão finita está bem definida.</div>
+<div class="definition">O par $(p,n-p)$ no resultado anterior é chamado <b>assinatura</b> de $B$. A assinatura está bem definida nas situações do item 2. no corolário anterior.</div>
 <div class="definition">
-O espaço $\R^{p+q}$ (também denotado por $\R^{p,q}$) é o espaço vetorial $\R^{p+q}$ com forma simétrica $B$ com matriz diagonal com $-1,\ldots,-1,1,\ldots,1$ na diagonal ($-1$ repetendo $p$ vezes e $1$ repetendo $q$ vezes).</div>
+O espaço $\R^{p+q}$ (também denotado por $\R^{p,q}$) é o espaço vetorial $\R^{p+q}$ com forma simétrica $B$ com matriz diagonal com $-1,\ldots,-1,1,\ldots,1$ na diagonal ($-1$ repetendo $p$ vezes e $1$ repetendo $q$ vezes). O espaço $\C^{p+q}$ está definido na mesma forma, mas tomamos uma forma $\sigma$-hermitiana com $\sigma$ sendo o conjugado complexo.</div>
 <div class="example">
 Note que $\R^{0+q}$ é o espaço $\R^q$ com o produto interno usual em $\R^q$. O espaço $\R^{1+3}$ é o espaço de Lorentz usado na relatividade especial.</div>
 <div class="corollary">
 Seja $V$ um $\F$-espaço vetorial de dimensão $n$ com uma forma $\sigma$-hermitiana $B$ não degenerada.
 <ol>
 <li>Se $\F=\R$, então $\sigma=\mbox{id}_\R$ e $(V,B)$ é isométrico ao espaço $\R^{p+q}$ com alguns $q,p$ tais que $p+q=n$.</li>
+<li>Se $\F=\C$ e $\sigma$ é o conjugado complexo, então $(V,B)$ é isométrico ao espaço $\C^{p+q}$ com alguns $q,p$ tais que $p+q=n$.</li>
 <li>Se $\F=\C$ e $\sigma=\mbox{id}_\C$, então $V$ é isométrico ao espaço $\C^n$ com forma $B_0$ onde<br>
 \[<br>
 B_0(v,w)=v_1w_1+\cdots+v_nw_n.<br>
 \]<br>
 para $v=(v_1,\ldots,v_n)$ e $w=(w_1,\ldots,w_n)$.</li>
-<li>Se $\F=\C$ e $\sigma$ é o conjugado complexo, então $V$ é isométrico ao espaço $\C^n$ com o produto interno usual.</li>
 </ol>
 </div>
 <div class="corollary">
@@ -346,9 +346,9 @@ XAX^t<br>
 é diagonal.</li>
 <li>Se $\F=\C$ e $A^t=\overline A$ (conjugada complexa de $A$), então existe $X$ com entradas em $\C$ tal que<br>
 \[<br>
-XA\overline X^t=I_0<br>
+XA\overline X^t=I_{\pm 1,0}<br>
 \]<br>
-onde $I_0$ é matriz diagonal com entradas $1,\ldots,1,0,\ldots,0$ na diagonal principal.</li>
+onde $I_{\pm 1,0}$ é uma matriz diagonal com entradas $-1,\ldots,-1,1,\ldots,1,0,\ldots,0$ na diagonal.</li>
 <li>Se $\F=\C$ e $A$ é simétrica, então existe $X$ com entradas em $\C$ tal que<br>
 \[<br>
 XA X^t=I_0<br>
