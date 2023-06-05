@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<title>Álgebra Linear II &#8211; Csaba Schneider</title>
+<title>Operadores autoadjuntos &#8211; Csaba Schneider</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -42,14 +42,14 @@ img.emoji {
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
-<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2021">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2384">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 6.2.2">
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/">
-<link rel="shortlink" href="https://schcs.github.io/WP/?p=2021">
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2F#038;format=xml">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/operadores-autoadjuntos/">
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=2384">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Foperadores-autoadjuntos%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Foperadores-autoadjuntos%2F#038;format=xml">
 		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
@@ -218,7 +218,7 @@ content: "Conjecture (" attr(text) ") ";
 
 </head>
 
-<body class="page-template-default page page-id-2021 page-parent page-child parent-pageid-64 wp-embed-responsive no-sidebar">
+<body class="page-template-default page page-id-2384 page-child parent-pageid-2021 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -246,45 +246,78 @@ content: "Conjecture (" attr(text) ") ";
 
 			
 				
-<article id="post-2021" class="post-2021 page type-page status-publish hentry">
+<article id="post-2384" class="post-2384 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Álgebra Linear II</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Operadores autoadjuntos</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<p><b>Bloco I: Espaços vetoriais, transformações lineares e o determinante</b></p>
+		<div style="color:black;">
+Nesta página $V$ é um $\F$-espaço vetorial, $\sigma\in\mbox{Aut}(\F)$ com $\sigma^2=\mbox{id}_\F$ e $B$ é uma forma $\sigma$-hermitiana não degenerada sobre $V$.
+<div class="definition">
+Um operador $f:V\to V$ é <b>autoadjunto</b> se existe $f^*$ e $f^*=f$. Em outras palavras,<br>
+\[<br>
+B(f(v),w)=B(v,f(w))<br>
+\]<br>
+para todo $v,w\in V$.
+</div>
+<div class="lemma">
+Seja $f:V\to V$ autoadjunto.
 <ol>
-<li>Corpos</li>
-<li>Espaços vetoriais sobre corpos</li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/bases-e-dimensao/" data-wplink-url-error="true">Bases e dimensão</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/subespacos/" data-wplink-url-error="true">Subespaços</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/soma-direta/" data-wplink-url-error="true">Soma direata</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/espaco-quociente/" data-wplink-url-error="true">Espaço quociente</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/transformacoes-lineares/" data-wplink-url-error="true">Transformações lineares</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/isomorfismos/" data-wplink-url-error="true">Isomorfismos</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/transformacoes-lineares-e-matrizes/" data-wplink-url-error="true">Transformações lineares e matrizes</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/espaco-dual/" data-wplink-url-error="true">O espaço dual </a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/formas-k-lineares/" data-wplink-url-error="true">Formas $k$-lineares e o determinante</a></li>
+<li>Se $\lambda\in\F$ é um autovalor de $f$ tal que $V_\lambda$ contém um vetor não isotrópico, então $\lambda\in\mbox{Fix}(\sigma)$.</li>
+<li>Sejam $v_1$ e $v_2$  autovetores de $f$ associados com autovalores $\lambda_1$ e $\lambda_2$, respetivamente, tais que $\lambda_1^\sigma\neq \lambda_2$. Então $v_1\perp v_2$ (ou seja, $B(v_1,v_2)=0$).</li>
 </ol>
-<p><b>Bloco II: Endomorfismos de espaços vetoriais de dimensão finita</b></p>
+</div>
+<div class="proof">
+1. Seja $v\in V\setminus\{0\}$ tal que $f(v)=\lambda v$ e assuma que $v$ não é isotrópico; ou seja $Q(v)=B(v,v)\neq 0$. Ora,<br>
+\[<br>
+\lambda B(v,v)=B(\lambda v,v)=B(f(v),w)=B(v,f(v))=B(v,\lambda v)=\lambda^\sigma B(v,v).<br>
+\]<br>
+Portanto, $(\lambda-\lambda^\sigma)B(v,v)=0$ e $\lambda-\lambda^\sigma=0$. Logo $\lambda=\mbox{Fix}(\sigma)$.<br>
+2. Assuma que $v_1$ e $v_2$ são autovetores associados com autovalores $\lambda_1$ e $\lambda_2$ com $\lambda_1\neq \lambda_2^\sigma$. Temos que<br>
+\begin{align*}<br>
+\lambda_1 B(v_1,v_2)&amp;=B(f(v_1),w_2)=B(v_1,f(v_2))=B(v_1,\lambda_2 v_2)\\&amp;=\lambda_2^\sigma B(v_1,v_2).<br>
+\end{align*}<br>
+Isso implica que $(\lambda_1-\lambda_2^\sigma)B(v_1,v_2)=0$. Ou seja, $\lambda_1=\lambda_2^\sigma$ ou $B(v_1,v_2)=0$.<br>
+Como $\lambda_1\neq \lambda_2^\sigma$, nos resta que $B(v_1,v_2)=0$.</div>
+<div class="definition">
+Seja $V$ um espaço vetorial sobre $\F$ onde $\F=\R$ ou $\F=\C$ e seja $\sigma=\mbox{id}_\R$ se $\F=\R$ e $\sigma$ o conjugado complexo se $\F=\C$. Um <b>produto interno</b> sobre $V$ é uma forma $\sigma$-hermitiana que satisfaz a propriedade de positividade; ou seja,<br>
+\[<br>
+Q(v)=B(v,v)\geq 0\quad\mbox{para todo}\quad v\in V<br>
+\]<br>
+e $Q(v)=0$ se e somente se $v=0$. Neste caso dizemos que $V$ é um <b>espaço com produto interno</b>. A forma $B(-,-)$ é frquentamente escrita como $\langle -,-\rangle$. Se $V$ é espaço com produto interno e $v\in V$, então $Q(v)\geq 0$ e definimos<br>
+\[<br>
+\|v\|=\sqrt{Q(v)}=\sqrt{\langle v,v\rangle}\in \R.<br>
+\]<br>
+O número $\|v\|$ é chamado <b>norma</b> de $v$. Temos que $\|v\|\geq 0$ e $\|v\|=0$ se e somente se $v=0$.</div>
+<div class="lemma">
+Uma forma $B$ que define produto interno é não degenerada. Além disso, se $\dim V=n$ for finita, então $(V,B)$ é isométrico ao espaço $\R^{0+n}$ ou $\C^{0+n}$.</div>
+<div class="proof">
+Se $v\in\mbox{Rad}(B)$, então $v\perp v$ e $Q(v,v)=B(v,v)=0$. Logo, $v=0$ e $B$ é não degenerada.
+<p>Sabe-se do resultado anterior que quando $\dim V=n$ finita, então $(V,B)$ é isométrica ao espaço $\R^{p+q}$ ou $\C^{p+q}$ com $p+q=n$. Se $p\geq 1$, então $B(b_1,b_1)=-1$, que não é possível pela positividade da forma.</p>
+</div>
+<p>Note que a notação $\langle u,v\rangle$ foi usada anteriormente para o espaço gerado por $u$ e $v$. A partir deste ponto, este espaço será denotado por $\mbox{span}\langle u,v\rangle$.</p>
+<div class="corollary">
+Assuma que $V$ é espaço com produto interno e $f:V\to V$ é autoadjunto.
 <ol>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/autovalores-e-autovetores/" data-wplink-url-error="true">Autovalores e autovetores</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/o-polinomio-minimo-de-um-operador/" data-wplink-url-error="true">O polinômio mínimo de um operador</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/o-teorema-de-cayley-hamilton/" data-wplink-url-error="true">O Teorema de Cayley-Hamilton</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/projecoes/" data-wplink-url-error="true">Projeções</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/o-teorema-da-decomposicao-primaria-e-o-teorema-espectral/" data-wplink-url-error="true">O Teorema da Decomposição Primária e o Teorema Espectral</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/endomorfismos-nilpotentes/" data-wplink-url-error="true">Endomorfismos nilpotentes e a existência da forma normal de Jordan</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/a-unicidade-da-forma-normal-de-jordan/" data-wplink-url-error="true">A unicidade da forma normal de Jordan</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/o-teorema-da-decomposicao-ciclica/" data-wplink-url-error="true">O Teorema da Decomposição Cíclica</a></li>
+<li>Os autovalores de $v$ são números reais.</li>
+<li>Se $v_1$ e $v_2$ são autovetores de $f$ com autovalores distintos, então $v_1\perp v_2$.</li>
 </ol>
-<p><strong>Bloco III: Formas sesquilineares e espaços com produto intern<a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/formas-sesquilineares/" data-wplink-url-error="true">o</a></strong></p>
-<ol>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/formas-sesquilineares/" data-wplink-url-error="true">Formas sequilineares</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/isometrias-de-formas-sesquilineares/" data-wplink-url-error="true">Isometrias de formas sesquilineares</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/operadores-adjuntos/" data-wplink-url-error="true">Operadores adjuntos</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/operadores-autoadjuntos/" data-wplink-url-error="true">Operadores autoadjuntos</a></li>
-</ol>
-
-
-<p></p>
+</div>
+<div class="proof">
+1. Se $v$ é uma autovetor não nulo de $f$ com autovalor $\lambda$, então $v$ não é isotrópico (pela positividade do produto interno) e temos pelo lema anterior que $\lambda\in\mbox{Fix}(\sigma)=\R$.
+<p>2. Sejam $v_1$ e $v_2$ autovetores de $f$ com autovalores distintos $\lambda_1$ e $\lambda_2$, respetivamente. Temos pelo item 1. que $\lambda_1,\lambda_2\in\R$ e $\lambda_1\neq \lambda_2^\sigma=\lambda_2$. O lema acima implica que $v_1\perp v_2$.</p>
+</div>
+<div class="corollary">
+Seja $A\in M_{n\times n}(\C)$ tal que $A^t=\overline A$ (a transposta é igual à conjugada complexa). Então os autovalores de $A$ são números reais. Em particular, se $A\in M_{n\times n}(\R)$ tal que $A^t = A$ e $\lambda\in\C$ é autovalor de $A$, então $\lambda\in \C$.</div>
+<div class="proof">
+Considere $A$ como a matriz de uma transformação linear $f_A:\C^n\to \C^n$ em uma base ortonormal em relação ao produto interno usual de $\C^n$. A matriz de $f_A^*$ é $\overline A^t=A$ e assim $f_A^*=f_A$; ou seja $f_A$ é autoadjunta. Pelo resultado anterior os autovalores de $f_A$ (que são os mesmos que os autovalores de $A$) são números reais. A segunda afirmação segue da primeira, observando que se $A\in M_{n\times n}(\R)$, então $\overline A=A$.</div>
+<div class="theorem">(O Teorema Espectral para Operadores Autoadjuntos)<br>
+Seja $V$ um espaço com produto interno e assuma que $\dim V=n$ é finita e seja $f:V\to V$ um operador autoadjunto. Então os autovalores de $f$ são números reais e $V$ possui uma base ortonormal formado por autovetores de $f$.</div>
+<div class="proof">
+Usamos indução por $\dim V$. Seja $\F=\R$ ou $\F=\C$ o corpo para o espaço $V$. Quando $\dim V=1$, então $(V,\langle-,-\rangle)$ é isométrico ao espaço $\F^{0+1}$ e existe uma base $\{b_1\}$ tal que $\langle b_1,b_1\rangle=1$. Como $\dim V=1$, $b_1$ é autovetor de $f$ e a base $\{b_1\}$ é ortonormal formada por autovetores de $f$.
+<p>Assuma que o teorema está verdadeiro para espaços de dimensão menor que $n$ e assuma que $\dim V=n$. Seja inicialmente $X$ uma base ortonormal de $V$ qualquer (existe por resultado anterior). A matriz $A$ de $f$ nesta base $X$ satisfaz $X^t=\overline X$ (ou $X^t=X$ quando $\F=\R$). Por resultado anterior $A$ e $f$ possuem autovalor $\lambda\in \R$. Seja $b_1&#8217;$ um autovetor para autovalor $\lambda$. Ponha $\alpha_1=\langle b_1&#8242;,b_1&#8217;\rangle$ e note que a positividade do produto interno implica que $\alpha_1\in \R$ e $\alpha_1 &gt; 0$. Pondo $b_1=(\alpha_1)^{-1/2}$ obtemos que $\langle b_1,b_1\rangle =1$.</p>
+<p>Considere $U=\mbox{span}\{b_1\}$. Então $\dim U^\perp=n-1$, $U^{\perp}\cap U=0$ e $V=U\perp U^\perp$. Além disso, $U$ sendo $f$-invariante, $U^\perp$ é invariante por $f^*=f$. Por hipótese de indução, $U^\perp$ possui uma base ortonormal $\{b_2,\ldots,b_n\}$ que composta de autovetores de $f$. Ora, $\{b_1,\ldots,b_n\}$ é base ortonormal de $V$ composta de autovetores de $f$.</p>
+</div>
+</div>
 			</div>
 <!-- .entry-content -->
 	<footer class="entry-footer">

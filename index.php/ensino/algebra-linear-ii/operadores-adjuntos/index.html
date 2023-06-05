@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<title>Álgebra Linear II &#8211; Csaba Schneider</title>
+<title>Operadores adjuntos &#8211; Csaba Schneider</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="Csaba Schneider &raquo; Feed" href="https://schcs.github.io/WP/index.php/feed/">
@@ -42,14 +42,14 @@ img.emoji {
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
 <script type="text/javascript" src="https://schcs.github.io/WP/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="https://schcs.github.io/WP/index.php/wp-json/">
-<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2021">
+<link rel="alternate" type="application/json" href="https://schcs.github.io/WP/index.php/wp-json/wp/v2/pages/2375">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://schcs.github.io/WP/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://schcs.github.io/WP/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 6.2.2">
-<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/">
-<link rel="shortlink" href="https://schcs.github.io/WP/?p=2021">
-<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2F">
-<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2F#038;format=xml">
+<link rel="canonical" href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/operadores-adjuntos/">
+<link rel="shortlink" href="https://schcs.github.io/WP/?p=2375">
+<link rel="alternate" type="application/json+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Foperadores-adjuntos%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://schcs.github.io/WP/index.php/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fhttps%3A%2F%2Fschcs.github.io%2FWP%2Findex.php%2Fensino%2Falgebra-linear-ii%2Foperadores-adjuntos%2F#038;format=xml">
 		<style type="text/css" id="wp-custom-css">/*pre {
 	font-family: monospace;
   white-space: pre-wrap;	
@@ -218,7 +218,7 @@ content: "Conjecture (" attr(text) ") ";
 
 </head>
 
-<body class="page-template-default page page-id-2021 page-parent page-child parent-pageid-64 wp-embed-responsive no-sidebar">
+<body class="page-template-default page page-id-2375 page-child parent-pageid-2021 wp-embed-responsive no-sidebar">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 	<header id="masthead" class="site-header" role="banner">
@@ -246,45 +246,132 @@ content: "Conjecture (" attr(text) ") ";
 
 			
 				
-<article id="post-2021" class="post-2021 page type-page status-publish hentry">
+<article id="post-2375" class="post-2375 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Álgebra Linear II</h1>	</header><!-- .entry-header -->
+		<h1 class="entry-title">Operadores adjuntos</h1>	</header><!-- .entry-header -->
 		<div class="entry-content">
-		<p><b>Bloco I: Espaços vetoriais, transformações lineares e o determinante</b></p>
+		<div style="color:black;">
+Nesta página, $V$ é um $\F$-espaço vetorial com $\mbox{car}(\F)\neq 2$ e $B$ é uma forma $\sigma$-hermitiana ou alternada não degenerada sobre $V$. Note que no caso de $\sigma$-hermitiana, $\sigma^2=\mbox{id}_\F$. Quando $\sigma=\mbox{id}_\F$, então $B$ é uma forma simétrica. Quando $B$ é alternada, então $\sigma=\mbox{id}_\F$.
+<p>Lembre que $V^*$ é o espaço dual de $V$; ou seja,<br>
+\[<br>
+V^*=\mbox{Hom}(V,\F)=\{f:V\to \F\mid \mbox{$f$ é linear}\}.<br>
+\]<br>
+Para $v\in V$, definimos $\varphi_v\in V^*$ com<br>
+\[<br>
+\varphi_v(w)=B(w,v).<br>
+\]<br>
+O fato que $\varphi_v\in V^*$ segue do fato que $B$ é linear na primeira variável.<br>
+Defina<br>
+\[<br>
+\Phi:V\to V^*,\quad \Phi(v)=\varphi_v.<br>
+\]</p>
+<div class="lemma">
+Temos para todo $\alpha_1,\alpha_2\in\F$ e $v_1,v_2\in V$ que<br>
+\[<br>
+\Phi(\alpha_1v_1+\alpha_2v_2)=\alpha_1^\sigma \Phi(v_1)+\alpha_2^\sigma\Phi(v_2).<br>
+\]<br>
+Ou seja, a transformação $\Phi$ é $\sigma$-semilinear. Além disso, $\Phi$ é injetiva, e quando $\dim V$ é finita, então $\Phi$ é sobrejetiva. Portanto, quando $\dim V$ for finita, $\Phi:V\to V^*$ é uma bijeção semilinear.</div>
+<div class="proof">
+O fato que $\Phi$ é $\sigma$-semilinear segue do fato que $B$ é $\sigma$-semilinear na segunda variável. Vamos mostrar que $\Phi$ é injetiva. Note que se $\Phi(v_1)=\Phi(v_2)$ com $v_1,v_2\in V$, então $B(w,v_1)=B(w,v_2)$ vale para todo $w\in V$ e assim $v_1-v_2\in\mbox{Rad}(B)=0$. Logo $v_1=v_2$ e segue que $\Phi$ é injetiva.
+<p>Assuma agora que $\dim V$ é finita e mostremos que $\Phi$ é sobrejetiva. Aqui nós tratamos apenas formas $\sigma$-hermitianas; o caso das formas alternadas é exercício. Escolha uma base ortogonal $B=\{b_1,\ldots,b_n\}$ em $V$. Note que $Q(b_i)=B(b_i,b_i)\neq 0$. Por exercício  anterior, temos, para $v\in V$ que<br>
+\[<br>
+v=\sum_{i=1}^n \frac{B(v,b_i)}{Q(b_i)}b_i.<br>
+\]<br>
+Seja $\varphi\in V^*$ e defina<br>
+\[<br>
+v=\frac{\varphi(b_1)^\sigma}{Q(b_1)}b_1+\cdots+\frac{\varphi(b_n)^\sigma}{Q(b_n)}b_n.<br>
+\]<br>
+Afirmamos que $\varphi=\Phi(v)=\varphi_v$. Para isso, precisa-se provar que $\varphi(w)=\varphi_v(w)=B(w,v)$ para todo $w\in V$, mas é suficiente verificar esta igualdade nos elementos na base; ou seja precisamos provar que $\varphi(b_i)=B(b_i,v)$ para todo $i$. Vamos calcular que<br>
+\[<br>
+\varphi_v(b_i)=B(b_i,v)=B\left(b_i,\frac{\varphi(b_1)^\sigma}{Q(b_1)}b_1+\cdots+\frac{\varphi(b_n)^\sigma}{Q(b_n)}b_n\right)=\varphi(b_i).<br>
+\]</p>
+</div>
+<div class="definition">
+Sejam $V$ e $W$ espaços vetoriais sobre $\F$ e assuma que $B_V$ e $B_W$ são formas $\sigma$-hermitianas não degeneradas sobre $V$ e $W$, respetivamente. Assuma que $f:V\to W$ é uma transformação linear. Uma aplicação $g:W\to F$ é chamada <b>adjunta</b> de $f$ se<br>
+\[<br>
+B_W(f(v),w)=B_V(v,g(w))\quad\mbox{para todo}\quad v\in V,\ w\in W.<br>
+\]</div>
+<div class="lemma">
+Se existir a adjunta $g$ de $f$ na definição anterior, então ele é linear e é única.</div>
+<div class="proof">
+Para provar que $g$ é linear, calculemos para todo $v,w_1,w_2\in V$ e $\alpha_1,\alpha_2\in \F$ que<br>
+\begin{align*}<br>
+B_V(v,\alpha_1g(w_1)+\alpha_2g(w_2))&amp;=<br>
+\alpha_1^\sigma B_V(v,g(w_1))+\alpha_2^\sigma B_V(v,g(w_2))\\&amp;=\alpha_1^\sigma B_W(f(v),w_1)+\alpha_2^\sigma B_W(f(v),w_2)\\&amp;=B_W(f(v),\alpha_1 w_1+\alpha_2 w_2)<br>
+\\&amp;=B_V(v,g(\alpha_1 w_1+\alpha_2 w_2)).<br>
+\end{align*}<br>
+Isso mostra que $\alpha_1g(w_1)+\alpha_2g(w_2)-g(\alpha_1 w_1+\alpha_2 w_2)$ está contido no radical de $B_V$, ou seja $\alpha_1g(w_1)+\alpha_2g(w_2)-g(\alpha_1 w_1+\alpha_2 w_2)=0$. Portanto<br>
+\[<br>
+\alpha_1g(w_1)+\alpha_2g(w_2)=g(\alpha_1 w_1+\alpha_2 w_2)<br>
+\]<br>
+vale para todo $w_1,w_2\in V$ e $\alpha_1,\alpha_2\in \F$ que implica que $g$ é linear.
+<p>Assuma que $g_1$ e $g_2$ são adjuntos de $f:V\to W$. Então temos para todo $v\in V$ e $w\in W$ que<br>
+\[<br>
+B_V(v,g_1(w))=B_W(f(v),g)=B_V(v,g_2(w)).<br>
+\]<br>
+Ou seja $g_1(w)-g_2(w)\in\mbox{Rad}(B_V)$ e $g_1=g_2$.</p>
+</div>
+<div class="theorem">
+Sejam $V$, $W$, $B_V$ e $B_W$ como no lema anterior e $f:V\to W$ uma aplicação linear. Se $\dim V$ e $\dim W$ são finitas, existe a adjunta $f^*:W\to V$ e ela é única.</div>
+<div class="proof">
+Seja $w\in W$ e defina a funcional $\psi_w\in V^*$ com a regra<br>
+\[<br>
+\psi_w(v)=B_W(f(v),w).<br>
+\]<br>
+É fácil verificar que $\psi_w\in V^*$. Pelo lema acima, existe único $w^*\in V$ tal que $\psi_w=\varphi_{w^*}$. Defina $f^*(w)=w^*=B_V(-,w^*)$. Assim temos que<br>
+\[<br>
+B_W(f(v),w)=\psi_w(v)=\varphi_{w^*}(v)=B_V(v,w^*)=B_V(v,f^*(w)).<br>
+\]<br>
+A unicidade segue do lema anterior.</div>
+<div class="lemma">
+Usando a notação do teorema anterior, assuma que $X_V$ e $X_W$ são bases de $V$ e $W$, respetivamente. Sejam $A$ e $A^*$ as matrizes de $f$ e $f^*$ nas bases $X_V$ e $X_W$, respetivamente e sejam $G_V$ e $G_W$ as matrizes de Gram das formas $B_V$ e $B_W$. Temos que<br>
+\[<br>
+A^*=G_V^{-1\sigma}A^{t\sigma}G_W^\sigma.<br>
+\]<br>
+Em particular, se $X_V$ e $X_W$ são bases ortonormais, então<br>
+\[<br>
+A^*=A^{t\sigma}.<br>
+\]</div>
+<div class="proof">
+Temos pela definição do operador adjunto que<br>
+\[<br>
+B_W(f(v),w)=B_V(v,f^*(w))\quad\mbox{para todo}\quad v\in V\mbox{ e }w\in W.<br>
+\]<br>
+Escrevendo a igualdade acima com matrizes, temos que<br>
+\[<br>
+(A[v]_{X_V})^tG_W [w]_{X_W}^\sigma=[v]_{X_V}^tG_V (A^*[w]_{X_W})^\sigma.<br>
+\]<br>
+Daí<br>
+\[<br>
+[v]_{X_V}^t A^t G_W [w]_{X_W}^\sigma=[v]_{X_V}^tG_V A^{*\sigma}[w]_{X_W}^\sigma.<br>
+\]<br>
+Como a igualdade vale para todo $[v]_{X_V}\in\F^m$ e $[w]_{X_W}\in\F^n$, temos que<br>
+\[<br>
+A^t G_W=G_V A^{*\sigma}.<br>
+\]<br>
+Usando que $G_V$ é invertível, temos que<br>
+\[<br>
+A^*=A^{t\sigma}.<br>
+\]</div>
+<div class="lemma">
+Assuma que $f,g: V\to W$ e $\alpha_1,\alpha_2\in \F$. Então temos que
 <ol>
-<li>Corpos</li>
-<li>Espaços vetoriais sobre corpos</li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/bases-e-dimensao/" data-wplink-url-error="true">Bases e dimensão</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/subespacos/" data-wplink-url-error="true">Subespaços</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/soma-direta/" data-wplink-url-error="true">Soma direata</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/espaco-quociente/" data-wplink-url-error="true">Espaço quociente</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/transformacoes-lineares/" data-wplink-url-error="true">Transformações lineares</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/isomorfismos/" data-wplink-url-error="true">Isomorfismos</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/transformacoes-lineares-e-matrizes/" data-wplink-url-error="true">Transformações lineares e matrizes</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/espaco-dual/" data-wplink-url-error="true">O espaço dual </a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/formas-k-lineares/" data-wplink-url-error="true">Formas $k$-lineares e o determinante</a></li>
+<li>$(\alpha_1f+\alpha_2g)^*=\alpha_1^\sigma f^*+\alpha_2^\sigma g^*$;</li>
+<li>$f^{**}=f$;</li>
+<li>$(f^{-1})^*=(f^*)^{-1}$</li>
+<li>se $f,g:V\to V$, então $(f\circ g)^*=g^*\circ f^*$</li>
 </ol>
-<p><b>Bloco II: Endomorfismos de espaços vetoriais de dimensão finita</b></p>
-<ol>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/autovalores-e-autovetores/" data-wplink-url-error="true">Autovalores e autovetores</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/o-polinomio-minimo-de-um-operador/" data-wplink-url-error="true">O polinômio mínimo de um operador</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/o-teorema-de-cayley-hamilton/" data-wplink-url-error="true">O Teorema de Cayley-Hamilton</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/projecoes/" data-wplink-url-error="true">Projeções</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/o-teorema-da-decomposicao-primaria-e-o-teorema-espectral/" data-wplink-url-error="true">O Teorema da Decomposição Primária e o Teorema Espectral</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/endomorfismos-nilpotentes/" data-wplink-url-error="true">Endomorfismos nilpotentes e a existência da forma normal de Jordan</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/a-unicidade-da-forma-normal-de-jordan/" data-wplink-url-error="true">A unicidade da forma normal de Jordan</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/o-teorema-da-decomposicao-ciclica/" data-wplink-url-error="true">O Teorema da Decomposição Cíclica</a></li>
-</ol>
-<p><strong>Bloco III: Formas sesquilineares e espaços com produto intern<a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/formas-sesquilineares/" data-wplink-url-error="true">o</a></strong></p>
-<ol>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/formas-sesquilineares/" data-wplink-url-error="true">Formas sequilineares</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/isometrias-de-formas-sesquilineares/" data-wplink-url-error="true">Isometrias de formas sesquilineares</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/operadores-adjuntos/" data-wplink-url-error="true">Operadores adjuntos</a></li>
-<li><a href="https://schcs.github.io/WP/index.php/ensino/algebra-linear-ii/operadores-autoadjuntos/" data-wplink-url-error="true">Operadores autoadjuntos</a></li>
-</ol>
-
-
-<p></p>
+</div>
+<div class="proof">
+Exercício.</div>
+<div class="lemma">
+Sejam $V$ e $B_V$ como nos resultados anteriores e seja $f:V\to V$ um operador que possui adjunto $f^*$. Assuma que $W\leq V$ é $f$-invariante. Então $W^\perp$ é $f^*$-invariante.</div>
+<div class="proof">
+Assuma que $w\in W^\perp$. Precisamos provar que $f^*(w)\perp z$ para todo $z \in W$; ou seja $B_V(z,f^*(w))=0$ para todo $z\in W$.  Usando que $f(z)\in W$, temos que $f(z)\perp w$ e calculemos que<br>
+\[<br>
+B_V(z,f^*(w))=B_V(f(z),w)=0.<br>
+\]</div>
+</div>
 			</div>
 <!-- .entry-content -->
 	<footer class="entry-footer">
