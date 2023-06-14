@@ -310,13 +310,40 @@ Assuma que $V$ é espaço com produto interno e $f:V\to V$ é autoadjunto.
 Seja $A\in M_{n\times n}(\C)$ tal que $A^t=\overline A$ (a transposta é igual à conjugada complexa). Então os autovalores de $A$ são números reais. Em particular, se $A\in M_{n\times n}(\R)$ tal que $A^t = A$ e $\lambda\in\C$ é autovalor de $A$, então $\lambda\in \C$.</div>
 <div class="proof">
 Considere $A$ como a matriz de uma transformação linear $f_A:\C^n\to \C^n$ em uma base ortonormal em relação ao produto interno usual de $\C^n$. A matriz de $f_A^*$ é $\overline A^t=A$ e assim $f_A^*=f_A$; ou seja $f_A$ é autoadjunta. Pelo resultado anterior os autovalores de $f_A$ (que são os mesmos que os autovalores de $A$) são números reais. A segunda afirmação segue da primeira, observando que se $A\in M_{n\times n}(\R)$, então $\overline A=A$.</div>
-<div class="theorem">(O Teorema Espectral para Operadores Autoadjuntos)<br>
-Seja $V$ um espaço com produto interno e assuma que $\dim V=n$ é finita e seja $f:V\to V$ um operador autoadjunto. Então os autovalores de $f$ são números reais e $V$ possui uma base ortonormal formado por autovetores de $f$.</div>
+<div class="theorem">(O Teorema de Diagonalização para Operadores Autoadjuntos)<br>
+Seja $V$ um espaço com produto interno e assuma que $\dim V=n$ é finita e seja $f:V\to V$ um operador autoadjunto. Então os autovalores de $f$ são números reais e $V$ possui uma base $B$ ortonormal formada por autovetores de $f$. Em particular, $f$ é diagonalizável e $[f]_B^B=D$ é diagonal.</div>
 <div class="proof">
 Usamos indução por $\dim V$. Seja $\F=\R$ ou $\F=\C$ o corpo para o espaço $V$. Quando $\dim V=1$, então $(V,\langle-,-\rangle)$ é isométrico ao espaço $\F^{0+1}$ e existe uma base $\{b_1\}$ tal que $\langle b_1,b_1\rangle=1$. Como $\dim V=1$, $b_1$ é autovetor de $f$ e a base $\{b_1\}$ é ortonormal formada por autovetores de $f$.
-<p>Assuma que o teorema está verdadeiro para espaços de dimensão menor que $n$ e assuma que $\dim V=n$. Seja inicialmente $X$ uma base ortonormal de $V$ qualquer (existe por resultado anterior). A matriz $A$ de $f$ nesta base $X$ satisfaz $X^t=\overline X$ (ou $X^t=X$ quando $\F=\R$). Por resultado anterior $A$ e $f$ possuem autovalor $\lambda\in \R$. Seja $b_1&#8217;$ um autovetor para autovalor $\lambda$. Ponha $\alpha_1=\langle b_1&#8242;,b_1&#8217;\rangle$ e note que a positividade do produto interno implica que $\alpha_1\in \R$ e $\alpha_1 &gt; 0$. Pondo $b_1=(\alpha_1)^{-1/2}$ obtemos que $\langle b_1,b_1\rangle =1$.</p>
+<p>Assuma que o teorema está verdadeiro para espaços de dimensão menor que $n$ e assuma que $\dim V=n$. Seja inicialmente $X$ uma base ortonormal de $V$ qualquer (existe por resultado anterior). A matriz $A$ de $f$ nesta base $X$ satisfaz $X^t=\overline X$ (ou $X^t=X$ quando $\F=\R$). Por resultado anterior $A$ e $f$ possuem autovalor $\lambda\in \R$. Seja $b_1&#8217;$ um autovetor para autovalor $\lambda$. Ponha $\alpha_1=\langle b_1&#8242;,b_1&#8217;\rangle$ e note que a positividade do produto interno implica que $\alpha_1\in \R$ e $\alpha_1 &gt; 0$. Pondo $b_1=(\alpha_1)^{-1/2}b_1&#8217;$ obtemos que $\langle b_1,b_1\rangle =1$.</p>
 <p>Considere $U=\mbox{span}\{b_1\}$. Então $\dim U^\perp=n-1$, $U^{\perp}\cap U=0$ e $V=U\perp U^\perp$. Além disso, $U$ sendo $f$-invariante, $U^\perp$ é invariante por $f^*=f$. Por hipótese de indução, $U^\perp$ possui uma base ortonormal $\{b_2,\ldots,b_n\}$ que composta de autovetores de $f$. Ora, $\{b_1,\ldots,b_n\}$ é base ortonormal de $V$ composta de autovetores de $f$.</p>
 </div>
+<div class="definition">
+Para uma matriz $A\in M_{n\times n}(\C)$, denotamos $A^*=\overline A^t$ (conjugada transposta). Uma matrix $A\in M_{n\times n}(\C)$ é chamada <b>hermitiana</b> se $A=A^*$. Uma matriz $A\in M_{n\times n}(\R)$ é chamada <b>ortogonal</b> se as colunas de $A$ são ortonormais. Uma matriz $A\in M_{n\times n}(\C)$ é chamada de <b>unitária</b> as colunas de $A$ são ortonormais (no produto interno de $\C^n$).</div>
+<div class="exercise">
+Mostre que
+<ol>
+<li>$A$ é ortogonal se e somente se $A^tA=I$ e $A^{-1}=A^t$;</li>
+<li>$A$ é unitária se e somente se $A^*A=I$ e $A^{-1}=A^*$.</li>
+</ol>
+</div>
+<div class="corollary">
+<ul>
+<li>Seja $A\in M_{n\times n}(\R)$ uma matriz simétrica. Existe uma matriz ortogonal $P$ tal que $P^tAP$ é diagonal.</li>
+<li>$A\in M_{n\times n}(\C)$ uma matriz hermitiana. Existe uma matriz unitária $P$ tal que $P^*AP$ é diagonal.</li>
+</ul>
+</div>
+<div class="proof">
+Nos dois casos, considere a transformação $f_A:\F^n\to \F^n$, $f_A(v)=A\cdot v$. A transformação $f_A$ é autoadjunta em relação ao produto interno em $\F^n$. Além disso, a matriz de $f_A$ na base canônica é a própria $A$. Pelo teorema anterior, $f_A$ é diaganalizável. Mais precisamente, existe uma base ortonormal $B$ tal que $[f_A]_B^B$ é diagonal $D$. Seja $P$ a matriz que tem os elementos de $B$ nas suas colunas. Temos que<br>
+\[<br>
+D=[f]_B^B=P^{-1}AP=P^*AP<br>
+\]<br>
+pois $P^{-1}=P^*$  pelo exercício anterior. Quando $P\in M_{n\times n}(\R)$, então $P^*=P^t$.</div>
+<div class="example">
+O teorema anterior não é válido para matrizes simétricas sobre $\C$. Considere por exemplo<br>
+\[<br>
+A=\begin{pmatrix} 1 &amp; i \\ i &amp; -1\end{pmatrix}<br>
+\]<br>
+O polinômio caraterístico de $A$ é $t^2$ e $0$ é o único autovalor de $A$. Mas como $A$ não é a transformação nula, não existe base de $\C^2$ formada por autovetores de $A$.</div>
 </div>
 			</div>
 <!-- .entry-content -->
