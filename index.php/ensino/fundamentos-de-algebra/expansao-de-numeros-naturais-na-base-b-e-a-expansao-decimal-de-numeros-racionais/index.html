@@ -341,10 +341,8 @@ que diz que $1=[1]_5$.</p>
 <pre><code class="language-python">
 def NumeroEmBaseRecursivo( a, b ):
     
-    # a e b precisam ser positivos
-    assert( a &gt; 0 and b &gt; 1 )
     # calcular quociente e resto de a por b
-    q, r = a//b, a%b
+    q, r = my_divmod( a, b )
     
     if q == 0:
         # se q é zero, temos único dígito
@@ -361,15 +359,14 @@ def NumeroEmBaseRecursivo( a, b ):
 <pre><code class="language-python">
 def NumeroEmBase( a, b ):
     
-    # a e b precisam ser positivos
-    assert( a &gt; 0 and b &gt; 1 )
     # inicializamos a lista de dígitos
     digitos = []
     
-    while a &gt; 0:
+    while a != 0:
         # o dígito seguinte será o último dígito de a
-        digitos.insert( 0, a%b )
-        a = a//b
+        q, r = my_divmod( a, b )
+        digitos.insert( 0, r )
+        a = q
     
     return digitos
 </code></pre>

@@ -396,6 +396,49 @@ True
 -4
 </code></pre>
 <p>Nestes casos o output dado por Python precisa ser modificado para ser compatível com o Teorema de Divisão enunciado anteriormente.</p>
+<p>Python possui a função <a href="https://docs.python.org/3/library/functions.html#divmod"><code>divmod</code></a> que calcula o quociente e o resto no mesmo tempo. Quando precisa-se calcular os dois, o uso desta função é preferível sobre usar as operações <code>//</code> e <code>%</code> separadamente.</p>
+<pre><code class="language-python-repl">
+&gt;&gt;&gt; q, r = divmod( 11, 5 )
+&gt;&gt;&gt; q, r
+(2, 1)
+&gt;&gt;&gt; q, r = divmod( -11, 5 )
+&gt;&gt;&gt; q, r
+(-3, 4)
+&gt;&gt;&gt; q, r = divmod( 11, -5 )
+&gt;&gt;&gt; q, r 
+(-3, -4)
+&gt;&gt;&gt; q, r = divmod( -11, -5 )
+&gt;&gt;&gt; q, r 
+(2, -1)
+</code></pre>
+<p>A função <code>divmod</code> pode ser modificado para devolver o quociente e o resto que satisfaz a condição do Teorema como foi enunciado por nós.</p>
+<pre><code class="language-python">
+def my_divmod( a, b ):
+
+    # calculamos o quociente e resto com divmod
+    q, r = divmod( a, b )
+    
+    # se o resto é não negativo, estamos pronto
+    if r &gt;= 0:
+        return q, r
+        # caso contrário, o resto é negativo e devolvemos q e r modificados
+    else:
+        return q+1, r-b
+</code></pre>
+<p>O resultado devolvido por esta nova função está de acordo com a nossa definição de quociente e resto.</p>
+<pre><code class="language-python-repl">
+&gt;&gt;&gt; my_divmod(13,5)
+(2, 3)
+
+&gt;&gt;&gt; my_divmod(-13,5)
+(-3, 2)
+
+&gt;&gt;&gt; my_divmod(-13,-5)
+(3, 2)
+
+&gt;&gt;&gt; my_divmod(13,-5)
+(-2, 3)
+</code></pre>
 </div>
 			</div>
 <!-- .entry-content -->
